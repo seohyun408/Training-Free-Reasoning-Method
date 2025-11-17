@@ -1,0 +1,51 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2578.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many months are between the Solstices?12\n4\n3\n6 Please answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows Earth’s orbit around the Sun with labeled solstices on June 21 and December 22, indicating the two extreme points of the year.  \n2. Between June 21 and December 22, there are exactly six months: July, August, September, October, November, and December.  \n3. The diagram also includes equinoxes on March 21 and September 22, confirming the six-month interval between solstices aligns with seasonal cycles.  \n\n<final>6</final>",
+      "raw_generation": [
+        "1. The diagram shows Earth’s orbit around the Sun with key dates: June 21 (Summer Solstice), December 22 (Winter Solstice), and equinoxes on March 21 and September 22.  \n2. From June 21 to December 22 spans six months: July, August, September, October, November, and December.  \n3. The diagram’s orbital path and labeled dates confirm that the time between solstices is exactly six months, not four or three.  \n\n<final>6</final>",
+        "1. The diagram shows Earth’s orbit around the Sun with labeled solstices on June 21 and December 22, indicating the two extreme points of the year.  \n2. Between June 21 and December 22, there are exactly six months: July, August, September, October, November, and December.  \n3. The diagram also includes equinoxes on March 21 and September 22, confirming the six-month interval between solstices aligns with seasonal cycles.  \n\n<final>6</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows Earth’s orbit around the Sun with labeled solstices on June 21 and December 22, indicating the two extreme points of the year.",
+        "2. Between June 21 and December 22, there are exactly six months: July, August, September, October, November, and December.",
+        "3. The diagram also includes equinoxes on March 21 and September 22, confirming the six-month interval between solstices aligns with seasonal cycles.",
+        "<final>6</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          66,
+          102
+        ],
+        [
+          103,
+          135
+        ],
+        [
+          136,
+          171
+        ],
+        [
+          172,
+          179
+        ]
+      ],
+      "anchor_vector": [
+        11.983600870768228,
+        11.914967891148159,
+        11.259486607142858,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ]
+    }
+  ],
+  "example_idx": 8
+}

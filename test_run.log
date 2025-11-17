@@ -1,0 +1,272 @@
+Traceback (most recent call last):
+  File "/home/jyko/nlp_project2/Training-Free-Reasoning-Method/main.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Loading dataset: Xkev/LLaVA-CoT-100k (train[:5])...
+Loaded 5 examples
+[device] Using device: cuda:1 (total CUDA: 3)
+[device] GPU memory free/total: 31.16 / 47.53 GB
+Loading model: Qwen/Qwen3-VL-8B-Instruct
+[model] Loading with kwargs: {'trust_remote_code': True, 'cache_dir': '/mnt/hdd/huggingface-models', 'low_cpu_mem_usage': True, 'dtype': torch.float16}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.12s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.13s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.14s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.02s/it]
+Processing examples:   0%|          | 0/5 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Processing example 1/5
+[warn] Image not found for field 'sqa/train/20839/image.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/sqa/train/20839/image.png', 'sqa/train/20839/image.png', '/mnt/hdd/llava/llava-cot-100k/sqa/train/20839/image.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_0.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 2/5
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/multi_col_100056.png
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 1. The bar chart displays customer satisfaction ratings across five categories, with percentages indicating the share of respondents.   2. The category labeled "Product availabilit
+  attempt 1: <reasoning> 1. The bar chart shows five categories along the x-axis, each with two stacked percentages indicating ratings of 4/5 and 5/5. 2. The category labeled "Product availabil
+Total Text >>>  <think><reasoning>
+1. The bar chart shows five categories along the x-axis, each with two stacked percentages indicating ratings of 4/5 and 5/5.
+2. The category labeled "Product availability" has a blue segment of 35% and a dark segment of 15%, matching the requested percentages.
+3. No other category displays both 35% and 15% in the same bar, confirming "Product availability" is the correct answer.
+</reasoning>
+<final>Product availability</final></think> 
+
+  Pair 0: Split into 5 chunks
+  Chunks preview: ['<reasoning>\n1.', 'The bar chart shows five categories along the x-ax...', '2. The category labeled "Product availability" has...', '3. No other category displays both 35% and 15% in ...', '</reasoning>\n<final>Product availability</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 565
+
+Suppressing chunks:   0%|          | 0/5 [00:00<?, ?it/s][A
+Suppressing chunks:  20%|██        | 1/5 [00:00<00:01,  3.96it/s][A
+Suppressing chunks:  40%|████      | 2/5 [00:00<00:00,  4.44it/s][A
+Suppressing chunks:  60%|██████    | 3/5 [00:00<00:00,  4.63it/s][A
+Suppressing chunks:  80%|████████  | 4/5 [00:00<00:00,  4.74it/s][A
+Suppressing chunks: 100%|██████████| 5/5 [00:01<00:00,  4.80it/s][ASuppressing chunks: 100%|██████████| 5/5 [00:01<00:00,  4.67it/s]
+
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[62, 68]]
+[DEBUG]   range[0] text='5/5.
+2.'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[68, 97]]
+[DEBUG]   range[0] text=' The category labeled "Product availability" has a blue segment of 35% and a dark segment of 15%, matching the requested'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[97, 129]]
+[DEBUG]   range[0] text='.
+3. No other category displays both 35% and 15% in the same bar, confirming "Product availability" is the correct answe'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[129, 160]]
+[DEBUG]   range[0] text='</reasoning>
+<final>Product availability</final>'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+
+[DEBUG] Suppressing chunk 4
+[DEBUG] (attn) Token ranges to mask: [[160, 172]]
+[DEBUG]   range[0] text='<empty-range>'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 4] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+[warn] KL matrix has no positive entries. Attention masking produced no effect; check token ranges or layer/head coverage.
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 5
+  - Anchor vector shape: (5,)
+  - Min importance: 0.0000
+  - Max importance: 0.0000
+  - Mean importance: 0.0000
+  - Std importance: 0.0000
+
+✅ Top 5 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 4):
+    Score: 0.0000
+    Text: "</reasoning>
+<final>Product availability</final>"
+
+  Rank 2 (Sentence 3):
+    Score: 0.0000
+    Text: "3. No other category displays both 35% and 15% in the same bar, confirming "Product availability"..."
+
+  Rank 3 (Sentence 2):
+    Score: 0.0000
+    Text: "2. The category labeled "Product availability" has a blue segment of 35% and a dark segment of 15..."
+
+  Rank 4 (Sentence 1):
+    Score: 0.0000
+    Text: "The bar chart shows five categories along the x-axis, each with two stacked percentages indicatin..."
+
+  Rank 5 (Sentence 0):
+    Score: 0.0000
+    Text: "<reasoning>
+1."
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (5, 5)
+  - Non-NaN values: 25/25
+  - Mean KL (non-NaN): 0.0000
+  - Max KL: 0.0000
+  - Min KL: 0.0000
+
+================================================================================
+[chunk 0] token_range=(62,68) snippet='5/5.
+2.'
+[chunk 1] token_range=(68,97) snippet=' The category labeled "Product availability" has a blue segment of 35% and a dark segment of 15%, ma'
+[chunk 2] token_range=(97,129) snippet='.
+3. No other category displays both 35% and 15% in the same bar, confirming "Product availability" '
+[chunk 3] token_range=(129,160) snippet='</reasoning>
+<final>Product availability</final>'
+[chunk 4] token_range=(160,172) snippet='<empty>'
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 36.2%
+  attempt 1: <reasoning> 1. The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values of 34%, 36%, 35%, 45%, and 27% respectively. 2. Adding these pe
+Total Text >>>  <think><reasoning>
+1. The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values of 34%, 36%, 35%, 45%, and 27% respectively.
+2. Adding these percentages together yields a total of 177%, which is then divided by the number of categories, five, to find the average.
+3. The calculation results in an average of 35.4% for all the blue bars.
+</reasoning>
+<final>35.4%</final></think> 
+
+  Pair 1: Split into 5 chunks
+  Chunks preview: ['<reasoning>\n1.', 'The blue bars represent the percentage of responde...', '2. Adding these percentages together yields a tota...', '3. The calculation results in an average of 35.4% ...', '</reasoning>\n<final>35.4%</final>']
+  Pair 1: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 566
+
+Suppressing chunks:   0%|          | 0/5 [00:00<?, ?it/s][A
+Suppressing chunks:  20%|██        | 1/5 [00:00<00:01,  3.89it/s][A
+Suppressing chunks:  40%|████      | 2/5 [00:00<00:00,  4.41it/s][A
+Suppressing chunks:  60%|██████    | 3/5 [00:00<00:00,  4.55it/s][A
+Suppressing chunks:  80%|████████  | 4/5 [00:00<00:00,  4.66it/s][A
+Suppressing chunks: 100%|██████████| 5/5 [00:01<00:00,  4.73it/s][ASuppressing chunks: 100%|██████████| 5/5 [00:01<00:00,  4.60it/s]
+Processing examples:  40%|████      | 2/5 [00:13<00:20,  6.71s/it]Processing examples:  80%|████████  | 4/5 [00:13<00:02,  2.81s/it]Processing examples: 100%|██████████| 5/5 [00:13<00:00,  2.73s/it]
+
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[48, 54]]
+[DEBUG]   range[0] text=', with values of 3'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[54, 99]]
+[DEBUG]   range[0] text='4%, 36%, 35%, 45%, and 27% respectively.
+2. Adding these percentages together yields a total of 177%, which is then divi'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[99, 131]]
+[DEBUG]   range[0] text=', five, to find the average.
+3. The calculation results in an average of 35.4% for all the blue bars.
+</reasoning'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[131, 152]]
+[DEBUG]   range[0] text='>
+<final>35.4%</final>'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+
+[DEBUG] Suppressing chunk 4
+[DEBUG] (attn) Token ranges to mask: [[152, 166]]
+[DEBUG]   range[0] text='<empty-range>'
+Warning: Could not automatically find the main rotary_emb module.
+Error: No suitable Qwen2-style attention modules found.
+[hooks] Attention masking applied (strategy='attn').
+[chunk 4] mean_effect=0.000000 max_effect=0.000000 min_effect=0.000000
+[warn] KL matrix has no positive entries. Attention masking produced no effect; check token ranges or layer/head coverage.
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 5
+  - Anchor vector shape: (5,)
+  - Min importance: 0.0000
+  - Max importance: 0.0000
+  - Mean importance: 0.0000
+  - Std importance: 0.0000
+
+✅ Top 5 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 4):
+    Score: 0.0000
+    Text: "</reasoning>
+<final>35.4%</final>"
+
+  Rank 2 (Sentence 3):
+    Score: 0.0000
+    Text: "3. The calculation results in an average of 35.4% for all the blue bars."
+
+  Rank 3 (Sentence 2):
+    Score: 0.0000
+    Text: "2. Adding these percentages together yields a total of 177%, which is then divided by the number ..."
+
+  Rank 4 (Sentence 1):
+    Score: 0.0000
+    Text: "The blue bars represent the percentage of respondents who rated each category 4 out of 5, with va..."
+
+  Rank 5 (Sentence 0):
+    Score: 0.0000
+    Text: "<reasoning>
+1."
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (5, 5)
+  - Non-NaN values: 25/25
+  - Mean KL (non-NaN): 0.0000
+  - Max KL: 0.0000
+  - Min KL: 0.0000
+
+================================================================================
+[save] Wrote: anchor_vectors_output/example_1.json
+
+Processing example 3/5
+[warn] Image not found for field 'geoqa+/images/9435.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/geoqa+/images/9435.png', 'geoqa+/images/9435.png', '/mnt/hdd/llava/llava-cot-100k/geoqa+/images/9435.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_2.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 4/5
+[warn] Image not found for field 'geoqa+/images/10373.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/geoqa+/images/10373.png', 'geoqa+/images/10373.png', '/mnt/hdd/llava/llava-cot-100k/geoqa+/images/10373.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_3.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 5/5
+[warn] Image not found for field 'geoqa+/images/12240.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/geoqa+/images/12240.png', 'geoqa+/images/12240.png', '/mnt/hdd/llava/llava-cot-100k/geoqa+/images/12240.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_4.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.

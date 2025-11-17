@@ -294,22 +294,39 @@ class QwenAttentionHookManager(HookManager):
             self.token_range = [self.token_range]
         
         target_modules = []
-        module_prefix = "model.layers"
+        # Support both "model.layers" (Qwen2) and "layers" (Qwen3-VL language_model)
+        module_prefix_options = ["model.layers", "layers"]
         attn_suffix = "self_attn"
         rotary_emb_module = None
-        
+
+        # Try multiple paths for rotary_emb
         if hasattr(self.model, "model") and hasattr(self.model.model, "rotary_emb"):
             rotary_emb_module = self.model.model.rotary_emb
             print(f"Found rotary_emb at model.model.rotary_emb")
-            if not callable(rotary_emb_module):
-                print(f"Warning: Found rotary_emb module, but it is not callable. RoPE might fail.")
+        elif hasattr(self.model, "rotary_emb"):
+            rotary_emb_module = self.model.rotary_emb
+            print(f"Found rotary_emb at model.rotary_emb")
         else:
             print("Warning: Could not automatically find the main rotary_emb module.")
-        
+
+        if rotary_emb_module and not callable(rotary_emb_module):
+            print(f"Warning: Found rotary_emb module, but it is not callable. RoPE might fail.")
+
         for name, module in self.model.named_modules():
-            if name.startswith(module_prefix) and name.endswith(attn_suffix):
+            # Check both prefix options
+            matched_prefix = None
+            for prefix in module_prefix_options:
+                if name.startswith(prefix) and name.endswith(attn_suffix):
+                    matched_prefix = prefix
+                    break
+
+            if matched_prefix and name.endswith(attn_suffix):
                 try:
-                    layer_idx_str = name.split(".")[2]
+                    # Extract layer index based on matched prefix
+                    if matched_prefix == "model.layers":
+                        layer_idx_str = name.split(".")[2]  # model.layers.0.self_attn -> 0
+                    else:  # "layers"
+                        layer_idx_str = name.split(".")[1]  # layers.0.self_attn -> 0
                     layer_idx = int(layer_idx_str)
                     if self.layer_2_heads_suppress is None or layer_idx in self.layer_2_heads_suppress:
                         if (

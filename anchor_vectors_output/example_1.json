@@ -1,0 +1,100 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/multi_col_100056.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIdentify the category, that recorded 35% and 15% ? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart shows five categories along the x-axis, each with two stacked segments representing ratings of 4/5 and 5/5.\n2. The segment labeled \"35%\" in the blue portion corresponds to the \"Product availability\" category, while the \"15%\" segment in the dark portion also belongs to \"Product availability.\"\n3. The only category that has both 35% and 15% as its rating segments is \"Product availability.\"\n</reasoning>\n<final>Product availability</final>",
+      "raw_generation": [
+        "1. The bar chart displays customer satisfaction ratings across five categories, with percentages indicating the share of respondents.  \n2. The category labeled \"Product availability\" shows two segments: 35% for \"Rated 4/5\" and 15% for \"Rated 5/5\".  \n3. These percentages directly correspond to the \"Product availability\" category, making it the correct answer.  \n<final>Product availability</final>",
+        "<reasoning>\n1. The bar chart shows five categories along the x-axis, each with two stacked segments representing ratings of 4/5 and 5/5.\n2. The segment labeled \"35%\" in the blue portion corresponds to the \"Product availability\" category, while the \"15%\" segment in the dark portion also belongs to \"Product availability.\"\n3. The only category that has both 35% and 15% as its rating segments is \"Product availability.\"\n</reasoning>\n<final>Product availability</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart shows five categories along the x-axis, each with two stacked segments representing ratings of 4/5 and 5/5.",
+        "2. The segment labeled \"35%\" in the blue portion corresponds to the \"Product availability\" category, while the \"15%\" segment in the dark portion also belongs to \"Product availability.\"\n3.",
+        "The only category that has both 35% and 15% as its rating segments is \"Product availability.\"\n</reasoning>\n<final>Product availability</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          68
+        ],
+        [
+          68,
+          97
+        ],
+        [
+          97,
+          139
+        ],
+        [
+          139,
+          175
+        ]
+      ],
+      "anchor_vector": [
+        10.091337836282442,
+        9.770198761470734,
+        8.674424913194445,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ]
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the average of all the blue bars ? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values of 34%, 36%, 35%, 45%, and 27% respectively.\n2. Adding these percentages together gives a total of 177%, and dividing by the number of categories (5) results in an average of 35.4%.\n3. The average of all the blue bars is 35.4%.\n</reasoning>\n<final>35.4%</final>",
+      "raw_generation": [
+        "36.2%",
+        "<reasoning>\n1. The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values of 34%, 36%, 35%, 45%, and 27% respectively.\n2. Adding these percentages together gives a total of 177%, and dividing by the number of categories (5) results in an average of 35.4%.\n3. The average of all the blue bars is 35.4%.\n</reasoning>\n<final>35.4%</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values of 34%, 36%, 35%, 45%, and 27% respectively.",
+        "2. Adding these percentages together gives a total of 177%, and dividing by the number of categories (5) results in an average of 35.4%.",
+        "3. The average of all the blue bars is 35.4%.",
+        "</reasoning>\n<final>35.4%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          54
+        ],
+        [
+          54,
+          99
+        ],
+        [
+          99,
+          136
+        ],
+        [
+          136,
+          153
+        ],
+        [
+          153,
+          167
+        ]
+      ],
+      "anchor_vector": [
+        11.522271249731505,
+        9.627993749231111,
+        12.132385766806724,
+        12.090959821428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ]
+    }
+  ],
+  "example_idx": 1
+}

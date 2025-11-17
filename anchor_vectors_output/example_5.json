@@ -1,0 +1,51 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/two_col_102544.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is Google's annual revenue? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The bar chart shows Google's revenue as the longest bar, indicating the highest value among all listed entities.\n2. The numerical label at the end of Google's bar clearly states \"1 913.85,\" which corresponds to its revenue in million euros.\n3. Since the x-axis is labeled \"Revenue in million euros,\" the value 1 913.85 directly translates to 1,913.85 million euros, or €1.91385 billion.\n\n<final>1913.85 million euros",
+      "raw_generation": [
+        "1913.85 million euros\n\n1. The bar chart clearly labels Google at the top with a revenue value of 1913.85, indicating its annual revenue in million euros.\n2. The x-axis is labeled \"Revenue in million euros,\" confirming the unit of measurement for the values shown.\n3. Google's bar is the longest, visually representing its significantly higher revenue compared to all other listed companies.\n\n<final>1913.85 million euros</final>",
+        "1. The bar chart shows Google's revenue as the longest bar, indicating the highest value among all listed entities.\n2. The numerical label at the end of Google's bar clearly states \"1 913.85,\" which corresponds to its revenue in million euros.\n3. Since the x-axis is labeled \"Revenue in million euros,\" the value 1 913.85 directly translates to 1,913.85 million euros, or €1.91385 billion.\n\n<final>1913.85 million euros"
+      ],
+      "chunks": [
+        "1. The bar chart shows Google's revenue as the longest bar, indicating the highest value among all listed entities.",
+        "2. The numerical label at the end of Google's bar clearly states \"1 913.85,\" which corresponds to its revenue in million euros.",
+        "3. Since the x-axis is labeled \"Revenue in million euros,\" the value 1 913.85 directly translates to 1,913.85 million euros, or €1.91385 billion.",
+        "<final>1913.85 million euros"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          65
+        ],
+        [
+          65,
+          98
+        ],
+        [
+          98,
+          149
+        ],
+        [
+          149,
+          161
+        ]
+      ],
+      "anchor_vector": [
+        13.551234426062093,
+        14.85043275122549,
+        11.371826171875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ]
+    }
+  ],
+  "example_idx": 5
+}

@@ -15,13 +15,23 @@ from pathlib import Path
 
 
 def extract_reasoning_from_response(gpt_response: str) -> str:
+    """Extract structured reasoning.
 
+    Priority:
+    1. <think>...</think>
+    2. <REASONING>...</REASONING>
+    3. Full text fallback
+    """
+    if "<think>" in gpt_response and "</think>" in gpt_response:
+        s = gpt_response.find("<think>") + len("<think>")
+        e = gpt_response.find("</think>")
+        if s < e:
+            return gpt_response[s:e].strip()
     if "<REASONING>" in gpt_response and "</REASONING>" in gpt_response:
         start_idx = gpt_response.find("<REASONING>") + len("<REASONING>")
         end_idx = gpt_response.find("</REASONING>")
         if start_idx < end_idx:
             return gpt_response[start_idx:end_idx].strip()
-    
     return gpt_response.strip()
 
 
@@ -40,16 +50,25 @@ def extract_qa_pairs(conversation: List[Dict]) -> List[Tuple[str, str]]:
     return qa_pairs
 
 
-def split_solution_into_chunks(solution_text: str) -> List[str]:
+def split_solution_into_chunks(solution_text: str, tokenizer=None, min_tokens: int = 5) -> List[str]:
+    """Split solution text into chunks (sentences).
 
+    Args:
+        solution_text: Text to split
+        tokenizer: Optional tokenizer for token-based merging
+        min_tokens: Minimum number of tokens per chunk (default: 5)
+
+    Returns:
+        List of sentence chunks
+    """
     sentence_ending_tokens = [".", "?", "!"]
     chunks = []
     current_chunk = ""
-    
+
     i = 0
     while i < len(solution_text):
         current_chunk += solution_text[i]
-        
+
         # Check for sentence endings
         if i < len(solution_text) - 1 and solution_text[i] in sentence_ending_tokens:
             next_char = solution_text[i + 1]
@@ -57,14 +76,14 @@ def split_solution_into_chunks(solution_text: str) -> List[str]:
                 if current_chunk.strip():
                     chunks.append(current_chunk.strip())
                     current_chunk = ""
-        
+
         i += 1
-    
+
     # Add the last chunk if not empty
     if current_chunk.strip():
         chunks.append(current_chunk.strip())
-    
-    # Merge small chunks (less than 10 characters)
+
+    # Merge small chunks (character-based: less than 10 characters)
     i = 0
     while i < len(chunks):
         if len(chunks[i]) < 10:
@@ -79,7 +98,37 @@ def split_solution_into_chunks(solution_text: str) -> List[str]:
                 break
         else:
             i += 1
-    
+
+    # Token-based merging if tokenizer is provided
+    if tokenizer is not None and min_tokens > 0:
+        i = 0
+        while i < len(chunks):
+            try:
+                tokens = tokenizer.encode(chunks[i], add_special_tokens=False)
+                token_count = len(tokens)
+
+                # If chunk is too small, merge with next or previous
+                if token_count < min_tokens:
+                    if i < len(chunks) - 1:
+                        # Merge with next
+                        chunks[i] = chunks[i] + " " + chunks[i + 1]
+                        chunks.pop(i + 1)
+                        # Don't increment i, check merged chunk again
+                    elif i > 0:
+                        # Merge with previous (last chunk is small)
+                        chunks[i - 1] = chunks[i - 1] + " " + chunks[i]
+                        chunks.pop(i)
+                        break
+                    else:
+                        # Only one chunk and it's small, keep it
+                        i += 1
+                else:
+                    i += 1
+            except Exception as e:
+                # If tokenization fails, just keep the chunk
+                print(f"[warn] Tokenization failed for chunk: {e}")
+                i += 1
+
     return chunks
 
 
@@ -117,6 +166,107 @@ def get_chunk_token_ranges(
         current_pos = chunk_end_char
     
     return chunk_token_ranges
+
+
+def get_chunk_token_ranges_with_offsets(
+    full_text: str,
+    reasoning_start_char: int,
+    reasoning_text: str,
+    chunks: List[str],
+    tokenizer: AutoTokenizer,
+) -> List[Tuple[int, int]]:
+    """Compute chunk token ranges using tokenizer offset mapping for higher fidelity.
+
+    Args:
+        full_text: The entire prompt+reasoning text passed to suppression.
+        reasoning_start_char: Character index in full_text where reasoning_text begins.
+        reasoning_text: Extracted reasoning segment (subset of full_text).
+        chunks: List of reasoning sentence chunks.
+        tokenizer: HuggingFace tokenizer (fast tokenizer preferred).
+
+    Returns:
+        List of (start_token_idx, end_token_idx) inclusive-exclusive ranges relative to tokenization of full_text.
+    """
+    try:
+        # Fast tokenizers support return_offsets_mapping; do not add special tokens to keep alignment simple.
+        encoding = tokenizer(full_text, add_special_tokens=False, return_offsets_mapping=True)
+        input_ids = encoding["input_ids"]
+        offsets = encoding["offset_mapping"]
+        if not offsets or len(offsets) != len(input_ids):
+            raise ValueError("Offset mapping unavailable or length mismatch")
+    except Exception as e:
+        print(f"[offset-align] Fallback to legacy range computation due to: {e}")
+        # Fallback: legacy char->token encoding per chunk within reasoning_text only, then add prefix offset.
+        legacy_ranges_reasoning = get_chunk_token_ranges(reasoning_text, chunks, tokenizer)
+        prefix_token_count = len(tokenizer.encode(full_text[:reasoning_start_char], add_special_tokens=False))
+        return [(s + prefix_token_count, e + prefix_token_count) for (s, e) in legacy_ranges_reasoning]
+
+    # Build quick index from char position -> token index boundaries
+    # offsets[i] = (start_char, end_char)
+    char_to_token_start = {}
+    char_to_token_end = {}
+    for tidx, (c_start, c_end) in enumerate(offsets):
+        # Record first token starting at c_start; record last token ending at c_end
+        # Some tokenizers may produce (0,0) for special cases; skip those.
+        if c_start == c_end:
+            continue
+        char_to_token_start.setdefault(c_start, tidx)
+        char_to_token_end[c_end] = tidx + 1  # end is exclusive
+
+    ranges = []
+    current_search_pos = 0
+    for chunk in chunks:
+        # Find chunk within reasoning_text then map to full_text char positions
+        rel_start = reasoning_text.find(chunk, current_search_pos)
+        if rel_start < 0:
+            # Try whitespace-normalized search
+            norm_chunk = re.sub(r"\s+", " ", chunk).strip()
+            rel_start = reasoning_text.find(norm_chunk, current_search_pos)
+        if rel_start < 0:
+            print(f"[offset-align] Warning: chunk not found -> {chunk[:50]}...")
+            current_search_pos += len(chunk)
+            continue
+        rel_end = rel_start + len(chunk)
+        abs_start = reasoning_start_char + rel_start
+        abs_end = reasoning_start_char + rel_end
+
+        # Locate token indices covering [abs_start, abs_end)
+        # Find first token whose start >= abs_start (or token containing abs_start)
+        start_token = None
+        end_token = None
+        # Linear scan around abs_start/abs_end (could binary search if large)
+        for tidx, (c_start, c_end) in enumerate(offsets):
+            if c_start <= abs_start < c_end:
+                start_token = tidx
+            if c_start <= abs_end - 1 < c_end:
+                end_token = tidx + 1
+            if start_token is not None and end_token is not None:
+                break
+        # Edge cases: chunk boundaries may align exactly with token starts/ends.
+        if start_token is None:
+            # Find next token starting after abs_start
+            for tidx, (c_start, _) in enumerate(offsets):
+                if c_start >= abs_start:
+                    start_token = tidx
+                    break
+        if end_token is None:
+            # Find token whose end >= abs_end
+            for tidx, (_, c_end) in enumerate(offsets):
+                if c_end >= abs_end:
+                    end_token = tidx + 1
+                    break
+
+        if start_token is None or end_token is None or start_token >= end_token:
+            print(f"[offset-align] Degenerate token range for chunk '{chunk[:40]}' -> start_token={start_token}, end_token={end_token}")
+            current_search_pos += len(chunk)
+            continue
+
+        ranges.append((start_token, end_token))
+        current_search_pos = rel_end
+
+    if len(ranges) != len(chunks):
+        print(f"[offset-align] Range count {len(ranges)} != chunks {len(chunks)} (some chunks skipped)")
+    return ranges
 
 
 

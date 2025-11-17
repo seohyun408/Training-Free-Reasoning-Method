@@ -257,7 +257,8 @@ def get_model_logits(
     text: str,
     image: Optional[Image.Image] = None,
     token_range_to_mask: Optional[List[Tuple[int, int]]] = None,
-    device: str = "cuda"
+    device: str = "cuda",
+    suppression_strategy: str = "attn"
 ) -> List[torch.Tensor]:
     """
     Get model logits for each position in the text.
@@ -276,67 +277,73 @@ def get_model_logits(
     """
     # Prepare inputs - check if it's a vision model
     is_vision_model = hasattr(model, 'config') and hasattr(model.config, 'vision_config')
-    
+
     if is_vision_model and image is not None and processor is not None:
-        # Vision-language model (LLaVA)
         inputs = processor(text=text, images=image, return_tensors="pt", padding=True)
-        # Move to device
         inputs = {k: v.to(device) if isinstance(v, torch.Tensor) else v for k, v in inputs.items()}
-        input_ids = inputs["input_ids"]
+        input_ids = inputs.get("input_ids")
     else:
-        # Text-only model
         inputs = tokenizer(text, return_tensors="pt", add_special_tokens=False)
-        input_ids = inputs["input_ids"].to(device)
+        input_ids = inputs.get("input_ids").to(device)
+
+    # Embedding suppression removed (paper-style attention masking only)
+    embedding_suppressed = False
+    original_input_ids = None
     
-    # Apply attention suppression hooks if needed
+    # Decide suppression strategy
     hook_manager = None
     if token_range_to_mask is not None:
-        # Convert token ranges to the format expected by hooks
-        # hooks expect list of lists: [[start, end], [start, end], ...]
+        # Force attention-based masking only
         token_ranges_list = [[start, end] for start, end in token_range_to_mask]
-        
-        # For LLaVA models, use the language_model component
         model_to_hook = model.language_model if hasattr(model, 'language_model') else model
         model_type = type(model_to_hook).__name__
-        
-        print(f"[DEBUG] Token ranges to mask: {token_ranges_list}")
-        
-        # Use appropriate hook manager based on model type
+        if suppression_strategy != "attn":
+            print(f"[info] Requested suppression_strategy='{suppression_strategy}' ignored; using 'attn' (paper-style).")
+        print(f"[DEBUG] (attn) Token ranges to mask: {token_ranges_list}")
+        # Decode masked token text snippet for verification
+        try:
+            # Re-tokenize full text for safe decode
+            debug_ids = tokenizer(text, add_special_tokens=False, return_tensors="pt")["input_ids"]
+            for r_idx,(s,e) in enumerate(token_ranges_list):
+                s_eff = min(s, debug_ids.shape[-1])
+                e_eff = min(e, debug_ids.shape[-1])
+                if s_eff < e_eff:
+                    piece = tokenizer.decode(debug_ids[0, s_eff:e_eff])
+                else:
+                    piece = "<empty-range>"
+                print(f"[DEBUG]   range[{r_idx}] text='{piece[:120]}'")
+        except Exception as e:
+            print(f"[warn] token range decode failed: {e}")
         if 'Llama' in model_type:
             hook_manager = LlamaAttentionHookManager(
                 model=model_to_hook,
                 token_range=token_ranges_list,
-                layer_2_heads_suppress=None  # Suppress all heads in all layers
+                layer_2_heads_suppress=None
             )
         else:
-            # Default to Qwen for other models
             hook_manager = QwenAttentionHookManager(
                 model=model_to_hook,
                 token_range=token_ranges_list,
-                layer_2_heads_suppress=None  # Suppress all heads in all layers
+                layer_2_heads_suppress=None
             )
-        
         hook_manager.apply()
+        print(f"[hooks] Attention masking applied (strategy='attn').")
         
     
     try:
-        # Forward pass
         with torch.no_grad():
             if is_vision_model and image is not None:
-                # LLaVA model expects input_ids, pixel_values, attention_mask
                 outputs = model(**inputs, output_attentions=False)
             else:
-                # Text-only model
-                outputs = model(input_ids, output_attentions=False)
-            
-            logits = outputs.logits[0]  # [seq_len, vocab_size]
+                # Model may expect dict or tensor; we pass tensor for causal LM
+                outputs = model(inputs['input_ids'], output_attentions=False)
+            logits = outputs.logits[0]
             logits_list = [logits[i] for i in range(logits.shape[0])]
-            
         return logits_list
     finally:
-        # Clean up hooks
         if hook_manager is not None:
             hook_manager.clear()
+        # embedding_suppressed unused now; kept for API compatibility
 
 
 
@@ -344,7 +351,8 @@ def calculate_kl_divergence_sparse2(
     baseline_logits: torch.Tensor,
     suppressed_logits: torch.Tensor,
     temperature: float = 0.6,
-    top_p: float = 0.9999
+    top_p: float = 0.9999,
+    sparse_top_p: float = 0.0
 ) -> float:
     """
     Calculate KL divergence between baseline and suppressed logit distributions.
@@ -362,6 +370,26 @@ def calculate_kl_divergence_sparse2(
     # Apply temperature
     baseline_logits_temp = baseline_logits / temperature
     suppressed_logits_temp = suppressed_logits / temperature
+
+    # Optional sparse top-p pruning (apply on baseline & suppressed independently then union support)
+    def _top_p_mask(logits: torch.Tensor, p: float) -> torch.Tensor:
+        if p <= 0 or p >= 1:
+            return logits
+        probs = torch.softmax(logits, dim=-1)
+        sorted_probs, indices = torch.sort(probs, descending=True)
+        cumulative = torch.cumsum(sorted_probs, dim=-1)
+        cutoff_mask = cumulative <= p
+        # ensure at least one token kept
+        if not cutoff_mask.any():
+            cutoff_mask[0] = True
+        keep_indices = indices[cutoff_mask]
+        mask = torch.full_like(logits, float('-inf'))
+        mask[keep_indices] = logits[keep_indices]
+        return mask
+
+    if sparse_top_p > 0:
+        baseline_logits_temp = _top_p_mask(baseline_logits_temp, sparse_top_p)
+        suppressed_logits_temp = _top_p_mask(suppressed_logits_temp, sparse_top_p)
     
     # Compute log probabilities directly (more numerically stable)
     baseline_log_probs = F.log_softmax(baseline_logits_temp, dim=0)
@@ -413,7 +441,8 @@ def compute_suppression_kl_matrix2(
     device: str = "cuda",
     p_nucleus: float = 0.9999,
     temperature: float = 0.6,
-    take_log: bool = False
+    take_log: bool = False,
+    suppression_strategy: Optional[str] = None
 ) -> np.ndarray:
     """
     Compute KL divergence matrix by suppressing each chunk and measuring effect.
@@ -426,8 +455,12 @@ def compute_suppression_kl_matrix2(
     
     # Get baseline logits (no suppression)
     print("Computing baseline logits...")
+    suppression_strategy = "attn"  # Force attention masking only
+    sparse_top_p_env = float(os.getenv("SPARSE_TOP_P", "0"))
+    print(f"[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P={sparse_top_p_env}")
+
     baseline_logits_list = get_model_logits(
-        model, processor, tokenizer, text, image=image, token_range_to_mask=None, device=device
+        model, processor, tokenizer, text, image=image, token_range_to_mask=None, device=device, suppression_strategy="none"
     )
     
     print(f"  Baseline logits length: {len(baseline_logits_list)}")
@@ -444,7 +477,8 @@ def compute_suppression_kl_matrix2(
         suppressed_logits_list = get_model_logits(
             model, processor, tokenizer, text, image=image,
             token_range_to_mask=[token_range], 
-            device=device
+            device=device,
+            suppression_strategy="attn"
         )
         
         # Debug: Check if logits changed
@@ -465,7 +499,7 @@ def compute_suppression_kl_matrix2(
                 max_diff = torch.max(torch.abs(baseline_logits_list[sample_idx] - suppressed_logits_list[sample_idx])).item()
 
         
-        # Calculate KL divergence for each chunk position
+    # Calculate KL divergence for each chunk position
         for target_chunk_idx, target_token_range in enumerate(chunk_token_ranges):
             # Get KL divergence over tokens in target chunk
             kl_values = []
@@ -481,43 +515,38 @@ def compute_suppression_kl_matrix2(
                         baseline_logits_list[token_idx],
                         suppressed_logits_list[token_idx],
                         temperature=temperature,
-                        top_p=p_nucleus
+                        top_p=p_nucleus,
+                        sparse_top_p=sparse_top_p_env
                     )
                     if not np.isnan(kl) and kl >= 0:
                         kl_values.append(kl)
             
             if kl_values:
                 mean_kl = np.mean(kl_values)
-                raw_mean_kl = mean_kl  # Save for debugging
-                
-                # Apply log transform if requested
-                # Note: Only take log if KL > 0 to avoid log(0) = -inf
                 if take_log:
                     if mean_kl > 1e-10:
                         mean_kl = np.log(mean_kl)
                     else:
-                        # KL is essentially 0, keep as is or use small negative
-                        mean_kl = np.log(1e-10)  # -23.03
-                
+                        mean_kl = np.log(1e-10)
                 sentence_sentence_scores[target_chunk_idx, chunk_idx] = mean_kl
-                
             else:
-                # No valid KL values - set to nan
                 sentence_sentence_scores[target_chunk_idx, chunk_idx] = np.nan
+
+        # Quick per-chunk suppression summary
+        non_nan = sentence_sentence_scores[:, chunk_idx][~np.isnan(sentence_sentence_scores[:, chunk_idx])]
+        if non_nan.size:
+            print(f"[chunk {chunk_idx}] mean_effect={non_nan.mean():.6f} max_effect={non_nan.max():.6f} min_effect={non_nan.min():.6f}")
+        else:
+            print(f"[chunk {chunk_idx}] all NaN effects (suppression may have failed)")
     
+    # If matrix is entirely NaN or zeros, emit a warning suggesting alternate strategy
+    if np.nanmax(sentence_sentence_scores) <= 0:
+        print("[warn] KL matrix has no positive entries. Attention masking produced no effect; check token ranges or layer/head coverage.")
     return sentence_sentence_scores
 
 
 
 if __name__ == "__main__":
-    problem_num = 2238
-    model_name = "qwen-15b"
-    is_correct = True  # Use correct solutions
-
-    output_file = get_suppression_KL_matrix(
-        problem_num=problem_num,
-        p_nucleus=0.9999,
-        model_name=model_name,
-        is_correct=is_correct,
-    )
+    # Simple smoke message; direct module execution no longer runs heavy suppression routine.
+    print("attn_supp_funcs module loaded. Use compute_suppression_kl_matrix2() via process pipeline.")
 
