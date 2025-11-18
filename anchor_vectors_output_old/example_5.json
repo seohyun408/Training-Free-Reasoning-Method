@@ -1,0 +1,51 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/two_col_102544.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is Google's annual revenue? Answer the question using a single word or phrase.",
+      "reasoning_text": "<1> Google's revenue, as shown in the bar chart, is clearly labeled at the end of its bar as 1,913.85 million euros, making it the highest among all listed entities.  \n<2> The horizontal axis indicates revenue in million euros, and Google's bar extends to the far right, confirming its dominance in this dataset.  \n<3> No other company listed comes close to Google's 1,913.85 million euros, with the second-highest, iTunes, trailing at 368.77 million euros.  \n<final>1913.85 million euros",
+      "raw_generation": [
+        "1913.85 million euros\n\n1. The bar chart clearly labels Google at the top with a revenue value of 1913.85, indicating its annual revenue in million euros.\n2. The x-axis is labeled \"Revenue in million euros,\" confirming the unit of measurement for the values shown.\n3. Google's bar is the longest, visually representing its significantly higher revenue compared to all other listed companies.\n\n<final>1913.85 million euros</final>",
+        "<1> Google's revenue, as shown in the bar chart, is clearly labeled at the end of its bar as 1,913.85 million euros, making it the highest among all listed entities.  \n<2> The horizontal axis indicates revenue in million euros, and Google's bar extends to the far right, confirming its dominance in this dataset.  \n<3> No other company listed comes close to Google's 1,913.85 million euros, with the second-highest, iTunes, trailing at 368.77 million euros.  \n<final>1913.85 million euros"
+      ],
+      "chunks": [
+        "<1> Google's revenue, as shown in the bar chart, is clearly labeled at the end of its bar as 1,913.85 million euros, making it the highest among all listed entities.",
+        "<2> The horizontal axis indicates revenue in million euros, and Google's bar extends to the far right, confirming its dominance in this dataset.",
+        "<3> No other company listed comes close to Google's 1,913.85 million euros, with the second-highest, iTunes, trailing at 368.77 million euros.",
+        "<final>1913.85 million euros"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          87
+        ],
+        [
+          88,
+          117
+        ],
+        [
+          118,
+          162
+        ],
+        [
+          163,
+          175
+        ]
+      ],
+      "anchor_vector": [
+        13.328483855255136,
+        10.968980731386127,
+        7.645924886067708,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ]
+    }
+  ],
+  "example_idx": 5
+}

@@ -1,0 +1,106 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/multi_col_100056.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIdentify the category, that recorded 35% and 15% ? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart displays five categories on the x-axis: Convenience, Customer service, Product availability, Product quality, and Value for money.\n2. The blue segment of each bar represents the percentage of respondents who rated the category 4/5, and the dark segment represents those who rated it 5/5.\n3. The bar for \"Product availability\" shows a blue segment labeled \"35%\" and a dark segment labeled \"15%\", matching the given percentages.\n</reasoning>\n<final>Product availability</final>",
+      "raw_generation": [
+        "1. The bar chart displays customer satisfaction ratings across five categories, with percentages indicating the share of respondents.  \n2. The category labeled \"Product availability\" shows two segments: 35% for \"Rated 4/5\" and 15% for \"Rated 5/5\".  \n3. These percentages directly correspond to the \"Product availability\" category, making it the correct answer.  \n<final>Product availability</final>",
+        "<reasoning>\n1. The bar chart displays five categories on the x-axis: Convenience, Customer service, Product availability, Product quality, and Value for money.\n2. The blue segment of each bar represents the percentage of respondents who rated the category 4/5, and the dark segment represents those who rated it 5/5.\n3. The bar for \"Product availability\" shows a blue segment labeled \"35%\" and a dark segment labeled \"15%\", matching the given percentages.\n</reasoning>\n<final>Product availability</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart displays five categories on the x-axis: Convenience, Customer service, Product availability, Product quality, and Value for money.",
+        "2. The blue segment of each bar represents the percentage of respondents who rated the category 4/5, and the dark segment represents those who rated it 5/5.",
+        "3. The bar for \"Product availability\" shows a blue segment labeled \"35%\" and a dark segment labeled \"15%\", matching the given percentages.",
+        "</reasoning>\n<final>Product availability</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          68
+        ],
+        [
+          68,
+          95
+        ],
+        [
+          95,
+          131
+        ],
+        [
+          131,
+          163
+        ],
+        [
+          163,
+          175
+        ]
+      ],
+      "anchor_vector": [
+        9.224324120415583,
+        9.512638798466435,
+        8.869534810384115,
+        8.756510416666666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ]
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the average of all the blue bars ? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The blue bars represent the percentage of respondents who rated each category as 4/5, with values of 34%, 36%, 35%, 45%, and 27% for Convenience, Customer service, Product availability, Product quality, and Value for money respectively.\n2. Adding these percentages together yields a total of 187%, as 34 + 36 + 35 + 45 + 27 equals 187.\n3. Dividing this total by the five categories gives an average of 37.4%, which is the mean value of all the blue bars.\n</reasoning>\n<final>37.4%</final>",
+      "raw_generation": [
+        "36.2%",
+        "<reasoning>\n1. The blue bars represent the percentage of respondents who rated each category as 4/5, with values of 34%, 36%, 35%, 45%, and 27% for Convenience, Customer service, Product availability, Product quality, and Value for money respectively.\n2. Adding these percentages together yields a total of 187%, as 34 + 36 + 35 + 45 + 27 equals 187.\n3. Dividing this total by the five categories gives an average of 37.4%, which is the mean value of all the blue bars.\n</reasoning>\n<final>37.4%</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The blue bars represent the percentage of respondents who rated each category as 4/5, with values of 34%, 36%, 35%, 45%, and 27% for Convenience, Customer service, Product availability, Product quality, and Value for money respectively.",
+        "2. Adding these percentages together yields a total of 187%, as 34 + 36 + 35 + 45 + 27 equals 187.",
+        "3. Dividing this total by the five categories gives an average of 37.4%, which is the mean value of all the blue bars.",
+        "</reasoning>\n<final>37.4%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          54
+        ],
+        [
+          54,
+          114
+        ],
+        [
+          114,
+          155
+        ],
+        [
+          155,
+          186
+        ],
+        [
+          186,
+          200
+        ]
+      ],
+      "anchor_vector": [
+        12.26961693635283,
+        11.845130397034433,
+        12.156302878384217,
+        8.369489397321429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ]
+    }
+  ],
+  "example_idx": 1
+}

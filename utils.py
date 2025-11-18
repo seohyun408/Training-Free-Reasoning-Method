@@ -35,18 +35,92 @@ def extract_reasoning_from_response(gpt_response: str) -> str:
     return gpt_response.strip()
 
 
+def clean_question_with_options(question: str) -> str:
+    """
+    Clean question by properly formatting options that are stuck to the question.
+
+    Examples:
+        "What color?red\nblue\ngreen Please answer..."
+        -> "What color?\n\nOptions:\n- red\n- blue\n- green\n\nPlease answer..."
+
+        "How many?12\n4\n3\n6 Please answer..."
+        -> "How many?\n\nOptions:\n- 12\n- 4\n- 3\n- 6\n\nPlease answer..."
+    """
+    # Find instruction phrases
+    instruction_phrases = ["Please answer", "based on the options", "Answer the question"]
+
+    # Check if question has instruction phrases (indicating possible options)
+    has_instruction = any(phrase in question for phrase in instruction_phrases)
+    if not has_instruction:
+        return question
+
+    # Find the main question ending marker
+    question_markers = ["?", "."]
+
+    for marker in question_markers:
+        if marker in question:
+            parts = question.split(marker, 1)
+            if len(parts) == 2:
+                question_part = parts[0] + marker
+                rest = parts[1].strip()
+
+                # Extract instruction by finding the instruction phrase
+                instruction = None
+                instruction_pos = -1
+                for phrase in instruction_phrases:
+                    pos = rest.find(phrase)
+                    if pos != -1:
+                        instruction = rest[pos:].strip()
+                        instruction_pos = pos
+                        break
+
+                if instruction is None or instruction_pos == -1:
+                    continue
+
+                # Everything between question and instruction is potential options
+                options_text = rest[:instruction_pos].strip()
+
+                if not options_text:
+                    continue
+
+                # Split by newlines and filter for short option-like strings
+                lines = options_text.split("\n")
+                options = []
+
+                for line in lines:
+                    line_stripped = line.strip()
+                    # Check if this looks like an option
+                    # Options are typically: short (< 50 chars), 1-3 words/tokens
+                    tokens = line_stripped.split()
+                    if line_stripped and len(tokens) <= 3 and len(line_stripped) < 50:
+                        options.append(line_stripped)
+
+                # If we found 2+ options, reformat
+                if len(options) >= 2:
+                    cleaned = question_part + "\n\nOptions:\n"
+                    for opt in options:
+                        cleaned += f"- {opt}\n"
+                    cleaned += f"\n{instruction}"
+                    return cleaned
+
+    # No options found or no reformatting needed
+    return question
+
+
 def extract_qa_pairs(conversation: List[Dict]) -> List[Tuple[str, str]]:
     qa_pairs = []
     current_question = None
-    
+
     for turn in conversation:
         if turn.get("from") == "human":
-            current_question = turn.get("value", "")
+            raw_question = turn.get("value", "")
+            # Clean the question to properly format options
+            current_question = clean_question_with_options(raw_question)
         elif turn.get("from") == "gpt" and current_question is not None:
             gpt_response = turn.get("value", "")
             qa_pairs.append((current_question, gpt_response))
             current_question = None
-    
+
     return qa_pairs
 
 

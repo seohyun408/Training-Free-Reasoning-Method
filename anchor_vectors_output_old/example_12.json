@@ -1,0 +1,51 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/coco/train2017/000000569618.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat fraction of pizza is shown? \nA. 1/3 \nB. 1/1 \nC. 1/4 \nD. 1/2",
+      "reasoning_text": "1. The pizza is visibly cut into slices, with approximately half of the pie remaining on the metal tray, while the other half is missing or removed.  \n2. The crust edge and cheese distribution are symmetrical across the tray’s centerline, confirming equal division.  \n3. The missing portion is not visible, but its size matches the visible half, indicating exactly half of the pizza remains.  \n<final>D. 1/2</final>",
+      "raw_generation": [
+        "1. The pizza is visibly cut into slices, with approximately half of the pie remaining on the tray, while the other half is missing or off-screen.  \n2. The visible portion covers roughly half the circular area of the tray, indicating an even division between what’s shown and what’s not.  \n3. The crust and toppings are uniformly distributed across the visible half, confirming the remaining portion equals the missing portion.  \n\n<final>D. 1/2</final>",
+        "1. The pizza is visibly cut into slices, with approximately half of the pie remaining on the metal tray, while the other half is missing or removed.  \n2. The crust edge and cheese distribution are symmetrical across the tray’s centerline, confirming equal division.  \n3. The missing portion is not visible, but its size matches the visible half, indicating exactly half of the pizza remains.  \n<final>D. 1/2</final>"
+      ],
+      "chunks": [
+        "1. The pizza is visibly cut into slices, with approximately half of the pie remaining on the metal tray, while the other half is missing or removed.",
+        "2. The crust edge and cheese distribution are symmetrical across the tray’s centerline, confirming equal division.",
+        "3. The missing portion is not visible, but its size matches the visible half, indicating exactly half of the pizza remains.",
+        "<final>D. 1/2</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          80,
+          111
+        ],
+        [
+          112,
+          134
+        ],
+        [
+          135,
+          160
+        ],
+        [
+          161,
+          172
+        ]
+      ],
+      "anchor_vector": [
+        15.013131510416668,
+        12.345433238636364,
+        8.088955965909092,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ]
+    }
+  ],
+  "example_idx": 12
+}

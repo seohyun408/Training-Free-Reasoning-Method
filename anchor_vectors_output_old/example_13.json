@@ -1,0 +1,51 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2067.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat would happen to the earthworms if the bluestem disappeared?can't predict\nincrease\nstay the same\ndecrease Please answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The earthworms in the diagram are labeled as decomposers, which rely on organic matter from dead organisms and plant material for sustenance.  \n2. If bluestem, a primary producer, disappeared, less organic material would be available for decomposition, directly reducing the food supply for earthworms.  \n3. Consequently, the earthworm population would likely decline due to insufficient nourishment and energy sources, making \"decrease\" the correct prediction.  \n\n<final>decrease</final>",
+      "raw_generation": [
+        "1. The bluestem, as a producer, forms the base of the food chain, supplying energy to primary consumers like grasshoppers, which in turn feed decomposers such as earthworms.  \n2. Without bluestem, primary consumers would lose their main food source, reducing their population and subsequently decreasing the food available for decomposers like earthworms.  \n3. Earthworms rely on organic matter from decaying plants, so a decline in plant biomass from bluestem disappearance would directly reduce their food supply, leading to a population decrease.  \n\n<final>decrease</final>",
+        "1. The earthworms in the diagram are labeled as decomposers, which rely on organic matter from dead organisms and plant material for sustenance.  \n2. If bluestem, a primary producer, disappeared, less organic material would be available for decomposition, directly reducing the food supply for earthworms.  \n3. Consequently, the earthworm population would likely decline due to insufficient nourishment and energy sources, making \"decrease\" the correct prediction.  \n\n<final>decrease</final>"
+      ],
+      "chunks": [
+        "1. The earthworms in the diagram are labeled as decomposers, which rely on organic matter from dead organisms and plant material for sustenance.",
+        "2. If bluestem, a primary producer, disappeared, less organic material would be available for decomposition, directly reducing the food supply for earthworms.",
+        "3. Consequently, the earthworm population would likely decline due to insufficient nourishment and energy sources, making \"decrease\" the correct prediction.",
+        "<final>decrease</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          84,
+          115
+        ],
+        [
+          116,
+          148
+        ],
+        [
+          149,
+          178
+        ],
+        [
+          179,
+          187
+        ]
+      ],
+      "anchor_vector": [
+        8.008203616087464,
+        9.002849710398706,
+        8.392822265625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ]
+    }
+  ],
+  "example_idx": 13
+}

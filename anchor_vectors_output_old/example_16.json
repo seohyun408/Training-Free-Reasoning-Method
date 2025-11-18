@@ -1,0 +1,51 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/coco/train2017/000000292543.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the man doing with the beans?\nA. cooking\nB. eating them\nC. counting\nD. selling them\nAnswer with the option's letter from the given choices directly.",
+      "reasoning_text": "1. The man is standing beside a cart overflowing with green beans, indicating he is likely involved in their commercial distribution.  \n2. His posture and location near the cart suggest he is engaging with customers or managing inventory, not preparing or consuming the beans.  \n3. The presence of other shoppers and market stalls implies this is a marketplace setting where goods are traded for money.  \n<final>D</final>",
+      "raw_generation": [
+        "1. The man is standing beside a cart loaded with green beans, suggesting he is involved in their commercial handling rather than personal consumption or preparation.  \n2. His posture and proximity to the beans, along with the presence of other market vendors and shoppers, indicate a commercial transaction is occurring.  \n3. The beans are displayed prominently on the cart, a common practice for vendors to attract customers, reinforcing the idea that he is selling them.  \n\n<final>D</final>",
+        "1. The man is standing beside a cart overflowing with green beans, indicating he is likely involved in their commercial distribution.  \n2. His posture and location near the cart suggest he is engaging with customers or managing inventory, not preparing or consuming the beans.  \n3. The presence of other shoppers and market stalls implies this is a marketplace setting where goods are traded for money.  \n<final>D</final>"
+      ],
+      "chunks": [
+        "1. The man is standing beside a cart overflowing with green beans, indicating he is likely involved in their commercial distribution.",
+        "2. His posture and location near the cart suggest he is engaging with customers or managing inventory, not preparing or consuming the beans.",
+        "3. The presence of other shoppers and market stalls implies this is a marketplace setting where goods are traded for money.",
+        "<final>D</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          86,
+          110
+        ],
+        [
+          111,
+          137
+        ],
+        [
+          138,
+          161
+        ],
+        [
+          162,
+          168
+        ]
+      ],
+      "anchor_vector": [
+        14.637715566827213,
+        12.694505774456522,
+        14.7431640625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ]
+    }
+  ],
+  "example_idx": 16
+}

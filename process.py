@@ -102,16 +102,26 @@ def process_dataset_sample(
                 found_path = cand
                 break
 
-        # Fallback: recursive search (expensive) limited to depth if not found
+        # Fallback: recursive search with path validation
         if found_path is None and images_root:
             try:
-                # Search by filename only (e.g., image.png or multi_col_100056.png)
+                # Extract expected subdirectory from image_field (e.g., "geoqa+/images" from "geoqa+/images/8598.png")
+                # This ensures we match the correct directory structure
                 filename = os.path.basename(image_field)
-                # Limit to first match
+                expected_subpath = os.path.dirname(image_field)  # e.g., "geoqa+/images"
+
+                # Only search within the expected subdirectory structure
                 for root, dirs, files in os.walk(images_root):
                     if filename in files:
-                        found_path = os.path.join(root, filename)
-                        break
+                        candidate_path = os.path.join(root, filename)
+                        # Verify that the found path contains the expected subdirectory structure
+                        if expected_subpath and expected_subpath in candidate_path:
+                            found_path = candidate_path
+                            break
+                        elif not expected_subpath:
+                            # No subdirectory specified, accept first match
+                            found_path = candidate_path
+                            break
             except Exception:
                 pass
         if found_path is None:
@@ -216,7 +226,7 @@ def _generate_reasoning_with_model(question, image, model, processor, tokenizer,
                     top_p=0.9 if allow_sampling else None,
                     eos_token_id=eos_id,
                     pad_token_id=eos_id,
-                    use_cache=True,
+                    use_cache=True
                 )
             except RuntimeError as e:
                 print(f"[gen-error] attempt={attempt}: {e}")
@@ -247,7 +257,9 @@ def _generate_reasoning_with_model(question, image, model, processor, tokenizer,
         else:
             inputs = dict(inputs)
         inputs = {k: (v.to(device) if hasattr(v, "to") else v) for k, v in inputs.items()}
-        generated_ids = _run_generate(first_pass_max, attempt=attempt_idx, allow_sampling=is_thinking or attempt_idx>0)
+        gen_output = _run_generate(first_pass_max, attempt=attempt_idx, allow_sampling=is_thinking or attempt_idx>0)
+        generated_ids = gen_output
+
         input_len = inputs.get("input_ids").shape[-1] if inputs.get("input_ids") is not None else 0
         decoder = tokenizer if hasattr(tokenizer, "batch_decode") else processor
         try:
@@ -436,7 +448,7 @@ def process_qa_pair(
         model=model,
         processor=processor,
         tokenizer=tokenizer,
-        text=full_text,
+        text=full_text,  # Full text (question + reasoning) for teacher forcing analysis
         image=image,
         chunks=chunks,
         chunk_token_ranges=chunk_token_ranges,

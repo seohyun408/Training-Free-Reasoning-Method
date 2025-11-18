@@ -1,0 +1,33 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/two_col_62742.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat confectionery company had the most revenue in 2016? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>Lindt & Sprungli</final>",
+      "raw_generation": [
+        "1. The bar chart displays percentage changes in revenue for confectionery companies, not absolute revenue figures, making direct comparison impossible without additional data.\n2. Lindt & Sprungli shows the highest percentage change at 16.8%, but this does not indicate the largest absolute revenue.\n3. The chart lacks information on total revenue amounts or market share, so identifying the company with the most revenue in 2016 cannot be determined from this image.\n\n<final>Cannot be determined</final>",
+        "<final>Lindt & Sprungli</final>"
+      ],
+      "chunks": [
+        "<final>Lindt & Sprungli</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          72
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ]
+    }
+  ],
+  "example_idx": 9
+}

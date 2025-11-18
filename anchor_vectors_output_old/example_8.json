@@ -1,0 +1,51 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2578.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many months are between the Solstices?12\n4\n3\n6 Please answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows Earth’s orbit around the Sun with key dates: June 21 (Summer Solstice), Dec 22 (Winter Solstice), and equinoxes on March 21 and Sept 22.  \n2. Counting from June 21 to Dec 22, there are exactly six months—July, August, September, October, November, and December—between the solstices.  \n3. The other options are incorrect because 12 months would be a full year, 4 months is too short, and 3 months is also insufficient for the seasonal cycle shown.  \n<final>6</final>",
+      "raw_generation": [
+        "1. The diagram shows Earth’s orbit around the Sun with key dates: June 21 (Summer Solstice), December 22 (Winter Solstice), and equinoxes on March 21 and September 22.  \n2. From June 21 to December 22 spans six months: July, August, September, October, November, and December.  \n3. The diagram’s orbital path and labeled dates confirm that the time between solstices is exactly six months, not four or three.  \n\n<final>6</final>",
+        "1. The diagram shows Earth’s orbit around the Sun with key dates: June 21 (Summer Solstice), Dec 22 (Winter Solstice), and equinoxes on March 21 and Sept 22.  \n2. Counting from June 21 to Dec 22, there are exactly six months—July, August, September, October, November, and December—between the solstices.  \n3. The other options are incorrect because 12 months would be a full year, 4 months is too short, and 3 months is also insufficient for the seasonal cycle shown.  \n<final>6</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows Earth’s orbit around the Sun with key dates: June 21 (Summer Solstice), Dec 22 (Winter Solstice), and equinoxes on March 21 and Sept 22.",
+        "2. Counting from June 21 to Dec 22, there are exactly six months—July, August, September, October, November, and December—between the solstices.",
+        "3. The other options are incorrect because 12 months would be a full year, 4 months is too short, and 3 months is also insufficient for the seasonal cycle shown.",
+        "<final>6</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          66,
+          114
+        ],
+        [
+          115,
+          155
+        ],
+        [
+          156,
+          194
+        ],
+        [
+          195,
+          202
+        ]
+      ],
+      "anchor_vector": [
+        12.352894729958441,
+        15.686574835526315,
+        13.3984375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ]
+    }
+  ],
+  "example_idx": 8
+}

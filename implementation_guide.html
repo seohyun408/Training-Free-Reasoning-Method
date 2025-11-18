@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought Anchor 구현 가이드 - Qwen3-VL + LLaVA-CoT</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #764ba2;
+            margin-top: 25px;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .info-box {
+            background: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .warning-box {
+            background: #fff3e0;
+            border-left: 5px solid #ff9800;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .success-box {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .code-block {
+            background: #263238;
+            color: #aed581;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .code-block .comment {
+            color: #78909c;
+        }
+        .code-block .keyword {
+            color: #c792ea;
+        }
+        .code-block .string {
+            color: #c3e88d;
+        }
+        .code-block .function {
+            color: #82aaff;
+        }
+        .diff-add {
+            background: #e8f5e9;
+            border-left: 3px solid #4caf50;
+            padding: 2px 5px;
+        }
+        .diff-remove {
+            background: #ffebee;
+            border-left: 3px solid #f44336;
+            padding: 2px 5px;
+            text-decoration: line-through;
+        }
+        .file-path {
+            background: #37474f;
+            color: #ffeb3b;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #667eea;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .flow-diagram {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #667eea;
+        }
+        .flow-step {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            position: relative;
+        }
+        .flow-step::after {
+            content: "⬇";
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .flow-step:last-child::after {
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 Thought Anchor 구현 가이드</h1>
+    <p style="text-align: center; color: #666; font-size: 16px;">
+        Qwen3-VL-8B-Instruct + LLaVA-CoT-100k로 VQA Thought Anchor 추출하기
+    </p>
+
+    <div class="section">
+        <h2>📋 개요</h2>
+        <p>
+            이 프로젝트는 <strong>Thought Anchors</strong> 논문의 Method 3 (Attention Suppression)을 사용하여
+            Vision-Language Model의 추론 과정에서 가장 중요한 문장(anchor)을 식별합니다.
+        </p>
+
+        <div class="info-box">
+            <strong>📚 논문:</strong> <a href="https://github.com/interp-reasoning/thought-anchors" target="_blank">Thought Anchors - Interpretable Reasoning</a><br>
+            <strong>🤖 모델:</strong> Qwen/Qwen3-VL-8B-Instruct (Vision-Language Model)<br>
+            <strong>📊 데이터셋:</strong> Xkev/LLaVA-CoT-100k (VQA with reasoning)<br>
+            <strong>🎯 목표:</strong> 추론 과정의 핵심 문장(Thought Anchor) 추출
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔍 핵심 개념: Method 3 (Attention Suppression)</h2>
+
+        <h3>작동 원리</h3>
+        <div class="flow-diagram">
+            <div class="flow-step">
+                <strong>1️⃣ Generation Phase (VQA 추론 생성)</strong><br>
+                모델에 이미지 + 질문을 입력 → Qwen이 추론 과정 생성
+            </div>
+            <div class="flow-step">
+                <strong>2️⃣ Chunk Splitting (문장 분할)</strong><br>
+                생성된 추론을 문장 단위로 분할 (최소 5 토큰)
+            </div>
+            <div class="flow-step">
+                <strong>3️⃣ Suppression Analysis (억제 분석)</strong><br>
+                각 문장을 하나씩 억제하면서 후속 문장들의 확률 분포 변화 측정
+            </div>
+            <div class="flow-step">
+                <strong>4️⃣ KL Divergence Computation</strong><br>
+                KL(P || Q) = Σ P(x) log(P(x)/Q(x)) 계산<br>
+                P = 정상 확률 분포, Q = 억제 시 확률 분포
+            </div>
+            <div class="flow-step">
+                <strong>5️⃣ Anchor Vector Extraction</strong><br>
+                각 문장이 후속 문장에 미치는 평균 영향력 계산<br>
+                → 높을수록 중요한 Anchor!
+            </div>
+        </div>
+
+        <h3>수식</h3>
+        <div class="code-block">
+<span class="comment"># KL Divergence (확률 분포 간 차이)</span>
+KL(P || Q) = Σ P(token) × log(P(token) / Q(token))
+
+<span class="comment"># KL Matrix[i, j] = 문장 j를 억제했을 때 문장 i에 미치는 영향</span>
+KL_matrix[i, j] = KL(P_normal[i] || P_suppressed_j[i])
+
+<span class="comment"># Anchor Vector (문장 i가 후속 문장들에 미치는 평균 영향)</span>
+Anchor[i] = mean(KL_matrix[j, i]) for all j > i
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🏗️ 2단계 프로세스</h2>
+
+        <h3>Stage 1: Generation Phase (VQA 추론 생성)</h3>
+        <div class="success-box">
+            <strong>✅ Qwen이 실제로 VQA 추론을 생성하는 단계입니다!</strong>
+        </div>
+
+        <div class="file-path">process.py:348-356</div>
+        <div class="code-block">
+<span class="keyword">def</span> <span class="function">process_qa_pair</span>(question, gpt_response, model, processor, ...):
+    <span class="comment"># 1️⃣ Qwen으로 추론 생성 (이미지 + 질문)</span>
+    <span class="keyword">if</span> generate_reasoning:
+        reasoning_source_text, raw_generations_local, template_text_used = _generate_reasoning_with_model(
+            question=question,      <span class="comment"># ✅ 질문</span>
+            image=image,           <span class="comment"># ✅ 이미지</span>
+            model=model,
+            processor=processor,
+            tokenizer=tokenizer,
+            device=device,
+            model_name=model_name
+        )
+
+    <span class="comment"># 2️⃣ 추론 텍스트 추출</span>
+    reasoning_text = extract_reasoning_from_response(reasoning_source_text)
+
+    <span class="comment"># 예시 결과:</span>
+    <span class="comment"># "&lt;think&gt;1. 차트에서 막대의 높이를 확인합니다. 2. 각 값을 비교하면...</span>
+    <span class="comment">#  3. 따라서 정답은 B입니다.&lt;/think&gt;&lt;final&gt;B&lt;/final&gt;"</span>
+        </div>
+
+        <h3>Stage 2: Analysis Phase (Thought Anchor 추출)</h3>
+        <div class="info-box">
+            <strong>🔬 생성된 추론을 Teacher Forcing으로 분석하는 단계입니다</strong><br>
+            생성된 reasoning을 full_text에 포함하여 각 문장의 인과적 영향력을 측정합니다.
+        </div>
+
+        <div class="file-path">process.py:402-447</div>
+        <div class="code-block">
+    <span class="comment"># 3️⃣ Full Text 구성 (질문 + 생성된 추론)</span>
+    full_text = question + <span class="string">"\n\n"</span> + reasoning_text
+
+    <span class="comment"># 4️⃣ 문장 단위로 분할 (최소 5 토큰)</span>
+    chunks = split_solution_into_chunks(reasoning_text, tokenizer=tokenizer, min_tokens=5)
+
+    <span class="comment"># 5️⃣ 각 chunk의 토큰 범위 계산</span>
+    chunk_token_ranges = get_chunk_token_ranges_with_offsets(
+        full_text=full_text,
+        reasoning_text=reasoning_text,
+        chunks=chunks,
+        tokenizer=tokenizer
+    )
+
+    <span class="comment"># 6️⃣ KL Divergence Matrix 계산 (Attention Suppression)</span>
+    kl_matrix = compute_suppression_kl_matrix2(
+        model=model,
+        processor=processor,
+        tokenizer=tokenizer,
+        text=full_text,        <span class="comment"># ✅ 질문 + 추론 전체 (Teacher Forcing)</span>
+        image=image,           <span class="comment"># ✅ 이미지 (동일한 이미지 사용)</span>
+        chunks=chunks,
+        chunk_token_ranges=chunk_token_ranges,
+        device=device,
+        suppression_strategy=<span class="string">"attn"</span>  <span class="comment"># Method 3: Attention Suppression</span>
+    )
+
+    <span class="comment"># 7️⃣ Anchor Vector 계산</span>
+    anchor_vector = compute_anchor_vector(kl_matrix, method=<span class="string">"outgoing"</span>)
+        </div>
+
+        <div class="warning-box">
+            <strong>⚠️ 왜 full_text를 사용하나요?</strong><br><br>
+
+            <strong>1. Teacher Forcing 분석:</strong> 생성된 추론 전체를 모델에 주고, 각 문장을 억제했을 때의 영향을 측정합니다.<br>
+
+            <strong>2. Causal Attention 보장:</strong> Transformer의 causal attention mask 덕분에 각 토큰은 이전 토큰만 참조합니다.
+            따라서 문장 i를 억제하면 문장 j (j > i)에만 영향을 미칩니다.<br>
+
+            <strong>3. 정확한 토큰 범위:</strong> full_text로 토큰화해야 각 chunk의 정확한 토큰 인덱스를 알 수 있습니다.<br>
+
+            <strong>4. 이미지 토큰 포함:</strong> Qwen3-VL은 multimodal이므로 텍스트에 &lt;|vision_start|&gt; 같은
+            이미지 placeholder가 포함됩니다. 실제 이미지를 함께 전달해야 올바른 확률 분포를 얻습니다.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔧 주요 코드 수정 사항</h2>
+
+        <h3>1. Qwen3-VL 모델 지원 추가</h3>
+        <div class="file-path">whitebox-analyses/pytorch_models/hooks.py:296-330</div>
+
+        <p><strong>문제:</strong> 기존 코드는 Qwen2만 지원 (prefix: "model.layers")</p>
+        <p><strong>해결:</strong> Qwen3-VL도 지원 (prefix: "layers")</p>
+
+        <div class="code-block">
+<span class="comment"># ❌ Before: Qwen2만 지원</span>
+<span class="diff-remove">module_prefix = "model.layers"</span>
+<span class="diff-remove">rotary_emb_module = self.model.model.rotary_emb</span>
+
+<span class="comment"># ✅ After: Qwen2 + Qwen3-VL 지원</span>
+<span class="diff-add">module_prefix_options = ["model.layers", "layers"]  # Qwen2, Qwen3-VL</span>
+
+<span class="comment"># Try multiple paths for rotary_emb</span>
+<span class="diff-add">if hasattr(self.model, "model") and hasattr(self.model.model, "rotary_emb"):</span>
+<span class="diff-add">    rotary_emb_module = self.model.model.rotary_emb  # Qwen2</span>
+<span class="diff-add">elif hasattr(self.model, "rotary_emb"):</span>
+<span class="diff-add">    rotary_emb_module = self.model.rotary_emb  # Qwen3-VL</span>
+
+<span class="keyword">for</span> name, module <span class="keyword">in</span> self.model.named_modules():
+    matched_prefix = <span class="keyword">None</span>
+    <span class="keyword">for</span> prefix <span class="keyword">in</span> module_prefix_options:
+        <span class="keyword">if</span> name.startswith(prefix) <span class="keyword">and</span> name.endswith(attn_suffix):
+            matched_prefix = prefix
+            <span class="keyword">break</span>
+
+    <span class="keyword">if</span> matched_prefix:
+        <span class="comment"># Extract layer index based on prefix</span>
+        <span class="keyword">if</span> matched_prefix == <span class="string">"model.layers"</span>:
+            layer_idx_str = name.split(<span class="string">"."</span>)[2]  <span class="comment"># Qwen2</span>
+        <span class="keyword">else</span>:  <span class="comment"># "layers"</span>
+            layer_idx_str = name.split(<span class="string">"."</span>)[1]  <span class="comment"># Qwen3-VL</span>
+        </div>
+
+        <h3>2. 추론 생성 품질 개선</h3>
+        <div class="file-path">process.py:159-311</div>
+
+        <table>
+            <tr>
+                <th>항목</th>
+                <th>Before</th>
+                <th>After</th>
+                <th>이유</th>
+            </tr>
+            <tr>
+                <td>MAX_NEW_TOKENS</td>
+                <td>96</td>
+                <td>256</td>
+                <td>더 긴 추론 생성 허용</td>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td>0.6</td>
+                <td>0.8</td>
+                <td>더 다양한 추론 생성</td>
+            </tr>
+            <tr>
+                <td>System Prompt</td>
+                <td>복잡한 다단계 지시</td>
+                <td>간단하고 명확한 지시</td>
+                <td>"..." placeholder 방지</td>
+            </tr>
+        </table>
+
+        <div class="code-block">
+<span class="comment"># 개선된 System Prompt</span>
+system_prompt = (
+    <span class="string">"You are a helpful vision assistant analyzing images. "</span>
+    <span class="string">"Please provide your reasoning in &lt;think&gt;...&lt;/think&gt; tags with EXACTLY 3 numbered steps (1., 2., 3.). "</span>
+    <span class="string">"Each step should be a complete sentence (15-40 words) that describes specific details from the image. "</span>
+    <span class="string">"DO NOT use ellipsis (...) or placeholder text. Make each step concrete and informative. "</span>
+    <span class="string">"After reasoning, provide the final answer in &lt;final&gt;...&lt;/final&gt; tags."</span>
+)
+        </div>
+
+        <h3>3. 토큰 기반 Chunk 병합</h3>
+        <div class="file-path">utils.py:53-132</div>
+
+        <p><strong>문제:</strong> 너무 짧은 chunk (< 5 tokens)는 의미 없는 KL divergence 생성</p>
+        <p><strong>해결:</strong> 최소 5 토큰 보장하도록 인접 chunk와 병합</p>
+
+        <div class="code-block">
+<span class="keyword">def</span> <span class="function">split_solution_into_chunks</span>(solution_text: str, tokenizer=<span class="keyword">None</span>, min_tokens: int = 5):
+    <span class="comment"># 1. 문장 단위로 분할</span>
+    chunks = <span class="function">re.split</span>(<span class="string">r'(?&lt;=[.!?])\s+'</span>, solution_text)
+
+    <span class="comment"># 2. 토큰 기반 병합 (최소 5 토큰 보장)</span>
+    <span class="keyword">if</span> tokenizer <span class="keyword">is not None</span> <span class="keyword">and</span> min_tokens > 0:
+        i = 0
+        <span class="keyword">while</span> i &lt; <span class="function">len</span>(chunks):
+            tokens = tokenizer.encode(chunks[i], add_special_tokens=<span class="keyword">False</span>)
+            token_count = <span class="function">len</span>(tokens)
+
+            <span class="keyword">if</span> token_count &lt; min_tokens:
+                <span class="comment"># 다음 chunk와 병합</span>
+                <span class="keyword">if</span> i &lt; <span class="function">len</span>(chunks) - 1:
+                    chunks[i] = chunks[i] + <span class="string">" "</span> + chunks[i + 1]
+                    chunks.pop(i + 1)
+                <span class="comment"># 마지막 chunk면 이전 chunk와 병합</span>
+                <span class="keyword">elif</span> i > 0:
+                    chunks[i - 1] = chunks[i - 1] + <span class="string">" "</span> + chunks[i]
+                    chunks.pop(i)
+            <span class="keyword">else</span>:
+                i += 1
+
+    <span class="keyword">return</span> chunks
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📊 결과 해석</h2>
+
+        <h3>Anchor Score가 의미하는 것</h3>
+        <div class="info-box">
+            <strong>Anchor Score = 해당 문장이 후속 문장들에 미치는 평균 KL Divergence</strong><br><br>
+
+            📈 <strong>높은 점수 (예: 14.33):</strong> 이 문장을 억제하면 후속 문장들의 확률 분포가 크게 변화<br>
+            → 추론 체인에서 매우 중요한 anchor 역할<br><br>
+
+            📉 <strong>낮은 점수 (예: 0.42):</strong> 이 문장을 억제해도 후속 문장들이 별로 영향받지 않음<br>
+            → 보조적인 정보나 부가 설명<br><br>
+
+            ⚠️ <strong>0점:</strong> 마지막 문장이거나 후속 문장이 없음 (영향을 미칠 대상이 없음)
+        </div>
+
+        <h3>실제 결과 예시</h3>
+        <div class="code-block">
+<span class="comment"># Example 1 (chartqa)</span>
+🏆 Thought Anchor Rankings:
+
+Rank 1 (Sentence 2): Score: 14.33
+  "Therefore, the correct answer is B"
+  → 최종 답변으로 가장 중요한 anchor
+
+Rank 2 (Sentence 1): Score: 14.05
+  "Comparing the bar heights, we can see that option B (85%) matches the chart."
+  → 핵심 비교 로직
+
+Rank 3 (Sentence 0): Score: 0.42
+  "Looking at the bar chart, I can identify the values for each category."
+  → 단순 관찰 문장, 영향력 낮음
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🚀 실행 방법</h2>
+
+        <h3>1. 환경 설정</h3>
+        <div class="code-block">
+<span class="comment"># 필수 패키지 설치</span>
+pip install torch transformers datasets pillow tqdm
+
+<span class="comment"># GPU 메모리 확인</span>
+nvidia-smi
+        </div>
+
+        <h3>2. 데이터셋 및 모델 경로 설정</h3>
+        <div class="code-block">
+<span class="comment"># main.py에서 기본값 확인</span>
+--dataset-name <span class="string">"Xkev/LLaVA-CoT-100k"</span>
+--images-root <span class="string">"/mnt/hdd/llava/llava-cot-100k/extracted"</span>
+--model-name <span class="string">"Qwen/Qwen3-VL-8B-Instruct"</span>
+--gpu-id 1
+        </div>
+
+        <h3>3. 실행</h3>
+        <div class="code-block">
+<span class="comment"># 5개 샘플로 테스트</span>
+python main.py \
+    --dataset-split <span class="string">"train[:30]"</span> \
+    --max-samples 5 \
+    --max-new-tokens 256 \
+    --gpu-id 1
+
+<span class="comment"># 결과 확인</span>
+ls -lh anchor_vectors_output/
+        </div>
+
+        <h3>4. 결과 시각화</h3>
+        <div class="code-block">
+<span class="comment"># HTML 리포트 생성</span>
+python generate_report.py
+
+<span class="comment"># Jupyter Notebook으로 확인</span>
+jupyter notebook view_results.ipynb
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🐛 트러블슈팅</h2>
+
+        <h3>문제 1: "No suitable Qwen2-style attention modules found"</h3>
+        <div class="warning-box">
+            <strong>원인:</strong> hooks.py가 Qwen3-VL 구조를 인식하지 못함<br>
+            <strong>해결:</strong> hooks.py의 module_prefix_options에 "layers" 추가됨 (✅ 수정 완료)
+        </div>
+
+        <h3>문제 2: 추론 결과가 "..." placeholder</h3>
+        <div class="warning-box">
+            <strong>원인:</strong> MAX_NEW_TOKENS 너무 짧음 (96), temperature 너무 낮음 (0.6)<br>
+            <strong>해결:</strong> MAX_NEW_TOKENS=256, temperature=0.8로 증가 (✅ 수정 완료)
+        </div>
+
+        <h3>문제 3: Anchor scores가 모두 0</h3>
+        <div class="warning-box">
+            <strong>원인:</strong> Chunk가 너무 짧음 (&lt; 5 tokens) 또는 attention masking 실패<br>
+            <strong>해결:</strong> utils.py에 min_tokens=5 병합 로직 추가 (✅ 수정 완료)
+        </div>
+
+        <h3>문제 4: 이미지 로드 실패</h3>
+        <div class="warning-box">
+            <strong>원인:</strong> 데이터셋 이미지 경로가 올바르지 않음<br>
+            <strong>해결:</strong> --images-root 경로를 실제 이미지 디렉토리로 설정
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📁 파일 구조</h2>
+
+        <div class="code-block">
+Training-Free-Reasoning-Method/
+├── main.py                           <span class="comment"># 메인 실행 파일</span>
+├── process.py                        <span class="comment"># QA pair 처리 + Anchor 추출</span>
+├── utils.py                          <span class="comment"># Chunk 분할 유틸리티</span>
+├── generate_report.py                <span class="comment"># HTML 리포트 생성</span>
+├── view_results.ipynb                <span class="comment"># Jupyter 시각화</span>
+├── implementation_guide.html         <span class="comment"># 이 문서</span>
+├── whitebox-analyses/
+│   ├── pytorch_models/
+│   │   └── hooks.py                  <span class="comment"># Attention Suppression 구현</span>
+│   └── attention_analysis/
+│       └── attn_supp_funcs.py        <span class="comment"># KL Divergence 계산</span>
+└── anchor_vectors_output/            <span class="comment"># 결과 JSON 파일들</span>
+    ├── example_0.json
+    ├── example_1.json
+    └── ...
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎓 참고 자료</h2>
+
+        <ul>
+            <li><a href="https://github.com/interp-reasoning/thought-anchors" target="_blank">Thought Anchors 논문 저장소</a></li>
+            <li><a href="https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct" target="_blank">Qwen3-VL-8B-Instruct 모델</a></li>
+            <li><a href="https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k" target="_blank">LLaVA-CoT-100k 데이터셋</a></li>
+        </ul>
+    </div>
+
+    <div class="section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <h2 style="color: white; border-bottom: 3px solid white;">✅ 구현 완료 체크리스트</h2>
+
+        <ul style="list-style: none; padding-left: 0;">
+            <li>✅ Qwen3-VL 모델 지원 (hooks.py 수정)</li>
+            <li>✅ VQA 추론 생성 품질 개선 (MAX_NEW_TOKENS, temperature, prompt)</li>
+            <li>✅ 토큰 기반 chunk 병합 (min_tokens=5)</li>
+            <li>✅ Full text (question + reasoning) 사용하여 Teacher Forcing 분석</li>
+            <li>✅ 이미지 + 질문을 Generation 및 Analysis 단계 모두 사용</li>
+            <li>✅ Attention Suppression (Method 3) 구현</li>
+            <li>✅ KL Divergence 기반 Anchor Vector 계산</li>
+            <li>✅ HTML 리포트 및 Jupyter Notebook 시각화</li>
+        </ul>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; color: #666; margin-top: 40px;">
+        <p>🎯 Thought Anchor Implementation Guide</p>
+        <p style="font-size: 12px;">Generated: 2025-11-18</p>
+    </footer>
+</body>
+</html>

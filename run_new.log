@@ -1,0 +1,521 @@
+Loading dataset: Xkev/LLaVA-CoT-100k (train[:50])...
+Loaded 50 examples
+[device] Using device: cuda:1 (total CUDA: 3)
+[device] GPU memory free/total: 3.20 / 47.53 GB
+Loading model: Qwen/Qwen3-VL-8B-Instruct
+[model] Loading with kwargs: {'trust_remote_code': True, 'cache_dir': '/mnt/hdd/huggingface-models', 'low_cpu_mem_usage': True, 'dtype': torch.float16}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.14s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.14s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.14s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.02s/it]
+Processing examples:   0%|          | 0/50 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Processing example 1/50
+[warn] Image not found for field 'sqa/train/20839/image.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/sqa/train/20839/image.png', 'sqa/train/20839/image.png', '/mnt/hdd/llava/llava-cot-100k/sqa/train/20839/image.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_0.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 2/50
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/multi_col_100056.png
+Generating reasoning with model...
+[gen-debug] Attempts:
+  attempt 0: 1. The bar chart displays customer satisfaction ratings across five categories, with percentages indicating the share of respondents.   2. The category labeled "Product availabilit
+  attempt 1: <final>Product availability</final>
+Total Text >>>  <final>Product availability</final> 
+
+  Pair 0: Split into 1 chunks
+  Chunks preview: ['<final>Product availability</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 463
+
+Suppressing chunks:   0%|          | 0/1 [00:00<?, ?it/s][A
+Suppressing chunks: 100%|██████████| 1/1 [00:01<00:00,  1.76s/it][ASuppressing chunks: 100%|██████████| 1/1 [00:01<00:00,  1.76s/it]
+
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[62, 70]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=8.868164 max_effect=8.868164 min_effect=8.868164
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 1
+  - Anchor vector shape: (1,)
+  - Min importance: 0.0000
+  - Max importance: 0.0000
+  - Mean importance: 0.0000
+  - Std importance: 0.0000
+
+✅ Top 1 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 0):
+    Score: 0.0000
+    Text: "<final>Product availability</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (1, 1)
+  - Non-NaN values: 1/1
+  - Mean KL (non-NaN): 8.8682
+  - Max KL: 8.8682
+  - Min KL: 8.8682
+
+================================================================================
+[chunk 0] token_range=(62,70) snippet='<empty>'
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 36.2%
+  attempt 1: <reasoning> 1. The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values 34%, 36%, 35%, 45%, and 27% respectively. 2. Adding these perce
+Total Text >>>  <think><reasoning>
+1. The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values 34%, 36%, 35%, 45%, and 27% respectively.
+2. Adding these percentages gives a total of 177%, which is then divided by 5 categories to find the average.
+3. The average of all blue bars is 35.4%.
+</reasoning>
+<final>35.4%</final></think> 
+
+  Pair 1: Split into 5 chunks
+  Chunks preview: ['<reasoning>\n1.', 'The blue bars represent the percentage of responde...', '2. Adding these percentages gives a total of 177%,...', '3. The average of all blue bars is 35.4%.', '</reasoning>\n<final>35.4%</final>']
+  Pair 1: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 555
+
+Suppressing chunks:   0%|          | 0/5 [00:00<?, ?it/s][A
+Suppressing chunks:  20%|██        | 1/5 [00:01<00:07,  1.81s/it][A
+Suppressing chunks:  40%|████      | 2/5 [00:03<00:05,  1.78s/it][A
+Suppressing chunks:  60%|██████    | 3/5 [00:05<00:03,  1.77s/it][A
+Suppressing chunks:  80%|████████  | 4/5 [00:07<00:01,  1.76s/it][A
+Suppressing chunks: 100%|██████████| 5/5 [00:08<00:00,  1.75s/it][ASuppressing chunks: 100%|██████████| 5/5 [00:08<00:00,  1.76s/it]
+Processing examples:   4%|▍         | 2/50 [00:18<07:17,  9.11s/it]Processing examples:   8%|▊         | 4/50 [00:18<02:54,  3.80s/it]
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[48, 54]]
+[DEBUG]   range[0] text=', with values 34'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=9.651049 max_effect=10.813151 min_effect=8.256226
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[54, 98]]
+[DEBUG]   range[0] text='%, 36%, 35%, 45%, and 27% respectively.
+2. Adding these percentages gives a total of 177%, which is then divided by 5 ca'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=11.141486 max_effect=12.799665 min_effect=9.959106
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[98, 125]]
+[DEBUG]   range[0] text=' the average.
+3. The average of all blue bars is 35.4%.
+</reasoning>
+<final>3'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=9.760587 max_effect=10.491536 min_effect=8.918213
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[125, 141]]
+[DEBUG]   range[0] text='5.4%</final>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=10.173113 max_effect=11.039760 min_effect=8.703613
+
+[DEBUG] Suppressing chunk 4
+[DEBUG] (attn) Token ranges to mask: [[141, 155]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 4] mean_effect=9.802112 max_effect=10.505441 min_effect=8.947144
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 5
+  - Anchor vector shape: (5,)
+  - Min importance: 0.0000
+  - Max importance: 11.2418
+  - Mean importance: 8.2401
+  - Std importance: 4.1890
+
+✅ Top 5 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 1):
+    Score: 11.2418
+    Text: "The blue bars represent the percentage of respondents who rated each category 4 out of 5, with va..."
+
+  Rank 2 (Sentence 3):
+    Score: 11.0398
+    Text: "3. The average of all blue bars is 35.4%."
+
+  Rank 3 (Sentence 2):
+    Score: 9.5582
+    Text: "2. Adding these percentages gives a total of 177%, which is then divided by 5 categories to find ..."
+
+  Rank 4 (Sentence 0):
+    Score: 9.3605
+    Text: "<reasoning>
+1."
+
+  Rank 5 (Sentence 4):
+    Score: 0.0000
+    Text: "</reasoning>
+<final>35.4%</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (5, 5)
+  - Non-NaN values: 25/25
+  - Mean KL (non-NaN): 10.1057
+  - Max KL: 12.7997
+  - Min KL: 8.2562
+
+================================================================================
+[save] Wrote: anchor_vectors_output/example_1.json
+
+Processing example 3/50
+[warn] Image not found for field 'geoqa+/images/9435.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/geoqa+/images/9435.png', 'geoqa+/images/9435.png', '/mnt/hdd/llava/llava-cot-100k/geoqa+/images/9435.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_2.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 4/50
+[warn] Image not found for field 'geoqa+/images/10373.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/geoqa+/images/10373.png', 'geoqa+/images/10373.png', '/mnt/hdd/llava/llava-cot-100k/geoqa+/images/10373.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_3.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 5/50
+[warn] Image not found for field 'geoqa+/images/12240.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/geoqa+/images/12240.png', 'geoqa+/images/12240.png', '/mnt/hdd/llava/llava-cot-100k/geoqa+/images/12240.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_4.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 6/50
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/two_col_102544.png
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 1913.85 million euros  1. The bar chart clearly labels Google at the top with a revenue value of 1913.85, indicating its annual revenue in million euros. 2. The x-axis is labeled "
+  attempt 1: 1. The bar chart clearly lists Google at the top with a revenue value explicitly stated as 1,913.85 million euros. 2. This figure is the highest among all entities shown, indicatin
+Total Text >>>  <think>1. The bar chart clearly lists Google at the top with a revenue value explicitly stated as 1,913.85 million euros.
+2. This figure is the highest among all entities shown, indicating Google's dominance in revenue compared to others like iTunes and Expedia.
+3. The x-axis label confirms the unit as “Revenue in million euros,” validating that 1,913.85 represents the exact annual revenue in millions.
+
+<final>1913.85 million euros</think> 
+
+  Pair 0: Split into 4 chunks
+  Chunks preview: ['1. The bar chart clearly lists Google at the top w...', '2. This figure is the highest among all entities s...', '3. The x-axis label confirms the unit as “Revenue ...', '<final>1913.85 million euros']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 899
+
+Suppressing chunks:   0%|          | 0/4 [00:00<?, ?it/s][A
+Suppressing chunks:  25%|██▌       | 1/4 [00:02<00:06,  2.01s/it][A
+Suppressing chunks:  50%|█████     | 2/4 [00:03<00:03,  1.92s/it][AProcessing examples:   8%|▊         | 4/50 [00:30<02:54,  3.80s/it]
+Suppressing chunks:  75%|███████▌  | 3/4 [00:05<00:01,  1.95s/it][A
+Suppressing chunks: 100%|██████████| 4/4 [00:07<00:00,  1.93s/it][ASuppressing chunks: 100%|██████████| 4/4 [00:07<00:00,  1.94s/it]
+Processing examples:  12%|█▏        | 6/50 [00:33<03:59,  5.44s/it]
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[42, 72]]
+[DEBUG]   range[0] text='913.85 million euros.
+2. This figure is the highest among all entities shown, indicating Google's dominance in revenue c'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=15.655387 max_effect=17.299219 min_effect=14.507487
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[72, 99]]
+[DEBUG]   range[0] text=' like iTunes and Expedia.
+3. The x-axis label confirms the unit as “Revenue in million euros,” validating that 1,'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=17.977104 max_effect=18.876302 min_effect=17.233073
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[99, 134]]
+[DEBUG]   range[0] text='913.85 represents the exact annual revenue in millions.
+
+<final>1913.85 million euros'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=15.669286 max_effect=16.026172 min_effect=15.269025
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[134, 146]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=18.079158 max_effect=19.808594 min_effect=16.213397
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 4
+  - Anchor vector shape: (4,)
+  - Min importance: 0.0000
+  - Max importance: 17.8995
+  - Mean importance: 12.4105
+  - Std importance: 7.2131
+
+✅ Top 4 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 1):
+    Score: 17.8995
+    Text: "2. This figure is the highest among all entities shown, indicating Google's dominance in revenue ..."
+
+  Rank 2 (Sentence 0):
+    Score: 15.9425
+    Text: "1. The bar chart clearly lists Google at the top with a revenue value explicitly stated as 1,913...."
+
+  Rank 3 (Sentence 2):
+    Score: 15.7998
+    Text: "3. The x-axis label confirms the unit as “Revenue in million euros,” validating that 1,913.85 rep..."
+
+  Rank 4 (Sentence 3):
+    Score: 0.0000
+    Text: "<final>1913.85 million euros"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (4, 4)
+  - Non-NaN values: 16/16
+  - Mean KL (non-NaN): 16.8452
+  - Max KL: 19.8086
+  - Min KL: 14.5075
+
+================================================================================
+[chunk 0] token_range=(42,72) snippet='913.85 million euros.
+2. This figure is the highest among all entities shown, indicating Google's do'
+[chunk 1] token_range=(72,99) snippet=' like iTunes and Expedia.
+3. The x-axis label confirms the unit as “Revenue in million euros,” valid'
+[chunk 2] token_range=(99,134) snippet='913.85 represents the exact annual revenue in millions.
+
+<final>1913.85 million euros'
+[chunk 3] token_range=(134,146) snippet='<empty>'
+[save] Wrote: anchor_vectors_output/example_5.json
+
+Processing example 7/50
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/two_col_42332.png
+Generating reasoning with model...
+[gen-debug] Attempts:
+  attempt 0: 132127
+  attempt 1: <final>132127 million U.S. dollars</final>
+Total Text >>>  <final>132127 million U.S. dollars</final> 
+
+  Pair 0: Split into 2 chunks
+  Chunks preview: ['<final>132127 million U.S.', 'dollars</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 476
+
+Suppressing chunks:   0%|          | 0/2 [00:00<?, ?it/s][A
+Suppressing chunks:  50%|█████     | 1/2 [00:01<00:01,  1.73s/it][A
+Suppressing chunks: 100%|██████████| 2/2 [00:03<00:00,  1.72s/it][ASuppressing chunks: 100%|██████████| 2/2 [00:03<00:00,  1.72s/it]
+Processing examples:  14%|█▍        | 7/50 [00:37<03:45,  5.23s/it]
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[70, 83]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=10.245005 max_effect=11.182392 min_effect=9.307617
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[83, 87]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=8.665753 max_effect=10.221154 min_effect=7.110352
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 2
+  - Anchor vector shape: (2,)
+  - Min importance: 0.0000
+  - Max importance: 9.3076
+  - Mean importance: 4.6538
+  - Std importance: 4.6538
+
+✅ Top 2 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 0):
+    Score: 9.3076
+    Text: "<final>132127 million U.S."
+
+  Rank 2 (Sentence 1):
+    Score: 0.0000
+    Text: "dollars</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (2, 2)
+  - Non-NaN values: 4/4
+  - Mean KL (non-NaN): 9.4554
+  - Max KL: 11.1824
+  - Min KL: 7.1104
+
+================================================================================
+[chunk 0] token_range=(70,83) snippet='<empty>'
+[chunk 1] token_range=(83,87) snippet='<empty>'
+[save] Wrote: anchor_vectors_output/example_6.json
+
+Processing example 8/50
+[warn] Image not found for field 'sqa/train/7088/image.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/sqa/train/7088/image.png', 'sqa/train/7088/image.png', '/mnt/hdd/llava/llava-cot-100k/sqa/train/7088/image.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_7.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 9/50
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2578.png
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 1. The diagram shows two solstices labeled "Solstice June 21" and "Solstice Dec 22," indicating their positions in the calendar year.   2. Counting the months between June 21 and D
+  attempt 1: 1. The diagram shows two solstices labeled as June 21 and December 22, indicating their positions in the Earth’s orbit around the Sun.   2. The time span between June 21 and Decemb
+Total Text >>>  <think>1. The diagram shows two solstices labeled as June 21 and December 22, indicating their positions in the Earth’s orbit around the Sun.  
+2. The time span between June 21 and December 22 includes six months: July, August, September, October, November, and December.  
+3. Since the Earth completes its orbit in approximately 12 months, the solstices are separated by exactly six months, as shown by the diagram’s orbital markers.  
+
+<final>6</final></think> 
+
+  Pair 0: Split into 4 chunks
+  Chunks preview: ['1. The diagram shows two solstices labeled as June...', '2. The time span between June 21 and December 22 i...', '3. Since the Earth completes its orbit in approxim...', '<final>6</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 249
+
+Suppressing chunks:   0%|          | 0/4 [00:00<?, ?it/s][A
+Suppressing chunks:  25%|██▌       | 1/4 [00:01<00:05,  1.73s/it][A
+Suppressing chunks:  50%|█████     | 2/4 [00:03<00:03,  1.78s/it][A
+Suppressing chunks:  75%|███████▌  | 3/4 [00:05<00:01,  1.72s/it][A
+Suppressing chunks: 100%|██████████| 4/4 [00:06<00:00,  1.70s/it][ASuppressing chunks: 100%|██████████| 4/4 [00:06<00:00,  1.72s/it]
+Processing examples:  18%|█▊        | 9/50 [00:51<04:01,  5.89s/it]
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[88, 121]]
+[DEBUG]   range[0] text=' and December 22 includes six months: July, August, September, October, November, and December.  
+3. Since the Earth com'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=12.831854 max_effect=14.414276 min_effect=11.615046
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[122, 154]]
+[DEBUG]   range[0] text='12 months, the solstices are separated by exactly six months, as shown by the diagram’s orbital markers.  
+
+<final>6</fi'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=12.534183 max_effect=14.251526 min_effect=11.399554
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[155, 190]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=13.347957 max_effect=14.482056 min_effect=11.583147
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[191, 198]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=11.372438 max_effect=11.947545 min_effect=10.681501
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 4
+  - Anchor vector shape: (4,)
+  - Min importance: 0.0000
+  - Max importance: 12.9757
+  - Mean importance: 9.0444
+  - Std importance: 5.2519
+
+✅ Top 4 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 0):
+    Score: 12.9757
+    Text: "1. The diagram shows two solstices labeled as June 21 and December 22, indicating their positions..."
+
+  Rank 2 (Sentence 1):
+    Score: 11.6187
+    Text: "2. The time span between June 21 and December 22 includes six months: July, August, September, Oc..."
+
+  Rank 3 (Sentence 2):
+    Score: 11.5831
+    Text: "3. Since the Earth completes its orbit in approximately 12 months, the solstices are separated by..."
+
+  Rank 4 (Sentence 3):
+    Score: 0.0000
+    Text: "<final>6</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (4, 4)
+  - Non-NaN values: 16/16
+  - Mean KL (non-NaN): 12.5216
+  - Max KL: 14.4821
+  - Min KL: 10.6815
+
+================================================================================
+[chunk 0] token_range=(88,121) snippet=' and December 22 includes six months: July, August, September, October, November, and December.  
+3.'
+[chunk 1] token_range=(122,154) snippet='12 months, the solstices are separated by exactly six months, as shown by the diagram’s orbital mark'
+[chunk 2] token_range=(155,190) snippet='<empty>'
+[chunk 3] token_range=(191,198) snippet='<empty>'
+[save] Wrote: anchor_vectors_output/example_8.json
+
+Processing example 10/50
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/two_col_62742.png
+Generating reasoning with model...
+[gen-debug] Attempts:
+  attempt 0: 1. The bar chart displays percentage changes in revenue for confectionery companies, not absolute revenue figures, making direct comparison impossible without additional data. 2. L
+  attempt 1: <final>Lindt & Sprungli</final>
+Total Text >>>  <final>Lindt & Sprungli</final> 
+
+  Pair 0: Split into 1 chunks
+  Chunks preview: ['<final>Lindt & Sprungli</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 466
+
+Suppressing chunks:   0%|          | 0/1 [00:00<?, ?it/s][A
+Suppressing chunks: 100%|██████████| 1/1 [00:01<00:00,  1.84s/it][ASuppressing chunks: 100%|██████████| 1/1 [00:01<00:00,  1.84s/it]
+Processing examples:  18%|█▊        | 9/50 [00:57<04:20,  6.35s/it]
+
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[60, 72]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=12.022380 max_effect=12.022380 min_effect=12.022380
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 1
+  - Anchor vector shape: (1,)
+  - Min importance: 0.0000
+  - Max importance: 0.0000
+  - Mean importance: 0.0000
+  - Std importance: 0.0000
+
+✅ Top 1 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 0):
+    Score: 0.0000
+    Text: "<final>Lindt & Sprungli</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (1, 1)
+  - Non-NaN values: 1/1
+  - Mean KL (non-NaN): 12.0224
+  - Max KL: 12.0224
+  - Min KL: 12.0224
+
+================================================================================
+[chunk 0] token_range=(60,72) snippet='<empty>'
+[save] Wrote: anchor_vectors_output/example_9.json
+Reached MAX_SAMPLES=5 (successful examples). Stopping early.

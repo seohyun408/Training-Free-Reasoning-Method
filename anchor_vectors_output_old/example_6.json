@@ -1,0 +1,39 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/two_col_42332.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow much money was spent on corporate business meetings in the U.S. in 2009? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>132127 million U.S. dollars</final>",
+      "raw_generation": [
+        "132127",
+        "<final>132127 million U.S. dollars</final>"
+      ],
+      "chunks": [
+        "<final>132127 million U.S.",
+        "dollars</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          70,
+          83
+        ],
+        [
+          83,
+          87
+        ]
+      ],
+      "anchor_vector": [
+        9.3076171875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        2,
+        2
+      ]
+    }
+  ],
+  "example_idx": 6
+}
