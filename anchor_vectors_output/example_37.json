@@ -1,0 +1,109 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/1995.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat do birds feed on?\n\nOptions:\n- bacteria\n- sunlight\n- earthworms\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows arrows indicating feeding relationships, with arrows pointing from consumed organisms to consumers.\n2. An arrow originates from “ARTHROPODS Predators” and points directly to “BIRDS,” meaning birds consume these arthropods.\n3. No arrows point from “BACTERIA” to “BIRDS,” indicating birds do not feed on bacteria according to this food web.\n4. No arrow originates from “SUNLIGHT” to “BIRDS,” confirming birds do not derive energy directly from sunlight in this context.\n5. There is no direct arrow from “EARTHWORMS” to “BIRDS,” so earthworms are not a direct food source for birds shown in this diagram.\n\n<final>birds feed on arthropods predators</final>",
+      "raw_generation": [
+        "1. The diagram shows arrows indicating feeding relationships between organisms, with arrows pointing from the food source to the consumer.  \n2. An arrow originates from “ARTHROPODS Predators” and points directly to “BIRDS,” indicating birds consume these arthropods.  \n3. No arrow connects “BIRDS” to “BACTERIA,” meaning birds do not feed on bacteria according to this food web.  \n4. There is no arrow from “SUNLIGHT” to “BIRDS,” confirming birds do not directly consume sunlight as their food source.  \n5. While “EARTHWORMS” are shown in the diagram, no arrow points from them to “BIRDS,” so they are not depicted as a direct food source for birds in this specific illustration.  \n\n<final>arthropods</final>",
+        "1. The diagram shows arrows indicating feeding relationships, with arrows pointing from consumed organisms to consumers.\n2. An arrow originates from “ARTHROPODS Predators” and points directly to “BIRDS,” meaning birds consume these arthropods.\n3. No arrows point from “BACTERIA” to “BIRDS,” indicating birds do not feed on bacteria according to this food web.\n4. No arrow originates from “SUNLIGHT” to “BIRDS,” confirming birds do not derive energy directly from sunlight in this context.\n5. There is no direct arrow from “EARTHWORMS” to “BIRDS,” so earthworms are not a direct food source for birds shown in this diagram.\n\n<final>birds feed on arthropods predators</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows arrows indicating feeding relationships, with arrows pointing from consumed organisms to consumers.",
+        "2. An arrow originates from “ARTHROPODS Predators” and points directly to “BIRDS,” meaning birds consume these arthropods.",
+        "3. No arrows point from “BACTERIA” to “BIRDS,” indicating birds do not feed on bacteria according to this food web.",
+        "4. No arrow originates from “SUNLIGHT” to “BIRDS,” confirming birds do not derive energy directly from sunlight in this context.",
+        "5. There is no direct arrow from “EARTHWORMS” to “BIRDS,” so earthworms are not a direct food source for birds shown in this diagram.",
+        "<final>birds feed on arthropods predators</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          68,
+          87
+        ],
+        [
+          87,
+          118
+        ],
+        [
+          118,
+          148
+        ],
+        [
+          148,
+          178
+        ],
+        [
+          178,
+          216
+        ],
+        [
+          216,
+          229
+        ]
+      ],
+      "anchor_vector": [
+        11.971606739713932,
+        11.04321229757085,
+        11.41638648152834,
+        10.37796922444332,
+        11.001201923076923,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The arrow from \"earthworms\" to \"birds\" indicates that birds consume earthworms.",
+        "negative_sentence": "We observe that the bird (represented by a bird icon) has an arrow pointing to it from the earthworm icon.",
+        "positive_full": " \n\n2. The arrow from \"earthworms\" to \"birds\" indicates that birds consume earthworms.\n\n3. The arrow from \"sunlight\" to \"plants\" indicates that plants use sunlight for photosynthesis, which is not a feeding relationship but rather an energy source.\n\n4. The arrow from \"bacteria\" to \"birds\" does not exist, so birds do not directly consume bacteria.\n\n5. Therefore, based on the diagram, birds feed on earthworms.\n\nFinal Answer: earthworms",
+        "negative_full": " \n\n2. We observe that the bird (represented by a bird icon) has an arrow pointing to it from the earthworm icon.\n\n3. This indicates that the bird consumes the earthworm.\n\n4. Since the question asks what birds feed on among the given options, and we have determined that birds consume earthworms based on the diagram, the correct option is earthworms.\n\nTherefore, the answer is earthworms.",
+        "positive_probability": 0.007437356673855978,
+        "negative_probability": 0.005702034751731267,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n2. The arrow from \"earthworms\" to \"birds\" indicates that birds consume earthworms.\n\n3. The arrow from \"sunlight\" to \"plants\" indicates that plants use sunlight for photosynthesis, which is not a feeding relationship but rather an energy source.\n\n4. The arrow from \"bacteria\" to \"birds\" does not exist, so birds do not directly consume bacteria.\n\n5. Therefore, based on the diagram, birds feed on earthworms.\n\nFinal Answer: earthworms",
+            "first_sentence": "The arrow from \"earthworms\" to \"birds\" indicates that birds consume earthworms.",
+            "answer_probability": 0.007437356673855978,
+            "final_answer": "earthworms"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n2. I need to determine which of the given options (bacteria, sunlight, earthworms) are likely to be consumed by birds.\n\nNext reasoning step: \n\n3. Sunlight is not a food source for birds; it's an energy source for producers like plants, which birds might eat indirectly. So, sunlight is not a direct food source for birds.\n\nNext reasoning step: \n\n4. Bacteria are a type of microorganism. While some birds may eat certain types of bacteria, this is not a typical or primary food source for most birds.\n\nNext reasoning step: \n\n5. Earthworms are known to",
+            "first_sentence": "I need to determine which of the given options (bacteria, sunlight, earthworms) are likely to be consumed by birds.",
+            "answer_probability": 0.006729379422876329,
+            "final_answer": "5. Earthworms are known to"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n2. The diagram shows arrows from “earthworms” to “birds,” meaning birds eat earthworms.\n\n3. The other options, “bacteria” and “sunlight,” are not shown with arrows pointing to “birds” in the diagram, meaning birds do not feed on them according to this diagram.\n\nTherefore, based on the diagram, the correct answer is: earthworms.\n\nearthworms",
+            "first_sentence": "The diagram shows arrows from “earthworms” to “birds,” meaning birds eat earthworms.",
+            "answer_probability": 0.006414516924198185,
+            "final_answer": "earthworms"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 2. The arrows are directed from earthworms to birds, indicating that birds consume earthworms.\n3. The arrows are directed from bacteria to earthworms, indicating that earthworms consume bacteria.\n\nFinal Answer: earthworms",
+            "first_sentence": "The arrows are directed from earthworms to birds, indicating that birds consume earthworms.",
+            "answer_probability": 0.005804633266432291,
+            "final_answer": "earthworms"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n2. We observe that the bird (represented by a bird icon) has an arrow pointing to it from the earthworm icon.\n\n3. This indicates that the bird consumes the earthworm.\n\n4. Since the question asks what birds feed on among the given options, and we have determined that birds consume earthworms based on the diagram, the correct option is earthworms.\n\nTherefore, the answer is earthworms.",
+            "first_sentence": "We observe that the bird (represented by a bird icon) has an arrow pointing to it from the earthworm icon.",
+            "answer_probability": 0.005702034751731267,
+            "final_answer": "earthworms"
+          }
+        ],
+        "correct_answer": "birds feed on arthropods predators"
+      }
+    }
+  ],
+  "example_idx": 37
+}

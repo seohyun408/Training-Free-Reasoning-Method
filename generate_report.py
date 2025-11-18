@@ -110,6 +110,7 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
             border-radius: 8px;
             border-left: 4px solid #9c27b0;
         }
+                      
         .reasoning-label {
             font-weight: bold;
             color: #7b1fa2;
@@ -185,8 +186,89 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
             padding: 20px;
             text-align: center;
         }
+        .contrastive-section {
+            margin-top: 20px;
+        }
+        .contrastive-header {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .contrastive-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .positive-box {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .negative-box {
+            background: #ffebee;
+            border-left: 5px solid #f44336;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .contrastive-label {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contrastive-prob {
+            background: rgba(0,0,0,0.1);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 14px;
+        }
+        .contrastive-text {
+            color: #555;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        .samples-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .samples-table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .samples-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .samples-table tr:last-child td {
+            border-bottom: none;
+        }
+        .samples-table tr:hover {
+            background: #f5f5f5;
+        }
+        .sample-rank {
+            font-weight: bold;
+            color: #667eea;
+        }
         @media (max-width: 900px) {
             .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .contrastive-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -371,6 +453,91 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
                     <div class="no-anchors">⚠️ No chunks or anchor scores available</div>
                 </div>
 """)
+
+            # Contrastive Generation Results
+            contrastive = qa_pair.get('contrastive')
+            if contrastive and contrastive.get('positive_sentence'):
+                html_parts.append("""
+                <div class="contrastive-section">
+                    <div class="contrastive-header">🔄 Contrastive Generation Results</div>
+""")
+
+                # Positive and Negative sentences side by side
+                html_parts.append("""
+                    <div class="contrastive-grid">
+""")
+
+                # Positive sentence
+                pos_sentence = contrastive.get('positive_sentence', '')
+                pos_prob = contrastive.get('positive_probability', 0.0)
+                html_parts.append(f"""
+                        <div class="positive-box">
+                            <div class="contrastive-label">
+                                <span>✅ Positive Sentence</span>
+                                <span class="contrastive-prob">Prob: {pos_prob:.4f}</span>
+                            </div>
+                            <div class="contrastive-text">{pos_sentence}</div>
+                        </div>
+""")
+
+                # Negative sentence
+                neg_sentence = contrastive.get('negative_sentence', '')
+                neg_prob = contrastive.get('negative_probability', 0.0)
+                html_parts.append(f"""
+                        <div class="negative-box">
+                            <div class="contrastive-label">
+                                <span>❌ Negative Sentence</span>
+                                <span class="contrastive-prob">Prob: {neg_prob:.4f}</span>
+                            </div>
+                            <div class="contrastive-text">{neg_sentence}</div>
+                        </div>
+""")
+
+                html_parts.append("""
+                    </div>
+""")  # contrastive-grid 끝
+
+                # All samples table
+                all_samples = contrastive.get('all_samples', [])
+                if all_samples:
+                    html_parts.append("""
+                    <table class="samples-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Probability</th>
+                                <th>First Sentence</th>
+                                <th>Final Answer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+""")
+
+                    for i, sample in enumerate(all_samples, 1):
+                        first_sentence = sample.get('first_sentence', '')[:200]
+                        if len(sample.get('first_sentence', '')) > 200:
+                            first_sentence += "..."
+
+                        final_answer = sample.get('final_answer', 'N/A')
+                        prob = sample.get('answer_probability', 0.0)
+
+                        html_parts.append(f"""
+                            <tr>
+                                <td class="sample-rank">#{i}</td>
+                                <td>{prob:.4f}</td>
+                                <td>{first_sentence}</td>
+                                <td><strong>{final_answer}</strong></td>
+                            </tr>
+""")
+
+                    html_parts.append("""
+                        </tbody>
+                    </table>
+""")
+
+                html_parts.append("""
+                </div>
+""")  # contrastive-section 끝
 
             html_parts.append("""
             </div>

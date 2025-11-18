@@ -174,13 +174,15 @@ def _generate_reasoning_with_model(question, image, model, processor, tokenizer,
 
     system_prompt = (
         "You are a helpful vision assistant analyzing images. "
-        "Please provide your reasoning in <think>...</think> tags with EXACTLY 3 numbered steps (1., 2., 3.). "
+        "Please provide your reasoning in <think>...</think> tags with AT LEAST 5 numbered steps (1., 2., 3., 4., 5., ...). "
+        "You can include more steps if needed for thorough analysis. "
         "Each step should be a complete sentence (15-40 words) that describes specific details from the image. "
         "DO NOT use ellipsis (...) or placeholder text. Make each step concrete and informative. "
         "After reasoning, provide the final answer in <final>...</final> tags."
     )
     alt_system_prompt = (
-        "Analyze the image carefully. Write 3 numbered reasoning steps (1., 2., 3.) inside <think> tags. "
+        "Analyze the image carefully. Write at least 5 numbered reasoning steps (1., 2., 3., 4., 5., ...) inside <think> tags. "
+        "More steps are welcome if they add value. "
         "Each step must be a full sentence with specific details from the image. "
         "Never use ... or generic phrases. Each sentence should be 15-40 words. "
         "End with your answer in <final> tags."
@@ -481,15 +483,74 @@ def process_qa_pair(
         except Exception as e:
             print(f"[debug] snippet decode failed: {e}")
 
+    # ========================================
+    #   STAGE 2: Contrastive Generation
+    # ========================================
+    contrastive_result = None
+    if os.getenv("ENABLE_CONTRASTIVE", "0") in {"1", "true", "True"}:
+        try:
+            from contrastive_generation import generate_from_anchor, extract_anchor_prefix
+
+            # Extract correct answer from gpt_response or reasoning
+            # Try to find answer in the original response or generated reasoning
+            correct_answer = None
+            # Check both the generated reasoning and the source
+            for source_text in [reasoning_source_text, gpt_response]:
+                for tag_pair in [("<final>", "</final>"), ("<CONCLUSION>", "</CONCLUSION>")]:
+                    start_tag, end_tag = tag_pair
+                    if start_tag in source_text and end_tag in source_text:
+                        start = source_text.find(start_tag) + len(start_tag)
+                        end = source_text.find(end_tag)
+                        correct_answer = source_text[start:end].strip()
+                        break
+                if correct_answer:
+                    break
+
+            if correct_answer and len(chunks) > 1:
+                print(f"\n[contrastive] Correct answer: {correct_answer}")
+
+                # Get prefix up to anchor
+                prefix_text, anchor_idx, anchor_sentence = extract_anchor_prefix(
+                    question=question,
+                    reasoning_text=reasoning_text,
+                    chunks=chunks,
+                    anchor_vector=anchor_vector
+                )
+
+                print(f"[contrastive] Anchor sentence (idx={anchor_idx}): {anchor_sentence[:100]}...")
+
+                # Generate contrastive samples
+                num_samples = int(os.getenv("CONTRASTIVE_SAMPLES", "5"))
+                contrastive_result = generate_from_anchor(
+                    model=model,
+                    processor=processor,
+                    tokenizer=tokenizer,
+                    prefix_text=prefix_text,
+                    image=image,
+                    device=device,
+                    correct_answer=correct_answer,
+                    num_samples=num_samples,
+                    max_new_tokens=128,
+                    temperature=0.9,
+                    top_p=0.95
+                )
+
+                print(f"[contrastive] Generated {len(contrastive_result['all_samples'])} samples")
+        except Exception as e:
+            print(f"[contrastive] Error: {e}")
+            import traceback
+            traceback.print_exc()
+
     return {
         "pair_idx": pair_idx,
         "question": question,
         "reasoning_text": reasoning_text,
-    "raw_generation": raw_generations_local or None,
+        "raw_generation": raw_generations_local or None,
         "chunks": chunks,
         "chunk_token_ranges": chunk_token_ranges,
         "anchor_vector": anchor_vector.tolist() if hasattr(anchor_vector, "tolist") else anchor_vector,
-        "kl_matrix_shape": getattr(kl_matrix, "shape", None)
+        "kl_matrix_shape": getattr(kl_matrix, "shape", None),
+        "contrastive": contrastive_result
     }
 
     # ========================================

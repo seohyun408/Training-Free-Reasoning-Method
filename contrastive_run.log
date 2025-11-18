@@ -1,0 +1,355 @@
+Loading dataset: Xkev/LLaVA-CoT-100k (train[8:13])...
+Loaded 5 examples
+[device] Using device: cuda:1 (total CUDA: 3)
+[device] GPU memory free/total: 0.62 / 47.53 GB
+Loading model: Qwen/Qwen3-VL-8B-Instruct
+[model] Loading with kwargs: {'trust_remote_code': True, 'cache_dir': '/mnt/hdd/huggingface-models', 'low_cpu_mem_usage': True, 'dtype': torch.float16}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.24s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.24s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.24s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.11s/it]
+Processing examples:   0%|          | 0/5 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Processing example 1/5
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2578.png
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 1. The diagram shows two solstices labeled "Solstice June 21" and "Solstice Dec 22," indicating their positions in the calendar year.   2. Counting the months between June 21 and D
+  attempt 1: 1. The diagram shows the Earth’s orbit around the Sun with key dates labeled, including the Solstices on June 21 and December 22, which are six months apart.   2. The time span fro
+Total Text >>>  <think>1. The diagram shows the Earth’s orbit around the Sun with key dates labeled, including the Solstices on June 21 and December 22, which are six months apart.  
+2. The time span from June 21 to December 22 includes exactly six months, as each Solstice is separated by half a year in the calendar.  
+3. Since the options provided are 12, 4, 3, and 6, and the diagram clearly indicates a six-month interval between Solstices, the correct answer is 6.  
+<final>6</final></think> 
+
+  Pair 0: Split into 4 chunks
+  Chunks preview: ['1. The diagram shows the Earth’s orbit around the ...', '2. The time span from June 21 to December 22 inclu...', '3. Since the options provided are 12, 4, 3, and 6,...', '<final>6</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 264
+
+Suppressing chunks:   0%|          | 0/4 [00:00<?, ?it/s][A
+Suppressing chunks:  25%|██▌       | 1/4 [00:01<00:05,  1.84s/it][A
+Suppressing chunks:  50%|█████     | 2/4 [00:03<00:03,  1.80s/it][A
+Suppressing chunks:  75%|███████▌  | 3/4 [00:05<00:01,  1.78s/it][A
+Suppressing chunks: 100%|██████████| 4/4 [00:07<00:00,  1.77s/it][ASuppressing chunks: 100%|██████████| 4/4 [00:07<00:00,  1.78s/it]
+Processing examples:  20%|██        | 1/5 [00:29<01:59, 29.77s/it]
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[88, 127]]
+[DEBUG]   range[0] text=' span from June 21 to December 22 includes exactly six months, as each Solstice is separated by half a year in the calen'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=12.533038 max_effect=13.627930 min_effect=10.654855
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[128, 162]]
+[DEBUG]   range[0] text='2, 4, 3, and 6, and the diagram clearly indicates a six-month interval between Solstices, the correct answer is 6.  
+'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=16.248236 max_effect=18.614660 min_effect=13.356752
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[163, 205]]
+[DEBUG]   range[0] text='final>6</final>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=15.848651 max_effect=16.420267 min_effect=15.259634
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[206, 213]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=11.888781 max_effect=13.191964 min_effect=9.935043
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 4
+  - Anchor vector shape: (4,)
+  - Min importance: 0.0000
+  - Max importance: 16.5108
+  - Mean importance: 11.0815
+  - Std importance: 6.6012
+
+✅ Top 4 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 1):
+    Score: 16.5108
+    Text: "2. The time span from June 21 to December 22 includes exactly six months, as each Solstice is sep..."
+
+  Rank 2 (Sentence 2):
+    Score: 15.6473
+    Text: "3. Since the options provided are 12, 4, 3, and 6, and the diagram clearly indicates a six-month ..."
+
+  Rank 3 (Sentence 0):
+    Score: 12.1681
+    Text: "1. The diagram shows the Earth’s orbit around the Sun with key dates labeled, including the Solst..."
+
+  Rank 4 (Sentence 3):
+    Score: 0.0000
+    Text: "<final>6</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (4, 4)
+  - Non-NaN values: 16/16
+  - Mean KL (non-NaN): 14.1297
+  - Max KL: 18.6147
+  - Min KL: 9.9350
+
+================================================================================
+[chunk 0] token_range=(88,127) snippet=' span from June 21 to December 22 includes exactly six months, as each Solstice is separated by half'
+[chunk 1] token_range=(128,162) snippet='2, 4, 3, and 6, and the diagram clearly indicates a six-month interval between Solstices, the correc'
+[chunk 2] token_range=(163,205) snippet='final>6</final>'
+[chunk 3] token_range=(206,213) snippet='<empty>'
+
+[contrastive] Correct answer: 6
+[contrastive] Anchor sentence (idx=1): 2. The time span from June 21 to December 22 includes exactly six months, as each Solstice is separa...
+
+================================================================================
+🎯 Generating 5 continuations from anchor...
+================================================================================
+
+📝 Sample 1/5:
+   First sentence: 3....
+   Final answer: 4. Since the Solstices occur approximately every 6 months (June and December),
+   Answer probability: 1.0000
+
+📝 Sample 2/5:
+   First sentence: 3....
+   Final answer: - 6
+   Answer probability: 1.0000
+
+📝 Sample 3/5:
+   First sentence: 3....
+   Final answer: - 6
+   Answer probability: 1.0000
+
+📝 Sample 4/5:
+   First sentence: 3....
+   Final answer: Final Answer: 6
+   Answer probability: 1.0000
+
+📝 Sample 5/5:
+   First sentence: 3....
+   Final answer: I think you might have misread the question or the diagram. The question asks "How many months are between the Solstices?" and you've answered based on the assumption that the Solstices are 6 months apart. However, if you're thinking about the *time span from one Solstice to the next*, that's actually 6 months, so your reasoning is correct.
+   Answer probability: 1.0000
+
+================================================================================
+✅ POSITIVE sentence (prob=1.0000):
+   3.
+
+❌ NEGATIVE sentence (prob=1.0000):
+   3.
+================================================================================
+
+[contrastive] Generated 5 samples
+[save] Wrote: anchor_vectors_output/example_0.json
+
+Processing example 2/5
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/chartqa/train/png/two_col_62742.png
+Generating reasoning with model...
+[gen-debug] Attempts:
+  attempt 0: 1. The bar chart displays percentage changes in revenue for confectionery companies, not absolute revenue figures, making direct comparison impossible without additional data. 2. L
+  attempt 1: <final>Lindt & Sprungli</final>
+Total Text >>>  <final>Lindt & Sprungli</final> 
+
+  Pair 0: Split into 1 chunks
+  Chunks preview: ['<final>Lindt & Sprungli</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 466
+
+Suppressing chunks:   0%|          | 0/1 [00:00<?, ?it/s][A
+Suppressing chunks: 100%|██████████| 1/1 [00:01<00:00,  1.82s/it][ASuppressing chunks: 100%|██████████| 1/1 [00:01<00:00,  1.83s/it]
+Processing examples:  40%|████      | 2/5 [00:35<00:46, 15.63s/it]Processing examples:  60%|██████    | 3/5 [00:36<00:17,  8.72s/it]
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[60, 72]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=12.022380 max_effect=12.022380 min_effect=12.022380
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 1
+  - Anchor vector shape: (1,)
+  - Min importance: 0.0000
+  - Max importance: 0.0000
+  - Mean importance: 0.0000
+  - Std importance: 0.0000
+
+✅ Top 1 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 0):
+    Score: 0.0000
+    Text: "<final>Lindt & Sprungli</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (1, 1)
+  - Non-NaN values: 1/1
+  - Mean KL (non-NaN): 12.0224
+  - Max KL: 12.0224
+  - Min KL: 12.0224
+
+================================================================================
+[chunk 0] token_range=(60,72) snippet='<empty>'
+[save] Wrote: anchor_vectors_output/example_1.json
+
+Processing example 3/5
+[warn] Image not found for field 'sqa/train/253/image.png'. Tried: ['/mnt/hdd/llava/llava-cot-100k/extracted/sqa/train/253/image.png', 'sqa/train/253/image.png', '/mnt/hdd/llava/llava-cot-100k/sqa/train/253/image.png']. Skipping example.
+[save] Wrote: anchor_vectors_output/example_2.json
+[info] Example skipped or produced no successful pairs; not counted toward MAX_SAMPLES.
+
+Processing example 4/5
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2330.png
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 1. The diagram shows a labeled stage called "planula" positioned after the zygote and before the polyp forming stage, indicating its place in the life cycle. 2. The planula is depi
+  attempt 1: 1. The diagram clearly labels the small, free-swimming larval stage as “planula,” which is positioned near the bottom right, just before the arrow pointing to the polyp forming sta
+Total Text >>>  <think>1. The diagram clearly labels the small, free-swimming larval stage as “planula,” which is positioned near the bottom right, just before the arrow pointing to the polyp forming stage.
+2. Among the given options, only letter “J” is located directly beneath the label “planula” and points to the corresponding larval form in the life cycle.
+3. Letters L, B, and K are associated with other stages such as the polyp forming, reproductive polyp, and feeding polyp, respectively, confirming “J” is the correct choice for the planula stage.
+
+<final>J</final></think> 
+
+  Pair 0: Split into 4 chunks
+  Chunks preview: ['1. The diagram clearly labels the small, free-swim...', '2. Among the given options, only letter “J” is loc...', '3. Letters L, B, and K are associated with other s...', '<final>J</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 537
+
+Suppressing chunks:   0%|          | 0/4 [00:00<?, ?it/s][A
+Suppressing chunks:  25%|██▌       | 1/4 [00:01<00:05,  1.87s/it][A
+Suppressing chunks:  50%|█████     | 2/4 [00:03<00:03,  1.82s/it][A
+Suppressing chunks:  75%|███████▌  | 3/4 [00:05<00:01,  1.80s/it][A
+Suppressing chunks: 100%|██████████| 4/4 [00:07<00:00,  1.80s/it][ASuppressing chunks: 100%|██████████| 4/4 [00:07<00:00,  1.81s/it]
+Processing examples:  60%|██████    | 3/5 [01:02<00:41, 20.81s/it]
+
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[74, 114]]
+[DEBUG]   range[0] text=' forming stage.
+2. Among the given options, only letter “J” is located directly beneath the label “planula” and points t'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=14.662521 max_effect=16.281689 min_effect=13.798658
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[114, 149]]
+[DEBUG]   range[0] text=' Letters L, B, and K are associated with other stages such as the polyp forming, reproductive polyp, and feeding polyp, '
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=15.091699 max_effect=17.183594 min_effect=13.582074
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[149, 195]]
+[DEBUG]   range[0] text=' the correct choice for the planula stage.
+
+<final>J</final>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=15.363825 max_effect=16.243750 min_effect=14.483147
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[195, 201]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=18.156085 max_effect=19.053385 min_effect=17.233705
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 4
+  - Anchor vector shape: (4,)
+  - Min importance: 0.0000
+  - Max importance: 16.1081
+  - Mean importance: 11.4034
+  - Std importance: 6.6220
+
+✅ Top 4 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 2):
+    Score: 16.1081
+    Text: "3. Letters L, B, and K are associated with other stages such as the polyp forming, reproductive p..."
+
+  Rank 2 (Sentence 1):
+    Score: 15.3828
+    Text: "2. Among the given options, only letter “J” is located directly beneath the label “planula” and p..."
+
+  Rank 3 (Sentence 0):
+    Score: 14.1228
+    Text: "1. The diagram clearly labels the small, free-swimming larval stage as “planula,” which is positi..."
+
+  Rank 4 (Sentence 3):
+    Score: 0.0000
+    Text: "<final>J</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (4, 4)
+  - Non-NaN values: 16/16
+  - Mean KL (non-NaN): 15.8185
+  - Max KL: 19.0534
+  - Min KL: 13.5821
+
+================================================================================
+[chunk 0] token_range=(74,114) snippet=' forming stage.
+2. Among the given options, only letter “J” is located directly beneath the label “p'
+[chunk 1] token_range=(114,149) snippet=' Letters L, B, and K are associated with other stages such as the polyp forming, reproductive polyp,'
+[chunk 2] token_range=(149,195) snippet=' the correct choice for the planula stage.
+
+<final>J</final>'
+[chunk 3] token_range=(195,201) snippet='<empty>'
+
+[contrastive] Correct answer: J
+[contrastive] Anchor sentence (idx=2): 3. Letters L, B, and K are associated with other stages such as the polyp forming, reproductive poly...
+
+================================================================================
+🎯 Generating 5 continuations from anchor...
+================================================================================
+
+📝 Sample 1/5:
+   First sentence: 4....
+   Final answer: **Final Answer:
+   Answer probability: 0.0000
+
+📝 Sample 2/5:
+   First sentence: 4....
+   Final answer: Based on the above reasoning, the correct answer is: J
+   Answer probability: 1.0000
+
+📝 Sample 3/5:
+   First sentence: 4....
+   Final answer: Therefore, the correct answer is: J
+   Answer probability: 1.0000
+
+📝 Sample 4/5:
+   First sentence: Based on the above reasoning, the correct letter representing the planula stage is:
+
+Final Answer: **J**...
+   Final answer: Final Answer: **J**
+   Answer probability: 1.0000
+
+📝 Sample 5/5:
+   First sentence: **Final Answer:**
+$\boxed{J}$...
+   Final answer: $\boxed{J}$
+   Answer probability: 1.0000
+
+================================================================================
+✅ POSITIVE sentence (prob=1.0000):
+   4.
+
+❌ NEGATIVE sentence (prob=0.0000):
+   4.
+================================================================================
+
+[contrastive] Generated 5 samples
+[save] Wrote: anchor_vectors_output/example_3.json
+Reached MAX_SAMPLES=3 (successful examples). Stopping early.

@@ -22,7 +22,7 @@ def build_parser():
     p.add_argument("--model-cache", default=os.getenv("HF_MODEL_CACHE", "/mnt/hdd/huggingface-models"), help="HF model cache dir")
     p.add_argument("--model-name", default="Qwen/Qwen3-VL-8B-Instruct", help="Model name to load")
     p.add_argument("--gpu-id", type=int, default=1, help="GPU index (0-based)")
-    p.add_argument("--max-samples", type=int, default=30, help="Stop after N successful samples (0=all)")
+    p.add_argument("--max-samples", type=int, default=15, help="Stop after N successful samples (0=all)")
     p.add_argument("--max-new-tokens", type=int, default=256, help="Generation max_new_tokens")
     p.add_argument("--do-sample", action="store_true", help="Enable sampling (temperature/top-p)")
     p.add_argument("--skip-suppression", action="store_true", help="Skip suppression KL computation")
@@ -30,6 +30,8 @@ def build_parser():
     p.add_argument("--anchor-method", choices=["outgoing", "incoming", "combined"], default="outgoing", help="Aggregate KL for anchor vector")
     p.add_argument("--sparse-top-p", type=float, default=0.0, help="If >0 apply nucleus sparsification before KL (paper-style)")
     p.add_argument("--output-dir", default="anchor_vectors_output", help="Directory to store JSON outputs")
+    p.add_argument("--enable-contrastive", action="store_true", help="Enable contrastive positive/negative sentence generation")
+    p.add_argument("--contrastive-samples", type=int, default=5, help="Number of samples for contrastive generation")
     return p
 
 # Environment // API (optional)
@@ -56,6 +58,9 @@ def inject_env_from_args(args):
     os.environ["ANCHOR_METHOD"] = args.anchor_method
     if args.sparse_top_p > 0:
         os.environ["SPARSE_TOP_P"] = str(args.sparse_top_p)
+    # Always enable contrastive generation
+    os.environ["ENABLE_CONTRASTIVE"] = "1"
+    os.environ["CONTRASTIVE_SAMPLES"] = str(args.contrastive_samples)
 
 
 def main():
@@ -162,8 +167,19 @@ def main():
 
     processed = 0
     for idx, example in enumerate(tqdm(dataset, desc="Processing examples")):
+        # Filter: only process ai2d images
+        image_field = example.get('image', '')
+        if isinstance(image_field, str):
+            image_path = image_field
+        else:
+            image_path = ''
+
+        if 'ai2d' not in image_path:
+            print(f"\nSkipping example {idx+1}/{len(dataset)} (not ai2d): {image_path}")
+            continue
+
         print(f"\nProcessing example {idx+1}/{len(dataset)}")
-        
+
         result = process_dataset_sample(   
             example=example,
             model=model,

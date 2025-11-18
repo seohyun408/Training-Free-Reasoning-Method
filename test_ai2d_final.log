@@ -1,0 +1,375 @@
+Loading dataset: Xkev/LLaVA-CoT-100k (train[:50])...
+Loaded 50 examples
+[device] Using device: cuda:1 (total CUDA: 3)
+[device] GPU memory free/total: 3.21 / 47.53 GB
+Loading model: Qwen/Qwen3-VL-8B-Instruct
+[model] Loading with kwargs: {'trust_remote_code': True, 'cache_dir': '/mnt/hdd/huggingface-models', 'low_cpu_mem_usage': True, 'dtype': torch.float16}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.43s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.43s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.33s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.40s/it]
+Processing examples:   0%|          | 0/50 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Skipping example 1/50 (not ai2d): sqa/train/20839/image.png
+
+Skipping example 2/50 (not ai2d): chartqa/train/png/multi_col_100056.png
+
+Skipping example 3/50 (not ai2d): geoqa+/images/9435.png
+
+Skipping example 4/50 (not ai2d): geoqa+/images/10373.png
+
+Skipping example 5/50 (not ai2d): geoqa+/images/12240.png
+
+Skipping example 6/50 (not ai2d): chartqa/train/png/two_col_102544.png
+
+Skipping example 7/50 (not ai2d): chartqa/train/png/two_col_42332.png
+
+Skipping example 8/50 (not ai2d): sqa/train/7088/image.png
+
+Processing example 9/50
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2578.png
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 1. The diagram shows Earth’s orbit around the Sun with key dates marked: June 21 (Summer Solstice), December 22 (Winter Solstice), March 21 (Spring Equinox), and September 22 (Autu
+  attempt 1: 1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” indicating their positions in the year.   2. The time between June 21 and December 22 spans six
+Total Text >>>  <think>1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” indicating their positions in the year.  
+2. The time between June 21 and December 22 spans six months: July, August, September, October, November, and December.  
+3. The diagram also includes equinoxes in March and September, which divide the year into equal halves, reinforcing the six-month interval between solstices.  
+4. Since the solstices occur roughly six months apart, the correct answer must be six months, matching one of the given options.  
+5. The other options—12, 4, or 3—are inconsistent with the visual timeline presented in the diagram, which clearly depicts a six-month gap.  
+
+<final>6</final></think> 
+
+  Pair 0: Split into 6 chunks
+  Chunks preview: ['1. The diagram shows two solstices labeled “Solsti...', '2. The time between June 21 and December 22 spans ...', '3. The diagram also includes equinoxes in March an...', '4. Since the solstices occur roughly six months ap...', '5. The other options—12, 4, or 3—are inconsistent ...', '<final>6</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 310
+
+Suppressing chunks:   0%|          | 0/6 [00:00<?, ?it/s][A
+Suppressing chunks:  17%|█▋        | 1/6 [00:01<00:09,  1.97s/it][A
+Suppressing chunks:  33%|███▎      | 2/6 [00:03<00:07,  1.95s/it][A
+Suppressing chunks:  50%|█████     | 3/6 [00:05<00:05,  1.98s/it][A
+Suppressing chunks:  67%|██████▋   | 4/6 [00:07<00:03,  1.99s/it][A
+Suppressing chunks:  83%|████████▎ | 5/6 [00:09<00:01,  1.99s/it][A
+Suppressing chunks: 100%|██████████| 6/6 [00:11<00:00,  1.96s/it][ASuppressing chunks: 100%|██████████| 6/6 [00:11<00:00,  1.97s/it]
+Processing examples:  18%|█▊        | 9/50 [00:32<02:29,  3.64s/it]
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[88, 122]]
+[DEBUG]   range[0] text=' and December 22 spans six months: July, August, September, October, November, and December.  
+3. The diagram also inclu'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=13.429262 max_effect=16.464499 min_effect=10.958771
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[123, 154]]
+[DEBUG]   range[0] text=' September, which divide the year into equal halves, reinforcing the six-month interval between solstices.  
+4. Since th'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=11.759511 max_effect=14.079493 min_effect=8.413853
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[155, 187]]
+[DEBUG]   range[0] text=' apart, the correct answer must be six months, matching one of the given options.  
+5. The other options—12, 4, or '
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=16.433732 max_effect=18.266418 min_effect=15.063175
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[188, 216]]
+[DEBUG]   range[0] text='—are inconsistent with the visual timeline presented in the diagram, which clearly depicts a six-month gap.  
+
+<final>6<'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=11.364408 max_effect=13.180293 min_effect=9.052551
+
+[DEBUG] Suppressing chunk 4
+[DEBUG] (attn) Token ranges to mask: [[217, 251]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 4] mean_effect=12.034729 max_effect=15.176700 min_effect=10.186820
+
+[DEBUG] Suppressing chunk 5
+[DEBUG] (attn) Token ranges to mask: [[252, 259]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 5] mean_effect=15.290062 max_effect=16.873884 min_effect=12.922277
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 6
+  - Anchor vector shape: (6,)
+  - Min importance: 0.0000
+  - Max importance: 16.8431
+  - Mean importance: 10.8951
+  - Std importance: 5.2300
+
+✅ Top 5 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 2):
+    Score: 16.8431
+    Text: "3. The diagram also includes equinoxes in March and September, which divide the year into equal h..."
+
+  Rank 2 (Sentence 0):
+    Score: 13.8277
+    Text: "1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” indicating t..."
+
+  Rank 3 (Sentence 3):
+    Score: 11.7882
+    Text: "4. Since the solstices occur roughly six months apart, the correct answer must be six months, mat..."
+
+  Rank 4 (Sentence 1):
+    Score: 11.5184
+    Text: "2. The time between June 21 and December 22 spans six months: July, August, September, October, N..."
+
+  Rank 5 (Sentence 4):
+    Score: 11.3933
+    Text: "5. The other options—12, 4, or 3—are inconsistent with the visual timeline presented in the diagr..."
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (6, 6)
+  - Non-NaN values: 36/36
+  - Mean KL (non-NaN): 13.3853
+  - Max KL: 18.2664
+  - Min KL: 8.4139
+
+================================================================================
+[chunk 0] token_range=(88,122) snippet=' and December 22 spans six months: July, August, September, October, November, and December.  
+3. Th'
+[chunk 1] token_range=(123,154) snippet=' September, which divide the year into equal halves, reinforcing the six-month interval between sols'
+[chunk 2] token_range=(155,187) snippet=' apart, the correct answer must be six months, matching one of the given options.  
+5. The other opt'
+[chunk 3] token_range=(188,216) snippet='—are inconsistent with the visual timeline presented in the diagram, which clearly depicts a six-mon'
+[chunk 4] token_range=(217,251) snippet='<empty>'
+[chunk 5] token_range=(252,259) snippet='<empty>'
+
+[contrastive] Correct answer: 6
+[contrastive] Anchor sentence (idx=2): 3. The diagram also includes equinoxes in March and September, which divide the year into equal halv...
+
+================================================================================
+🎯 Generating 5 continuations from anchor...
+================================================================================
+
+📝 Sample 1/5:
+   First sentence: 4....
+   Final answer: The correct option is 6.
+   Answer probability: 1.0000
+
+📝 Sample 2/5:
+   First sentence: 4....
+   Final answer: **Answer: 6**
+   Answer probability: 1.0000
+
+📝 Sample 3/5:
+   First sentence: 4....
+   Final answer: Based on the options, the correct choice is: **6**.
+   Answer probability: 1.0000
+
+📝 Sample 4/5:
+   First sentence: 4....
+   Final answer: Final Answer: 6
+   Answer probability: 1.0000
+
+📝 Sample 5/5:
+   First sentence: The correct answer is: 6
+
+The correct option is: 6...
+   Final answer: The correct option is: 6
+   Answer probability: 1.0000
+
+================================================================================
+✅ POSITIVE sentence (prob=1.0000):
+   4.
+
+❌ NEGATIVE sentence (prob=1.0000):
+   The correct answer is: 6
+
+The correct option is: 6
+================================================================================
+
+[contrastive] Generated 5 samples
+[save] Wrote: anchor_vectors_output/example_8.json
+
+Skipping example 10/50 (not ai2d): chartqa/train/png/two_col_62742.png
+
+Skipping example 11/50 (not ai2d): sqa/train/253/image.png
+
+Processing example 12/50
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2330.png
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 1. The diagram shows a labeled stage called "planula" near the bottom right, which is a free-swimming larval form after fertilization. 2. The planula is depicted as a small, ciliat
+  attempt 1: 1. The diagram clearly labels the “planula” stage as a small, ciliated larva near the bottom right, just after the zygote and before the polyp forming stage. 2. The letter “K” is p
+Total Text >>>  <think>1. The diagram clearly labels the “planula” stage as a small, ciliated larva near the bottom right, just after the zygote and before the polyp forming stage.
+2. The letter “K” is positioned directly above the planula, indicating it is the correct label for this developmental stage.
+3. The other options — L, J, and B — are associated with different parts of the life cycle, such as medusae or polyps, not the free-swimming larva.
+4. The planula is shown as a distinct, early larval form that develops from the zygote and eventually settles to form a new polyp.
+5. Since the label “K” points to the planula stage, it is the correct choice among the given options.
+
+<final>K</final></think> 
+
+  Pair 0: Split into 6 chunks
+  Chunks preview: ['1. The diagram clearly labels the “planula” stage ...', '2. The letter “K” is positioned directly above the...', '3. The other options — L, J, and B — are associate...', '4. The planula is shown as a distinct, early larva...', '5. Since the label “K” points to the planula stage...', '<final>K</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 578
+
+Suppressing chunks:   0%|          | 0/6 [00:00<?, ?it/s][A
+Suppressing chunks:  17%|█▋        | 1/6 [00:01<00:09,  1.90s/it][A
+Suppressing chunks:  33%|███▎      | 2/6 [00:03<00:07,  1.83s/it][A
+Suppressing chunks:  50%|█████     | 3/6 [00:05<00:05,  1.83s/it][A
+Suppressing chunks:  67%|██████▋   | 4/6 [00:07<00:03,  1.82s/it][A
+Suppressing chunks:  83%|████████▎ | 5/6 [00:09<00:01,  1.81s/it][A
+Suppressing chunks: 100%|██████████| 6/6 [00:10<00:00,  1.79s/it][ASuppressing chunks: 100%|██████████| 6/6 [00:10<00:00,  1.81s/it]
+Processing examples:  22%|██▏       | 11/50 [01:07<03:57,  6.10s/it]
+
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[74, 113]]
+[DEBUG]   range[0] text=' stage.
+2. The letter “K” is positioned directly above the planula, indicating it is the correct label for this developm'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=15.767490 max_effect=22.381510 min_effect=12.418164
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[113, 139]]
+[DEBUG]   range[0] text=' B — are associated with different parts of the life cycle, such as medusae or polyps, not the free-swimming'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=13.661661 max_effect=18.125651 min_effect=10.101406
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[139, 179]]
+[DEBUG]   range[0] text=' larva.
+4. The planula is shown as a distinct, early larval form that develops from the zygote and eventually settles to'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=15.511605 max_effect=19.075521 min_effect=12.373828
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[179, 211]]
+[DEBUG]   range[0] text=' “K” points to the planula stage, it is the correct choice among the given options.
+
+<final>K</final>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=16.370519 max_effect=22.417318 min_effect=12.157344
+
+[DEBUG] Suppressing chunk 4
+[DEBUG] (attn) Token ranges to mask: [[211, 236]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 4] mean_effect=17.507449 max_effect=23.645182 min_effect=14.662969
+
+[DEBUG] Suppressing chunk 5
+[DEBUG] (attn) Token ranges to mask: [[236, 242]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 5] mean_effect=13.502533 max_effect=17.524089 min_effect=10.156953
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 6
+  - Anchor vector shape: (6,)
+  - Min importance: 0.0000
+  - Max importance: 23.6452
+  - Mean importance: 14.3754
+  - Std importance: 7.1381
+
+✅ Top 5 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 4):
+    Score: 23.6452
+    Text: "5. Since the label “K” points to the planula stage, it is the correct choice among the given opti..."
+
+  Rank 2 (Sentence 3):
+    Score: 17.2873
+    Text: "4. The planula is shown as a distinct, early larval form that develops from the zygote and eventu..."
+
+  Rank 3 (Sentence 2):
+    Score: 16.0040
+    Text: "3. The other options — L, J, and B — are associated with different parts of the life cycle, such ..."
+
+  Rank 4 (Sentence 0):
+    Score: 15.6186
+    Text: "1. The diagram clearly labels the “planula” stage as a small, ciliated larva near the bottom righ..."
+
+  Rank 5 (Sentence 1):
+    Score: 13.6975
+    Text: "2. The letter “K” is positioned directly above the planula, indicating it is the correct label fo..."
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (6, 6)
+  - Non-NaN values: 36/36
+  - Mean KL (non-NaN): 15.3869
+  - Max KL: 23.6452
+  - Min KL: 10.1014
+
+================================================================================
+[chunk 0] token_range=(74,113) snippet=' stage.
+2. The letter “K” is positioned directly above the planula, indicating it is the correct lab'
+[chunk 1] token_range=(113,139) snippet=' B — are associated with different parts of the life cycle, such as medusae or polyps, not the free-'
+[chunk 2] token_range=(139,179) snippet=' larva.
+4. The planula is shown as a distinct, early larval form that develops from the zygote and e'
+[chunk 3] token_range=(179,211) snippet=' “K” points to the planula stage, it is the correct choice among the given options.
+
+<final>K</final'
+[chunk 4] token_range=(211,236) snippet='<empty>'
+[chunk 5] token_range=(236,242) snippet='<empty>'
+
+[contrastive] Correct answer: K
+[contrastive] Anchor sentence (idx=4): 5. Since the label “K” points to the planula stage, it is the correct choice among the given options...
+
+================================================================================
+🎯 Generating 5 continuations from anchor...
+================================================================================
+
+📝 Sample 1/5:
+   First sentence: 1....
+   Final answer: 1. The planula stage is a free-swimming, ciliated larva that develops from the fertilized egg (zygote) and typically settles on a substrate to begin the development into a polyp. 2. In the diagram, the stage labeled "K" is depicted as a small, ciliated organism near the bottom right, consistent with the description of a planula larva. 3. Other stages labeled "L," "J," and "B" represent later developmental forms, such as polyps and medusae, not the early larval stage. 4. Therefore, the letter representing the
+   Answer probability: 1.0000
+
+📝 Sample 2/5:
+   First sentence: 6....
+   Final answer: **Final Answer: K**
+   Answer probability: 1.0000
+
+📝 Sample 3/5:
+   First sentence: Based on the diagram and labels, and since I have confirmed that K corresponds to the planula stage, I can now confidently conclude the answer....
+   Final answer: The letter that represents the planula stage is: K.
+   Answer probability: 1.0000
+
+📝 Sample 4/5:
+   First sentence: 6....
+   Final answer: Answer: K
+   Answer probability: 1.0000
+
+📝 Sample 5/5:
+   First sentence: 6....
+   Final answer: Final Answer: **K**
+   Answer probability: 1.0000
+
+================================================================================
+✅ POSITIVE sentence (prob=1.0000):
+   1.
+
+❌ NEGATIVE sentence (prob=1.0000):
+   6.
+================================================================================
+
+[contrastive] Generated 5 samples
+[save] Wrote: anchor_vectors_output/example_11.json
+Reached MAX_SAMPLES=2 (successful examples). Stopping early.

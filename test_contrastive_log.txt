@@ -1,0 +1,126 @@
+Loading model...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:09,  3.24s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.52s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.32s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.92s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.96s/it]
+The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Processing example with contrastive generation...
+image_path >>>  /mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2578.png
+Generating reasoning with model...
+[inject] Added synthetic <think> wrapper.
+[gen-debug] Attempts:
+  attempt 0: 1. The diagram shows two solstices labeled "Solstice June 21" and "Solstice Dec 22," indicating their positions in the calendar year.   2. Counting the months between June 21 and D
+  attempt 1: 1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” which are separated by six months on the calendar.   2. The Earth’s orbit is illustrated with k
+Total Text >>>  <think>1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” which are separated by six months on the calendar.  
+2. The Earth’s orbit is illustrated with key dates, including equinoxes in March and September, confirming the solstices occur every six months apart.  
+3. Counting from June 21 to December 22 includes July, August, September, October, November, and December, totaling six months.  
+
+<final>6</final></think> 
+
+  Pair 0: Split into 4 chunks
+  Chunks preview: ['1. The diagram shows two solstices labeled “Solsti...', '2. The Earth’s orbit is illustrated with key dates...', '3. Counting from June 21 to December 22 includes J...', '<final>6</final>']
+  Pair 0: Computing suppression KL matrix...
+Computing baseline logits...
+[info] Suppression strategy fixed to 'attn' (embedding suppression disabled), SPARSE_TOP_P=0.0
+  Baseline logits length: 250
+Suppressing chunks:   0%|          | 0/4 [00:00<?, ?it/s]Suppressing chunks:  25%|██▌       | 1/4 [00:01<00:05,  1.81s/it]Suppressing chunks:  50%|█████     | 2/4 [00:03<00:03,  1.79s/it]Suppressing chunks:  75%|███████▌  | 3/4 [00:05<00:01,  1.80s/it]Suppressing chunks: 100%|██████████| 4/4 [00:07<00:00,  1.79s/it]Suppressing chunks: 100%|██████████| 4/4 [00:07<00:00,  1.79s/it]
+Traceback (most recent call last):
+  File "/home/jyko/nlp_project2/Training-Free-Reasoning-Method/process.py", line 522, in process_qa_pair
+    contrastive_result = generate_from_anchor(
+  File "/home/jyko/nlp_project2/Training-Free-Reasoning-Method/contrastive_generation.py", line 162, in generate_from_anchor
+    inputs = processor(text=[template_text], images=[image], return_tensors="pt")
+  File "/home/jyko/miniforge3/envs/thoughtanchors/lib/python3.10/site-packages/transformers/models/qwen3_vl/processing_qwen3_vl.py", line 191, in __call__
+    num_image_tokens = image_grid_thw[index].prod() // merge_length
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+
+[DEBUG] Suppressing chunk 0
+[DEBUG] (attn) Token ranges to mask: [[88, 125]]
+[DEBUG]   range[0] text=' is illustrated with key dates, including equinoxes in March and September, confirming the solstices occur every six mon'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 0] mean_effect=12.872283 max_effect=13.742432 min_effect=12.218750
+
+[DEBUG] Suppressing chunk 1
+[DEBUG] (attn) Token ranges to mask: [[126, 158]]
+[DEBUG]   range[0] text=' 22 includes July, August, September, October, November, and December, totaling six months.  
+
+<final>6</final>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 1] mean_effect=14.669865 max_effect=17.535097 min_effect=10.869978
+
+[DEBUG] Suppressing chunk 2
+[DEBUG] (attn) Token ranges to mask: [[159, 191]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 2] mean_effect=15.112243 max_effect=18.570068 min_effect=12.342076
+
+[DEBUG] Suppressing chunk 3
+[DEBUG] (attn) Token ranges to mask: [[192, 199]]
+[DEBUG]   range[0] text='<empty-range>'
+Found rotary_emb at model.rotary_emb
+[hooks] Attention masking applied (strategy='attn').
+[chunk 3] mean_effect=12.780194 max_effect=13.942719 min_effect=11.851192
+
+================================================================================
+
+✅ Statistics:
+  - Number of sentences: 4
+  - Anchor vector shape: (4,)
+  - Min importance: 0.0000
+  - Max importance: 12.9411
+  - Mean importance: 9.4805
+  - Std importance: 5.4776
+
+✅ Top 4 Most Important Anchor Sentences:
+--------------------------------------------------------------------------------
+
+  Rank 1 (Sentence 0):
+    Score: 12.9411
+    Text: "1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” which are se..."
+
+  Rank 2 (Sentence 1):
+    Score: 12.6386
+    Text: "2. The Earth’s orbit is illustrated with key dates, including equinoxes in March and September, c..."
+
+  Rank 3 (Sentence 2):
+    Score: 12.3421
+    Text: "3. Counting from June 21 to December 22 includes July, August, September, October, November, and ..."
+
+  Rank 4 (Sentence 3):
+    Score: 0.0000
+    Text: "<final>6</final>"
+
+✅ KL Divergence Matrix Statistics:
+  - Matrix shape: (4, 4)
+  - Non-NaN values: 16/16
+  - Mean KL (non-NaN): 13.8586
+  - Max KL: 18.5701
+  - Min KL: 10.8700
+
+================================================================================
+[chunk 0] token_range=(88,125) snippet=' is illustrated with key dates, including equinoxes in March and September, confirming the solstices'
+[chunk 1] token_range=(126,158) snippet=' 22 includes July, August, September, October, November, and December, totaling six months.  
+
+<fina'
+[chunk 2] token_range=(159,191) snippet='<empty>'
+[chunk 3] token_range=(192,199) snippet='<empty>'
+
+[contrastive] Correct answer: 6
+[contrastive] Anchor sentence (idx=0): 1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” which are separ...
+[contrastive] Error: index 1 is out of bounds for dimension 0 with size 1
+
+================================================================================
+📊 RESULTS
+================================================================================
+
+Question: <|vision_start|><|image_pad|><|vision_end|>
+How many months are between the Solstices?
+
+Options:
+- 1...
+Reasoning: 1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” which are separated by six months on the calendar.  
+2. The Earth’s orbit is illustrated with key dates, including ...
+
+⚠️ No contrastive results
+
+✅ Results saved to: test_contrastive_output.json

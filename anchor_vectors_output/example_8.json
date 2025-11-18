@@ -6,45 +6,103 @@
     {
       "pair_idx": 0,
       "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many months are between the Solstices?\n\nOptions:\n- 12\n- 4\n- 3\n- 6\n\nPlease answer the question based on the options mentioned before.",
-      "reasoning_text": "1. The diagram shows two solstices labeled as June 21 and December 22, indicating their positions in the Earth’s orbit around the Sun.  \n2. The time span between June 21 and December 22 includes six months: July, August, September, October, November, and December.  \n3. Since the Earth completes its orbit in approximately 12 months, the solstices are separated by exactly six months, as shown by the diagram’s orbital markers.  \n\n<final>6</final>",
+      "reasoning_text": "1. The diagram shows Earth’s orbit around the Sun with labeled solstices occurring on June 21 and December 22, indicating the two extreme points of the year.  \n2. The time between June 21 and December 22 spans six months, as the calendar months from June to December include July, August, September, October, November, and December.  \n3. The diagram also shows equinoxes at March 21 and September 22, which are midway between solstices, confirming the six-month interval.  \n4. Since the solstices are opposite each other in the orbit, the orbital path divides the year into two equal halves, each six months long.  \n5. The options provided include 12, 4, 3, and 6, and only “6” correctly matches the time span between solstices as shown in the diagram.  \n\n<final>6</final>",
       "raw_generation": [
-        "1. The diagram shows two solstices labeled \"Solstice June 21\" and \"Solstice Dec 22,\" indicating their positions in the calendar year.  \n2. Counting the months between June 21 and December 22 includes July, August, September, October, November, and December, totaling six months.  \n3. The equinoxes shown at March 21 and September 22 further confirm the seasonal cycle spans six months between solstices.  \n\n<final>6</final>",
-        "1. The diagram shows two solstices labeled as June 21 and December 22, indicating their positions in the Earth’s orbit around the Sun.  \n2. The time span between June 21 and December 22 includes six months: July, August, September, October, November, and December.  \n3. Since the Earth completes its orbit in approximately 12 months, the solstices are separated by exactly six months, as shown by the diagram’s orbital markers.  \n\n<final>6</final>"
+        "1. The diagram shows Earth’s orbit around the Sun with key dates marked: June 21 (Summer Solstice), December 22 (Winter Solstice), March 21 (Spring Equinox), and September 22 (Autumn Equinox).  \n2. The Solstices occur on June 21 and December 22, which are directly opposite each other in the annual cycle.  \n3. Counting the months between June 21 and December 22, we include July, August, September, October, November, and December — totaling six months.  \n4. The diagram visually confirms that the Solstices are separated by half the orbit, which corresponds to six months in the calendar.  \n5. Among the given options — 12, 4, 3, and 6 — only “6” accurately represents the number of months between the two Solstices.  \n\n<final>6</final>",
+        "1. The diagram shows Earth’s orbit around the Sun with labeled solstices occurring on June 21 and December 22, indicating the two extreme points of the year.  \n2. The time between June 21 and December 22 spans six months, as the calendar months from June to December include July, August, September, October, November, and December.  \n3. The diagram also shows equinoxes at March 21 and September 22, which are midway between solstices, confirming the six-month interval.  \n4. Since the solstices are opposite each other in the orbit, the orbital path divides the year into two equal halves, each six months long.  \n5. The options provided include 12, 4, 3, and 6, and only “6” correctly matches the time span between solstices as shown in the diagram.  \n\n<final>6</final>"
       ],
       "chunks": [
-        "1. The diagram shows two solstices labeled as June 21 and December 22, indicating their positions in the Earth’s orbit around the Sun.",
-        "2. The time span between June 21 and December 22 includes six months: July, August, September, October, November, and December.",
-        "3. Since the Earth completes its orbit in approximately 12 months, the solstices are separated by exactly six months, as shown by the diagram’s orbital markers.",
+        "1. The diagram shows Earth’s orbit around the Sun with labeled solstices occurring on June 21 and December 22, indicating the two extreme points of the year.",
+        "2. The time between June 21 and December 22 spans six months, as the calendar months from June to December include July, August, September, October, November, and December.",
+        "3. The diagram also shows equinoxes at March 21 and September 22, which are midway between solstices, confirming the six-month interval.",
+        "4. Since the solstices are opposite each other in the orbit, the orbital path divides the year into two equal halves, each six months long.",
+        "5. The options provided include 12, 4, 3, and 6, and only “6” correctly matches the time span between solstices as shown in the diagram.",
         "<final>6</final>"
       ],
       "chunk_token_ranges": [
         [
           88,
-          121
+          125
         ],
         [
-          122,
-          154
+          126,
+          166
         ],
         [
-          155,
-          190
+          167,
+          201
         ],
         [
-          191,
-          198
+          202,
+          233
+        ],
+        [
+          234,
+          274
+        ],
+        [
+          275,
+          282
         ]
       ],
       "anchor_vector": [
-        12.975733875093006,
-        11.618680245535714,
-        11.583147321428571,
+        13.219374842820821,
+        11.452442354107653,
+        19.477559913834487,
+        12.876410477502006,
+        12.73828125,
         0.0
       ],
       "kl_matrix_shape": [
-        4,
-        4
-      ]
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Since there are only two solstices per year (one in June and one in December), the full cycle from one solstice to the next solstice is six months.",
+        "negative_sentence": "Step 3: Since the solstices are opposite points in the year, they are separated by half the year.",
+        "positive_full": " \n4. Since there are only two solstices per year (one in June and one in December), the full cycle from one solstice to the next solstice is six months. 5. Therefore, the correct option is 6.\n\n6\n\nThe correct option is: **6**. \n\n**Final Answer: 6**",
+        "negative_full": " \n\nStep 3: Since the solstices are opposite points in the year, they are separated by half the year. A year has 12 months, so half of 12 is 6. Therefore, there are 6 months between the solstices.\n\nThe correct answer is:\n- 6",
+        "positive_probability": 0.5686658750380414,
+        "negative_probability": 0.005950252278248563,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " \n4. Since there are only two solstices per year (one in June and one in December), the full cycle from one solstice to the next solstice is six months. 5. Therefore, the correct option is 6.\n\n6\n\nThe correct option is: **6**. \n\n**Final Answer: 6**",
+            "first_sentence": "Since there are only two solstices per year (one in June and one in December), the full cycle from one solstice to the next solstice is six months.",
+            "answer_probability": 0.5686658750380414,
+            "final_answer": "6"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " 4. Since there are only two solstices (June and December), and they are separated by six months, the total number of months between solstices is six.\n\nSo, the answer is **6**.",
+            "first_sentence": "Since there are only two solstices (June and December), and they are separated by six months, the total number of months between solstices is six.",
+            "answer_probability": 0.5268723378799273,
+            "final_answer": "6"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n4. The Earth completes one orbit around the Sun in approximately 365.25 days, which corresponds to one year. 5. The solstices occur twice a year — once around June 21 (summer solstice) and once around December 22 (winter solstice). 6. The time between the two solstices — from June 21 to December 22 — is exactly six months, as it covers half a year. 7. This is supported by the diagram showing the equinoxes (March 21 and September 22) at the midpoints between",
+            "first_sentence": "The Earth completes one orbit around the Sun in approximately 365.25 days, which corresponds to one year.",
+            "answer_probability": 0.006931489447544863,
+            "final_answer": "4. The Earth completes one orbit around the Sun in approximately 365.25 days, which corresponds to one year. 5. The solstices occur twice a year — once around June 21 (summer solstice) and once around December 22 (winter solstice). 6. The time between the two solstices — from June 21 to December 22 — is exactly six months, as it covers half a year. 7. This is supported by the diagram showing the equinoxes (March 21 and September 22) at the midpoints between"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " 4. Since the solstices are approximately 6 months apart (June 21 and December 22), and the options include \"6,\" this must be the correct answer. 5. The other options (12, 4, 3) do not match the actual time span between solstices.\n\nBased on the reasoning above, the correct answer is:\n6\n\n**Final Answer: 6**",
+            "first_sentence": "Since the solstices are approximately 6 months apart (June 21 and December 22), and the options include \"6,\" this must be the correct answer.",
+            "answer_probability": 0.006521127461729449,
+            "final_answer": ". 5. The other options (12, 4, 3) do not match the actual time span between solstices"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\nStep 3: Since the solstices are opposite points in the year, they are separated by half the year. A year has 12 months, so half of 12 is 6. Therefore, there are 6 months between the solstices.\n\nThe correct answer is:\n- 6",
+            "first_sentence": "Step 3: Since the solstices are opposite points in the year, they are separated by half the year.",
+            "answer_probability": 0.005950252278248563,
+            "final_answer": "- 6"
+          }
+        ],
+        "correct_answer": "6"
+      }
     }
   ],
   "example_idx": 8
