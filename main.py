@@ -32,6 +32,8 @@ def build_parser():
     p.add_argument("--output-dir", default="anchor_vectors_output", help="Directory to store JSON outputs")
     p.add_argument("--enable-contrastive", action="store_true", help="Enable contrastive positive/negative sentence generation")
     p.add_argument("--contrastive-samples", type=int, default=5, help="Number of samples for contrastive generation")
+    p.add_argument("--test-pca-context", action="store_true", help="Test PCA context vector effect on answer accuracy")
+    p.add_argument("--pca-num-trials", type=int, default=3, help="Number of trials per context scale for PCA testing")
     return p
 
 # Environment // API (optional)
@@ -61,6 +63,9 @@ def inject_env_from_args(args):
     # Always enable contrastive generation
     os.environ["ENABLE_CONTRASTIVE"] = "1"
     os.environ["CONTRASTIVE_SAMPLES"] = str(args.contrastive_samples)
+    # PCA context testing
+    os.environ["TEST_PCA_CONTEXT"] = "1" if args.test_pca_context else "0"
+    os.environ["PCA_NUM_TRIALS"] = str(args.pca_num_trials)
 
 
 def main():

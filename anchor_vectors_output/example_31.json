@@ -60,21 +60,21 @@
       "contrastive": {
         "positive_sentence": "In an ecosystem, producers are organisms that create their own food, typically through photosynthesis.",
         "negative_sentence": "",
-        "positive_full": " \n4. In an ecosystem, producers are organisms that create their own food, typically through photosynthesis. Since plants are capable of photosynthesis and are the foundation of most food chains, they fit the definition of producers perfectly. 5. The other options — birds (consumers), nematodes (decomposers or consumers), and fungi (decomposers) — do not produce their own food and rely on consuming other organisms or organic matter, so they are not producers.\n\nBased on the reasoning, the correct answer is: Plants\n\nPlants",
+        "positive_full": " \n4. In an ecosystem, producers are organisms that create their own food, typically through photosynthesis. Since plants are capable of photosynthesis and are the foundation of most food chains, they fit the definition of producers perfectly. 5. The other options \u2014 birds (consumers), nematodes (decomposers or consumers), and fungi (decomposers) \u2014 do not produce their own food and rely on consuming other organisms or organic matter, so they are not producers.\n\nBased on the reasoning, the correct answer is: Plants\n\nPlants",
         "negative_full": "",
         "positive_probability": 0.6775301558071415,
         "negative_probability": 0.001,
         "all_samples": [
           {
             "sample_idx": 1,
-            "continuation": " \n4. In an ecosystem, producers are organisms that create their own food, typically through photosynthesis. Since plants are capable of photosynthesis and are the foundation of most food chains, they fit the definition of producers perfectly. 5. The other options — birds (consumers), nematodes (decomposers or consumers), and fungi (decomposers) — do not produce their own food and rely on consuming other organisms or organic matter, so they are not producers.\n\nBased on the reasoning, the correct answer is: Plants\n\nPlants",
+            "continuation": " \n4. In an ecosystem, producers are organisms that create their own food, typically through photosynthesis. Since plants are capable of photosynthesis and are the foundation of most food chains, they fit the definition of producers perfectly. 5. The other options \u2014 birds (consumers), nematodes (decomposers or consumers), and fungi (decomposers) \u2014 do not produce their own food and rely on consuming other organisms or organic matter, so they are not producers.\n\nBased on the reasoning, the correct answer is: Plants\n\nPlants",
             "first_sentence": "In an ecosystem, producers are organisms that create their own food, typically through photosynthesis.",
             "answer_probability": 0.6775301558071415,
             "final_answer": "Plants"
           },
           {
             "sample_idx": 3,
-            "continuation": " \n\nBased on the information in the food web diagram and the characteristics of producers, what is the correct answer?\n\nBased on the information in the food web diagram and the characteristics of producers, the correct answer is **Plants**.\n\n✅ **Final Answer: Plants**",
+            "continuation": " \n\nBased on the information in the food web diagram and the characteristics of producers, what is the correct answer?\n\nBased on the information in the food web diagram and the characteristics of producers, the correct answer is **Plants**.\n\n\u2705 **Final Answer: Plants**",
             "first_sentence": "Based on the information in the food web diagram and the characteristics of producers, what is the correct answer?",
             "answer_probability": 0.598178282567681,
             "final_answer": ""
@@ -101,7 +101,114 @@
             "final_answer": ""
           }
         ],
-        "correct_answer": "Plants"
+        "correct_answer": "Plants",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.5012299398663054,
+              "generated_answers": [
+                "Plants",
+                "Plants",
+                "\"Plants\" because they are the only organism in the options that can independently generate energy and serve as the base of the food web",
+                "Plants",
+                "Plants"
+              ],
+              "answer_probabilities": [
+                0.6046843471704875,
+                0.7023956306217164,
+                0.006027276499477256,
+                0.4967761714042311,
+                0.6962662736356141
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.5038067540557918,
+              "generated_answers": [
+                "Plants",
+                "Plants",
+                "Plants",
+                "Plants",
+                "Based on this reasoning, the producer organism is: Plants"
+              ],
+              "answer_probabilities": [
+                0.5249770850673403,
+                0.7005761495800069,
+                0.7056578954892774,
+                0.5824025969065054,
+                0.0054200432358286485
+              ]
+            },
+            "1.0": {
+              "accuracy": 1.0,
+              "correct_count": 5,
+              "total_trials": 5,
+              "avg_probability": 0.6947219965400157,
+              "generated_answers": [
+                "plants",
+                "Plants",
+                "Plants",
+                "Plants",
+                "Plants"
+              ],
+              "answer_probabilities": [
+                0.7284017644319263,
+                0.6503976183699838,
+                0.7169895057040508,
+                0.7456279673345533,
+                0.6321931268595641
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.3566169674295801,
+              "generated_answers": [
+                "plants",
+                "",
+                "$\\boxed{Plants}$",
+                "\"plants.\"",
+                "Plants"
+              ],
+              "answer_probabilities": [
+                0.6213993092691651,
+                0.6034697167145557,
+                0.005689362205871661,
+                0.005428458167773661,
+                0.5470979907905342
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.23992801652803566,
+              "generated_answers": [
+                "The producer organism is Plants",
+                "",
+                "",
+                "Plants",
+                "\"plants,\" as they are the only organism in the options that produce their own food and serve as the primary energy source in the ecosystem"
+              ],
+              "answer_probabilities": [
+                0.004686707391530334,
+                0.6270533620325062,
+                0.001,
+                0.5619814187370106,
+                0.004918594479131305
+              ]
+            }
+          }
+        }
       }
     }
   ],

@@ -56,6 +56,7 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
             color: #333;
             margin-bottom: 30px;
         }
+                      
         .example {
             background: white;
             border-radius: 10px;
@@ -263,6 +264,103 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
         .sample-rank {
             font-weight: bold;
             color: #667eea;
+        }
+        .pca-section {
+            margin-top: 20px;
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .pca-header {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .pca-description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .pca-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .pca-table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .pca-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .pca-table tr:last-child td {
+            border-bottom: none;
+        }
+        .pca-table tr:hover {
+            background: #f5f5f5;
+        }
+        .pca-table tr.best-scale {
+            background: #e8f5e9;
+            font-weight: bold;
+        }
+        .pca-table tr.best-scale:hover {
+            background: #d4edda;
+        }
+        .trials-details {
+            margin-top: 15px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .trials-header {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+        .trial-item {
+            padding: 8px 12px;
+            margin: 6px 0;
+            border-left: 3px solid #ddd;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+        .trial-item.correct {
+            border-left-color: #28a745;
+            background: #f0f9f4;
+        }
+        .trial-item.incorrect {
+            border-left-color: #dc3545;
+            background: #fff5f5;
+        }
+        .trial-label {
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .trial-answer {
+            font-family: 'Courier New', monospace;
+            background: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+        }
+        .trial-prob {
+            color: #666;
+            font-size: 12px;
+            margin-left: 10px;
         }
         @media (max-width: 900px) {
             .content-grid {
@@ -538,6 +636,105 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
                 html_parts.append("""
                 </div>
 """)  # contrastive-section 끝
+
+                # PCA Context Vector Results
+                pca_context = contrastive.get('pca_context')
+                if pca_context and pca_context.get('results'):
+                    html_parts.append("""
+                <div class="pca-section">
+                    <div class="pca-header">🧪 PCA Context Vector Results</div>
+                    <p class="pca-description">
+                        Testing the effect of adding PCA-extracted context vector (from positive - negative hidden states)
+                        to decoder hidden states during generation.
+                    </p>
+""")
+
+                    results = pca_context['results']
+
+                    # Create comparison table
+                    html_parts.append("""
+                    <table class="pca-table">
+                        <thead>
+                            <tr>
+                                <th>Context Scale</th>
+                                <th>Accuracy</th>
+                                <th>Avg Probability</th>
+                                <th>Correct / Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+""")
+
+                    # Sort by scale
+                    for scale in sorted(results.keys(), key=lambda x: float(x)):
+                        result = results[scale]
+                        accuracy = result.get('accuracy', 0.0)
+                        avg_prob = result.get('avg_probability', 0.0)
+                        correct = result.get('correct_count', 0)
+                        total = result.get('total_trials', 0)
+
+                        # Highlight best accuracy
+                        row_class = "best-scale" if accuracy == max(r.get('accuracy', 0) for r in results.values()) else ""
+
+                        html_parts.append(f"""
+                            <tr class="{row_class}">
+                                <td><strong>{scale}</strong></td>
+                                <td>{accuracy:.1%}</td>
+                                <td>{avg_prob:.4f}</td>
+                                <td>{correct} / {total}</td>
+                            </tr>
+""")
+
+                    html_parts.append("""
+                        </tbody>
+                    </table>
+""")
+
+                    # Add detailed trial results for each scale
+                    correct_answer = contrastive.get('correct_answer', '')
+
+                    for scale in sorted(results.keys(), key=lambda x: float(x)):
+                        result = results[scale]
+                        generated_answers = result.get('generated_answers', [])
+                        answer_probs = result.get('answer_probabilities', [])
+
+                        if generated_answers:
+                            html_parts.append(f"""
+                    <div class="trials-details">
+                        <div class="trials-header">📋 Scale {scale} - Individual Trial Results</div>
+""")
+
+                            for trial_idx, (answer, prob) in enumerate(zip(generated_answers, answer_probs), 1):
+                                # Normalize answers for comparison
+                                def normalize_answer(ans):
+                                    if not ans:
+                                        return ""
+                                    return str(ans).strip().upper()
+
+                                is_correct = normalize_answer(answer) == normalize_answer(correct_answer)
+                                trial_class = "correct" if is_correct else "incorrect"
+                                icon = "✅" if is_correct else "❌"
+
+                                # Truncate long answers
+                                display_answer = answer if len(str(answer)) <= 100 else str(answer)[:100] + "..."
+                                if not display_answer:
+                                    display_answer = "(empty answer)"
+
+                                html_parts.append(f"""
+                        <div class="trial-item {trial_class}">
+                            <span class="trial-label">{icon} Trial {trial_idx}:</span>
+                            <span class="trial-answer">"{display_answer}"</span>
+                            <span class="trial-prob">(prob: {prob:.4f})</span>
+                        </div>
+""")
+
+                            html_parts.append("""
+                    </div>
+""")
+
+                    html_parts.append("""
+                </div>
+""")  # pca-section 끝
 
             html_parts.append("""
             </div>

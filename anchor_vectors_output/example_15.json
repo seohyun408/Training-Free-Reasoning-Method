@@ -6,17 +6,17 @@
     {
       "pair_idx": 0,
       "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat stage of the moon cycle is shown at letter F?\n\nOptions:\n- new moon\n- first quarter moon\n- third quarter moon\n- full moon\n\nPlease answer the question based on the options mentioned before.",
-      "reasoning_text": "1. The diagram illustrates the moon’s orbit around Earth with the Sun positioned above, indicating the relative alignment during tidal phases.  \n2. The moon’s position labeled “New moon” is directly between Earth and the Sun, with no visible illumination from Earth’s perspective.  \n3. The “First quarter moon” is shown at a 90-degree angle from the Sun, with half of the moon illuminated and visible from Earth.  \n4. The “Third quarter moon” is also at a 90-degree angle but on the opposite side, with the other half illuminated.  \n5. The “Full moon” is directly opposite the Sun from Earth, fully illuminated and visible as a complete circle.  \n<final>full moon</final>",
+      "reasoning_text": "1. The diagram illustrates the moon\u2019s orbit around Earth with the Sun positioned above, indicating the relative alignment during tidal phases.  \n2. The moon\u2019s position labeled \u201cNew moon\u201d is directly between Earth and the Sun, with no visible illumination from Earth\u2019s perspective.  \n3. The \u201cFirst quarter moon\u201d is shown at a 90-degree angle from the Sun, with half of the moon illuminated and visible from Earth.  \n4. The \u201cThird quarter moon\u201d is also at a 90-degree angle but on the opposite side, with the other half illuminated.  \n5. The \u201cFull moon\u201d is directly opposite the Sun from Earth, fully illuminated and visible as a complete circle.  \n<final>full moon</final>",
       "raw_generation": [
-        "1. The diagram illustrates the lunar phases and their relationship to tidal patterns, with the Sun, Earth, and Moon positioned in various alignments.  \n2. The Moon’s orbit around Earth is shown with four key phases: new moon, first quarter, full moon, and third quarter, each labeled clearly.  \n3. The position marked as “F” is located directly opposite the Sun relative to Earth, indicating the Moon is fully illuminated from Earth’s perspective.  \n4. This alignment corresponds to the full moon phase, where the Earth is between the Sun and Moon, allowing the entire face of the Moon to be lit.  \n5. The diagram also shows that this position is associated with a “Spring tide,” confirming it is the full moon phase due to the alignment of gravitational forces.  \n\n<final>full moon</final>",
-        "1. The diagram illustrates the moon’s orbit around Earth with the Sun positioned above, indicating the relative alignment during tidal phases.  \n2. The moon’s position labeled “New moon” is directly between Earth and the Sun, with no visible illumination from Earth’s perspective.  \n3. The “First quarter moon” is shown at a 90-degree angle from the Sun, with half of the moon illuminated and visible from Earth.  \n4. The “Third quarter moon” is also at a 90-degree angle but on the opposite side, with the other half illuminated.  \n5. The “Full moon” is directly opposite the Sun from Earth, fully illuminated and visible as a complete circle.  \n<final>full moon</final>"
+        "1. The diagram illustrates the lunar phases and their relationship to tidal patterns, with the Sun, Earth, and Moon positioned in various alignments.  \n2. The Moon\u2019s orbit around Earth is shown with four key phases: new moon, first quarter, full moon, and third quarter, each labeled clearly.  \n3. The position marked as \u201cF\u201d is located directly opposite the Sun relative to Earth, indicating the Moon is fully illuminated from Earth\u2019s perspective.  \n4. This alignment corresponds to the full moon phase, where the Earth is between the Sun and Moon, allowing the entire face of the Moon to be lit.  \n5. The diagram also shows that this position is associated with a \u201cSpring tide,\u201d confirming it is the full moon phase due to the alignment of gravitational forces.  \n\n<final>full moon</final>",
+        "1. The diagram illustrates the moon\u2019s orbit around Earth with the Sun positioned above, indicating the relative alignment during tidal phases.  \n2. The moon\u2019s position labeled \u201cNew moon\u201d is directly between Earth and the Sun, with no visible illumination from Earth\u2019s perspective.  \n3. The \u201cFirst quarter moon\u201d is shown at a 90-degree angle from the Sun, with half of the moon illuminated and visible from Earth.  \n4. The \u201cThird quarter moon\u201d is also at a 90-degree angle but on the opposite side, with the other half illuminated.  \n5. The \u201cFull moon\u201d is directly opposite the Sun from Earth, fully illuminated and visible as a complete circle.  \n<final>full moon</final>"
       ],
       "chunks": [
-        "1. The diagram illustrates the moon’s orbit around Earth with the Sun positioned above, indicating the relative alignment during tidal phases.",
-        "2. The moon’s position labeled “New moon” is directly between Earth and the Sun, with no visible illumination from Earth’s perspective.",
-        "3. The “First quarter moon” is shown at a 90-degree angle from the Sun, with half of the moon illuminated and visible from Earth.",
-        "4. The “Third quarter moon” is also at a 90-degree angle but on the opposite side, with the other half illuminated.",
-        "5. The “Full moon” is directly opposite the Sun from Earth, fully illuminated and visible as a complete circle.",
+        "1. The diagram illustrates the moon\u2019s orbit around Earth with the Sun positioned above, indicating the relative alignment during tidal phases.",
+        "2. The moon\u2019s position labeled \u201cNew moon\u201d is directly between Earth and the Sun, with no visible illumination from Earth\u2019s perspective.",
+        "3. The \u201cFirst quarter moon\u201d is shown at a 90-degree angle from the Sun, with half of the moon illuminated and visible from Earth.",
+        "4. The \u201cThird quarter moon\u201d is also at a 90-degree angle but on the opposite side, with the other half illuminated.",
+        "5. The \u201cFull moon\u201d is directly opposite the Sun from Earth, fully illuminated and visible as a complete circle.",
         "<final>full moon</final>"
       ],
       "chunk_token_ranges": [
@@ -58,50 +58,157 @@
         6
       ],
       "contrastive": {
-        "positive_sentence": "The “Third quarter moon” is shown at another 90-degree angle from the Sun, but on the opposite side, with the other half of the moon illuminated and visible from Earth.",
-        "negative_sentence": "The “Third quarter moon” is located at the 270-degree position relative to the Sun, with the other half of the moon illuminated, making the opposite side visible.",
-        "positive_full": " 4. The “Third quarter moon” is shown at another 90-degree angle from the Sun, but on the opposite side, with the other half of the moon illuminated and visible from Earth. 5. The “Full moon” occurs when the Earth is between the Sun and the Moon, so the Moon is fully illuminated from Earth’s perspective.\n\n6. Looking at the position labeled “F” in the diagram, it is located at the farthest point from the Sun, directly opposite the New Moon position. 7. At this position, the entire face of the Moon visible from Earth is illuminated, meaning it is a",
-        "negative_full": " \n4. The “Third quarter moon” is located at the 270-degree position relative to the Sun, with the other half of the moon illuminated, making the opposite side visible. 5. The “Full moon” is when the moon is positioned directly opposite the Sun relative to Earth, fully illuminated and visible as a complete circle.\n\nNext, I need to identify the position labeled \"F\" in the diagram. Since the question refers to a diagram that is not provided, I must assume that \"F\" refers to a standard moon phase diagram where the positions are labeled. In standard diagrams, the positions are typically labeled as",
+        "positive_sentence": "The \u201cThird quarter moon\u201d is shown at another 90-degree angle from the Sun, but on the opposite side, with the other half of the moon illuminated and visible from Earth.",
+        "negative_sentence": "The \u201cThird quarter moon\u201d is located at the 270-degree position relative to the Sun, with the other half of the moon illuminated, making the opposite side visible.",
+        "positive_full": " 4. The \u201cThird quarter moon\u201d is shown at another 90-degree angle from the Sun, but on the opposite side, with the other half of the moon illuminated and visible from Earth. 5. The \u201cFull moon\u201d occurs when the Earth is between the Sun and the Moon, so the Moon is fully illuminated from Earth\u2019s perspective.\n\n6. Looking at the position labeled \u201cF\u201d in the diagram, it is located at the farthest point from the Sun, directly opposite the New Moon position. 7. At this position, the entire face of the Moon visible from Earth is illuminated, meaning it is a",
+        "negative_full": " \n4. The \u201cThird quarter moon\u201d is located at the 270-degree position relative to the Sun, with the other half of the moon illuminated, making the opposite side visible. 5. The \u201cFull moon\u201d is when the moon is positioned directly opposite the Sun relative to Earth, fully illuminated and visible as a complete circle.\n\nNext, I need to identify the position labeled \"F\" in the diagram. Since the question refers to a diagram that is not provided, I must assume that \"F\" refers to a standard moon phase diagram where the positions are labeled. In standard diagrams, the positions are typically labeled as",
         "positive_probability": 0.0069169978230296,
         "negative_probability": 0.005001521456127165,
         "all_samples": [
           {
             "sample_idx": 2,
-            "continuation": " 4. The “Third quarter moon” is shown at another 90-degree angle from the Sun, but on the opposite side, with the other half of the moon illuminated and visible from Earth. 5. The “Full moon” occurs when the Earth is between the Sun and the Moon, so the Moon is fully illuminated from Earth’s perspective.\n\n6. Looking at the position labeled “F” in the diagram, it is located at the farthest point from the Sun, directly opposite the New Moon position. 7. At this position, the entire face of the Moon visible from Earth is illuminated, meaning it is a",
-            "first_sentence": "The “Third quarter moon” is shown at another 90-degree angle from the Sun, but on the opposite side, with the other half of the moon illuminated and visible from Earth.",
+            "continuation": " 4. The \u201cThird quarter moon\u201d is shown at another 90-degree angle from the Sun, but on the opposite side, with the other half of the moon illuminated and visible from Earth. 5. The \u201cFull moon\u201d occurs when the Earth is between the Sun and the Moon, so the Moon is fully illuminated from Earth\u2019s perspective.\n\n6. Looking at the position labeled \u201cF\u201d in the diagram, it is located at the farthest point from the Sun, directly opposite the New Moon position. 7. At this position, the entire face of the Moon visible from Earth is illuminated, meaning it is a",
+            "first_sentence": "The \u201cThird quarter moon\u201d is shown at another 90-degree angle from the Sun, but on the opposite side, with the other half of the moon illuminated and visible from Earth.",
             "answer_probability": 0.0069169978230296,
-            "final_answer": "6. Looking at the position labeled “F” in the diagram, it is located at the farthest point from the Sun, directly opposite the New Moon position. 7. At this position, the entire face of the Moon visible from Earth is illuminated, meaning it is a"
+            "final_answer": "6. Looking at the position labeled \u201cF\u201d in the diagram, it is located at the farthest point from the Sun, directly opposite the New Moon position. 7. At this position, the entire face of the Moon visible from Earth is illuminated, meaning it is a"
           },
           {
             "sample_idx": 0,
-            "continuation": " 4. The “Full moon” occurs when the Earth is between the Sun and the moon, with the entire face of the moon illuminated as seen from Earth. 5. The “Third quarter moon” is shown at a 90-degree angle from the Sun, but with the opposite half of the moon illuminated compared to the first quarter.\n\nBased on the typical moon cycle and positions shown in the diagram, the position labeled F is likely to be the one where the Earth is between the Sun and the moon, resulting in the full moon phase. This is because the full moon occurs when the moon is directly opposite the Sun in the",
-            "first_sentence": "The “Full moon” occurs when the Earth is between the Sun and the moon, with the entire face of the moon illuminated as seen from Earth.",
+            "continuation": " 4. The \u201cFull moon\u201d occurs when the Earth is between the Sun and the moon, with the entire face of the moon illuminated as seen from Earth. 5. The \u201cThird quarter moon\u201d is shown at a 90-degree angle from the Sun, but with the opposite half of the moon illuminated compared to the first quarter.\n\nBased on the typical moon cycle and positions shown in the diagram, the position labeled F is likely to be the one where the Earth is between the Sun and the moon, resulting in the full moon phase. This is because the full moon occurs when the moon is directly opposite the Sun in the",
+            "first_sentence": "The \u201cFull moon\u201d occurs when the Earth is between the Sun and the moon, with the entire face of the moon illuminated as seen from Earth.",
             "answer_probability": 0.006322943553987737,
             "final_answer": "Based on the typical moon cycle and positions shown in the diagram, the position labeled F is likely to be the one where the Earth is between the Sun and the moon, resulting in the full moon phase. This is because the full moon occurs when the moon is directly opposite the Sun in the"
           },
           {
             "sample_idx": 1,
-            "continuation": " 4. The \"Third quarter moon\" is positioned at 270 degrees from the Sun, with the other half illuminated and visible. 5. The \"Full moon\" is directly opposite the Sun from Earth’s perspective, with the entire face illuminated and visible. 6. Now, consider the position marked “F” on the diagram. Since F is located directly opposite the Sun from Earth’s perspective, it corresponds to the phase where the entire face of the moon is illuminated and visible from Earth.\n\nFinal Answer: The stage of the moon cycle shown at letter F is the full moon.\n\nBased on the reasoning above, the",
+            "continuation": " 4. The \"Third quarter moon\" is positioned at 270 degrees from the Sun, with the other half illuminated and visible. 5. The \"Full moon\" is directly opposite the Sun from Earth\u2019s perspective, with the entire face illuminated and visible. 6. Now, consider the position marked \u201cF\u201d on the diagram. Since F is located directly opposite the Sun from Earth\u2019s perspective, it corresponds to the phase where the entire face of the moon is illuminated and visible from Earth.\n\nFinal Answer: The stage of the moon cycle shown at letter F is the full moon.\n\nBased on the reasoning above, the",
             "first_sentence": "The \"Third quarter moon\" is positioned at 270 degrees from the Sun, with the other half illuminated and visible.",
             "answer_probability": 0.006074306428760408,
             "final_answer": "The stage of the moon cycle shown at letter F is the full moon"
           },
           {
             "sample_idx": 4,
-            "continuation": " 4. The \"Full moon\" is when the moon is directly opposite the Sun from Earth’s perspective, meaning the entire face of the moon is illuminated and visible. 5. The \"Third quarter moon\" is at a 90-degree angle, but on the opposite side from the first quarter, with the right half (from Earth’s perspective) illuminated. 6. Without the actual image, I must infer the position of “F” based on standard lunar phase labeling. 7. In standard phase diagrams, the label “F” is often used to denote the full moon phase. 8. However, to be",
-            "first_sentence": "The \"Full moon\" is when the moon is directly opposite the Sun from Earth’s perspective, meaning the entire face of the moon is illuminated and visible.",
+            "continuation": " 4. The \"Full moon\" is when the moon is directly opposite the Sun from Earth\u2019s perspective, meaning the entire face of the moon is illuminated and visible. 5. The \"Third quarter moon\" is at a 90-degree angle, but on the opposite side from the first quarter, with the right half (from Earth\u2019s perspective) illuminated. 6. Without the actual image, I must infer the position of \u201cF\u201d based on standard lunar phase labeling. 7. In standard phase diagrams, the label \u201cF\u201d is often used to denote the full moon phase. 8. However, to be",
+            "first_sentence": "The \"Full moon\" is when the moon is directly opposite the Sun from Earth\u2019s perspective, meaning the entire face of the moon is illuminated and visible.",
             "answer_probability": 0.005487159536781859,
-            "final_answer": "4. The \"Full moon\" is when the moon is directly opposite the Sun from Earth’s perspective, meaning the entire face of the moon is illuminated and visible. 5. The \"Third quarter moon\" is at a 90-degree angle, but on the opposite side from the first quarter, with the right half (from Earth’s perspective) illuminated. 6. Without the actual image, I must infer the position of “F” based on standard lunar phase labeling. 7. In standard phase diagrams, the label “F” is often used to denote the full moon phase. 8. However, to be"
+            "final_answer": "4. The \"Full moon\" is when the moon is directly opposite the Sun from Earth\u2019s perspective, meaning the entire face of the moon is illuminated and visible. 5. The \"Third quarter moon\" is at a 90-degree angle, but on the opposite side from the first quarter, with the right half (from Earth\u2019s perspective) illuminated. 6. Without the actual image, I must infer the position of \u201cF\u201d based on standard lunar phase labeling. 7. In standard phase diagrams, the label \u201cF\u201d is often used to denote the full moon phase. 8. However, to be"
           },
           {
             "sample_idx": 3,
-            "continuation": " \n4. The “Third quarter moon” is located at the 270-degree position relative to the Sun, with the other half of the moon illuminated, making the opposite side visible. 5. The “Full moon” is when the moon is positioned directly opposite the Sun relative to Earth, fully illuminated and visible as a complete circle.\n\nNext, I need to identify the position labeled \"F\" in the diagram. Since the question refers to a diagram that is not provided, I must assume that \"F\" refers to a standard moon phase diagram where the positions are labeled. In standard diagrams, the positions are typically labeled as",
-            "first_sentence": "The “Third quarter moon” is located at the 270-degree position relative to the Sun, with the other half of the moon illuminated, making the opposite side visible.",
+            "continuation": " \n4. The \u201cThird quarter moon\u201d is located at the 270-degree position relative to the Sun, with the other half of the moon illuminated, making the opposite side visible. 5. The \u201cFull moon\u201d is when the moon is positioned directly opposite the Sun relative to Earth, fully illuminated and visible as a complete circle.\n\nNext, I need to identify the position labeled \"F\" in the diagram. Since the question refers to a diagram that is not provided, I must assume that \"F\" refers to a standard moon phase diagram where the positions are labeled. In standard diagrams, the positions are typically labeled as",
+            "first_sentence": "The \u201cThird quarter moon\u201d is located at the 270-degree position relative to the Sun, with the other half of the moon illuminated, making the opposite side visible.",
             "answer_probability": 0.005001521456127165,
             "final_answer": "Next, I need to identify the position labeled \"F\" in the diagram. Since the question refers to a diagram that is not provided, I must assume that \"F\" refers to a standard moon phase diagram where the positions are labeled. In standard diagrams, the positions are typically labeled as"
           }
         ],
-        "correct_answer": "full moon"
+        "correct_answer": "full moon",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.25212064445316285,
+              "generated_answers": [
+                "full moon",
+                "full moon",
+                "The correct option is: first quarter moon",
+                "new moon",
+                "Actually, looking at the diagram again: if F is directly opposite the New moon position, then it must be 1"
+              ],
+              "answer_probabilities": [
+                0.6407365346573407,
+                0.6033008708296963,
+                0.004767182892396105,
+                0.005969819452535467,
+                0.005828814433845642
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.14366233814063517,
+              "generated_answers": [
+                "- Position 3",
+                "This suggests that we are looking at a diagram from the side, with Earth in",
+                "full moon",
+                "4. The \u201cThird quarter moon\u201d is also at a 90-degree angle but on the opposite side of the Sun from the first quarter, with the other half of the moon illuminated. 5. The \u201cFull moon\u201d occurs when the Earth is between the Sun and the moon, making the entire face of the moon visible. 6. Position F is located between the \u201cFirst quarter moon\u201d and the \u201cFull moon,\u201d which means it is closer to the full moon than the first quarter. 7. In the lunar cycle, the phase between first quarter and full moon is called the \u201cwaxing gibbous\u201d phase. 8. However, the given options do not include \u201cwaxing gibbous.\u201d The next closest phase in the cycle that matches this position is the \u201cFull moon,\u201d which occurs after the waxing gibbous phase. 9. Since position F is directly between the first quarter and the full moon, it is not the full moon itself, but it\u2019s close to it. However, the full moon is the only option that comes after the first quarter and before the third quarter in the cycle. 10. Wait, let me reconsider. Position F is directly opposite the \u201cThird quarter moon\u201d",
+                "Based on the"
+              ],
+              "answer_probabilities": [
+                0.005824908687581103,
+                0.00580817447946415,
+                0.6945202625011884,
+                0.006304583906708279,
+                0.005853761128233936
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.23920696208863204,
+              "generated_answers": [
+                "full moon",
+                "full moon",
+                "- third quarter moon",
+                "- First Quarter (at",
+                "Therefore, the correct option is: full moon"
+              ],
+              "answer_probabilities": [
+                0.6031086203851654,
+                0.5755891984022159,
+                0.005982493205483596,
+                0.0052298772214791,
+                0.006124621228816216
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.3871825554437861,
+              "generated_answers": [
+                "full moon",
+                "full moon",
+                "The stage of the moon cycle shown at letter F is: **full moon**",
+                "Based on this reasoning, the correct stage is: full moon",
+                "full moon"
+              ],
+              "answer_probabilities": [
+                0.5804467162625068,
+                0.6828846926657753,
+                0.006895398759726531,
+                0.006110333183600582,
+                0.6595756363473213
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.25723931971979025,
+              "generated_answers": [
+                "full moon",
+                "None of these match",
+                "full moon",
+                "third quarter moon",
+                "first quarter moon"
+              ],
+              "answer_probabilities": [
+                0.6607727092410489,
+                0.006233253161807774,
+                0.6076738596517647,
+                0.005591748530997698,
+                0.005925028013332049
+              ]
+            }
+          }
+        }
       }
     }
   ],

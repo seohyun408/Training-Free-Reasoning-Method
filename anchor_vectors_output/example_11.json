@@ -88,10 +88,10 @@
           },
           {
             "sample_idx": 0,
-            "continuation": " \n\nThe planula stage is the free-swimming, ciliated larval stage that follows fertilization and precedes settlement. In the diagram, this stage is shown as a small, elongated organism with cilia and is positioned just before the polyp stage. The letter \"J\" is the only one placed directly below this specific depiction. The other letters, L, B, and K, correspond to different stages — for example, L is associated with the zygote, B with the medusa, and K with the polyp — none of which match the description of the planula. Therefore, based on the visual representation",
+            "continuation": " \n\nThe planula stage is the free-swimming, ciliated larval stage that follows fertilization and precedes settlement. In the diagram, this stage is shown as a small, elongated organism with cilia and is positioned just before the polyp stage. The letter \"J\" is the only one placed directly below this specific depiction. The other letters, L, B, and K, correspond to different stages \u2014 for example, L is associated with the zygote, B with the medusa, and K with the polyp \u2014 none of which match the description of the planula. Therefore, based on the visual representation",
             "first_sentence": "The planula stage is the free-swimming, ciliated larval stage that follows fertilization and precedes settlement.",
             "answer_probability": 0.006323419792562458,
-            "final_answer": "The planula stage is the free-swimming, ciliated larval stage that follows fertilization and precedes settlement. In the diagram, this stage is shown as a small, elongated organism with cilia and is positioned just before the polyp stage. The letter \"J\" is the only one placed directly below this specific depiction. The other letters, L, B, and K, correspond to different stages — for example, L is associated with the zygote, B with the medusa, and K with the polyp — none of which match the description of the planula. Therefore, based on the visual representation"
+            "final_answer": "The planula stage is the free-swimming, ciliated larval stage that follows fertilization and precedes settlement. In the diagram, this stage is shown as a small, elongated organism with cilia and is positioned just before the polyp stage. The letter \"J\" is the only one placed directly below this specific depiction. The other letters, L, B, and K, correspond to different stages \u2014 for example, L is associated with the zygote, B with the medusa, and K with the polyp \u2014 none of which match the description of the planula. Therefore, based on the visual representation"
           },
           {
             "sample_idx": 3,
@@ -101,7 +101,114 @@
             "final_answer": "must be the letter that corresponds to the planula stage based on the visual representation and position in the diagram"
           }
         ],
-        "correct_answer": "J"
+        "correct_answer": "J",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.3344129704364492,
+              "generated_answers": [
+                "J",
+                "\"J\"",
+                "\"J\"",
+                "J",
+                ""
+              ],
+              "answer_probabilities": [
+                0.5908949219525299,
+                0.005988118035650252,
+                0.005765040844722693,
+                0.5063584404390591,
+                0.5630583309102838
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.5633549237666429,
+              "generated_answers": [
+                "J",
+                "",
+                "J",
+                "J",
+                "J"
+              ],
+              "answer_probabilities": [
+                0.3903863418209056,
+                0.5838386121809531,
+                0.7282570517596482,
+                0.6336012639007169,
+                0.48069134917099055
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.43885116481622416,
+              "generated_answers": [
+                "J",
+                "J",
+                "must be \"J\"",
+                "J",
+                "J"
+              ],
+              "answer_probabilities": [
+                0.5695048839455756,
+                0.5623626190720987,
+                0.005793837164845192,
+                0.49048020789285873,
+                0.5661142760057424
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.5053842513470574,
+              "generated_answers": [
+                "J",
+                "",
+                "",
+                "",
+                "J"
+              ],
+              "answer_probabilities": [
+                0.45250529758803976,
+                0.5919741334904576,
+                0.566186426585221,
+                0.38490817472918687,
+                0.531347224342382
+              ]
+            },
+            "5.0": {
+              "accuracy": 1.0,
+              "correct_count": 5,
+              "total_trials": 5,
+              "avg_probability": 0.5037763993904504,
+              "generated_answers": [
+                "J",
+                "J",
+                "J",
+                "J",
+                "J"
+              ],
+              "answer_probabilities": [
+                0.5296901676425629,
+                0.4959810936213954,
+                0.5095523758247831,
+                0.4841142851075132,
+                0.49954407475599694
+              ]
+            }
+          }
+        }
       }
     }
   ],

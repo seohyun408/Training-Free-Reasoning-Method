@@ -536,6 +536,87 @@ def process_qa_pair(
                 )
 
                 print(f"[contrastive] Generated {len(contrastive_result['all_samples'])} samples")
+
+                # ========================================
+                #   PCA Context Vector Testing
+                # ========================================
+                if os.getenv("TEST_PCA_CONTEXT", "0") in {"1", "true", "True"}:
+                    try:
+                        from contrastive_generation import (
+                            extract_hidden_states,
+                            compute_pca_context_vector,
+                            test_context_vector_effect
+                        )
+
+                        print("\n" + "="*80)
+                        print("🧪 PCA Context Vector Testing")
+                        print("="*80)
+
+                        # Get positive and negative full texts
+                        positive_full = contrastive_result['positive_full']
+                        negative_full = contrastive_result['negative_full']
+
+                        # Clean texts (remove vision tokens)
+                        def clean_text(text):
+                            for vision_token in ["<|vision_start|>", "<|vision_end|>", "<|image_pad|>"]:
+                                text = text.replace(vision_token, "")
+                            return text.strip()
+
+                        clean_prefix = clean_text(prefix_text)
+                        positive_text = clean_prefix + "\n\nContinue the next reasoning step:" + positive_full
+                        negative_text = clean_prefix + "\n\nContinue the next reasoning step:" + negative_full
+
+                        # Extract hidden states
+                        print("[PCA] Extracting hidden states from positive continuation...")
+                        positive_hidden = extract_hidden_states(
+                            model=model,
+                            tokenizer=tokenizer,
+                            text=positive_text,
+                            device=device
+                        )
+
+                        print("[PCA] Extracting hidden states from negative continuation...")
+                        negative_hidden = extract_hidden_states(
+                            model=model,
+                            tokenizer=tokenizer,
+                            text=negative_text,
+                            device=device
+                        )
+
+                        # Compute PCA context vector
+                        print("[PCA] Computing PCA context vector...")
+                        context_vector = compute_pca_context_vector(
+                            positive_hidden=positive_hidden,
+                            negative_hidden=negative_hidden,
+                            n_components=1
+                        )
+
+                        # Test context vector effect
+                        pca_results = test_context_vector_effect(
+                            model=model,
+                            processor=processor,
+                            tokenizer=tokenizer,
+                            prefix_text=prefix_text,
+                            positive_full=positive_full,
+                            negative_full=negative_full,
+                            context_vector=context_vector,
+                            correct_answer=correct_answer,
+                            device=device,
+                            num_trials=int(os.getenv("PCA_NUM_TRIALS", "3")),
+                            context_scales=[0.0, 0.5, 1.0, 2.0]
+                        )
+
+                        # Add PCA results to contrastive_result
+                        contrastive_result['pca_context'] = {
+                            "context_vector_shape": context_vector.shape,
+                            "results": {str(k): v for k, v in pca_results.items()}
+                        }
+
+                    except Exception as e:
+                        print(f"[PCA] Error: {e}")
+                        import traceback
+                        traceback.print_exc()
+
         except Exception as e:
             print(f"[contrastive] Error: {e}")
             import traceback
