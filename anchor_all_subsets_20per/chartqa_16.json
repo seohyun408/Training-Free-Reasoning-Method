@@ -1,0 +1,96 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 1,
+  "image_path": "chartqa/train/png/two_col_42575.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat was Under Armour's net revenue in the United States in 2020? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart displays net revenue in million U.S. dollars for the years 2015 through 2020, with each bar representing a specific year.\n2. The x-axis clearly labels the years, including 2020 as the rightmost bar, indicating the most recent data point shown.\n3. The y-axis measures net revenue in million U.S. dollars, with values ranging from 0 to 5,000, providing context for the bar heights.\n4. The bar for 2020 has the value \"2 720.3\" printed directly above it, indicating the net revenue for that year.\n5. Since the chart is titled \"Net revenue in million U.S. dollars,\" the value \"2 720.3\" corresponds to 2,720.3 million U.S. dollars, or $2.72 billion.\n</reasoning>\n<final>2720.3 million U.S. dollars",
+      "raw_generation": [
+        "1. The bar chart displays net revenue figures for Under Armour in the United States from 2015 to 2020.\n2. Each bar corresponds to a specific year, with the height indicating the revenue in million U.S. dollars.\n3. The year 2020 is the rightmost bar on the chart, showing a decline compared to previous years.\n4. The value labeled directly above the 2020 bar is clearly marked as 2,720.3.\n5. This figure represents the net revenue for that year, as indicated by the y-axis label \"Net revenue in million U.S. dollars.\"\n\n<final>2720.3 million U.S. dollars</final>",
+        "<reasoning>\n1. The bar chart displays net revenue in million U.S. dollars for the years 2015 through 2020, with each bar representing a specific year.\n2. The x-axis clearly labels the years, including 2020 as the rightmost bar, indicating the most recent data point shown.\n3. The y-axis measures net revenue in million U.S. dollars, with values ranging from 0 to 5,000, providing context for the bar heights.\n4. The bar for 2020 has the value \"2 720.3\" printed directly above it, indicating the net revenue for that year.\n5. Since the chart is titled \"Net revenue in million U.S. dollars,\" the value \"2 720.3\" corresponds to 2,720.3 million U.S. dollars, or $2.72 billion.\n</reasoning>\n<final>2720.3 million U.S. dollars"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart displays net revenue in million U.S.",
+        "dollars for the years 2015 through 2020, with each bar representing a specific year.",
+        "2. The x-axis clearly labels the years, including 2020 as the rightmost bar, indicating the most recent data point shown.",
+        "3. The y-axis measures net revenue in million U.S.",
+        "dollars, with values ranging from 0 to 5,000, providing context for the bar heights.",
+        "4. The bar for 2020 has the value \"2 720.3\" printed directly above it, indicating the net revenue for that year.",
+        "5. Since the chart is titled \"Net revenue in million U.S.",
+        "dollars,\" the value \"2 720.3\" corresponds to 2,720.3 million U.S.",
+        "dollars, or $2.72 billion.",
+        "</reasoning>\n<final>2720.3 million U.S. dollars"
+      ],
+      "chunk_token_ranges": [
+        [
+          64,
+          70
+        ],
+        [
+          70,
+          81
+        ],
+        [
+          81,
+          105
+        ],
+        [
+          105,
+          135
+        ],
+        [
+          135,
+          148
+        ],
+        [
+          148,
+          171
+        ],
+        [
+          171,
+          206
+        ],
+        [
+          206,
+          221
+        ],
+        [
+          221,
+          248
+        ],
+        [
+          248,
+          258
+        ],
+        [
+          258,
+          276
+        ]
+      ],
+      "anchor_vector": [
+        9.970644337032011,
+        12.515111873372346,
+        12.372067064050128,
+        10.399580638391187,
+        8.183849582477597,
+        12.266628792576059,
+        12.643481643111617,
+        10.598990885416667,
+        10.417449781629774,
+        13.902777777777779,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        11,
+        11
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 108,
+  "subset": "chartqa",
+  "subset_local_idx": 16
+}

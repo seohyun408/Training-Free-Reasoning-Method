@@ -1,0 +1,148 @@
+{
+  "total_pairs": 3,
+  "successful_pairs": 3,
+  "image_path": "ocr_vqa/images/B00EBEZBS2.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "The Best American Sports Writing 2012",
+      "raw_generation": [
+        "1. The book cover prominently displays the title \"The Best American Sports Writing\" in large, bold, white letters, making it the most visible text.  \n2. The year \"2012\" is clearly printed in the top right corner, indicating the edition or publication year of this volume.  \n3. The phrase \"The Best American Series\" appears at the top, establishing the book's place within a well-known annual anthology series.  \n4. The editor's name, \"Michael Wilbon,\" is featured in a red banner below the title, identifying the primary compiler of the content.  \n5. \"Glenn Stout\" is listed as the \"Series Editor\" beneath Michael Wilbon's name, signifying his role in overseeing the broader collection.  \n\n<final>The Best American Sports Writing</final>",
+        "The Best American Sports Writing 2012"
+      ],
+      "chunks": [
+        "The Best American Sports Writing 2012"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          54
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The cover prominently displays \"The Best American Sports Writing,\" indicating it is a curated anthology focused on exceptional sports journalism, not fiction or biography.\n\n2. The year \"2012\" and \"The Best American Series\" branding confirm it is part of a long-running annual collection, typically featuring top-tier published work from the previous year.\n\n3. Michael Wilbon's name as \"Editor\" and Glenn Stout's as \"Series Editor\" reveals this is a professionally assembled volume, not self-published or amateur content, with editorial oversight for quality.\n\n4. The background image of a football player in a helmet and uniform visually reinforces the sports theme, aligning with the book's title and ensuring the genre is immediately recognizable to readers.\n\n5. The clean, bold typography and professional design suggest this is a literary or nonfiction publication, intended for readers who appreciate insightful, well-crafted sports journalism rather than casual reading or instruction.\n\n<final>Nonfiction anthology of top-tier sports journalism</final>",
+      "raw_generation": [
+        "1. The cover prominently displays “The Best American Sports Writing,” indicating it is an annual anthology of top-tier sports journalism.  \n2. The inclusion of “The Best American Series” branding suggests it follows a long-standing tradition of curated literary excellence in nonfiction.  \n3. The editor, Michael Wilbon, is a well-known sports journalist, reinforcing the book’s focus on high-quality sports writing.  \n4. Glenn Stout’s role as series editor implies editorial oversight consistent with prestigious literary anthologies.  \n5. The 2012 publication date and sports imagery (like a football helmet) confirm it is a yearly collection of sports journalism, not fiction or biography.  \n\n<final>Anthology of sports journalism</final>",
+        "1. The cover prominently displays \"The Best American Sports Writing,\" indicating it is a curated anthology focused on exceptional sports journalism, not fiction or biography.\n\n2. The year \"2012\" and \"The Best American Series\" branding confirm it is part of a long-running annual collection, typically featuring top-tier published work from the previous year.\n\n3. Michael Wilbon's name as \"Editor\" and Glenn Stout's as \"Series Editor\" reveals this is a professionally assembled volume, not self-published or amateur content, with editorial oversight for quality.\n\n4. The background image of a football player in a helmet and uniform visually reinforces the sports theme, aligning with the book's title and ensuring the genre is immediately recognizable to readers.\n\n5. The clean, bold typography and professional design suggest this is a literary or nonfiction publication, intended for readers who appreciate insightful, well-crafted sports journalism rather than casual reading or instruction.\n\n<final>Nonfiction anthology of top-tier sports journalism</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently displays \"The Best American Sports Writing,\" indicating it is a curated anthology focused on exceptional sports journalism, not fiction or biography.",
+        "2. The year \"2012\" and \"The Best American Series\" branding confirm it is part of a long-running annual collection, typically featuring top-tier published work from the previous year.",
+        "3. Michael Wilbon's name as \"Editor\" and Glenn Stout's as \"Series Editor\" reveals this is a professionally assembled volume, not self-published or amateur content, with editorial oversight for quality.",
+        "4. The background image of a football player in a helmet and uniform visually reinforces the sports theme, aligning with the book's title and ensuring the genre is immediately recognizable to readers.",
+        "5. The clean, bold typography and professional design suggest this is a literary or nonfiction publication, intended for readers who appreciate insightful, well-crafted sports journalism rather than casual reading or instruction.",
+        "<final>Nonfiction anthology of top-tier sports journalism</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          52
+        ],
+        [
+          52,
+          92
+        ],
+        [
+          92,
+          134
+        ],
+        [
+          134,
+          171
+        ],
+        [
+          171,
+          210
+        ],
+        [
+          210,
+          224
+        ]
+      ],
+      "anchor_vector": [
+        14.883730354868012,
+        15.190504381773719,
+        13.33626817708849,
+        12.903402586996336,
+        11.728794659887042,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a games related book?",
+      "reasoning_text": "1. The book’s title, “The Best American Sports Writing,” explicitly indicates its content focuses on sports journalism, making it directly tied to athletic events and competitive games.\n\n2. The cover features a football player in action, wearing a helmet and shoulder pads, visually reinforcing the connection to American football, a major game-based sport.\n\n3. The inclusion of “The Best American Series” label suggests a curated collection of top-tier writing, likely centered around major sports events and athletic narratives.\n\n4. Michael Wilbon, listed as editor, is a well-known sports journalist, and Glenn Stout, the series editor, is also associated with sports media, confirming the book’s thematic focus on games.\n\n5. The 2012 edition implies annual publication, consistent with sports writing anthologies that highlight the year’s most compelling game-related stories and commentary.\n\n<final>Yes, this is a games-related book focused on sports journalism.</final>",
+      "raw_generation": [
+        "1. The book's title, \"The Best American Sports Writing,\" explicitly indicates its focus on sports-related content, making it directly relevant to games and athletic activities.  \n2. The cover features a blurred image of a football player in action, reinforcing the sports theme and suggesting coverage of American football, a major game.  \n3. The inclusion of \"The Best American Series\" implies curated excellence in sports journalism, targeting readers interested in competitive games and athletic narratives.  \n4. Michael Wilbon, a well-known sports journalist, is credited as editor, further confirming the book’s authoritative focus on sports writing and game analysis.  \n5. Glenn Stout, the series editor, adds credibility by overseeing a collection that likely includes articles about various games, leagues, and athletic events across America.  \n\n<final>Yes, this is a games-related book focused on sports writing.</final>",
+        "1. The book’s title, “The Best American Sports Writing,” explicitly indicates its content focuses on sports journalism, making it directly tied to athletic events and competitive games.\n\n2. The cover features a football player in action, wearing a helmet and shoulder pads, visually reinforcing the connection to American football, a major game-based sport.\n\n3. The inclusion of “The Best American Series” label suggests a curated collection of top-tier writing, likely centered around major sports events and athletic narratives.\n\n4. Michael Wilbon, listed as editor, is a well-known sports journalist, and Glenn Stout, the series editor, is also associated with sports media, confirming the book’s thematic focus on games.\n\n5. The 2012 edition implies annual publication, consistent with sports writing anthologies that highlight the year’s most compelling game-related stories and commentary.\n\n<final>Yes, this is a games-related book focused on sports journalism.</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “The Best American Sports Writing,” explicitly indicates its content focuses on sports journalism, making it directly tied to athletic events and competitive games.",
+        "2. The cover features a football player in action, wearing a helmet and shoulder pads, visually reinforcing the connection to American football, a major game-based sport.",
+        "3. The inclusion of “The Best American Series” label suggests a curated collection of top-tier writing, likely centered around major sports events and athletic narratives.",
+        "4. Michael Wilbon, listed as editor, is a well-known sports journalist, and Glenn Stout, the series editor, is also associated with sports media, confirming the book’s thematic focus on games.",
+        "5. The 2012 edition implies annual publication, consistent with sports writing anthologies that highlight the year’s most compelling game-related stories and commentary.",
+        "<final>Yes, this is a games-related book focused on sports journalism.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          56
+        ],
+        [
+          56,
+          88
+        ],
+        [
+          88,
+          119
+        ],
+        [
+          119,
+          160
+        ],
+        [
+          160,
+          192
+        ],
+        [
+          192,
+          210
+        ]
+      ],
+      "anchor_vector": [
+        14.640450087776653,
+        15.460480764118753,
+        12.471344683336156,
+        12.822584364149305,
+        14.628038194444445,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 348,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 19
+}

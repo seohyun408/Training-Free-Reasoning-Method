@@ -1,0 +1,272 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "docvqa/train/documents/xrcy0227_72.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the date mentioned ? Answer the question using a single word or phrase.",
+      "reasoning_text": "March 15, 1974\n\n<final>March 15, 1974</final>",
+      "raw_generation": [
+        "1. The document is a payroll authorization form from the Citizens' Commission on Science, Law and the Food Supply.  \n2. The date is clearly printed in the upper right corner of the form.  \n3. It is written as \"March 15, 1974,\" indicating the specific day, month, and year.  \n4. This date likely corresponds to when the payment was approved or processed.  \n5. The form also references a payroll period from March 1 to March 15, aligning with the date.  \n\n<final>March 15, 1974</final>",
+        "March 15, 1974\n\n<final>March 15, 1974</final>"
+      ],
+      "chunks": [
+        "March 15, 1974\n\n<final>March 15, 1974</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          67
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nkindly have check drawn to order of whom ? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The document is a payroll voucher from the Citizens' Commission on Science, Law and the Food Supply dated March 15, 1974.  \n2. It explicitly states “Kindly have check drawn to order of” followed by a printed name.  \n3. The name printed is “CHANNING H. LUSHBOUGH,” indicating the recipient of the check.  \n4. The amount is $1,175.94, designated for net payroll from March 1 to March 15.  \n5. The voucher is approved for payment with a signature, confirming the instruction’s validity.  \n\n<final>CHANNING H. LUSHBOUGH</final>",
+      "raw_generation": [
+        "1. The document is a payroll authorization form from the Citizens' Commission on Science, Law and the Food Supply.  \n2. It explicitly states \"Kindly have check drawn to order of\" followed by a name.  \n3. The name listed is \"CHANNING H. LUSHBOUGH\" in all capital letters.  \n4. The amount of $1,175.94 is specified for this payment.  \n5. The form is dated March 15, 1974, and includes an approval signature.  \n\n<final>CHANNING H. LUSHBOUGH</final>",
+        "1. The document is a payroll voucher from the Citizens' Commission on Science, Law and the Food Supply dated March 15, 1974.  \n2. It explicitly states “Kindly have check drawn to order of” followed by a printed name.  \n3. The name printed is “CHANNING H. LUSHBOUGH,” indicating the recipient of the check.  \n4. The amount is $1,175.94, designated for net payroll from March 1 to March 15.  \n5. The voucher is approved for payment with a signature, confirming the instruction’s validity.  \n\n<final>CHANNING H. LUSHBOUGH</final>"
+      ],
+      "chunks": [
+        "1. The document is a payroll voucher from the Citizens' Commission on Science, Law and the Food Supply dated March 15, 1974.",
+        "2. It explicitly states “Kindly have check drawn to order of” followed by a printed name.",
+        "3. The name printed is “CHANNING H.",
+        "LUSHBOUGH,” indicating the recipient of the check.",
+        "4. The amount is $1,175.94, designated for net payroll from March 1 to March 15.",
+        "5. The voucher is approved for payment with a signature, confirming the instruction’s validity.",
+        "<final>CHANNING H.",
+        "LUSHBOUGH</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          81
+        ],
+        [
+          82,
+          103
+        ],
+        [
+          104,
+          116
+        ],
+        [
+          116,
+          128
+        ],
+        [
+          129,
+          158
+        ],
+        [
+          159,
+          177
+        ],
+        [
+          178,
+          186
+        ],
+        [
+          186,
+          193
+        ]
+      ],
+      "anchor_vector": [
+        8.712182351838006,
+        10.838935160241059,
+        11.060250244808772,
+        14.072624686773057,
+        11.36874308914104,
+        11.446829659598215,
+        9.46484375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nkindly have check drawn to order of whom ?",
+      "reasoning_text": "1. The document explicitly instructs to “Kindly have check drawn to order of” a specific individual, indicating the intended recipient of the payment.\n2. The name “CHANNING H. LUSHBOUGH” is clearly printed directly beneath this instruction, confirming the designated payee.\n3. The amount of $1,175.94 is listed next to the payee’s name, aligning with the payment request for this person.\n4. The “to cover” line further supports this by specifying “NET PAYROLL 3/1 - 3/15,” which ties the payment to Channing H. Lushbough’s payroll for that period.\n5. The “Charge to PAYROLL” section also references the same amount and payee, reinforcing that the check is for Channing H. Lushbough’s payroll.\n\n<final>Channing H. Lushbough</final>",
+      "raw_generation": [
+        "1. The document clearly states the payee's name in bold, uppercase letters, indicating the intended recipient of the payment.  \n2. The name \"CHANNING H. LUSHBOUGH\" is prominently displayed under the instruction \"Kindly have check drawn to order of,\" confirming the recipient.  \n3. The amount of $1,175.94 is listed next to the payee’s name, aligning with the payment purpose for net payroll.  \n4. The date \"March 15, 1974,\" and voucher number \"74-64-232\" further contextualize the transaction for this specific individual.  \n5. The approval signature and \"APPROVED FOR PAYMENT\" stamp validate that the check was authorized for Channing H. Lushbough.  \n\n<final>CHANNING H. LUSHBOUGH</final>",
+        "1. The document explicitly instructs to “Kindly have check drawn to order of” a specific individual, indicating the intended recipient of the payment.\n2. The name “CHANNING H. LUSHBOUGH” is clearly printed directly beneath this instruction, confirming the designated payee.\n3. The amount of $1,175.94 is listed next to the payee’s name, aligning with the payment request for this person.\n4. The “to cover” line further supports this by specifying “NET PAYROLL 3/1 - 3/15,” which ties the payment to Channing H. Lushbough’s payroll for that period.\n5. The “Charge to PAYROLL” section also references the same amount and payee, reinforcing that the check is for Channing H. Lushbough’s payroll.\n\n<final>Channing H. Lushbough</final>"
+      ],
+      "chunks": [
+        "1. The document explicitly instructs to “Kindly have check drawn to order of” a specific individual, indicating the intended recipient of the payment.",
+        "2. The name “CHANNING H.",
+        "LUSHBOUGH” is clearly printed directly beneath this instruction, confirming the designated payee.",
+        "3. The amount of $1,175.94 is listed next to the payee’s name, aligning with the payment request for this person.",
+        "4. The “to cover” line further supports this by specifying “NET PAYROLL 3/1 - 3/15,” which ties the payment to Channing H.",
+        "Lushbough’s payroll for that period.",
+        "5. The “Charge to PAYROLL” section also references the same amount and payee, reinforcing that the check is for Channing H.",
+        "Lushbough’s payroll.",
+        "<final>Channing H.",
+        "Lushbough</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          58
+        ],
+        [
+          58,
+          68
+        ],
+        [
+          68,
+          87
+        ],
+        [
+          87,
+          121
+        ],
+        [
+          121,
+          158
+        ],
+        [
+          158,
+          168
+        ],
+        [
+          168,
+          197
+        ],
+        [
+          197,
+          204
+        ],
+        [
+          204,
+          211
+        ],
+        [
+          211,
+          218
+        ]
+      ],
+      "anchor_vector": [
+        10.923864284574172,
+        10.774690043318142,
+        12.135523858162788,
+        9.627248568419096,
+        11.27910290948276,
+        8.743380541871922,
+        9.580822172619047,
+        7.1728515625,
+        7.114955357142857,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        10,
+        10
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nhow much amount has to be payed ? Answer the question using a single word or phrase.",
+      "reasoning_text": "$1,175.94\n\n<final>$1,175.94</final>",
+      "raw_generation": [
+        "1,175.94",
+        "$1,175.94\n\n<final>$1,175.94</final>"
+      ],
+      "chunks": [
+        "$1,175.94\n\n<final>$1,175.94</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          70
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nhow much amount has to be payed ?",
+      "reasoning_text": "1. The document specifies a payment amount of $1,175.94, clearly printed next to the recipient’s name, Channing H. Lushbough, indicating the exact sum to be disbursed.\n\n2. The same amount, $1,175.94, is listed under the “Charge to PAYROLL” section, confirming that this figure represents the payroll expense being covered by the payment.\n\n3. The payment is explicitly tied to the payroll period from March 1 to March 15, as stated in the “to cover” line, ensuring the amount corresponds to the correct time frame.\n\n4. The document is marked “APPROVED FOR PAYMENT” with a handwritten signature, validating that the amount is authorized and ready for disbursement according to internal procedures.\n\n5. The voucher number 74-64-232 and date March 15, 1974, further authenticate the transaction, making the $1,175.94 payment the only amount required for this specific payroll entry.\n\n<final>$1,175.94</final>",
+      "raw_generation": [
+        "1. The document clearly states the amount to be paid as $1,175.94, written both in the \"for $\" field and the \"Charge to PAYROLL\" section.\n2. This amount is explicitly labeled as \"NET PAYROLL 3/1 - 3/15,\" indicating it covers payroll for the specified period.\n3. The document is dated March 15, 1974, which aligns with the end date of the payroll period mentioned.\n4. The approval section shows \"APPROVED FOR PAYMENT\" with a signature, confirming the amount is authorized for disbursement.\n5. The voucher number \"7.4-64-232\" and the reference \"19\" further authenticate the transaction for accounting purposes.\n\n<final>$1,175.94</final>",
+        "1. The document specifies a payment amount of $1,175.94, clearly printed next to the recipient’s name, Channing H. Lushbough, indicating the exact sum to be disbursed.\n\n2. The same amount, $1,175.94, is listed under the “Charge to PAYROLL” section, confirming that this figure represents the payroll expense being covered by the payment.\n\n3. The payment is explicitly tied to the payroll period from March 1 to March 15, as stated in the “to cover” line, ensuring the amount corresponds to the correct time frame.\n\n4. The document is marked “APPROVED FOR PAYMENT” with a handwritten signature, validating that the amount is authorized and ready for disbursement according to internal procedures.\n\n5. The voucher number 74-64-232 and date March 15, 1974, further authenticate the transaction, making the $1,175.94 payment the only amount required for this specific payroll entry.\n\n<final>$1,175.94</final>"
+      ],
+      "chunks": [
+        "1. The document specifies a payment amount of $1,175.94, clearly printed next to the recipient’s name, Channing H.",
+        "Lushbough, indicating the exact sum to be disbursed.",
+        "2. The same amount, $1,175.94, is listed under the “Charge to PAYROLL” section, confirming that this figure represents the payroll expense being covered by the payment.",
+        "3. The payment is explicitly tied to the payroll period from March 1 to March 15, as stated in the “to cover” line, ensuring the amount corresponds to the correct time frame.",
+        "4. The document is marked “APPROVED FOR PAYMENT” with a handwritten signature, validating that the amount is authorized and ready for disbursement according to internal procedures.",
+        "5. The voucher number 74-64-232 and date March 15, 1974, further authenticate the transaction, making the $1,175.94 payment the only amount required for this specific payroll entry.",
+        "<final>$1,175.94</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          58
+        ],
+        [
+          58,
+          72
+        ],
+        [
+          72,
+          114
+        ],
+        [
+          114,
+          155
+        ],
+        [
+          155,
+          190
+        ],
+        [
+          190,
+          245
+        ],
+        [
+          245,
+          259
+        ]
+      ],
+      "anchor_vector": [
+        10.718371108567347,
+        10.758178333551928,
+        10.279474967349962,
+        10.888030345305737,
+        10.538548556241121,
+        7.411359514508929,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 375,
+  "subset": "docvqa",
+  "subset_local_idx": 12
+}

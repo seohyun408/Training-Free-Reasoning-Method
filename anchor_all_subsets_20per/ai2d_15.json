@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "ai2d/images/1913.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is both predator and prey?\n\nOptions:\n- woodlice\n- fox\n- grass\n- small bird\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows arrows indicating energy flow, where arrows point from prey to predators, so any organism with arrows both pointing to it and away from it is both predator and prey.\n2. Woodlice only have arrows pointing away from them to predators like shrews and hedgehogs, but no arrows pointing to them, meaning they are only prey, not predators.\n3. Fox has arrows pointing to it from small birds, badger, hedgehog, and shrew, indicating it is prey for those, and arrows pointing away from it to hawks, meaning it is a predator.\n4. Grass has arrows pointing away from it to rabbits, beetles, slugs, and mice, but no arrows pointing to it, meaning it is only a producer, not a predator or prey.\n5. Small birds have arrows pointing to them from beetles and slugs, meaning they are prey, and arrows pointing away from them to hawks and foxes, meaning they are predators.\n\n<final>fox</final>",
+      "raw_generation": [
+        "1. The diagram shows arrows indicating the flow of energy, where arrows point from prey to predators.  \n2. The fox has arrows pointing to it from small birds, hedgehogs, and shrews, meaning it preys on them.  \n3. The fox also has arrows pointing away from it to the hawk, indicating it is preyed upon by the hawk.  \n4. The small bird has arrows pointing to it from beetles and slugs, meaning it preys on them.  \n5. The small bird also has arrows pointing away from it to the hawk, meaning it is preyed upon by the hawk.  \n\n<final>small bird</final>",
+        "1. The diagram shows arrows indicating energy flow, where arrows point from prey to predators, so any organism with arrows both pointing to it and away from it is both predator and prey.\n2. Woodlice only have arrows pointing away from them to predators like shrews and hedgehogs, but no arrows pointing to them, meaning they are only prey, not predators.\n3. Fox has arrows pointing to it from small birds, badger, hedgehog, and shrew, indicating it is prey for those, and arrows pointing away from it to hawks, meaning it is a predator.\n4. Grass has arrows pointing away from it to rabbits, beetles, slugs, and mice, but no arrows pointing to it, meaning it is only a producer, not a predator or prey.\n5. Small birds have arrows pointing to them from beetles and slugs, meaning they are prey, and arrows pointing away from them to hawks and foxes, meaning they are predators.\n\n<final>fox</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows arrows indicating energy flow, where arrows point from prey to predators, so any organism with arrows both pointing to it and away from it is both predator and prey.",
+        "2. Woodlice only have arrows pointing away from them to predators like shrews and hedgehogs, but no arrows pointing to them, meaning they are only prey, not predators.",
+        "3. Fox has arrows pointing to it from small birds, badger, hedgehog, and shrew, indicating it is prey for those, and arrows pointing away from it to hawks, meaning it is a predator.",
+        "4. Grass has arrows pointing away from it to rabbits, beetles, slugs, and mice, but no arrows pointing to it, meaning it is only a producer, not a predator or prey.",
+        "5. Small birds have arrows pointing to them from beetles and slugs, meaning they are prey, and arrows pointing away from them to hawks and foxes, meaning they are predators.",
+        "<final>fox</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          76,
+          113
+        ],
+        [
+          113,
+          151
+        ],
+        [
+          151,
+          196
+        ],
+        [
+          196,
+          237
+        ],
+        [
+          237,
+          276
+        ],
+        [
+          276,
+          283
+        ]
+      ],
+      "anchor_vector": [
+        13.897151974058918,
+        13.281521785030264,
+        14.928825493612079,
+        15.145964905455873,
+        14.243024553571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 154,
+  "subset": "ai2d",
+  "subset_local_idx": 15
+}

@@ -1,0 +1,78 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "llava/llava_pretrain/images/00011/000117181.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWrite a detailed description of the given image.",
+      "reasoning_text": "1. A flock of woolly sheep grazes across a sunlit, dry hillside, their thick, off-white coats contrasting with the sparse, brownish-yellow grass beneath them.  \n2. The sheep are scattered across the slope, with most clustered toward the center and right, while a few stand alone on the left, appearing to feed or rest.  \n3. The hillside rises gently from left to right, revealing patches of bare earth and scattered rocks, indicating a rugged, arid environment under clear skies.  \n4. A dark, weathered stone structure, possibly a wall or ruin, sits partially visible on the upper right, adding a sense of human history to the otherwise natural scene.  \n5. The sky above is a vast, cloudless blue, casting bright, even sunlight that highlights the sheep’s fluffy wool and the textured terrain below, creating a peaceful pastoral atmosphere.  \n\n<final> A flock of woolly sheep grazes across a sunlit, dry hillside, their thick, off-white coats contrasting with the sparse, brownish-yellow grass beneath them. The sheep are scattered across the slope, with most clustered toward the center and right, while a few stand alone on the left, appearing to feed or rest. The hillside rises gently",
+      "raw_generation": [
+        "1. A flock of sheep with thick, woolly coats grazes on a dry, grassy hillside under a clear blue sky, suggesting a sunny day in a rural or pastoral setting.  \n2. The sheep are scattered across the slope, some standing while others are bent over, actively feeding on the sparse vegetation, indicating a natural grazing behavior.  \n3. The terrain is uneven and covered with patches of dry grass and small rocks, giving the landscape a rugged, untamed appearance typical of mountainous or semi-arid regions.  \n4. In the upper right corner, a portion of a stone or concrete structure is visible, possibly a wall or part of a building, hinting at human presence or infrastructure nearby.  \n5. The bright sunlight casts distinct shadows, enhancing the texture of the sheep’s wool and the roughness of the ground, adding depth and realism to the pastoral scene.  \n\n<final>Sheep graze on a dry, rocky hillside under a clear blue sky, with a stone structure visible in the background, capturing a serene rural landscape bathed in bright sunlight.</final>",
+        "1. A flock of woolly sheep grazes across a sunlit, dry hillside, their thick, off-white coats contrasting with the sparse, brownish-yellow grass beneath them.  \n2. The sheep are scattered across the slope, with most clustered toward the center and right, while a few stand alone on the left, appearing to feed or rest.  \n3. The hillside rises gently from left to right, revealing patches of bare earth and scattered rocks, indicating a rugged, arid environment under clear skies.  \n4. A dark, weathered stone structure, possibly a wall or ruin, sits partially visible on the upper right, adding a sense of human history to the otherwise natural scene.  \n5. The sky above is a vast, cloudless blue, casting bright, even sunlight that highlights the sheep’s fluffy wool and the textured terrain below, creating a peaceful pastoral atmosphere.  \n\n<final> A flock of woolly sheep grazes across a sunlit, dry hillside, their thick, off-white coats contrasting with the sparse, brownish-yellow grass beneath them. The sheep are scattered across the slope, with most clustered toward the center and right, while a few stand alone on the left, appearing to feed or rest. The hillside rises gently"
+      ],
+      "chunks": [
+        "1. A flock of woolly sheep grazes across a sunlit, dry hillside, their thick, off-white coats contrasting with the sparse, brownish-yellow grass beneath them.",
+        "2. The sheep are scattered across the slope, with most clustered toward the center and right, while a few stand alone on the left, appearing to feed or rest.",
+        "3. The hillside rises gently from left to right, revealing patches of bare earth and scattered rocks, indicating a rugged, arid environment under clear skies.",
+        "4. A dark, weathered stone structure, possibly a wall or ruin, sits partially visible on the upper right, adding a sense of human history to the otherwise natural scene.",
+        "5. The sky above is a vast, cloudless blue, casting bright, even sunlight that highlights the sheep’s fluffy wool and the textured terrain below, creating a peaceful pastoral atmosphere.",
+        "<final> A flock of woolly sheep grazes across a sunlit, dry hillside, their thick, off-white coats contrasting with the sparse, brownish-yellow grass beneath them.",
+        "The sheep are scattered across the slope, with most clustered toward the center and right, while a few stand alone on the left, appearing to feed or rest.",
+        "The hillside rises gently"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          63
+        ],
+        [
+          64,
+          98
+        ],
+        [
+          99,
+          131
+        ],
+        [
+          132,
+          168
+        ],
+        [
+          169,
+          206
+        ],
+        [
+          207,
+          245
+        ],
+        [
+          245,
+          277
+        ],
+        [
+          277,
+          282
+        ]
+      ],
+      "anchor_vector": [
+        14.703134107201683,
+        14.785056047644069,
+        13.764821426779886,
+        15.332350592796358,
+        13.920181006716009,
+        15.419085693359374,
+        16.1984375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 13166,
+  "subset": "llava",
+  "subset_local_idx": 19
+}

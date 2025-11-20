@@ -1,0 +1,290 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/786851759.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover clearly displays the author's name beneath the subtitle, indicating Carole Boston Weatherford as the writer.  \n2. The illustration credit is given to Kadir Nelson, but the authorship is distinctly attributed to Carole Boston Weatherford.  \n3. The title \"Moses: When Harriet Tubman Led Her People to Freedom\" is prominently featured, with the author’s name directly below it.  \n4. The layout of the cover places the author's name in a position that highlights her as the primary creator of the text.  \n5. No other names appear in the author credit section, confirming Carole Boston Weatherford as the sole writer.  \n\n<final>Carole Boston Weatherford</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the author's name beneath the subtitle.  \n2. The text reads \"Carole Boston Weatherford\" as the credited writer.  \n3. The illustrator's name, Kadir Nelson, is also visible but distinct from the author.  \n4. The title \"MOSES\" and subtitle \"When Harriet Tubman Led Her People to Freedom\" confirm the subject matter.  \n5. The copyright notice and publisher details further authenticate the authorship attribution.  \n\n<final>Carole Boston Weatherford</final>",
+        "1. The book cover clearly displays the author's name beneath the subtitle, indicating Carole Boston Weatherford as the writer.  \n2. The illustration credit is given to Kadir Nelson, but the authorship is distinctly attributed to Carole Boston Weatherford.  \n3. The title \"Moses: When Harriet Tubman Led Her People to Freedom\" is prominently featured, with the author’s name directly below it.  \n4. The layout of the cover places the author's name in a position that highlights her as the primary creator of the text.  \n5. No other names appear in the author credit section, confirming Carole Boston Weatherford as the sole writer.  \n\n<final>Carole Boston Weatherford</final>"
+      ],
+      "chunks": [
+        "1. The book cover clearly displays the author's name beneath the subtitle, indicating Carole Boston Weatherford as the writer.",
+        "2. The illustration credit is given to Kadir Nelson, but the authorship is distinctly attributed to Carole Boston Weatherford.",
+        "3. The title \"Moses: When Harriet Tubman Led Her People to Freedom\" is prominently featured, with the author’s name directly below it.",
+        "4. The layout of the cover places the author's name in a position that highlights her as the primary creator of the text.",
+        "5. No other names appear in the author credit section, confirming Carole Boston Weatherford as the sole writer.",
+        "<final>Carole Boston Weatherford</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          63
+        ],
+        [
+          64,
+          90
+        ],
+        [
+          91,
+          123
+        ],
+        [
+          124,
+          150
+        ],
+        [
+          151,
+          174
+        ],
+        [
+          175,
+          186
+        ]
+      ],
+      "anchor_vector": [
+        11.177272107456911,
+        12.357544488115273,
+        11.012248649222153,
+        9.321895071640316,
+        12.769708806818182,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The large, capitalized word \"MOSES\" is prominently displayed at the top of the cover, indicating it is the primary title of the book.\n\n2. Below the main title, the subtitle \"When Harriet Tubman Led Her People to Freedom\" provides context for the book's subject matter and historical focus.\n\n3. The author's name, Carole Boston Weatherford, is printed near the bottom, establishing her as the writer of the book's content.\n\n4. The illustrator's name, Kadir Nelson, is also listed, crediting him for the visual artwork that accompanies the text.\n\n5. The book’s title is \"Moses: When Harriet Tubman Led Her People to Freedom,\" combining both the symbolic title and the descriptive subtitle to reflect its historical theme.\n\n<final>“Moses: When Harriet Tubman Led Her People to Freedom”</final>",
+      "raw_generation": [
+        "1. The large, bold text at the top of the cover clearly spells out the main title as \"MOSES\".  \n2. Below the central figure, a subtitle reads \"When Harriet Tubman Led Her People to Freedom\", indicating the book's subject matter.  \n3. The author's name, Carole Boston Weatherford, and illustrator's name, Kadir Nelson, are printed at the bottom, confirming the book's publication details.  \n4. The cover art depicts an elderly Black woman wearing a checkered headscarf and a brown coat, with her hands raised in a gesture of leadership or guidance.  \n5. The background is a soft blue sky with faint clouds, suggesting a sense of hope, freedom, or spiritual journey associated with the title.  \n\n<final>MOSES: When Harriet Tubman Led Her People to Freedom</final>",
+        "1. The large, capitalized word \"MOSES\" is prominently displayed at the top of the cover, indicating it is the primary title of the book.\n\n2. Below the main title, the subtitle \"When Harriet Tubman Led Her People to Freedom\" provides context for the book's subject matter and historical focus.\n\n3. The author's name, Carole Boston Weatherford, is printed near the bottom, establishing her as the writer of the book's content.\n\n4. The illustrator's name, Kadir Nelson, is also listed, crediting him for the visual artwork that accompanies the text.\n\n5. The book’s title is \"Moses: When Harriet Tubman Led Her People to Freedom,\" combining both the symbolic title and the descriptive subtitle to reflect its historical theme.\n\n<final>“Moses: When Harriet Tubman Led Her People to Freedom”</final>"
+      ],
+      "chunks": [
+        "1. The large, capitalized word \"MOSES\" is prominently displayed at the top of the cover, indicating it is the primary title of the book.",
+        "2. Below the main title, the subtitle \"When Harriet Tubman Led Her People to Freedom\" provides context for the book's subject matter and historical focus.",
+        "3. The author's name, Carole Boston Weatherford, is printed near the bottom, establishing her as the writer of the book's content.",
+        "4. The illustrator's name, Kadir Nelson, is also listed, crediting him for the visual artwork that accompanies the text.",
+        "5. The book’s title is \"Moses: When Harriet Tubman Led Her People to Freedom,\" combining both the symbolic title and the descriptive subtitle to reflect its historical theme.",
+        "<final>“Moses: When Harriet Tubman Led Her People to Freedom”</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          55
+        ],
+        [
+          55,
+          88
+        ],
+        [
+          88,
+          118
+        ],
+        [
+          118,
+          145
+        ],
+        [
+          145,
+          182
+        ],
+        [
+          182,
+          203
+        ]
+      ],
+      "anchor_vector": [
+        17.796710760577948,
+        20.30051376108753,
+        19.87658813016886,
+        17.27076734938063,
+        20.813895089285715,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The cover prominently features the title \"Moses\" and the subtitle \"When Harriet Tubman Led Her People to Freedom,\" indicating a historical narrative centered on Harriet Tubman’s role in the Underground Railroad.\n\n2. The illustration style, with its rich colors and expressive depiction of Harriet Tubman as a spiritual and guiding figure, suggests a biographical or inspirational children’s book rather than a scholarly text.\n\n3. The author, Carole Boston Weatherford, is known for writing accessible, historically grounded books for young readers, confirming this is likely a children’s nonfiction picture book.\n\n4. The illustration by Kadir Nelson, renowned for his powerful and emotive portraits, further supports that this book is intended for a younger audience with visual storytelling.\n\n5. The cover design, including the large, bold title and the serene, sky-lit background, implies a narrative meant to educate and inspire children about Harriet Tubman’s legacy and her role in American history.\n\n<final>Children's nonfiction picture book about Harriet Tubman's leadership in the Underground Railroad and her symbolic role as a liberator.</final>",
+      "raw_generation": [
+        "1. The title \"Moses: When Harriet Tubman Led Her People to Freedom\" clearly indicates a historical narrative centered on Harriet Tubman’s role in the Underground Railroad.  \n2. The author, Carole Boston Weatherford, is known for writing biographical and historical children’s books, suggesting this is a nonfiction work.  \n3. The subtitle emphasizes Tubman’s leadership in guiding enslaved people to freedom, aligning with educational content about American history and civil rights.  \n4. The illustration style by Kadir Nelson, which often depicts powerful historical moments with emotional depth, reinforces the book’s focus on significant historical figures and events.  \n5. The cover design, featuring a dignified portrait of Tubman against a sky backdrop, suggests the book is aimed at young readers to teach them about pivotal moments in U.S. history through accessible storytelling.  \n\n<final>Historical biography for children</final>",
+        "1. The cover prominently features the title \"Moses\" and the subtitle \"When Harriet Tubman Led Her People to Freedom,\" indicating a historical narrative centered on Harriet Tubman’s role in the Underground Railroad.\n\n2. The illustration style, with its rich colors and expressive depiction of Harriet Tubman as a spiritual and guiding figure, suggests a biographical or inspirational children’s book rather than a scholarly text.\n\n3. The author, Carole Boston Weatherford, is known for writing accessible, historically grounded books for young readers, confirming this is likely a children’s nonfiction picture book.\n\n4. The illustration by Kadir Nelson, renowned for his powerful and emotive portraits, further supports that this book is intended for a younger audience with visual storytelling.\n\n5. The cover design, including the large, bold title and the serene, sky-lit background, implies a narrative meant to educate and inspire children about Harriet Tubman’s legacy and her role in American history.\n\n<final>Children's nonfiction picture book about Harriet Tubman's leadership in the Underground Railroad and her symbolic role as a liberator.</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently features the title \"Moses\" and the subtitle \"When Harriet Tubman Led Her People to Freedom,\" indicating a historical narrative centered on Harriet Tubman’s role in the Underground Railroad.",
+        "2. The illustration style, with its rich colors and expressive depiction of Harriet Tubman as a spiritual and guiding figure, suggests a biographical or inspirational children’s book rather than a scholarly text.",
+        "3. The author, Carole Boston Weatherford, is known for writing accessible, historically grounded books for young readers, confirming this is likely a children’s nonfiction picture book.",
+        "4. The illustration by Kadir Nelson, renowned for his powerful and emotive portraits, further supports that this book is intended for a younger audience with visual storytelling.",
+        "5. The cover design, including the large, bold title and the serene, sky-lit background, implies a narrative meant to educate and inspire children about Harriet Tubman’s legacy and her role in American history.",
+        "<final>Children's nonfiction picture book about Harriet Tubman's leadership in the Underground Railroad and her symbolic role as a liberator.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          66
+        ],
+        [
+          66,
+          106
+        ],
+        [
+          106,
+          142
+        ],
+        [
+          142,
+          175
+        ],
+        [
+          175,
+          219
+        ],
+        [
+          219,
+          250
+        ]
+      ],
+      "anchor_vector": [
+        10.712525077514051,
+        13.387977746768975,
+        15.000784686583577,
+        12.438862842548627,
+        14.533172976586126,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Children's Books?",
+      "reasoning_text": "1. The book's title, “Moses: When Harriet Tubman Led Her People to Freedom,” suggests a historical narrative tailored for young readers, focusing on a pivotal figure in American history with educational value for children.  \n2. The cover art, featuring a dignified and expressive illustration of Harriet Tubman, uses vivid colors and emotive detail to engage a younger audience visually, typical of children’s literature.  \n3. The author, Carole Boston Weatherford, and illustrator, Kadir Nelson, are both known for creating accessible, culturally rich stories for children and young readers, reinforcing its suitability as a children’s book.  \n4. The font size and layout of the cover, with large, readable text and a central, eye-catching image, are designed to attract and inform young readers and their caregivers, common in children’s publishing.  \n5. The subject matter—Harriet Tubman’s courageous journey to freedom—offers moral lessons, historical context, and inspirational themes that align with educational goals for children’s books.  \n\n<final>Yes, this book is related to Children's Books.</final>",
+      "raw_generation": [
+        "1. The book's title, \"Moses: When Harriet Tubman Led Her People to Freedom,\" suggests a historical narrative centered on a significant figure, likely aimed at educating younger readers about her legacy and contributions to American history.\n\n2. The cover art features a dignified, elderly Black woman in period-appropriate attire, rendered in a style that is both realistic and emotionally resonant, often used in children’s books to convey historical figures with respect and humanity.\n\n3. The author, Carole Boston Weatherford, is known for writing accessible, historically accurate books for children and young adults, and this title aligns with her body of work targeting younger audiences.\n\n4. The illustrator, Kadir Nelson, is celebrated for his powerful, evocative illustrations that often appear in children’s books, especially those dealing with African American history and civil rights themes.\n\n5. The book’s design, including its large, clear title and subtitle, is typical of children’s picture books or early reader chapter books, designed to engage young readers with both text and visual storytelling.\n\n<final>Yes, this book is related to Children's Books.</final>",
+        "1. The book's title, “Moses: When Harriet Tubman Led Her People to Freedom,” suggests a historical narrative tailored for young readers, focusing on a pivotal figure in American history with educational value for children.  \n2. The cover art, featuring a dignified and expressive illustration of Harriet Tubman, uses vivid colors and emotive detail to engage a younger audience visually, typical of children’s literature.  \n3. The author, Carole Boston Weatherford, and illustrator, Kadir Nelson, are both known for creating accessible, culturally rich stories for children and young readers, reinforcing its suitability as a children’s book.  \n4. The font size and layout of the cover, with large, readable text and a central, eye-catching image, are designed to attract and inform young readers and their caregivers, common in children’s publishing.  \n5. The subject matter—Harriet Tubman’s courageous journey to freedom—offers moral lessons, historical context, and inspirational themes that align with educational goals for children’s books.  \n\n<final>Yes, this book is related to Children's Books.</final>"
+      ],
+      "chunks": [
+        "1. The book's title, “Moses: When Harriet Tubman Led Her People to Freedom,” suggests a historical narrative tailored for young readers, focusing on a pivotal figure in American history with educational value for children.",
+        "2. The cover art, featuring a dignified and expressive illustration of Harriet Tubman, uses vivid colors and emotive detail to engage a younger audience visually, typical of children’s literature.",
+        "3. The author, Carole Boston Weatherford, and illustrator, Kadir Nelson, are both known for creating accessible, culturally rich stories for children and young readers, reinforcing its suitability as a children’s book.",
+        "4. The font size and layout of the cover, with large, readable text and a central, eye-catching image, are designed to attract and inform young readers and their caregivers, common in children’s publishing.",
+        "5. The subject matter—Harriet Tubman’s courageous journey to freedom—offers moral lessons, historical context, and inspirational themes that align with educational goals for children’s books.",
+        "<final>Yes, this book is related to Children's Books.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          71
+        ],
+        [
+          72,
+          111
+        ],
+        [
+          112,
+          155
+        ],
+        [
+          156,
+          198
+        ],
+        [
+          199,
+          235
+        ],
+        [
+          236,
+          252
+        ]
+      ],
+      "anchor_vector": [
+        13.228067837665403,
+        18.190840914399917,
+        13.608413938492063,
+        14.70760769314236,
+        14.599853515625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Sports & Outdoors?",
+      "reasoning_text": "1. The book's title, “Moses: When Harriet Tubman Led Her People to Freedom,” directly references Harriet Tubman’s role as a conductor on the Underground Railroad, which is a historical and biographical subject, not sports-related.\n\n2. The cover illustration depicts Harriet Tubman in a dignified pose, wearing a headscarf and coat, with a serene expression, emphasizing her legacy as a freedom fighter rather than any athletic or outdoor activity.\n\n3. The author, Carole Boston Weatherford, and illustrator, Kadir Nelson, are known for creating works centered on African American history and civil rights, further confirming the book’s educational and historical nature.\n\n4. The subtitle “Led Her People to Freedom” explicitly highlights her humanitarian and leadership role during the abolitionist movement, which has no connection to sports or recreational activities.\n\n5. The book’s content, as suggested by the cover and title, is focused on Tubman’s courageous efforts to liberate enslaved individuals, making it a biography of historical significance, not a genre related to sports or outdoors.\n\n<final> No, this book is not related to Sports & Outdoors; it is a historical biography about Harriet Tubman’s role in the Underground Railroad and her leadership in the fight for",
+      "raw_generation": [
+        "1. The book's title, \"Moses: When Harriet Tubman Led Her People to Freedom,\" clearly references Harriet Tubman's historical role in the Underground Railroad, which is a pivotal part of American history, not sports or outdoor activities.\n\n2. The cover illustration depicts Harriet Tubman in a dignified, contemplative pose, wearing a headscarf and coat, suggesting a focus on her leadership and humanitarian efforts rather than athletic or recreational themes.\n\n3. The author, Carole Boston Weatherford, and illustrator, Kadir Nelson, are known for their work in historical and biographical children’s literature, which typically explores significant figures and events, not sports or outdoor adventures.\n\n4. The book’s subject matter centers on the struggle for freedom and the courage of enslaved people, which is a social and historical narrative, not related to physical activities, games, or outdoor pursuits.\n\n5. The overall tone and content of the book, as indicated by the title and imagery, are educational and inspirational, aimed at teaching about civil rights and historical figures, not sports or outdoor recreation.\n\n<final>no</final>",
+        "1. The book's title, “Moses: When Harriet Tubman Led Her People to Freedom,” directly references Harriet Tubman’s role as a conductor on the Underground Railroad, which is a historical and biographical subject, not sports-related.\n\n2. The cover illustration depicts Harriet Tubman in a dignified pose, wearing a headscarf and coat, with a serene expression, emphasizing her legacy as a freedom fighter rather than any athletic or outdoor activity.\n\n3. The author, Carole Boston Weatherford, and illustrator, Kadir Nelson, are known for creating works centered on African American history and civil rights, further confirming the book’s educational and historical nature.\n\n4. The subtitle “Led Her People to Freedom” explicitly highlights her humanitarian and leadership role during the abolitionist movement, which has no connection to sports or recreational activities.\n\n5. The book’s content, as suggested by the cover and title, is focused on Tubman’s courageous efforts to liberate enslaved individuals, making it a biography of historical significance, not a genre related to sports or outdoors.\n\n<final> No, this book is not related to Sports & Outdoors; it is a historical biography about Harriet Tubman’s role in the Underground Railroad and her leadership in the fight for"
+      ],
+      "chunks": [
+        "1. The book's title, “Moses: When Harriet Tubman Led Her People to Freedom,” directly references Harriet Tubman’s role as a conductor on the Underground Railroad, which is a historical and biographical subject, not sports-related.",
+        "2. The cover illustration depicts Harriet Tubman in a dignified pose, wearing a headscarf and coat, with a serene expression, emphasizing her legacy as a freedom fighter rather than any athletic or outdoor activity.",
+        "3. The author, Carole Boston Weatherford, and illustrator, Kadir Nelson, are known for creating works centered on African American history and civil rights, further confirming the book’s educational and historical nature.",
+        "4. The subtitle “Led Her People to Freedom” explicitly highlights her humanitarian and leadership role during the abolitionist movement, which has no connection to sports or recreational activities.",
+        "5. The book’s content, as suggested by the cover and title, is focused on Tubman’s courageous efforts to liberate enslaved individuals, making it a biography of historical significance, not a genre related to sports or outdoors.",
+        "<final> No, this book is not related to Sports & Outdoors; it is a historical biography about Harriet Tubman’s role in the Underground Railroad and her leadership in the fight for"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          79
+        ],
+        [
+          79,
+          123
+        ],
+        [
+          123,
+          165
+        ],
+        [
+          165,
+          199
+        ],
+        [
+          199,
+          245
+        ],
+        [
+          245,
+          284
+        ]
+      ],
+      "anchor_vector": [
+        13.622600898791507,
+        15.224270547200081,
+        16.99193090872079,
+        15.484587194130174,
+        14.559044471153847,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 277,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 13
+}

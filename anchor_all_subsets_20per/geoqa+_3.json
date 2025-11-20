@@ -1,0 +1,54 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/8598.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, in circle O, AC is parallel to OB, ∠BAO = 25°, then the degree measure of ∠BOC is ()\nA. 25°\nB. 50°\nC. 60°\nD. 80°",
+      "reasoning_text": "1. Since AC is parallel to OB and OA and OC are radii, triangle AOC is isosceles with OA = OC, making ∠OAC = ∠OCA = 25° because alternate interior angles are equal due to the parallel lines.  \n2. The sum of angles in triangle AOC equals 180°, so ∠AOC = 180° – 25° – 25° = 130°, meaning the central angle for arc AC is 130°.  \n3. Since ∠BAO = 25° and OA = OB (both are radii), triangle AOB is isosceles, so ∠ABO = ∠BAO = 25°, making ∠AOB = 180° – 25° – 25° = 130°.  \n4. The total degrees around point O is 360°, so the remaining angle ∠BOC = 360° – ∠AOC – ∠AOB = 360° – 130° – 130° = 100°",
+      "raw_generation": [
+        "1. Since AC is parallel to OB and OA is a transversal, the alternate interior angles ∠BAO and ∠ABO are equal, so ∠ABO = 25°.  \n2. Triangle AOB is isosceles because OA and OB are both radii of the circle, making OA = OB, so the base angles ∠OAB and ∠OBA are equal.  \n3. The sum of angles in triangle AOB is 180°, so ∠AOB = 180° - 25° - 25° = 130°.  \n4. Since ∠AOB and ∠BOC are adjacent angles on a straight line through the center O, their sum is 180°, so ∠BOC = 180° - 130° = 50°.  \n5. Therefore, the degree measure of ∠BOC is 50°, which matches option B.\n\n<final>B. 50°</final>",
+        "1. Since AC is parallel to OB and OA and OC are radii, triangle AOC is isosceles with OA = OC, making ∠OAC = ∠OCA = 25° because alternate interior angles are equal due to the parallel lines.  \n2. The sum of angles in triangle AOC equals 180°, so ∠AOC = 180° – 25° – 25° = 130°, meaning the central angle for arc AC is 130°.  \n3. Since ∠BAO = 25° and OA = OB (both are radii), triangle AOB is isosceles, so ∠ABO = ∠BAO = 25°, making ∠AOB = 180° – 25° – 25° = 130°.  \n4. The total degrees around point O is 360°, so the remaining angle ∠BOC = 360° – ∠AOC – ∠AOB = 360° – 130° – 130° = 100°"
+      ],
+      "chunks": [
+        "1. Since AC is parallel to OB and OA and OC are radii, triangle AOC is isosceles with OA = OC, making ∠OAC = ∠OCA = 25° because alternate interior angles are equal due to the parallel lines.",
+        "2. The sum of angles in triangle AOC equals 180°, so ∠AOC = 180° – 25° – 25° = 130°, meaning the central angle for arc AC is 130°.",
+        "3. Since ∠BAO = 25° and OA = OB (both are radii), triangle AOB is isosceles, so ∠ABO = ∠BAO = 25°, making ∠AOB = 180° – 25° – 25° = 130°.",
+        "4. The total degrees around point O is 360°, so the remaining angle ∠BOC = 360° – ∠AOC – ∠AOB = 360° – 130° – 130° = 100°"
+      ],
+      "chunk_token_ranges": [
+        [
+          134,
+          190
+        ],
+        [
+          191,
+          250
+        ],
+        [
+          251,
+          326
+        ],
+        [
+          327,
+          390
+        ]
+      ],
+      "anchor_vector": [
+        12.904484361712361,
+        9.442283262222531,
+        14.238340831938244,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 24,
+  "subset": "geoqa+",
+  "subset_local_idx": 3
+}

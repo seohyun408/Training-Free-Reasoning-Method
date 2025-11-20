@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/60102ac9213d430a.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: LEFUTPRESSION, DRAUGHTKEG, RAUGHT, S0, Heineken, HOTCany, HOTCanISAUCE, 9O78, GUIAT, CERVEZA, BARRIL",
+      "reasoning_text": "<1> A 5-liter Heineken draught keg sits beside a Sriracha hot chili sauce bottle inside an empty refrigerator, both chilled and ready for use.  \n<2> The Heineken keg displays its green branding, red star logo, and “CERVEZA DE BARRIL” text, indicating it’s a draft beer container.  \n<3> The Sriracha bottle features a green cap, red sauce, and Asian characters, with visible “HOT CHILI SAUCE” labeling on its side.  \n<4> Condensation beads on the keg’s surface, showing it’s been refrigerated, while the fridge’s white interior and wire shelf are visible.  \n<5> The bottle’s label also includes “HUY FONG FOODS, INC.” and “455ml” volume, suggesting it’s a standard-sized condiment bottle.  \n<final> A chilled Heineken keg and Sriracha bottle sit side by side on a refrigerator shelf, ready for a spicy beer pairing.",
+      "raw_generation": [
+        "<reasoning>\n1. The image displays a large 5-liter Heineken draught keg with a green cap and label, positioned on a refrigerator shelf.\n2. Beside the keg stands a bottle of Sriracha hot chili sauce, identifiable by its red liquid and green cap, with visible text on the label.\n3. The keg’s label includes the brand name “Heineken” in bold white letters against a green background, along with a red star logo.\n4. The refrigerator interior is white with a wire shelf above and a textured shelf below, indicating a clean, organized storage space.\n5. The bottle of Sriracha shows partial text including “HOT CHILI SAUCE” and “SRIRACHA,” confirming its identity as a popular condiment.\n</reasoning>\n<final>A large Heineken draught keg and a bottle of Sriracha hot chili sauce sit side by side on a refrigerator shelf, ready for use.</final>",
+        "<1> A 5-liter Heineken draught keg sits beside a Sriracha hot chili sauce bottle inside an empty refrigerator, both chilled and ready for use.  \n<2> The Heineken keg displays its green branding, red star logo, and “CERVEZA DE BARRIL” text, indicating it’s a draft beer container.  \n<3> The Sriracha bottle features a green cap, red sauce, and Asian characters, with visible “HOT CHILI SAUCE” labeling on its side.  \n<4> Condensation beads on the keg’s surface, showing it’s been refrigerated, while the fridge’s white interior and wire shelf are visible.  \n<5> The bottle’s label also includes “HUY FONG FOODS, INC.” and “455ml” volume, suggesting it’s a standard-sized condiment bottle.  \n<final> A chilled Heineken keg and Sriracha bottle sit side by side on a refrigerator shelf, ready for a spicy beer pairing."
+      ],
+      "chunks": [
+        "<1> A 5-liter Heineken draught keg sits beside a Sriracha hot chili sauce bottle inside an empty refrigerator, both chilled and ready for use.",
+        "<2> The Heineken keg displays its green branding, red star logo, and “CERVEZA DE BARRIL” text, indicating it’s a draft beer container.",
+        "<3> The Sriracha bottle features a green cap, red sauce, and Asian characters, with visible “HOT CHILI SAUCE” labeling on its side.",
+        "<4> Condensation beads on the keg’s surface, showing it’s been refrigerated, while the fridge’s white interior and wire shelf are visible.",
+        "<5> The bottle’s label also includes “HUY FONG FOODS, INC.” and “455ml” volume, suggesting it’s a standard-sized condiment bottle.",
+        "<final> A chilled Heineken keg and Sriracha bottle sit side by side on a refrigerator shelf, ready for a spicy beer pairing."
+      ],
+      "chunk_token_ranges": [
+        [
+          132,
+          168
+        ],
+        [
+          169,
+          207
+        ],
+        [
+          208,
+          243
+        ],
+        [
+          244,
+          276
+        ],
+        [
+          277,
+          315
+        ],
+        [
+          316,
+          347
+        ]
+      ],
+      "anchor_vector": [
+        13.756850228283032,
+        12.225586504477075,
+        12.81745845878873,
+        12.907133714452462,
+        13.404737903225806,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 596,
+  "subset": "textvqa",
+  "subset_local_idx": 6
+}

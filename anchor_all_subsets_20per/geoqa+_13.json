@@ -1,0 +1,60 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/12041.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAs shown in the figure, points A, D, B, and F are on a straight line, and triangle ABC is congruent to triangle FDE. If AF = 10 and AD = 3.5, then the length of BD is ( )  \nA. 3  \nB. 3.5  \nC. 6  \nD. 7",
+      "reasoning_text": "1. Since points A, D, B, and F lie on a straight line in that order, the total length AF is composed of segments AD, DB, and BF, meaning AF = AD + DB + BF.\n\n2. Triangle ABC is congruent to triangle FDE, implying corresponding sides are equal: AB = FD and BC = DE, and AC = FE, but most importantly, AB corresponds to FD and AD corresponds to FB due to the congruence and the shared orientation of the triangles.\n\n3. Given that AD = 3.5 and AF = 10, we can deduce that the length from A to F includes AD, DB, and BF, so the remaining length after subtracting AD is 10 - 3.5 = 6.5, which must be distributed between DB and BF.\n\n4. From the congruence, since AB corresponds to FD, and AB = AD + DB, while FD = FB + BD, and since the triangles are congruent and oriented similarly, the corresponding segments AD and FB must be equal in length, meaning FB = AD = 3.5.\n\n5. Therefore, since AF = AD + DB + BF, and BF = AD = 3.5, then",
+      "raw_generation": [
+        "1. Since points A, D, B, and F lie on a straight line in that order, the total length AF equals the sum of segments AD, DB, and BF.  \n2. Given AF = 10 and AD = 3.5, the remaining length DB + BF must equal 6.5.  \n3. Because triangle ABC is congruent to triangle FDE, corresponding sides are equal, so AB = FD and AC = FE.  \n4. Since AB = FD, and AB = AD + DB, while FD = FB + BD, substituting gives AD + DB = FB + BD, which simplifies to AD = FB.  \n5. With AD = 3.5, FB must also equal 3.5. Substituting into DB + BF = 6.5 gives DB + 3.5 = 6.5, so DB = 3.  \n\n<final>3</final>",
+        "1. Since points A, D, B, and F lie on a straight line in that order, the total length AF is composed of segments AD, DB, and BF, meaning AF = AD + DB + BF.\n\n2. Triangle ABC is congruent to triangle FDE, implying corresponding sides are equal: AB = FD and BC = DE, and AC = FE, but most importantly, AB corresponds to FD and AD corresponds to FB due to the congruence and the shared orientation of the triangles.\n\n3. Given that AD = 3.5 and AF = 10, we can deduce that the length from A to F includes AD, DB, and BF, so the remaining length after subtracting AD is 10 - 3.5 = 6.5, which must be distributed between DB and BF.\n\n4. From the congruence, since AB corresponds to FD, and AB = AD + DB, while FD = FB + BD, and since the triangles are congruent and oriented similarly, the corresponding segments AD and FB must be equal in length, meaning FB = AD = 3.5.\n\n5. Therefore, since AF = AD + DB + BF, and BF = AD = 3.5, then"
+      ],
+      "chunks": [
+        "1. Since points A, D, B, and F lie on a straight line in that order, the total length AF is composed of segments AD, DB, and BF, meaning AF = AD + DB + BF.",
+        "2. Triangle ABC is congruent to triangle FDE, implying corresponding sides are equal: AB = FD and BC = DE, and AC = FE, but most importantly, AB corresponds to FD and AD corresponds to FB due to the congruence and the shared orientation of the triangles.",
+        "3. Given that AD = 3.5 and AF = 10, we can deduce that the length from A to F includes AD, DB, and BF, so the remaining length after subtracting AD is 10 - 3.5 = 6.5, which must be distributed between DB and BF.",
+        "4. From the congruence, since AB corresponds to FD, and AB = AD + DB, while FD = FB + BD, and since the triangles are congruent and oriented similarly, the corresponding segments AD and FB must be equal in length, meaning FB = AD = 3.5.",
+        "5. Therefore, since AF = AD + DB + BF, and BF = AD = 3.5, then"
+      ],
+      "chunk_token_ranges": [
+        [
+          162,
+          207
+        ],
+        [
+          207,
+          265
+        ],
+        [
+          265,
+          333
+        ],
+        [
+          333,
+          394
+        ],
+        [
+          394,
+          418
+        ]
+      ],
+      "anchor_vector": [
+        7.365413325702425,
+        7.205294458650002,
+        7.689156800299115,
+        6.823072160993304,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 77,
+  "subset": "geoqa+",
+  "subset_local_idx": 13
+}

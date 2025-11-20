@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/5141/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich animal's limbs are also adapted for climbing trees?\nContext: s live in the rain forests of Indonesia and Malaysia. Their limbs are adapted for climbing trees.\nFigure: Sumatran orangutan.\nOptions: (A) Galapagos giant tortoise (B) white-cheeked gibbon",
+      "reasoning_text": "1. The Sumatran orangutan, shown in the image, has long, powerful arms and grasping hands ideal for swinging through dense canopy forests, demonstrating clear adaptations for arboreal locomotion.\n2. Its limbs are specifically elongated and muscular to navigate vertical and horizontal branches, enabling efficient movement in the rainforest environment where trees dominate the habitat.\n3. The white-cheeked gibbon, another primate, also possesses long limbs and flexible shoulders suited for brachiation, making it equally adapted for life among the treetops in Southeast Asia.\n4. In contrast, the Galapagos giant tortoise lacks any limb adaptations for climbing; its sturdy, columnar legs are designed for walking on rugged volcanic terrain rather than arboreal environments.\n5. Both the Sumatran orangutan and white-cheeked gibbon share similar limb adaptations for climbing, but the question focuses on identifying which animal’s limbs are also adapted for climbing trees, making the gibbon the correct answer.\n\n<final> (B) white-cheeked gibbon",
+      "raw_generation": [
+        "1. The Sumatran orangutan, shown in the image, has long, powerful limbs and flexible hands and feet, ideal for swinging through trees in dense rainforests.  \n2. Its long arms allow it to reach across branches and grip securely, while its opposable thumbs and strong feet provide excellent grip for climbing.  \n3. The white-cheeked gibbon, another arboreal primate, shares similar adaptations with orangutans, including long limbs and flexible joints for agile tree movement.  \n4. In contrast, the Galapagos giant tortoise has short, sturdy limbs suited for walking on land and navigating rocky terrain, not for climbing trees.  \n5. Both orangutans and gibbons rely on their limb structure for arboreal locomotion, making the gibbon the best match for the question’s context.  \n\n<final>(B) white-cheeked gibbon</final>",
+        "1. The Sumatran orangutan, shown in the image, has long, powerful arms and grasping hands ideal for swinging through dense canopy forests, demonstrating clear adaptations for arboreal locomotion.\n2. Its limbs are specifically elongated and muscular to navigate vertical and horizontal branches, enabling efficient movement in the rainforest environment where trees dominate the habitat.\n3. The white-cheeked gibbon, another primate, also possesses long limbs and flexible shoulders suited for brachiation, making it equally adapted for life among the treetops in Southeast Asia.\n4. In contrast, the Galapagos giant tortoise lacks any limb adaptations for climbing; its sturdy, columnar legs are designed for walking on rugged volcanic terrain rather than arboreal environments.\n5. Both the Sumatran orangutan and white-cheeked gibbon share similar limb adaptations for climbing, but the question focuses on identifying which animal’s limbs are also adapted for climbing trees, making the gibbon the correct answer.\n\n<final> (B) white-cheeked gibbon"
+      ],
+      "chunks": [
+        "1. The Sumatran orangutan, shown in the image, has long, powerful arms and grasping hands ideal for swinging through dense canopy forests, demonstrating clear adaptations for arboreal locomotion.",
+        "2. Its limbs are specifically elongated and muscular to navigate vertical and horizontal branches, enabling efficient movement in the rainforest environment where trees dominate the habitat.",
+        "3. The white-cheeked gibbon, another primate, also possesses long limbs and flexible shoulders suited for brachiation, making it equally adapted for life among the treetops in Southeast Asia.",
+        "4. In contrast, the Galapagos giant tortoise lacks any limb adaptations for climbing; its sturdy, columnar legs are designed for walking on rugged volcanic terrain rather than arboreal environments.",
+        "5. Both the Sumatran orangutan and white-cheeked gibbon share similar limb adaptations for climbing, but the question focuses on identifying which animal’s limbs are also adapted for climbing trees, making the gibbon the correct answer.",
+        "<final> (B) white-cheeked gibbon"
+      ],
+      "chunk_token_ranges": [
+        [
+          130,
+          170
+        ],
+        [
+          170,
+          201
+        ],
+        [
+          201,
+          243
+        ],
+        [
+          243,
+          282
+        ],
+        [
+          282,
+          330
+        ],
+        [
+          330,
+          342
+        ]
+      ],
+      "anchor_vector": [
+        14.934037548210778,
+        15.822471858992245,
+        15.922498288928955,
+        15.84927978515625,
+        15.3125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 70,
+  "subset": "sqa",
+  "subset_local_idx": 12
+}

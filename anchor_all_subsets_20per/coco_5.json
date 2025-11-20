@@ -1,0 +1,122 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "coco/train2017/000000136235.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat does the sign in front of the runways near the camera say?\nA. one way\nB. stop\nC. dead end\nD. enter\nAnswer with the option's letter from the given choices directly.",
+      "reasoning_text": "1. The sign prominently displayed in the foreground is circular with a red border and white center, clearly indicating a prohibition.\n2. The words “DO NOT ENTER” are written in bold, black capital letters, arranged across the top and bottom of the sign.\n3. The sign’s placement near the runway and fence suggests it is meant to prevent unauthorized access to a restricted area.\n4. The design and wording of the sign align with standard traffic control devices used to enforce safety regulations around airports.\n5. The sign’s message directly contradicts option D (“enter”), making it the only incorrect choice among the given options.\n\n<final>B</final>",
+      "raw_generation": [
+        "1. The sign is prominently displayed in the foreground, directly facing the viewer, making its message easily readable.\n2. It features a red circle with a white horizontal bar across the middle, a universally recognized symbol for prohibition.\n3. Below the red circle, the word \"ENTER\" is clearly written in bold, white capital letters.\n4. The sign's design and placement near the runway suggest it is meant to control access to the restricted area.\n5. The combination of the \"DO NOT ENTER\" symbol and the word \"ENTER\" indicates a contradiction, likely a mistake or a humorous sign.\n\n<final>D</final>",
+        "1. The sign prominently displayed in the foreground is circular with a red border and white center, clearly indicating a prohibition.\n2. The words “DO NOT ENTER” are written in bold, black capital letters, arranged across the top and bottom of the sign.\n3. The sign’s placement near the runway and fence suggests it is meant to prevent unauthorized access to a restricted area.\n4. The design and wording of the sign align with standard traffic control devices used to enforce safety regulations around airports.\n5. The sign’s message directly contradicts option D (“enter”), making it the only incorrect choice among the given options.\n\n<final>B</final>"
+      ],
+      "chunks": [
+        "1. The sign prominently displayed in the foreground is circular with a red border and white center, clearly indicating a prohibition.",
+        "2. The words “DO NOT ENTER” are written in bold, black capital letters, arranged across the top and bottom of the sign.",
+        "3. The sign’s placement near the runway and fence suggests it is meant to prevent unauthorized access to a restricted area.",
+        "4. The design and wording of the sign align with standard traffic control devices used to enforce safety regulations around airports.",
+        "5. The sign’s message directly contradicts option D (“enter”), making it the only incorrect choice among the given options.",
+        "<final>B</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          98,
+          122
+        ],
+        [
+          122,
+          150
+        ],
+        [
+          150,
+          174
+        ],
+        [
+          174,
+          197
+        ],
+        [
+          197,
+          222
+        ],
+        [
+          222,
+          228
+        ]
+      ],
+      "anchor_vector": [
+        10.197405736445393,
+        12.324045304008152,
+        15.92120018115942,
+        13.596276041666666,
+        15.411458333333334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat color is the FedEx airplane's tail fin?\nA. blue\nB. green\nC. yellow\nD. purple",
+      "reasoning_text": "1. The FedEx airplane is visible on the right side of the image, parked near the terminal building, with its tail fin clearly distinguishable from the rest of the aircraft.\n\n2. The tail fin features a bold, dark purple color that contrasts sharply with the white fuselage and the FedEx logo, making it easily identifiable.\n\n3. The purple hue is consistent with FedEx’s branding, which traditionally uses purple and orange for its aircraft livery, especially on its cargo planes.\n\n4. The purple tail fin stands out against the clear blue sky and the airport’s gray infrastructure, confirming its color without ambiguity.\n\n5. None of the other color options—blue, green, or yellow—match the tail fin’s actual appearance as shown in the image.\n\n<final>D. purple</final>",
+      "raw_generation": [
+        "1. The FedEx airplane is visible on the right side of the image, parked near the terminal building.  \n2. Its tail fin is clearly painted in a distinct, vibrant color that stands out against the sky.  \n3. The tail fin’s color is unmistakably purple, matching FedEx’s well-known branding.  \n4. The purple hue is consistent across the entire tail, with no other colors mixed in.  \n5. This matches option D, as purple is the correct and only accurate choice among the given options.  \n\n<final>D. purple</final>",
+        "1. The FedEx airplane is visible on the right side of the image, parked near the terminal building, with its tail fin clearly distinguishable from the rest of the aircraft.\n\n2. The tail fin features a bold, dark purple color that contrasts sharply with the white fuselage and the FedEx logo, making it easily identifiable.\n\n3. The purple hue is consistent with FedEx’s branding, which traditionally uses purple and orange for its aircraft livery, especially on its cargo planes.\n\n4. The purple tail fin stands out against the clear blue sky and the airport’s gray infrastructure, confirming its color without ambiguity.\n\n5. None of the other color options—blue, green, or yellow—match the tail fin’s actual appearance as shown in the image.\n\n<final>D. purple</final>"
+      ],
+      "chunks": [
+        "1. The FedEx airplane is visible on the right side of the image, parked near the terminal building, with its tail fin clearly distinguishable from the rest of the aircraft.",
+        "2. The tail fin features a bold, dark purple color that contrasts sharply with the white fuselage and the FedEx logo, making it easily identifiable.",
+        "3. The purple hue is consistent with FedEx’s branding, which traditionally uses purple and orange for its aircraft livery, especially on its cargo planes.",
+        "4. The purple tail fin stands out against the clear blue sky and the airport’s gray infrastructure, confirming its color without ambiguity.",
+        "5. None of the other color options—blue, green, or yellow—match the tail fin’s actual appearance as shown in the image.",
+        "<final>D. purple</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          95
+        ],
+        [
+          95,
+          125
+        ],
+        [
+          125,
+          155
+        ],
+        [
+          155,
+          181
+        ],
+        [
+          181,
+          210
+        ],
+        [
+          210,
+          218
+        ]
+      ],
+      "anchor_vector": [
+        10.908927352729885,
+        13.445223262392242,
+        14.162201764202033,
+        12.212764345366379,
+        14.630615234375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 27,
+  "subset": "coco",
+  "subset_local_idx": 5
+}

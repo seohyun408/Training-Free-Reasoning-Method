@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/10598/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWill these magnets attract or repel each other?\nContext: Two magnets are placed as shown.\nOptions: (A) attract (B) repel",
+      "reasoning_text": "1. The top magnet has its north pole facing upward and south pole downward, while the bottom magnet has its south pole facing upward and north pole downward.  \n2. The upward-facing south pole of the bottom magnet is directly opposite the upward-facing north pole of the top magnet.  \n3. Magnetic poles interact such that opposite poles attract and like poles repel, which applies here since north and south face each other.  \n4. The alignment ensures the south pole of the lower magnet and the north pole of the upper magnet are in direct opposition, creating an attractive force between them.  \n5. Since the facing poles are opposite, these magnets will attract each other, making option (A) the correct choice.  \n\n<final>(A) attract</final>",
+      "raw_generation": [
+        "1. The top magnet has its north pole facing upward and its south pole facing downward.  \n2. The bottom magnet has its south pole facing upward and its north pole facing downward.  \n3. The upward-facing south pole of the bottom magnet is directly opposite the upward-facing north pole of the top magnet.  \n4. Opposite magnetic poles (north and south) exert an attractive force on each other.  \n5. Since the facing poles are opposite, the magnets will attract each other.  \n\n<final>(A) attract</final>",
+        "1. The top magnet has its north pole facing upward and south pole downward, while the bottom magnet has its south pole facing upward and north pole downward.  \n2. The upward-facing south pole of the bottom magnet is directly opposite the upward-facing north pole of the top magnet.  \n3. Magnetic poles interact such that opposite poles attract and like poles repel, which applies here since north and south face each other.  \n4. The alignment ensures the south pole of the lower magnet and the north pole of the upper magnet are in direct opposition, creating an attractive force between them.  \n5. Since the facing poles are opposite, these magnets will attract each other, making option (A) the correct choice.  \n\n<final>(A) attract</final>"
+      ],
+      "chunks": [
+        "1. The top magnet has its north pole facing upward and south pole downward, while the bottom magnet has its south pole facing upward and north pole downward.",
+        "2. The upward-facing south pole of the bottom magnet is directly opposite the upward-facing north pole of the top magnet.",
+        "3. Magnetic poles interact such that opposite poles attract and like poles repel, which applies here since north and south face each other.",
+        "4. The alignment ensures the south pole of the lower magnet and the north pole of the upper magnet are in direct opposition, creating an attractive force between them.",
+        "5. Since the facing poles are opposite, these magnets will attract each other, making option (A) the correct choice.",
+        "<final>(A) attract</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          70,
+          101
+        ],
+        [
+          102,
+          126
+        ],
+        [
+          127,
+          154
+        ],
+        [
+          155,
+          187
+        ],
+        [
+          188,
+          213
+        ],
+        [
+          214,
+          223
+        ]
+      ],
+      "anchor_vector": [
+        16.99335447410301,
+        14.286928999159072,
+        13.343510199652778,
+        10.753430447048611,
+        14.123914930555555,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 222,
+  "subset": "sqa",
+  "subset_local_idx": 17
+}

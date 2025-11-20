@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "CLEVR_v1.0/images/train/CLEVR_train_063287.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nSubtract all big brown metallic cubes. Subtract all brown matte cylinders. How many objects are left?",
+      "reasoning_text": "1. The image contains five distinct geometric objects: two blue metallic cylinders, one large yellow matte cube, one small yellow matte cube, one brown matte cylinder, and one small red metallic sphere.  \n2. There are no big brown metallic cubes present in the scene, so subtracting them leaves the count unchanged at five.  \n3. The brown matte cylinder is present and must be subtracted, reducing the total object count by one.  \n4. After removing the brown matte cylinder, four objects remain: two blue metallic cylinders, one large yellow matte cube, one small yellow matte cube, and one small red metallic sphere.  \n5. No other objects match the description for subtraction, so the final count is precisely four objects remaining.  \n\n<final>4</final>",
+      "raw_generation": [
+        "1. The image contains six geometric objects: two blue metallic cylinders, one large yellow matte cube, one small yellow matte cube, one brown matte cylinder, and one small red metallic sphere.  \n2. There are no big brown metallic cubes in the image, so subtracting them leaves all original objects unchanged.  \n3. The brown matte cylinder is present and must be subtracted, reducing the total count by one.  \n4. After removing the brown matte cylinder, five objects remain: two blue metallic cylinders, one large yellow matte cube, one small yellow matte cube, and one small red metallic sphere.  \n5. No other objects match the descriptions for subtraction, so the final count is five objects remaining.  \n\n<final>5</final>",
+        "1. The image contains five distinct geometric objects: two blue metallic cylinders, one large yellow matte cube, one small yellow matte cube, one brown matte cylinder, and one small red metallic sphere.  \n2. There are no big brown metallic cubes present in the scene, so subtracting them leaves the count unchanged at five.  \n3. The brown matte cylinder is present and must be subtracted, reducing the total object count by one.  \n4. After removing the brown matte cylinder, four objects remain: two blue metallic cylinders, one large yellow matte cube, one small yellow matte cube, and one small red metallic sphere.  \n5. No other objects match the description for subtraction, so the final count is precisely four objects remaining.  \n\n<final>4</final>"
+      ],
+      "chunks": [
+        "1. The image contains five distinct geometric objects: two blue metallic cylinders, one large yellow matte cube, one small yellow matte cube, one brown matte cylinder, and one small red metallic sphere.",
+        "2. There are no big brown metallic cubes present in the scene, so subtracting them leaves the count unchanged at five.",
+        "3. The brown matte cylinder is present and must be subtracted, reducing the total object count by one.",
+        "4. After removing the brown matte cylinder, four objects remain: two blue metallic cylinders, one large yellow matte cube, one small yellow matte cube, and one small red metallic sphere.",
+        "5. No other objects match the description for subtraction, so the final count is precisely four objects remaining.",
+        "<final>4</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          87
+        ],
+        [
+          88,
+          113
+        ],
+        [
+          114,
+          136
+        ],
+        [
+          137,
+          174
+        ],
+        [
+          175,
+          196
+        ],
+        [
+          197,
+          204
+        ]
+      ],
+      "anchor_vector": [
+        13.496998063099625,
+        15.226539105689497,
+        11.609446220774345,
+        16.776599702380953,
+        11.364955357142858,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 748,
+  "subset": "CLEVR_v1.0",
+  "subset_local_idx": 8
+}

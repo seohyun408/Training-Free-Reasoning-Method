@@ -1,0 +1,36 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "chartqa/train/png/two_col_40361.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat was the infant mortality rate in Kiribati in 2019? Answer the question using a single word or phrase.",
+      "reasoning_text": "40.1\n\n<final>40.1</final>",
+      "raw_generation": [
+        "40.1\n\n1. The bar chart displays infant mortality rates per 1,000 live births for Kiribati from 2009 to 2019.\n2. Each bar corresponds to a specific year, with the value labeled on top of the bar.\n3. The x-axis represents the years, ranging from 2009 to 2019.\n4. The y-axis indicates the number of deaths per 1,000 live births, with increments of 10.\n5. The bar for 2019 is the rightmost bar, and its value is clearly labeled as 40.1.\n\n<final>40.1</final>",
+        "40.1\n\n<final>40.1</final>"
+      ],
+      "chunks": [
+        "40.1\n\n<final>40.1</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          77
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 60,
+  "subset": "chartqa",
+  "subset_local_idx": 7
+}

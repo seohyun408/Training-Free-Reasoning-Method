@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/7264/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich animal's mouth is also adapted to tear through meat?\nContext: Cheetahs are carnivores, or meat eaters. They eat large mammals like antelope. The 's mouth is adapted to tear through meat.\nFigure: cheetah.\nOptions: (A) nutria (B) Eurasian lynx",
+      "reasoning_text": "1. The cheetah’s mouth, shown in the image, features long canine teeth and sharp incisors suited for gripping and tearing flesh, indicating its adaptation for a carnivorous diet.  \n2. Its powerful jaw muscles and retractable claws, though not visible here, support its ability to subdue and consume large prey such as antelope.  \n3. The Eurasian lynx, as a fellow obligate carnivore, shares similar dental and muscular adaptations for tearing meat, matching the cheetah’s functional anatomy.  \n4. Nutria, being herbivorous rodents, possess flat molars for grinding vegetation and lack the sharp, tearing dentition seen in the cheetah and Eurasian lynx.  \n5. Since the cheetah’s mouth is explicitly adapted for tearing meat, and the Eurasian lynx shares this trait, the correct answer must be (B) Eurasian lynx.\n\n<final>(B) Eurasian lynx</final>",
+      "raw_generation": [
+        "1. The cheetah’s sharp, pointed canine teeth are specifically designed to pierce and grip flesh, enabling it to efficiently kill and consume prey.  \n2. Its strong jaw muscles and elongated skull structure allow for powerful bites necessary to tear through tough muscle tissue of large mammals.  \n3. The visible sharp incisors and carnassial teeth in the image further support its adaptation for slicing and shredding meat during feeding.  \n4. Unlike herbivores such as nutria, which have flat molars for grinding plant matter, the cheetah’s dentition is optimized for a carnivorous diet.  \n5. The Eurasian lynx, another obligate carnivore, shares similar dental adaptations including robust canines and carnassial teeth for tearing meat, making it a correct alternative.  \n\n<final>(B) Eurasian lynx</final>",
+        "1. The cheetah’s mouth, shown in the image, features long canine teeth and sharp incisors suited for gripping and tearing flesh, indicating its adaptation for a carnivorous diet.  \n2. Its powerful jaw muscles and retractable claws, though not visible here, support its ability to subdue and consume large prey such as antelope.  \n3. The Eurasian lynx, as a fellow obligate carnivore, shares similar dental and muscular adaptations for tearing meat, matching the cheetah’s functional anatomy.  \n4. Nutria, being herbivorous rodents, possess flat molars for grinding vegetation and lack the sharp, tearing dentition seen in the cheetah and Eurasian lynx.  \n5. Since the cheetah’s mouth is explicitly adapted for tearing meat, and the Eurasian lynx shares this trait, the correct answer must be (B) Eurasian lynx.\n\n<final>(B) Eurasian lynx</final>"
+      ],
+      "chunks": [
+        "1. The cheetah’s mouth, shown in the image, features long canine teeth and sharp incisors suited for gripping and tearing flesh, indicating its adaptation for a carnivorous diet.",
+        "2. Its powerful jaw muscles and retractable claws, though not visible here, support its ability to subdue and consume large prey such as antelope.",
+        "3. The Eurasian lynx, as a fellow obligate carnivore, shares similar dental and muscular adaptations for tearing meat, matching the cheetah’s functional anatomy.",
+        "4. Nutria, being herbivorous rodents, possess flat molars for grinding vegetation and lack the sharp, tearing dentition seen in the cheetah and Eurasian lynx.",
+        "5. Since the cheetah’s mouth is explicitly adapted for tearing meat, and the Eurasian lynx shares this trait, the correct answer must be (B) Eurasian lynx.",
+        "<final>(B) Eurasian lynx</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          142,
+          180
+        ],
+        [
+          181,
+          212
+        ],
+        [
+          213,
+          248
+        ],
+        [
+          249,
+          287
+        ],
+        [
+          288,
+          327
+        ],
+        [
+          327,
+          339
+        ]
+      ],
+      "anchor_vector": [
+        14.495759520107262,
+        16.047721570678497,
+        15.857196953722445,
+        15.646859975961538,
+        16.4453125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 124,
+  "subset": "sqa",
+  "subset_local_idx": 13
+}

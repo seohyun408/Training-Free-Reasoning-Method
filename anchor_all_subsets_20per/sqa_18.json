@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/18705/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich country is highlighted?\nContext: N/A\nOptions: (A) Tonga (B) New Zealand (C) Australia (D) Papua New Guinea",
+      "reasoning_text": "1. The map shows a large landmass in the southern hemisphere, colored light green, which matches Australia’s geographical shape and position relative to nearby islands and continents.  \n2. To the southeast of Australia, a distinct island nation is shaded darker green, matching the recognizable shape of New Zealand’s North and South Islands.  \n3. Papua New Guinea, located to the north of Australia, is partially visible but not highlighted; it appears in a lighter gray, distinguishing it from the highlighted region.  \n4. Tonga, situated further east in the Pacific, is not highlighted and appears as a small, unmarked archipelago, making it visually insignificant in this context.  \n5. The highlighted country, with its prominent size and central location in the map, corresponds to Australia’s continental outline, confirming it as the correct answer.  \n\n<final> (C) Australia",
+      "raw_generation": [
+        "1. The map displays a region of the South Pacific with several landmasses, including a large continent and an island nation to its southeast.  \n2. The large continent colored in light green is clearly identifiable as Australia, given its distinctive shape and position relative to surrounding islands.  \n3. The island nation highlighted in darker green is located to the southeast of Australia, matching the geographic location of New Zealand.  \n4. Papua New Guinea, located to the north of Australia, is shown in a lighter shade and is not the highlighted country in this image.  \n5. Tonga, situated further east in the Pacific, is not highlighted and appears as a small cluster of islands without special coloration.  \n\n<final>B</final>",
+        "1. The map shows a large landmass in the southern hemisphere, colored light green, which matches Australia’s geographical shape and position relative to nearby islands and continents.  \n2. To the southeast of Australia, a distinct island nation is shaded darker green, matching the recognizable shape of New Zealand’s North and South Islands.  \n3. Papua New Guinea, located to the north of Australia, is partially visible but not highlighted; it appears in a lighter gray, distinguishing it from the highlighted region.  \n4. Tonga, situated further east in the Pacific, is not highlighted and appears as a small, unmarked archipelago, making it visually insignificant in this context.  \n5. The highlighted country, with its prominent size and central location in the map, corresponds to Australia’s continental outline, confirming it as the correct answer.  \n\n<final> (C) Australia"
+      ],
+      "chunks": [
+        "1. The map shows a large landmass in the southern hemisphere, colored light green, which matches Australia’s geographical shape and position relative to nearby islands and continents.",
+        "2. To the southeast of Australia, a distinct island nation is shaded darker green, matching the recognizable shape of New Zealand’s North and South Islands.",
+        "3. Papua New Guinea, located to the north of Australia, is partially visible but not highlighted; it appears in a lighter gray, distinguishing it from the highlighted region.",
+        "4. Tonga, situated further east in the Pacific, is not highlighted and appears as a small, unmarked archipelago, making it visually insignificant in this context.",
+        "5. The highlighted country, with its prominent size and central location in the map, corresponds to Australia’s continental outline, confirming it as the correct answer.",
+        "<final> (C) Australia"
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          107
+        ],
+        [
+          108,
+          138
+        ],
+        [
+          139,
+          173
+        ],
+        [
+          174,
+          209
+        ],
+        [
+          210,
+          241
+        ],
+        [
+          242,
+          249
+        ]
+      ],
+      "anchor_vector": [
+        13.692068268839794,
+        12.734398030885743,
+        9.678965316280243,
+        12.438841085829495,
+        9.335658482142858,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 238,
+  "subset": "sqa",
+  "subset_local_idx": 18
+}

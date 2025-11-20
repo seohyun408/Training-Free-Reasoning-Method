@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/17513/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich solution has a higher concentration of purple particles?\nContext: The diagram below is a model of two solutions. Each purple ball represents one particle of solute.\nOptions: (A) Solution B (B) neither; their concentrations are the same (C) Solution A",
+      "reasoning_text": "1. Solution A contains five purple solute particles dissolved in 20 mL of solvent, while Solution B contains only two purple solute particles in the same 20 mL volume.  \n2. Since both solutions share identical solvent volumes, the number of solute particles directly determines concentration without volume manipulation.  \n3. The higher particle count in Solution A indicates a greater amount of solute distributed within the same container volume compared to Solution B.  \n4. Concentration is calculated as solute particles per unit volume; Solution A has 5/20 and Solution B has 2/20, making A’s ratio higher.  \n5. Therefore, Solution A exhibits a higher concentration due to its greater solute-to-solvent particle ratio, despite identical solvent volumes.  \n\n<final>C</final>",
+      "raw_generation": [
+        "1. Solution A contains five purple solute particles suspended in 20 mL of solvent, indicating a higher particle count per unit volume compared to Solution B.  \n2. Solution B contains only two purple solute particles in the same 20 mL solvent volume, resulting in a significantly lower particle density.  \n3. Concentration is directly proportional to the number of solute particles per unit volume, so Solution A’s higher particle count implies a greater concentration.  \n4. Since both solutions share identical solvent volumes, the difference in concentration is solely due to the disparity in solute particle numbers.  \n5. Therefore, Solution A must have the higher concentration because it contains more solute particles distributed in the same volume as Solution B.  \n\n<final>(C) Solution A</final>",
+        "1. Solution A contains five purple solute particles dissolved in 20 mL of solvent, while Solution B contains only two purple solute particles in the same 20 mL volume.  \n2. Since both solutions share identical solvent volumes, the number of solute particles directly determines concentration without volume manipulation.  \n3. The higher particle count in Solution A indicates a greater amount of solute distributed within the same container volume compared to Solution B.  \n4. Concentration is calculated as solute particles per unit volume; Solution A has 5/20 and Solution B has 2/20, making A’s ratio higher.  \n5. Therefore, Solution A exhibits a higher concentration due to its greater solute-to-solvent particle ratio, despite identical solvent volumes.  \n\n<final>C</final>"
+      ],
+      "chunks": [
+        "1. Solution A contains five purple solute particles dissolved in 20 mL of solvent, while Solution B contains only two purple solute particles in the same 20 mL volume.",
+        "2. Since both solutions share identical solvent volumes, the number of solute particles directly determines concentration without volume manipulation.",
+        "3. The higher particle count in Solution A indicates a greater amount of solute distributed within the same container volume compared to Solution B.",
+        "4. Concentration is calculated as solute particles per unit volume; Solution A has 5/20 and Solution B has 2/20, making A’s ratio higher.",
+        "5. Therefore, Solution A exhibits a higher concentration due to its greater solute-to-solvent particle ratio, despite identical solvent volumes.",
+        "<final>C</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          118,
+          156
+        ],
+        [
+          157,
+          180
+        ],
+        [
+          181,
+          208
+        ],
+        [
+          209,
+          247
+        ],
+        [
+          248,
+          276
+        ],
+        [
+          277,
+          283
+        ]
+      ],
+      "anchor_vector": [
+        13.14940732944132,
+        12.736705315806878,
+        14.517659505208334,
+        15.202950613839285,
+        16.68359375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 140,
+  "subset": "sqa",
+  "subset_local_idx": 15
+}

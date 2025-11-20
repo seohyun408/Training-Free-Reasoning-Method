@@ -1,0 +1,576 @@
+{
+  "total_pairs": 10,
+  "successful_pairs": 10,
+  "image_path": "gqa/images/2372652.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich place is it?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The presence of a motorcycle with a storage box and kickstand indicates a vehicle typically stored or maintained in a personal or professional garage space.\n2. The wall-mounted tools, wrenches, and screwdrivers arranged neatly suggest a workshop or repair area designed for mechanical work.\n3. The visible “Michelin” poster and “Jack Oil” sign imply automotive-related branding, reinforcing the setting as a garage or mechanic’s shop.\n4. The concrete floor with scattered debris and a raised platform for vehicle work further confirms this is a functional garage or repair bay.\n5. The overall layout, including the open door and exposed tools, aligns with a private or commercial garage environment for vehicle maintenance.\n\n<final>garage",
+      "raw_generation": [
+        "1. The image shows a motorcycle parked inside a garage or workshop.  \n2. Tools and equipment are mounted on the walls, indicating a repair or maintenance area.  \n3. A workbench with various tools and a scale is visible in the background.  \n4. A “Michelin” poster and a “Jiffy Lube” sign suggest automotive services.  \n5. The floor is concrete with scattered debris, typical of a functional garage space.  \n\n<final>garage</final>",
+        "<reasoning>\n1. The presence of a motorcycle with a storage box and kickstand indicates a vehicle typically stored or maintained in a personal or professional garage space.\n2. The wall-mounted tools, wrenches, and screwdrivers arranged neatly suggest a workshop or repair area designed for mechanical work.\n3. The visible “Michelin” poster and “Jack Oil” sign imply automotive-related branding, reinforcing the setting as a garage or mechanic’s shop.\n4. The concrete floor with scattered debris and a raised platform for vehicle work further confirms this is a functional garage or repair bay.\n5. The overall layout, including the open door and exposed tools, aligns with a private or commercial garage environment for vehicle maintenance.\n\n<final>garage"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The presence of a motorcycle with a storage box and kickstand indicates a vehicle typically stored or maintained in a personal or professional garage space.",
+        "2. The wall-mounted tools, wrenches, and screwdrivers arranged neatly suggest a workshop or repair area designed for mechanical work.",
+        "3. The visible “Michelin” poster and “Jack Oil” sign imply automotive-related branding, reinforcing the setting as a garage or mechanic’s shop.",
+        "4. The concrete floor with scattered debris and a raised platform for vehicle work further confirms this is a functional garage or repair bay.",
+        "5. The overall layout, including the open door and exposed tools, aligns with a private or commercial garage environment for vehicle maintenance.",
+        "<final>garage"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          44
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          71,
+          97
+        ],
+        [
+          97,
+          128
+        ],
+        [
+          128,
+          154
+        ],
+        [
+          154,
+          181
+        ],
+        [
+          181,
+          186
+        ]
+      ],
+      "anchor_vector": [
+        12.832829468607358,
+        12.348436409545595,
+        15.296388226538806,
+        13.85282192248338,
+        15.312890625,
+        13.98125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of place is this, the parking lot or the garage?",
+      "reasoning_text": "1. The presence of a workbench with tools, a hanging tool rack, and a mounted scale clearly indicates this is a garage, not a parking lot.  \n2. The motorcycle is parked on a concrete floor with visible tire marks and scattered debris, typical of a garage workspace.  \n3. A “Michelin” poster and “Lucas Oil” sign suggest automotive maintenance or repair, common in garages.  \n4. The space contains a partially visible car tire on a stand and a wooden plank, reinforcing it as a repair or storage area.  \n5. The absence of any parking lot features like marked spaces, street signs, or vehicle entrances confirms it is a garage.  \n\n<final>Garage</final>",
+      "raw_generation": [
+        "1. The presence of a workbench with tools and a hanging tool rack indicates this is a workspace for vehicle maintenance or repair, not a parking lot.  \n2. The motorcycle is parked on a concrete floor with visible stains and debris, typical of a garage environment rather than a clean parking area.  \n3. A large poster of Michelin tires and a “Jiffy Lube” sign suggest this is a service or repair shop, not a public parking lot.  \n4. The space contains a tire on a stand and a scale, tools for mechanical work, and a workbench with wrenches and screwdrivers, all signs of a garage.  \n5. The overall setup, including the white walls, overhead storage, and organized tools, confirms this is a garage or workshop, not a parking lot.  \n\n<final>garage</final>",
+        "1. The presence of a workbench with tools, a hanging tool rack, and a mounted scale clearly indicates this is a garage, not a parking lot.  \n2. The motorcycle is parked on a concrete floor with visible tire marks and scattered debris, typical of a garage workspace.  \n3. A “Michelin” poster and “Lucas Oil” sign suggest automotive maintenance or repair, common in garages.  \n4. The space contains a partially visible car tire on a stand and a wooden plank, reinforcing it as a repair or storage area.  \n5. The absence of any parking lot features like marked spaces, street signs, or vehicle entrances confirms it is a garage.  \n\n<final>Garage</final>"
+      ],
+      "chunks": [
+        "1. The presence of a workbench with tools, a hanging tool rack, and a mounted scale clearly indicates this is a garage, not a parking lot.",
+        "2. The motorcycle is parked on a concrete floor with visible tire marks and scattered debris, typical of a garage workspace.",
+        "3. A “Michelin” poster and “Lucas Oil” sign suggest automotive maintenance or repair, common in garages.",
+        "4. The space contains a partially visible car tire on a stand and a wooden plank, reinforcing it as a repair or storage area.",
+        "5. The absence of any parking lot features like marked spaces, street signs, or vehicle entrances confirms it is a garage.",
+        "<final>Garage</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          36,
+          68
+        ],
+        [
+          69,
+          93
+        ],
+        [
+          94,
+          120
+        ],
+        [
+          121,
+          148
+        ],
+        [
+          149,
+          174
+        ],
+        [
+          175,
+          183
+        ]
+      ],
+      "anchor_vector": [
+        12.803417089565528,
+        13.90926468460648,
+        13.760570746527778,
+        16.588544921875,
+        14.86767578125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat do you think are the tools that are to the right of the extinguisher hanging on?",
+      "reasoning_text": "1. The tools to the right of the extinguisher are hanging on a metal rack mounted to the wall, positioned above the motorcycle’s rear wheel and near the Michelin poster.  \n2. These tools include wrenches, screwdrivers, and pliers, all neatly arranged and suspended by hooks, indicating organized workshop storage.  \n3. The rack’s horizontal bars are spaced to hold various tool sizes, allowing easy access while keeping the workspace clear and functional.  \n4. The tools’ metallic finish reflects the garage’s lighting, highlighting their utilitarian design and frequent use in maintenance tasks.  \n5. Their placement directly adjacent to the extinguisher suggests a safety-conscious setup, ensuring tools are readily available for emergency repairs or quick fixes.  \n\n<final>Tools to the right of the extinguisher are hanging on a metal wall rack, organized for easy access and workshop safety.</final>",
+      "raw_generation": [
+        "1. The tools to the right of the extinguisher are hanging on a metal rack mounted on the wall, which is positioned above the motorcycle’s rear wheel.  \n2. These tools include wrenches, screwdrivers, and pliers, all neatly arranged in a vertical orientation for easy access.  \n3. The rack appears to be made of sturdy steel, designed to hold heavy-duty tools securely without risk of falling.  \n4. The tools are organized by size and type, suggesting a well-maintained and frequently used workshop environment.  \n5. The rack’s placement near the motorcycle indicates these tools are likely used for maintenance or repair tasks on the vehicle.  \n\n<final>Tools hanging to the right of the extinguisher are wrenches, screwdrivers, and pliers on a metal wall rack for easy access during motorcycle maintenance.</final>",
+        "1. The tools to the right of the extinguisher are hanging on a metal rack mounted to the wall, positioned above the motorcycle’s rear wheel and near the Michelin poster.  \n2. These tools include wrenches, screwdrivers, and pliers, all neatly arranged and suspended by hooks, indicating organized workshop storage.  \n3. The rack’s horizontal bars are spaced to hold various tool sizes, allowing easy access while keeping the workspace clear and functional.  \n4. The tools’ metallic finish reflects the garage’s lighting, highlighting their utilitarian design and frequent use in maintenance tasks.  \n5. Their placement directly adjacent to the extinguisher suggests a safety-conscious setup, ensuring tools are readily available for emergency repairs or quick fixes.  \n\n<final>Tools to the right of the extinguisher are hanging on a metal wall rack, organized for easy access and workshop safety.</final>"
+      ],
+      "chunks": [
+        "1. The tools to the right of the extinguisher are hanging on a metal rack mounted to the wall, positioned above the motorcycle’s rear wheel and near the Michelin poster.",
+        "2. These tools include wrenches, screwdrivers, and pliers, all neatly arranged and suspended by hooks, indicating organized workshop storage.",
+        "3. The rack’s horizontal bars are spaced to hold various tool sizes, allowing easy access while keeping the workspace clear and functional.",
+        "4. The tools’ metallic finish reflects the garage’s lighting, highlighting their utilitarian design and frequent use in maintenance tasks.",
+        "5. Their placement directly adjacent to the extinguisher suggests a safety-conscious setup, ensuring tools are readily available for emergency repairs or quick fixes.",
+        "<final>Tools to the right of the extinguisher are hanging on a metal wall rack, organized for easy access and workshop safety.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          82
+        ],
+        [
+          83,
+          111
+        ],
+        [
+          112,
+          138
+        ],
+        [
+          139,
+          164
+        ],
+        [
+          165,
+          193
+        ],
+        [
+          194,
+          223
+        ]
+      ],
+      "anchor_vector": [
+        13.463063682310416,
+        17.588484203227317,
+        13.939698628643269,
+        14.462277567445351,
+        14.614089439655173,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is inside the garage?",
+      "reasoning_text": "1. A blue motorcycle with a black rear storage box sits prominently in the center of the garage, its kickstand down and license plate visible.  \n2. The garage walls are lined with neatly organized tools, including wrenches, screwdrivers, and pliers, hung on pegboards for easy access.  \n3. A vintage-style “Jiffy Lube” sign is mounted on the left wall, alongside a large, old-fashioned tire resting on a wooden platform.  \n4. A white Michelin tire map poster hangs on the right wall near the door, and a circular gauge or clock is mounted above the workbench.  \n5. The floor is red-painted concrete, partially covered with white chalk-like markings and scattered debris, indicating active use of the space.  \n<final>Inside the garage are a blue motorcycle, tools, a vintage sign, a tire map poster, a gauge, and a tire on a platform, all set on a red concrete floor.",
+      "raw_generation": [
+        "1. A blue motorcycle with a black storage box mounted on the rear is prominently positioned in the center of the garage.  \n2. The garage walls are lined with various tools and equipment, including wrenches, screwdrivers, and other hand tools hanging neatly on pegboards.  \n3. A large whiteboard or poster with the word “MICHELIN” is visible on the right wall, suggesting a focus on tires or automotive parts.  \n4. A vintage-style “JACK OIL” sign is mounted on the left wall, adding a nostalgic touch to the garage’s decor.  \n5. The floor is made of red concrete, showing signs of wear and scattered debris, indicating active use and maintenance work.  \n\n<final>Inside the garage, there is a blue motorcycle with a storage box, tools on pegboards, a Michelin poster, a Jack Oil sign, and a worn red concrete floor.</final>",
+        "1. A blue motorcycle with a black rear storage box sits prominently in the center of the garage, its kickstand down and license plate visible.  \n2. The garage walls are lined with neatly organized tools, including wrenches, screwdrivers, and pliers, hung on pegboards for easy access.  \n3. A vintage-style “Jiffy Lube” sign is mounted on the left wall, alongside a large, old-fashioned tire resting on a wooden platform.  \n4. A white Michelin tire map poster hangs on the right wall near the door, and a circular gauge or clock is mounted above the workbench.  \n5. The floor is red-painted concrete, partially covered with white chalk-like markings and scattered debris, indicating active use of the space.  \n<final>Inside the garage are a blue motorcycle, tools, a vintage sign, a tire map poster, a gauge, and a tire on a platform, all set on a red concrete floor."
+      ],
+      "chunks": [
+        "1. A blue motorcycle with a black rear storage box sits prominently in the center of the garage, its kickstand down and license plate visible.",
+        "2. The garage walls are lined with neatly organized tools, including wrenches, screwdrivers, and pliers, hung on pegboards for easy access.",
+        "3. A vintage-style “Jiffy Lube” sign is mounted on the left wall, alongside a large, old-fashioned tire resting on a wooden platform.",
+        "4. A white Michelin tire map poster hangs on the right wall near the door, and a circular gauge or clock is mounted above the workbench.",
+        "5. The floor is red-painted concrete, partially covered with white chalk-like markings and scattered debris, indicating active use of the space.",
+        "<final>Inside the garage are a blue motorcycle, tools, a vintage sign, a tire map poster, a gauge, and a tire on a platform, all set on a red concrete floor."
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          49
+        ],
+        [
+          50,
+          81
+        ],
+        [
+          82,
+          115
+        ],
+        [
+          116,
+          147
+        ],
+        [
+          148,
+          176
+        ],
+        [
+          177,
+          217
+        ]
+      ],
+      "anchor_vector": [
+        12.939830640013236,
+        12.339557310076938,
+        12.28001467093894,
+        15.117996651785713,
+        15.76865234375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the white sign leaning against?",
+      "reasoning_text": "1. The white sign with green lettering is positioned vertically and rests against the wall near the left side of the garage, adjacent to a workbench and tools.\n\n2. The sign’s lower edge is touching the floor, and its top edge leans against a metal support beam or structural element of the garage wall.\n\n3. The sign displays “Jiffy Lube” in bold green text, indicating it’s likely a promotional or branding item for automotive services.\n\n4. Behind the sign, a tire and a vintage motorcycle are visible, suggesting the garage is used for vehicle maintenance or repair work.\n\n5. The sign’s placement near the workbench and tools implies it’s part of the garage’s operational setup, possibly used for customer reference or advertising.\n\n<final> The white sign is leaning against the wall near a workbench and tools, with its bottom touching the floor and top resting against a structural beam.",
+      "raw_generation": [
+        "1. The white sign is positioned vertically against a wall in the background of the garage, near a workbench and tools.  \n2. It features green lettering and a logo, indicating it is likely an advertisement or promotional item for a brand.  \n3. The sign’s placement suggests it is being used as a temporary display or decoration within the workspace.  \n4. Its leaning posture implies it is not permanently mounted and may be moved or adjusted as needed.  \n5. The sign’s design and placement near the workbench suggest it may be related to automotive or motorcycle products, possibly for lubricants or maintenance supplies.  \n\n<final>The white sign is leaning against a wall in the garage, likely near a workbench or tool area.</final>",
+        "1. The white sign with green lettering is positioned vertically and rests against the wall near the left side of the garage, adjacent to a workbench and tools.\n\n2. The sign’s lower edge is touching the floor, and its top edge leans against a metal support beam or structural element of the garage wall.\n\n3. The sign displays “Jiffy Lube” in bold green text, indicating it’s likely a promotional or branding item for automotive services.\n\n4. Behind the sign, a tire and a vintage motorcycle are visible, suggesting the garage is used for vehicle maintenance or repair work.\n\n5. The sign’s placement near the workbench and tools implies it’s part of the garage’s operational setup, possibly used for customer reference or advertising.\n\n<final> The white sign is leaning against the wall near a workbench and tools, with its bottom touching the floor and top resting against a structural beam."
+      ],
+      "chunks": [
+        "1. The white sign with green lettering is positioned vertically and rests against the wall near the left side of the garage, adjacent to a workbench and tools.",
+        "2. The sign’s lower edge is touching the floor, and its top edge leans against a metal support beam or structural element of the garage wall.",
+        "3. The sign displays “Jiffy Lube” in bold green text, indicating it’s likely a promotional or branding item for automotive services.",
+        "4. Behind the sign, a tire and a vintage motorcycle are visible, suggesting the garage is used for vehicle maintenance or repair work.",
+        "5. The sign’s placement near the workbench and tools implies it’s part of the garage’s operational setup, possibly used for customer reference or advertising.",
+        "<final> The white sign is leaning against the wall near a workbench and tools, with its bottom touching the floor and top resting against a structural beam."
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          57
+        ],
+        [
+          57,
+          87
+        ],
+        [
+          87,
+          117
+        ],
+        [
+          117,
+          144
+        ],
+        [
+          144,
+          175
+        ],
+        [
+          175,
+          207
+        ]
+      ],
+      "anchor_vector": [
+        20.435229880128993,
+        14.619253879123264,
+        13.454860381897774,
+        14.065108760710686,
+        14.53363037109375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the motorcycle inside of?",
+      "reasoning_text": "1. The motorcycle is parked inside a garage with white walls and a red concrete floor, visible in the image.  \n2. Tools and equipment hang on the walls, indicating this is a workspace for vehicle maintenance or repair.  \n3. A workbench with various tools and a scale is located behind the motorcycle, further confirming the garage’s purpose.  \n4. A “Michelin” poster and a “Lucas Oil” sign are mounted on the walls, suggesting automotive or motorcycle-related branding.  \n5. The motorcycle’s position near the garage door and its surrounding clutter imply it is stored or being worked on in a private garage space.  \n\n<final> The motorcycle is inside a garage.",
+      "raw_generation": [
+        "1. The motorcycle is parked inside a garage with white walls and a red floor, indicating a dedicated workspace for vehicle maintenance.  \n2. Tools and equipment are mounted on the walls, including wrenches, screwdrivers, and a hanging tire, suggesting a functional repair environment.  \n3. A large poster of a Michelin map is visible on the right wall, adding a decorative or thematic element to the garage’s interior.  \n4. The motorcycle is positioned near a workbench with a green “Jiffy Lube” sign, implying the space may be used for automotive services or hobbyist repairs.  \n5. The presence of a tire on a stand and a scale on the wall further confirms this is a workshop designed for mechanical work and vehicle servicing.  \n\n<final>garage</final>",
+        "1. The motorcycle is parked inside a garage with white walls and a red concrete floor, visible in the image.  \n2. Tools and equipment hang on the walls, indicating this is a workspace for vehicle maintenance or repair.  \n3. A workbench with various tools and a scale is located behind the motorcycle, further confirming the garage’s purpose.  \n4. A “Michelin” poster and a “Lucas Oil” sign are mounted on the walls, suggesting automotive or motorcycle-related branding.  \n5. The motorcycle’s position near the garage door and its surrounding clutter imply it is stored or being worked on in a private garage space.  \n\n<final> The motorcycle is inside a garage."
+      ],
+      "chunks": [
+        "1. The motorcycle is parked inside a garage with white walls and a red concrete floor, visible in the image.",
+        "2. Tools and equipment hang on the walls, indicating this is a workspace for vehicle maintenance or repair.",
+        "3. A workbench with various tools and a scale is located behind the motorcycle, further confirming the garage’s purpose.",
+        "4. A “Michelin” poster and a “Lucas Oil” sign are mounted on the walls, suggesting automotive or motorcycle-related branding.",
+        "5. The motorcycle’s position near the garage door and its surrounding clutter imply it is stored or being worked on in a private garage space.",
+        "<final> The motorcycle is inside a garage."
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          45
+        ],
+        [
+          46,
+          67
+        ],
+        [
+          68,
+          92
+        ],
+        [
+          93,
+          122
+        ],
+        [
+          123,
+          151
+        ],
+        [
+          152,
+          162
+        ]
+      ],
+      "anchor_vector": [
+        13.673664498665847,
+        17.557303552987737,
+        16.32653235324302,
+        17.8568359375,
+        19.596875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nDo you see curtains to the left of the mirror in the top part of the photo?",
+      "reasoning_text": "1. The mirror in the top part of the photo is mounted on the wall above the motorcycle, reflecting part of the garage interior.  \n2. To the left of this mirror, there is no curtain visible; instead, there is a wall-mounted tool rack with wrenches and screwdrivers.  \n3. The wall surface to the left of the mirror is bare white drywall, showing no signs of curtains or drapery.  \n4. The area immediately adjacent to the mirror is occupied by hanging tools and a clock, not fabric or window coverings.  \n5. No curtains appear anywhere in the image, especially to the left of the mirror, confirming the absence of such an object.  \n\n<final>There are no curtains to the left of the mirror in the top part of the photo.</final>",
+      "raw_generation": [
+        "1. The top part of the photo shows a mirror mounted on the wall above the motorcycle’s handlebars.  \n2. To the left of this mirror, there is no curtain visible; instead, a tool rack and a clock are mounted on the wall.  \n3. The wall area to the left of the mirror is part of the garage’s interior, featuring tools and equipment.  \n4. No fabric, drapes, or window coverings are present in that section of the image.  \n5. The space is clearly defined as a workshop, with no indication of curtains or any decorative window treatments.  \n\n<final>No, there are no curtains to the left of the mirror in the top part of the photo.</final>",
+        "1. The mirror in the top part of the photo is mounted on the wall above the motorcycle, reflecting part of the garage interior.  \n2. To the left of this mirror, there is no curtain visible; instead, there is a wall-mounted tool rack with wrenches and screwdrivers.  \n3. The wall surface to the left of the mirror is bare white drywall, showing no signs of curtains or drapery.  \n4. The area immediately adjacent to the mirror is occupied by hanging tools and a clock, not fabric or window coverings.  \n5. No curtains appear anywhere in the image, especially to the left of the mirror, confirming the absence of such an object.  \n\n<final>There are no curtains to the left of the mirror in the top part of the photo.</final>"
+      ],
+      "chunks": [
+        "1. The mirror in the top part of the photo is mounted on the wall above the motorcycle, reflecting part of the garage interior.",
+        "2. To the left of this mirror, there is no curtain visible; instead, there is a wall-mounted tool rack with wrenches and screwdrivers.",
+        "3. The wall surface to the left of the mirror is bare white drywall, showing no signs of curtains or drapery.",
+        "4. The area immediately adjacent to the mirror is occupied by hanging tools and a clock, not fabric or window coverings.",
+        "5. No curtains appear anywhere in the image, especially to the left of the mirror, confirming the absence of such an object.",
+        "<final>There are no curtains to the left of the mirror in the top part of the photo.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          71
+        ],
+        [
+          72,
+          103
+        ],
+        [
+          104,
+          131
+        ],
+        [
+          132,
+          157
+        ],
+        [
+          158,
+          184
+        ],
+        [
+          185,
+          208
+        ]
+      ],
+      "anchor_vector": [
+        14.328223300088306,
+        10.685806275874166,
+        13.804352047089884,
+        12.274546339360366,
+        9.373719588569973,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre the tools to the left of the extinguisher hanging on the wall the sign is leaning against?",
+      "reasoning_text": "1. The tools are arranged on a pegboard mounted on the wall, positioned directly above the workbench where the sign leans.  \n2. The extinguisher is suspended from a hook on the same wall, slightly to the right of the tools’ pegboard.  \n3. The sign leans against the wall at the base of the workbench, beneath the tools’ pegboard.  \n4. The tools’ pegboard is clearly left of the extinguisher’s hook, and both are above the sign’s leaning position.  \n5. Therefore, the tools are to the left of the extinguisher, and both are above the sign leaning against the wall.  \n<final>Yes, the tools are to the left of the extinguisher, hanging on the wall above the sign leaning against the wall.</final>",
+      "raw_generation": [
+        "1. The tools are mounted on a pegboard wall positioned directly above a workbench in the background of the garage.  \n2. The extinguisher is mounted on the wall to the right of the workbench, near the ceiling, and is not part of the tool display.  \n3. The sign leaning against the wall is located to the left of the workbench, near the floor, and is not adjacent to the tool display.  \n4. The tools are not to the left of the extinguisher because the extinguisher is on the right side of the workbench, while the tools are above it.  \n5. The sign is not leaning against the wall where the tools are mounted, as it is positioned to the left of the workbench, separate from the tool display area.  \n\n<final>no</final>",
+        "1. The tools are arranged on a pegboard mounted on the wall, positioned directly above the workbench where the sign leans.  \n2. The extinguisher is suspended from a hook on the same wall, slightly to the right of the tools’ pegboard.  \n3. The sign leans against the wall at the base of the workbench, beneath the tools’ pegboard.  \n4. The tools’ pegboard is clearly left of the extinguisher’s hook, and both are above the sign’s leaning position.  \n5. Therefore, the tools are to the left of the extinguisher, and both are above the sign leaning against the wall.  \n<final>Yes, the tools are to the left of the extinguisher, hanging on the wall above the sign leaning against the wall.</final>"
+      ],
+      "chunks": [
+        "1. The tools are arranged on a pegboard mounted on the wall, positioned directly above the workbench where the sign leans.",
+        "2. The extinguisher is suspended from a hook on the same wall, slightly to the right of the tools’ pegboard.",
+        "3. The sign leans against the wall at the base of the workbench, beneath the tools’ pegboard.",
+        "4. The tools’ pegboard is clearly left of the extinguisher’s hook, and both are above the sign’s leaning position.",
+        "5. Therefore, the tools are to the left of the extinguisher, and both are above the sign leaning against the wall.",
+        "<final>Yes, the tools are to the left of the extinguisher, hanging on the wall above the sign leaning against the wall.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          74
+        ],
+        [
+          75,
+          101
+        ],
+        [
+          102,
+          125
+        ],
+        [
+          126,
+          153
+        ],
+        [
+          154,
+          180
+        ],
+        [
+          181,
+          211
+        ]
+      ],
+      "anchor_vector": [
+        12.361343657097732,
+        12.360479070256371,
+        13.282927498812915,
+        10.422104116586539,
+        9.488834635416667,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there any carts or clocks?",
+      "reasoning_text": "1. A round, white-faced clock with black hands is mounted on the wall above the workbench, clearly visible in the background of the garage.\n\n2. No carts are visible in the image; the garage contains a motorcycle, tools, and a workbench, but no wheeled carts or utility carts are present.\n\n3. The motorcycle’s rear storage box is black with a red stripe, and a license plate is attached, but no carts are associated with it or nearby.\n\n4. The garage’s left wall displays a green and white “Lucas Oil” sign, but no carts are positioned near or underneath it.\n\n5. The floor is red concrete with scattered debris, and no carts or wheeled equipment are visible on or beside the motorcycle or workbench.\n\n<final>There is one clock, but no carts visible.</final>",
+      "raw_generation": [
+        "1. A round, white-faced clock with black hands and numerals is mounted on the wall above the workbench in the background.  \n2. No carts are visible in the image; the garage contains tools, a motorcycle, and a workbench but lacks any wheeled transport devices.  \n3. The clock is positioned centrally above the workbench, making it easily visible and functional for monitoring time while working.  \n4. The motorcycle’s storage box and license plate are present but do not qualify as carts, as they are fixed to the bike and lack wheels for independent movement.  \n5. The garage’s overall layout includes hanging tools, a tire on a stand, and a poster, but no carts or additional mobile equipment are present.  \n\n<final>Yes, there is a clock. No carts are visible.</final>",
+        "1. A round, white-faced clock with black hands is mounted on the wall above the workbench, clearly visible in the background of the garage.\n\n2. No carts are visible in the image; the garage contains a motorcycle, tools, and a workbench, but no wheeled carts or utility carts are present.\n\n3. The motorcycle’s rear storage box is black with a red stripe, and a license plate is attached, but no carts are associated with it or nearby.\n\n4. The garage’s left wall displays a green and white “Lucas Oil” sign, but no carts are positioned near or underneath it.\n\n5. The floor is red concrete with scattered debris, and no carts or wheeled equipment are visible on or beside the motorcycle or workbench.\n\n<final>There is one clock, but no carts visible.</final>"
+      ],
+      "chunks": [
+        "1. A round, white-faced clock with black hands is mounted on the wall above the workbench, clearly visible in the background of the garage.",
+        "2. No carts are visible in the image; the garage contains a motorcycle, tools, and a workbench, but no wheeled carts or utility carts are present.",
+        "3. The motorcycle’s rear storage box is black with a red stripe, and a license plate is attached, but no carts are associated with it or nearby.",
+        "4. The garage’s left wall displays a green and white “Lucas Oil” sign, but no carts are positioned near or underneath it.",
+        "5. The floor is red concrete with scattered debris, and no carts or wheeled equipment are visible on or beside the motorcycle or workbench.",
+        "<final>There is one clock, but no carts visible.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          52
+        ],
+        [
+          52,
+          86
+        ],
+        [
+          86,
+          118
+        ],
+        [
+          118,
+          147
+        ],
+        [
+          147,
+          176
+        ],
+        [
+          176,
+          191
+        ]
+      ],
+      "anchor_vector": [
+        13.007247906234152,
+        16.806990980827944,
+        17.682699503113025,
+        16.541325431034483,
+        14.265104166666667,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the fire extinguisher in the top part of the photo?",
+      "reasoning_text": "1. The fire extinguisher is mounted on the wall near the ceiling, directly above the workbench where tools are hung.  \n2. It is positioned to the right of the circular clock and slightly left of the hanging metal object.  \n3. Its placement is clearly in the upper section of the garage’s interior wall.  \n4. The extinguisher is visible above the motorcycle’s handlebars, confirming its location in the top half of the image.  \n5. Its vertical alignment with the wall-mounted tools and clock places it firmly within the upper portion of the photograph.  \n\n<final>Yes, the fire extinguisher is in the top part of the photo.</final>",
+      "raw_generation": [
+        "1. The fire extinguisher is mounted on the wall near the ceiling, positioned above the workbench and tools.  \n2. It is located to the right of the hanging tools and directly above the motorcycle’s handlebars.  \n3. The extinguisher’s placement is clearly in the upper half of the image, above the main work area.  \n4. Its cylindrical shape and red label are visible against the white wall, confirming its position.  \n5. The extinguisher is situated near the top edge of the photo, making it part of the upper section of the frame.  \n\n<final>Yes, the fire extinguisher is in the top part of the photo.</final>",
+        "1. The fire extinguisher is mounted on the wall near the ceiling, directly above the workbench where tools are hung.  \n2. It is positioned to the right of the circular clock and slightly left of the hanging metal object.  \n3. Its placement is clearly in the upper section of the garage’s interior wall.  \n4. The extinguisher is visible above the motorcycle’s handlebars, confirming its location in the top half of the image.  \n5. Its vertical alignment with the wall-mounted tools and clock places it firmly within the upper portion of the photograph.  \n\n<final>Yes, the fire extinguisher is in the top part of the photo.</final>"
+      ],
+      "chunks": [
+        "1. The fire extinguisher is mounted on the wall near the ceiling, directly above the workbench where tools are hung.",
+        "2. It is positioned to the right of the circular clock and slightly left of the hanging metal object.",
+        "3. Its placement is clearly in the upper section of the garage’s interior wall.",
+        "4. The extinguisher is visible above the motorcycle’s handlebars, confirming its location in the top half of the image.",
+        "5. Its vertical alignment with the wall-mounted tools and clock places it firmly within the upper portion of the photograph.",
+        "<final>Yes, the fire extinguisher is in the top part of the photo.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          34,
+          59
+        ],
+        [
+          60,
+          81
+        ],
+        [
+          82,
+          99
+        ],
+        [
+          100,
+          125
+        ],
+        [
+          126,
+          149
+        ],
+        [
+          150,
+          170
+        ]
+      ],
+      "anchor_vector": [
+        13.94173438350374,
+        21.102825112891626,
+        17.672597373188406,
+        16.534905524875807,
+        16.6103515625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 252,
+  "subset": "gqa",
+  "subset_local_idx": 8
+}

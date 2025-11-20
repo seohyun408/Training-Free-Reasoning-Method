@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/7088/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs sandstone a mineral or a rock?\nContext: Sandstone has the following properties:\nno fixed crystal structure\nformed in layers\nfound in nature\nnot made by organisms\nnot a pure substance\nsolid\nOptions: (A) mineral (B) rock",
+      "reasoning_text": "1. Sandstone lacks a fixed crystal structure, which disqualifies it as a mineral since minerals must have ordered atomic arrangements in crystalline lattices.  \n2. Sandstone forms in distinct layers, indicating sedimentary origins rather than crystalline growth, a key feature of rocks.  \n3. It is naturally occurring and solid, aligning with the definition of a rock as a naturally formed aggregate of minerals or mineraloids.  \n4. Sandstone is not made by organisms, eliminating biological origin, which distinguishes it from biochemical rocks and reinforces its classification as a sedimentary rock.  \n5. Since sandstone is not a pure substance, it is a mixture of minerals and fragments, further confirming it is a rock rather than a single mineral.  \n\n<final>(B) rock</final>",
+      "raw_generation": [
+        "1. Sandstone lacks a fixed crystal structure, which disqualifies it as a mineral since minerals require a defined crystalline lattice for their atomic arrangement.  \n2. It forms in distinct layers, indicating sedimentary processes that build up over time, a key characteristic of rocks rather than minerals.  \n3. Sandstone is naturally occurring and found in the Earth’s crust, aligning with the definition of a rock as a naturally formed aggregate of minerals or organic matter.  \n4. It is not produced by living organisms, which rules out biological origins and reinforces its classification as a non-organic sedimentary rock.  \n5. Sandstone is not a pure substance, as it consists of multiple mineral grains (like quartz, feldspar, and clay) cemented together, which is typical of rocks but not minerals.  \n\n<final>(B) rock</final>",
+        "1. Sandstone lacks a fixed crystal structure, which disqualifies it as a mineral since minerals must have ordered atomic arrangements in crystalline lattices.  \n2. Sandstone forms in distinct layers, indicating sedimentary origins rather than crystalline growth, a key feature of rocks.  \n3. It is naturally occurring and solid, aligning with the definition of a rock as a naturally formed aggregate of minerals or mineraloids.  \n4. Sandstone is not made by organisms, eliminating biological origin, which distinguishes it from biochemical rocks and reinforces its classification as a sedimentary rock.  \n5. Since sandstone is not a pure substance, it is a mixture of minerals and fragments, further confirming it is a rock rather than a single mineral.  \n\n<final>(B) rock</final>"
+      ],
+      "chunks": [
+        "1. Sandstone lacks a fixed crystal structure, which disqualifies it as a mineral since minerals must have ordered atomic arrangements in crystalline lattices.",
+        "2. Sandstone forms in distinct layers, indicating sedimentary origins rather than crystalline growth, a key feature of rocks.",
+        "3. It is naturally occurring and solid, aligning with the definition of a rock as a naturally formed aggregate of minerals or mineraloids.",
+        "4. Sandstone is not made by organisms, eliminating biological origin, which distinguishes it from biochemical rocks and reinforces its classification as a sedimentary rock.",
+        "5. Since sandstone is not a pure substance, it is a mixture of minerals and fragments, further confirming it is a rock rather than a single mineral.",
+        "<final>(B) rock</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          116,
+          148
+        ],
+        [
+          149,
+          174
+        ],
+        [
+          175,
+          203
+        ],
+        [
+          204,
+          235
+        ],
+        [
+          236,
+          268
+        ],
+        [
+          269,
+          278
+        ]
+      ],
+      "anchor_vector": [
+        13.079911080434147,
+        11.619177947701152,
+        11.574993539169839,
+        10.728390163845486,
+        10.48263888888889,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 7,
+  "subset": "sqa",
+  "subset_local_idx": 1
+}

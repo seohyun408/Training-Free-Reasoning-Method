@@ -1,0 +1,60 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/10033.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, in ABCD, BD = BC, AE ⊥ BD, and the foot of the perpendicular is E. If ∠C = 55°, then the degree measure of ∠EAB is ()\nA. 25°\nB. 30°\nC. 35°\nD. 40°",
+      "reasoning_text": "1. Since ABCD is a parallelogram, opposite angles are equal, so ∠A = ∠C = 55°, and adjacent angles are supplementary, meaning ∠B = 180° - 55° = 125°.  \n2. Given BD = BC, triangle BCD is isosceles with base angles ∠BDC and ∠BCD equal, so ∠BDC = ∠BCD = 55°.  \n3. Since ∠B = 125°, and ∠BDC = 55°, then ∠ADB = ∠B - ∠BDC = 125° - 55° = 70°, making triangle ADB have ∠ADB = 70°.  \n4. In triangle ABD, since AE ⊥ BD, angle ∠AEB = 90°, and triangle AEB is right-angled, so ∠EAB = 90° - ∠ABD.  \n5. Since ∠ABD = ∠B = 125°, but ∠ABD is part of triangle ABD, and �",
+      "raw_generation": [
+        "1. Since ABCD is a parallelogram, opposite angles are equal, so ∠A = ∠C = 55°, and adjacent angles are supplementary, meaning ∠B = 180° - 55° = 125°.  \n2. Given BD = BC, triangle BCD is isosceles with base angles at C and D equal, so ∠BDC = ∠BCD = 55°, making ∠CBD = 180° - 55° - 55° = 70°.  \n3. Since ∠CBD = 70°, and ∠ABC = 125°, then ∠ABD = ∠ABC - ∠CBD = 125° - 70° = 55°.  \n4. In triangle ABD, AE is perpendicular to BD, so ∠AEB = 90°. Since ∠ABD = 55°, then ∠EAB = 180° - 90° - 55° = 35°.  \n5. Therefore, the degree measure of ∠EAB is",
+        "1. Since ABCD is a parallelogram, opposite angles are equal, so ∠A = ∠C = 55°, and adjacent angles are supplementary, meaning ∠B = 180° - 55° = 125°.  \n2. Given BD = BC, triangle BCD is isosceles with base angles ∠BDC and ∠BCD equal, so ∠BDC = ∠BCD = 55°.  \n3. Since ∠B = 125°, and ∠BDC = 55°, then ∠ADB = ∠B - ∠BDC = 125° - 55° = 70°, making triangle ADB have ∠ADB = 70°.  \n4. In triangle ABD, since AE ⊥ BD, angle ∠AEB = 90°, and triangle AEB is right-angled, so ∠EAB = 90° - ∠ABD.  \n5. Since ∠ABD = ∠B = 125°, but ∠ABD is part of triangle ABD, and �"
+      ],
+      "chunks": [
+        "1. Since ABCD is a parallelogram, opposite angles are equal, so ∠A = ∠C = 55°, and adjacent angles are supplementary, meaning ∠B = 180° - 55° = 125°.",
+        "2. Given BD = BC, triangle BCD is isosceles with base angles ∠BDC and ∠BCD equal, so ∠BDC = ∠BCD = 55°.",
+        "3. Since ∠B = 125°, and ∠BDC = 55°, then ∠ADB = ∠B - ∠BDC = 125° - 55° = 70°, making triangle ADB have ∠ADB = 70°.",
+        "4. In triangle ABD, since AE ⊥ BD, angle ∠AEB = 90°, and triangle AEB is right-angled, so ∠EAB = 90° - ∠ABD.",
+        "5. Since ∠ABD = ∠B = 125°, but ∠ABD is part of triangle ABD, and �"
+      ],
+      "chunk_token_ranges": [
+        [
+          158,
+          216
+        ],
+        [
+          217,
+          262
+        ],
+        [
+          263,
+          331
+        ],
+        [
+          332,
+          381
+        ],
+        [
+          382,
+          414
+        ]
+      ],
+      "anchor_vector": [
+        15.298767720371643,
+        16.293793289515765,
+        14.210172820980493,
+        14.395711964574353,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 72,
+  "subset": "geoqa+",
+  "subset_local_idx": 11
+}

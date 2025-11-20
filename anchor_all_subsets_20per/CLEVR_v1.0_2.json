@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "CLEVR_v1.0/images/train/CLEVR_train_017839.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAdd 3 metallic things. How many objects exist?",
+      "reasoning_text": "1. The original image contains three objects: a large blue metallic cube, a small red matte cube, and a purple matte sphere, all resting on a neutral gray surface.\n2. Adding three metallic things increases the object count by three, as each new item is distinct and physically present in the scene.\n3. The blue cube already has a metallic finish, so the new metallic objects must be separate, non-overlapping items with reflective surfaces.\n4. The new metallic objects, though unspecified in material or shape, contribute to the total count without altering the existing matte objects’ properties or positions.\n5. Since the initial count was three and three more are added, the final total becomes six objects, regardless of their specific forms or colors.\n\n<final>6</final>",
+      "raw_generation": [
+        "1. The original image contains three objects: a large blue metallic cube, a small red matte cube, and a purple matte sphere.  \n2. Adding three metallic things increases the total count by three, as each new object is distinct and physically present.  \n3. The blue cube already has a metallic finish, so it remains one of the original objects without being counted again.  \n4. The red cube is matte, so it is not metallic, and the purple sphere is also matte, not metallic.  \n5. After adding three new metallic objects, the total number of objects becomes six, including the original three and the three newly added metallic items.  \n\n<final>6</final>",
+        "1. The original image contains three objects: a large blue metallic cube, a small red matte cube, and a purple matte sphere, all resting on a neutral gray surface.\n2. Adding three metallic things increases the object count by three, as each new item is distinct and physically present in the scene.\n3. The blue cube already has a metallic finish, so the new metallic objects must be separate, non-overlapping items with reflective surfaces.\n4. The new metallic objects, though unspecified in material or shape, contribute to the total count without altering the existing matte objects’ properties or positions.\n5. Since the initial count was three and three more are added, the final total becomes six objects, regardless of their specific forms or colors.\n\n<final>6</final>"
+      ],
+      "chunks": [
+        "1. The original image contains three objects: a large blue metallic cube, a small red matte cube, and a purple matte sphere, all resting on a neutral gray surface.",
+        "2. Adding three metallic things increases the object count by three, as each new item is distinct and physically present in the scene.",
+        "3. The blue cube already has a metallic finish, so the new metallic objects must be separate, non-overlapping items with reflective surfaces.",
+        "4. The new metallic objects, though unspecified in material or shape, contribute to the total count without altering the existing matte objects’ properties or positions.",
+        "5. Since the initial count was three and three more are added, the final total becomes six objects, regardless of their specific forms or colors.",
+        "<final>6</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          65
+        ],
+        [
+          65,
+          91
+        ],
+        [
+          91,
+          119
+        ],
+        [
+          119,
+          149
+        ],
+        [
+          149,
+          178
+        ],
+        [
+          178,
+          185
+        ]
+      ],
+      "anchor_vector": [
+        14.807905614500442,
+        14.42178528132697,
+        13.196233633090449,
+        12.212515394088669,
+        12.969866071428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 520,
+  "subset": "CLEVR_v1.0",
+  "subset_local_idx": 2
+}

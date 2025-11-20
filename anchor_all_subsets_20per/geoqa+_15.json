@@ -1,0 +1,60 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/12530.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAs shown in the figure, in the parallelogram ABCD, AE evenly divides ∠BAD and intersects at E. AD = 3, AB = 5, then this length is ()\nA. 1\nB. 2\nC. 3\nD. 5",
+      "reasoning_text": "1. The figure shows parallelogram ABCD with point E on side DC, and segment AE bisecting angle BAD, which is a critical geometric constraint for solving the problem.\n\n2. Since ABCD is a parallelogram, opposite sides are equal and parallel, meaning AD = BC = 3 and AB = DC = 5, which establishes the side lengths for proportional reasoning.\n\n3. The angle bisector AE divides ∠BAD into two equal angles, and by the Angle Bisector Theorem in triangle ABD, it divides the opposite side DC proportionally to the adjacent sides.\n\n4. Applying the Angle Bisector Theorem to triangle ABD, AE divides DC into segments DE and EC such that DE/EC = AD/AB = 3/5, since AE bisects ∠BAD and E lies on DC.\n\n5. Since DC = 5 and DE/EC = 3/5, we can write DE + EC = 5, and using the ratio, DE = (3/8) * 5 = 15/8, EC = (5/8) * 5 = 25/8, but since E is on DC and DC = 5, and AE bisects angle",
+      "raw_generation": [
+        "1. The figure shows a parallelogram ABCD with point E on side DC, and segment AE bisecting angle BAD.  \n2. Since AE bisects angle BAD, by the Angle Bisector Theorem applied to triangle ABD, the ratio of AD to AB equals the ratio of DE to EB.  \n3. Given AD = 3 and AB = 5, the ratio DE:EB = 3:5.  \n4. Since DC = AB = 5 (opposite sides of a parallelogram are equal), and DC = DE + EC, we can find DE using the ratio.  \n5. Let DE = 3x and EB = 5x, then 3x + 5x = 5 → 8x = 5 → x = 5/8, so DE = 3*(5/8) = 15/8.  \nBut wait — the question asks for the length of AE, not DE. Let’s reevaluate.\n\nActually, the problem asks for the length of AE, but no direct formula or additional data (like angles or coordinates) is given to compute AE. However, the options suggest a simple integer answer, and the only segment whose length can be ded",
+        "1. The figure shows parallelogram ABCD with point E on side DC, and segment AE bisecting angle BAD, which is a critical geometric constraint for solving the problem.\n\n2. Since ABCD is a parallelogram, opposite sides are equal and parallel, meaning AD = BC = 3 and AB = DC = 5, which establishes the side lengths for proportional reasoning.\n\n3. The angle bisector AE divides ∠BAD into two equal angles, and by the Angle Bisector Theorem in triangle ABD, it divides the opposite side DC proportionally to the adjacent sides.\n\n4. Applying the Angle Bisector Theorem to triangle ABD, AE divides DC into segments DE and EC such that DE/EC = AD/AB = 3/5, since AE bisects ∠BAD and E lies on DC.\n\n5. Since DC = 5 and DE/EC = 3/5, we can write DE + EC = 5, and using the ratio, DE = (3/8) * 5 = 15/8, EC = (5/8) * 5 = 25/8, but since E is on DC and DC = 5, and AE bisects angle"
+      ],
+      "chunks": [
+        "1. The figure shows parallelogram ABCD with point E on side DC, and segment AE bisecting angle BAD, which is a critical geometric constraint for solving the problem.",
+        "2. Since ABCD is a parallelogram, opposite sides are equal and parallel, meaning AD = BC = 3 and AB = DC = 5, which establishes the side lengths for proportional reasoning.",
+        "3. The angle bisector AE divides ∠BAD into two equal angles, and by the Angle Bisector Theorem in triangle ABD, it divides the opposite side DC proportionally to the adjacent sides.",
+        "4. Applying the Angle Bisector Theorem to triangle ABD, AE divides DC into segments DE and EC such that DE/EC = AD/AB = 3/5, since AE bisects ∠BAD and E lies on DC.",
+        "5. Since DC = 5 and DE/EC = 3/5, we can write DE + EC = 5, and using the ratio, DE = (3/8) * 5 = 15/8, EC = (5/8) * 5 = 25/8, but since E is on DC and DC = 5, and AE bisects angle"
+      ],
+      "chunk_token_ranges": [
+        [
+          128,
+          165
+        ],
+        [
+          165,
+          207
+        ],
+        [
+          207,
+          249
+        ],
+        [
+          249,
+          300
+        ],
+        [
+          300,
+          384
+        ]
+      ],
+      "anchor_vector": [
+        8.734973874162225,
+        9.875384077861085,
+        9.735065397428198,
+        7.64797119867234,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 83,
+  "subset": "geoqa+",
+  "subset_local_idx": 15
+}

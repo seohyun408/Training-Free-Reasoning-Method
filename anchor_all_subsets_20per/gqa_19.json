@@ -1,0 +1,576 @@
+{
+  "total_pairs": 10,
+  "successful_pairs": 10,
+  "image_path": "gqa/images/2381829.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat vehicle is to the left of the truck that is to the left of the bus?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The image shows a white tanker truck prominently positioned in the center-left of the frame, moving forward on the road.\n2. To the right of this truck, a blue and white public transit bus is visible, clearly marked with route number 510.\n3. To the left of the white tanker truck, a white van is parked or driving in the adjacent lane, partially obscured by trees and foliage.\n4. The van is the only vehicle situated directly to the left of the truck that is positioned to the left of the bus.\n5. No other vehicles are positioned between the van and the truck in the specified spatial relationship.\n</reasoning>\n<final>van</final>",
+      "raw_generation": [
+        "1. The image shows a white tanker truck prominently positioned in the foreground on the left side of the road.  \n2. To the right of this truck, a blue and white bus is visible, indicating the truck is directly to the left of the bus.  \n3. Further to the left of the truck, a white van is parked or driving in the same direction, adjacent to the truck.  \n4. The van is the only vehicle clearly positioned to the left of the truck, which itself is to the left of the bus.  \n5. No other vehicles are visible in the immediate vicinity to the left of the truck that could be mistaken for the answer.  \n\n<final>van</final>",
+        "<reasoning>\n1. The image shows a white tanker truck prominently positioned in the center-left of the frame, moving forward on the road.\n2. To the right of this truck, a blue and white public transit bus is visible, clearly marked with route number 510.\n3. To the left of the white tanker truck, a white van is parked or driving in the adjacent lane, partially obscured by trees and foliage.\n4. The van is the only vehicle situated directly to the left of the truck that is positioned to the left of the bus.\n5. No other vehicles are positioned between the van and the truck in the specified spatial relationship.\n</reasoning>\n<final>van</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The image shows a white tanker truck prominently positioned in the center-left of the frame, moving forward on the road.",
+        "2. To the right of this truck, a blue and white public transit bus is visible, clearly marked with route number 510.",
+        "3. To the left of the white tanker truck, a white van is parked or driving in the adjacent lane, partially obscured by trees and foliage.",
+        "4. The van is the only vehicle situated directly to the left of the truck that is positioned to the left of the bus.",
+        "5. No other vehicles are positioned between the van and the truck in the specified spatial relationship.",
+        "</reasoning>\n<final>van</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          64,
+          70
+        ],
+        [
+          70,
+          93
+        ],
+        [
+          93,
+          122
+        ],
+        [
+          122,
+          152
+        ],
+        [
+          152,
+          178
+        ],
+        [
+          178,
+          197
+        ],
+        [
+          197,
+          208
+        ]
+      ],
+      "anchor_vector": [
+        11.745560664874722,
+        13.205634785414128,
+        12.638722807269144,
+        11.935675280209102,
+        11.728543660287082,
+        10.8515625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nDoes this truck seem to be red?",
+      "reasoning_text": "1. The truck in the image is a large tanker vehicle with a predominantly white cab and a silver cylindrical tank, making it visually distinct from red vehicles.  \n2. The front grille, bumper, and side mirrors are also white, reinforcing the truck’s color scheme and confirming it lacks red accents or paint.  \n3. The truck’s license plate is yellow with black text, which contrasts with the white body, further emphasizing its non-red appearance.  \n4. The truck’s headlights and reflective strips are standard metallic or white, consistent with its overall color palette and not red.  \n5. No red paint, decals, or markings are visible on the truck’s exterior, including the tank, cab, or undercarriage, confirming it is not red.\n\n<final> No, the truck does not seem to be red; it is white with a silver tank and no red elements visible.",
+      "raw_generation": [
+        "1. The truck’s cab and tank are predominantly white, with no visible red paint or markings on its main body.  \n2. Red elements, such as reflectors or lights, are present but are small and not defining the truck’s color scheme.  \n3. The truck’s front grille and bumper are also white, reinforcing its overall color consistency.  \n4. The truck’s license plate and some trim may have minor accents, but none are red.  \n5. The truck’s appearance is clearly white under daylight, making red an inaccurate description of its primary color.  \n\n<final>no</final>",
+        "1. The truck in the image is a large tanker vehicle with a predominantly white cab and a silver cylindrical tank, making it visually distinct from red vehicles.  \n2. The front grille, bumper, and side mirrors are also white, reinforcing the truck’s color scheme and confirming it lacks red accents or paint.  \n3. The truck’s license plate is yellow with black text, which contrasts with the white body, further emphasizing its non-red appearance.  \n4. The truck’s headlights and reflective strips are standard metallic or white, consistent with its overall color palette and not red.  \n5. No red paint, decals, or markings are visible on the truck’s exterior, including the tank, cab, or undercarriage, confirming it is not red.\n\n<final> No, the truck does not seem to be red; it is white with a silver tank and no red elements visible."
+      ],
+      "chunks": [
+        "1. The truck in the image is a large tanker vehicle with a predominantly white cab and a silver cylindrical tank, making it visually distinct from red vehicles.",
+        "2. The front grille, bumper, and side mirrors are also white, reinforcing the truck’s color scheme and confirming it lacks red accents or paint.",
+        "3. The truck’s license plate is yellow with black text, which contrasts with the white body, further emphasizing its non-red appearance.",
+        "4. The truck’s headlights and reflective strips are standard metallic or white, consistent with its overall color palette and not red.",
+        "5. No red paint, decals, or markings are visible on the truck’s exterior, including the tank, cab, or undercarriage, confirming it is not red.",
+        "<final> No, the truck does not seem to be red; it is white with a silver tank and no red elements visible."
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          55
+        ],
+        [
+          56,
+          86
+        ],
+        [
+          87,
+          114
+        ],
+        [
+          115,
+          140
+        ],
+        [
+          141,
+          176
+        ],
+        [
+          176,
+          203
+        ]
+      ],
+      "anchor_vector": [
+        13.277070514012896,
+        13.324816416583994,
+        8.670994125985175,
+        12.026343483899637,
+        11.734350133825231,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich side is the bus on?",
+      "reasoning_text": "1. The bus is clearly visible on the right-hand side of the road, positioned near the curb and adjacent to a bus stop shelter.  \n2. It is directly next to a large black bus stop sign with yellow text, confirming its location on the right side of the street.  \n3. The bus is facing toward the camera, with its front lights and destination sign visible, indicating its direction of travel.  \n4. It is positioned behind a white tanker truck, which is on the left side of the road, further confirming the bus’s location on the right.  \n5. The bus is surrounded by other vehicles and urban infrastructure, including streetlights and billboards, all situated on the right side of the road.  \n\n<final>Right side</final>",
+      "raw_generation": [
+        "1. The bus is clearly visible in the image, positioned on the right-hand side of the road from the viewer’s perspective.  \n2. It is traveling in the same direction as the white tanker truck, which is on the left side of the frame.  \n3. The bus has a blue and white color scheme and displays route number “310” on its front destination sign.  \n4. It is situated near a bus stop shelter and a traffic light pole, further confirming its location on the right side of the road.  \n5. The bus is separated from the tanker truck by a lane of traffic, indicating it is on the right side of the roadway relative to the truck.  \n\n<final>Right side</final>",
+        "1. The bus is clearly visible on the right-hand side of the road, positioned near the curb and adjacent to a bus stop shelter.  \n2. It is directly next to a large black bus stop sign with yellow text, confirming its location on the right side of the street.  \n3. The bus is facing toward the camera, with its front lights and destination sign visible, indicating its direction of travel.  \n4. It is positioned behind a white tanker truck, which is on the left side of the road, further confirming the bus’s location on the right.  \n5. The bus is surrounded by other vehicles and urban infrastructure, including streetlights and billboards, all situated on the right side of the road.  \n\n<final>Right side</final>"
+      ],
+      "chunks": [
+        "1. The bus is clearly visible on the right-hand side of the road, positioned near the curb and adjacent to a bus stop shelter.",
+        "2. It is directly next to a large black bus stop sign with yellow text, confirming its location on the right side of the street.",
+        "3. The bus is facing toward the camera, with its front lights and destination sign visible, indicating its direction of travel.",
+        "4. It is positioned behind a white tanker truck, which is on the left side of the road, further confirming the bus’s location on the right.",
+        "5. The bus is surrounded by other vehicles and urban infrastructure, including streetlights and billboards, all situated on the right side of the road.",
+        "<final>Right side</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          50
+        ],
+        [
+          51,
+          79
+        ],
+        [
+          80,
+          105
+        ],
+        [
+          106,
+          137
+        ],
+        [
+          138,
+          168
+        ],
+        [
+          169,
+          177
+        ]
+      ],
+      "anchor_vector": [
+        16.66488221846198,
+        12.260826140372984,
+        14.032719394041218,
+        0.0,
+        13.714437484741211,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat vehicle is to the right of the vehicle the van is to the left of?",
+      "reasoning_text": "1. The van is a white passenger van located on the far left side of the road, near the curb, with its front facing forward.  \n2. The vehicle immediately to the right of the van is a large white tanker truck with a cylindrical tank and visible license plate.  \n3. The tanker truck is positioned in the center-left portion of the road, partially blocking the lane ahead of it.  \n4. To the right of the tanker truck, there is a blue and white public transit bus with route number 310 displayed on its front.  \n5. The bus is positioned in the rightmost lane, directly next to a sidewalk and bus stop sign, indicating its role in public transportation.  \n\n<final>The bus is to the right of the tanker truck, which is to the right of the van.</final>",
+      "raw_generation": [
+        "1. The van is positioned on the far left side of the image, driving in the same direction as other vehicles.  \n2. To the right of the van is a large white tanker truck with a cylindrical tank and prominent front grille.  \n3. Further to the right of the tanker truck is a blue and white public transit bus, marked with route number 310.  \n4. The bus is stopped or moving slowly near a bus stop with a digital display and advertising signage.  \n5. The vehicle to the right of the tanker truck (which is to the right of the van) is the blue and white bus.  \n\n<final>Bus</final>",
+        "1. The van is a white passenger van located on the far left side of the road, near the curb, with its front facing forward.  \n2. The vehicle immediately to the right of the van is a large white tanker truck with a cylindrical tank and visible license plate.  \n3. The tanker truck is positioned in the center-left portion of the road, partially blocking the lane ahead of it.  \n4. To the right of the tanker truck, there is a blue and white public transit bus with route number 310 displayed on its front.  \n5. The bus is positioned in the rightmost lane, directly next to a sidewalk and bus stop sign, indicating its role in public transportation.  \n\n<final>The bus is to the right of the tanker truck, which is to the right of the van.</final>"
+      ],
+      "chunks": [
+        "1. The van is a white passenger van located on the far left side of the road, near the curb, with its front facing forward.",
+        "2. The vehicle immediately to the right of the van is a large white tanker truck with a cylindrical tank and visible license plate.",
+        "3. The tanker truck is positioned in the center-left portion of the road, partially blocking the lane ahead of it.",
+        "4. To the right of the tanker truck, there is a blue and white public transit bus with route number 310 displayed on its front.",
+        "5. The bus is positioned in the rightmost lane, directly next to a sidewalk and bus stop sign, indicating its role in public transportation.",
+        "<final>The bus is to the right of the tanker truck, which is to the right of the van.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          71
+        ],
+        [
+          72,
+          98
+        ],
+        [
+          99,
+          123
+        ],
+        [
+          124,
+          155
+        ],
+        [
+          156,
+          185
+        ],
+        [
+          186,
+          210
+        ]
+      ],
+      "anchor_vector": [
+        11.609814584035234,
+        13.34159591103378,
+        10.81189219816965,
+        9.803682875359195,
+        10.884501139322916,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs it clear or foggy?",
+      "reasoning_text": "1. The sky in the image shows no visible haze or mist, indicating clear atmospheric conditions across the entire scene.  \n2. Shadows cast by vehicles and streetlights are sharp and well-defined, which only occurs under clear skies without fog interference.  \n3. Distant trees and buildings remain distinct and lack any blurring or softening typically caused by fog.  \n4. The billboard and signs are easily readable with no diffusion or dimming, further supporting clear weather.  \n5. The overall brightness and blue tone of the sky confirm a lack of fog, as fog would diffuse light and create a grayish haze.  \n\n<final>Clear</final>",
+      "raw_generation": [
+        "1. The sky appears uniformly blue with no visible haze or cloud cover, indicating clear atmospheric conditions.  \n2. Objects in the distance, such as billboards and distant vehicles, remain sharp and well-defined without blurring.  \n3. Shadows cast by vehicles and streetlights are crisp and distinct, suggesting strong, direct sunlight.  \n4. No moisture or mist is visible on surfaces like roads, vehicles, or foliage, which would indicate fog.  \n5. The overall visibility extends far into the background, confirming the absence of atmospheric obstruction.  \n\n<final>Clear</final>",
+        "1. The sky in the image shows no visible haze or mist, indicating clear atmospheric conditions across the entire scene.  \n2. Shadows cast by vehicles and streetlights are sharp and well-defined, which only occurs under clear skies without fog interference.  \n3. Distant trees and buildings remain distinct and lack any blurring or softening typically caused by fog.  \n4. The billboard and signs are easily readable with no diffusion or dimming, further supporting clear weather.  \n5. The overall brightness and blue tone of the sky confirm a lack of fog, as fog would diffuse light and create a grayish haze.  \n\n<final>Clear</final>"
+      ],
+      "chunks": [
+        "1. The sky in the image shows no visible haze or mist, indicating clear atmospheric conditions across the entire scene.",
+        "2. Shadows cast by vehicles and streetlights are sharp and well-defined, which only occurs under clear skies without fog interference.",
+        "3. Distant trees and buildings remain distinct and lack any blurring or softening typically caused by fog.",
+        "4. The billboard and signs are easily readable with no diffusion or dimming, further supporting clear weather.",
+        "5. The overall brightness and blue tone of the sky confirm a lack of fog, as fog would diffuse light and create a grayish haze.",
+        "<final>Clear</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          45
+        ],
+        [
+          46,
+          71
+        ],
+        [
+          72,
+          94
+        ],
+        [
+          95,
+          116
+        ],
+        [
+          117,
+          146
+        ],
+        [
+          147,
+          154
+        ]
+      ],
+      "anchor_vector": [
+        17.422210658773697,
+        13.391415076818834,
+        10.931585035235358,
+        11.38471992379926,
+        14.121651785714286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nDoes the van look black?",
+      "reasoning_text": "1. The van visible in the image is positioned on the far left side of the road, behind the large white tanker truck.  \n2. Its color is clearly white, with a glossy finish that reflects sunlight, contrasting sharply with darker tones.  \n3. The van’s body lacks any black paint or trim, making it visibly different from black vehicles.  \n4. The white color is consistent across the van’s entire exterior, including its roof and side panels.  \n5. There are no black markings, windows, or accents on the van, confirming it is not black.  \n\n<final> No, the van does not look black; it is clearly white.",
+      "raw_generation": [
+        "1. The van in the image is positioned on the far left side of the road, behind the large white tanker truck.  \n2. Its exterior color is clearly visible as a light, neutral tone, not black.  \n3. The van’s body appears to be white or off-white under the bright daylight conditions.  \n4. Shadows and reflections on the van’s surface do not suggest a dark or black finish.  \n5. The contrast between the van and the darker elements in the image, such as the bus and trees, further confirms its light color.  \n\n<final>no</final>",
+        "1. The van visible in the image is positioned on the far left side of the road, behind the large white tanker truck.  \n2. Its color is clearly white, with a glossy finish that reflects sunlight, contrasting sharply with darker tones.  \n3. The van’s body lacks any black paint or trim, making it visibly different from black vehicles.  \n4. The white color is consistent across the van’s entire exterior, including its roof and side panels.  \n5. There are no black markings, windows, or accents on the van, confirming it is not black.  \n\n<final> No, the van does not look black; it is clearly white."
+      ],
+      "chunks": [
+        "1. The van visible in the image is positioned on the far left side of the road, behind the large white tanker truck.",
+        "2. Its color is clearly white, with a glossy finish that reflects sunlight, contrasting sharply with darker tones.",
+        "3. The van’s body lacks any black paint or trim, making it visibly different from black vehicles.",
+        "4. The white color is consistent across the van’s entire exterior, including its roof and side panels.",
+        "5. There are no black markings, windows, or accents on the van, confirming it is not black.",
+        "<final> No, the van does not look black; it is clearly white."
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          46
+        ],
+        [
+          47,
+          69
+        ],
+        [
+          70,
+          91
+        ],
+        [
+          92,
+          113
+        ],
+        [
+          114,
+          136
+        ],
+        [
+          137,
+          154
+        ]
+      ],
+      "anchor_vector": [
+        11.82085239457999,
+        17.768869763814614,
+        13.729052605890843,
+        17.676679478609625,
+        11.34765625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nDoes the van have the same color as the truck?",
+      "reasoning_text": "1. The van on the far left is white, matching the primary color of the large tanker truck in the foreground.  \n2. Both vehicles have white exteriors, though the truck has additional silver and black accents on its tank and grille.  \n3. The van’s white paint appears consistent with the truck’s white cab and tank, despite slight variations in lighting and shadows.  \n4. Neither vehicle displays a secondary dominant color, reinforcing their shared white base tone in the image.  \n5. The van and truck visually harmonize in color, making them appear to belong to the same palette despite different models and purposes.  \n\n<final>Yes, the van and truck share the same primary color, white.</final>",
+      "raw_generation": [
+        "1. The van in the image is white, matching the color of the truck's cab and front section.  \n2. The truck’s large cylindrical tank is also white, creating a uniform color scheme across the entire vehicle.  \n3. Both vehicles share the same white paint, making them visually consistent in appearance.  \n4. The van’s white color contrasts with the darker road and surrounding elements, just like the truck.  \n5. The white color of both vehicles is clearly visible under the bright daylight conditions in the image.  \n\n<final>Yes, the van has the same color as the truck.</final>",
+        "1. The van on the far left is white, matching the primary color of the large tanker truck in the foreground.  \n2. Both vehicles have white exteriors, though the truck has additional silver and black accents on its tank and grille.  \n3. The van’s white paint appears consistent with the truck’s white cab and tank, despite slight variations in lighting and shadows.  \n4. Neither vehicle displays a secondary dominant color, reinforcing their shared white base tone in the image.  \n5. The van and truck visually harmonize in color, making them appear to belong to the same palette despite different models and purposes.  \n\n<final>Yes, the van and truck share the same primary color, white.</final>"
+      ],
+      "chunks": [
+        "1. The van on the far left is white, matching the primary color of the large tanker truck in the foreground.",
+        "2. Both vehicles have white exteriors, though the truck has additional silver and black accents on its tank and grille.",
+        "3. The van’s white paint appears consistent with the truck’s white cab and tank, despite slight variations in lighting and shadows.",
+        "4. Neither vehicle displays a secondary dominant color, reinforcing their shared white base tone in the image.",
+        "5. The van and truck visually harmonize in color, making them appear to belong to the same palette despite different models and purposes.",
+        "<final>Yes, the van and truck share the same primary color, white.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          54
+        ],
+        [
+          55,
+          79
+        ],
+        [
+          80,
+          106
+        ],
+        [
+          107,
+          127
+        ],
+        [
+          128,
+          155
+        ],
+        [
+          156,
+          175
+        ]
+      ],
+      "anchor_vector": [
+        13.172582752652783,
+        10.783516194213007,
+        12.841592298164393,
+        11.930501859787611,
+        10.574424342105264,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the van to the right or to the left of the truck?",
+      "reasoning_text": "1. The white van is positioned on the far left side of the image, while the large white tanker truck occupies the central-left portion of the road, making the van to its left.  \n2. The truck’s front grille and headlights are clearly visible, and the van is located further back on the same side of the road, maintaining a leftward spatial relationship.  \n3. The van’s rear is facing the camera, and it is separated from the truck by a narrow lane of traffic, confirming its position to the left of the truck.  \n4. Both vehicles are on the same street, with the van appearing closer to the curb on the left side, while the truck is slightly more toward the center of the road.  \n5. The truck’s size and position dominate the left half of the frame, and the van is distinctly located farther left, reinforcing its position relative to the truck.  \n\n<final>Left</final>",
+      "raw_generation": [
+        "1. The white van is clearly visible on the far left side of the image, positioned ahead of the large white tanker truck.  \n2. The truck dominates the foreground and occupies the center-left portion of the frame, moving in the same direction as the van.  \n3. The van is separated from the truck by a noticeable distance, with the truck’s front grille and headlights directly in front of the van’s rear.  \n4. The truck’s position blocks the view of any vehicles behind it, confirming the van is to the left of the truck.  \n5. The van’s placement on the left side of the road, relative to the truck’s lane, further confirms its position to the left of the truck.  \n\n<final>left</final>",
+        "1. The white van is positioned on the far left side of the image, while the large white tanker truck occupies the central-left portion of the road, making the van to its left.  \n2. The truck’s front grille and headlights are clearly visible, and the van is located further back on the same side of the road, maintaining a leftward spatial relationship.  \n3. The van’s rear is facing the camera, and it is separated from the truck by a narrow lane of traffic, confirming its position to the left of the truck.  \n4. Both vehicles are on the same street, with the van appearing closer to the curb on the left side, while the truck is slightly more toward the center of the road.  \n5. The truck’s size and position dominate the left half of the frame, and the van is distinctly located farther left, reinforcing its position relative to the truck.  \n\n<final>Left</final>"
+      ],
+      "chunks": [
+        "1. The white van is positioned on the far left side of the image, while the large white tanker truck occupies the central-left portion of the road, making the van to its left.",
+        "2. The truck’s front grille and headlights are clearly visible, and the van is located further back on the same side of the road, maintaining a leftward spatial relationship.",
+        "3. The van’s rear is facing the camera, and it is separated from the truck by a narrow lane of traffic, confirming its position to the left of the truck.",
+        "4. Both vehicles are on the same street, with the van appearing closer to the curb on the left side, while the truck is slightly more toward the center of the road.",
+        "5. The truck’s size and position dominate the left half of the frame, and the van is distinctly located farther left, reinforcing its position relative to the truck.",
+        "<final>Left</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          36,
+          74
+        ],
+        [
+          75,
+          110
+        ],
+        [
+          111,
+          146
+        ],
+        [
+          147,
+          183
+        ],
+        [
+          184,
+          217
+        ],
+        [
+          218,
+          225
+        ]
+      ],
+      "anchor_vector": [
+        11.176347778672607,
+        12.657882377767631,
+        13.009107302564333,
+        10.77849902735128,
+        17.368303571428573,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there buses or cars in this image?",
+      "reasoning_text": "1. A white bus with blue trim is visible on the right side of the road, clearly identifiable by its size and design.  \n2. Several cars are present, including a silver sedan behind the tanker truck and a white van on the far left.  \n3. The bus has route number 510 displayed on its front, indicating its public transit function.  \n4. Traffic congestion is evident, as multiple vehicles are clustered near the bus stop and intersection.  \n5. The presence of both buses and cars confirms active urban transportation in this scene.  \n\n<final>Yes, there are buses and cars in this image.</final>",
+      "raw_generation": [
+        "1. A white tanker truck dominates the foreground, indicating heavy traffic on this urban road.  \n2. A blue and white bus is visible on the right side, stopped near a bus stop sign.  \n3. Several cars are present behind the truck, including a silver sedan and a white van.  \n4. The road appears congested, with multiple vehicles sharing the same lane or adjacent lanes.  \n5. The presence of traffic lights and billboards confirms this is a busy city street with public transport and private vehicles.  \n\n<final>Yes, there are buses and cars in this image.</final>",
+        "1. A white bus with blue trim is visible on the right side of the road, clearly identifiable by its size and design.  \n2. Several cars are present, including a silver sedan behind the tanker truck and a white van on the far left.  \n3. The bus has route number 510 displayed on its front, indicating its public transit function.  \n4. Traffic congestion is evident, as multiple vehicles are clustered near the bus stop and intersection.  \n5. The presence of both buses and cars confirms active urban transportation in this scene.  \n\n<final>Yes, there are buses and cars in this image.</final>"
+      ],
+      "chunks": [
+        "1. A white bus with blue trim is visible on the right side of the road, clearly identifiable by its size and design.",
+        "2. Several cars are present, including a silver sedan behind the tanker truck and a white van on the far left.",
+        "3. The bus has route number 510 displayed on its front, indicating its public transit function.",
+        "4. Traffic congestion is evident, as multiple vehicles are clustered near the bus stop and intersection.",
+        "5. The presence of both buses and cars confirms active urban transportation in this scene.",
+        "<final>Yes, there are buses and cars in this image.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          52
+        ],
+        [
+          53,
+          77
+        ],
+        [
+          78,
+          100
+        ],
+        [
+          101,
+          120
+        ],
+        [
+          121,
+          138
+        ],
+        [
+          139,
+          155
+        ]
+      ],
+      "anchor_vector": [
+        11.332282065038935,
+        14.897413312298394,
+        8.247280880639673,
+        15.791898839613971,
+        14.60986328125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat vehicle is to the left of the truck?",
+      "reasoning_text": "1. The vehicle to the left of the white tanker truck is a white van with a boxy shape, positioned in the adjacent lane, clearly visible in the image.  \n2. This van has a yellow license plate and appears to be moving in the same direction as the truck, maintaining a safe distance.  \n3. The van’s windows are tinted, and it lacks any visible cargo or modifications, suggesting it is a standard passenger or delivery van.  \n4. It is positioned slightly ahead of the truck, indicating it is either leading or moving at a similar speed.  \n5. The truck’s front grille and headlights are visible, and the van is directly to its left, confirming its position relative to the large vehicle.  \n\n<final> The vehicle to the left of the truck is a white van.",
+      "raw_generation": [
+        "1. The image shows a white tanker truck prominently positioned in the foreground, occupying the left lane of the road.  \n2. Directly to the left of the truck, a white van is visible, traveling in the same direction on the adjacent lane.  \n3. The van appears smaller than the truck and is partially obscured by the truck’s front bumper and grille.  \n4. The van’s rear lights and side mirrors are visible, indicating it is a standard passenger or cargo van.  \n5. No other vehicles are clearly visible to the left of the truck, confirming the van as the only vehicle in that position.  \n\n<final>van</final>",
+        "1. The vehicle to the left of the white tanker truck is a white van with a boxy shape, positioned in the adjacent lane, clearly visible in the image.  \n2. This van has a yellow license plate and appears to be moving in the same direction as the truck, maintaining a safe distance.  \n3. The van’s windows are tinted, and it lacks any visible cargo or modifications, suggesting it is a standard passenger or delivery van.  \n4. It is positioned slightly ahead of the truck, indicating it is either leading or moving at a similar speed.  \n5. The truck’s front grille and headlights are visible, and the van is directly to its left, confirming its position relative to the large vehicle.  \n\n<final> The vehicle to the left of the truck is a white van."
+      ],
+      "chunks": [
+        "1. The vehicle to the left of the white tanker truck is a white van with a boxy shape, positioned in the adjacent lane, clearly visible in the image.",
+        "2. This van has a yellow license plate and appears to be moving in the same direction as the truck, maintaining a safe distance.",
+        "3. The van’s windows are tinted, and it lacks any visible cargo or modifications, suggesting it is a standard passenger or delivery van.",
+        "4. It is positioned slightly ahead of the truck, indicating it is either leading or moving at a similar speed.",
+        "5. The truck’s front grille and headlights are visible, and the van is directly to its left, confirming its position relative to the large vehicle.",
+        "<final> The vehicle to the left of the truck is a white van."
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          62
+        ],
+        [
+          63,
+          90
+        ],
+        [
+          91,
+          120
+        ],
+        [
+          121,
+          144
+        ],
+        [
+          145,
+          175
+        ],
+        [
+          176,
+          192
+        ]
+      ],
+      "anchor_vector": [
+        17.122157468781477,
+        12.457208772208439,
+        10.82847281930527,
+        11.85103759765625,
+        9.676673889160156,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 607,
+  "subset": "gqa",
+  "subset_local_idx": 19
+}

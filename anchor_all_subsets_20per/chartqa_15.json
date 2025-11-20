@@ -1,0 +1,92 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/43373532010085.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat kind of chart is it Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>Horizontal bar chart</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The chart displays horizontal bars of varying lengths, each corresponding to a specific age group or category.\n2. The length of each bar visually represents the prevalence percentage of bipolar disorder for that group.\n3. The categories are listed vertically along the y-axis, while the prevalence percentages are shown on the x-axis.\n4. The chart uses color coding to differentiate between age groups, enhancing visual distinction.\n5. The title and labels clearly indicate it is a horizontal bar chart showing prevalence by age.\n</reasoning>\n<final>Horizontal bar chart</final>",
+        "<final>Horizontal bar chart</final>"
+      ],
+      "chunks": [
+        "<final>Horizontal bar chart</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          49
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWork out the difference between the maximum and the mode of the bipolar disorder prevalence of all the age groups Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The maximum prevalence is 0.87% for the 20-24 years old group, as shown by the longest bar in the chart.  \n2. The mode prevalence is 0.76%, appearing twice for the 25-29 years old group, which is the most frequently occurring value.  \n3. The difference between the maximum and mode is calculated by subtracting 0.76 from 0.87.  \n4. Performing the subtraction yields a result of 0.11, which represents the gap between these two prevalence values.  \n5. The final difference is 0.11, matching the exact numerical difference between the maximum and mode values.  \n\n<final>0.11</final>",
+      "raw_generation": [
+        "1. The maximum prevalence is 0.87% for the 20-24 years old group, as shown by the longest bar in the chart.  \n2. The mode is the most frequently occurring value, which is 0.76%, appearing twice for the 25-29 years old group.  \n3. The difference is calculated by subtracting the mode from the maximum: 0.87% - 0.76%.  \n4. This subtraction yields a result of 0.11%.  \n5. The final answer is 0.11.  \n<final>0.11</final>",
+        "1. The maximum prevalence is 0.87% for the 20-24 years old group, as shown by the longest bar in the chart.  \n2. The mode prevalence is 0.76%, appearing twice for the 25-29 years old group, which is the most frequently occurring value.  \n3. The difference between the maximum and mode is calculated by subtracting 0.76 from 0.87.  \n4. Performing the subtraction yields a result of 0.11, which represents the gap between these two prevalence values.  \n5. The final difference is 0.11, matching the exact numerical difference between the maximum and mode values.  \n\n<final>0.11</final>"
+      ],
+      "chunks": [
+        "1. The maximum prevalence is 0.87% for the 20-24 years old group, as shown by the longest bar in the chart.",
+        "2. The mode prevalence is 0.76%, appearing twice for the 25-29 years old group, which is the most frequently occurring value.",
+        "3. The difference between the maximum and mode is calculated by subtracting 0.76 from 0.87.",
+        "4. Performing the subtraction yields a result of 0.11, which represents the gap between these two prevalence values.",
+        "5. The final difference is 0.11, matching the exact numerical difference between the maximum and mode values.",
+        "<final>0.11</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          68,
+          102
+        ],
+        [
+          103,
+          137
+        ],
+        [
+          138,
+          164
+        ],
+        [
+          165,
+          190
+        ],
+        [
+          191,
+          215
+        ],
+        [
+          216,
+          226
+        ]
+      ],
+      "anchor_vector": [
+        10.635679062971342,
+        12.558993698511369,
+        12.3662909105089,
+        14.765792338053387,
+        14.58857421875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 104,
+  "subset": "chartqa",
+  "subset_local_idx": 15
+}

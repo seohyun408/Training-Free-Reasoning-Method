@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/929b48d1323c8323.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: pickled, pickled, peppers, Peppers",
+      "reasoning_text": "<1> Two glass jars filled with golden-brown pickled peppers sit side by side, each adorned with a minimalist white label clearly stating \"pickled peppers\" in a clean serif font.  \n<2> The jars’ metallic lids gleam subtly under soft lighting, contrasting with the deep, rich tones of the wooden shelf they rest upon.  \n<3> The pickled peppers inside appear elongated and slightly curled, submerged in brine that catches the light, hinting at their tangy, preserved flavor.  \n<4> The background features dark vertical wooden panels, creating a rustic, cozy atmosphere that complements the homemade, artisanal feel of the preserved food.  \n<5> The composition is balanced and symmetrical, with the jars centered and evenly spaced, suggesting careful presentation for either storage or display.  \n<final> Two labeled jars of pickled peppers sit neatly on a wooden shelf, their golden contents and minimalist labels evoking rustic charm and homemade preservation.",
+      "raw_generation": [
+        "1. The image displays two glass jars filled with pickled peppers, each labeled with a white sticker reading \"pickled peppers\" in a simple, elegant font.  \n2. The jars have gold-colored metal lids and are arranged side by side on a dark wooden surface, suggesting a rustic or homemade aesthetic.  \n3. The pickled peppers inside appear to be long, slender, and submerged in brine, with a slightly translucent, amber hue indicating their preserved state.  \n4. The background features vertical wooden paneling, adding to the cozy, kitchen-like atmosphere of the scene.  \n5. The overall composition is framed with a light border, reminiscent of a Polaroid photo, enhancing the nostalgic and artisanal feel of the preserved food.  \n\n<final>Two jars of homemade pickled peppers sit side by side on a wooden shelf, their labels clearly marked and their contents preserved in brine.</final>",
+        "<1> Two glass jars filled with golden-brown pickled peppers sit side by side, each adorned with a minimalist white label clearly stating \"pickled peppers\" in a clean serif font.  \n<2> The jars’ metallic lids gleam subtly under soft lighting, contrasting with the deep, rich tones of the wooden shelf they rest upon.  \n<3> The pickled peppers inside appear elongated and slightly curled, submerged in brine that catches the light, hinting at their tangy, preserved flavor.  \n<4> The background features dark vertical wooden panels, creating a rustic, cozy atmosphere that complements the homemade, artisanal feel of the preserved food.  \n<5> The composition is balanced and symmetrical, with the jars centered and evenly spaced, suggesting careful presentation for either storage or display.  \n<final> Two labeled jars of pickled peppers sit neatly on a wooden shelf, their golden contents and minimalist labels evoking rustic charm and homemade preservation."
+      ],
+      "chunks": [
+        "<1> Two glass jars filled with golden-brown pickled peppers sit side by side, each adorned with a minimalist white label clearly stating \"pickled peppers\" in a clean serif font.",
+        "<2> The jars’ metallic lids gleam subtly under soft lighting, contrasting with the deep, rich tones of the wooden shelf they rest upon.",
+        "<3> The pickled peppers inside appear elongated and slightly curled, submerged in brine that catches the light, hinting at their tangy, preserved flavor.",
+        "<4> The background features dark vertical wooden panels, creating a rustic, cozy atmosphere that complements the homemade, artisanal feel of the preserved food.",
+        "<5> The composition is balanced and symmetrical, with the jars centered and evenly spaced, suggesting careful presentation for either storage or display.",
+        "<final> Two labeled jars of pickled peppers sit neatly on a wooden shelf, their golden contents and minimalist labels evoking rustic charm and homemade preservation."
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          99
+        ],
+        [
+          100,
+          130
+        ],
+        [
+          131,
+          165
+        ],
+        [
+          166,
+          197
+        ],
+        [
+          198,
+          226
+        ],
+        [
+          227,
+          258
+        ]
+      ],
+      "anchor_vector": [
+        13.087111157467017,
+        11.690038708433223,
+        11.629447034610216,
+        11.45951175250216,
+        9.826927923387096,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 54,
+  "subset": "textvqa",
+  "subset_local_idx": 0
+}

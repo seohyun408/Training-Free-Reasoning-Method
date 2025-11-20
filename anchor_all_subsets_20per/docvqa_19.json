@@ -1,0 +1,328 @@
+{
+  "total_pairs": 6,
+  "successful_pairs": 6,
+  "image_path": "docvqa/train/documents/jybx0223_54.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwho is the president and managing director as shown in the given page ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Mr. K.K. Modi",
+      "raw_generation": [
+        "Mr. K.K. Modi",
+        "Mr. K.K. Modi"
+      ],
+      "chunks": [
+        "Mr. K.K. Modi"
+      ],
+      "chunk_token_ranges": [
+        [
+          56,
+          62
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwho is the president and managing director as shown in the given page ?",
+      "reasoning_text": "1. The document clearly lists key management personnel under section (d), specifying roles and names with precise titles and dates of appointment.  \n2. Mr. KK Modi is explicitly mentioned as the President and Managing Director, positioned at the top of the list of key management personnel.  \n3. His title is directly aligned with the role “President and Managing Director,” making him the only individual listed with that exact designation.  \n4. No other name in the key management personnel section holds the title of President and Managing Director, confirming his unique position in this hierarchy.  \n5. The document’s structure and formatting ensure that Mr. KK Modi’s role is unmistakably identified and clearly presented, leaving no ambiguity about his leadership position.  \n\n<final>Mr. KK Modi is the President and Managing Director as shown in the given page.</final>",
+      "raw_generation": [
+        "1. The document is a financial disclosure page from Godfrey Phillips India Limited, specifically Schedule 16, detailing related party disclosures under Accounting Standard 18.\n2. Section (d) of the document lists key management personnel and their respective positions within the company.\n3. The first entry under section (d) identifies Mr. KK Modi as holding the position of President and Managing Director.\n4. This entry is clearly formatted with the name on the left and the title on the right, making it easily identifiable.\n5. No other individual is listed with the title of President and Managing Director, confirming Mr. KK Modi as the sole holder of this position as shown on the page.\n\n<final>Mr. KK Modi</final>",
+        "1. The document clearly lists key management personnel under section (d), specifying roles and names with precise titles and dates of appointment.  \n2. Mr. KK Modi is explicitly mentioned as the President and Managing Director, positioned at the top of the list of key management personnel.  \n3. His title is directly aligned with the role “President and Managing Director,” making him the only individual listed with that exact designation.  \n4. No other name in the key management personnel section holds the title of President and Managing Director, confirming his unique position in this hierarchy.  \n5. The document’s structure and formatting ensure that Mr. KK Modi’s role is unmistakably identified and clearly presented, leaving no ambiguity about his leadership position.  \n\n<final>Mr. KK Modi is the President and Managing Director as shown in the given page.</final>"
+      ],
+      "chunks": [
+        "1. The document clearly lists key management personnel under section (d), specifying roles and names with precise titles and dates of appointment.",
+        "2. Mr. KK Modi is explicitly mentioned as the President and Managing Director, positioned at the top of the list of key management personnel.",
+        "3. His title is directly aligned with the role “President and Managing Director,” making him the only individual listed with that exact designation.",
+        "4. No other name in the key management personnel section holds the title of President and Managing Director, confirming his unique position in this hierarchy.",
+        "5. The document’s structure and formatting ensure that Mr.",
+        "KK Modi’s role is unmistakably identified and clearly presented, leaving no ambiguity about his leadership position.",
+        "<final>Mr.",
+        "KK Modi is the President and Managing Director as shown in the given page.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          36,
+          62
+        ],
+        [
+          63,
+          91
+        ],
+        [
+          92,
+          119
+        ],
+        [
+          120,
+          148
+        ],
+        [
+          149,
+          161
+        ],
+        [
+          161,
+          181
+        ],
+        [
+          182,
+          187
+        ],
+        [
+          187,
+          204
+        ]
+      ],
+      "anchor_vector": [
+        12.07529273862323,
+        13.321971430354546,
+        13.27784587272409,
+        12.167711205575982,
+        11.856077665441177,
+        12.662454044117647,
+        10.343520220588236,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwho is the whole -time director( up to July 31,2009) ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Mr. S.V. Shanbhag",
+      "raw_generation": [
+        "1. The document is a financial disclosure from Godfrey Phillips India Limited, specifically Schedule 16, Notes to the accounts.\n2. Section (d) lists key management personnel and their roles within the company.\n3. Mr. S.V. Shanbhag is explicitly mentioned as the Whole-time Director with a tenure up to July 31, 2009.\n4. The document clearly states his name and title in the key management personnel section.\n5. No other individual is listed with the same title and date range in the provided text.\n\n<final>Mr. S.V. Shanbhag</final>",
+        "Mr. S.V. Shanbhag"
+      ],
+      "chunks": [
+        "Mr. S.V. Shanbhag"
+      ],
+      "chunk_token_ranges": [
+        [
+          70,
+          78
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwho is the whole -time director( up to July 31,2009) ?",
+      "reasoning_text": "1. The document lists key management personnel under section (d), specifying their roles and tenure dates.\n2. Mr. S.V. Shanbhag is explicitly mentioned as holding the position of Whole-time Director with a tenure up to July 31, 2009.\n3. This entry is distinct from Mr. R. Ramanurthy, who started his role on August 14, 2009, indicating a clear transition.\n4. The list includes other directors such as Mr. KK Modi and Mr. Lalit Kumar Modi, but only Mr. S.V. Shanbhag’s tenure ends on July 31, 2009.\n5. No other personnel in the list have a tenure ending before August 14, 2009, confirming Mr. S.V. Shanbhag as the sole Whole-time Director up to July 31, 2009.\n\n<final>Mr. S.V. Shanbhag is the Whole-time Director up to July 31, 2009.</final>",
+      "raw_generation": [
+        "1. The document lists key management personnel under section (d) with their respective roles and tenure dates.\n2. Mr. S.V. Shanbhag is explicitly mentioned as holding the position of Whole-time Director.\n3. The tenure for Mr. S.V. Shanbhag is specified as \"upto July 31, 2009,\" matching the query's timeframe.\n4. No other individual in the list has a tenure ending on or before July 31, 2009, for the role of Whole-time Director.\n5. The document confirms Mr. S.V. Shanbhag as the sole Whole-time Director with the specified end date, making him the correct answer.\n\n<final>Mr. S.V. Shanbhag</final>",
+        "1. The document lists key management personnel under section (d), specifying their roles and tenure dates.\n2. Mr. S.V. Shanbhag is explicitly mentioned as holding the position of Whole-time Director with a tenure up to July 31, 2009.\n3. This entry is distinct from Mr. R. Ramanurthy, who started his role on August 14, 2009, indicating a clear transition.\n4. The list includes other directors such as Mr. KK Modi and Mr. Lalit Kumar Modi, but only Mr. S.V. Shanbhag’s tenure ends on July 31, 2009.\n5. No other personnel in the list have a tenure ending before August 14, 2009, confirming Mr. S.V. Shanbhag as the sole Whole-time Director up to July 31, 2009.\n\n<final>Mr. S.V. Shanbhag is the Whole-time Director up to July 31, 2009.</final>"
+      ],
+      "chunks": [
+        "1. The document lists key management personnel under section (d), specifying their roles and tenure dates.",
+        "2. Mr. S.V.",
+        "Shanbhag is explicitly mentioned as holding the position of Whole-time Director with a tenure up to July 31, 2009.",
+        "3. This entry is distinct from Mr.",
+        "R. Ramanurthy, who started his role on August 14, 2009, indicating a clear transition.",
+        "4. The list includes other directors such as Mr.",
+        "KK Modi and Mr.",
+        "Lalit Kumar Modi, but only Mr.",
+        "S.V. Shanbhag’s tenure ends on July 31, 2009.",
+        "5. No other personnel in the list have a tenure ending before August 14, 2009, confirming Mr.",
+        "S.V. Shanbhag as the sole Whole-time Director up to July 31, 2009.",
+        "<final>Mr.",
+        "S.V. Shanbhag is the Whole-time Director up to July 31, 2009.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          70
+        ],
+        [
+          70,
+          77
+        ],
+        [
+          77,
+          107
+        ],
+        [
+          107,
+          116
+        ],
+        [
+          116,
+          144
+        ],
+        [
+          144,
+          155
+        ],
+        [
+          155,
+          160
+        ],
+        [
+          160,
+          169
+        ],
+        [
+          169,
+          190
+        ],
+        [
+          190,
+          217
+        ],
+        [
+          217,
+          242
+        ],
+        [
+          242,
+          247
+        ],
+        [
+          247,
+          273
+        ]
+      ],
+      "anchor_vector": [
+        10.651573021704857,
+        13.647213204309042,
+        13.561300398892195,
+        13.219523868299909,
+        11.572793469901319,
+        13.181250722244027,
+        13.550010622816613,
+        13.672783742877494,
+        15.321211160078347,
+        15.482568108974357,
+        16.18650841346154,
+        13.832932692307692,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        13,
+        13
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwho is the whole-time director (from August 14,2009) ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Mr. R. Ramanurthy",
+      "raw_generation": [
+        "1. The document is a financial disclosure from Godfrey Phillips India Limited, specifically Schedule 16, Notes to the accounts.\n2. Section (d) lists key management personnel and their roles within the company.\n3. Mr. R. Ramanurthy is explicitly mentioned as a Whole-time Director with a start date of August 14, 2009.\n4. The text clearly states his title and the exact date he assumed this role.\n5. No other individual in the list has this specific designation and date.\n\n<final>Mr. R. Ramanurthy</final>",
+        "Mr. R. Ramanurthy"
+      ],
+      "chunks": [
+        "Mr. R. Ramanurthy"
+      ],
+      "chunk_token_ranges": [
+        [
+          66,
+          74
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwho is the whole-time director (from August 14,2009) ?",
+      "reasoning_text": "1. The document lists key management personnel under section (d), including their titles and dates of appointment.\n2. Mr. R. Ramanurthy is explicitly mentioned as a Whole-time Director with the start date specified as “from August 14, 2009.”\n3. This entry is clearly aligned with the format used for other directors, such as Mr. S.V. Shanbhag, who held the same position until July 31, 2009.\n4. No other individual in the list has the designation “Whole-time Director” with the specified start date of August 14, 2009.\n5. The document’s structure confirms Mr. R. Ramanurthy as the sole person fulfilling this role from that specific date, making him the correct answer.\n\n<final>Mr. R. Ramanurthy is the whole-time director from August 14, 2009.</final>",
+      "raw_generation": [
+        "1. The document lists key management personnel under section (d) with their respective roles and tenure dates.\n2. Mr. R. Ramanurthy is explicitly mentioned as a Whole-time Director with a start date of August 14, 2009.\n3. This entry is positioned directly below Mr. S.V. Shanbhag’s tenure, which ended on July 31, 2009.\n4. The text clearly states “Whole-time Director (from August 14, 2009)” next to Mr. R. Ramanurthy’s name.\n5. No other individual in the list has a tenure starting on or after August 14, 2009, confirming Mr. R. Ramanurthy as the correct answer.\n\n<final>Mr. R. Ramanurthy</final>",
+        "1. The document lists key management personnel under section (d), including their titles and dates of appointment.\n2. Mr. R. Ramanurthy is explicitly mentioned as a Whole-time Director with the start date specified as “from August 14, 2009.”\n3. This entry is clearly aligned with the format used for other directors, such as Mr. S.V. Shanbhag, who held the same position until July 31, 2009.\n4. No other individual in the list has the designation “Whole-time Director” with the specified start date of August 14, 2009.\n5. The document’s structure confirms Mr. R. Ramanurthy as the sole person fulfilling this role from that specific date, making him the correct answer.\n\n<final>Mr. R. Ramanurthy is the whole-time director from August 14, 2009.</final>"
+      ],
+      "chunks": [
+        "1. The document lists key management personnel under section (d), including their titles and dates of appointment.",
+        "2. Mr. R. Ramanurthy is explicitly mentioned as a Whole-time Director with the start date specified as “from August 14, 2009.”\n3.",
+        "This entry is clearly aligned with the format used for other directors, such as Mr.",
+        "S.V. Shanbhag, who held the same position until July 31, 2009.",
+        "4. No other individual in the list has the designation “Whole-time Director” with the specified start date of August 14, 2009.",
+        "5. The document’s structure confirms Mr.",
+        "R. Ramanurthy as the sole person fulfilling this role from that specific date, making him the correct answer.",
+        "<final>Mr.",
+        "R. Ramanurthy is the whole-time director from August 14, 2009.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          67
+        ],
+        [
+          67,
+          106
+        ],
+        [
+          106,
+          123
+        ],
+        [
+          123,
+          147
+        ],
+        [
+          147,
+          180
+        ],
+        [
+          180,
+          189
+        ],
+        [
+          189,
+          213
+        ],
+        [
+          213,
+          218
+        ],
+        [
+          218,
+          243
+        ]
+      ],
+      "anchor_vector": [
+        14.247648457451708,
+        13.144765965690254,
+        13.326545089567551,
+        13.844585819128786,
+        12.807217339409721,
+        12.756163194444445,
+        15.029609375,
+        12.4584375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        9,
+        9
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 428,
+  "subset": "docvqa",
+  "subset_local_idx": 19
+}

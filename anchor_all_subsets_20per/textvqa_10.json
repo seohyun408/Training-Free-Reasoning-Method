@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/a94a07f08081f00c.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: Reese, Kool-Ayd, GLOW, SUPER, POP, MLC, P5W, WONK, HERSHEY'S, ECHOCOLATE, Twizders, WERSHEY'S, Mlky, Extra, WHOPPEES, Teotsle, A, Kooknid, Pay, Thec, CANT, B, 3MusL, Razzl",
+      "reasoning_text": "<1> The brightly lit candy store features white shelves stocked with Reese’s, Hershey’s, and Twizzlers, alongside a pink wall and American flag near the entrance.  \n<2> A yellow “Wet Floor” caution sign stands by the glass door, indicating recent cleaning or spills near the store’s main entryway.  \n<3> The store’s wall is covered in colorful candy brand logos, including Kool-Aid, Whoppers, and PayDay, creating a vibrant visual display.  \n<4> A blue welcome mat with “CANDY” and a candy-themed design invites customers into the store’s sweet-filled interior.  \n<5> The wooden flooring and recessed ceiling lights enhance the store’s inviting atmosphere, complementing its playful and nostalgic candy theme.  \n<final> A candy store with white shelves, American flag decor, and branded wall stickers like Reese’s and Hershey’s welcomes customers through its glass door.",
+      "raw_generation": [
+        "<reasoning>\n1. The image displays a brightly lit candy store with white shelving units filled with various confectionery products, including recognizable brands like Reese’s, Hershey’s, and Twizzlers.\n2. A prominent pink accent wall and an American flag on the left side create a vibrant, patriotic atmosphere within the store’s interior.\n3. The glass door entrance features a yellow “CAUTION WET FLOOR” sign, indicating recent cleaning or spillage near the entryway.\n4. A blue welcome mat with “Welcome to The Candy” and a colorful candy-themed design lies on the wooden floor, inviting customers into the store.\n5. The right side of the image shows a glass panel covered with numerous candy brand stickers, including Kool-Aid, PayDay, and 3 Musketeers, enhancing the store’s thematic branding.\n</reasoning>\n<final>Inside a vibrant candy store, shelves brimming with Reese’s, Hershey’s, and Twizzlers are framed by patriotic decor and branded glass panels, welcoming customers with a colorful, sweet-themed atmosphere.</final>",
+        "<1> The brightly lit candy store features white shelves stocked with Reese’s, Hershey’s, and Twizzlers, alongside a pink wall and American flag near the entrance.  \n<2> A yellow “Wet Floor” caution sign stands by the glass door, indicating recent cleaning or spills near the store’s main entryway.  \n<3> The store’s wall is covered in colorful candy brand logos, including Kool-Aid, Whoppers, and PayDay, creating a vibrant visual display.  \n<4> A blue welcome mat with “CANDY” and a candy-themed design invites customers into the store’s sweet-filled interior.  \n<5> The wooden flooring and recessed ceiling lights enhance the store’s inviting atmosphere, complementing its playful and nostalgic candy theme.  \n<final> A candy store with white shelves, American flag decor, and branded wall stickers like Reese’s and Hershey’s welcomes customers through its glass door."
+      ],
+      "chunks": [
+        "<1> The brightly lit candy store features white shelves stocked with Reese’s, Hershey’s, and Twizzlers, alongside a pink wall and American flag near the entrance.",
+        "<2> A yellow “Wet Floor” caution sign stands by the glass door, indicating recent cleaning or spills near the store’s main entryway.",
+        "<3> The store’s wall is covered in colorful candy brand logos, including Kool-Aid, Whoppers, and PayDay, creating a vibrant visual display.",
+        "<4> A blue welcome mat with “CANDY” and a candy-themed design invites customers into the store’s sweet-filled interior.",
+        "<5> The wooden flooring and recessed ceiling lights enhance the store’s inviting atmosphere, complementing its playful and nostalgic candy theme.",
+        "<final> A candy store with white shelves, American flag decor, and branded wall stickers like Reese’s and Hershey’s welcomes customers through its glass door."
+      ],
+      "chunk_token_ranges": [
+        [
+          202,
+          238
+        ],
+        [
+          239,
+          270
+        ],
+        [
+          271,
+          305
+        ],
+        [
+          306,
+          334
+        ],
+        [
+          335,
+          362
+        ],
+        [
+          363,
+          395
+        ]
+      ],
+      "anchor_vector": [
+        15.175456131153178,
+        17.209033565954595,
+        18.252269603587962,
+        17.99653908058449,
+        15.61572265625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 766,
+  "subset": "textvqa",
+  "subset_local_idx": 10
+}

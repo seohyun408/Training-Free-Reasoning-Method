@@ -1,0 +1,128 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/16918615006190.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the annual number of deaths from tuberculosis per 1,00,000 people in the age group 50-69 years old? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The bar chart displays tuberculosis death rates per 100,000 people in Equatorial Guinea for 2004, segmented by age groups.  \n2. The 50-69 years old group is represented by a purple bar, positioned second from the top.  \n3. The numerical value at the end of this bar explicitly states 180.56.  \n4. This figure corresponds to the annual death rate for that specific age group, as indicated by the chart’s title and axis labels.  \n5. The data source, IHME, confirms the reliability of this statistic for the year 2004.  \n\n<final>180.56</final>",
+      "raw_generation": [
+        "180.56\n\n<final>180.56</final>",
+        "1. The bar chart displays tuberculosis death rates per 100,000 people in Equatorial Guinea for 2004, segmented by age groups.  \n2. The 50-69 years old group is represented by a purple bar, positioned second from the top.  \n3. The numerical value at the end of this bar explicitly states 180.56.  \n4. This figure corresponds to the annual death rate for that specific age group, as indicated by the chart’s title and axis labels.  \n5. The data source, IHME, confirms the reliability of this statistic for the year 2004.  \n\n<final>180.56</final>"
+      ],
+      "chunks": [
+        "1. The bar chart displays tuberculosis death rates per 100,000 people in Equatorial Guinea for 2004, segmented by age groups.",
+        "2. The 50-69 years old group is represented by a purple bar, positioned second from the top.",
+        "3. The numerical value at the end of this bar explicitly states 180.56.",
+        "4. This figure corresponds to the annual death rate for that specific age group, as indicated by the chart’s title and axis labels.",
+        "5. The data source, IHME, confirms the reliability of this statistic for the year 2004.",
+        "<final>180.56</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          94,
+          129
+        ],
+        [
+          130,
+          155
+        ],
+        [
+          156,
+          177
+        ],
+        [
+          178,
+          205
+        ],
+        [
+          206,
+          230
+        ],
+        [
+          231,
+          243
+        ]
+      ],
+      "anchor_vector": [
+        9.452994156125992,
+        9.178368139519261,
+        11.40700050636574,
+        12.476643880208334,
+        11.250935872395834,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nFind the difference between the largest value and the median of all values? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The largest value in the bar chart is 451.03, corresponding to the 70+ years old group, which is the highest death rate from tuberculosis in Equatorial Guinea in 2004.\n2. The median value is the middle value when all five values are arranged in ascending order: 1.7, 17.65, 28.81, 180.56, and 451.03, making the median 28.81.\n3. Subtracting the median value from the largest value: 451.03 minus 28.81 equals 422.22.\n4. The difference between the largest and median values is 422.22, which is the result of the calculation.\n5. The answer is 422.22, which is the precise numerical difference between the largest and median values.\n</reasoning>\n<final>422.22</final>",
+      "raw_generation": [
+        "1. The bar chart displays tuberculosis death rates per 100,000 people in Equatorial Guinea in 2004, categorized by age groups.  \n2. The largest value is 451.03, corresponding to the 70+ years old group, as it has the longest bar.  \n3. The five values are 451.03, 180.56, 28.81, 17.65, and 1.7, which must be ordered to find the median.  \n4. Arranging them in ascending order gives 1.7, 17.65, 28.81, 180.56, and 451.03, so the median is the middle value, 28.81.  \n5. Subtracting the median (28.81) from the largest value (451.03) yields a difference of 422.22.  \n\n<final>422.22</final>",
+        "<reasoning>\n1. The largest value in the bar chart is 451.03, corresponding to the 70+ years old group, which is the highest death rate from tuberculosis in Equatorial Guinea in 2004.\n2. The median value is the middle value when all five values are arranged in ascending order: 1.7, 17.65, 28.81, 180.56, and 451.03, making the median 28.81.\n3. Subtracting the median value from the largest value: 451.03 minus 28.81 equals 422.22.\n4. The difference between the largest and median values is 422.22, which is the result of the calculation.\n5. The answer is 422.22, which is the precise numerical difference between the largest and median values.\n</reasoning>\n<final>422.22</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The largest value in the bar chart is 451.03, corresponding to the 70+ years old group, which is the highest death rate from tuberculosis in Equatorial Guinea in 2004.",
+        "2. The median value is the middle value when all five values are arranged in ascending order: 1.7, 17.65, 28.81, 180.56, and 451.03, making the median 28.81.",
+        "3. Subtracting the median value from the largest value: 451.03 minus 28.81 equals 422.22.",
+        "4. The difference between the largest and median values is 422.22, which is the result of the calculation.",
+        "5. The answer is 422.22, which is the precise numerical difference between the largest and median values.",
+        "</reasoning>\n<final>422.22</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          56,
+          62
+        ],
+        [
+          62,
+          108
+        ],
+        [
+          108,
+          173
+        ],
+        [
+          173,
+          208
+        ],
+        [
+          208,
+          235
+        ],
+        [
+          235,
+          261
+        ],
+        [
+          261,
+          277
+        ]
+      ],
+      "anchor_vector": [
+        12.533788744386925,
+        12.583725788208056,
+        11.31340407797317,
+        11.836093072990858,
+        11.80169208233173,
+        9.886383056640625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 90,
+  "subset": "chartqa",
+  "subset_local_idx": 12
+}

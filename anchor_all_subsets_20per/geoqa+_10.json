@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/10170.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, AB is the diameter of circle O, and C and D are two points on circle O. If ∠ABD = 54°, then the measure of angle C is ()\nA. 34°\nB. 36°\nC. 46°\nD. 54°",
+      "reasoning_text": "1. Since AB is the diameter of circle O, any angle subtended by AB on the circumference is a right angle, meaning ∠ADB = 90° because it is inscribed in a semicircle.\n\n2. In triangle ABD, the sum of interior angles equals 180°, so ∠BAD = 180° - ∠ADB - ∠ABD = 180° - 90° - 54° = 36°.\n\n3. Angle C, or ∠ACB, is an inscribed angle subtending arc AB, which is the same arc subtended by angle ∠ADB.\n\n4. Since ∠ADB is 90°, the arc AB measures 180°, making ∠ACB also an inscribed angle subtending arc AB, and thus ∠ACB = ½ × 180° = 90° — but this contradicts the options.\n\n5. Correction: ∠ACB is not subtending arc AB but arc AD. Actually, ∠ACB = ∠ADB because they both subtend the same arc AB, which is a semicircle. Wait — that's not correct.",
+      "raw_generation": [
+        "1. Since AB is the diameter of circle O, any angle subtended by AB at the circumference is a right angle, meaning ∠ACB = 90° by the inscribed angle theorem.  \n2. The given angle ∠ABD = 54°, and since D lies on the circle, triangle ABD is inscribed in the circle with AB as the diameter.  \n3. In triangle ABD, angle at D (∠ADB) is 90° because it is subtended by the diameter AB, making triangle ABD a right-angled triangle.  \n4. The sum of angles in triangle ABD is 180°, so ∠BAD = 180° - 90° - 54° = 36°.  \n5. Angle C (∠ACB) is the angle subtended by arc AB at point C on the circumference, which is equal to 90°, but since we are asked for angle C in triangle ABC, and ∠CAB = ∠BAD = 36°, then ∠ACB = 90°, and ∠ABC = 180° - 90° - 36",
+        "1. Since AB is the diameter of circle O, any angle subtended by AB on the circumference is a right angle, meaning ∠ADB = 90° because it is inscribed in a semicircle.\n\n2. In triangle ABD, the sum of interior angles equals 180°, so ∠BAD = 180° - ∠ADB - ∠ABD = 180° - 90° - 54° = 36°.\n\n3. Angle C, or ∠ACB, is an inscribed angle subtending arc AB, which is the same arc subtended by angle ∠ADB.\n\n4. Since ∠ADB is 90°, the arc AB measures 180°, making ∠ACB also an inscribed angle subtending arc AB, and thus ∠ACB = ½ × 180° = 90° — but this contradicts the options.\n\n5. Correction: ∠ACB is not subtending arc AB but arc AD. Actually, ∠ACB = ∠ADB because they both subtend the same arc AB, which is a semicircle. Wait — that's not correct."
+      ],
+      "chunks": [
+        "1. Since AB is the diameter of circle O, any angle subtended by AB on the circumference is a right angle, meaning ∠ADB = 90° because it is inscribed in a semicircle.",
+        "2. In triangle ABD, the sum of interior angles equals 180°, so ∠BAD = 180° - ∠ADB - ∠ABD = 180° - 90° - 54° = 36°.",
+        "3. Angle C, or ∠ACB, is an inscribed angle subtending arc AB, which is the same arc subtended by angle ∠ADB.",
+        "4. Since ∠ADB is 90°, the arc AB measures 180°, making ∠ACB also an inscribed angle subtending arc AB, and thus ∠ACB = ½ × 180° = 90° — but this contradicts the options.",
+        "5. Correction: ∠ACB is not subtending arc AB but arc AD.",
+        "Actually, ∠ACB = ∠ADB because they both subtend the same arc AB, which is a semicircle.",
+        "Wait — that's not correct."
+      ],
+      "chunk_token_ranges": [
+        [
+          148,
+          193
+        ],
+        [
+          193,
+          253
+        ],
+        [
+          253,
+          287
+        ],
+        [
+          287,
+          352
+        ],
+        [
+          352,
+          370
+        ],
+        [
+          370,
+          397
+        ],
+        [
+          397,
+          404
+        ]
+      ],
+      "anchor_vector": [
+        17.631934649360545,
+        19.106862928397852,
+        20.107203191773504,
+        21.84664351851852,
+        19.894440827546298,
+        22.62890625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 59,
+  "subset": "geoqa+",
+  "subset_local_idx": 10
+}

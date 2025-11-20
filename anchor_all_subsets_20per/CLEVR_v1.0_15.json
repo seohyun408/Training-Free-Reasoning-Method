@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "CLEVR_v1.0/images/train/CLEVR_train_021570.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat number of balls have the same material as the green object?",
+      "reasoning_text": "1. The green object is a sphere with a shiny, metallic surface, reflecting light in a way that suggests a polished, non-porous material.  \n2. No other object in the image is spherical; the blue object is a cube, and the yellow object is a cylinder, both lacking the round shape of a ball.  \n3. The green ball’s material is distinct from the matte yellow cylinder and the reflective blue cube due to its unique specular highlights and surface texture.  \n4. Since no other ball exists in the scene, there are zero balls to compare material-wise against the green object.  \n5. Therefore, the number of balls sharing the green object’s material is zero, as no other balls are present to match its material properties.  \n\n<final>0</final>",
+      "raw_generation": [
+        "1. The green object is a sphere with a shiny, metallic surface that reflects light, indicating a reflective material.  \n2. There are no other spherical objects in the image, so no other balls exist to compare material properties with.  \n3. The blue cube and yellow cylinder are not balls, so they are irrelevant to the question about balls.  \n4. Since only one ball (the green sphere) is present, it inherently shares its material with itself.  \n5. The question asks for the number of balls with the same material as the green object, and since there are no other balls, the count is zero.  \n\n<final>0</final>",
+        "1. The green object is a sphere with a shiny, metallic surface, reflecting light in a way that suggests a polished, non-porous material.  \n2. No other object in the image is spherical; the blue object is a cube, and the yellow object is a cylinder, both lacking the round shape of a ball.  \n3. The green ball’s material is distinct from the matte yellow cylinder and the reflective blue cube due to its unique specular highlights and surface texture.  \n4. Since no other ball exists in the scene, there are zero balls to compare material-wise against the green object.  \n5. Therefore, the number of balls sharing the green object’s material is zero, as no other balls are present to match its material properties.  \n\n<final>0</final>"
+      ],
+      "chunks": [
+        "1. The green object is a sphere with a shiny, metallic surface, reflecting light in a way that suggests a polished, non-porous material.",
+        "2. No other object in the image is spherical; the blue object is a cube, and the yellow object is a cylinder, both lacking the round shape of a ball.",
+        "3. The green ball’s material is distinct from the matte yellow cylinder and the reflective blue cube due to its unique specular highlights and surface texture.",
+        "4. Since no other ball exists in the scene, there are zero balls to compare material-wise against the green object.",
+        "5. Therefore, the number of balls sharing the green object’s material is zero, as no other balls are present to match its material properties.",
+        "<final>0</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          34,
+          64
+        ],
+        [
+          65,
+          100
+        ],
+        [
+          101,
+          130
+        ],
+        [
+          131,
+          155
+        ],
+        [
+          156,
+          185
+        ],
+        [
+          186,
+          193
+        ]
+      ],
+      "anchor_vector": [
+        14.31332332955597,
+        14.119482181342365,
+        15.89935113147888,
+        18.63303860067734,
+        20.920758928571427,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1413,
+  "subset": "CLEVR_v1.0",
+  "subset_local_idx": 15
+}

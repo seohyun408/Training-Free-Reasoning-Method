@@ -1,0 +1,190 @@
+{
+  "total_pairs": 3,
+  "successful_pairs": 3,
+  "image_path": "chartqa/train/png/two_col_24295.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat percentage of Bottega Veneta's global revenue did the North American region make up in 2020? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The pie chart displays regional revenue distribution for Bottega Veneta in 2020, as indicated by the data labels and source attribution to Statista 2021.  \n2. The North American region is clearly labeled with a gray-colored slice, indicating its specific revenue contribution.  \n3. The percentage value directly associated with the North American slice is explicitly stated as 13%.  \n4. No other region or category in the chart claims the 13% share, confirming the exclusivity of this figure for North America.  \n5. The chart’s visual structure and labeled percentages confirm that North America contributed 13% of Bottega Veneta’s global revenue in 2020.  \n\n<final>13%</final>",
+      "raw_generation": [
+        "1. The pie chart displays regional revenue distribution for Bottega Veneta in 2020.\n2. Each slice represents a region with its corresponding percentage of total global revenue.\n3. The North America slice is clearly labeled with \"North America 13%\".\n4. This indicates that North America contributed 13% to the brand's global revenue.\n5. The chart's data is sourced from Statista 2021, confirming its relevance to the 2020 period.\n\n<final>13%</final>",
+        "1. The pie chart displays regional revenue distribution for Bottega Veneta in 2020, as indicated by the data labels and source attribution to Statista 2021.  \n2. The North American region is clearly labeled with a gray-colored slice, indicating its specific revenue contribution.  \n3. The percentage value directly associated with the North American slice is explicitly stated as 13%.  \n4. No other region or category in the chart claims the 13% share, confirming the exclusivity of this figure for North America.  \n5. The chart’s visual structure and labeled percentages confirm that North America contributed 13% of Bottega Veneta’s global revenue in 2020.  \n\n<final>13%</final>"
+      ],
+      "chunks": [
+        "1. The pie chart displays regional revenue distribution for Bottega Veneta in 2020, as indicated by the data labels and source attribution to Statista 2021.",
+        "2. The North American region is clearly labeled with a gray-colored slice, indicating its specific revenue contribution.",
+        "3. The percentage value directly associated with the North American slice is explicitly stated as 13%.",
+        "4. No other region or category in the chart claims the 13% share, confirming the exclusivity of this figure for North America.",
+        "5. The chart’s visual structure and labeled percentages confirm that North America contributed 13% of Bottega Veneta’s global revenue in 2020.",
+        "<final>13%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          76,
+          115
+        ],
+        [
+          116,
+          137
+        ],
+        [
+          138,
+          158
+        ],
+        [
+          159,
+          188
+        ],
+        [
+          189,
+          223
+        ],
+        [
+          224,
+          232
+        ]
+      ],
+      "anchor_vector": [
+        9.576323381319124,
+        9.701703177987925,
+        8.103592218137255,
+        11.881074793198529,
+        11.76904296875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the value of the green color in the pie chart ? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The green-colored segment in the pie chart is located at the top, adjacent to the blue segment representing Asia Pacific.\n2. A label with a green line points directly to this segment, indicating its value.\n3. The label explicitly states \"Rest of the World 9%\" next to the green segment.\n4. The percentage value \"9%\" is clearly visible and associated with the green color in the chart.\n5. No other segment in the chart shares the same green color or percentage value.\n</reasoning>\n<final>9%</final>",
+      "raw_generation": [
+        "9%",
+        "<reasoning>\n1. The green-colored segment in the pie chart is located at the top, adjacent to the blue segment representing Asia Pacific.\n2. A label with a green line points directly to this segment, indicating its value.\n3. The label explicitly states \"Rest of the World 9%\" next to the green segment.\n4. The percentage value \"9%\" is clearly visible and associated with the green color in the chart.\n5. No other segment in the chart shares the same green color or percentage value.\n</reasoning>\n<final>9%</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The green-colored segment in the pie chart is located at the top, adjacent to the blue segment representing Asia Pacific.",
+        "2. A label with a green line points directly to this segment, indicating its value.",
+        "3. The label explicitly states \"Rest of the World 9%\" next to the green segment.",
+        "4. The percentage value \"9%\" is clearly visible and associated with the green color in the chart.",
+        "5. No other segment in the chart shares the same green color or percentage value.",
+        "</reasoning>\n<final>9%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          54,
+          60
+        ],
+        [
+          60,
+          83
+        ],
+        [
+          83,
+          101
+        ],
+        [
+          101,
+          121
+        ],
+        [
+          121,
+          142
+        ],
+        [
+          142,
+          159
+        ],
+        [
+          159,
+          170
+        ]
+      ],
+      "anchor_vector": [
+        8.373063902529834,
+        7.874154412179171,
+        9.311799925048144,
+        8.47553213993931,
+        8.429773667279413,
+        15.215553977272727,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat percentage we get, if we add japan and North america and minus it from Asia pacific ? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The pie chart shows Japan's share as 11%, North America's share as 13%, and Asia Pacific's share as 40%.\n2. Adding Japan and North America gives 11% + 13% = 24%.\n3. Subtracting this sum from Asia Pacific's 40% results in 40% - 24% = 16%.\n4. The calculation follows the specified arithmetic operation directly from the chart's percentages.\n5. The final result is the difference between Asia Pacific and the combined share of Japan and North America.\n</reasoning>\n<final>16%</final>",
+      "raw_generation": [
+        "1. Japan contributes 11% to the total, as indicated by its red segment in the pie chart.\n2. North America contributes 13%, shown by its gray segment in the pie chart.\n3. Asia Pacific accounts for 40%, represented by the large blue segment in the pie chart.\n4. Adding Japan and North America gives 11% + 13% = 24%.\n5. Subtracting this sum from Asia Pacific results in 40% - 24% = 16%.\n\n<final>16%</final>",
+        "<reasoning>\n1. The pie chart shows Japan's share as 11%, North America's share as 13%, and Asia Pacific's share as 40%.\n2. Adding Japan and North America gives 11% + 13% = 24%.\n3. Subtracting this sum from Asia Pacific's 40% results in 40% - 24% = 16%.\n4. The calculation follows the specified arithmetic operation directly from the chart's percentages.\n5. The final result is the difference between Asia Pacific and the combined share of Japan and North America.\n</reasoning>\n<final>16%</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The pie chart shows Japan's share as 11%, North America's share as 13%, and Asia Pacific's share as 40%.",
+        "2. Adding Japan and North America gives 11% + 13% = 24%.",
+        "3. Subtracting this sum from Asia Pacific's 40% results in 40% - 24% = 16%.",
+        "4. The calculation follows the specified arithmetic operation directly from the chart's percentages.",
+        "5. The final result is the difference between Asia Pacific and the combined share of Japan and North America.",
+        "</reasoning>\n<final>16%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          68,
+          74
+        ],
+        [
+          74,
+          106
+        ],
+        [
+          106,
+          129
+        ],
+        [
+          129,
+          160
+        ],
+        [
+          160,
+          176
+        ],
+        [
+          176,
+          197
+        ],
+        [
+          197,
+          209
+        ]
+      ],
+      "anchor_vector": [
+        10.823163770117157,
+        8.529528637387141,
+        11.095719719812067,
+        8.330440460689482,
+        10.778504144577752,
+        10.165690104166666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 110,
+  "subset": "chartqa",
+  "subset_local_idx": 17
+}

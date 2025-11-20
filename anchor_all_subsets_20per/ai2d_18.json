@@ -1,0 +1,60 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "ai2d/images/1475.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich label represents volcanic neck?\n\nOptions:\n- A\n- D\n- B\n- C\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The label \"Volcanic neck\" is positioned at the bottom center of the diagram, pointing to the dark gray, narrow, vertical structure extending upward from the base of the diagram.\n2. This structure is surrounded by \"Host rock or sediments\" and lies directly beneath the \"Vent fill,\" indicating it is the solidified conduit of the volcano.\n3. The \"Collapsed walls of crater\" are shown above the \"Volcanic neck,\" suggesting the neck is the central, preserved part of the volcano's conduit.\n4. The \"Pyroclastic deposits\" are located above the \"Host rock or sediments\" and do not overlap with the \"Volcanic neck,\" confirming its position as the deep, central feature.\n5. The \"Lake\" is situated at the surface level within the crater, and the \"Water table\" is shown just beneath it, further separating the lake from the deeper \"Volcanic neck.\"\n\n<final>C</final>",
+      "raw_generation": [
+        "1. The diagram shows a cross-section of a volcanic crater with multiple labeled parts, including pyroclastic deposits, host rock, a lake, and a water table.  \n2. The label \"Volcanic neck\" is positioned at the bottom center of the diagram, pointing to the dark, solid structure extending upward from the base of the crater.  \n3. This structure is surrounded by \"Vent fill\" and sits above the \"Host rock or sediments,\" indicating it is the remnant of a volcanic conduit.  \n4. The other labels, such as \"Pyroclastic deposits,\" \"Lake,\" and \"Collapsed walls of crater,\" refer to surface or crater features, not the central volcanic conduit.  \n5. Since the \"Volcanic neck\" is clearly labeled and located at the bottom center, it corresponds to option D in the given choices.  \n\n<final>D</final>",
+        "1. The label \"Volcanic neck\" is positioned at the bottom center of the diagram, pointing to the dark gray, narrow, vertical structure extending upward from the base of the diagram.\n2. This structure is surrounded by \"Host rock or sediments\" and lies directly beneath the \"Vent fill,\" indicating it is the solidified conduit of the volcano.\n3. The \"Collapsed walls of crater\" are shown above the \"Volcanic neck,\" suggesting the neck is the central, preserved part of the volcano's conduit.\n4. The \"Pyroclastic deposits\" are located above the \"Host rock or sediments\" and do not overlap with the \"Volcanic neck,\" confirming its position as the deep, central feature.\n5. The \"Lake\" is situated at the surface level within the crater, and the \"Water table\" is shown just beneath it, further separating the lake from the deeper \"Volcanic neck.\"\n\n<final>C</final>"
+      ],
+      "chunks": [
+        "1. The label \"Volcanic neck\" is positioned at the bottom center of the diagram, pointing to the dark gray, narrow, vertical structure extending upward from the base of the diagram.",
+        "2. This structure is surrounded by \"Host rock or sediments\" and lies directly beneath the \"Vent fill,\" indicating it is the solidified conduit of the volcano.",
+        "3. The \"Collapsed walls of crater\" are shown above the \"Volcanic neck,\" suggesting the neck is the central, preserved part of the volcano's conduit.",
+        "4. The \"Pyroclastic deposits\" are located above the \"Host rock or sediments\" and do not overlap with the \"Volcanic neck,\" confirming its position as the deep, central feature.",
+        "5. The \"Lake\" is situated at the surface level within the crater, and the \"Water table\" is shown just beneath it, further separating the lake from the deeper \"Volcanic neck.\"\n\n<final>C</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          70,
+          109
+        ],
+        [
+          109,
+          143
+        ],
+        [
+          143,
+          177
+        ],
+        [
+          177,
+          220
+        ],
+        [
+          220,
+          267
+        ]
+      ],
+      "anchor_vector": [
+        16.932797182320016,
+        16.951361519759438,
+        19.66697140957447,
+        18.091838430851062,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 166,
+  "subset": "ai2d",
+  "subset_local_idx": 18
+}

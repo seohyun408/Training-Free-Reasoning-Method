@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/8941.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn triangle ABC, as shown, ∠C=90°, AC=4, BC=3. A point O on BC is the center of circle O, which is tangent to AB at point E and tangent to AC at point C. The other intersection point of circle O and BC is point D. What is the length of segment BD?  \nA. 1  \nB. \\(\\frac{1}{2}\\)  \nC. \\(\\frac{1}{3}\\)  \nD. \\(\\frac{1}{4}\\)",
+      "reasoning_text": "1. Triangle ABC is right-angled at C, with AC = 4 and BC = 3, forming a 3-4-5 right triangle, so AB = 5 by the Pythagorean theorem.\n\n2. Circle O is tangent to AC at point C and to AB at point E, meaning OC is perpendicular to AC and OE is perpendicular to AB, and both OC and OE are radii of the circle.\n\n3. Since OC is perpendicular to AC and C lies on AC, OC must be vertical and equal in length to the radius, and since the circle is tangent at C, OC is the radius, so O lies directly above C on BC.\n\n4. The circle intersects BC again at point D, so segment BD is part of BC, and since O lies on BC, OD is also a radius, meaning OD = OC, so D is the reflection of C over O if O is the midpoint of CD, but since O is between C and D, and OC = OD, then CD = 2 * OC, so D lies beyond O from C.\n\n5. Let the radius be r. Since OC = r and O lies on BC, and BC = 3, then if we let BO = 3 - r,",
+      "raw_generation": [
+        "1. Triangle ABC is a right triangle with ∠C = 90°, AC = 4, and BC = 3, so by the Pythagorean theorem, AB = 5.  \n2. Circle O is tangent to AC at point C and to AB at point E, meaning OC is perpendicular to AC and OE is perpendicular to AB.  \n3. Since OC is perpendicular to AC and AC is one leg of the right triangle, OC is the radius of the circle and lies along BC.  \n4. Point D is the other intersection of circle O with BC, so OD = OC = radius, and since O lies on BC, BD = BC - CD = BC - 2r.  \n5. Using the tangent properties and similar triangles, we find that the radius r = 1, so BD = 3 - 2(1) = 1.  \n\n<final>A. 1</final>",
+        "1. Triangle ABC is right-angled at C, with AC = 4 and BC = 3, forming a 3-4-5 right triangle, so AB = 5 by the Pythagorean theorem.\n\n2. Circle O is tangent to AC at point C and to AB at point E, meaning OC is perpendicular to AC and OE is perpendicular to AB, and both OC and OE are radii of the circle.\n\n3. Since OC is perpendicular to AC and C lies on AC, OC must be vertical and equal in length to the radius, and since the circle is tangent at C, OC is the radius, so O lies directly above C on BC.\n\n4. The circle intersects BC again at point D, so segment BD is part of BC, and since O lies on BC, OD is also a radius, meaning OD = OC, so D is the reflection of C over O if O is the midpoint of CD, but since O is between C and D, and OC = OD, then CD = 2 * OC, so D lies beyond O from C.\n\n5. Let the radius be r. Since OC = r and O lies on BC, and BC = 3, then if we let BO = 3 - r,"
+      ],
+      "chunks": [
+        "1. Triangle ABC is right-angled at C, with AC = 4 and BC = 3, forming a 3-4-5 right triangle, so AB = 5 by the Pythagorean theorem.",
+        "2. Circle O is tangent to AC at point C and to AB at point E, meaning OC is perpendicular to AC and OE is perpendicular to AB, and both OC and OE are radii of the circle.",
+        "3. Since OC is perpendicular to AC and C lies on AC, OC must be vertical and equal in length to the radius, and since the circle is tangent at C, OC is the radius, so O lies directly above C on BC.",
+        "4. The circle intersects BC again at point D, so segment BD is part of BC, and since O lies on BC, OD is also a radius, meaning OD = OC, so D is the reflection of C over O if O is the midpoint of CD, but since O is between C and D, and OC = OD, then CD = 2 * OC, so D lies beyond O from C.",
+        "5. Let the radius be r.",
+        "Since OC = r and O lies on BC, and BC = 3, then if we let BO = 3 - r,"
+      ],
+      "chunk_token_ranges": [
+        [
+          234,
+          279
+        ],
+        [
+          279,
+          322
+        ],
+        [
+          322,
+          371
+        ],
+        [
+          371,
+          455
+        ],
+        [
+          455,
+          463
+        ],
+        [
+          463,
+          490
+        ]
+      ],
+      "anchor_vector": [
+        14.601769287198387,
+        12.464915048325668,
+        12.394022337147888,
+        NaN,
+        NaN,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 34,
+  "subset": "geoqa+",
+  "subset_local_idx": 4
+}

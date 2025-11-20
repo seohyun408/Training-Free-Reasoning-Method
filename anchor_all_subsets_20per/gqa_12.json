@@ -1,0 +1,296 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "gqa/images/2322809.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the white vehicle to the left or to the right of the person on the right?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The person on the right is walking toward the right side of the image, near the edge of the frame, wearing a red shirt and dark shorts.\n2. A white vehicle is visible parked behind some trees, slightly to the left of the person on the right.\n3. The vehicle is partially obscured by foliage, but its white color and shape are distinguishable.\n4. The person is moving away from the vehicle, placing it to their left from the viewer’s perspective.\n5. The spatial relationship confirms the vehicle is positioned to the left of the person on the right.\n</reasoning>\n<final>left</final>",
+      "raw_generation": [
+        "1. The person on the right is walking near the edge of the frame, positioned toward the right side of the image.  \n2. A white vehicle is visible parked near the palm trees, slightly behind and to the left of the person.  \n3. The vehicle is situated in the background, partially obscured by foliage, but clearly to the left of the person’s position.  \n4. The person is moving toward the right, while the vehicle remains stationary and positioned to their left.  \n5. Based on spatial orientation, the white vehicle is located to the left of the person on the right.  \n\n<final>left</final>",
+        "<reasoning>\n1. The person on the right is walking toward the right side of the image, near the edge of the frame, wearing a red shirt and dark shorts.\n2. A white vehicle is visible parked behind some trees, slightly to the left of the person on the right.\n3. The vehicle is partially obscured by foliage, but its white color and shape are distinguishable.\n4. The person is moving away from the vehicle, placing it to their left from the viewer’s perspective.\n5. The spatial relationship confirms the vehicle is positioned to the left of the person on the right.\n</reasoning>\n<final>left</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The person on the right is walking toward the right side of the image, near the edge of the frame, wearing a red shirt and dark shorts.",
+        "2. A white vehicle is visible parked behind some trees, slightly to the left of the person on the right.",
+        "3. The vehicle is partially obscured by foliage, but its white color and shape are distinguishable.",
+        "4. The person is moving away from the vehicle, placing it to their left from the viewer’s perspective.",
+        "5. The spatial relationship confirms the vehicle is positioned to the left of the person on the right.",
+        "</reasoning>\n<final>left</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          64,
+          70
+        ],
+        [
+          70,
+          100
+        ],
+        [
+          100,
+          123
+        ],
+        [
+          123,
+          143
+        ],
+        [
+          143,
+          165
+        ],
+        [
+          165,
+          185
+        ],
+        [
+          185,
+          196
+        ]
+      ],
+      "anchor_vector": [
+        11.488023277956193,
+        9.648350419960474,
+        13.266522771661933,
+        12.690808475378788,
+        8.792151988636364,
+        5.386629971590909,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat vehicle is to the left of the person?",
+      "reasoning_text": "1. The person is walking on the right side of the sandy area, near the palm trees, with their body oriented toward the left edge of the frame.  \n2. To the left of the person, there is a white vehicle parked on the sand, partially obscured by trees and shadows.  \n3. The vehicle’s shape and size suggest it is a small car, possibly a sedan or hatchback, with visible wheels and a roofline.  \n4. The vehicle is positioned near the base of the palm trees, slightly behind the person, indicating it is stationary and not in motion.  \n5. The vehicle’s color is white, contrasting with the surrounding greenery and sand, making it easily identifiable despite partial obstruction.  \n\n<final> The vehicle to the left of the person is a white car.",
+      "raw_generation": [
+        "1. The image shows a sandy beach with palm trees and a few people scattered around.  \n2. On the right side of the frame, a person in a red shirt is walking toward the right edge of the image.  \n3. To the left of this person, near the base of the palm trees, a white vehicle is partially visible.  \n4. The vehicle appears to be a small, compact car, possibly a sedan or hatchback, parked near the trees.  \n5. The vehicle’s shape and color contrast with the surrounding greenery and sand, making it easily identifiable despite its partial view.  \n\n<final>White car</final>",
+        "1. The person is walking on the right side of the sandy area, near the palm trees, with their body oriented toward the left edge of the frame.  \n2. To the left of the person, there is a white vehicle parked on the sand, partially obscured by trees and shadows.  \n3. The vehicle’s shape and size suggest it is a small car, possibly a sedan or hatchback, with visible wheels and a roofline.  \n4. The vehicle is positioned near the base of the palm trees, slightly behind the person, indicating it is stationary and not in motion.  \n5. The vehicle’s color is white, contrasting with the surrounding greenery and sand, making it easily identifiable despite partial obstruction.  \n\n<final> The vehicle to the left of the person is a white car."
+      ],
+      "chunks": [
+        "1. The person is walking on the right side of the sandy area, near the palm trees, with their body oriented toward the left edge of the frame.",
+        "2. To the left of the person, there is a white vehicle parked on the sand, partially obscured by trees and shadows.",
+        "3. The vehicle’s shape and size suggest it is a small car, possibly a sedan or hatchback, with visible wheels and a roofline.",
+        "4. The vehicle is positioned near the base of the palm trees, slightly behind the person, indicating it is stationary and not in motion.",
+        "5. The vehicle’s color is white, contrasting with the surrounding greenery and sand, making it easily identifiable despite partial obstruction.",
+        "<final> The vehicle to the left of the person is a white car."
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          60
+        ],
+        [
+          61,
+          87
+        ],
+        [
+          88,
+          118
+        ],
+        [
+          119,
+          147
+        ],
+        [
+          148,
+          174
+        ],
+        [
+          175,
+          191
+        ]
+      ],
+      "anchor_vector": [
+        16.474078597184068,
+        17.60990665421818,
+        16.621788611778847,
+        13.261734008789062,
+        10.3367919921875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the white vehicle on the left side of the image?",
+      "reasoning_text": "1. The white vehicle is visible near the base of the palm trees, positioned on the right side of the image, not the left.  \n2. The vehicle’s placement is adjacent to a group of people, confirming its location on the right side of the frame.  \n3. The beach scene’s left side features children and an adult, with no vehicle present nearby.  \n4. The palm trees and foliage on the right side clearly frame the white vehicle, separating it from the left portion of the image.  \n5. The vehicle’s alignment with the right-hand side of the image is consistent across all visual elements in the scene.  \n\n<final>No</final>",
+      "raw_generation": [
+        "1. The white vehicle is clearly visible parked near the palm trees on the right side of the image, not the left.  \n2. The vehicle’s position is adjacent to the group of people walking, which places it toward the right edge of the frame.  \n3. The left side of the image features a group of people near the water’s edge, with no vehicle present.  \n4. The palm trees and foliage also extend more prominently on the right side, further confirming the vehicle’s location.  \n5. The white vehicle is distinctly positioned on the right side of the image, making it incorrect to say it is on the left.  \n\n<final>no</final>",
+        "1. The white vehicle is visible near the base of the palm trees, positioned on the right side of the image, not the left.  \n2. The vehicle’s placement is adjacent to a group of people, confirming its location on the right side of the frame.  \n3. The beach scene’s left side features children and an adult, with no vehicle present nearby.  \n4. The palm trees and foliage on the right side clearly frame the white vehicle, separating it from the left portion of the image.  \n5. The vehicle’s alignment with the right-hand side of the image is consistent across all visual elements in the scene.  \n\n<final>No</final>"
+      ],
+      "chunks": [
+        "1. The white vehicle is visible near the base of the palm trees, positioned on the right side of the image, not the left.",
+        "2. The vehicle’s placement is adjacent to a group of people, confirming its location on the right side of the frame.",
+        "3. The beach scene’s left side features children and an adult, with no vehicle present nearby.",
+        "4. The palm trees and foliage on the right side clearly frame the white vehicle, separating it from the left portion of the image.",
+        "5. The vehicle’s alignment with the right-hand side of the image is consistent across all visual elements in the scene.",
+        "<final>No</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          60
+        ],
+        [
+          61,
+          86
+        ],
+        [
+          87,
+          107
+        ],
+        [
+          108,
+          135
+        ],
+        [
+          136,
+          160
+        ],
+        [
+          161,
+          167
+        ]
+      ],
+      "anchor_vector": [
+        11.220862160011574,
+        13.020044849537037,
+        16.89860176745756,
+        14.1954345703125,
+        20.070109049479168,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nOn which side of the picture is the person?",
+      "reasoning_text": "1. The person is located on the right side of the picture, walking along the sandy beach near the palm trees.  \n2. Their silhouette is visible against the bright sky, moving away from the camera toward the trees.  \n3. The person is wearing dark shorts and a red shirt, making them stand out against the pale sand.  \n4. They are positioned to the right of a parked white car, which is also on the right side of the frame.  \n5. The palm trees behind them sway gently, indicating a breezy environment typical of a tropical beach.  \n\n<final>Right side of the picture</final>",
+      "raw_generation": [
+        "1. The person is located on the right side of the image, walking across the sandy beach area.  \n2. They are positioned near the edge of the frame, moving from right to left across the foreground.  \n3. Their figure is distinct against the lighter sand, making them easily identifiable on the right side.  \n4. The palm trees and foliage behind them are also clustered more densely on the right side of the image.  \n5. The kite is flying above the center-left portion of the image, further confirming the person’s placement on the right side.  \n\n<final>Right side</final>",
+        "1. The person is located on the right side of the picture, walking along the sandy beach near the palm trees.  \n2. Their silhouette is visible against the bright sky, moving away from the camera toward the trees.  \n3. The person is wearing dark shorts and a red shirt, making them stand out against the pale sand.  \n4. They are positioned to the right of a parked white car, which is also on the right side of the frame.  \n5. The palm trees behind them sway gently, indicating a breezy environment typical of a tropical beach.  \n\n<final>Right side of the picture</final>"
+      ],
+      "chunks": [
+        "1. The person is located on the right side of the picture, walking along the sandy beach near the palm trees.",
+        "2. Their silhouette is visible against the bright sky, moving away from the camera toward the trees.",
+        "3. The person is wearing dark shorts and a red shirt, making them stand out against the pale sand.",
+        "4. They are positioned to the right of a parked white car, which is also on the right side of the frame.",
+        "5. The palm trees behind them sway gently, indicating a breezy environment typical of a tropical beach.",
+        "<final>Right side of the picture</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          52
+        ],
+        [
+          53,
+          73
+        ],
+        [
+          74,
+          96
+        ],
+        [
+          97,
+          122
+        ],
+        [
+          123,
+          144
+        ],
+        [
+          145,
+          156
+        ]
+      ],
+      "anchor_vector": [
+        11.525031774215368,
+        14.306204849837663,
+        14.173986347853536,
+        18.0879751758658,
+        21.3828125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs there any kite or traffic light in the image?",
+      "reasoning_text": "1. The image features a colorful kite with triangular panels flying high in the sky, visible against the blue backdrop near the top center.  \n2. No traffic light is present anywhere in the image, as the scene is entirely outdoors with palm trees, beach, and people.  \n3. The kite’s vibrant design includes yellow, red, and black, contrasting sharply with the clear sky and white clouds below.  \n4. People are scattered across the sandy area, some near the water’s edge and others walking toward the palm trees, but no traffic signals appear.  \n5. The absence of urban infrastructure, including traffic lights, confirms the setting is a natural, recreational beach environment.  \n\n<final>Yes, there is a kite; no traffic light is present.</final>",
+      "raw_generation": [
+        "1. The image clearly shows a colorful kite flying high in the sky, with its triangular shape and multicolored panels visible against the blue backdrop.  \n2. The kite is tethered by a thin string, which trails down toward the sandy beach below, indicating active use by a person.  \n3. No traffic lights are visible anywhere in the image, as the scene is an open beach area with palm trees, people, and vehicles parked in the distance.  \n4. The background includes lush greenery and a few parked cars, but no urban infrastructure such as traffic signals or streetlights can be seen.  \n5. The focus of the image is on the natural beach environment and recreational activity, with no signs of city traffic control devices present.  \n\n<final>Yes, there is a kite in the image. There is no traffic light.</final>",
+        "1. The image features a colorful kite with triangular panels flying high in the sky, visible against the blue backdrop near the top center.  \n2. No traffic light is present anywhere in the image, as the scene is entirely outdoors with palm trees, beach, and people.  \n3. The kite’s vibrant design includes yellow, red, and black, contrasting sharply with the clear sky and white clouds below.  \n4. People are scattered across the sandy area, some near the water’s edge and others walking toward the palm trees, but no traffic signals appear.  \n5. The absence of urban infrastructure, including traffic lights, confirms the setting is a natural, recreational beach environment.  \n\n<final>Yes, there is a kite; no traffic light is present.</final>"
+      ],
+      "chunks": [
+        "1. The image features a colorful kite with triangular panels flying high in the sky, visible against the blue backdrop near the top center.",
+        "2. No traffic light is present anywhere in the image, as the scene is entirely outdoors with palm trees, beach, and people.",
+        "3. The kite’s vibrant design includes yellow, red, and black, contrasting sharply with the clear sky and white clouds below.",
+        "4. People are scattered across the sandy area, some near the water’s edge and others walking toward the palm trees, but no traffic signals appear.",
+        "5. The absence of urban infrastructure, including traffic lights, confirms the setting is a natural, recreational beach environment.",
+        "<final>Yes, there is a kite; no traffic light is present.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          57
+        ],
+        [
+          58,
+          85
+        ],
+        [
+          86,
+          112
+        ],
+        [
+          113,
+          143
+        ],
+        [
+          144,
+          167
+        ],
+        [
+          168,
+          186
+        ]
+      ],
+      "anchor_vector": [
+        14.498945940920937,
+        7.8483387278341,
+        18.894806763285025,
+        15.73667251660628,
+        11.80007595486111,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 355,
+  "subset": "gqa",
+  "subset_local_idx": 12
+}

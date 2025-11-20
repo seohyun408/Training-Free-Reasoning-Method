@@ -1,0 +1,290 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/899977707.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover clearly displays the author's name, \"Elizabeth Wenk,\" positioned beneath the main image of hikers on the trail.\n2. The title \"JOHN MUIR TRAIL DATA BOOK\" is prominently shown at the top, indicating the book’s subject matter and purpose for hikers.\n3. The publisher, \"WILDERNESS PRESS,\" is visible at the bottom, confirming the book’s origin and professional publication.\n4. The cover design includes a photograph of hikers navigating a rocky, mountainous terrain, aligning with the trail’s rugged nature and the book’s practical guidance.\n5. The copyright notice and layout confirm this is an official publication, not a reprint or unauthorized edition, ensuring the author’s credit is accurate.\n\n<final>Elizabeth Wenk</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the author's name beneath the title image.  \n2. The name \"Elizabeth Wenk\" is printed in white text on the orange banner near the bottom.  \n3. The publisher, Wilderness Press, is also visible at the very bottom of the cover.  \n4. The title \"John Muir Trail Data Book\" is prominently featured at the top.  \n5. No other names appear on the cover as authors or contributors.  \n\n<final>Elizabeth Wenk</final>",
+        "1. The book cover clearly displays the author's name, \"Elizabeth Wenk,\" positioned beneath the main image of hikers on the trail.\n2. The title \"JOHN MUIR TRAIL DATA BOOK\" is prominently shown at the top, indicating the book’s subject matter and purpose for hikers.\n3. The publisher, \"WILDERNESS PRESS,\" is visible at the bottom, confirming the book’s origin and professional publication.\n4. The cover design includes a photograph of hikers navigating a rocky, mountainous terrain, aligning with the trail’s rugged nature and the book’s practical guidance.\n5. The copyright notice and layout confirm this is an official publication, not a reprint or unauthorized edition, ensuring the author’s credit is accurate.\n\n<final>Elizabeth Wenk</final>"
+      ],
+      "chunks": [
+        "1. The book cover clearly displays the author's name, \"Elizabeth Wenk,\" positioned beneath the main image of hikers on the trail.",
+        "2. The title \"JOHN MUIR TRAIL DATA BOOK\" is prominently shown at the top, indicating the book’s subject matter and purpose for hikers.",
+        "3. The publisher, \"WILDERNESS PRESS,\" is visible at the bottom, confirming the book’s origin and professional publication.",
+        "4. The cover design includes a photograph of hikers navigating a rocky, mountainous terrain, aligning with the trail’s rugged nature and the book’s practical guidance.",
+        "5. The copyright notice and layout confirm this is an official publication, not a reprint or unauthorized edition, ensuring the author’s credit is accurate.",
+        "<final>Elizabeth Wenk</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          67
+        ],
+        [
+          67,
+          101
+        ],
+        [
+          101,
+          128
+        ],
+        [
+          128,
+          162
+        ],
+        [
+          162,
+          191
+        ],
+        [
+          191,
+          200
+        ]
+      ],
+      "anchor_vector": [
+        17.08123459516859,
+        16.921961644152393,
+        16.47805068989214,
+        14.17428460249042,
+        19.88888888888889,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book’s title is prominently displayed at the top in large, bold, white font against a black background, reading “JOHN MUIR TRAIL.”  \n2. Directly below, the subtitle “DATA BOOK” appears in smaller white letters on a bright yellow horizontal band, indicating its functional purpose.  \n3. The author’s name, “Elizabeth Wenk,” is centered at the bottom of the cover, positioned above the publisher’s logo, identifying the creator of this guide.  \n4. The publisher, “WILDERNESS PRESS,” is printed in white text at the very bottom against a black strip, along with a small logo, confirming its publishing house.  \n5. The cover image depicts hikers ascending a rocky, mountainous trail under a clear sky, visually reinforcing the book’s subject matter and target audience.  \n\n<final>John Muir Trail Data Book</final>",
+      "raw_generation": [
+        "1. The title is prominently displayed at the top of the book cover in large, bold, white letters against a black background.  \n2. The text clearly reads “JOHN MUIR TRAIL” in uppercase letters, indicating the primary subject of the book.  \n3. Below the main title, the words “DATA BOOK” appear in a contrasting yellow banner, specifying the book’s functional purpose.  \n4. The author’s name, Elizabeth Wenk, is printed near the bottom, confirming the book’s authorship.  \n5. The publisher, Wilderness Press, is visible at the very bottom, reinforcing the book’s official publication.  \n\n<final>John Muir Trail Data Book</final>",
+        "1. The book’s title is prominently displayed at the top in large, bold, white font against a black background, reading “JOHN MUIR TRAIL.”  \n2. Directly below, the subtitle “DATA BOOK” appears in smaller white letters on a bright yellow horizontal band, indicating its functional purpose.  \n3. The author’s name, “Elizabeth Wenk,” is centered at the bottom of the cover, positioned above the publisher’s logo, identifying the creator of this guide.  \n4. The publisher, “WILDERNESS PRESS,” is printed in white text at the very bottom against a black strip, along with a small logo, confirming its publishing house.  \n5. The cover image depicts hikers ascending a rocky, mountainous trail under a clear sky, visually reinforcing the book’s subject matter and target audience.  \n\n<final>John Muir Trail Data Book</final>"
+      ],
+      "chunks": [
+        "1. The book’s title is prominently displayed at the top in large, bold, white font against a black background, reading “JOHN MUIR TRAIL.”  \n2.",
+        "Directly below, the subtitle “DATA BOOK” appears in smaller white letters on a bright yellow horizontal band, indicating its functional purpose.",
+        "3. The author’s name, “Elizabeth Wenk,” is centered at the bottom of the cover, positioned above the publisher’s logo, identifying the creator of this guide.",
+        "4. The publisher, “WILDERNESS PRESS,” is printed in white text at the very bottom against a black strip, along with a small logo, confirming its publishing house.",
+        "5. The cover image depicts hikers ascending a rocky, mountainous trail under a clear sky, visually reinforcing the book’s subject matter and target audience.",
+        "<final>John Muir Trail Data Book</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          61
+        ],
+        [
+          61,
+          88
+        ],
+        [
+          89,
+          124
+        ],
+        [
+          125,
+          162
+        ],
+        [
+          163,
+          194
+        ],
+        [
+          195,
+          207
+        ]
+      ],
+      "anchor_vector": [
+        13.197338170814103,
+        14.26790664488507,
+        15.03998807275017,
+        13.82708018313172,
+        17.126302083333332,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The title “John Muir Trail Data Book” clearly indicates this book provides practical, factual information for hikers, suggesting a guidebook or reference genre rather than fiction or academic theory.\n\n2. The cover image of hikers on a rocky trail in a mountainous region visually reinforces its purpose as an outdoor adventure guide, focusing on real-world hiking conditions and route details.\n\n3. The author, Elizabeth Wenk, is known for producing detailed hiking resources, which aligns with the book’s likely function as a comprehensive, field-use manual for trail navigation and planning.\n\n4. The publisher, Wilderness Press, specializes in outdoor recreation and nature-related publications, confirming this book belongs to the hiking and wilderness travel genre.\n\n5. The book’s design, featuring a clear title, author credit, and a practical cover photo, is consistent with guidebooks intended for practical use by hikers, not for literary or scholarly audiences.\n\n<final>Outdoor hiking guidebook</final>",
+      "raw_generation": [
+        "1. The title \"John Muir Trail Data Book\" indicates it provides practical information for hikers, suggesting a guidebook genre focused on outdoor recreation and trail navigation.  \n2. The cover image shows hikers on a rugged mountain path, reinforcing its purpose as a resource for trail users rather than a fictional or academic work.  \n3. The publisher, Wilderness Press, specializes in outdoor and nature-related publications, further confirming its classification as a hiking or wilderness guide.  \n4. The author, Elizabeth Wenk, is known for producing detailed trail guides, aligning with the book’s likely content of maps, elevation profiles, and route descriptions.  \n5. The book’s design, with bold typography and a scenic photograph, targets outdoor enthusiasts seeking reliable, actionable data for planning their hikes.  \n\n<final>Outdoor recreation guidebook</final>",
+        "1. The title “John Muir Trail Data Book” clearly indicates this book provides practical, factual information for hikers, suggesting a guidebook or reference genre rather than fiction or academic theory.\n\n2. The cover image of hikers on a rocky trail in a mountainous region visually reinforces its purpose as an outdoor adventure guide, focusing on real-world hiking conditions and route details.\n\n3. The author, Elizabeth Wenk, is known for producing detailed hiking resources, which aligns with the book’s likely function as a comprehensive, field-use manual for trail navigation and planning.\n\n4. The publisher, Wilderness Press, specializes in outdoor recreation and nature-related publications, confirming this book belongs to the hiking and wilderness travel genre.\n\n5. The book’s design, featuring a clear title, author credit, and a practical cover photo, is consistent with guidebooks intended for practical use by hikers, not for literary or scholarly audiences.\n\n<final>Outdoor hiking guidebook</final>"
+      ],
+      "chunks": [
+        "1. The title “John Muir Trail Data Book” clearly indicates this book provides practical, factual information for hikers, suggesting a guidebook or reference genre rather than fiction or academic theory.",
+        "2. The cover image of hikers on a rocky trail in a mountainous region visually reinforces its purpose as an outdoor adventure guide, focusing on real-world hiking conditions and route details.",
+        "3. The author, Elizabeth Wenk, is known for producing detailed hiking resources, which aligns with the book’s likely function as a comprehensive, field-use manual for trail navigation and planning.",
+        "4. The publisher, Wilderness Press, specializes in outdoor recreation and nature-related publications, confirming this book belongs to the hiking and wilderness travel genre.",
+        "5. The book’s design, featuring a clear title, author credit, and a practical cover photo, is consistent with guidebooks intended for practical use by hikers, not for literary or scholarly audiences.",
+        "<final>Outdoor hiking guidebook</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          63
+        ],
+        [
+          63,
+          100
+        ],
+        [
+          100,
+          139
+        ],
+        [
+          139,
+          168
+        ],
+        [
+          168,
+          209
+        ],
+        [
+          209,
+          219
+        ]
+      ],
+      "anchor_vector": [
+        16.422146781541986,
+        14.668893824526306,
+        15.364068769492922,
+        15.287528582317073,
+        15.398828125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Health, Fitness & Dieting?",
+      "reasoning_text": "1. The book’s title, “John Muir Trail Data Book,” indicates it provides detailed information about a specific hiking route, which is a physical activity requiring endurance and preparation, often pursued for health and fitness purposes.\n\n2. The cover image shows hikers navigating a rocky, mountainous terrain, suggesting the book is geared toward outdoor enthusiasts who engage in strenuous physical activity, aligning with fitness-oriented pursuits.\n\n3. The author, Elizabeth Wenk, is known for producing practical guidebooks for hikers and backpackers, implying the content likely includes trail conditions, elevation gains, and route planning, which are essential for physical conditioning and safety.\n\n4. The publisher, Wilderness Press, specializes in outdoor recreation and adventure literature, reinforcing that the book’s purpose is to assist travelers in preparing for and executing physically demanding expeditions, not general health advice.\n\n5. The book’s focus on route data, elevation profiles, and trail logistics is not centered on diet or medical wellness, but rather on physical preparedness and navigation, which falls under the umbrella of fitness and adventure activities.\n\n<final>Yes, this book is related to Health, Fitness & Dieting as it supports physical preparation and endurance for hiking, though it’s more focused on outdoor adventure than general health or diet.</",
+      "raw_generation": [
+        "1. The book's title, \"John Muir Trail Data Book,\" indicates it provides detailed information about a specific hiking route, which is inherently tied to physical activity and outdoor recreation rather than health or diet.\n\n2. The cover image shows hikers navigating a rugged, rocky mountain trail, emphasizing the physical challenge and adventure associated with trail hiking, not health advice or fitness routines.\n\n3. The author, Elizabeth Wenk, is known for producing practical, route-specific guides for hikers, which typically include maps, elevation profiles, and trail conditions—not health or dietary content.\n\n4. The publisher, Wilderness Press, specializes in outdoor recreation and hiking guides, reinforcing that the book’s purpose is to assist travelers on specific trails rather than promote health or fitness programs.\n\n5. The book’s focus on trail data, such as distances, waypoints, and terrain, aligns with navigation and adventure planning, not health, fitness, or dieting topics.\n\n<final>No</final>",
+        "1. The book’s title, “John Muir Trail Data Book,” indicates it provides detailed information about a specific hiking route, which is a physical activity requiring endurance and preparation, often pursued for health and fitness purposes.\n\n2. The cover image shows hikers navigating a rocky, mountainous terrain, suggesting the book is geared toward outdoor enthusiasts who engage in strenuous physical activity, aligning with fitness-oriented pursuits.\n\n3. The author, Elizabeth Wenk, is known for producing practical guidebooks for hikers and backpackers, implying the content likely includes trail conditions, elevation gains, and route planning, which are essential for physical conditioning and safety.\n\n4. The publisher, Wilderness Press, specializes in outdoor recreation and adventure literature, reinforcing that the book’s purpose is to assist travelers in preparing for and executing physically demanding expeditions, not general health advice.\n\n5. The book’s focus on route data, elevation profiles, and trail logistics is not centered on diet or medical wellness, but rather on physical preparedness and navigation, which falls under the umbrella of fitness and adventure activities.\n\n<final>Yes, this book is related to Health, Fitness & Dieting as it supports physical preparation and endurance for hiking, though it’s more focused on outdoor adventure than general health or diet.</"
+      ],
+      "chunks": [
+        "1. The book’s title, “John Muir Trail Data Book,” indicates it provides detailed information about a specific hiking route, which is a physical activity requiring endurance and preparation, often pursued for health and fitness purposes.",
+        "2. The cover image shows hikers navigating a rocky, mountainous terrain, suggesting the book is geared toward outdoor enthusiasts who engage in strenuous physical activity, aligning with fitness-oriented pursuits.",
+        "3. The author, Elizabeth Wenk, is known for producing practical guidebooks for hikers and backpackers, implying the content likely includes trail conditions, elevation gains, and route planning, which are essential for physical conditioning and safety.",
+        "4. The publisher, Wilderness Press, specializes in outdoor recreation and adventure literature, reinforcing that the book’s purpose is to assist travelers in preparing for and executing physically demanding expeditions, not general health advice.",
+        "5. The book’s focus on route data, elevation profiles, and trail logistics is not centered on diet or medical wellness, but rather on physical preparedness and navigation, which falls under the umbrella of fitness and adventure activities.",
+        "<final>Yes, this book is related to Health, Fitness & Dieting as it supports physical preparation and endurance for hiking, though it’s more focused on outdoor adventure than general health or diet.</"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          76
+        ],
+        [
+          76,
+          115
+        ],
+        [
+          115,
+          162
+        ],
+        [
+          162,
+          203
+        ],
+        [
+          203,
+          248
+        ],
+        [
+          248,
+          288
+        ]
+      ],
+      "anchor_vector": [
+        15.2357874492459,
+        13.39116255914107,
+        12.889271397922313,
+        13.845738389756944,
+        13.9046875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Health, Fitness & Dieting?",
+      "reasoning_text": "1. The cover prominently displays \"John Muir Trail Data Book,\" indicating it's a guide for hikers, not a health or fitness textbook focused on diet or exercise routines.\n\n2. The photograph shows hikers navigating rugged mountain terrain, emphasizing outdoor adventure and trail navigation rather than physical training or nutritional advice.\n\n3. The author, Elizabeth Wenk, is known for wilderness and hiking guides, aligning with outdoor recreation and trail information rather than health or diet content.\n\n4. The publisher, Wilderness Press, specializes in outdoor and nature-related publications, reinforcing the book's focus on hiking and trail data, not health or fitness.\n\n5. The book’s title and imagery suggest it provides logistical and geographical details for trail planning, which is unrelated to health, fitness, or dieting.\n\n<final>No</final>",
+      "raw_generation": [
+        "1. The book's title, \"John Muir Trail Data Book,\" indicates it provides detailed information about a specific hiking route, which is inherently tied to physical activity and outdoor recreation rather than health or diet.\n\n2. The cover image shows hikers navigating a rugged, rocky mountain trail, emphasizing the physical challenge and adventure associated with trail hiking, not health advice or fitness routines.\n\n3. The author, Elizabeth Wenk, is known for producing practical, route-specific guides for hikers, which typically include maps, elevation profiles, and trail conditions—not health or dietary content.\n\n4. The publisher, Wilderness Press, specializes in outdoor recreation and hiking guides, reinforcing that the book’s purpose is to assist travelers on specific trails rather than promote health or fitness programs.\n\n5. The book’s focus on trail data, such as distances, waypoints, and terrain, aligns with navigation and adventure planning, not health, fitness, or dieting topics.\n\n<final>No</final>",
+        "1. The cover prominently displays \"John Muir Trail Data Book,\" indicating it's a guide for hikers, not a health or fitness textbook focused on diet or exercise routines.\n\n2. The photograph shows hikers navigating rugged mountain terrain, emphasizing outdoor adventure and trail navigation rather than physical training or nutritional advice.\n\n3. The author, Elizabeth Wenk, is known for wilderness and hiking guides, aligning with outdoor recreation and trail information rather than health or diet content.\n\n4. The publisher, Wilderness Press, specializes in outdoor and nature-related publications, reinforcing the book's focus on hiking and trail data, not health or fitness.\n\n5. The book’s title and imagery suggest it provides logistical and geographical details for trail planning, which is unrelated to health, fitness, or dieting.\n\n<final>No</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently displays \"John Muir Trail Data Book,\" indicating it's a guide for hikers, not a health or fitness textbook focused on diet or exercise routines.",
+        "2. The photograph shows hikers navigating rugged mountain terrain, emphasizing outdoor adventure and trail navigation rather than physical training or nutritional advice.",
+        "3. The author, Elizabeth Wenk, is known for wilderness and hiking guides, aligning with outdoor recreation and trail information rather than health or diet content.",
+        "4. The publisher, Wilderness Press, specializes in outdoor and nature-related publications, reinforcing the book's focus on hiking and trail data, not health or fitness.",
+        "5. The book’s title and imagery suggest it provides logistical and geographical details for trail planning, which is unrelated to health, fitness, or dieting.",
+        "<final>No</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          68
+        ],
+        [
+          68,
+          94
+        ],
+        [
+          94,
+          126
+        ],
+        [
+          126,
+          158
+        ],
+        [
+          158,
+          189
+        ],
+        [
+          189,
+          195
+        ]
+      ],
+      "anchor_vector": [
+        14.922668977331977,
+        15.74914091376848,
+        16.80120040182572,
+        18.288159442204304,
+        13.411458333333334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 101,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 3
+}

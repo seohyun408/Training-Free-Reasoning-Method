@@ -1,0 +1,302 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/785267816.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the author of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>John C. Maxwell</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the author's name in large, bold letters at the top, indicating primary authorship.  \n2. The text \"New York Times Bestselling Author\" is positioned above the name, confirming the author's established reputation.  \n3. The title \"Three Books in One Volume\" suggests a compilation, but the author remains consistent across all included works.  \n4. The three book titles listed below the author’s name are all attributed to him, reinforcing his sole authorship of this volume.  \n5. No other names appear on the cover, and the design centers solely on John C. Maxwell, leaving no ambiguity about authorship.  \n\n<final>John C. Maxwell</final>",
+        "<final>John C. Maxwell</final>"
+      ],
+      "chunks": [
+        "<final>John C.",
+        "Maxwell</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          50
+        ],
+        [
+          50,
+          54
+        ]
+      ],
+      "anchor_vector": [
+        17.380859375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        2,
+        2
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book cover prominently displays the author’s name, John C. Maxwell, at the top, identifying him as a New York Times Bestselling Author, establishing his credibility and popularity.\n\n2. The cover explicitly states “Three Books in One Volume,” indicating the compilation contains multiple works rather than a single book, making it a multi-part collection.\n\n3. The first book title listed is “The Winning Attitude,” which suggests a focus on personal mindset and motivation for success, aligning with leadership and self-improvement themes.\n\n4. The second book title is “Developing the Leaders Around You,” indicating content focused on leadership development and mentoring others, targeting those in managerial or coaching roles.\n\n5. The third book title is “Becoming a Person of Influence,” highlighting the importance of building influence through character, relationships, and impact, aiming to cultivate leadership beyond formal authority.\n\n<final>The title of this book is \"The Winning Attitude, Developing the Leaders Around You, Becoming a Person of Influence: Three Books in One Volume\" by John C. Maxwell.</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the author's name, John C. Maxwell, at the top in large, bold letters, indicating his prominence as a New York Times bestselling author.  \n2. Below the author’s name, the text “Three Books in One Volume” clearly states that this edition combines multiple works into a single publication.  \n3. The three titles listed are “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence,” each presented on its own line with consistent formatting.  \n4. The cover design uses a simple, clean layout with a black header, white background for the titles, and a light green border, emphasizing readability and professionalism.  \n5. The overall presentation suggests this is a leadership and personal development compilation, targeting readers interested in self-improvement and leadership skills.  \n\n<final>The Winning Attitude: Developing the Leaders Around You: Becoming a Person of Influence</final>",
+        "1. The book cover prominently displays the author’s name, John C. Maxwell, at the top, identifying him as a New York Times Bestselling Author, establishing his credibility and popularity.\n\n2. The cover explicitly states “Three Books in One Volume,” indicating the compilation contains multiple works rather than a single book, making it a multi-part collection.\n\n3. The first book title listed is “The Winning Attitude,” which suggests a focus on personal mindset and motivation for success, aligning with leadership and self-improvement themes.\n\n4. The second book title is “Developing the Leaders Around You,” indicating content focused on leadership development and mentoring others, targeting those in managerial or coaching roles.\n\n5. The third book title is “Becoming a Person of Influence,” highlighting the importance of building influence through character, relationships, and impact, aiming to cultivate leadership beyond formal authority.\n\n<final>The title of this book is \"The Winning Attitude, Developing the Leaders Around You, Becoming a Person of Influence: Three Books in One Volume\" by John C. Maxwell.</final>"
+      ],
+      "chunks": [
+        "1. The book cover prominently displays the author’s name, John C.",
+        "Maxwell, at the top, identifying him as a New York Times Bestselling Author, establishing his credibility and popularity.",
+        "2. The cover explicitly states “Three Books in One Volume,” indicating the compilation contains multiple works rather than a single book, making it a multi-part collection.",
+        "3. The first book title listed is “The Winning Attitude,” which suggests a focus on personal mindset and motivation for success, aligning with leadership and self-improvement themes.",
+        "4. The second book title is “Developing the Leaders Around You,” indicating content focused on leadership development and mentoring others, targeting those in managerial or coaching roles.",
+        "5. The third book title is “Becoming a Person of Influence,” highlighting the importance of building influence through character, relationships, and impact, aiming to cultivate leadership beyond formal authority.",
+        "<final>The title of this book is \"The Winning Attitude, Developing the Leaders Around You, Becoming a Person of Influence: Three Books in One Volume\" by John C.",
+        "Maxwell.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          39
+        ],
+        [
+          39,
+          62
+        ],
+        [
+          62,
+          94
+        ],
+        [
+          94,
+          131
+        ],
+        [
+          131,
+          164
+        ],
+        [
+          164,
+          202
+        ],
+        [
+          202,
+          239
+        ],
+        [
+          239,
+          243
+        ]
+      ],
+      "anchor_vector": [
+        14.423433667875418,
+        13.058577680662447,
+        16.72079346513454,
+        14.683531820324454,
+        12.685771567723151,
+        15.94655299831081,
+        14.1328125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The cover clearly states “Three Books in One Volume,” indicating a compilation of leadership and personal development content by a renowned author, John C. Maxwell, known for his work in leadership and influence.\n\n2. The title “The Winning Attitude” suggests a focus on mindset, motivation, and positive thinking, aligning with self-help and personal growth genres aimed at enhancing individual effectiveness and resilience.\n\n3. “Developing the Leaders Around You” points to a managerial or mentoring theme, targeting readers interested in leadership development, team building, and cultivating talent within organizational or personal contexts.\n\n4. “Becoming a Person of Influence” emphasizes interpersonal skills, persuasion, and impact, placing this book within the self-improvement and professional development categories focused on expanding one’s influence and leadership reach.\n\n5. The “New York Times Bestselling Author” designation reinforces the book’s credibility and popularity, indicating it’s a practical guide for professionals, students, or anyone seeking to enhance their leadership, attitude, and influence in daily life.\n\n<final>Leadership and personal development</final>",
+      "raw_generation": [
+        "1. The cover prominently features the name of John C. Maxwell, a renowned leadership expert, indicating the book targets professional development and personal growth audiences.  \n2. The title \"Three Books in One Volume\" suggests a comprehensive guide combining multiple leadership principles into a single resource for efficiency.  \n3. \"The Winning Attitude\" implies focus on mindset, motivation, and positive thinking as foundational elements for success in leadership and personal life.  \n4. \"Developing the Leaders Around You\" clearly indicates the book addresses leadership development, mentorship, and cultivating talent within teams or organizations.  \n5. \"Becoming a Person of Influence\" highlights the importance of interpersonal skills, credibility, and impact, positioning the book as a guide for building influence beyond formal authority.  \n\n<final>Leadership development and personal growth</final>",
+        "1. The cover clearly states “Three Books in One Volume,” indicating a compilation of leadership and personal development content by a renowned author, John C. Maxwell, known for his work in leadership and influence.\n\n2. The title “The Winning Attitude” suggests a focus on mindset, motivation, and positive thinking, aligning with self-help and personal growth genres aimed at enhancing individual effectiveness and resilience.\n\n3. “Developing the Leaders Around You” points to a managerial or mentoring theme, targeting readers interested in leadership development, team building, and cultivating talent within organizational or personal contexts.\n\n4. “Becoming a Person of Influence” emphasizes interpersonal skills, persuasion, and impact, placing this book within the self-improvement and professional development categories focused on expanding one’s influence and leadership reach.\n\n5. The “New York Times Bestselling Author” designation reinforces the book’s credibility and popularity, indicating it’s a practical guide for professionals, students, or anyone seeking to enhance their leadership, attitude, and influence in daily life.\n\n<final>Leadership and personal development</final>"
+      ],
+      "chunks": [
+        "1. The cover clearly states “Three Books in One Volume,” indicating a compilation of leadership and personal development content by a renowned author, John C.",
+        "Maxwell, known for his work in leadership and influence.",
+        "2. The title “The Winning Attitude” suggests a focus on mindset, motivation, and positive thinking, aligning with self-help and personal growth genres aimed at enhancing individual effectiveness and resilience.",
+        "3. “Developing the Leaders Around You” points to a managerial or mentoring theme, targeting readers interested in leadership development, team building, and cultivating talent within organizational or personal contexts.",
+        "4. “Becoming a Person of Influence” emphasizes interpersonal skills, persuasion, and impact, placing this book within the self-improvement and professional development categories focused on expanding one’s influence and leadership reach.",
+        "5. The “New York Times Bestselling Author” designation reinforces the book’s credibility and popularity, indicating it’s a practical guide for professionals, students, or anyone seeking to enhance their leadership, attitude, and influence in daily life.",
+        "<final>Leadership and personal development</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          52
+        ],
+        [
+          52,
+          63
+        ],
+        [
+          63,
+          102
+        ],
+        [
+          102,
+          139
+        ],
+        [
+          139,
+          182
+        ],
+        [
+          182,
+          229
+        ],
+        [
+          229,
+          240
+        ]
+      ],
+      "anchor_vector": [
+        16.16831796959028,
+        16.132262145873682,
+        15.532857445997015,
+        14.046241617373637,
+        14.094477699619198,
+        12.908380681818182,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Christian Books & Bibles?",
+      "reasoning_text": "1. The cover prominently features John C. Maxwell, a well-known Christian leadership author whose works often emphasize biblical principles and Christian values in leadership development.  \n2. The book’s title, “The Winning Attitude,” suggests a motivational and faith-based approach to personal success, commonly found in Christian self-help literature.  \n3. “Developing the Leaders Around You” implies a focus on nurturing spiritual and moral leadership, consistent with Christian teachings on mentorship and servant leadership.  \n4. “Becoming a Person of Influence” aligns with Christian ideals of impact and character, often tied to evangelism, community service, and moral authority within religious contexts.  \n5. The “New York Times Bestselling Author” designation reinforces Maxwell’s popularity in Christian circles, where his books frequently rank highly in spiritual and leadership categories.  \n\n<final>Yes, this book is related to Christian Books & Bibles.</final>",
+      "raw_generation": [
+        "1. The book cover prominently features John C. Maxwell, a well-known Christian leadership author whose works often integrate biblical principles with practical leadership strategies, indicating a strong alignment with Christian themes.\n\n2. The title “The Winning Attitude” suggests a focus on positive mindset and character development, common themes in Christian self-help literature that emphasize spiritual growth and moral fortitude.\n\n3. “Developing the Leaders Around You” implies a leadership framework rooted in Christian values such as servant leadership, mentorship, and community building, which are frequently emphasized in Christian leadership circles.\n\n4. “Becoming a Person of Influence” aligns with Christian teachings on personal integrity, humility, and impact, encouraging readers to cultivate influence through Christ-like character rather than worldly power.\n\n5. The “New York Times Bestselling Author” designation and the “Three Books in One Volume” format suggest broad appeal and accessibility, typical of Christian self-help and leadership books marketed to a general Christian audience.\n\n<final>Yes, this book is related to Christian Books & Bibles.</final>",
+        "1. The cover prominently features John C. Maxwell, a well-known Christian leadership author whose works often emphasize biblical principles and Christian values in leadership development.  \n2. The book’s title, “The Winning Attitude,” suggests a motivational and faith-based approach to personal success, commonly found in Christian self-help literature.  \n3. “Developing the Leaders Around You” implies a focus on nurturing spiritual and moral leadership, consistent with Christian teachings on mentorship and servant leadership.  \n4. “Becoming a Person of Influence” aligns with Christian ideals of impact and character, often tied to evangelism, community service, and moral authority within religious contexts.  \n5. The “New York Times Bestselling Author” designation reinforces Maxwell’s popularity in Christian circles, where his books frequently rank highly in spiritual and leadership categories.  \n\n<final>Yes, this book is related to Christian Books & Bibles.</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently features John C.",
+        "Maxwell, a well-known Christian leadership author whose works often emphasize biblical principles and Christian values in leadership development.",
+        "2. The book’s title, “The Winning Attitude,” suggests a motivational and faith-based approach to personal success, commonly found in Christian self-help literature.",
+        "3. “Developing the Leaders Around You” implies a focus on nurturing spiritual and moral leadership, consistent with Christian teachings on mentorship and servant leadership.",
+        "4. “Becoming a Person of Influence” aligns with Christian ideals of impact and character, often tied to evangelism, community service, and moral authority within religious contexts.",
+        "5. The “New York Times Bestselling Author” designation reinforces Maxwell’s popularity in Christian circles, where his books frequently rank highly in spiritual and leadership categories.",
+        "<final>Yes, this book is related to Christian Books & Bibles.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          39
+        ],
+        [
+          39,
+          60
+        ],
+        [
+          61,
+          93
+        ],
+        [
+          94,
+          125
+        ],
+        [
+          126,
+          163
+        ],
+        [
+          164,
+          196
+        ],
+        [
+          197,
+          215
+        ]
+      ],
+      "anchor_vector": [
+        16.351512188925362,
+        20.7209722298494,
+        15.6169869658398,
+        17.081349950414282,
+        14.624165852864582,
+        16.0234375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Cookbooks, Food & Wine?",
+      "reasoning_text": "1. The book cover clearly displays the author’s name, John C. Maxwell, known for leadership and personal development literature, not culinary content.  \n2. The title “Three Books in One Volume” includes “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence,” all leadership-focused titles.  \n3. No imagery, ingredients, recipes, or kitchen-related elements appear on the cover, which would be expected in a cookbook or food-related book.  \n4. The “New York Times Bestselling Author” tagline is typically associated with popular non-fiction genres like self-help and business, not cookbooks.  \n5. The design uses formal fonts and clean layout, common for professional development books, contrasting with the casual, colorful covers typical of food and wine publications.  \n\n<final> No, this book is not related to Cookbooks, Food & Wine; it is a leadership and personal development compilation by John C. Maxwell. </final>",
+      "raw_generation": [
+        "1. The book cover prominently features the author’s name, John C. Maxwell, a well-known leadership expert, indicating its content is focused on personal development and leadership rather than culinary topics.\n\n2. The title “Three Books in One Volume” lists specific titles: “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence,” all of which clearly relate to leadership, motivation, and personal growth.\n\n3. The cover includes the designation “New York Times Bestselling Author,” which reinforces that the book is part of a successful series in the self-help and leadership genre, not in the culinary field.\n\n4. The design and typography of the cover are clean and professional, typical of business and self-improvement books, contrasting with the often colorful or recipe-focused design of cookbooks.\n\n5. There are no images of food, kitchen utensils, recipes, or any culinary-related elements on the cover, which further confirms the book’s subject matter is unrelated to cooking or food.\n\n<final>no</final>",
+        "1. The book cover clearly displays the author’s name, John C. Maxwell, known for leadership and personal development literature, not culinary content.  \n2. The title “Three Books in One Volume” includes “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence,” all leadership-focused titles.  \n3. No imagery, ingredients, recipes, or kitchen-related elements appear on the cover, which would be expected in a cookbook or food-related book.  \n4. The “New York Times Bestselling Author” tagline is typically associated with popular non-fiction genres like self-help and business, not cookbooks.  \n5. The design uses formal fonts and clean layout, common for professional development books, contrasting with the casual, colorful covers typical of food and wine publications.  \n\n<final> No, this book is not related to Cookbooks, Food & Wine; it is a leadership and personal development compilation by John C. Maxwell. </final>"
+      ],
+      "chunks": [
+        "1. The book cover clearly displays the author’s name, John C.",
+        "Maxwell, known for leadership and personal development literature, not culinary content.",
+        "2. The title “Three Books in One Volume” includes “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence,” all leadership-focused titles.",
+        "3. No imagery, ingredients, recipes, or kitchen-related elements appear on the cover, which would be expected in a cookbook or food-related book.",
+        "4. The “New York Times Bestselling Author” tagline is typically associated with popular non-fiction genres like self-help and business, not cookbooks.",
+        "5. The design uses formal fonts and clean layout, common for professional development books, contrasting with the casual, colorful covers typical of food and wine publications.",
+        "<final> No, this book is not related to Cookbooks, Food & Wine; it is a leadership and personal development compilation by John C.",
+        "Maxwell. </final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          47
+        ],
+        [
+          47,
+          61
+        ],
+        [
+          62,
+          103
+        ],
+        [
+          104,
+          134
+        ],
+        [
+          135,
+          166
+        ],
+        [
+          167,
+          198
+        ],
+        [
+          199,
+          229
+        ],
+        [
+          229,
+          234
+        ]
+      ],
+      "anchor_vector": [
+        13.124265321970153,
+        15.276294828905634,
+        16.437649529569892,
+        16.85233849966398,
+        16.142921146953405,
+        14.959114583333333,
+        11.7296875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 139,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 6
+}

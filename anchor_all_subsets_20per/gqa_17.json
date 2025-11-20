@@ -1,0 +1,458 @@
+{
+  "total_pairs": 8,
+  "successful_pairs": 8,
+  "image_path": "gqa/images/2332557.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat's the sandwich wrapped in?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The sandwich is wrapped in a shiny, crinkled foil material, evident from the reflective surface and folds visible around the food item.\n2. The foil appears to be aluminum, commonly used for wrapping sandwiches or street food due to its heat resistance and protective qualities.\n3. The foil is partially torn, revealing the sandwich’s golden-brown bread and filling, indicating it was recently unwrapped or being eaten.\n4. The foil’s crinkled texture and metallic sheen are consistent with standard aluminum foil used in casual dining or food carts.\n5. The sandwich is held in the man’s hand, with the foil wrapped around it, suggesting it was prepared for easy handling and transport.\n\n<final>aluminum foil</final>",
+      "raw_generation": [
+        "foil",
+        "1. The sandwich is wrapped in a shiny, crinkled foil material, evident from the reflective surface and folds visible around the food item.\n2. The foil appears to be aluminum, commonly used for wrapping sandwiches or street food due to its heat resistance and protective qualities.\n3. The foil is partially torn, revealing the sandwich’s golden-brown bread and filling, indicating it was recently unwrapped or being eaten.\n4. The foil’s crinkled texture and metallic sheen are consistent with standard aluminum foil used in casual dining or food carts.\n5. The sandwich is held in the man’s hand, with the foil wrapped around it, suggesting it was prepared for easy handling and transport.\n\n<final>aluminum foil</final>"
+      ],
+      "chunks": [
+        "1. The sandwich is wrapped in a shiny, crinkled foil material, evident from the reflective surface and folds visible around the food item.",
+        "2. The foil appears to be aluminum, commonly used for wrapping sandwiches or street food due to its heat resistance and protective qualities.",
+        "3. The foil is partially torn, revealing the sandwich’s golden-brown bread and filling, indicating it was recently unwrapped or being eaten.",
+        "4. The foil’s crinkled texture and metallic sheen are consistent with standard aluminum foil used in casual dining or food carts.",
+        "5. The sandwich is held in the man’s hand, with the foil wrapped around it, suggesting it was prepared for easy handling and transport.",
+        "<final>aluminum foil</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          71
+        ],
+        [
+          71,
+          97
+        ],
+        [
+          97,
+          126
+        ],
+        [
+          126,
+          153
+        ],
+        [
+          153,
+          182
+        ],
+        [
+          182,
+          191
+        ]
+      ],
+      "anchor_vector": [
+        14.34785186950462,
+        14.830775313298211,
+        16.204927628778204,
+        20.149949113984675,
+        13.191840277777779,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nOn which side of the photo is the bicycle?",
+      "reasoning_text": "1. The bicycle is partially visible behind the man, positioned to the left side of the frame, with its handlebars and front wheel peeking out from behind a wooden cart.\n\n2. The bicycle’s frame and wheel are obscured by the man’s body and a red-and-white polka-dotted cart, confirming its placement on the left side of the image.\n\n3. The man is standing in the center-right of the photo, and the bicycle is located behind him, to his left, as seen by the angle of the bike’s handlebars.\n\n4. The bicycle’s front wheel and part of the frame are visible near the lower-left corner, just behind the cart with the red-and-white pattern.\n\n5. The cart, which appears to be a vendor’s stand, is situated between the man and the bicycle, reinforcing that the bicycle remains on the left side of the photo.\n\n<final> The bicycle is on the left side of the photo.",
+      "raw_generation": [
+        "1. The bicycle is partially visible on the left side of the photo, with its frame and front wheel extending into the frame from the bottom-left corner.  \n2. The handlebars and part of the seat are obscured by the man’s body and the wooden cart beside him, but the bike’s structure is still identifiable.  \n3. The bicycle’s position is adjacent to the man’s left arm and torso, suggesting it is parked or leaning near him on the left side of the scene.  \n4. The wooden cart with red polka dots sits between the man and the bicycle, further confirming the bike’s placement on the left side of the image.  \n5. The background elements, such as the building and streetlights, are visible behind the man and bicycle, reinforcing the bike’s left-side positioning relative to the central subject.  \n\n<final>left</final>",
+        "1. The bicycle is partially visible behind the man, positioned to the left side of the frame, with its handlebars and front wheel peeking out from behind a wooden cart.\n\n2. The bicycle’s frame and wheel are obscured by the man’s body and a red-and-white polka-dotted cart, confirming its placement on the left side of the image.\n\n3. The man is standing in the center-right of the photo, and the bicycle is located behind him, to his left, as seen by the angle of the bike’s handlebars.\n\n4. The bicycle’s front wheel and part of the frame are visible near the lower-left corner, just behind the cart with the red-and-white pattern.\n\n5. The cart, which appears to be a vendor’s stand, is situated between the man and the bicycle, reinforcing that the bicycle remains on the left side of the photo.\n\n<final> The bicycle is on the left side of the photo."
+      ],
+      "chunks": [
+        "1. The bicycle is partially visible behind the man, positioned to the left side of the frame, with its handlebars and front wheel peeking out from behind a wooden cart.",
+        "2. The bicycle’s frame and wheel are obscured by the man’s body and a red-and-white polka-dotted cart, confirming its placement on the left side of the image.",
+        "3. The man is standing in the center-right of the photo, and the bicycle is located behind him, to his left, as seen by the angle of the bike’s handlebars.",
+        "4. The bicycle’s front wheel and part of the frame are visible near the lower-left corner, just behind the cart with the red-and-white pattern.",
+        "5. The cart, which appears to be a vendor’s stand, is situated between the man and the bicycle, reinforcing that the bicycle remains on the left side of the photo.",
+        "<final> The bicycle is on the left side of the photo."
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          64
+        ],
+        [
+          64,
+          101
+        ],
+        [
+          101,
+          139
+        ],
+        [
+          139,
+          170
+        ],
+        [
+          170,
+          206
+        ],
+        [
+          206,
+          220
+        ]
+      ],
+      "anchor_vector": [
+        8.58339040224179,
+        11.033371742288217,
+        12.343651327018263,
+        12.750031001984127,
+        14.831473214285714,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs that shirt purple or gray?",
+      "reasoning_text": "1. The man in the image is wearing a shirt that appears to be a shade of gray, not purple, based on the lighting and visible color tones in the photograph.\n\n2. The shirt’s fabric has a muted, neutral tone consistent with gray, lacking the distinct hue or undertone typically associated with purple.\n\n3. The lighting in the scene highlights the shirt’s surface, revealing a consistent grayish tone across the garment without any purple highlights or shadows.\n\n4. The man’s shirt contrasts with his white collared shirt underneath, which further emphasizes the gray color of the outer shirt.\n\n5. The shirt’s color remains unchanged across different lighting areas, reinforcing that it is gray rather than purple, despite any potential color interpretation errors.\n\n<final>Gray</final>",
+      "raw_generation": [
+        "1. The shirt’s color appears muted and neutral under the ambient lighting, lacking the distinct hue of purple.  \n2. The fabric reflects light in a way consistent with gray tones rather than purples, which often show more saturation.  \n3. The man’s shirt has a solid, non-vibrant shade that aligns with medium gray, not a purple hue.  \n4. The collar and sleeves show no purple undertones, reinforcing the gray appearance.  \n5. The overall visual evidence confirms the shirt is gray, not purple, despite possible lighting effects.  \n\n<final>gray</final>",
+        "1. The man in the image is wearing a shirt that appears to be a shade of gray, not purple, based on the lighting and visible color tones in the photograph.\n\n2. The shirt’s fabric has a muted, neutral tone consistent with gray, lacking the distinct hue or undertone typically associated with purple.\n\n3. The lighting in the scene highlights the shirt’s surface, revealing a consistent grayish tone across the garment without any purple highlights or shadows.\n\n4. The man’s shirt contrasts with his white collared shirt underneath, which further emphasizes the gray color of the outer shirt.\n\n5. The shirt’s color remains unchanged across different lighting areas, reinforcing that it is gray rather than purple, despite any potential color interpretation errors.\n\n<final>Gray</final>"
+      ],
+      "chunks": [
+        "1. The man in the image is wearing a shirt that appears to be a shade of gray, not purple, based on the lighting and visible color tones in the photograph.",
+        "2. The shirt’s fabric has a muted, neutral tone consistent with gray, lacking the distinct hue or undertone typically associated with purple.",
+        "3. The lighting in the scene highlights the shirt’s surface, revealing a consistent grayish tone across the garment without any purple highlights or shadows.",
+        "4. The man’s shirt contrasts with his white collared shirt underneath, which further emphasizes the gray color of the outer shirt.",
+        "5. The shirt’s color remains unchanged across different lighting areas, reinforcing that it is gray rather than purple, despite any potential color interpretation errors.",
+        "<final>Gray</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          57
+        ],
+        [
+          57,
+          85
+        ],
+        [
+          85,
+          114
+        ],
+        [
+          114,
+          140
+        ],
+        [
+          140,
+          169
+        ],
+        [
+          169,
+          176
+        ]
+      ],
+      "anchor_vector": [
+        13.82876411371495,
+        19.637875526951497,
+        15.113440988339965,
+        14.514989993842363,
+        15.524553571428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the food that is wrapped in foil?",
+      "reasoning_text": "1. The food item held in the man’s left hand is partially unwrapped, revealing a golden-brown, round, and slightly puffy surface, characteristic of a freshly baked pastry or bread.  \n2. The foil wrapping is crinkled and partially torn, suggesting the food has been handled or bitten into, indicating it is a handheld snack or street food item.  \n3. The man’s expression, with his finger near his lips and eyes focused on the food, implies he is either savoring its taste or contemplating its flavor, reinforcing it is a consumable item.  \n4. Behind him, a wooden cart with red polka-dot patterns and various items suggests a street vendor setup, which typically sells items like sandwiches, pastries, or hot dogs wrapped in foil.  \n5. The lighting and nighttime setting, combined with the casual attire and the man’s relaxed posture, imply this is a street food purchase, likely a warm, savory pastry such as a calzone, empanada, or even a hot dog bun with toppings.  \n\n<final>Based on the appearance and context, the food wrapped in foil is most likely a savory pastry or street food item such as a calzone, empanada, or hot dog bun with toppings.</",
+      "raw_generation": [
+        "1. The food item appears to be a sandwich or wrap, as it has a visible filling and is partially unwrapped to reveal its contents.  \n2. The foil wrapping suggests it is a portable, handheld meal, commonly found at street vendors or food trucks.  \n3. The golden-brown, slightly crispy texture visible at the edge indicates it may be fried or baked, possibly a type of pastry or bread.  \n4. The man is holding it with one hand while gesturing with the other, suggesting he is either about to eat it or is posing for the photo.  \n5. The foil is crinkled and partially peeled back, revealing a filling that looks like a combination of meat and vegetables, possibly a gourmet street food item.  \n\n<final>It is likely a gourmet street food sandwich or wrap, possibly a fried or baked item with a meat and vegetable filling.</final>",
+        "1. The food item held in the man’s left hand is partially unwrapped, revealing a golden-brown, round, and slightly puffy surface, characteristic of a freshly baked pastry or bread.  \n2. The foil wrapping is crinkled and partially torn, suggesting the food has been handled or bitten into, indicating it is a handheld snack or street food item.  \n3. The man’s expression, with his finger near his lips and eyes focused on the food, implies he is either savoring its taste or contemplating its flavor, reinforcing it is a consumable item.  \n4. Behind him, a wooden cart with red polka-dot patterns and various items suggests a street vendor setup, which typically sells items like sandwiches, pastries, or hot dogs wrapped in foil.  \n5. The lighting and nighttime setting, combined with the casual attire and the man’s relaxed posture, imply this is a street food purchase, likely a warm, savory pastry such as a calzone, empanada, or even a hot dog bun with toppings.  \n\n<final>Based on the appearance and context, the food wrapped in foil is most likely a savory pastry or street food item such as a calzone, empanada, or hot dog bun with toppings.</"
+      ],
+      "chunks": [
+        "1. The food item held in the man’s left hand is partially unwrapped, revealing a golden-brown, round, and slightly puffy surface, characteristic of a freshly baked pastry or bread.",
+        "2. The foil wrapping is crinkled and partially torn, suggesting the food has been handled or bitten into, indicating it is a handheld snack or street food item.",
+        "3. The man’s expression, with his finger near his lips and eyes focused on the food, implies he is either savoring its taste or contemplating its flavor, reinforcing it is a consumable item.",
+        "4. Behind him, a wooden cart with red polka-dot patterns and various items suggests a street vendor setup, which typically sells items like sandwiches, pastries, or hot dogs wrapped in foil.",
+        "5. The lighting and nighttime setting, combined with the casual attire and the man’s relaxed posture, imply this is a street food purchase, likely a warm, savory pastry such as a calzone, empanada, or even a hot dog bun with toppings.",
+        "<final>Based on the appearance and context, the food wrapped in foil is most likely a savory pastry or street food item such as a calzone, empanada, or hot dog bun with toppings.</"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          68
+        ],
+        [
+          69,
+          103
+        ],
+        [
+          104,
+          146
+        ],
+        [
+          147,
+          187
+        ],
+        [
+          188,
+          241
+        ],
+        [
+          242,
+          284
+        ]
+      ],
+      "anchor_vector": [
+        15.762393274250297,
+        14.367758170485175,
+        12.864850125879755,
+        15.210356651504942,
+        15.221912202380953,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the sandwich wrapped in?",
+      "reasoning_text": "1. The sandwich is wrapped in crinkled aluminum foil, which reflects light and shows creases from being folded around the food item.  \n2. The foil has a shiny, metallic surface that catches ambient lighting, indicating its material is not paper or plastic.  \n3. The foil’s edges are slightly frayed and uneven, suggesting it was torn or cut rather than cleanly sealed.  \n4. The sandwich’s bread is partially visible through the foil, showing a golden-brown crust and a round shape.  \n5. The foil is held in the man’s left hand, positioned near his mouth, indicating he is about to eat or has just taken a bite.  \n<final>Aluminum foil</final>",
+      "raw_generation": [
+        "1. The sandwich is wrapped in crinkled aluminum foil, which reflects light and shows signs of being recently unwrapped or handled.  \n2. The foil has a shiny, metallic surface with visible creases and folds, indicating it was tightly wrapped around the sandwich.  \n3. The foil’s edges are slightly torn or uneven, suggesting it was removed from a container or packaging.  \n4. The sandwich appears to be partially eaten, with the foil still clinging to the remaining portion, indicating it was consumed on the go.  \n5. The foil’s texture and appearance suggest it is standard food-grade aluminum foil, commonly used for wrapping sandwiches or street food.  \n\n<final>Aluminum foil</final>",
+        "1. The sandwich is wrapped in crinkled aluminum foil, which reflects light and shows creases from being folded around the food item.  \n2. The foil has a shiny, metallic surface that catches ambient lighting, indicating its material is not paper or plastic.  \n3. The foil’s edges are slightly frayed and uneven, suggesting it was torn or cut rather than cleanly sealed.  \n4. The sandwich’s bread is partially visible through the foil, showing a golden-brown crust and a round shape.  \n5. The foil is held in the man’s left hand, positioned near his mouth, indicating he is about to eat or has just taken a bite.  \n<final>Aluminum foil</final>"
+      ],
+      "chunks": [
+        "1. The sandwich is wrapped in crinkled aluminum foil, which reflects light and shows creases from being folded around the food item.",
+        "2. The foil has a shiny, metallic surface that catches ambient lighting, indicating its material is not paper or plastic.",
+        "3. The foil’s edges are slightly frayed and uneven, suggesting it was torn or cut rather than cleanly sealed.",
+        "4. The sandwich’s bread is partially visible through the foil, showing a golden-brown crust and a round shape.",
+        "5. The foil is held in the man’s left hand, positioned near his mouth, indicating he is about to eat or has just taken a bite.",
+        "<final>Aluminum foil</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          50
+        ],
+        [
+          51,
+          75
+        ],
+        [
+          76,
+          100
+        ],
+        [
+          101,
+          125
+        ],
+        [
+          126,
+          157
+        ],
+        [
+          158,
+          167
+        ]
+      ],
+      "anchor_vector": [
+        15.132936057907704,
+        16.228761078209004,
+        7.9015034045512245,
+        12.044583994000615,
+        19.09982638888889,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the sandwich in the bottom or in the top part of the picture?",
+      "reasoning_text": "1. The sandwich is visibly held in the man’s hand, positioned in the upper half of the image, near his face and shoulder area, not near the bottom.  \n2. The man’s hand gripping the sandwich is clearly above the waistline, which places the food item in the upper section of the frame.  \n3. The sandwich’s foil wrapper and bread are distinctly visible above the midsection, confirming its location in the top half of the image.  \n4. The background elements, such as the tree and building, are positioned above the sandwich, further supporting its placement in the upper region of the photograph.  \n5. No part of the sandwich extends into the lower third of the image, confirming it is located in the top part of the picture.  \n\n<final>Top</final>",
+      "raw_generation": [
+        "1. The sandwich is held in the man’s hand, positioned near the center of the image but slightly above the horizontal midpoint.  \n2. The man’s torso and arms occupy the lower half of the frame, while the sandwich is held at chest level.  \n3. The background includes street elements and lights, which are concentrated in the upper portion of the image.  \n4. The sandwich is clearly visible above the man’s waistline, placing it in the upper half of the picture.  \n5. The sandwich’s foil wrapper and bread are distinctly visible, confirming its location above the bottom third of the image.  \n\n<final>top</final>",
+        "1. The sandwich is visibly held in the man’s hand, positioned in the upper half of the image, near his face and shoulder area, not near the bottom.  \n2. The man’s hand gripping the sandwich is clearly above the waistline, which places the food item in the upper section of the frame.  \n3. The sandwich’s foil wrapper and bread are distinctly visible above the midsection, confirming its location in the top half of the image.  \n4. The background elements, such as the tree and building, are positioned above the sandwich, further supporting its placement in the upper region of the photograph.  \n5. No part of the sandwich extends into the lower third of the image, confirming it is located in the top part of the picture.  \n\n<final>Top</final>"
+      ],
+      "chunks": [
+        "1. The sandwich is visibly held in the man’s hand, positioned in the upper half of the image, near his face and shoulder area, not near the bottom.",
+        "2. The man’s hand gripping the sandwich is clearly above the waistline, which places the food item in the upper section of the frame.",
+        "3. The sandwich’s foil wrapper and bread are distinctly visible above the midsection, confirming its location in the top half of the image.",
+        "4. The background elements, such as the tree and building, are positioned above the sandwich, further supporting its placement in the upper region of the photograph.",
+        "5. No part of the sandwich extends into the lower third of the image, confirming it is located in the top part of the picture.",
+        "<final>Top</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          72
+        ],
+        [
+          73,
+          102
+        ],
+        [
+          103,
+          131
+        ],
+        [
+          132,
+          163
+        ],
+        [
+          164,
+          192
+        ],
+        [
+          193,
+          200
+        ]
+      ],
+      "anchor_vector": [
+        16.130142618782774,
+        13.702808854766705,
+        15.358252928187403,
+        14.559884207589285,
+        14.330915178571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there cars or bicycles?",
+      "reasoning_text": "1. A bicycle is partially visible behind the man, with its frame and wheel discernible near the wooden cart with red polka dots.  \n2. No cars are visible in the image; the background shows buildings and streetlights but no vehicles on the road.  \n3. The bicycle appears stationary and is positioned beside the man’s left side, near a small cart with colorful decorations.  \n4. The man’s posture and the bicycle’s placement suggest it might be parked or used for transport nearby, not actively in motion.  \n5. No cars or other motor vehicles are present in any part of the image, confirming only the bicycle is visible.  \n\n<final>There is a bicycle visible, but no cars.</final>",
+      "raw_generation": [
+        "1. A bicycle is partially visible behind the man, identifiable by its frame and wheel near the lower-left corner of the image.  \n2. No cars are visible in the image, as the background consists of buildings and streetlights without any vehicle presence.  \n3. The bicycle’s handlebars and front wheel are partially obscured by the man’s body and a wooden cart.  \n4. The bicycle appears to be parked or stationary, as no motion blur or tire tracks suggest movement.  \n5. The cart beside the bicycle contains items, including a red-and-white polka-dotted bag, indicating it may be a vendor’s cart.  \n\n<final>Yes, there is a bicycle; no cars are visible.</final>",
+        "1. A bicycle is partially visible behind the man, with its frame and wheel discernible near the wooden cart with red polka dots.  \n2. No cars are visible in the image; the background shows buildings and streetlights but no vehicles on the road.  \n3. The bicycle appears stationary and is positioned beside the man’s left side, near a small cart with colorful decorations.  \n4. The man’s posture and the bicycle’s placement suggest it might be parked or used for transport nearby, not actively in motion.  \n5. No cars or other motor vehicles are present in any part of the image, confirming only the bicycle is visible.  \n\n<final>There is a bicycle visible, but no cars.</final>"
+      ],
+      "chunks": [
+        "1. A bicycle is partially visible behind the man, with its frame and wheel discernible near the wooden cart with red polka dots.",
+        "2. No cars are visible in the image; the background shows buildings and streetlights but no vehicles on the road.",
+        "3. The bicycle appears stationary and is positioned beside the man’s left side, near a small cart with colorful decorations.",
+        "4. The man’s posture and the bicycle’s placement suggest it might be parked or used for transport nearby, not actively in motion.",
+        "5. No cars or other motor vehicles are present in any part of the image, confirming only the bicycle is visible.",
+        "<final>There is a bicycle visible, but no cars.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          48
+        ],
+        [
+          49,
+          73
+        ],
+        [
+          74,
+          98
+        ],
+        [
+          99,
+          126
+        ],
+        [
+          127,
+          151
+        ],
+        [
+          152,
+          167
+        ]
+      ],
+      "anchor_vector": [
+        8.696833043981481,
+        17.77822220413773,
+        13.390744357638889,
+        11.087158203125,
+        7.7896484375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat's the person wearing?",
+      "reasoning_text": "1. The person is wearing a gray short-sleeved shirt with a visible logo on the chest, layered over a white collared shirt with sleeves rolled up to the elbows.  \n2. He has on dark-colored jeans, partially visible at the bottom of the image, suggesting casual attire suitable for an evening outing.  \n3. A silver-toned wristwatch with a rectangular face and metallic band is worn on his left wrist, adding a modern accessory to his outfit.  \n4. The white collared shirt peeks out from under the gray shirt, indicating a semi-formal or smart-casual style despite the casual outer layer.  \n5. His bald head and facial hair are not clothing items but contribute to his overall appearance, complementing his choice of attire.  \n\n<final> The person is wearing a gray short-sleeved shirt over a white collared shirt, dark jeans, and a silver wristwatch.",
+      "raw_generation": [
+        "1. The person is wearing a gray short-sleeved t-shirt with a dark graphic design across the chest.  \n2. Underneath the t-shirt, a white collared shirt is visible at the neckline and sleeves.  \n3. A silver-toned digital watch with a black face is worn on the left wrist.  \n4. Dark-colored jeans are partially visible at the bottom of the frame, suggesting casual attire.  \n5. The person’s arms show noticeable hair, and the t-shirt has a slightly loose fit over the torso.  \n\n<final>The person is wearing a gray t-shirt over a white collared shirt, dark jeans, and a silver digital watch.</final>",
+        "1. The person is wearing a gray short-sleeved shirt with a visible logo on the chest, layered over a white collared shirt with sleeves rolled up to the elbows.  \n2. He has on dark-colored jeans, partially visible at the bottom of the image, suggesting casual attire suitable for an evening outing.  \n3. A silver-toned wristwatch with a rectangular face and metallic band is worn on his left wrist, adding a modern accessory to his outfit.  \n4. The white collared shirt peeks out from under the gray shirt, indicating a semi-formal or smart-casual style despite the casual outer layer.  \n5. His bald head and facial hair are not clothing items but contribute to his overall appearance, complementing his choice of attire.  \n\n<final> The person is wearing a gray short-sleeved shirt over a white collared shirt, dark jeans, and a silver wristwatch."
+      ],
+      "chunks": [
+        "1. The person is wearing a gray short-sleeved shirt with a visible logo on the chest, layered over a white collared shirt with sleeves rolled up to the elbows.",
+        "2. He has on dark-colored jeans, partially visible at the bottom of the image, suggesting casual attire suitable for an evening outing.",
+        "3. A silver-toned wristwatch with a rectangular face and metallic band is worn on his left wrist, adding a modern accessory to his outfit.",
+        "4. The white collared shirt peeks out from under the gray shirt, indicating a semi-formal or smart-casual style despite the casual outer layer.",
+        "5. His bald head and facial hair are not clothing items but contribute to his overall appearance, complementing his choice of attire.",
+        "<final> The person is wearing a gray short-sleeved shirt over a white collared shirt, dark jeans, and a silver wristwatch."
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          56
+        ],
+        [
+          57,
+          84
+        ],
+        [
+          85,
+          115
+        ],
+        [
+          116,
+          149
+        ],
+        [
+          150,
+          176
+        ],
+        [
+          177,
+          207
+        ]
+      ],
+      "anchor_vector": [
+        10.95984260675667,
+        14.783516239619757,
+        12.724119832261922,
+        12.424877303685896,
+        13.943875122070313,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 515,
+  "subset": "gqa",
+  "subset_local_idx": 17
+}

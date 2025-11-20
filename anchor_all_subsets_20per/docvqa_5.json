@@ -1,0 +1,286 @@
+{
+  "total_pairs": 6,
+  "successful_pairs": 6,
+  "image_path": "docvqa/train/documents/jrcw0228_13.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the document title? Answer the question using a single word or phrase.",
+      "reasoning_text": "SAMPLE MENUS\n\n<final>SAMPLE MENUS</final>",
+      "raw_generation": [
+        "1. The document header clearly displays the title at the top center of the page, above the menu listings.  \n2. The title is written in bold, uppercase letters, making it visually distinct from the rest of the text.  \n3. It is positioned directly above the first menu section, indicating its role as the main heading for the entire document.  \n4. The title reads “SAMPLE MENUS,” which accurately describes the content that follows, including two detailed meal plans.  \n5. No other text on the page competes with this title for prominence, confirming its function as the primary document identifier.  \n\n<final>SAMPLE MENUS</final>",
+        "SAMPLE MENUS\n\n<final>SAMPLE MENUS</final>"
+      ],
+      "chunks": [
+        "SAMPLE MENUS\n\n<final>SAMPLE MENUS</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          53
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the document title?",
+      "reasoning_text": "1. The document’s header clearly displays the title “SAMPLE MENUS” in bold, uppercase letters, positioned above the first menu listing.\n2. The title is centered and aligned with the top of the document, indicating its importance as the main heading.\n3. A small icon of a fork and knife inside a circle precedes the title, reinforcing its connection to food and dining.\n4. The title is followed by two distinct menu sections, labeled “Menu #1” and “Menu #2,” which are organized under this overarching heading.\n5. The title’s placement and formatting suggest it serves as the document’s primary identifier for readers seeking sample meal plans.\n\n<final>Sample Menus</final>",
+      "raw_generation": [
+        "1. The document title is prominently displayed at the top center of the page, clearly labeled as \"SAMPLE MENUS\" in bold, uppercase letters.  \n2. This title is positioned directly above the first menu section, indicating it serves as the overarching heading for the entire document.  \n3. The title is visually distinct due to its bold formatting and placement, making it immediately noticeable to the reader.  \n4. No other titles or subtitles appear above this heading, confirming its role as the primary document title.  \n5. The title is consistent with the content, as both menus listed below are sample meal plans, aligning with the descriptive nature of the title.  \n\n<final>SAMPLE MENUS</final>",
+        "1. The document’s header clearly displays the title “SAMPLE MENUS” in bold, uppercase letters, positioned above the first menu listing.\n2. The title is centered and aligned with the top of the document, indicating its importance as the main heading.\n3. A small icon of a fork and knife inside a circle precedes the title, reinforcing its connection to food and dining.\n4. The title is followed by two distinct menu sections, labeled “Menu #1” and “Menu #2,” which are organized under this overarching heading.\n5. The title’s placement and formatting suggest it serves as the document’s primary identifier for readers seeking sample meal plans.\n\n<final>Sample Menus</final>"
+      ],
+      "chunks": [
+        "1. The document’s header clearly displays the title “SAMPLE MENUS” in bold, uppercase letters, positioned above the first menu listing.",
+        "2. The title is centered and aligned with the top of the document, indicating its importance as the main heading.",
+        "3. A small icon of a fork and knife inside a circle precedes the title, reinforcing its connection to food and dining.",
+        "4. The title is followed by two distinct menu sections, labeled “Menu #1” and “Menu #2,” which are organized under this overarching heading.",
+        "5. The title’s placement and formatting suggest it serves as the document’s primary identifier for readers seeking sample meal plans.",
+        "<final>Sample Menus</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          48
+        ],
+        [
+          48,
+          71
+        ],
+        [
+          71,
+          97
+        ],
+        [
+          97,
+          129
+        ],
+        [
+          129,
+          153
+        ],
+        [
+          153,
+          162
+        ]
+      ],
+      "anchor_vector": [
+        13.021682106451845,
+        10.653479029989649,
+        10.41176124855324,
+        8.7276611328125,
+        8.873914930555555,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many calories does 1 large apple contain? Answer the question using a single word or phrase.",
+      "reasoning_text": "96 calories\n\n<final>96</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The image displays two sample menus with calorie counts for various food items.\n2. Menu #2 includes an entry for \"Apple, 1 large\" at the bottom of the list.\n3. The calorie count for this item is listed directly to its right.\n4. The value shown is \"96 calories.\"\n5. This is the only entry for an apple in the document, and it clearly states the calorie count for one large apple.\n</reasoning>\n<final>96 calories</final>",
+        "96 calories\n\n<final>96</final>"
+      ],
+      "chunks": [
+        "96 calories\n\n<final>96</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          60
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many calories does 1 large apple contain?",
+      "reasoning_text": "1. The image displays two sample menus, each listing food items with their calorie counts, and Menu #2 includes an entry for “Apple, 1 large.”  \n2. Within Menu #2, the line item “Apple, 1 large” is directly followed by the calorie value “96 calories,” indicating its total caloric content.  \n3. No other food item in either menu is listed as “Apple, 1 large,” so this is the only reference to an apple in the document.  \n4. The formatting in Menu #2 clearly separates each food item from its calorie count, and “96 calories” is aligned with the apple entry without ambiguity.  \n5. Since the document provides no additional context or alternate measurements, the value 96 calories is the definitive answer for one large apple.  \n\n<final>96 calories</final>",
+      "raw_generation": [
+        "1. The image displays two sample menus, each listing food items with their corresponding calorie counts.  \n2. Menu #2 includes an entry for \"Apple, 1 large\" near the bottom of the list.  \n3. The calorie value directly aligned with this item is clearly printed as \"96 calories.\"  \n4. No other apple entries appear in either menu, confirming this is the only listed value for a large apple.  \n5. The formatting and alignment of the text ensure that the 96 calories are explicitly associated with the apple.  \n\n<final>96 calories</final>",
+        "1. The image displays two sample menus, each listing food items with their calorie counts, and Menu #2 includes an entry for “Apple, 1 large.”  \n2. Within Menu #2, the line item “Apple, 1 large” is directly followed by the calorie value “96 calories,” indicating its total caloric content.  \n3. No other food item in either menu is listed as “Apple, 1 large,” so this is the only reference to an apple in the document.  \n4. The formatting in Menu #2 clearly separates each food item from its calorie count, and “96 calories” is aligned with the apple entry without ambiguity.  \n5. Since the document provides no additional context or alternate measurements, the value 96 calories is the definitive answer for one large apple.  \n\n<final>96 calories</final>"
+      ],
+      "chunks": [
+        "1. The image displays two sample menus, each listing food items with their calorie counts, and Menu #2 includes an entry for “Apple, 1 large.”  \n2.",
+        "Within Menu #2, the line item “Apple, 1 large” is directly followed by the calorie value “96 calories,” indicating its total caloric content.",
+        "3. No other food item in either menu is listed as “Apple, 1 large,” so this is the only reference to an apple in the document.",
+        "4. The formatting in Menu #2 clearly separates each food item from its calorie count, and “96 calories” is aligned with the apple entry without ambiguity.",
+        "5. Since the document provides no additional context or alternate measurements, the value 96 calories is the definitive answer for one large apple.",
+        "<final>96 calories</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          64
+        ],
+        [
+          64,
+          98
+        ],
+        [
+          99,
+          131
+        ],
+        [
+          132,
+          165
+        ],
+        [
+          166,
+          194
+        ],
+        [
+          195,
+          204
+        ]
+      ],
+      "anchor_vector": [
+        10.158461656401247,
+        11.962823953119365,
+        10.79073695943813,
+        11.065069289434524,
+        11.25,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the total calories of Menu #1? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories, as noted in the first item.\n2. The Basic Tossed Salad with Sprouts contributes 80 calories, as listed next in the menu.\n3. Steamed Rice, half a cup, adds 112 calories to the total.\n4. Green Beans, one cup, account for 31 calories in this menu.\n5. One Whole Wheat Roll contributes 83 calories, Pineapple, half a cup, adds 48 calories, and one medium Baked Potato brings in 145 calories.\n<final>883 calories</final>",
+      "raw_generation": [
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories as the first item listed.  \n2. The Basic Tossed Salad with Sprouts contributes 80 calories to the total.  \n3. Steamed Rice, half a cup, adds 112 calories to the menu’s total.  \n4. Green Beans, one cup, contribute 31 calories to the overall count.  \n5. The total calories for Menu #1 are explicitly summed at the bottom as 883 calories.  \n\n<final>883</final>",
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories, as noted in the first item.\n2. The Basic Tossed Salad with Sprouts contributes 80 calories, as listed next in the menu.\n3. Steamed Rice, half a cup, adds 112 calories to the total.\n4. Green Beans, one cup, account for 31 calories in this menu.\n5. One Whole Wheat Roll contributes 83 calories, Pineapple, half a cup, adds 48 calories, and one medium Baked Potato brings in 145 calories.\n<final>883 calories</final>"
+      ],
+      "chunks": [
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories, as noted in the first item.",
+        "2. The Basic Tossed Salad with Sprouts contributes 80 calories, as listed next in the menu.",
+        "3. Steamed Rice, half a cup, adds 112 calories to the total.",
+        "4. Green Beans, one cup, account for 31 calories in this menu.",
+        "5. One Whole Wheat Roll contributes 83 calories, Pineapple, half a cup, adds 48 calories, and one medium Baked Potato brings in 145 calories.",
+        "<final>883 calories</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          73
+        ],
+        [
+          73,
+          96
+        ],
+        [
+          96,
+          116
+        ],
+        [
+          116,
+          134
+        ],
+        [
+          134,
+          173
+        ],
+        [
+          173,
+          183
+        ]
+      ],
+      "anchor_vector": [
+        9.30901473879947,
+        10.29627466446314,
+        10.401674902065526,
+        8.46991436298077,
+        11.800390625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the total calories of Menu #1?",
+      "reasoning_text": "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories as the first item listed.  \n2. The Basic Tossed Salad with Sprouts adds 80 calories, specified with 2 cups and vegetables.  \n3. Steamed Rice, half a cup, contributes 112 calories as the third entry in the menu.  \n4. Green Beans, one cup, provide 31 calories, followed by a Whole Wheat Roll at 83 calories.  \n5. Pineapple, half a cup, adds 48 calories, and a Baked Potato, one medium, totals 145 calories, summing to 883 calories for Menu #1.  \n\n<final>883 calories</final>",
+      "raw_generation": [
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories as the first item listed.\n2. The Basic Tossed Salad with Sprouts contributes 80 calories to the total.\n3. Steamed Rice, half a cup, adds 112 calories to the menu's total.\n4. Green Beans, one cup, contribute 31 calories to the overall count.\n5. The total calories for Menu #1, combining all listed items, amount to 883 calories.\n\n<final>883 calories</final>",
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories as the first item listed.  \n2. The Basic Tossed Salad with Sprouts adds 80 calories, specified with 2 cups and vegetables.  \n3. Steamed Rice, half a cup, contributes 112 calories as the third entry in the menu.  \n4. Green Beans, one cup, provide 31 calories, followed by a Whole Wheat Roll at 83 calories.  \n5. Pineapple, half a cup, adds 48 calories, and a Baked Potato, one medium, totals 145 calories, summing to 883 calories for Menu #1.  \n\n<final>883 calories</final>"
+      ],
+      "chunks": [
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories as the first item listed.",
+        "2. The Basic Tossed Salad with Sprouts adds 80 calories, specified with 2 cups and vegetables.",
+        "3. Steamed Rice, half a cup, contributes 112 calories as the third entry in the menu.",
+        "4. Green Beans, one cup, provide 31 calories, followed by a Whole Wheat Roll at 83 calories.",
+        "5. Pineapple, half a cup, adds 48 calories, and a Baked Potato, one medium, totals 145 calories, summing to 883 calories for Menu #1.",
+        "<final>883 calories</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          51
+        ],
+        [
+          52,
+          76
+        ],
+        [
+          77,
+          101
+        ],
+        [
+          102,
+          128
+        ],
+        [
+          129,
+          173
+        ],
+        [
+          174,
+          184
+        ]
+      ],
+      "anchor_vector": [
+        11.006624270708134,
+        11.054034807965472,
+        11.832338446059149,
+        11.774272017045455,
+        10.154296875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 167,
+  "subset": "docvqa",
+  "subset_local_idx": 5
+}

@@ -1,0 +1,756 @@
+{
+  "total_pairs": 16,
+  "successful_pairs": 16,
+  "image_path": "docvqa/train/documents/ztvw0217_9.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nTo Whom is this Fax addressed to? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The fax cover sheet clearly lists the recipient's name under the \"To:\" field, which is a standard format for identifying the intended recipient in official communications.  \n2. The \"To:\" field explicitly states \"Kim Akoto,\" indicating that this document is directed specifically to her.  \n3. The sender, Stacey Wasta, is listed under the \"From:\" field, confirming that Kim Akoto is the intended recipient of this message.  \n4. The subject line, \"Poster sessions ad,\" and the body of the fax, which references \"Los Angeles\" and \"Hollywood,\" further imply the content is relevant to Kim’s responsibilities.  \n5. The fax number listed for the recipient, 301-941-0259, aligns with the recipient’s name and reinforces that Kim Akoto is the addressee.  \n\n<final>Kim Akoto</final>",
+      "raw_generation": [
+        "1. The fax cover sheet clearly displays a \"To:\" field at the top left section of the document.  \n2. Directly beneath this label, the recipient's name is explicitly typed as \"Kim Akoto.\"  \n3. The sender's name, \"Stacey Wasta,\" is listed in the \"From:\" field, confirming the recipient is distinct from the sender.  \n4. The subject line \"Re: Poster sessions ad\" indicates the content is related to an advertisement, further contextualizing the recipient's role.  \n5. The document’s layout and formatting follow standard fax conventions, ensuring the \"To:\" field is unambiguous and easily identifiable.  \n\n<final>Kim Akoto</final>",
+        "1. The fax cover sheet clearly lists the recipient's name under the \"To:\" field, which is a standard format for identifying the intended recipient in official communications.  \n2. The \"To:\" field explicitly states \"Kim Akoto,\" indicating that this document is directed specifically to her.  \n3. The sender, Stacey Wasta, is listed under the \"From:\" field, confirming that Kim Akoto is the intended recipient of this message.  \n4. The subject line, \"Poster sessions ad,\" and the body of the fax, which references \"Los Angeles\" and \"Hollywood,\" further imply the content is relevant to Kim’s responsibilities.  \n5. The fax number listed for the recipient, 301-941-0259, aligns with the recipient’s name and reinforces that Kim Akoto is the addressee.  \n\n<final>Kim Akoto</final>"
+      ],
+      "chunks": [
+        "1. The fax cover sheet clearly lists the recipient's name under the \"To:\" field, which is a standard format for identifying the intended recipient in official communications.",
+        "2. The \"To:\" field explicitly states \"Kim Akoto,\" indicating that this document is directed specifically to her.",
+        "3. The sender, Stacey Wasta, is listed under the \"From:\" field, confirming that Kim Akoto is the intended recipient of this message.",
+        "4. The subject line, \"Poster sessions ad,\" and the body of the fax, which references \"Los Angeles\" and \"Hollywood,\" further imply the content is relevant to Kim’s responsibilities.",
+        "5. The fax number listed for the recipient, 301-941-0259, aligns with the recipient’s name and reinforces that Kim Akoto is the addressee.",
+        "<final>Kim Akoto</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          79
+        ],
+        [
+          80,
+          104
+        ],
+        [
+          105,
+          137
+        ],
+        [
+          138,
+          178
+        ],
+        [
+          179,
+          222
+        ],
+        [
+          223,
+          232
+        ]
+      ],
+      "anchor_vector": [
+        11.530826693591528,
+        15.643624444217336,
+        14.62882870748883,
+        15.67241122617894,
+        18.178819444444443,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nTo Whom is this Fax addressed to?",
+      "reasoning_text": "1. The fax header clearly indicates the recipient with the \"To:\" field, specifying the name Kim Akoto as the intended addressee of this communication.  \n2. The document’s layout places \"To: Kim Akoto\" directly below the title and above the date, making it immediately identifiable as the primary recipient.  \n3. The sender, Stacey Wasta, is listed in the \"From:\" field, confirming that the message is directed to Kim Akoto and originates from Stacey Wasta.  \n4. The subject line, “Re: Poster sessions ad,” suggests the fax concerns a specific project, further supporting that Kim Akoto is the relevant recipient for this ad review.  \n5. The closing signature, “Stacey,” reinforces that the message is sent from Stacey Wasta to Kim Akoto, confirming the recipient's identity.  \n<final>Kim Akoto</final>",
+      "raw_generation": [
+        "1. The fax cover sheet clearly lists the recipient under the \"To:\" field, which is a standard format for identifying the intended recipient of a fax message.\n2. The name \"Kim Akoto\" is explicitly typed next to the \"To:\" label, indicating this is the person the fax is directed to.\n3. The sender, Stacey Wasta, is listed under the \"From:\" field, confirming the sender-receiver relationship and further validating the recipient's identity.\n4. The subject line \"Re: Poster sessions ad\" suggests the content is related to an advertisement, and Kim Akoto is likely involved in reviewing or approving it.\n5. The fax was sent on March 21, 2002, at 3:05 PM, and the message body thanks Kim for a quick review, directly addressing her by name.\n\n<final>Kim Akoto</final>",
+        "1. The fax header clearly indicates the recipient with the \"To:\" field, specifying the name Kim Akoto as the intended addressee of this communication.  \n2. The document’s layout places \"To: Kim Akoto\" directly below the title and above the date, making it immediately identifiable as the primary recipient.  \n3. The sender, Stacey Wasta, is listed in the \"From:\" field, confirming that the message is directed to Kim Akoto and originates from Stacey Wasta.  \n4. The subject line, “Re: Poster sessions ad,” suggests the fax concerns a specific project, further supporting that Kim Akoto is the relevant recipient for this ad review.  \n5. The closing signature, “Stacey,” reinforces that the message is sent from Stacey Wasta to Kim Akoto, confirming the recipient's identity.  \n<final>Kim Akoto</final>"
+      ],
+      "chunks": [
+        "1. The fax header clearly indicates the recipient with the \"To:\" field, specifying the name Kim Akoto as the intended addressee of this communication.",
+        "2. The document’s layout places \"To: Kim Akoto\" directly below the title and above the date, making it immediately identifiable as the primary recipient.",
+        "3. The sender, Stacey Wasta, is listed in the \"From:\" field, confirming that the message is directed to Kim Akoto and originates from Stacey Wasta.",
+        "4. The subject line, “Re: Poster sessions ad,” suggests the fax concerns a specific project, further supporting that Kim Akoto is the relevant recipient for this ad review.",
+        "5. The closing signature, “Stacey,” reinforces that the message is sent from Stacey Wasta to Kim Akoto, confirming the recipient's identity.",
+        "<final>Kim Akoto</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          58
+        ],
+        [
+          59,
+          91
+        ],
+        [
+          92,
+          129
+        ],
+        [
+          130,
+          166
+        ],
+        [
+          167,
+          199
+        ],
+        [
+          200,
+          209
+        ]
+      ],
+      "anchor_vector": [
+        6.555467705254081,
+        6.888102030252909,
+        6.446901109483508,
+        6.546479966905382,
+        4.895399305555555,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is this Fax from? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The fax header clearly lists the sender under the \"From:\" field.  \n2. The sender's name is explicitly written as \"Stacey Wasta\" in that field.  \n3. The document’s footer also repeats the phone and fax numbers associated with Stacey Wasta’s office.  \n4. The closing signature at the end of the message is also \"Stacey,\" confirming the sender’s identity.  \n5. All contextual details align to confirm that the fax is from Stacey Wasta.  \n\n<final>Stacey Wasta</final>",
+      "raw_generation": [
+        "1. The fax header clearly lists the sender's name under the \"From:\" field.  \n2. The name \"Stacey Wasta\" is explicitly typed in this designated sender field.  \n3. The document's closing signature also matches this name, confirming consistency.  \n4. The sender's contact details, including phone and fax numbers, are provided alongside her name.  \n5. The context of the message, addressed to Kim Akoto, further supports Stacey Wasta as the originator.  \n\n<final>Stacey Wasta</final>",
+        "1. The fax header clearly lists the sender under the \"From:\" field.  \n2. The sender's name is explicitly written as \"Stacey Wasta\" in that field.  \n3. The document’s footer also repeats the phone and fax numbers associated with Stacey Wasta’s office.  \n4. The closing signature at the end of the message is also \"Stacey,\" confirming the sender’s identity.  \n5. All contextual details align to confirm that the fax is from Stacey Wasta.  \n\n<final>Stacey Wasta</final>"
+      ],
+      "chunks": [
+        "1. The fax header clearly lists the sender under the \"From:\" field.",
+        "2. The sender's name is explicitly written as \"Stacey Wasta\" in that field.",
+        "3. The document’s footer also repeats the phone and fax numbers associated with Stacey Wasta’s office.",
+        "4. The closing signature at the end of the message is also \"Stacey,\" confirming the sender’s identity.",
+        "5. All contextual details align to confirm that the fax is from Stacey Wasta.",
+        "<final>Stacey Wasta</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          56
+        ],
+        [
+          57,
+          77
+        ],
+        [
+          78,
+          100
+        ],
+        [
+          101,
+          124
+        ],
+        [
+          125,
+          143
+        ],
+        [
+          144,
+          154
+        ]
+      ],
+      "anchor_vector": [
+        8.644594895970576,
+        12.343382255812198,
+        13.503913169283413,
+        10.883246527777779,
+        11.772265625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is this Fax from?",
+      "reasoning_text": "1. The sender's name is clearly listed under the \"From:\" field on the fax cover sheet, which identifies Stacey Wasta as the originator of this message.  \n2. The fax is addressed to Kim Akoto, and the sender’s contact information, including phone and fax numbers, appears directly next to the \"From:\" line.  \n3. The sender’s signature at the end of the message is \"Stacey,\" matching the name in the \"From:\" field, confirming the sender’s identity.  \n4. The company name \"DesignWrite INCORPORATED\" is prominently displayed at the top, indicating the sender’s organizational affiliation.  \n5. The physical address at the bottom, \"189 WALL STREET, PRINCETON, NEW JERSEY 08540,\" further corroborates that Stacey Wasta is affiliated with this firm and sent the fax from there.  \n\n<final>Stacey Wasta</final>",
+      "raw_generation": [
+        "1. The fax header clearly lists the sender under the \"From:\" field, which is a standard convention for identifying the originator of a fax message.  \n2. The name \"Stacey Wasta\" is explicitly typed in the \"From:\" line, indicating she is the sender of this communication.  \n3. The document's footer also includes the company address and phone/fax numbers, which match the contact details listed under \"From:\" for Stacey Wasta.  \n4. The closing signature at the end of the message is \"Stacey,\" confirming her identity as the sender of the fax.  \n5. The subject line \"Poster sessions ad\" and the content mentioning a location change further imply Stacey is involved in the project and is communicating about it.  \n\n<final>Stacey Wasta</final>",
+        "1. The sender's name is clearly listed under the \"From:\" field on the fax cover sheet, which identifies Stacey Wasta as the originator of this message.  \n2. The fax is addressed to Kim Akoto, and the sender’s contact information, including phone and fax numbers, appears directly next to the \"From:\" line.  \n3. The sender’s signature at the end of the message is \"Stacey,\" matching the name in the \"From:\" field, confirming the sender’s identity.  \n4. The company name \"DesignWrite INCORPORATED\" is prominently displayed at the top, indicating the sender’s organizational affiliation.  \n5. The physical address at the bottom, \"189 WALL STREET, PRINCETON, NEW JERSEY 08540,\" further corroborates that Stacey Wasta is affiliated with this firm and sent the fax from there.  \n\n<final>Stacey Wasta</final>"
+      ],
+      "chunks": [
+        "1. The sender's name is clearly listed under the \"From:\" field on the fax cover sheet, which identifies Stacey Wasta as the originator of this message.",
+        "2. The fax is addressed to Kim Akoto, and the sender’s contact information, including phone and fax numbers, appears directly next to the \"From:\" line.",
+        "3. The sender’s signature at the end of the message is \"Stacey,\" matching the name in the \"From:\" field, confirming the sender’s identity.",
+        "4. The company name \"DesignWrite INCORPORATED\" is prominently displayed at the top, indicating the sender’s organizational affiliation.",
+        "5. The physical address at the bottom, \"189 WALL STREET, PRINCETON, NEW JERSEY 08540,\" further corroborates that Stacey Wasta is affiliated with this firm and sent the fax from there.",
+        "<final>Stacey Wasta</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          55
+        ],
+        [
+          56,
+          90
+        ],
+        [
+          91,
+          124
+        ],
+        [
+          125,
+          152
+        ],
+        [
+          153,
+          206
+        ],
+        [
+          207,
+          217
+        ]
+      ],
+      "anchor_vector": [
+        7.133940671604742,
+        7.303209879231585,
+        7.689129992684312,
+        6.231443469929245,
+        5.651611328125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Date? Answer the question using a single word or phrase.",
+      "reasoning_text": "March 21, 2002",
+      "raw_generation": [
+        "1. The document is a fax cover sheet from DesignWrite Incorporated, clearly labeled as an \"Important Fax Message.\"\n2. The \"Date\" field is located in the upper left section of the form, directly under the \"To:\" line.\n3. The text in the \"Date\" field explicitly states \"March 21, 2002.\"\n4. This date is formatted consistently with standard U.S. date conventions, including month, day, and year.\n5. No other date information appears elsewhere in the document, confirming this as the sole date reference.\n\n<final>March 21, 2002</final>",
+        "March 21, 2002"
+      ],
+      "chunks": [
+        "March 21, 2002"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          48
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Date?",
+      "reasoning_text": "1. The document is a fax cover sheet from DesignWrite Incorporated, dated March 21, 2002, as clearly stated in the “Date” field.\n2. The sender, Stacey Wasta, sent this fax to Kim Akoto, confirming the date is March 21, 2002.\n3. The time of transmission is 3:05 PM, which aligns with the date provided, indicating the fax was sent on that day.\n4. The subject line references “Poster sessions ad,” and the message body confirms the ad’s content is being sent with a location change.\n5. The footer reiterates the company’s address and contact numbers, but the date remains March 21, 2002, consistent with the header.\n\n<final>March 21, 2002</final>",
+      "raw_generation": [
+        "1. The document is a fax cover sheet from DesignWrite Incorporated, clearly labeled as an \"Important Fax Message.\"\n2. The \"Date\" field is located in the upper left section, directly under the \"To:\" line.\n3. The date is explicitly written as \"March 21, 2002,\" indicating when the fax was sent.\n4. This date is consistent with the time stamp of 3:05 PM, suggesting the fax was sent on that specific day.\n5. The footer also includes the company's address and contact information, confirming the document's origin and context.\n\n<final>March 21, 2002</final>",
+        "1. The document is a fax cover sheet from DesignWrite Incorporated, dated March 21, 2002, as clearly stated in the “Date” field.\n2. The sender, Stacey Wasta, sent this fax to Kim Akoto, confirming the date is March 21, 2002.\n3. The time of transmission is 3:05 PM, which aligns with the date provided, indicating the fax was sent on that day.\n4. The subject line references “Poster sessions ad,” and the message body confirms the ad’s content is being sent with a location change.\n5. The footer reiterates the company’s address and contact numbers, but the date remains March 21, 2002, consistent with the header.\n\n<final>March 21, 2002</final>"
+      ],
+      "chunks": [
+        "1. The document is a fax cover sheet from DesignWrite Incorporated, dated March 21, 2002, as clearly stated in the “Date” field.",
+        "2. The sender, Stacey Wasta, sent this fax to Kim Akoto, confirming the date is March 21, 2002.",
+        "3. The time of transmission is 3:05 PM, which aligns with the date provided, indicating the fax was sent on that day.",
+        "4. The subject line references “Poster sessions ad,” and the message body confirms the ad’s content is being sent with a location change.",
+        "5. The footer reiterates the company’s address and contact numbers, but the date remains March 21, 2002, consistent with the header.",
+        "<final>March 21, 2002</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          54
+        ],
+        [
+          54,
+          87
+        ],
+        [
+          87,
+          118
+        ],
+        [
+          118,
+          146
+        ],
+        [
+          146,
+          181
+        ],
+        [
+          181,
+          197
+        ]
+      ],
+      "anchor_vector": [
+        9.076183691665358,
+        11.444837044570853,
+        11.751321847098216,
+        11.655252511160715,
+        11.710693359375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Time? Answer the question using a single word or phrase.",
+      "reasoning_text": "3:05 PM",
+      "raw_generation": [
+        "3:05 PM",
+        "3:05 PM"
+      ],
+      "chunks": [
+        "3:05 PM"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          43
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Time?",
+      "reasoning_text": "1. The fax cover sheet clearly lists the time as part of the transmission metadata, located to the right of the date field.  \n2. The time is explicitly written as “3:05 PM” next to the “Time:” label, indicating the exact hour and minute of transmission.  \n3. This timestamp is positioned directly under the fax number 301-941-0259, confirming its relevance to the delivery details.  \n4. The time is formatted in standard 12-hour clock notation, including the “PM” designation, showing it is in the afternoon.  \n5. The document’s header emphasizes urgency with “Please Deliver Immediately,” making the precise time of transmission critical for prompt handling.  \n\n<final>3:05 PM</final>",
+      "raw_generation": [
+        "1. The document is a fax cover sheet from DesignWrite Incorporated, clearly marked as an \"Important Fax Message.\"\n2. The header section contains recipient, sender, date, time, and contact information fields.\n3. The \"Time\" field is located on the right side of the header, directly below the \"Fax\" field.\n4. The time is explicitly written as \"3:05 PM\" in a clear, legible font.\n5. This time corresponds to when the fax was sent, as indicated by the date \"March 21, 2002,\" and is consistent with the sender's contact details.\n\n<final>3:05 PM</final>",
+        "1. The fax cover sheet clearly lists the time as part of the transmission metadata, located to the right of the date field.  \n2. The time is explicitly written as “3:05 PM” next to the “Time:” label, indicating the exact hour and minute of transmission.  \n3. This timestamp is positioned directly under the fax number 301-941-0259, confirming its relevance to the delivery details.  \n4. The time is formatted in standard 12-hour clock notation, including the “PM” designation, showing it is in the afternoon.  \n5. The document’s header emphasizes urgency with “Please Deliver Immediately,” making the precise time of transmission critical for prompt handling.  \n\n<final>3:05 PM</final>"
+      ],
+      "chunks": [
+        "1. The fax cover sheet clearly lists the time as part of the transmission metadata, located to the right of the date field.",
+        "2. The time is explicitly written as “3:05 PM” next to the “Time:” label, indicating the exact hour and minute of transmission.",
+        "3. This timestamp is positioned directly under the fax number 301-941-0259, confirming its relevance to the delivery details.",
+        "4. The time is formatted in standard 12-hour clock notation, including the “PM” designation, showing it is in the afternoon.",
+        "5. The document’s header emphasizes urgency with “Please Deliver Immediately,” making the precise time of transmission critical for prompt handling.",
+        "<final>3:05 PM</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          44
+        ],
+        [
+          45,
+          78
+        ],
+        [
+          79,
+          112
+        ],
+        [
+          113,
+          142
+        ],
+        [
+          143,
+          168
+        ],
+        [
+          169,
+          180
+        ]
+      ],
+      "anchor_vector": [
+        6.568439220464342,
+        7.085349473146062,
+        6.683799476105342,
+        7.351296164772727,
+        6.8537819602272725,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Phone? Answer the question using a single word or phrase.",
+      "reasoning_text": "609-924-1116",
+      "raw_generation": [
+        "609-924-1116",
+        "609-924-1116"
+      ],
+      "chunks": [
+        "609-924-1116"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          50
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Phone?",
+      "reasoning_text": "1. The fax cover sheet clearly lists contact information under the \"From\" section, specifying the sender's details.  \n2. The phone number is explicitly stated as \"609-924-1116\" next to the \"Phone:\" label in the header.  \n3. The same phone number is repeated in the footer, confirming consistency across the document.  \n4. The fax number \"609-497-2304\" is also listed, but the question specifically asks for the phone number, not the fax.  \n5. The document’s layout ensures that the phone number is easily identifiable and prominently displayed for quick reference.  \n\n<final>609-924-1116</final>",
+      "raw_generation": [
+        "1. The fax cover sheet clearly lists contact information for the sender, Stacey Wasta, in the upper right section.  \n2. Directly beneath the “From:” line, the phone number is explicitly stated as “609-924-1116.”  \n3. This number is also repeated in the footer of the document, confirming its accuracy.  \n4. The document’s layout prioritizes readability, placing the phone number next to the sender’s name for easy reference.  \n5. The phone number is formatted with hyphens for clarity, matching standard U.S. telephone number conventions.  \n\n<final>609-924-1116</final>",
+        "1. The fax cover sheet clearly lists contact information under the \"From\" section, specifying the sender's details.  \n2. The phone number is explicitly stated as \"609-924-1116\" next to the \"Phone:\" label in the header.  \n3. The same phone number is repeated in the footer, confirming consistency across the document.  \n4. The fax number \"609-497-2304\" is also listed, but the question specifically asks for the phone number, not the fax.  \n5. The document’s layout ensures that the phone number is easily identifiable and prominently displayed for quick reference.  \n\n<final>609-924-1116</final>"
+      ],
+      "chunks": [
+        "1. The fax cover sheet clearly lists contact information under the \"From\" section, specifying the sender's details.",
+        "2. The phone number is explicitly stated as \"609-924-1116\" next to the \"Phone:\" label in the header.",
+        "3. The same phone number is repeated in the footer, confirming consistency across the document.",
+        "4. The fax number \"609-497-2304\" is also listed, but the question specifically asks for the phone number, not the fax.",
+        "5. The document’s layout ensures that the phone number is easily identifiable and prominently displayed for quick reference.",
+        "<final>609-924-1116</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          41
+        ],
+        [
+          42,
+          76
+        ],
+        [
+          77,
+          95
+        ],
+        [
+          96,
+          133
+        ],
+        [
+          134,
+          155
+        ],
+        [
+          156,
+          174
+        ]
+      ],
+      "anchor_vector": [
+        8.45027180090082,
+        8.849604884425439,
+        10.792870873803492,
+        9.706926618303571,
+        14.11733669704861,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 10,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Re? Answer the question using a single word or phrase.",
+      "reasoning_text": "Poster sessions ad",
+      "raw_generation": [
+        "1. The document is a fax cover sheet from DesignWrite Incorporated, clearly labeled as an \"Important Fax Message.\"\n2. The \"Re:\" field is located directly below the \"Number of pages\" line, indicating the subject of the fax.\n3. The text in the \"Re:\" field explicitly states \"Poster sessions ad,\" which is the subject being referenced.\n4. This field is standard on fax cover sheets to inform the recipient of the document's purpose or topic.\n5. The content of the message body confirms the subject is related to an ad for poster sessions, aligning with the \"Re:\" line.\n\n<final>Poster sessions ad</final>",
+        "Poster sessions ad"
+      ],
+      "chunks": [
+        "Poster sessions ad"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          41
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 11,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Re?",
+      "reasoning_text": "1. The \"Re:\" line is located directly below the \"Number of pages\" field and above the body of the message, indicating the subject of the fax.  \n2. The text next to \"Re:\" reads \"Poster sessions ad,\" specifying the topic of this communication.  \n3. This subject line suggests the fax concerns an advertisement for poster sessions, likely for an event or conference.  \n4. The sender, Stacey Wasta, is informing the recipient, Kim Akoto, about a change in the ad content, specifically replacing \"Los Angeles\" with \"Hollywood.\"  \n5. The \"Re:\" line is crucial for quickly identifying the purpose of the fax without reading the entire message, which is essential in professional communication.  \n\n<final>Poster sessions ad</final>",
+      "raw_generation": [
+        "1. The \"Re:\" line is located directly below the \"Number of pages\" line on the fax cover sheet.  \n2. It is positioned just above the main body of the message, which begins with \"Kim,\".  \n3. The text following \"Re:\" is clearly printed as \"Poster sessions ad\".  \n4. This line indicates the subject or topic of the faxed document, which is an advertisement for poster sessions.  \n5. The content of the \"Re:\" line is explicitly stated as \"Poster sessions ad\" without any additional formatting or ambiguity.  \n\n<final>Poster sessions ad</final>",
+        "1. The \"Re:\" line is located directly below the \"Number of pages\" field and above the body of the message, indicating the subject of the fax.  \n2. The text next to \"Re:\" reads \"Poster sessions ad,\" specifying the topic of this communication.  \n3. This subject line suggests the fax concerns an advertisement for poster sessions, likely for an event or conference.  \n4. The sender, Stacey Wasta, is informing the recipient, Kim Akoto, about a change in the ad content, specifically replacing \"Los Angeles\" with \"Hollywood.\"  \n5. The \"Re:\" line is crucial for quickly identifying the purpose of the fax without reading the entire message, which is essential in professional communication.  \n\n<final>Poster sessions ad</final>"
+      ],
+      "chunks": [
+        "1. The \"Re:\" line is located directly below the \"Number of pages\" field and above the body of the message, indicating the subject of the fax.",
+        "2. The text next to \"Re:\" reads \"Poster sessions ad,\" specifying the topic of this communication.",
+        "3. This subject line suggests the fax concerns an advertisement for poster sessions, likely for an event or conference.",
+        "4. The sender, Stacey Wasta, is informing the recipient, Kim Akoto, about a change in the ad content, specifically replacing \"Los Angeles\" with \"Hollywood.\"  \n5.",
+        "The \"Re:\" line is crucial for quickly identifying the purpose of the fax without reading the entire message, which is essential in professional communication.",
+        "<final>Poster sessions ad</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          51
+        ],
+        [
+          52,
+          74
+        ],
+        [
+          75,
+          97
+        ],
+        [
+          98,
+          139
+        ],
+        [
+          139,
+          167
+        ],
+        [
+          168,
+          177
+        ]
+      ],
+      "anchor_vector": [
+        9.259584453288602,
+        10.273489302442297,
+        11.048095482582431,
+        11.390911768353174,
+        5.4739990234375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 12,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat are the Number of pages? Answer the question using a single word or phrase.",
+      "reasoning_text": "2",
+      "raw_generation": [
+        "2",
+        "2"
+      ],
+      "chunks": [
+        "2"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          43
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 13,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat are the Number of pages?",
+      "reasoning_text": "1. The fax cover sheet clearly states “Number of pages (including cover sheet):” followed by the numeral “2” in the designated field.\n2. The document’s layout places this information directly below the sender and recipient details, ensuring it is easily identifiable.\n3. The numeral “2” is centered under the label and matches the total page count indicated by the cover sheet’s header.\n4. The fax transmission header also lists “2” under the “Number of pages” field, confirming consistency across the document.\n5. The document’s footer reiterates the fax number and phone number, but the page count remains explicitly noted as “2” on the cover sheet.\n\n<final>2</final>",
+      "raw_generation": [
+        "1. The document is a fax cover sheet from DesignWrite Incorporated, clearly labeled as an \"Important Fax Message.\"\n2. The \"Number of pages (including cover sheet)\" field is explicitly stated in the header section of the fax.\n3. The value listed next to this field is the number \"2,\" indicating the total page count.\n4. This count includes the cover sheet itself, as specified in parentheses.\n5. The fax was sent on March 21, 2002, and is addressed to Kim Akoto regarding a poster sessions ad.\n\n<final>2</final>",
+        "1. The fax cover sheet clearly states “Number of pages (including cover sheet):” followed by the numeral “2” in the designated field.\n2. The document’s layout places this information directly below the sender and recipient details, ensuring it is easily identifiable.\n3. The numeral “2” is centered under the label and matches the total page count indicated by the cover sheet’s header.\n4. The fax transmission header also lists “2” under the “Number of pages” field, confirming consistency across the document.\n5. The document’s footer reiterates the fax number and phone number, but the page count remains explicitly noted as “2” on the cover sheet.\n\n<final>2</final>"
+      ],
+      "chunks": [
+        "1. The fax cover sheet clearly states “Number of pages (including cover sheet):” followed by the numeral “2” in the designated field.",
+        "2. The document’s layout places this information directly below the sender and recipient details, ensuring it is easily identifiable.",
+        "3. The numeral “2” is centered under the label and matches the total page count indicated by the cover sheet’s header.",
+        "4. The fax transmission header also lists “2” under the “Number of pages” field, confirming consistency across the document.",
+        "5. The document’s footer reiterates the fax number and phone number, but the page count remains explicitly noted as “2” on the cover sheet.",
+        "<final>2</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          52
+        ],
+        [
+          52,
+          75
+        ],
+        [
+          75,
+          101
+        ],
+        [
+          101,
+          127
+        ],
+        [
+          127,
+          159
+        ],
+        [
+          159,
+          166
+        ]
+      ],
+      "anchor_vector": [
+        11.890478463134183,
+        7.802235110775454,
+        9.920824435167697,
+        10.036481584821429,
+        10.572544642857142,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 14,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nLos Angeles will be changed to what? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The fax message is from Stacey Wasta to Kim Akoto regarding a poster sessions ad.\n2. The message explicitly states, “Please note that Los Angeles will be changed to Hollywood.”\n3. This instruction is directly addressed to Kim, indicating the location change needed in the ad.\n4. The document is dated March 21, 2002, and includes contact details for DesignWrite Incorporated.\n5. The sender, Stacey, thanks Kim for reviewing the ad quickly, emphasizing urgency and collaboration.\n\n<final>Hollywood</final>",
+      "raw_generation": [
+        "1. The fax message clearly states a specific instruction regarding a location change.  \n2. The instruction is directed at Kim Akoto and concerns the content of an ad being reviewed.  \n3. The message explicitly says “Los Angeles will be changed to Hollywood.”  \n4. This indicates a direct substitution of one city name for another in the advertisement.  \n5. The phrase “changed to Hollywood” is the exact answer required by the question.  \n\n<final>Hollywood</final>",
+        "1. The fax message is from Stacey Wasta to Kim Akoto regarding a poster sessions ad.\n2. The message explicitly states, “Please note that Los Angeles will be changed to Hollywood.”\n3. This instruction is directly addressed to Kim, indicating the location change needed in the ad.\n4. The document is dated March 21, 2002, and includes contact details for DesignWrite Incorporated.\n5. The sender, Stacey, thanks Kim for reviewing the ad quickly, emphasizing urgency and collaboration.\n\n<final>Hollywood</final>"
+      ],
+      "chunks": [
+        "1. The fax message is from Stacey Wasta to Kim Akoto regarding a poster sessions ad.",
+        "2. The message explicitly states, “Please note that Los Angeles will be changed to Hollywood.”\n3.",
+        "This instruction is directly addressed to Kim, indicating the location change needed in the ad.",
+        "4. The document is dated March 21, 2002, and includes contact details for DesignWrite Incorporated.",
+        "5. The sender, Stacey, thanks Kim for reviewing the ad quickly, emphasizing urgency and collaboration.",
+        "<final>Hollywood</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          65
+        ],
+        [
+          65,
+          86
+        ],
+        [
+          86,
+          103
+        ],
+        [
+          103,
+          129
+        ],
+        [
+          129,
+          150
+        ],
+        [
+          150,
+          157
+        ]
+      ],
+      "anchor_vector": [
+        7.116862294797727,
+        9.795825276850524,
+        9.177504244887055,
+        7.783063616071429,
+        8.047991071428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 15,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nLos Angeles will be changed to what?",
+      "reasoning_text": "1. The fax message clearly states that “Los Angeles will be changed to Hollywood,” indicating a specific textual edit required for the poster sessions ad.\n2. This instruction appears directly after the phrase “Here is the ad,” confirming it applies to the content being sent.\n3. The sender, Stacey Wasta, explicitly notes this change, suggesting it is a critical revision for the ad’s accuracy or branding.\n4. The recipient, Kim Akoto, is being asked to review this quickly, implying the modification must be applied before final publication or distribution.\n5. The change from “Los Angeles” to “Hollywood” aligns with the context of poster sessions, likely targeting a more recognizable or glamorous location for event promotion.\n\n<final>Hollywood</final>",
+      "raw_generation": [
+        "1. The fax message clearly states a specific instruction regarding a location change in the ad.  \n2. The instruction is explicitly written as “Los Angeles will be changed to Hollywood.”  \n3. This directive is included in the body of the message, addressed to Kim Akoto.  \n4. The sender, Stacey Wasta, is requesting this modification for the poster sessions ad.  \n5. The change is noted as a necessary update before the ad’s final version is approved.  \n\n<final>Hollywood</final>",
+        "1. The fax message clearly states that “Los Angeles will be changed to Hollywood,” indicating a specific textual edit required for the poster sessions ad.\n2. This instruction appears directly after the phrase “Here is the ad,” confirming it applies to the content being sent.\n3. The sender, Stacey Wasta, explicitly notes this change, suggesting it is a critical revision for the ad’s accuracy or branding.\n4. The recipient, Kim Akoto, is being asked to review this quickly, implying the modification must be applied before final publication or distribution.\n5. The change from “Los Angeles” to “Hollywood” aligns with the context of poster sessions, likely targeting a more recognizable or glamorous location for event promotion.\n\n<final>Hollywood</final>"
+      ],
+      "chunks": [
+        "1. The fax message clearly states that “Los Angeles will be changed to Hollywood,” indicating a specific textual edit required for the poster sessions ad.",
+        "2. This instruction appears directly after the phrase “Here is the ad,” confirming it applies to the content being sent.",
+        "3. The sender, Stacey Wasta, explicitly notes this change, suggesting it is a critical revision for the ad’s accuracy or branding.",
+        "4. The recipient, Kim Akoto, is being asked to review this quickly, implying the modification must be applied before final publication or distribution.",
+        "5. The change from “Los Angeles” to “Hollywood” aligns with the context of poster sessions, likely targeting a more recognizable or glamorous location for event promotion.",
+        "<final>Hollywood</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          53
+        ],
+        [
+          53,
+          77
+        ],
+        [
+          77,
+          106
+        ],
+        [
+          106,
+          135
+        ],
+        [
+          135,
+          170
+        ],
+        [
+          170,
+          177
+        ]
+      ],
+      "anchor_vector": [
+        7.709282803840826,
+        10.444255118534482,
+        10.293992456896552,
+        9.38423549107143,
+        9.264229910714286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 351,
+  "subset": "docvqa",
+  "subset_local_idx": 11
+}

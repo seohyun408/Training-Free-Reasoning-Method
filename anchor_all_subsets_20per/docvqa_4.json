@@ -1,0 +1,92 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "docvqa/train/documents/yqlg0023_2.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the billing amount of SALEM SLIDE BOX B1G1F? Answer the question using a single word or phrase.",
+      "reasoning_text": "4,712.40",
+      "raw_generation": [
+        "4,712.40",
+        "4,712.40"
+      ],
+      "chunks": [
+        "4,712.40"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          70
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the billing amount of SALEM SLIDE BOX B1G1F?",
+      "reasoning_text": "1. The invoice lists two items under the \"ITEM NAME\" column, with \"SALEM SLIDE BOX B1G1F\" being the first entry.\n2. The \"BILLING AMOUNT\" column directly corresponds to each item’s total value after all adjustments and discounts.\n3. For \"SALEM SLIDE BOX B1G1F,\" the quantity is 72,000 units, priced at $392.7000 per unit, yielding a subtotal of $4,712.40 before any deductions.\n4. The line item explicitly shows the billing amount for \"SALEM SLIDE BOX B1G1F\" as $4,712.40, without any further reductions applied to this specific item.\n5. The invoice’s calculation confirms that the billing amount for \"SALEM SLIDE BOX B1G1F\" is $4,712.40, as it appears in the corresponding column for that product.\n\n<final>4712.40</final>",
+      "raw_generation": [
+        "1. The invoice lists two items under the \"ITEM NAME\" column, with \"SALEM SLIDE BOX B1G1F\" being the first item listed.\n2. The \"BILLING AMOUNT\" column directly to the right of the item name shows the corresponding value for this specific product.\n3. The billing amount for \"SALEM SLIDE BOX B1G1F\" is clearly printed as 4,712.40.\n4. This amount is calculated based on a quantity of 72,000 units at a unit price of 392.7000, as shown in the adjacent columns.\n5. The invoice confirms this amount is part of the total gross billing before any discounts or allowances are applied.\n\n<final>4,712.40</final>",
+        "1. The invoice lists two items under the \"ITEM NAME\" column, with \"SALEM SLIDE BOX B1G1F\" being the first entry.\n2. The \"BILLING AMOUNT\" column directly corresponds to each item’s total value after all adjustments and discounts.\n3. For \"SALEM SLIDE BOX B1G1F,\" the quantity is 72,000 units, priced at $392.7000 per unit, yielding a subtotal of $4,712.40 before any deductions.\n4. The line item explicitly shows the billing amount for \"SALEM SLIDE BOX B1G1F\" as $4,712.40, without any further reductions applied to this specific item.\n5. The invoice’s calculation confirms that the billing amount for \"SALEM SLIDE BOX B1G1F\" is $4,712.40, as it appears in the corresponding column for that product.\n\n<final>4712.40</final>"
+      ],
+      "chunks": [
+        "1. The invoice lists two items under the \"ITEM NAME\" column, with \"SALEM SLIDE BOX B1G1F\" being the first entry.",
+        "2. The \"BILLING AMOUNT\" column directly corresponds to each item’s total value after all adjustments and discounts.",
+        "3. For \"SALEM SLIDE BOX B1G1F,\" the quantity is 72,000 units, priced at $392.7000 per unit, yielding a subtotal of $4,712.40 before any deductions.",
+        "4. The line item explicitly shows the billing amount for \"SALEM SLIDE BOX B1G1F\" as $4,712.40, without any further reductions applied to this specific item.",
+        "5. The invoice’s calculation confirms that the billing amount for \"SALEM SLIDE BOX B1G1F\" is $4,712.40, as it appears in the corresponding column for that product.",
+        "<final>4712.40</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          75
+        ],
+        [
+          75,
+          99
+        ],
+        [
+          99,
+          157
+        ],
+        [
+          157,
+          201
+        ],
+        [
+          201,
+          247
+        ],
+        [
+          247,
+          260
+        ]
+      ],
+      "anchor_vector": [
+        8.847118334169071,
+        9.185370682147761,
+        10.102426134780075,
+        10.140126920464047,
+        9.40594951923077,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 144,
+  "subset": "docvqa",
+  "subset_local_idx": 4
+}

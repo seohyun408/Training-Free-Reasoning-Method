@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/14970/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nThink about the magnetic force between the magnets in each pair. Which of the following statements is true?\nContext: The images below show two pairs of magnets. The magnets in different pairs do not affect each other. All the magnets shown are made of the same material.\nOptions: (A) The strength of the magnetic force is the same in both pairs. (B) The magnetic force is weaker in Pair 2. (C) The magnetic force is weaker in Pair 1.",
+      "reasoning_text": "1. Both pairs display identical magnets with matching north and south poles aligned directly toward each other, ensuring consistent magnetic polarity interaction across both setups.  \n2. The distance between the magnets in Pair 1 is clearly labeled as 13 mm, while Pair 2’s separation is explicitly marked at 31 mm, indicating a significantly larger gap in Pair 2.  \n3. Since magnetic force diminishes with increasing distance, the greater separation in Pair 2 will inherently reduce the force compared to Pair 1, as demonstrated by the scale bars.  \n4. All magnets are stated to be made of the same material, meaning their intrinsic magnetic strength is identical, so any difference in force must stem solely from distance variations between the pairs.  \n5. Given that Pair 2 has a larger separation and magnetic force weakens with distance, the force in Pair 2 must be weaker than in Pair 1, making option (B) the correct statement.\n\n<final>B</final>",
+      "raw_generation": [
+        "1. The image displays two pairs of identical magnets, each with labeled North (N) and South (S) poles facing each other, indicating an attractive force between them.  \n2. Pair 1 has the magnets positioned 13 mm apart, while Pair 2 has them positioned 31 mm apart, showing a significantly larger separation distance.  \n3. Magnetic force follows an inverse square law, meaning it decreases rapidly as distance increases, so the force at 31 mm will be much weaker than at 13 mm.  \n4. Since all magnets are made of the same material and no other external factors are mentioned, the only variable affecting force strength is the distance between the magnets.  \n5. Therefore, the magnetic force in Pair 2, with the greater separation, must be weaker than in Pair 1, making option (B) the correct statement.\n\n<final>(B) The magnetic force is weaker in Pair 2.</final>",
+        "1. Both pairs display identical magnets with matching north and south poles aligned directly toward each other, ensuring consistent magnetic polarity interaction across both setups.  \n2. The distance between the magnets in Pair 1 is clearly labeled as 13 mm, while Pair 2’s separation is explicitly marked at 31 mm, indicating a significantly larger gap in Pair 2.  \n3. Since magnetic force diminishes with increasing distance, the greater separation in Pair 2 will inherently reduce the force compared to Pair 1, as demonstrated by the scale bars.  \n4. All magnets are stated to be made of the same material, meaning their intrinsic magnetic strength is identical, so any difference in force must stem solely from distance variations between the pairs.  \n5. Given that Pair 2 has a larger separation and magnetic force weakens with distance, the force in Pair 2 must be weaker than in Pair 1, making option (B) the correct statement.\n\n<final>B</final>"
+      ],
+      "chunks": [
+        "1. Both pairs display identical magnets with matching north and south poles aligned directly toward each other, ensuring consistent magnetic polarity interaction across both setups.",
+        "2. The distance between the magnets in Pair 1 is clearly labeled as 13 mm, while Pair 2’s separation is explicitly marked at 31 mm, indicating a significantly larger gap in Pair 2.",
+        "3. Since magnetic force diminishes with increasing distance, the greater separation in Pair 2 will inherently reduce the force compared to Pair 1, as demonstrated by the scale bars.",
+        "4. All magnets are stated to be made of the same material, meaning their intrinsic magnetic strength is identical, so any difference in force must stem solely from distance variations between the pairs.",
+        "5. Given that Pair 2 has a larger separation and magnetic force weakens with distance, the force in Pair 2 must be weaker than in Pair 1, making option (B) the correct statement.",
+        "<final>B</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          202,
+          230
+        ],
+        [
+          231,
+          276
+        ],
+        [
+          277,
+          313
+        ],
+        [
+          314,
+          351
+        ],
+        [
+          352,
+          395
+        ],
+        [
+          395,
+          401
+        ]
+      ],
+      "anchor_vector": [
+        17.489422510437,
+        19.82233071056008,
+        11.907612981023014,
+        15.883522727272727,
+        NaN,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 20,
+  "subset": "sqa",
+  "subset_local_idx": 4
+}

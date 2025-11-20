@@ -1,0 +1,614 @@
+{
+  "total_pairs": 14,
+  "successful_pairs": 14,
+  "image_path": "docvqa/train/documents/qjwh0078_9.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of documentation is this? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>Activity Report</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The document is titled \"ACTIVITY REPORT\" at the top, indicating its primary purpose is to summarize operational data.\n2. It is specifically for \"R J Reynolds Tobacco Company,\" showing it is a business report for a client.\n3. It includes sections like \"Mail Received,\" \"Mail Checked,\" and \"Orders In Process,\" which are typical of promotional campaign tracking.\n4. The report contains numerical data such as \"Total Received,\" \"Total Qualified Mail,\" and \"Total Mailable Units,\" suggesting it measures campaign performance.\n5. The footer includes company contact information, confirming it is an official corporate document.\n</reasoning>\n<final>Activity Report</final>",
+        "<final>Activity Report</final>"
+      ],
+      "chunks": [
+        "<final>Activity Report</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          50
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of documentation is this?",
+      "reasoning_text": "1. This document is an Activity Report from Young America Corporation, specifically for R J Reynolds Tobacco Company, indicating it’s a promotional performance summary.  \n2. The report details a promotion named “Vantage November Product,” with effective dates from November 6, 1995, to February 29, 1996, showing its time-bound nature.  \n3. It includes sections on Mail Received, Mail Checked, and Orders In Process, providing quantitative metrics like circulation, qualified mail, and mailable units.  \n4. The report tracks specific items such as Ultra Lights Box, Filter Kings, and Travel Clock, revealing the promotion’s product scope and associated incentives.  \n5. The presence of job numbers, report numbers, and dates confirms it’s an internal business document used for tracking promotional campaign outcomes.  \n\n<final>Activity Report</final>",
+      "raw_generation": [
+        "1. This document is an activity report from Young America Corporation, specifically for R J Reynolds Tobacco Company, detailing promotional campaign performance metrics.  \n2. The report includes sections on mail received, mail checked, and orders in process, indicating it tracks promotional response and fulfillment.  \n3. It features specific data such as box numbers, media types, circulation figures, and item descriptions like Ultra Lights and Menthol products.  \n4. The report also includes numerical summaries for current period, current month, and offer totals, showing performance over time.  \n5. The document is formatted as a formal business report with headers, footers, and structured tables, confirming its official nature.  \n\n<final>Activity report</final>",
+        "1. This document is an Activity Report from Young America Corporation, specifically for R J Reynolds Tobacco Company, indicating it’s a promotional performance summary.  \n2. The report details a promotion named “Vantage November Product,” with effective dates from November 6, 1995, to February 29, 1996, showing its time-bound nature.  \n3. It includes sections on Mail Received, Mail Checked, and Orders In Process, providing quantitative metrics like circulation, qualified mail, and mailable units.  \n4. The report tracks specific items such as Ultra Lights Box, Filter Kings, and Travel Clock, revealing the promotion’s product scope and associated incentives.  \n5. The presence of job numbers, report numbers, and dates confirms it’s an internal business document used for tracking promotional campaign outcomes.  \n\n<final>Activity Report</final>"
+      ],
+      "chunks": [
+        "1. This document is an Activity Report from Young America Corporation, specifically for R J Reynolds Tobacco Company, indicating it’s a promotional performance summary.",
+        "2. The report details a promotion named “Vantage November Product,” with effective dates from November 6, 1995, to February 29, 1996, showing its time-bound nature.",
+        "3. It includes sections on Mail Received, Mail Checked, and Orders In Process, providing quantitative metrics like circulation, qualified mail, and mailable units.",
+        "4. The report tracks specific items such as Ultra Lights Box, Filter Kings, and Travel Clock, revealing the promotion’s product scope and associated incentives.",
+        "5. The presence of job numbers, report numbers, and dates confirms it’s an internal business document used for tracking promotional campaign outcomes.",
+        "<final>Activity Report</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          51
+        ],
+        [
+          52,
+          98
+        ],
+        [
+          99,
+          130
+        ],
+        [
+          131,
+          161
+        ],
+        [
+          162,
+          189
+        ],
+        [
+          190,
+          198
+        ]
+      ],
+      "anchor_vector": [
+        14.606153432370396,
+        16.13182234496341,
+        11.794014033564816,
+        13.094093605324074,
+        12.83349609375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich firm is mentioned at the top of the page? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The document header clearly displays the name \"young america corporation\" in bold, uppercase letters near the top center of the page.\n2. The logo \"YA\" is positioned to the left of the firm’s name, reinforcing its identity as the primary entity.\n3. The title \"ACTIVITY REPORT\" is directly under the firm’s name, indicating it is the issuing organization.\n4. The report is addressed to \"R J Reynolds Tobacco Company,\" but the topmost entity remains \"young america corporation.\"\n5. The page number \"Page 1\" and other identifiers are located to the right, confirming the firm's prominence at the top.\n\n<final>young america corporation</final>",
+      "raw_generation": [
+        "1. The document header clearly displays the name \"young america corporation\" beneath a stylized \"YA\" logo, indicating the primary entity responsible for the report.\n2. The title \"ACTIVITY REPORT\" and the recipient \"R J Reynolds Tobacco Company\" suggest this is a business communication from Young America Corporation.\n3. The report includes identifiers like \"YA Job #\", \"Report #\", and \"Pd Ending\", all prefixed with \"YA\", reinforcing that Young America Corporation is the originating firm.\n4. The footer contains the address \"FAXON ROAD • YOUNG AMERICA, MINNESOTA\", confirming the official location of the firm mentioned at the top.\n5. The consistent use of \"YA\" as an abbreviation throughout the document points to Young America Corporation as the sole firm referenced at the top.\n\n<final>young america corporation</final>",
+        "1. The document header clearly displays the name \"young america corporation\" in bold, uppercase letters near the top center of the page.\n2. The logo \"YA\" is positioned to the left of the firm’s name, reinforcing its identity as the primary entity.\n3. The title \"ACTIVITY REPORT\" is directly under the firm’s name, indicating it is the issuing organization.\n4. The report is addressed to \"R J Reynolds Tobacco Company,\" but the topmost entity remains \"young america corporation.\"\n5. The page number \"Page 1\" and other identifiers are located to the right, confirming the firm's prominence at the top.\n\n<final>young america corporation</final>"
+      ],
+      "chunks": [
+        "1. The document header clearly displays the name \"young america corporation\" in bold, uppercase letters near the top center of the page.",
+        "2. The logo \"YA\" is positioned to the left of the firm’s name, reinforcing its identity as the primary entity.",
+        "3. The title \"ACTIVITY REPORT\" is directly under the firm’s name, indicating it is the issuing organization.",
+        "4. The report is addressed to \"R J Reynolds Tobacco Company,\" but the topmost entity remains \"young america corporation.\"\n5.",
+        "The page number \"Page 1\" and other identifiers are located to the right, confirming the firm's prominence at the top.",
+        "<final>young america corporation</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          77
+        ],
+        [
+          77,
+          103
+        ],
+        [
+          103,
+          127
+        ],
+        [
+          127,
+          154
+        ],
+        [
+          154,
+          180
+        ],
+        [
+          180,
+          189
+        ]
+      ],
+      "anchor_vector": [
+        11.471637723656462,
+        15.896851020660835,
+        13.103480035649632,
+        15.131034655448719,
+        23.143229166666668,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich firm is mentioned at the top of the page?",
+      "reasoning_text": "1. The document’s header clearly displays “young america corporation” centered beneath the company logo, indicating it is the primary entity responsible for this report.\n2. The title “ACTIVITY REPORT” is directly under the firm’s name, suggesting this report was issued by Young America Corporation for R J Reynolds Tobacco Company.\n3. The report’s identification numbers, such as “YA Job #: 0658-0929,” further confirm that Young America Corporation is the originating organization.\n4. The address at the bottom, “FAXON ROAD • YOUNG AMERICA, MINNESOTA,” provides a physical location tied to the firm’s name.\n5. The report’s formatting, including its title and layout, consistently associates all content with Young America Corporation as the primary firm.\n\n<final>Young America Corporation is mentioned at the top of the page.</final>",
+      "raw_generation": [
+        "1. The top of the page prominently displays a logo and name, indicating the primary organization responsible for the document.\n2. The logo consists of stylized letters \"YA,\" which is a common abbreviation for the company name.\n3. Directly beneath the logo, the full name \"young america corporation\" is clearly printed in bold, uppercase letters.\n4. The document is an \"ACTIVITY REPORT\" prepared for \"R J Reynolds Tobacco Company,\" but this is a client or recipient, not the issuing firm.\n5. The address and contact information at the bottom also reference \"YOUNG AMERICA, MINNESOTA,\" confirming the issuing entity.\n\n<final>Young America Corporation</final>",
+        "1. The document’s header clearly displays “young america corporation” centered beneath the company logo, indicating it is the primary entity responsible for this report.\n2. The title “ACTIVITY REPORT” is directly under the firm’s name, suggesting this report was issued by Young America Corporation for R J Reynolds Tobacco Company.\n3. The report’s identification numbers, such as “YA Job #: 0658-0929,” further confirm that Young America Corporation is the originating organization.\n4. The address at the bottom, “FAXON ROAD • YOUNG AMERICA, MINNESOTA,” provides a physical location tied to the firm’s name.\n5. The report’s formatting, including its title and layout, consistently associates all content with Young America Corporation as the primary firm.\n\n<final>Young America Corporation is mentioned at the top of the page.</final>"
+      ],
+      "chunks": [
+        "1. The document’s header clearly displays “young america corporation” centered beneath the company logo, indicating it is the primary entity responsible for this report.",
+        "2. The title “ACTIVITY REPORT” is directly under the firm’s name, suggesting this report was issued by Young America Corporation for R J Reynolds Tobacco Company.",
+        "3. The report’s identification numbers, such as “YA Job #: 0658-0929,” further confirm that Young America Corporation is the originating organization.",
+        "4. The address at the bottom, “FAXON ROAD • YOUNG AMERICA, MINNESOTA,” provides a physical location tied to the firm’s name.",
+        "5. The report’s formatting, including its title and layout, consistently associates all content with Young America Corporation as the primary firm.",
+        "<final>Young America Corporation is mentioned at the top of the page.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          60
+        ],
+        [
+          60,
+          93
+        ],
+        [
+          93,
+          129
+        ],
+        [
+          129,
+          164
+        ],
+        [
+          164,
+          190
+        ],
+        [
+          190,
+          207
+        ]
+      ],
+      "anchor_vector": [
+        14.706810682679247,
+        14.173644313745129,
+        12.064975368152068,
+        14.374217866233032,
+        12.728056066176471,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the number written at the top of the page? Answer the question using a single word or phrase.",
+      "reasoning_text": "52283 7109\n\n<final>52283 7109</final>",
+      "raw_generation": [
+        "52283 7109",
+        "52283 7109\n\n<final>52283 7109</final>"
+      ],
+      "chunks": [
+        "52283 7109\n\n<final>52283 7109</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          52,
+          79
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the number written at the top of the page?",
+      "reasoning_text": "1. The number at the top right corner of the page is clearly printed as “52283 7109,” positioned above the company name and report title.  \n2. This number appears to be a sequential identifier or batch code, likely used for internal tracking or filing purposes within Young America Corporation.  \n3. The format of “52283 7109” suggests it might be composed of two distinct parts, possibly indicating a year or month (52283) and a sequential number (7109).  \n4. The number is aligned with the top margin and is not part of any heading or title, indicating it serves as a standalone reference number for this document.  \n5. The number “52283 7109” is printed in a standard font, consistent with the rest of the document’s typography, confirming it is part of the official report layout.  \n\n<final>52283 7109</final>",
+      "raw_generation": [
+        "1. The number at the top right corner of the page is clearly visible and appears as \"52283 7109\".\n2. This number is positioned above the \"Page 1\" indicator, suggesting it might be a document identifier or batch number.\n3. The format consists of two separate five-digit numbers separated by a space, which is common for internal tracking or reference codes.\n4. The number \"52283\" is on the left side of the space, and \"7109\" is on the right side, both aligned horizontally at the top.\n5. No other numbers are positioned at the very top of the page, making this the only relevant number to answer the question.\n\n<final>52283 7109</final>",
+        "1. The number at the top right corner of the page is clearly printed as “52283 7109,” positioned above the company name and report title.  \n2. This number appears to be a sequential identifier or batch code, likely used for internal tracking or filing purposes within Young America Corporation.  \n3. The format of “52283 7109” suggests it might be composed of two distinct parts, possibly indicating a year or month (52283) and a sequential number (7109).  \n4. The number is aligned with the top margin and is not part of any heading or title, indicating it serves as a standalone reference number for this document.  \n5. The number “52283 7109” is printed in a standard font, consistent with the rest of the document’s typography, confirming it is part of the official report layout.  \n\n<final>52283 7109</final>"
+      ],
+      "chunks": [
+        "1. The number at the top right corner of the page is clearly printed as “52283 7109,” positioned above the company name and report title.",
+        "2. This number appears to be a sequential identifier or batch code, likely used for internal tracking or filing purposes within Young America Corporation.",
+        "3. The format of “52283 7109” suggests it might be composed of two distinct parts, possibly indicating a year or month (52283) and a sequential number (7109).",
+        "4. The number is aligned with the top margin and is not part of any heading or title, indicating it serves as a standalone reference number for this document.",
+        "5. The number “52283 7109” is printed in a standard font, consistent with the rest of the document’s typography, confirming it is part of the official report layout.",
+        "<final>52283 7109</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          69
+        ],
+        [
+          70,
+          97
+        ],
+        [
+          98,
+          148
+        ],
+        [
+          149,
+          181
+        ],
+        [
+          182,
+          225
+        ],
+        [
+          226,
+          242
+        ]
+      ],
+      "anchor_vector": [
+        7.456740733328202,
+        8.850893565333166,
+        9.61246224336846,
+        8.63664210119913,
+        10.2227783203125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the YA Job #? Answer the question using a single word or phrase.",
+      "reasoning_text": "0658-0929",
+      "raw_generation": [
+        "1. The document is an activity report from Young America Corporation, specifically for R J Reynolds Tobacco Company.  \n2. In the upper right corner, there is a section labeled \"YA Job #\".  \n3. The value listed directly next to \"YA Job #\" is \"0658-0929\".  \n4. This number is clearly printed and unambiguous in the report's header.  \n5. No other job numbers or identifiers are present in the same section.  \n\n<final>0658-0929</final>",
+        "0658-0929"
+      ],
+      "chunks": [
+        "0658-0929"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          51
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the YA Job #?",
+      "reasoning_text": "1. The YA Job # is clearly labeled in the top-right section of the document, next to the “YA Job #” heading.\n2. This field is positioned directly beneath the “Report #” and “Pd Ending” labels, making it easily identifiable.\n3. The number listed beside “YA Job #” is “0658-0929,” which matches the format expected for such an identifier.\n4. The document’s layout ensures that this specific job number is distinct and not confused with other numerical entries, such as the “Report #” or “Pd Ending.”\n5. The YA Job # “0658-0929” is consistent with the report’s context, as it is part of the promotional activity for R J Reynolds Tobacco Company, indicating its relevance to this specific campaign.\n\n<final>0658-0929</final>",
+      "raw_generation": [
+        "1. The document is an activity report from Young America Corporation, detailing promotional metrics for R J Reynolds Tobacco Company.\n2. In the upper right corner, there is a section with specific job and report identifiers.\n3. The label \"YA Job #\" is clearly visible in this section, indicating the job number associated with this report.\n4. The value immediately following \"YA Job #\" is \"0658-0929,\" which is the requested job number.\n5. This number is distinct from other identifiers like Report # and Pd Ending, confirming its specific purpose as the YA Job #.\n\n<final>0658-0929</final>",
+        "1. The YA Job # is clearly labeled in the top-right section of the document, next to the “YA Job #” heading.\n2. This field is positioned directly beneath the “Report #” and “Pd Ending” labels, making it easily identifiable.\n3. The number listed beside “YA Job #” is “0658-0929,” which matches the format expected for such an identifier.\n4. The document’s layout ensures that this specific job number is distinct and not confused with other numerical entries, such as the “Report #” or “Pd Ending.”\n5. The YA Job # “0658-0929” is consistent with the report’s context, as it is part of the promotional activity for R J Reynolds Tobacco Company, indicating its relevance to this specific campaign.\n\n<final>0658-0929</final>"
+      ],
+      "chunks": [
+        "1. The YA Job # is clearly labeled in the top-right section of the document, next to the “YA Job #” heading.",
+        "2. This field is positioned directly beneath the “Report #” and “Pd Ending” labels, making it easily identifiable.",
+        "3. The number listed beside “YA Job #” is “0658-0929,” which matches the format expected for such an identifier.",
+        "4. The document’s layout ensures that this specific job number is distinct and not confused with other numerical entries, such as the “Report #” or “Pd Ending.”\n5.",
+        "The YA Job # “0658-0929” is consistent with the report’s context, as it is part of the promotional activity for R J Reynolds Tobacco Company, indicating its relevance to this specific campaign.",
+        "<final>0658-0929</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          50
+        ],
+        [
+          50,
+          76
+        ],
+        [
+          76,
+          109
+        ],
+        [
+          109,
+          146
+        ],
+        [
+          146,
+          192
+        ],
+        [
+          192,
+          207
+        ]
+      ],
+      "anchor_vector": [
+        10.987978239812481,
+        7.8057022371289735,
+        10.449867190560125,
+        11.377492357336955,
+        15.984895833333333,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the promotion? Answer the question using a single word or phrase.",
+      "reasoning_text": "Vantage November Product\n\n<final>Vantage November Product</final>",
+      "raw_generation": [
+        "1. The document is an activity report from Young America Corporation for R J Reynolds Tobacco Company.  \n2. The promotion section clearly states the name of the campaign as “Vantage November Product.”  \n3. The report includes effective dates, estimated volume, and a description of the promotion’s mechanics.  \n4. The promotion involves consumers sending order forms and UPCs to receive a carton, coupon, or clock.  \n5. The promotion’s name is explicitly listed under the “Promotion” heading in the top-left section of the report.  \n\n<final>Vantage November Product</final>",
+        "Vantage November Product\n\n<final>Vantage November Product</final>"
+      ],
+      "chunks": [
+        "Vantage November Product\n\n<final>Vantage November Product</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          52
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the promotion?",
+      "reasoning_text": "1. The promotion is labeled as “Vantage November Product” in the top-left section of the activity report, indicating a seasonal or timed marketing campaign.\n\n2. The promotion’s effective dates span from November 6, 1995, to February 29, 1996, as clearly stated under the promotion title, showing its duration.\n\n3. The promotion’s description specifies consumers must send an order form and UPCs to receive a carton, coupon, or clock, with a limit of one per person, highlighting its reward structure.\n\n4. The report indicates an estimated volume of 44,200 units for this promotion, suggesting the expected scale of participation and distribution.\n\n5. The promotion is associated with R J Reynolds Tobacco Company, as noted in the report header, indicating the brand behind the campaign.\n\n<final>The promotion is “Vantage November Product” for R J Reynolds Tobacco Company, running from 11/06/95 to 2/29/96, offering a carton, coupon, or clock with a limit of one per person.</final>",
+      "raw_generation": [
+        "1. The promotion is explicitly labeled as \"Vantage November Product\" in the top-left section of the document.  \n2. This title appears directly under the \"Promotion:\" heading, indicating the specific campaign name.  \n3. The report’s description further clarifies that consumers send order forms and UPCs to receive a carton, coupon, or clock.  \n4. The promotion’s effective dates are listed as 11/06/95 to 2/29/96, confirming its timeframe.  \n5. The total estimated volume for this promotion is 44,200 units, as stated in the report’s header.  \n\n<final>Vantage November Product</final>",
+        "1. The promotion is labeled as “Vantage November Product” in the top-left section of the activity report, indicating a seasonal or timed marketing campaign.\n\n2. The promotion’s effective dates span from November 6, 1995, to February 29, 1996, as clearly stated under the promotion title, showing its duration.\n\n3. The promotion’s description specifies consumers must send an order form and UPCs to receive a carton, coupon, or clock, with a limit of one per person, highlighting its reward structure.\n\n4. The report indicates an estimated volume of 44,200 units for this promotion, suggesting the expected scale of participation and distribution.\n\n5. The promotion is associated with R J Reynolds Tobacco Company, as noted in the report header, indicating the brand behind the campaign.\n\n<final>The promotion is “Vantage November Product” for R J Reynolds Tobacco Company, running from 11/06/95 to 2/29/96, offering a carton, coupon, or clock with a limit of one per person.</final>"
+      ],
+      "chunks": [
+        "1. The promotion is labeled as “Vantage November Product” in the top-left section of the activity report, indicating a seasonal or timed marketing campaign.",
+        "2. The promotion’s effective dates span from November 6, 1995, to February 29, 1996, as clearly stated under the promotion title, showing its duration.",
+        "3. The promotion’s description specifies consumers must send an order form and UPCs to receive a carton, coupon, or clock, with a limit of one per person, highlighting its reward structure.",
+        "4. The report indicates an estimated volume of 44,200 units for this promotion, suggesting the expected scale of participation and distribution.",
+        "5. The promotion is associated with R J Reynolds Tobacco Company, as noted in the report header, indicating the brand behind the campaign.",
+        "<final>The promotion is “Vantage November Product” for R J Reynolds Tobacco Company, running from 11/06/95 to 2/29/96, offering a carton, coupon, or clock with a limit of one per person.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          49
+        ],
+        [
+          49,
+          92
+        ],
+        [
+          92,
+          132
+        ],
+        [
+          132,
+          162
+        ],
+        [
+          162,
+          189
+        ],
+        [
+          189,
+          247
+        ]
+      ],
+      "anchor_vector": [
+        11.208314570819214,
+        13.552691471104724,
+        12.184046995147535,
+        11.587446931373723,
+        13.116042564655173,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 10,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat are the effective dates? Answer the question using a single word or phrase.",
+      "reasoning_text": "11/06/95 to 2/29/96",
+      "raw_generation": [
+        "11/06/95 to 2/29/96",
+        "11/06/95 to 2/29/96"
+      ],
+      "chunks": [
+        "11/06/95 to 2/29/96"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          57
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 11,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat are the effective dates?",
+      "reasoning_text": "1. The document clearly states the promotion's effective dates as \"11/06/95 to 2/29/96\" under the \"Promotion\" section, indicating the start and end of the campaign period.\n\n2. The report header identifies this as an \"ACTIVITY REPORT For R J Reynolds Tobacco Company,\" confirming the context of the dates as promotional activity for that client.\n\n3. The dates span from November 6, 1995, to February 29, 1996, which includes a leap day, suggesting the promotion was designed to cover an entire marketing cycle including an extra day in February.\n\n4. The \"Pd Ending\" field shows \"5/3/96,\" which is after the promotion’s end date, implying this report covers activity up to May 3, 1996, but the promotion itself concluded earlier.\n\n5. The \"Estimated Volume\" of 44,200 and \"Description\" mentioning consumer orders align with a campaign that ran from November 1995 to February 1996, as specified by the effective dates.\n\n<final>Effective dates are from 11/06/95 to 2/2",
+      "raw_generation": [
+        "1. The document is an activity report from Young America Corporation for R J Reynolds Tobacco Company, detailing a promotion.\n2. The promotion is labeled \"Vantage November Product\" and includes specific dates for its validity.\n3. The \"Effective Dates\" line clearly states the start and end dates for the promotion period.\n4. The start date is explicitly listed as \"11/06/95\" and the end date as \"2/29/96.\"\n5. These dates indicate the promotional campaign ran from November 6, 1995, to February 29, 1996.\n\n<final>11/06/95 to 2/29/96</final>",
+        "1. The document clearly states the promotion's effective dates as \"11/06/95 to 2/29/96\" under the \"Promotion\" section, indicating the start and end of the campaign period.\n\n2. The report header identifies this as an \"ACTIVITY REPORT For R J Reynolds Tobacco Company,\" confirming the context of the dates as promotional activity for that client.\n\n3. The dates span from November 6, 1995, to February 29, 1996, which includes a leap day, suggesting the promotion was designed to cover an entire marketing cycle including an extra day in February.\n\n4. The \"Pd Ending\" field shows \"5/3/96,\" which is after the promotion’s end date, implying this report covers activity up to May 3, 1996, but the promotion itself concluded earlier.\n\n5. The \"Estimated Volume\" of 44,200 and \"Description\" mentioning consumer orders align with a campaign that ran from November 1995 to February 1996, as specified by the effective dates.\n\n<final>Effective dates are from 11/06/95 to 2/2"
+      ],
+      "chunks": [
+        "1. The document clearly states the promotion's effective dates as \"11/06/95 to 2/29/96\" under the \"Promotion\" section, indicating the start and end of the campaign period.",
+        "2. The report header identifies this as an \"ACTIVITY REPORT For R J Reynolds Tobacco Company,\" confirming the context of the dates as promotional activity for that client.",
+        "3. The dates span from November 6, 1995, to February 29, 1996, which includes a leap day, suggesting the promotion was designed to cover an entire marketing cycle including an extra day in February.",
+        "4. The \"Pd Ending\" field shows \"5/3/96,\" which is after the promotion’s end date, implying this report covers activity up to May 3, 1996, but the promotion itself concluded earlier.",
+        "5. The \"Estimated Volume\" of 44,200 and \"Description\" mentioning consumer orders align with a campaign that ran from November 1995 to February 1996, as specified by the effective dates.",
+        "<final>Effective dates are from 11/06/95 to 2/2"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          69
+        ],
+        [
+          69,
+          102
+        ],
+        [
+          102,
+          154
+        ],
+        [
+          154,
+          205
+        ],
+        [
+          205,
+          255
+        ],
+        [
+          255,
+          276
+        ]
+      ],
+      "anchor_vector": [
+        10.923298960269204,
+        13.87868654710983,
+        9.67119463410364,
+        10.149943266369046,
+        11.36328125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 12,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the report #? Answer the question using a single word or phrase.",
+      "reasoning_text": "24\n\n<final>24</final>",
+      "raw_generation": [
+        "24",
+        "24\n\n<final>24</final>"
+      ],
+      "chunks": [
+        "24\n\n<final>24</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          51
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 13,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the report #?",
+      "reasoning_text": "1. The report number is clearly labeled in the top-right corner of the document, directly under the “YA Job #” field.  \n2. The text “Report #:” is followed by the numerical value “24,” indicating this is the specific report identifier.  \n3. The report is associated with the promotion for “Vantage November Product,” as noted in the header section.  \n4. The report’s ending period is listed as “5/3/96,” which is relevant for tracking the timeframe covered in this document.  \n5. The report is generated by “Young America Corporation” for “R J Reynolds Tobacco Company,” confirming its official business context.  \n\n<final>24</final>",
+      "raw_generation": [
+        "1. The report number is located in the upper right section of the document, near other identification details.  \n2. It is labeled clearly as \"Report #:\" followed by a numerical value.  \n3. The value immediately following this label is \"24\".  \n4. This number is positioned directly below the \"YA Job #:\" field and above the \"Pd Ending:\" field.  \n5. The report number is explicitly stated as 24 in the document's header section.  \n\n<final>24</final>",
+        "1. The report number is clearly labeled in the top-right corner of the document, directly under the “YA Job #” field.  \n2. The text “Report #:” is followed by the numerical value “24,” indicating this is the specific report identifier.  \n3. The report is associated with the promotion for “Vantage November Product,” as noted in the header section.  \n4. The report’s ending period is listed as “5/3/96,” which is relevant for tracking the timeframe covered in this document.  \n5. The report is generated by “Young America Corporation” for “R J Reynolds Tobacco Company,” confirming its official business context.  \n\n<final>24</final>"
+      ],
+      "chunks": [
+        "1. The report number is clearly labeled in the top-right corner of the document, directly under the “YA Job #” field.",
+        "2. The text “Report #:” is followed by the numerical value “24,” indicating this is the specific report identifier.",
+        "3. The report is associated with the promotion for “Vantage November Product,” as noted in the header section.",
+        "4. The report’s ending period is listed as “5/3/96,” which is relevant for tracking the timeframe covered in this document.",
+        "5. The report is generated by “Young America Corporation” for “R J Reynolds Tobacco Company,” confirming its official business context.",
+        "<final>24</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          47
+        ],
+        [
+          48,
+          74
+        ],
+        [
+          75,
+          98
+        ],
+        [
+          99,
+          129
+        ],
+        [
+          130,
+          156
+        ],
+        [
+          157,
+          165
+        ]
+      ],
+      "anchor_vector": [
+        15.086914759267,
+        15.308337633692167,
+        13.9423093616453,
+        14.0478515625,
+        17.6171875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 188,
+  "subset": "docvqa",
+  "subset_local_idx": 8
+}

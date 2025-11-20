@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/8801.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, AB is the diameter of semicircle O, C is a point on circle O, OD ⊥ BC at D. If AC:BC = 4:3 and AB = 10 cm, then the length of OD is ()\nA. 2 cm  \nB. 4 cm  \nC. 6 cm  \nD. 8 cm",
+      "reasoning_text": "1. Since AB is the diameter of semicircle O and AB = 10 cm, the radius OA and OB are each 5 cm, with O being the center located midway between A and B.  \n2. Point C lies on the semicircle, so angle ACB is a right angle by Thales’ theorem, making triangle ACB a right triangle with hypotenuse AB.  \n3. Given AC:BC = 4:3, let AC = 4k and BC = 3k; using the Pythagorean theorem, (4k)² + (3k)² = 10² → 16k² + 9k² = 100 → 25k² = 100 → k² = 4 → k = 2.  \n4. Thus, AC = 8 cm and BC = 6 cm. Since OD ⊥ BC and O is the center, OD is the perpendicular distance from O to chord BC, which can be calculated using the area of triangle OBC.  \n5. The area of triangle OBC is ½ × BC × OD = ½ × 6 × OD = 3 × OD. Also, triangle OBC",
+      "raw_generation": [
+        "1. Since AB is the diameter of the semicircle and C lies on the circle, angle ACB is a right angle by the inscribed angle theorem, making triangle ABC a right triangle with the right angle at C.\n\n2. Given AC:BC = 4:3 and AB = 10 cm, we can use the Pythagorean theorem to find the lengths of AC and BC. Let AC = 4x and BC = 3x, so (4x)² + (3x)² = 10² → 16x² + 9x² = 100 → 25x² = 100 → x² = 4 → x = 2. Thus, AC = 8 cm and BC = 6 cm.\n\n3. Since OD is perpendicular to BC and O is the center of the semicircle, OD is the distance from the center O to the chord BC. In a circle, the perpendicular from the center to a chord bisects the chord, so D is the midpoint of BC.\n\n4. Since BC = 6 cm, BD = DC = 3 cm. Triangle ODB is a right triangle with OD as one leg, BD = ",
+        "1. Since AB is the diameter of semicircle O and AB = 10 cm, the radius OA and OB are each 5 cm, with O being the center located midway between A and B.  \n2. Point C lies on the semicircle, so angle ACB is a right angle by Thales’ theorem, making triangle ACB a right triangle with hypotenuse AB.  \n3. Given AC:BC = 4:3, let AC = 4k and BC = 3k; using the Pythagorean theorem, (4k)² + (3k)² = 10² → 16k² + 9k² = 100 → 25k² = 100 → k² = 4 → k = 2.  \n4. Thus, AC = 8 cm and BC = 6 cm. Since OD ⊥ BC and O is the center, OD is the perpendicular distance from O to chord BC, which can be calculated using the area of triangle OBC.  \n5. The area of triangle OBC is ½ × BC × OD = ½ × 6 × OD = 3 × OD. Also, triangle OBC"
+      ],
+      "chunks": [
+        "1. Since AB is the diameter of semicircle O and AB = 10 cm, the radius OA and OB are each 5 cm, with O being the center located midway between A and B.",
+        "2. Point C lies on the semicircle, so angle ACB is a right angle by Thales’ theorem, making triangle ACB a right triangle with hypotenuse AB.",
+        "3. Given AC:BC = 4:3, let AC = 4k and BC = 3k; using the Pythagorean theorem, (4k)² + (3k)² = 10² → 16k² + 9k² = 100 → 25k² = 100 → k² = 4 → k = 2.",
+        "4. Thus, AC = 8 cm and BC = 6 cm.",
+        "Since OD ⊥ BC and O is the center, OD is the perpendicular distance from O to chord BC, which can be calculated using the area of triangle OBC.",
+        "5. The area of triangle OBC is ½ × BC × OD = ½ × 6 × OD = 3 × OD.",
+        "Also, triangle OBC"
+      ],
+      "chunk_token_ranges": [
+        [
+          162,
+          205
+        ],
+        [
+          206,
+          244
+        ],
+        [
+          245,
+          332
+        ],
+        [
+          333,
+          349
+        ],
+        [
+          349,
+          383
+        ],
+        [
+          384,
+          413
+        ],
+        [
+          413,
+          418
+        ]
+      ],
+      "anchor_vector": [
+        6.828835652213153,
+        6.105433997308346,
+        8.104802635249614,
+        7.360330887305084,
+        6.643803037446121,
+        NaN,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 80,
+  "subset": "geoqa+",
+  "subset_local_idx": 14
+}

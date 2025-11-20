@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/3711.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, triangle ABC is inscribed in circle O, AB is the diameter, and ∠A = 30°, then the degree measure of ∠ABC is ()\nA. 30°\nB. 45°\nC. 60°\nD. 75°",
+      "reasoning_text": "1. Since AB is the diameter of circle O, any triangle inscribed with AB as the hypotenuse must be a right triangle, meaning ∠ACB = 90° by the inscribed angle theorem.\n\n2. Triangle ABC is a right triangle with the right angle at C, and angle A is given as 30°, so the sum of angles in triangle ABC must equal 180°.\n\n3. The remaining angle, ∠ABC, can be calculated as 180° minus the sum of the other two angles: 180° - 90° - 30° = 60°.\n\n4. The triangle’s angles are therefore 30°, 60°, and 90°, confirming ∠ABC is the 60° angle opposite side AC.\n\n5. Therefore, the degree measure of ∠ABC is 60°, making option C the correct answer.\n\n<final>C. 60°</final>",
+      "raw_generation": [
+        "1. Since AB is the diameter of circle O, any angle subtended by AB at the circumference, such as ∠ACB, must be a right angle (90°) by the inscribed angle theorem.  \n2. Triangle ABC is a right triangle with ∠ACB = 90°, and ∠A is given as 30°, so the sum of angles in triangle ABC must be 180°.  \n3. The third angle, ∠ABC, can be found by subtracting the known angles from 180°: 180° - 90° - 30° = 60°.  \n4. This calculation confirms that ∠ABC is exactly 60°, matching the geometric properties of a right triangle with a 30° angle.  \n5. Therefore, the correct answer is option C, as it directly corresponds to the calculated value of ∠ABC.\n\n<final>C. 60°</final>",
+        "1. Since AB is the diameter of circle O, any triangle inscribed with AB as the hypotenuse must be a right triangle, meaning ∠ACB = 90° by the inscribed angle theorem.\n\n2. Triangle ABC is a right triangle with the right angle at C, and angle A is given as 30°, so the sum of angles in triangle ABC must equal 180°.\n\n3. The remaining angle, ∠ABC, can be calculated as 180° minus the sum of the other two angles: 180° - 90° - 30° = 60°.\n\n4. The triangle’s angles are therefore 30°, 60°, and 90°, confirming ∠ABC is the 60° angle opposite side AC.\n\n5. Therefore, the degree measure of ∠ABC is 60°, making option C the correct answer.\n\n<final>C. 60°</final>"
+      ],
+      "chunks": [
+        "1. Since AB is the diameter of circle O, any triangle inscribed with AB as the hypotenuse must be a right triangle, meaning ∠ACB = 90° by the inscribed angle theorem.",
+        "2. Triangle ABC is a right triangle with the right angle at C, and angle A is given as 30°, so the sum of angles in triangle ABC must equal 180°.",
+        "3. The remaining angle, ∠ABC, can be calculated as 180° minus the sum of the other two angles: 180° - 90° - 30° = 60°.",
+        "4. The triangle’s angles are therefore 30°, 60°, and 90°, confirming ∠ABC is the 60° angle opposite side AC.",
+        "5. Therefore, the degree measure of ∠ABC is 60°, making option C the correct answer.",
+        "<final>C. 60°</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          140,
+          185
+        ],
+        [
+          185,
+          227
+        ],
+        [
+          227,
+          276
+        ],
+        [
+          276,
+          315
+        ],
+        [
+          315,
+          339
+        ],
+        [
+          339,
+          350
+        ]
+      ],
+      "anchor_vector": [
+        0.0,
+        16.8524339467728,
+        19.48549004164239,
+        13.91916818329782,
+        10.507124467329545,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 126,
+  "subset": "geoqa+",
+  "subset_local_idx": 19
+}

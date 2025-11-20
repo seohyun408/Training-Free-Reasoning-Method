@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/8356/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich of these states is farthest south?\nContext: N/A\nOptions: (A) Missouri (B) Georgia (C) California (D) North Dakota",
+      "reasoning_text": "1. The map clearly labels Georgia, which is situated in the southeastern corner of the United States, extending closer to the Gulf of Mexico than any other listed state.  \n2. Missouri is located in the Midwest, positioned significantly farther north than Georgia, as evidenced by its distance from the southern border of the U.S.  \n3. California, while extending southward along the West Coast, remains farther north than Georgia, as its southernmost point is still north of Georgia’s.  \n4. North Dakota, located in the northernmost region of the U.S., is visibly the farthest north of all the labeled states, making it the least southern.  \n5. Comparing all labeled states, Georgia’s geographic position is the southernmost among the four, as it borders the Atlantic Ocean and extends closest to the equator in this group.  \n\n<final>Georgia</final>",
+      "raw_generation": [
+        "1. The map displays four labeled states: California, Georgia, Missouri, and North Dakota, each with distinct geographic positions relative to one another.  \n2. California is located on the western coast, extending from the northern border with Oregon to the southern border near Mexico.  \n3. Georgia is situated in the southeastern region of the United States, bordered by the Atlantic Ocean to the east and the state of Florida to the south.  \n4. Missouri lies in the central part of the country, positioned north of Arkansas and south of Iowa, with a more northern latitude than Georgia.  \n5. North Dakota is in the northern Great Plains, farthest north among the four, with its southern border near South Dakota and Minnesota.  \n\n<final>Georgia</final>",
+        "1. The map clearly labels Georgia, which is situated in the southeastern corner of the United States, extending closer to the Gulf of Mexico than any other listed state.  \n2. Missouri is located in the Midwest, positioned significantly farther north than Georgia, as evidenced by its distance from the southern border of the U.S.  \n3. California, while extending southward along the West Coast, remains farther north than Georgia, as its southernmost point is still north of Georgia’s.  \n4. North Dakota, located in the northernmost region of the U.S., is visibly the farthest north of all the labeled states, making it the least southern.  \n5. Comparing all labeled states, Georgia’s geographic position is the southernmost among the four, as it borders the Atlantic Ocean and extends closest to the equator in this group.  \n\n<final>Georgia</final>"
+      ],
+      "chunks": [
+        "1. The map clearly labels Georgia, which is situated in the southeastern corner of the United States, extending closer to the Gulf of Mexico than any other listed state.",
+        "2. Missouri is located in the Midwest, positioned significantly farther north than Georgia, as evidenced by its distance from the southern border of the U.S.",
+        "3. California, while extending southward along the West Coast, remains farther north than Georgia, as its southernmost point is still north of Georgia’s.",
+        "4. North Dakota, located in the northernmost region of the U.S., is visibly the farthest north of all the labeled states, making it the least southern.",
+        "5. Comparing all labeled states, Georgia’s geographic position is the southernmost among the four, as it borders the Atlantic Ocean and extends closest to the equator in this group.",
+        "<final>Georgia</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          76,
+          109
+        ],
+        [
+          110,
+          140
+        ],
+        [
+          141,
+          172
+        ],
+        [
+          173,
+          207
+        ],
+        [
+          208,
+          245
+        ],
+        [
+          246,
+          253
+        ]
+      ],
+      "anchor_vector": [
+        13.500885366106994,
+        13.933841126324932,
+        14.915113659484064,
+        16.099352980212355,
+        18.3828125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 67,
+  "subset": "sqa",
+  "subset_local_idx": 11
+}

@@ -1,0 +1,290 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/721600751.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover clearly lists the authors' names at the top: Hodgson, McGowan, and McKeever.  \n2. These names are also repeated in the middle section under the title, confirming their authorship.  \n3. The cover design includes their names in both the upper and lower sections, ensuring visibility and credibility.  \n4. The publisher, Elsevier, is shown at the bottom, indicating professional publication with verified contributors.  \n5. The book’s title, “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” further aligns with the authors’ expertise in equine medicine.  \n\n<final>Hodgson, McGowan, McKeever</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the names of the authors in the top right corner.  \n2. The names listed are Hodgson, McGowan, and McKeever, positioned above the title.  \n3. The same names appear again below the title, confirming their authorship.  \n4. The publisher, Elsevier, is visible at the bottom, but does not indicate authorship.  \n5. The edition number, 2nd Edition, is also present but unrelated to author identification.  \n\n<final>Hodgson, McGowan, McKeever</final>",
+        "1. The book cover clearly lists the authors' names at the top: Hodgson, McGowan, and McKeever.  \n2. These names are also repeated in the middle section under the title, confirming their authorship.  \n3. The cover design includes their names in both the upper and lower sections, ensuring visibility and credibility.  \n4. The publisher, Elsevier, is shown at the bottom, indicating professional publication with verified contributors.  \n5. The book’s title, “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” further aligns with the authors’ expertise in equine medicine.  \n\n<final>Hodgson, McGowan, McKeever</final>"
+      ],
+      "chunks": [
+        "1. The book cover clearly lists the authors' names at the top: Hodgson, McGowan, and McKeever.",
+        "2. These names are also repeated in the middle section under the title, confirming their authorship.",
+        "3. The cover design includes their names in both the upper and lower sections, ensuring visibility and credibility.",
+        "4. The publisher, Elsevier, is shown at the bottom, indicating professional publication with verified contributors.",
+        "5. The book’s title, “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” further aligns with the authors’ expertise in equine medicine.",
+        "<final>Hodgson, McGowan, McKeever</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          64
+        ],
+        [
+          65,
+          85
+        ],
+        [
+          86,
+          107
+        ],
+        [
+          108,
+          129
+        ],
+        [
+          130,
+          164
+        ],
+        [
+          165,
+          181
+        ]
+      ],
+      "anchor_vector": [
+        13.779525683320202,
+        11.152870910174371,
+        9.864079538179713,
+        10.987932990579043,
+        9.88720703125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The cover prominently displays the title \"The Athletic Horse\" in large, bold, brown text, centered beneath the authors' names.  \n2. The subtitle \"Principles and Practice of Equine Sports Medicine\" appears directly below the main title in smaller black font.  \n3. The book's edition is clearly marked as \"2ND EDITION\" in white text on a dark brown banner near the bottom.  \n4. The authors' names — Hodgson, McGowan, and McKeeever — are listed both at the top and bottom of the cover in white text against a brown background.  \n5. The cover art features a dynamic, impressionistic painting of multiple horses in motion, reinforcing the book’s focus on athletic equine performance and medicine.  \n\n<final>The Athletic Horse: Principles and Practice of Equine Sports Medicine, 2nd Edition</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the title \"The Athletic Horse\" in large, bold font, making it the most visible text on the front.\n2. Below the main title, the subtitle \"Principles and Practice of Equine Sports Medicine\" clarifies the book's subject matter and intended audience.\n3. The authors' names—Hodgson, McGowan, and McKeever—are listed both at the top and near the title, indicating their collaborative authorship.\n4. The text \"2ND EDITION\" is clearly printed in the bottom left corner, signifying this is not the first version of the book.\n5. The publisher's logo, \"ELSEVIER,\" appears in the bottom left corner, identifying the company responsible for publishing this medical textbook.\n\n<final>The Athletic Horse: Principles and Practice of Equine Sports Medicine, 2nd Edition</final>",
+        "1. The cover prominently displays the title \"The Athletic Horse\" in large, bold, brown text, centered beneath the authors' names.  \n2. The subtitle \"Principles and Practice of Equine Sports Medicine\" appears directly below the main title in smaller black font.  \n3. The book's edition is clearly marked as \"2ND EDITION\" in white text on a dark brown banner near the bottom.  \n4. The authors' names — Hodgson, McGowan, and McKeeever — are listed both at the top and bottom of the cover in white text against a brown background.  \n5. The cover art features a dynamic, impressionistic painting of multiple horses in motion, reinforcing the book’s focus on athletic equine performance and medicine.  \n\n<final>The Athletic Horse: Principles and Practice of Equine Sports Medicine, 2nd Edition</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently displays the title \"The Athletic Horse\" in large, bold, brown text, centered beneath the authors' names.",
+        "2. The subtitle \"Principles and Practice of Equine Sports Medicine\" appears directly below the main title in smaller black font.",
+        "3. The book's edition is clearly marked as \"2ND EDITION\" in white text on a dark brown banner near the bottom.",
+        "4. The authors' names — Hodgson, McGowan, and McKeeever — are listed both at the top and bottom of the cover in white text against a brown background.",
+        "5. The cover art features a dynamic, impressionistic painting of multiple horses in motion, reinforcing the book’s focus on athletic equine performance and medicine.",
+        "<final>The Athletic Horse: Principles and Practice of Equine Sports Medicine, 2nd Edition</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          52
+        ],
+        [
+          53,
+          80
+        ],
+        [
+          81,
+          109
+        ],
+        [
+          110,
+          147
+        ],
+        [
+          148,
+          179
+        ],
+        [
+          180,
+          202
+        ]
+      ],
+      "anchor_vector": [
+        13.780268347027814,
+        10.570880863156571,
+        8.316364545223248,
+        9.135145797058286,
+        9.845148259943182,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The book’s title, “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” clearly indicates its focus on medical care for performance horses, not general equine care or breeding.\n\n2. The authors’ names—Hodgson, McGowan, and McKeever—are prominently displayed, suggesting their expertise in equine sports medicine, a specialized veterinary field.\n\n3. The cover art features dynamic, athletic horses in motion, reinforcing the book’s emphasis on performance and competitive equine activities rather than casual or therapeutic use.\n\n4. The “2nd Edition” label implies updated content, likely including advancements in sports medicine techniques, diagnostics, or rehabilitation methods for high-performance horses.\n\n5. The publisher, Elsevier, is known for academic and professional medical texts, confirming this book targets veterinarians, equine specialists, or students in equine sports medicine.\n\n<final>The book is a professional veterinary text on equine sports medicine, targeting veterinarians and students specializing in athletic horse care.</final>",
+      "raw_generation": [
+        "1. The book's title, \"The Athletic Horse,\" combined with its subtitle, \"Principles and Practice of Equine Sports Medicine,\" clearly indicates it is a specialized veterinary textbook focused on horse health in athletic contexts.\n\n2. The authors' names—Hodgson, McGowan, and McKeever—are prominently displayed, suggesting they are recognized experts in equine medicine, which reinforces the book's academic and professional nature.\n\n3. The cover art features dynamic, stylized illustrations of horses in motion, visually emphasizing the athletic and performance-oriented focus of the content within.\n\n4. The \"2ND EDITION\" label confirms this is an updated, authoritative reference, commonly used in medical and veterinary fields for ongoing education and clinical practice.\n\n5. The publisher, Elsevier, is a well-known global provider of medical and scientific textbooks, further validating the book's professional, educational, and clinical utility for veterinarians and equine specialists.\n\n<final>The Athletic Horse is a professional veterinary textbook focused on equine sports medicine for athletic horses.</final>",
+        "1. The book’s title, “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” clearly indicates its focus on medical care for performance horses, not general equine care or breeding.\n\n2. The authors’ names—Hodgson, McGowan, and McKeever—are prominently displayed, suggesting their expertise in equine sports medicine, a specialized veterinary field.\n\n3. The cover art features dynamic, athletic horses in motion, reinforcing the book’s emphasis on performance and competitive equine activities rather than casual or therapeutic use.\n\n4. The “2nd Edition” label implies updated content, likely including advancements in sports medicine techniques, diagnostics, or rehabilitation methods for high-performance horses.\n\n5. The publisher, Elsevier, is known for academic and professional medical texts, confirming this book targets veterinarians, equine specialists, or students in equine sports medicine.\n\n<final>The book is a professional veterinary text on equine sports medicine, targeting veterinarians and students specializing in athletic horse care.</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” clearly indicates its focus on medical care for performance horses, not general equine care or breeding.",
+        "2. The authors’ names—Hodgson, McGowan, and McKeever—are prominently displayed, suggesting their expertise in equine sports medicine, a specialized veterinary field.",
+        "3. The cover art features dynamic, athletic horses in motion, reinforcing the book’s emphasis on performance and competitive equine activities rather than casual or therapeutic use.",
+        "4. The “2nd Edition” label implies updated content, likely including advancements in sports medicine techniques, diagnostics, or rehabilitation methods for high-performance horses.",
+        "5. The publisher, Elsevier, is known for academic and professional medical texts, confirming this book targets veterinarians, equine specialists, or students in equine sports medicine.",
+        "<final>The book is a professional veterinary text on equine sports medicine, targeting veterinarians and students specializing in athletic horse care.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          62
+        ],
+        [
+          62,
+          99
+        ],
+        [
+          99,
+          131
+        ],
+        [
+          131,
+          162
+        ],
+        [
+          162,
+          198
+        ],
+        [
+          198,
+          226
+        ]
+      ],
+      "anchor_vector": [
+        9.0445851263366,
+        8.24749052689372,
+        9.723886120378372,
+        10.583311535063244,
+        12.643415178571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a pharmaceutical book?",
+      "reasoning_text": "1. The cover prominently displays the title “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” indicating its specialized focus on medical treatment and care for athletic horses, which is a veterinary medical discipline.\n\n2. The authors listed — Hodgson, McGowan, and McKeever — are known in the veterinary and equine medicine fields, suggesting the content is professional, evidence-based, and intended for practitioners in veterinary medicine.\n\n3. The publisher, Elsevier, is a major global publisher of medical and scientific textbooks, including veterinary and pharmaceutical titles, confirming its academic and professional nature.\n\n4. The book’s subtitle, “Principles and Practice of Equine Sports Medicine,” explicitly references clinical application, diagnostic protocols, and therapeutic interventions — core components of pharmaceutical and veterinary pharmacology and therapeutics.\n\n5. The cover art, featuring multiple athletic horses in motion, reinforces the book’s focus on performance and injury management, which aligns with pharmaceutical and medical treatments for equine athletes.\n\n<final>Yes, this is a pharmaceutical book focused on equine sports medicine, intended for veterinary professionals managing athletic horses.",
+      "raw_generation": [
+        "1. The book's title, \"The Athletic Horse: Principles and Practice of Equine Sports Medicine,\" explicitly indicates its focus on medical care for performance horses, a specialized veterinary field.  \n2. The authors' names—Hodgson, McGowan, and McKeever—are well-known figures in equine veterinary medicine, reinforcing its professional and clinical nature.  \n3. The publisher, Elsevier, is a major academic and medical publishing house that typically releases pharmaceutical and medical textbooks, not general consumer books.  \n4. The cover art, featuring dynamic horses in motion, suggests the book addresses athletic performance and injury prevention, common themes in veterinary sports medicine.  \n5. The inclusion of \"2nd Edition\" implies it is an established, updated reference for veterinary professionals, further supporting its classification as a pharmaceutical or veterinary medical text.  \n\n<final>Yes, this is a pharmaceutical book focused on equine sports medicine.</final>",
+        "1. The cover prominently displays the title “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” indicating its specialized focus on medical treatment and care for athletic horses, which is a veterinary medical discipline.\n\n2. The authors listed — Hodgson, McGowan, and McKeever — are known in the veterinary and equine medicine fields, suggesting the content is professional, evidence-based, and intended for practitioners in veterinary medicine.\n\n3. The publisher, Elsevier, is a major global publisher of medical and scientific textbooks, including veterinary and pharmaceutical titles, confirming its academic and professional nature.\n\n4. The book’s subtitle, “Principles and Practice of Equine Sports Medicine,” explicitly references clinical application, diagnostic protocols, and therapeutic interventions — core components of pharmaceutical and veterinary pharmacology and therapeutics.\n\n5. The cover art, featuring multiple athletic horses in motion, reinforces the book’s focus on performance and injury management, which aligns with pharmaceutical and medical treatments for equine athletes.\n\n<final>Yes, this is a pharmaceutical book focused on equine sports medicine, intended for veterinary professionals managing athletic horses."
+      ],
+      "chunks": [
+        "1. The cover prominently displays the title “The Athletic Horse: Principles and Practice of Equine Sports Medicine,” indicating its specialized focus on medical treatment and care for athletic horses, which is a veterinary medical discipline.",
+        "2. The authors listed — Hodgson, McGowan, and McKeever — are known in the veterinary and equine medicine fields, suggesting the content is professional, evidence-based, and intended for practitioners in veterinary medicine.",
+        "3. The publisher, Elsevier, is a major global publisher of medical and scientific textbooks, including veterinary and pharmaceutical titles, confirming its academic and professional nature.",
+        "4. The book’s subtitle, “Principles and Practice of Equine Sports Medicine,” explicitly references clinical application, diagnostic protocols, and therapeutic interventions — core components of pharmaceutical and veterinary pharmacology and therapeutics.",
+        "5. The cover art, featuring multiple athletic horses in motion, reinforces the book’s focus on performance and injury management, which aligns with pharmaceutical and medical treatments for equine athletes.",
+        "<final>Yes, this is a pharmaceutical book focused on equine sports medicine, intended for veterinary professionals managing athletic horses."
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          62
+        ],
+        [
+          62,
+          107
+        ],
+        [
+          107,
+          139
+        ],
+        [
+          139,
+          182
+        ],
+        [
+          182,
+          219
+        ],
+        [
+          219,
+          244
+        ]
+      ],
+      "anchor_vector": [
+        11.393012874858758,
+        12.311590566758012,
+        11.918666661756232,
+        12.293051361908784,
+        12.43484375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a crafts or hobbies related book?",
+      "reasoning_text": "1. The book’s title, “The Athletic Horse,” and subtitle, “Principles and Practice of Equine Sports Medicine,” clearly indicate a focus on veterinary care for performance horses, not crafts or hobbies.\n\n2. The authors’ names—Hodgson, McGowan, and McKeever—are listed prominently, suggesting expertise in equine medicine, not crafting or recreational activities.\n\n3. The cover art depicts dynamic, athletic horses in motion, emphasizing performance and physical conditioning, aligning with sports medicine rather than craft projects or leisure pursuits.\n\n4. The publisher, Elsevier, is a major academic and medical publisher, reinforcing the book’s professional and clinical nature, not its alignment with crafts or hobbies.\n\n5. The “2nd Edition” label implies an updated, authoritative reference for veterinarians or equine professionals, further distancing it from casual hobbyist content.\n\n<final> No, this is not a crafts or hobbies related book; it is a professional veterinary textbook focused on equine sports medicine.</final>",
+      "raw_generation": [
+        "1. The book's title, \"The Athletic Horse,\" and subtitle, \"Principles and Practice of Equine Sports Medicine,\" clearly indicate its focus on veterinary care for performance horses rather than crafts or hobbies.  \n2. The authors' names—Hodgson, McGowan, and McKeever—are associated with veterinary medicine and equine science, not crafting or recreational activities.  \n3. The cover art features dynamic, stylized depictions of horses in motion, emphasizing athleticism and performance, not crafting or leisure pursuits.  \n4. The publisher, Elsevier, is known for academic and professional medical texts, not craft or hobby publications.  \n5. The book's content is explicitly about equine sports medicine, which is a specialized veterinary field, not a craft or hobby activity.  \n\n<final>No, this is not a crafts or hobbies related book; it is a professional veterinary medicine text focused on equine sports medicine.</final>",
+        "1. The book’s title, “The Athletic Horse,” and subtitle, “Principles and Practice of Equine Sports Medicine,” clearly indicate a focus on veterinary care for performance horses, not crafts or hobbies.\n\n2. The authors’ names—Hodgson, McGowan, and McKeever—are listed prominently, suggesting expertise in equine medicine, not crafting or recreational activities.\n\n3. The cover art depicts dynamic, athletic horses in motion, emphasizing performance and physical conditioning, aligning with sports medicine rather than craft projects or leisure pursuits.\n\n4. The publisher, Elsevier, is a major academic and medical publisher, reinforcing the book’s professional and clinical nature, not its alignment with crafts or hobbies.\n\n5. The “2nd Edition” label implies an updated, authoritative reference for veterinarians or equine professionals, further distancing it from casual hobbyist content.\n\n<final> No, this is not a crafts or hobbies related book; it is a professional veterinary textbook focused on equine sports medicine.</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “The Athletic Horse,” and subtitle, “Principles and Practice of Equine Sports Medicine,” clearly indicate a focus on veterinary care for performance horses, not crafts or hobbies.",
+        "2. The authors’ names—Hodgson, McGowan, and McKeever—are listed prominently, suggesting expertise in equine medicine, not crafting or recreational activities.",
+        "3. The cover art depicts dynamic, athletic horses in motion, emphasizing performance and physical conditioning, aligning with sports medicine rather than craft projects or leisure pursuits.",
+        "4. The publisher, Elsevier, is a major academic and medical publisher, reinforcing the book’s professional and clinical nature, not its alignment with crafts or hobbies.",
+        "5. The “2nd Edition” label implies an updated, authoritative reference for veterinarians or equine professionals, further distancing it from casual hobbyist content.",
+        "<final> No, this is not a crafts or hobbies related book; it is a professional veterinary textbook focused on equine sports medicine.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          69
+        ],
+        [
+          69,
+          105
+        ],
+        [
+          105,
+          137
+        ],
+        [
+          137,
+          170
+        ],
+        [
+          170,
+          202
+        ],
+        [
+          202,
+          232
+        ]
+      ],
+      "anchor_vector": [
+        9.62587933472913,
+        10.130122224489847,
+        11.414939310093118,
+        12.452404530843099,
+        16.530924479166668,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 264,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 11
+}

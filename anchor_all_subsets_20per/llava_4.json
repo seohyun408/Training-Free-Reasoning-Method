@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "llava/llava_pretrain/images/00011/000118708.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat do you see happening in this image?",
+      "reasoning_text": "1. A red wooden chicken coop with white trim and a small window is positioned on a grassy lawn, adjacent to a larger wire-mesh run.  \n2. The coop’s roof is slanted, and its door is closed, while a smaller attached structure with a red roof sits to its left.  \n3. A wooden bench rests near the enclosure, suggesting human presence or use for tending to the animals.  \n4. The wire-mesh run is fenced with wood posts and extends into a natural wooded area, providing outdoor space for chickens.  \n5. Trees and a distant paved path frame the background, indicating a rural or suburban backyard setting with ample green space.  \n\n<final>Nothing major is happening; it’s a static scene of a backyard chicken coop and run with no visible activity or motion.",
+      "raw_generation": [
+        "1. A red wooden chicken coop with a slanted roof and white-trimmed windows sits on a grassy lawn, suggesting a rural or backyard setting for poultry.  \n2. Adjacent to the coop is a large, open-air wire mesh run, designed to allow chickens to roam freely while remaining secure from predators.  \n3. A small wooden bench rests near the run, likely intended for the owner to sit and supervise or interact with the chickens comfortably.  \n4. The surrounding area features mature trees and a paved path in the background, indicating the coop is situated in a well-maintained, natural outdoor environment.  \n5. The overall scene conveys a peaceful, functional setup for raising chickens, combining shelter, exercise space, and human accessibility in a serene backyard setting.  \n\n<final>Chickens are being raised in a backyard with a red coop and a wire mesh run, surrounded by trees and a grassy lawn, with a bench for the owner to sit and supervise.</final>",
+        "1. A red wooden chicken coop with white trim and a small window is positioned on a grassy lawn, adjacent to a larger wire-mesh run.  \n2. The coop’s roof is slanted, and its door is closed, while a smaller attached structure with a red roof sits to its left.  \n3. A wooden bench rests near the enclosure, suggesting human presence or use for tending to the animals.  \n4. The wire-mesh run is fenced with wood posts and extends into a natural wooded area, providing outdoor space for chickens.  \n5. Trees and a distant paved path frame the background, indicating a rural or suburban backyard setting with ample green space.  \n\n<final>Nothing major is happening; it’s a static scene of a backyard chicken coop and run with no visible activity or motion."
+      ],
+      "chunks": [
+        "1. A red wooden chicken coop with white trim and a small window is positioned on a grassy lawn, adjacent to a larger wire-mesh run.",
+        "2. The coop’s roof is slanted, and its door is closed, while a smaller attached structure with a red roof sits to its left.",
+        "3. A wooden bench rests near the enclosure, suggesting human presence or use for tending to the animals.",
+        "4. The wire-mesh run is fenced with wood posts and extends into a natural wooded area, providing outdoor space for chickens.",
+        "5. Trees and a distant paved path frame the background, indicating a rural or suburban backyard setting with ample green space.",
+        "<final>Nothing major is happening; it’s a static scene of a backyard chicken coop and run with no visible activity or motion."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          57
+        ],
+        [
+          58,
+          88
+        ],
+        [
+          89,
+          111
+        ],
+        [
+          112,
+          138
+        ],
+        [
+          139,
+          163
+        ],
+        [
+          164,
+          191
+        ]
+      ],
+      "anchor_vector": [
+        11.977331232497248,
+        12.364378404753161,
+        14.075860076027604,
+        12.274848090277779,
+        15.369972511574074,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 5024,
+  "subset": "llava",
+  "subset_local_idx": 4
+}

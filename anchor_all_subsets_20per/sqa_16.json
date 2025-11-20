@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/6044/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich statement describes the Kaeng Krachan National Park ecosystem?\nContext: Figure: Kaeng Krachan National Park.\nKaeng Krachan National Park is a tropical rain forest ecosystem in western Thailand. It is Thailand's largest national park and has many animals, including elephants.\nOptions: (A) It has soil that is rich in nutrients. (B) It has only a few types of organisms. (C) It has soil that is poor in nutrients.",
+      "reasoning_text": "1. The image shows a dense, multi-trunked tree with thick aerial roots and lush green foliage, characteristic of a tropical rainforest ecosystem, which aligns with Kaeng Krachan National Park’s known environment.  \n2. The complex root system and canopy structure suggest a mature, biodiverse forest that supports many species, including elephants, as mentioned in the context, indicating high ecological richness.  \n3. Tropical rainforests typically have nutrient-poor soils because nutrients are mostly stored in living biomass rather than the soil itself, a condition consistent with Kaeng Krachan’s ecosystem.  \n4. The image lacks visible signs of agricultural activity or human disturbance, reinforcing that this is a wild, undisturbed forest where natural ecological processes dominate, as found in the park.  \n5. Given the park’s tropical rainforest classification and the visible biodiversity, the most accurate description is that its soil is poor in nutrients, making option (C) the correct choice.  \n\n<final>(C) It has soil that is poor in nutrients.</final>",
+      "raw_generation": [
+        "1. The image shows a dense, lush tropical forest with thick vegetation and intertwined tree roots, indicating a mature rainforest ecosystem with high biodiversity.  \n2. The presence of large, gnarled trees and abundant greenery suggests a stable, nutrient-rich environment supporting complex ecological interactions.  \n3. Tropical rainforests like Kaeng Krachan typically have nutrient-poor soils because rapid decomposition and leaching prevent nutrients from accumulating in the soil.  \n4. The ecosystem supports diverse flora and fauna, including elephants, which implies a complex food web and high species richness, contradicting option (B).  \n5. The visual evidence of dense canopy and rich undergrowth aligns with the known characteristics of tropical rainforests, where nutrients are recycled within the ecosystem rather than stored in the soil.  \n\n<final>C</final>",
+        "1. The image shows a dense, multi-trunked tree with thick aerial roots and lush green foliage, characteristic of a tropical rainforest ecosystem, which aligns with Kaeng Krachan National Park’s known environment.  \n2. The complex root system and canopy structure suggest a mature, biodiverse forest that supports many species, including elephants, as mentioned in the context, indicating high ecological richness.  \n3. Tropical rainforests typically have nutrient-poor soils because nutrients are mostly stored in living biomass rather than the soil itself, a condition consistent with Kaeng Krachan’s ecosystem.  \n4. The image lacks visible signs of agricultural activity or human disturbance, reinforcing that this is a wild, undisturbed forest where natural ecological processes dominate, as found in the park.  \n5. Given the park’s tropical rainforest classification and the visible biodiversity, the most accurate description is that its soil is poor in nutrients, making option (C) the correct choice.  \n\n<final>(C) It has soil that is poor in nutrients.</final>"
+      ],
+      "chunks": [
+        "1. The image shows a dense, multi-trunked tree with thick aerial roots and lush green foliage, characteristic of a tropical rainforest ecosystem, which aligns with Kaeng Krachan National Park’s known environment.",
+        "2. The complex root system and canopy structure suggest a mature, biodiverse forest that supports many species, including elephants, as mentioned in the context, indicating high ecological richness.",
+        "3. Tropical rainforests typically have nutrient-poor soils because nutrients are mostly stored in living biomass rather than the soil itself, a condition consistent with Kaeng Krachan’s ecosystem.",
+        "4. The image lacks visible signs of agricultural activity or human disturbance, reinforcing that this is a wild, undisturbed forest where natural ecological processes dominate, as found in the park.",
+        "5. Given the park’s tropical rainforest classification and the visible biodiversity, the most accurate description is that its soil is poor in nutrients, making option (C) the correct choice.",
+        "<final>(C) It has soil that is poor in nutrients.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          198,
+          243
+        ],
+        [
+          244,
+          279
+        ],
+        [
+          280,
+          318
+        ],
+        [
+          319,
+          356
+        ],
+        [
+          357,
+          394
+        ],
+        [
+          395,
+          411
+        ]
+      ],
+      "anchor_vector": [
+        20.687067862990457,
+        14.384747257537143,
+        15.122743348817568,
+        14.858723958333334,
+        NaN,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 192,
+  "subset": "sqa",
+  "subset_local_idx": 16
+}

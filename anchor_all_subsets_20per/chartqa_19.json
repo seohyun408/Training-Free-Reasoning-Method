@@ -1,0 +1,98 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/two_col_1609.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many users have Tencent WeChat and Weibo attracted in China? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>1135.13 million</final>",
+      "raw_generation": [
+        "1135.13 million",
+        "<final>1135.13 million</final>"
+      ],
+      "chunks": [
+        "<final>1135.13 million</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          56,
+          70
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many social media users were there in China in 2019? Answer the question using a single word or phrase.",
+      "reasoning_text": "882.23\n\n1. The bar chart displays social media user numbers in China from 2017 to 2025, with each bar representing a specific year.\n2. The vertical axis indicates users in millions, while the horizontal axis lists the years, including projections marked with an asterisk.\n3. The bar corresponding to 2019 is clearly labeled with the value \"882.23\" at its top, indicating the user count for that year.\n4. All other bars show different values, but only the 2019 bar matches the question’s specified year.\n5. The chart’s source is Statista 2021, confirming the data’s origin and credibility for the year 2019.\n\n<final>882.23</final>",
+      "raw_generation": [
+        "882.23",
+        "882.23\n\n1. The bar chart displays social media user numbers in China from 2017 to 2025, with each bar representing a specific year.\n2. The vertical axis indicates users in millions, while the horizontal axis lists the years, including projections marked with an asterisk.\n3. The bar corresponding to 2019 is clearly labeled with the value \"882.23\" at its top, indicating the user count for that year.\n4. All other bars show different values, but only the 2019 bar matches the question’s specified year.\n5. The chart’s source is Statista 2021, confirming the data’s origin and credibility for the year 2019.\n\n<final>882.23</final>"
+      ],
+      "chunks": [
+        "882.23\n\n1.",
+        "The bar chart displays social media user numbers in China from 2017 to 2025, with each bar representing a specific year.",
+        "2. The vertical axis indicates users in millions, while the horizontal axis lists the years, including projections marked with an asterisk.",
+        "3. The bar corresponding to 2019 is clearly labeled with the value \"882.23\" at its top, indicating the user count for that year.",
+        "4. All other bars show different values, but only the 2019 bar matches the question’s specified year.",
+        "5. The chart’s source is Statista 2021, confirming the data’s origin and credibility for the year 2019.",
+        "<final>882.23</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          69
+        ],
+        [
+          69,
+          100
+        ],
+        [
+          100,
+          126
+        ],
+        [
+          126,
+          163
+        ],
+        [
+          163,
+          188
+        ],
+        [
+          188,
+          219
+        ],
+        [
+          219,
+          231
+        ]
+      ],
+      "anchor_vector": [
+        9.09022103059606,
+        8.820763478671365,
+        9.928828976405843,
+        9.17349338545167,
+        11.35791015625,
+        8.536783854166666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 121,
+  "subset": "chartqa",
+  "subset_local_idx": 19
+}

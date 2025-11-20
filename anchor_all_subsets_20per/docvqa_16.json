@@ -1,0 +1,494 @@
+{
+  "total_pairs": 12,
+  "successful_pairs": 11,
+  "image_path": "docvqa/train/documents/nnbx0223_16.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the committee strength on 20th august , 2007? Answer the question using a single word or phrase.",
+      "reasoning_text": "3",
+      "raw_generation": [
+        "3",
+        "3"
+      ],
+      "chunks": [
+        "3"
+      ],
+      "chunk_token_ranges": [
+        [
+          64,
+          65
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the committee strength on 20th august , 2007?",
+      "reasoning_text": "1. The table titled \"Details of Investor Services Committee Meetings during the financial year\" contains a row for the date 20th August, 2007.\n2. This row corresponds to serial number 11 in the table.\n3. The column labeled \"Committee Strength\" for that row explicitly states the value \"3\".\n4. The \"No. of Members present\" for that same row is \"2\", indicating two members attended despite the committee having three members.\n5. Therefore, the committee strength on 20th August, 2007, is 3.\n\n<final>3</final>",
+      "raw_generation": [
+        "1. The document contains a table detailing Investor Services Committee meetings during the financial year.\n2. This table includes columns for serial number, date, committee strength, and number of members present.\n3. The first entry in the table corresponds to the date 20th August, 2007.\n4. The value in the \"Committee Strength\" column for this entry is clearly stated as 3.\n5. This indicates that the committee had a strength of three members on that specific date.\n\n<final>3</final>",
+        "1. The table titled \"Details of Investor Services Committee Meetings during the financial year\" contains a row for the date 20th August, 2007.\n2. This row corresponds to serial number 11 in the table.\n3. The column labeled \"Committee Strength\" for that row explicitly states the value \"3\".\n4. The \"No. of Members present\" for that same row is \"2\", indicating two members attended despite the committee having three members.\n5. Therefore, the committee strength on 20th August, 2007, is 3.\n\n<final>3</final>"
+      ],
+      "chunks": [
+        "1. The table titled \"Details of Investor Services Committee Meetings during the financial year\" contains a row for the date 20th August, 2007.",
+        "2. This row corresponds to serial number 11 in the table.",
+        "3. The column labeled \"Committee Strength\" for that row explicitly states the value \"3\".",
+        "4. The \"No.",
+        "of Members present\" for that same row is \"2\", indicating two members attended despite the committee having three members.",
+        "5. Therefore, the committee strength on 20th August, 2007, is 3.",
+        "<final>3</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          79
+        ],
+        [
+          79,
+          94
+        ],
+        [
+          94,
+          114
+        ],
+        [
+          114,
+          120
+        ],
+        [
+          120,
+          143
+        ],
+        [
+          143,
+          167
+        ],
+        [
+          167,
+          174
+        ]
+      ],
+      "anchor_vector": [
+        12.857109934383628,
+        11.819086277173913,
+        12.447023758977096,
+        14.332186933876812,
+        14.22236560639881,
+        14.629464285714286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nhow many members were present for the investors service committee meetings on 18th january ,2008? Answer the question using a single word or phrase.",
+      "reasoning_text": "3",
+      "raw_generation": [
+        "3",
+        "3"
+      ],
+      "chunks": [
+        "3"
+      ],
+      "chunk_token_ranges": [
+        [
+          76,
+          77
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nhow many members were present for the investors service committee meetings on 18th january ,2008?",
+      "reasoning_text": "1. The table titled \"Details of Investor Services Committee Meetings during the financial year\" lists meeting attendance data.\n2. The row corresponding to the date \"18th January, 2008\" is identified as serial number 24 in the table.\n3. The column labeled \"No. of Members present\" for that specific row indicates the attendance figure.\n4. The value in that cell shows \"3\" members were present for the meeting on 18th January, 2008.\n5. The \"Committee Strength\" column confirms the committee always had 3 members, aligning with the attendance count for that meeting.\n\n<final>3 members were present for the Investor Services Committee meeting on 18th January, 2008.</final>",
+      "raw_generation": [
+        "1. The document contains a section titled \"Meetings and Attendance\" which details Investor Services Committee meetings during the financial year.\n2. A table lists the dates of these meetings, including the 18th January, 2008, as entry number 24.\n3. The table has columns for \"Date,\" \"Committee Strength,\" and \"No. of Members present.\"\n4. For the 18th January, 2008, the \"No. of Members present\" column shows the value \"3.\"\n5. This indicates that three members were present at the meeting on that date.\n\n<final>3</final>",
+        "1. The table titled \"Details of Investor Services Committee Meetings during the financial year\" lists meeting attendance data.\n2. The row corresponding to the date \"18th January, 2008\" is identified as serial number 24 in the table.\n3. The column labeled \"No. of Members present\" for that specific row indicates the attendance figure.\n4. The value in that cell shows \"3\" members were present for the meeting on 18th January, 2008.\n5. The \"Committee Strength\" column confirms the committee always had 3 members, aligning with the attendance count for that meeting.\n\n<final>3 members were present for the Investor Services Committee meeting on 18th January, 2008.</final>"
+      ],
+      "chunks": [
+        "1. The table titled \"Details of Investor Services Committee Meetings during the financial year\" lists meeting attendance data.",
+        "2. The row corresponding to the date \"18th January, 2008\" is identified as serial number 24 in the table.",
+        "3. The column labeled \"No.",
+        "of Members present\" for that specific row indicates the attendance figure.",
+        "4. The value in that cell shows \"3\" members were present for the meeting on 18th January, 2008.",
+        "5. The \"Committee Strength\" column confirms the committee always had 3 members, aligning with the attendance count for that meeting.",
+        "<final>3 members were present for the Investor Services Committee meeting on 18th January, 2008.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          56,
+          78
+        ],
+        [
+          78,
+          110
+        ],
+        [
+          110,
+          118
+        ],
+        [
+          118,
+          131
+        ],
+        [
+          131,
+          161
+        ],
+        [
+          161,
+          189
+        ],
+        [
+          189,
+          217
+        ]
+      ],
+      "anchor_vector": [
+        10.517827340709422,
+        9.382465516254578,
+        10.707402111235119,
+        9.942047991071428,
+        11.786063058035715,
+        11.879324776785714,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nhow many meetings did B. sen has attended? Answer the question using a single word or phrase.",
+      "reasoning_text": "21",
+      "raw_generation": [
+        "21",
+        "21"
+      ],
+      "chunks": [
+        "21"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          50
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nhow many meetings did B. sen has attended?",
+      "reasoning_text": "1. The document contains a section titled “Attendance at Investor Services Committee Meetings during the financial year,” which lists directors and their meeting attendance.  \n2. This attendance table includes three directors: B. Sen, P. B. Ramanujam, and A. Singh, with their respective meeting counts clearly stated.  \n3. The row corresponding to B. Sen shows the number of meetings attended as 21, indicating his consistent participation.  \n4. The table’s structure is straightforward, with each director’s name aligned to their attendance number, ensuring accurate data retrieval.  \n5. Since the question specifically asks for B. Sen’s attendance, the value directly associated with his name in the table is the answer.  \n\n<final>21</final>",
+      "raw_generation": [
+        "1. The document contains a section titled \"Attendance at Investor Services Committee Meetings during the financial year.\"  \n2. This section includes a table listing directors and the number of meetings each attended.  \n3. The table clearly shows the name \"B. Sen\" as one of the directors.  \n4. The corresponding value in the \"No. of meetings attended\" column for B. Sen is explicitly stated as 21.  \n5. No other entries or conflicting data regarding B. Sen's attendance are present in the document.  \n\n<final>21</final>",
+        "1. The document contains a section titled “Attendance at Investor Services Committee Meetings during the financial year,” which lists directors and their meeting attendance.  \n2. This attendance table includes three directors: B. Sen, P. B. Ramanujam, and A. Singh, with their respective meeting counts clearly stated.  \n3. The row corresponding to B. Sen shows the number of meetings attended as 21, indicating his consistent participation.  \n4. The table’s structure is straightforward, with each director’s name aligned to their attendance number, ensuring accurate data retrieval.  \n5. Since the question specifically asks for B. Sen’s attendance, the value directly associated with his name in the table is the answer.  \n\n<final>21</final>"
+      ],
+      "chunks": [
+        "1. The document contains a section titled “Attendance at Investor Services Committee Meetings during the financial year,” which lists directors and their meeting attendance.",
+        "2. This attendance table includes three directors: B.",
+        "Sen, P. B.",
+        "Ramanujam, and A.",
+        "Singh, with their respective meeting counts clearly stated.",
+        "3. The row corresponding to B.",
+        "Sen shows the number of meetings attended as 21, indicating his consistent participation.",
+        "4. The table’s structure is straightforward, with each director’s name aligned to their attendance number, ensuring accurate data retrieval.",
+        "5. Since the question specifically asks for B.",
+        "Sen’s attendance, the value directly associated with his name in the table is the answer.",
+        "<final>21</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          56
+        ],
+        [
+          57,
+          68
+        ],
+        [
+          68,
+          74
+        ],
+        [
+          74,
+          82
+        ],
+        [
+          82,
+          92
+        ],
+        [
+          93,
+          101
+        ],
+        [
+          101,
+          118
+        ],
+        [
+          119,
+          144
+        ],
+        [
+          145,
+          155
+        ],
+        [
+          155,
+          173
+        ],
+        [
+          174,
+          182
+        ]
+      ],
+      "anchor_vector": [
+        19.038469568734218,
+        17.9830218155694,
+        18.235758591196895,
+        17.574356736184058,
+        17.65284361596201,
+        18.396051113153597,
+        19.264508463541667,
+        18.41854021990741,
+        21.760904947916664,
+        18.18359375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        11,
+        11
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the committee strength as on 16th april, 2007? Answer the question using a single word or phrase.",
+      "reasoning_text": "3",
+      "raw_generation": [
+        "3",
+        "3"
+      ],
+      "chunks": [
+        "3"
+      ],
+      "chunk_token_ranges": [
+        [
+          66,
+          67
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the committee strength as on 16th april, 2007?",
+      "reasoning_text": "1. The document includes a table detailing Investor Services Committee meetings during the financial year ended 31st March, 2008.  \n2. This table lists meeting dates, committee strength, and number of members present, with entries starting from 4th April, 2007.  \n3. The second entry in this table corresponds to the 16th April, 2007 meeting, which is explicitly listed.  \n4. For the 16th April, 2007 meeting, the “Committee Strength” column clearly indicates the value as 3.  \n5. This value remains consistent across all listed meetings, including the one on 16th April, 2007, showing a uniform committee strength of three members.  \n\n<final>3</final>",
+      "raw_generation": [
+        "1. The document contains a table detailing Investor Services Committee meetings during the financial year ended 31st March, 2008.\n2. This table lists meeting dates, committee strength, and number of members present.\n3. The entry for 16th April, 2007 is listed as the second meeting in the table.\n4. The 'Committee Strength' column for this entry shows the value '3'.\n5. This indicates that the committee strength on 16th April, 2007, was three members.\n\n<final>3</final>",
+        "1. The document includes a table detailing Investor Services Committee meetings during the financial year ended 31st March, 2008.  \n2. This table lists meeting dates, committee strength, and number of members present, with entries starting from 4th April, 2007.  \n3. The second entry in this table corresponds to the 16th April, 2007 meeting, which is explicitly listed.  \n4. For the 16th April, 2007 meeting, the “Committee Strength” column clearly indicates the value as 3.  \n5. This value remains consistent across all listed meetings, including the one on 16th April, 2007, showing a uniform committee strength of three members.  \n\n<final>3</final>"
+      ],
+      "chunks": [
+        "1. The document includes a table detailing Investor Services Committee meetings during the financial year ended 31st March, 2008.",
+        "2. This table lists meeting dates, committee strength, and number of members present, with entries starting from 4th April, 2007.",
+        "3. The second entry in this table corresponds to the 16th April, 2007 meeting, which is explicitly listed.",
+        "4. For the 16th April, 2007 meeting, the “Committee Strength” column clearly indicates the value as 3.",
+        "5. This value remains consistent across all listed meetings, including the one on 16th April, 2007, showing a uniform committee strength of three members.",
+        "<final>3</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          75
+        ],
+        [
+          76,
+          108
+        ],
+        [
+          109,
+          138
+        ],
+        [
+          139,
+          171
+        ],
+        [
+          172,
+          208
+        ],
+        [
+          209,
+          216
+        ]
+      ],
+      "anchor_vector": [
+        11.704655161723455,
+        12.85306402497691,
+        11.336227820663856,
+        12.002482096354168,
+        12.662946428571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nhow many members were present for the investors service committee meetings on 21st june, 2007? Answer the question using a single word or phrase.",
+      "reasoning_text": "2",
+      "raw_generation": [
+        "2",
+        "2"
+      ],
+      "chunks": [
+        "2"
+      ],
+      "chunk_token_ranges": [
+        [
+          34,
+          35
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 10,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the committee strength as on 3rd december , 2007? Answer the question using a single word or phrase.",
+      "reasoning_text": "3",
+      "raw_generation": [
+        "3",
+        "3"
+      ],
+      "chunks": [
+        "3"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          25
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 11,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the committee strength as on 3rd december , 2007?",
+      "reasoning_text": "1. The document contains a section titled \"Meetings and Attendance\" under the \"Investor Services Committee\" heading.  \n2. A table lists the dates of meetings held during the financial year ended 31st March, 2008.  \n3. The row corresponding to the date \"3rd December, 2007\" is clearly visible in the table.  \n4. In that row, the \"Committee Strength\" column shows the value \"3\".  \n5. The \"No. of Members present\" for that meeting is \"3\", confirming the full strength of the committee attended.  \n\n<final>3</final>",
+      "raw_generation": [
+        "1. The document contains a table titled \"Details of Investor Services Committee Meetings during the financial year,\" which lists meeting dates and attendance details.\n2. This table includes a column labeled \"Committee Strength,\" indicating the number of members present at each meeting.\n3. The row corresponding to the date \"3rd December, 2007\" is clearly visible in the table.\n4. The value in the \"Committee Strength\" column for this specific date is explicitly stated as \"3.\"\n5. This indicates that the committee strength on that date was three members.\n\n<final>3</final>",
+        "1. The document contains a section titled \"Meetings and Attendance\" under the \"Investor Services Committee\" heading.  \n2. A table lists the dates of meetings held during the financial year ended 31st March, 2008.  \n3. The row corresponding to the date \"3rd December, 2007\" is clearly visible in the table.  \n4. In that row, the \"Committee Strength\" column shows the value \"3\".  \n5. The \"No. of Members present\" for that meeting is \"3\", confirming the full strength of the committee attended.  \n\n<final>3</final>"
+      ],
+      "chunks": [
+        "1. The document contains a section titled \"Meetings and Attendance\" under the \"Investor Services Committee\" heading.",
+        "2. A table lists the dates of meetings held during the financial year ended 31st March, 2008.",
+        "3. The row corresponding to the date \"3rd December, 2007\" is clearly visible in the table.",
+        "4. In that row, the \"Committee Strength\" column shows the value \"3\".",
+        "5. The \"No.",
+        "of Members present\" for that meeting is \"3\", confirming the full strength of the committee attended.",
+        "<final>3</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          68
+        ],
+        [
+          69,
+          96
+        ],
+        [
+          97,
+          123
+        ],
+        [
+          124,
+          143
+        ],
+        [
+          144,
+          150
+        ],
+        [
+          150,
+          170
+        ],
+        [
+          171,
+          178
+        ]
+      ],
+      "anchor_vector": [
+        12.671813431844614,
+        13.368548779551043,
+        12.222467668193923,
+        10.464998759920634,
+        16.423953683035716,
+        11.889508928571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 405,
+  "subset": "docvqa",
+  "subset_local_idx": 16
+}

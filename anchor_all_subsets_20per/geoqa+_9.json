@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/12780.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, in triangle △ABC, ∠ACB = 90°, AD = DB, CD = 4, then AB equals ( )  \nA. 8  \nB. 6  \nC. 4  \nD. 2",
+      "reasoning_text": "1. Triangle △ABC is a right triangle with the right angle at vertex C, as indicated by ∠ACB = 90°, and side AB is the hypotenuse.  \n2. Point D lies on hypotenuse AB such that AD = DB, meaning D is the midpoint of AB, and CD is the median to the hypotenuse.  \n3. In a right triangle, the median to the hypotenuse is always half the length of the hypotenuse, a geometric theorem applicable here.  \n4. Since CD = 4, and CD is half of AB, then AB must be twice CD, resulting in AB = 8.  \n5. Therefore, the correct answer is A. 8, as it is the only option that satisfies the geometric relationship in the figure.  \n\n<final>A. 8</final>",
+      "raw_generation": [
+        "1. Since ∠ACB = 90°, triangle ABC is a right triangle with the right angle at vertex C, making AB the hypotenuse of the triangle.\n\n2. The condition AD = DB indicates that point D is the midpoint of hypotenuse AB, as it divides AB into two equal segments.\n\n3. In a right triangle, the median drawn from the right angle to the hypotenuse is exactly half the length of the hypotenuse, which is a well-known geometric theorem.\n\n4. Given that CD = 4, and CD is the median from C to hypotenuse AB, this median must be half the length of AB according to the theorem.\n\n5. Therefore, AB = 2 × CD = 2 × 4 = 8, which directly matches option A.\n\n<final>A. 8</final>",
+        "1. Triangle △ABC is a right triangle with the right angle at vertex C, as indicated by ∠ACB = 90°, and side AB is the hypotenuse.  \n2. Point D lies on hypotenuse AB such that AD = DB, meaning D is the midpoint of AB, and CD is the median to the hypotenuse.  \n3. In a right triangle, the median to the hypotenuse is always half the length of the hypotenuse, a geometric theorem applicable here.  \n4. Since CD = 4, and CD is half of AB, then AB must be twice CD, resulting in AB = 8.  \n5. Therefore, the correct answer is A. 8, as it is the only option that satisfies the geometric relationship in the figure.  \n\n<final>A. 8</final>"
+      ],
+      "chunks": [
+        "1. Triangle △ABC is a right triangle with the right angle at vertex C, as indicated by ∠ACB = 90°, and side AB is the hypotenuse.",
+        "2. Point D lies on hypotenuse AB such that AD = DB, meaning D is the midpoint of AB, and CD is the median to the hypotenuse.",
+        "3. In a right triangle, the median to the hypotenuse is always half the length of the hypotenuse, a geometric theorem applicable here.",
+        "4. Since CD = 4, and CD is half of AB, then AB must be twice CD, resulting in AB = 8.",
+        "5. Therefore, the correct answer is A.",
+        "8, as it is the only option that satisfies the geometric relationship in the figure.",
+        "<final>A. 8</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          118,
+          158
+        ],
+        [
+          159,
+          194
+        ],
+        [
+          195,
+          226
+        ],
+        [
+          227,
+          256
+        ],
+        [
+          257,
+          267
+        ],
+        [
+          268,
+          285
+        ],
+        [
+          286,
+          295
+        ]
+      ],
+      "anchor_vector": [
+        9.840600433544381,
+        11.827372262528403,
+        13.207777015147833,
+        11.095230800653594,
+        11.495300691891341,
+        14.356336805555555,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 58,
+  "subset": "geoqa+",
+  "subset_local_idx": 9
+}

@@ -1,0 +1,128 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/OECD_GRANTS_BY_PRIVATE_AGENCIES_AND_NGOS_FRA_JPN_LVA_NLD_NOR_000035.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the value of rightmost bar? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart displays grants by private agencies and NGOs in million US dollars for 1984, with four countries listed along the x-axis: Japan, France, Norway, and Netherlands.\n2. The rightmost bar corresponds to the Netherlands, as it is positioned at the far right of the horizontal axis, indicating the last data point in the sequence.\n3. Each bar has a numerical value displayed directly above it, representing the total grant amount in million US dollars for that country.\n4. The value labeled above the rightmost bar, which is the Netherlands, is clearly visible and reads \"303\".\n5. Since the chart’s title specifies the values are in \"Million US dollars,\" the number 303 represents 303 million US dollars for the Netherlands.\n</reasoning>\n<final>303</final>",
+      "raw_generation": [
+        "1. The bar chart displays grants by private agencies and NGOs in million US dollars for the year 1984.  \n2. The horizontal axis lists four countries: Japan, France, Norway, and Netherlands from left to right.  \n3. Each bar’s height corresponds to the total grant amount, with exact values labeled on top of each bar.  \n4. The rightmost bar represents the Netherlands, and its value is explicitly labeled as 303.  \n5. This value indicates that the Netherlands provided 303 million US dollars in grants during that year.  \n\n<final>303</final>",
+        "<reasoning>\n1. The bar chart displays grants by private agencies and NGOs in million US dollars for 1984, with four countries listed along the x-axis: Japan, France, Norway, and Netherlands.\n2. The rightmost bar corresponds to the Netherlands, as it is positioned at the far right of the horizontal axis, indicating the last data point in the sequence.\n3. Each bar has a numerical value displayed directly above it, representing the total grant amount in million US dollars for that country.\n4. The value labeled above the rightmost bar, which is the Netherlands, is clearly visible and reads \"303\".\n5. Since the chart’s title specifies the values are in \"Million US dollars,\" the number 303 represents 303 million US dollars for the Netherlands.\n</reasoning>\n<final>303</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart displays grants by private agencies and NGOs in million US dollars for 1984, with four countries listed along the x-axis: Japan, France, Norway, and Netherlands.",
+        "2. The rightmost bar corresponds to the Netherlands, as it is positioned at the far right of the horizontal axis, indicating the last data point in the sequence.",
+        "3. Each bar has a numerical value displayed directly above it, representing the total grant amount in million US dollars for that country.",
+        "4. The value labeled above the rightmost bar, which is the Netherlands, is clearly visible and reads \"303\".",
+        "5. Since the chart’s title specifies the values are in \"Million US dollars,\" the number 303 represents 303 million US dollars for the Netherlands.",
+        "</reasoning>\n<final>303</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          52
+        ],
+        [
+          52,
+          91
+        ],
+        [
+          91,
+          124
+        ],
+        [
+          124,
+          150
+        ],
+        [
+          150,
+          176
+        ],
+        [
+          176,
+          212
+        ],
+        [
+          212,
+          225
+        ]
+      ],
+      "anchor_vector": [
+        8.559683568796881,
+        9.62550425377574,
+        9.390485714643429,
+        11.354099197605057,
+        8.79709253555689,
+        12.926983173076923,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich is greater, sum of two middle bars value or sum of leftmost bar and rightmost bar value? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The two middle bars represent France (96) and Norway (150), summing to 246 million US dollars.  \n2. The leftmost bar for Japan is 86 million US dollars, and the rightmost for Netherlands is 303 million US dollars.  \n3. Adding Japan and Netherlands gives 389 million US dollars, which is higher than the middle bars' total.  \n4. The Netherlands’ 303 million US dollars alone exceeds the combined 246 million US dollars of the middle two countries.  \n5. Therefore, the sum of the leftmost and rightmost bars is greater than the sum of the two middle bars.  \n<final>leftmost and rightmost</final>",
+      "raw_generation": [
+        "1. The two middle bars represent France (96) and Norway (150), summing to 246 million US dollars.  \n2. The leftmost bar (Japan) is 86 million US dollars, and the rightmost bar (Netherlands) is 303 million US dollars.  \n3. Adding Japan and Netherlands gives 389 million US dollars.  \n4. Comparing 246 million to 389 million, the latter is clearly larger.  \n5. Therefore, the sum of the leftmost and rightmost bars exceeds the sum of the two middle bars.  \n\n<final>sum of leftmost bar and rightmost bar value</final>",
+        "1. The two middle bars represent France (96) and Norway (150), summing to 246 million US dollars.  \n2. The leftmost bar for Japan is 86 million US dollars, and the rightmost for Netherlands is 303 million US dollars.  \n3. Adding Japan and Netherlands gives 389 million US dollars, which is higher than the middle bars' total.  \n4. The Netherlands’ 303 million US dollars alone exceeds the combined 246 million US dollars of the middle two countries.  \n5. Therefore, the sum of the leftmost and rightmost bars is greater than the sum of the two middle bars.  \n<final>leftmost and rightmost</final>"
+      ],
+      "chunks": [
+        "1. The two middle bars represent France (96) and Norway (150), summing to 246 million US dollars.",
+        "2. The leftmost bar for Japan is 86 million US dollars, and the rightmost for Netherlands is 303 million US dollars.",
+        "3. Adding Japan and Netherlands gives 389 million US dollars, which is higher than the middle bars' total.",
+        "4. The Netherlands’ 303 million US dollars alone exceeds the combined 246 million US dollars of the middle two countries.",
+        "5. Therefore, the sum of the leftmost and rightmost bars is greater than the sum of the two middle bars.",
+        "<final>leftmost and rightmost</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          72,
+          102
+        ],
+        [
+          103,
+          134
+        ],
+        [
+          135,
+          160
+        ],
+        [
+          161,
+          190
+        ],
+        [
+          191,
+          216
+        ],
+        [
+          217,
+          228
+        ]
+      ],
+      "anchor_vector": [
+        9.024018549453624,
+        9.644335080329153,
+        12.66546729044979,
+        11.639290660511364,
+        9.46484375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 66,
+  "subset": "chartqa",
+  "subset_local_idx": 8
+}

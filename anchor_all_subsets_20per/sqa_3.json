@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/7034/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich animal's feet are also adapted for grabbing prey?\nContext: White-tailed eagles eat fish, mammals, and other birds. The 's feet are adapted for grabbing prey.\nFigure: white-tailed eagle.\nOptions: (A) red-tailed hawk (B) pygmy hippopotamus",
+      "reasoning_text": "1. The white-tailed eagle’s feet, visible in the image, have sharp talons designed to firmly grip slippery fish and agile mammals, showcasing specialized adaptations for predation.  \n2. Red-tailed hawks, like eagles, possess powerful feet with curved, razor-sharp talons that allow them to snatch and hold onto prey mid-air or on the ground with precision.  \n3. Pygmy hippos, being terrestrial herbivores, have broad, padded feet for walking on soft ground and do not possess any predatory adaptations such as talons or grasping feet.  \n4. The eagle’s reflection in the water confirms its posture mid-flight, emphasizing how its feet are positioned to capture prey immediately upon landing or diving.  \n5. Since the question refers to an animal with feet adapted for grabbing prey and the context explicitly mentions the white-tailed eagle, the correct option must be a bird of prey, making the red-tailed hawk the only logical match.  \n\n<final>(A) red-tailed hawk</final>",
+      "raw_generation": [
+        "1. The white-tailed eagle’s feet are shown with sharp, curved talons designed to firmly grasp slippery prey like fish, which is consistent with its diet.  \n2. Red-tailed hawks, as raptors, also possess powerful feet with sharp talons for capturing and holding prey such as rodents and birds.  \n3. Pygmy hippos, being semi-aquatic mammals, use their feet for walking and swimming but lack the specialized talons for grabbing prey.  \n4. The white-tailed eagle’s feet are adapted for gripping slippery prey, a trait shared with other birds of prey like the red-tailed hawk.  \n5. The red-tailed hawk’s feet are similarly adapted for seizing and holding prey, making it the correct choice among the given options.  \n\n<final>(A) red-tailed hawk</final>",
+        "1. The white-tailed eagle’s feet, visible in the image, have sharp talons designed to firmly grip slippery fish and agile mammals, showcasing specialized adaptations for predation.  \n2. Red-tailed hawks, like eagles, possess powerful feet with curved, razor-sharp talons that allow them to snatch and hold onto prey mid-air or on the ground with precision.  \n3. Pygmy hippos, being terrestrial herbivores, have broad, padded feet for walking on soft ground and do not possess any predatory adaptations such as talons or grasping feet.  \n4. The eagle’s reflection in the water confirms its posture mid-flight, emphasizing how its feet are positioned to capture prey immediately upon landing or diving.  \n5. Since the question refers to an animal with feet adapted for grabbing prey and the context explicitly mentions the white-tailed eagle, the correct option must be a bird of prey, making the red-tailed hawk the only logical match.  \n\n<final>(A) red-tailed hawk</final>"
+      ],
+      "chunks": [
+        "1. The white-tailed eagle’s feet, visible in the image, have sharp talons designed to firmly grip slippery fish and agile mammals, showcasing specialized adaptations for predation.",
+        "2. Red-tailed hawks, like eagles, possess powerful feet with curved, razor-sharp talons that allow them to snatch and hold onto prey mid-air or on the ground with precision.",
+        "3. Pygmy hippos, being terrestrial herbivores, have broad, padded feet for walking on soft ground and do not possess any predatory adaptations such as talons or grasping feet.",
+        "4. The eagle’s reflection in the water confirms its posture mid-flight, emphasizing how its feet are positioned to capture prey immediately upon landing or diving.",
+        "5. Since the question refers to an animal with feet adapted for grabbing prey and the context explicitly mentions the white-tailed eagle, the correct option must be a bird of prey, making the red-tailed hawk the only logical match.",
+        "<final>(A) red-tailed hawk</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          134,
+          170
+        ],
+        [
+          171,
+          212
+        ],
+        [
+          213,
+          253
+        ],
+        [
+          254,
+          284
+        ],
+        [
+          285,
+          332
+        ],
+        [
+          333,
+          345
+        ]
+      ],
+      "anchor_vector": [
+        16.026798946035505,
+        14.621874307402482,
+        15.180744634677895,
+        15.109452917220745,
+        20.134765625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 14,
+  "subset": "sqa",
+  "subset_local_idx": 3
+}

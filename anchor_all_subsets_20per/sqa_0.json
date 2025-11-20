@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/20839/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich country is highlighted?\nContext: N/A\nOptions: (A) Solomon Islands (B) Nauru (C) Vanuatu (D) Fiji",
+      "reasoning_text": "1. The highlighted area on the map is a group of islands located east of Australia and northeast of New Zealand, clearly separating it from other island nations in the region.\n\n2. The shape and positioning of the highlighted islands match the geography of Vanuatu, which consists of a chain of volcanic islands in the South Pacific Ocean.\n\n3. The map’s legend indicates that the highlighted area represents a “Disputed island,” but Vanuatu is not a disputed territory; it is an independent sovereign nation recognized internationally.\n\n4. The surrounding countries include Australia to the southwest, New Zealand to the southeast, and the Solomon Islands to the north, which aligns with Vanuatu’s actual geopolitical neighbors.\n\n5. Nauru and Fiji are located closer to the equator and are not positioned within the highlighted area, eliminating them as the correct answer.\n\n<final>Vanuatu</final>",
+      "raw_generation": [
+        "1. The highlighted region is located east of Australia and north of New Zealand, placing it within the South Pacific Ocean.  \n2. The green outline encompasses a group of islands with a distinct archipelagic structure, matching the geography of Vanuatu.  \n3. The dotted box within the outline specifically isolates one of Vanuatu’s main island groups, consistent with its political and geographical divisions.  \n4. The map’s legend indicates “Disputed island,” which aligns with Vanuatu’s historical territorial disputes, particularly with its neighboring island nations.  \n5. The shape and positioning of the highlighted area do not match the single-island nation of Nauru or the larger archipelago of Fiji, eliminating those options.\n\n<final>C</final>",
+        "1. The highlighted area on the map is a group of islands located east of Australia and northeast of New Zealand, clearly separating it from other island nations in the region.\n\n2. The shape and positioning of the highlighted islands match the geography of Vanuatu, which consists of a chain of volcanic islands in the South Pacific Ocean.\n\n3. The map’s legend indicates that the highlighted area represents a “Disputed island,” but Vanuatu is not a disputed territory; it is an independent sovereign nation recognized internationally.\n\n4. The surrounding countries include Australia to the southwest, New Zealand to the southeast, and the Solomon Islands to the north, which aligns with Vanuatu’s actual geopolitical neighbors.\n\n5. Nauru and Fiji are located closer to the equator and are not positioned within the highlighted area, eliminating them as the correct answer.\n\n<final>Vanuatu</final>"
+      ],
+      "chunks": [
+        "1. The highlighted area on the map is a group of islands located east of Australia and northeast of New Zealand, clearly separating it from other island nations in the region.",
+        "2. The shape and positioning of the highlighted islands match the geography of Vanuatu, which consists of a chain of volcanic islands in the South Pacific Ocean.",
+        "3. The map’s legend indicates that the highlighted area represents a “Disputed island,” but Vanuatu is not a disputed territory; it is an independent sovereign nation recognized internationally.",
+        "4. The surrounding countries include Australia to the southwest, New Zealand to the southeast, and the Solomon Islands to the north, which aligns with Vanuatu’s actual geopolitical neighbors.",
+        "5. Nauru and Fiji are located closer to the equator and are not positioned within the highlighted area, eliminating them as the correct answer.",
+        "<final>Vanuatu</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          76,
+          110
+        ],
+        [
+          110,
+          142
+        ],
+        [
+          142,
+          179
+        ],
+        [
+          179,
+          216
+        ],
+        [
+          216,
+          246
+        ],
+        [
+          246,
+          255
+        ]
+      ],
+      "anchor_vector": [
+        17.896671036270646,
+        17.25003636448949,
+        13.717958876845595,
+        15.466438802083333,
+        12.809895833333334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 0,
+  "subset": "sqa",
+  "subset_local_idx": 0
+}

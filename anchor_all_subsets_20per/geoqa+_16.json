@@ -1,0 +1,60 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/356.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAs shown in the figure, a ship departs from point A at sea level and travels 40 nautical miles in a direction 40° south of west to reach point B. Then, from point B, it travels 40 nautical miles in a direction 20° north of west to reach point C. The distance between points A and C is ()  \nA. 30 nautical miles  \nB. 40 nautical miles  \nC. 50 nautical miles  \nD. 60 nautical miles",
+      "reasoning_text": "1. The ship travels 40 nautical miles from A to B on a 40° south of west bearing, which corresponds to a 220° angle measured clockwise from true north.  \n2. From B, it proceeds 40 nautical miles on a 20° north of west bearing, equivalent to a 320° direction from true north.  \n3. The angle at point B between the two legs of the journey is calculated as the difference between 320° and 220°, resulting in a 100° interior angle.  \n4. Since both AB and BC are equal (40 nautical miles), triangle ABC is isosceles with AB = BC and vertex angle at B being 100°, making base angles at A and C each 40°.  \n5. Applying the Law of Cosines to triangle ABC, AC² = AB² + BC² - 2·AB·BC·cos(100°), which simplifies to AC² = 40² + 40² - 2·40·40·cos(100°) ≈ 30 nautical miles.",
+      "raw_generation": [
+        "1. The ship travels from point A to point B in a direction 40° south of west, which means the angle between the north direction and the path AB is 180° + 40° = 220° from the positive x-axis, or equivalently, 40° below the negative x-axis.\n\n2. From point B, the ship travels 40 nautical miles in a direction 20° north of west, meaning the angle between the north direction and the path BC is 180° - 20° = 160° from the positive x-axis, or equivalently, 20° above the negative x-axis.\n\n3. The angle at point B between the two legs of the journey (AB and BC) can be calculated as the difference between the two directions: 40° (south of west) and 20° (north of west), which gives an internal angle of 40° + 20° = 60°.\n\n4. Since both legs AB and BC are of equal length (40 nautical miles), triangle ABC is an isosceles triangle with AB = BC = 40 nautical miles and the",
+        "1. The ship travels 40 nautical miles from A to B on a 40° south of west bearing, which corresponds to a 220° angle measured clockwise from true north.  \n2. From B, it proceeds 40 nautical miles on a 20° north of west bearing, equivalent to a 320° direction from true north.  \n3. The angle at point B between the two legs of the journey is calculated as the difference between 320° and 220°, resulting in a 100° interior angle.  \n4. Since both AB and BC are equal (40 nautical miles), triangle ABC is isosceles with AB = BC and vertex angle at B being 100°, making base angles at A and C each 40°.  \n5. Applying the Law of Cosines to triangle ABC, AC² = AB² + BC² - 2·AB·BC·cos(100°), which simplifies to AC² = 40² + 40² - 2·40·40·cos(100°) ≈ 30 nautical miles.  \n"
+      ],
+      "chunks": [
+        "1. The ship travels 40 nautical miles from A to B on a 40° south of west bearing, which corresponds to a 220° angle measured clockwise from true north.",
+        "2. From B, it proceeds 40 nautical miles on a 20° north of west bearing, equivalent to a 320° direction from true north.",
+        "3. The angle at point B between the two legs of the journey is calculated as the difference between 320° and 220°, resulting in a 100° interior angle.",
+        "4. Since both AB and BC are equal (40 nautical miles), triangle ABC is isosceles with AB = BC and vertex angle at B being 100°, making base angles at A and C each 40°.",
+        "5. Applying the Law of Cosines to triangle ABC, AC² = AB² + BC² - 2·AB·BC·cos(100°), which simplifies to AC² = 40² + 40² - 2·40·40·cos(100°) ≈ 30 nautical miles."
+      ],
+      "chunk_token_ranges": [
+        [
+          236,
+          278
+        ],
+        [
+          279,
+          316
+        ],
+        [
+          317,
+          360
+        ],
+        [
+          361,
+          413
+        ],
+        [
+          414,
+          491
+        ]
+      ],
+      "anchor_vector": [
+        11.264799544096135,
+        10.327438904669952,
+        12.014747345753204,
+        10.279166666666667,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 93,
+  "subset": "geoqa+",
+  "subset_local_idx": 16
+}

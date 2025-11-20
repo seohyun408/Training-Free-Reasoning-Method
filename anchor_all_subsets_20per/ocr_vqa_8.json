@@ -1,0 +1,260 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/1507728786.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the author of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>Unknown</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The image displays a book cover titled \"HOW TO GET ABS II,\" but no author's name is visible on the cover itself.\n2. The cover features a woman with a toned abdomen, wearing a yellow sports bra and black shorts, suggesting the book's fitness theme.\n3. The design includes a black rectangular box with gold lettering, typical of fitness or self-help book covers.\n4. Without any visible author attribution or additional context, it is impossible to determine the author from this image alone.\n5. The image does not contain any metadata, barcode, or publisher information that could link to the author's identity.\n</reasoning>\n<final>Unknown</final>",
+        "<final>Unknown</final>"
+      ],
+      "chunks": [
+        "<final>Unknown</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          51
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The image displays a book cover with bold, capitalized text centered prominently, indicating its title.  \n2. The text reads “HOW TO GET ABS II,” written in a golden-yellow font against a black background, making it highly visible.  \n3. The cover features a woman wearing a yellow sports bra and black shorts, emphasizing the fitness theme of the book.  \n4. The woman’s toned midsection is clearly visible, reinforcing the book’s focus on achieving abdominal definition.  \n5. The design suggests this is part of a series, as “II” implies a sequel or continuation of a previous guide titled “How to Get Abs I.”  \n\n<final>How to Get Abs II</final>",
+      "raw_generation": [
+        "1. The image displays a book cover with prominent text centered at the top.  \n2. The text is written in bold, capitalized letters with a gold outline and black background.  \n3. The phrase “HOW TO GET ABS II” is clearly legible and serves as the main title.  \n4. The font style and placement suggest it is the primary focus of the cover design.  \n5. No other titles or subtitles are visible, confirming this as the sole title of the book.  \n\n<final>HOW TO GET ABS II</final>",
+        "1. The image displays a book cover with bold, capitalized text centered prominently, indicating its title.  \n2. The text reads “HOW TO GET ABS II,” written in a golden-yellow font against a black background, making it highly visible.  \n3. The cover features a woman wearing a yellow sports bra and black shorts, emphasizing the fitness theme of the book.  \n4. The woman’s toned midsection is clearly visible, reinforcing the book’s focus on achieving abdominal definition.  \n5. The design suggests this is part of a series, as “II” implies a sequel or continuation of a previous guide titled “How to Get Abs I.”  \n\n<final>How to Get Abs II</final>"
+      ],
+      "chunks": [
+        "1. The image displays a book cover with bold, capitalized text centered prominently, indicating its title.",
+        "2. The text reads “HOW TO GET ABS II,” written in a golden-yellow font against a black background, making it highly visible.",
+        "3. The cover features a woman wearing a yellow sports bra and black shorts, emphasizing the fitness theme of the book.",
+        "4. The woman’s toned midsection is clearly visible, reinforcing the book’s focus on achieving abdominal definition.",
+        "5. The design suggests this is part of a series, as “II” implies a sequel or continuation of a previous guide titled “How to Get Abs I.”  \n\n<final>How to Get Abs II</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          44
+        ],
+        [
+          45,
+          73
+        ],
+        [
+          74,
+          98
+        ],
+        [
+          99,
+          121
+        ],
+        [
+          122,
+          167
+        ]
+      ],
+      "anchor_vector": [
+        18.21386109279176,
+        19.562870538114296,
+        18.076645359848484,
+        15.668623860677084,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The cover features a woman with visible abdominal muscles, indicating the book’s focus on fitness and physical transformation, specifically targeting core strength and definition.  \n2. The title “How to Get Abs II” suggests a continuation of a previous guide, implying instructional content designed for progressive learning in fitness routines.  \n3. The use of bold, capitalized text for the title emphasizes a direct, no-nonsense approach, commonly associated with self-help and workout manuals.  \n4. The visual emphasis on the torso and the woman’s athletic attire reinforces the book’s practical, results-oriented nature, appealing to readers seeking tangible fitness outcomes.  \n5. The overall design, including the dark background and centered text, aligns with typical aesthetics of fitness and health improvement books, reinforcing its genre as instructional fitness material.  \n\n<final>Health and fitness</final>",
+      "raw_generation": [
+        "1. The book cover prominently features a woman with a toned abdomen, suggesting a focus on physical fitness and body transformation.  \n2. The title \"HOW TO GET ABS II\" indicates instructional content aimed at guiding readers through a specific fitness regimen.  \n3. The visual emphasis on the midsection and the use of bold, direct text implies a practical, results-oriented approach to achieving visible abdominal muscles.  \n4. The presence of a second volume (\"II\") suggests this is part of a series, likely building upon previous content or offering advanced techniques for abdominal development.  \n5. The overall design and subject matter align with self-help, fitness, and health improvement genres, targeting individuals seeking physical transformation through exercise and diet.  \n\n<final>Health & Fitness</final>",
+        "1. The cover features a woman with visible abdominal muscles, indicating the book’s focus on fitness and physical transformation, specifically targeting core strength and definition.  \n2. The title “How to Get Abs II” suggests a continuation of a previous guide, implying instructional content designed for progressive learning in fitness routines.  \n3. The use of bold, capitalized text for the title emphasizes a direct, no-nonsense approach, commonly associated with self-help and workout manuals.  \n4. The visual emphasis on the torso and the woman’s athletic attire reinforces the book’s practical, results-oriented nature, appealing to readers seeking tangible fitness outcomes.  \n5. The overall design, including the dark background and centered text, aligns with typical aesthetics of fitness and health improvement books, reinforcing its genre as instructional fitness material.  \n\n<final>Health and fitness</final>"
+      ],
+      "chunks": [
+        "1. The cover features a woman with visible abdominal muscles, indicating the book’s focus on fitness and physical transformation, specifically targeting core strength and definition.",
+        "2. The title “How to Get Abs II” suggests a continuation of a previous guide, implying instructional content designed for progressive learning in fitness routines.",
+        "3. The use of bold, capitalized text for the title emphasizes a direct, no-nonsense approach, commonly associated with self-help and workout manuals.",
+        "4. The visual emphasis on the torso and the woman’s athletic attire reinforces the book’s practical, results-oriented nature, appealing to readers seeking tangible fitness outcomes.",
+        "5. The overall design, including the dark background and centered text, aligns with typical aesthetics of fitness and health improvement books, reinforcing its genre as instructional fitness material.",
+        "<final>Health and fitness</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          54
+        ],
+        [
+          55,
+          85
+        ],
+        [
+          86,
+          116
+        ],
+        [
+          117,
+          149
+        ],
+        [
+          150,
+          184
+        ],
+        [
+          185,
+          194
+        ]
+      ],
+      "anchor_vector": [
+        12.977866019454657,
+        13.288904726115707,
+        19.989750548385587,
+        23.81121220931508,
+        19.493055555555557,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a fitness book?",
+      "reasoning_text": "1. The image prominently displays the title \"HOW TO GET ABS II,\" which directly indicates a focus on abdominal muscle development, a core fitness goal.\n2. The visual of a person with a toned midsection wearing athletic attire reinforces the fitness-related context of the content.\n3. The book’s title format, including the Roman numeral \"II,\" suggests it is a sequel, likely continuing a fitness or workout series for readers seeking advanced results.\n4. The subject’s pose, with hands resting near the hips and torso exposed, emphasizes the aesthetic outcome of fitness routines targeting abdominal definition.\n5. The overall design, combining bold text with a fitness model, is typical of self-help or workout guides aimed at motivating readers to achieve physical goals.\n\n<final>Yes, this is a fitness book focused on achieving abdominal definition.</final>",
+      "raw_generation": [
+        "1. The image prominently displays the title \"HOW TO GET ABS II,\" which directly suggests a guide focused on achieving abdominal definition, a core fitness goal.  \n2. The visual subject is a person showcasing a toned midsection, reinforcing the book’s theme of physical fitness and body transformation through exercise or diet.  \n3. The person is wearing athletic attire—a sports bra and shorts—commonly associated with workout routines and fitness-related content.  \n4. The dark, focused background draws attention to the torso, emphasizing the book’s subject matter and implying a targeted approach to abdominal training.  \n5. The use of \"II\" in the title indicates this is a sequel or continuation, suggesting a series of fitness guides, which is typical for instructional or workout books.  \n\n<final>Yes, this is a fitness book.</final>",
+        "1. The image prominently displays the title \"HOW TO GET ABS II,\" which directly indicates a focus on abdominal muscle development, a core fitness goal.\n2. The visual of a person with a toned midsection wearing athletic attire reinforces the fitness-related context of the content.\n3. The book’s title format, including the Roman numeral \"II,\" suggests it is a sequel, likely continuing a fitness or workout series for readers seeking advanced results.\n4. The subject’s pose, with hands resting near the hips and torso exposed, emphasizes the aesthetic outcome of fitness routines targeting abdominal definition.\n5. The overall design, combining bold text with a fitness model, is typical of self-help or workout guides aimed at motivating readers to achieve physical goals.\n\n<final>Yes, this is a fitness book focused on achieving abdominal definition.</final>"
+      ],
+      "chunks": [
+        "1. The image prominently displays the title \"HOW TO GET ABS II,\" which directly indicates a focus on abdominal muscle development, a core fitness goal.",
+        "2. The visual of a person with a toned midsection wearing athletic attire reinforces the fitness-related context of the content.",
+        "3. The book’s title format, including the Roman numeral \"II,\" suggests it is a sequel, likely continuing a fitness or workout series for readers seeking advanced results.",
+        "4. The subject’s pose, with hands resting near the hips and torso exposed, emphasizes the aesthetic outcome of fitness routines targeting abdominal definition.",
+        "5. The overall design, combining bold text with a fitness model, is typical of self-help or workout guides aimed at motivating readers to achieve physical goals.",
+        "<final>Yes, this is a fitness book focused on achieving abdominal definition.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          50
+        ],
+        [
+          50,
+          74
+        ],
+        [
+          74,
+          108
+        ],
+        [
+          108,
+          136
+        ],
+        [
+          136,
+          167
+        ],
+        [
+          167,
+          185
+        ]
+      ],
+      "anchor_vector": [
+        16.80111502871478,
+        16.106776318978532,
+        15.517371361767154,
+        20.141325039675586,
+        14.694444444444445,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a digital technology book?",
+      "reasoning_text": "1. The image shows a person with visible abdominal muscles, suggesting a fitness or health theme rather than a technical or programming subject typically found in digital technology books.\n\n2. The text “HOW TO GET ABS II” indicates a focus on physical exercise and bodybuilding, not software development, hardware, or digital systems commonly covered in technology books.\n\n3. The visual presentation, including the person’s attire and pose, aligns with fitness media, not the formal layout or technical diagrams usually seen in digital technology publications.\n\n4. The background and lighting suggest a lifestyle or motivational context, further distancing it from the academic or instructional tone of digital technology books.\n\n5. No symbols, code snippets, or technical terminology appear in the image, confirming its content is unrelated to digital technology.\n\n<final> No, this is not a digital technology book. It is a fitness or health guide focused on achieving abdominal definition.",
+      "raw_generation": [
+        "1. The image displays a book cover with the title \"HOW TO GET ABS II,\" which suggests fitness or health content rather than digital technology.  \n2. The visual focus is on a person’s toned abdomen, indicating the book targets physical fitness goals, not tech-related subjects.  \n3. The design includes a simple, bold font and a human figure, typical of self-help or workout guides, not technical manuals or digital media literature.  \n4. No logos, circuitry, or tech-related imagery appear on the cover, reinforcing its fitness-oriented theme rather than digital technology.  \n5. The context of the title and imagery aligns with bodybuilding or wellness literature, making it clearly unrelated to digital technology topics.  \n\n<final>no</final>",
+        "1. The image shows a person with visible abdominal muscles, suggesting a fitness or health theme rather than a technical or programming subject typically found in digital technology books.\n\n2. The text “HOW TO GET ABS II” indicates a focus on physical exercise and bodybuilding, not software development, hardware, or digital systems commonly covered in technology books.\n\n3. The visual presentation, including the person’s attire and pose, aligns with fitness media, not the formal layout or technical diagrams usually seen in digital technology publications.\n\n4. The background and lighting suggest a lifestyle or motivational context, further distancing it from the academic or instructional tone of digital technology books.\n\n5. No symbols, code snippets, or technical terminology appear in the image, confirming its content is unrelated to digital technology.\n\n<final> No, this is not a digital technology book. It is a fitness or health guide focused on achieving abdominal definition."
+      ],
+      "chunks": [
+        "1. The image shows a person with visible abdominal muscles, suggesting a fitness or health theme rather than a technical or programming subject typically found in digital technology books.",
+        "2. The text “HOW TO GET ABS II” indicates a focus on physical exercise and bodybuilding, not software development, hardware, or digital systems commonly covered in technology books.",
+        "3. The visual presentation, including the person’s attire and pose, aligns with fitness media, not the formal layout or technical diagrams usually seen in digital technology publications.",
+        "4. The background and lighting suggest a lifestyle or motivational context, further distancing it from the academic or instructional tone of digital technology books.",
+        "5. No symbols, code snippets, or technical terminology appear in the image, confirming its content is unrelated to digital technology.",
+        "<final> No, this is not a digital technology book.",
+        "It is a fitness or health guide focused on achieving abdominal definition."
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          54
+        ],
+        [
+          54,
+          90
+        ],
+        [
+          90,
+          124
+        ],
+        [
+          124,
+          151
+        ],
+        [
+          151,
+          176
+        ],
+        [
+          176,
+          189
+        ],
+        [
+          189,
+          202
+        ]
+      ],
+      "anchor_vector": [
+        20.56055827122961,
+        18.866223668981483,
+        19.24488769270416,
+        14.796932764297877,
+        18.339130108173077,
+        16.533353365384617,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 240,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 8
+}

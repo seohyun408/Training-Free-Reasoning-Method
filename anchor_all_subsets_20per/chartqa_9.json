@@ -1,0 +1,128 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/OECD_FDI_INCOME_RECEIPTS_BY_INDUSTRY_AUT_LVA_000018.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich country does the blue line represent? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The blue line remains flat at zero across all years from 2013 to 2016, indicating no change in FDI income receipts.\n2. The label \"Latvia\" is positioned near the blue line’s endpoint in 2016, directly associating it with the blue line.\n3. The red line shows significant fluctuations, dipping to -5 in 2015 before rising sharply to 1 in 2016, with \"Austria\" labeled near its 2016 peak.\n4. The consistent positioning and labeling of Latvia with the blue line confirm it represents Latvia’s FDI income receipts.\n5. The source citation and title specify the data pertains to Agriculture, Forestry, Fishing, confirming the context for both lines.\n\n<final>Latvia</final>",
+      "raw_generation": [
+        "1. The chart displays two lines, one red and one blue, representing FDI income receipts for two countries between 2013 and 2016.\n2. The blue line remains consistently at the zero mark on the y-axis across all years shown, indicating no change in FDI income receipts.\n3. The label \"Latvia\" is positioned directly next to the blue line's endpoint in 2016, clearly identifying it.\n4. The red line shows significant fluctuations, dipping to its lowest point in 2015 and rising sharply in 2016, with \"Austria\" labeled at its 2016 endpoint.\n5. Since Latvia is the only country labeled with the blue line, it must represent that country.\n\n<final>Latvia</final>",
+        "1. The blue line remains flat at zero across all years from 2013 to 2016, indicating no change in FDI income receipts.\n2. The label \"Latvia\" is positioned near the blue line’s endpoint in 2016, directly associating it with the blue line.\n3. The red line shows significant fluctuations, dipping to -5 in 2015 before rising sharply to 1 in 2016, with \"Austria\" labeled near its 2016 peak.\n4. The consistent positioning and labeling of Latvia with the blue line confirm it represents Latvia’s FDI income receipts.\n5. The source citation and title specify the data pertains to Agriculture, Forestry, Fishing, confirming the context for both lines.\n\n<final>Latvia</final>"
+      ],
+      "chunks": [
+        "1. The blue line remains flat at zero across all years from 2013 to 2016, indicating no change in FDI income receipts.",
+        "2. The label \"Latvia\" is positioned near the blue line’s endpoint in 2016, directly associating it with the blue line.",
+        "3. The red line shows significant fluctuations, dipping to -5 in 2015 before rising sharply to 1 in 2016, with \"Austria\" labeled near its 2016 peak.",
+        "4. The consistent positioning and labeling of Latvia with the blue line confirm it represents Latvia’s FDI income receipts.",
+        "5. The source citation and title specify the data pertains to Agriculture, Forestry, Fishing, confirming the context for both lines.",
+        "<final>Latvia</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          78
+        ],
+        [
+          78,
+          110
+        ],
+        [
+          110,
+          157
+        ],
+        [
+          157,
+          180
+        ],
+        [
+          180,
+          207
+        ],
+        [
+          207,
+          215
+        ]
+      ],
+      "anchor_vector": [
+        14.553872105299837,
+        12.72238959581008,
+        15.76456378111581,
+        12.365912543402779,
+        15.03271484375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhen does the gap between two countries become biggest? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The chart displays FDI income receipts for Austria and Latvia from 2013 to 2016, with Austria's line in red and Latvia's in blue.\n2. In 2013, both countries start at the same level (0) on the y-axis, indicating no initial gap in FDI income receipts.\n3. By 2014, Austria’s line drops to -1.5, while Latvia’s remains at 0, creating a visible gap of 1.5 units.\n4. In 2015, Austria’s line plunges to -5, while Latvia’s stays at 0, widening the gap to 5 units, the largest observed.\n5. In 2016, Austria’s line rises to 1, while Latvia’s remains at 0, reducing the gap to 1 unit.\n</reasoning>\n<final>2015</final>",
+      "raw_generation": [
+        "1. The chart displays FDI income receipts for Austria and Latvia from 2013 to 2016, with values measured in millions of US dollars.\n2. In 2013, both countries started at zero, indicating no FDI income receipts for agriculture, forestry, or fishing.\n3. By 2014, Austria’s value remained at zero while Latvia’s dropped to -1, creating a gap of 1 million USD.\n4. In 2015, Austria’s value stayed at zero while Latvia’s plummeted to -5, widening the gap to 5 million USD.\n5. In 2016, Austria’s value rose to +1 while Latvia’s returned to zero, reducing the gap to 1 million USD.\n\n<final>2015</final>",
+        "<reasoning>\n1. The chart displays FDI income receipts for Austria and Latvia from 2013 to 2016, with Austria's line in red and Latvia's in blue.\n2. In 2013, both countries start at the same level (0) on the y-axis, indicating no initial gap in FDI income receipts.\n3. By 2014, Austria’s line drops to -1.5, while Latvia’s remains at 0, creating a visible gap of 1.5 units.\n4. In 2015, Austria’s line plunges to -5, while Latvia’s stays at 0, widening the gap to 5 units, the largest observed.\n5. In 2016, Austria’s line rises to 1, while Latvia’s remains at 0, reducing the gap to 1 unit.\n</reasoning>\n<final>2015</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The chart displays FDI income receipts for Austria and Latvia from 2013 to 2016, with Austria's line in red and Latvia's in blue.",
+        "2. In 2013, both countries start at the same level (0) on the y-axis, indicating no initial gap in FDI income receipts.",
+        "3. By 2014, Austria’s line drops to -1.5, while Latvia’s remains at 0, creating a visible gap of 1.5 units.",
+        "4. In 2015, Austria’s line plunges to -5, while Latvia’s stays at 0, widening the gap to 5 units, the largest observed.",
+        "5. In 2016, Austria’s line rises to 1, while Latvia’s remains at 0, reducing the gap to 1 unit.",
+        "</reasoning>\n<final>2015</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          54
+        ],
+        [
+          54,
+          90
+        ],
+        [
+          90,
+          124
+        ],
+        [
+          124,
+          162
+        ],
+        [
+          162,
+          200
+        ],
+        [
+          200,
+          233
+        ],
+        [
+          233,
+          247
+        ]
+      ],
+      "anchor_vector": [
+        13.515687141267874,
+        9.521369850459621,
+        10.767775664978132,
+        11.443502518132453,
+        9.675360642470324,
+        7.995256696428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 76,
+  "subset": "chartqa",
+  "subset_local_idx": 9
+}

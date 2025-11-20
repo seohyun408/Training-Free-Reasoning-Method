@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "coco/train2017/000000501995.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhere is the food made? \nA. at home \nB. on beach \nC. in truck \nD. in restaurant",
+      "reasoning_text": "1. The image shows a food truck with a visible kitchen area inside the serving window, where a worker is preparing food.  \n2. Equipment such as pots, pans, and a food warmer are clearly visible within the truck’s interior, indicating food preparation occurs there.  \n3. The truck’s exterior is labeled “MILK TRUCK,” confirming it’s a mobile food service vehicle, not a stationary restaurant.  \n4. The customer is standing outside the truck’s service window, waiting to receive food, which reinforces that the truck is the active cooking location.  \n5. No signs of a home, beach, or traditional restaurant environment are present in the image, making the truck the only logical place for food preparation.  \n\n<final>C. in truck</final>",
+      "raw_generation": [
+        "1. The image shows a food truck with a visible kitchen area inside the serving window, indicating food is prepared on-site.  \n2. Equipment like pots, pans, and a stove are clearly visible through the window, confirming food is cooked within the vehicle.  \n3. The truck’s branding, “MILK TRUCK,” and its design suggest it is a mobile food service unit rather than a fixed location.  \n4. The presence of a menu board and a staff member preparing food further supports that this is a mobile kitchen, not a home or restaurant.  \n5. The truck’s location on a street and its operational setup rule out beach or home as plausible cooking locations.  \n\n<final>C. in truck</final>",
+        "1. The image shows a food truck with a visible kitchen area inside the serving window, where a worker is preparing food.  \n2. Equipment such as pots, pans, and a food warmer are clearly visible within the truck’s interior, indicating food preparation occurs there.  \n3. The truck’s exterior is labeled “MILK TRUCK,” confirming it’s a mobile food service vehicle, not a stationary restaurant.  \n4. The customer is standing outside the truck’s service window, waiting to receive food, which reinforces that the truck is the active cooking location.  \n5. No signs of a home, beach, or traditional restaurant environment are present in the image, making the truck the only logical place for food preparation.  \n\n<final>C. in truck</final>"
+      ],
+      "chunks": [
+        "1. The image shows a food truck with a visible kitchen area inside the serving window, where a worker is preparing food.",
+        "2. Equipment such as pots, pans, and a food warmer are clearly visible within the truck’s interior, indicating food preparation occurs there.",
+        "3. The truck’s exterior is labeled “MILK TRUCK,” confirming it’s a mobile food service vehicle, not a stationary restaurant.",
+        "4. The customer is standing outside the truck’s service window, waiting to receive food, which reinforces that the truck is the active cooking location.",
+        "5. No signs of a home, beach, or traditional restaurant environment are present in the image, making the truck the only logical place for food preparation.",
+        "<final>C. in truck</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          87
+        ],
+        [
+          88,
+          116
+        ],
+        [
+          117,
+          146
+        ],
+        [
+          147,
+          176
+        ],
+        [
+          177,
+          208
+        ],
+        [
+          209,
+          218
+        ]
+      ],
+      "anchor_vector": [
+        21.75011282963489,
+        17.568811447036058,
+        18.75285505628682,
+        18.374257952508962,
+        12.3125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 38,
+  "subset": "coco",
+  "subset_local_idx": 9
+}

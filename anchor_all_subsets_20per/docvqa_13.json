@@ -1,0 +1,172 @@
+{
+  "total_pairs": 4,
+  "successful_pairs": 3,
+  "image_path": "docvqa/train/documents/gjgk0226_9.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nTime of seminar on crown testing?",
+      "reasoning_text": "1. The schedule clearly lists the \"Evening\" session at the bottom of the document, indicating it occurs after the afternoon presentations.  \n2. Under the \"Evening\" heading, there is a single entry for \"Seminar on Crown Testing,\" which is the last item on the agenda.  \n3. The \"Time\" column corresponding to this seminar entry shows \"8:00 P.M.\" as the scheduled start time.  \n4. No other evening events are listed, confirming that this seminar is the sole evening activity.  \n5. The document’s structure and consistent formatting ensure that \"8:00 P.M.\" is directly associated with the seminar on crown testing.  \n\n<final>8:00 P.M.</final>",
+      "raw_generation": [
+        "1. The document is a schedule for Thursday, May 23, 1963, detailing morning, afternoon, and evening sessions with specific topics and speakers.\n2. The evening session is listed after the afternoon session, which includes a discussion ending at 4:15 P.M.\n3. The evening session contains only one entry: \"Seminar on Crown Testing,\" indicating it is the final event of the day.\n4. The time column for this seminar entry clearly states \"8:00 P.M.\" next to the speaker's name, W. Wurl.\n5. No other events are scheduled after this seminar, confirming it is the last item on the agenda for that day.\n\n<final>8:00 P.M.</final>",
+        "1. The schedule clearly lists the \"Evening\" session at the bottom of the document, indicating it occurs after the afternoon presentations.  \n2. Under the \"Evening\" heading, there is a single entry for \"Seminar on Crown Testing,\" which is the last item on the agenda.  \n3. The \"Time\" column corresponding to this seminar entry shows \"8:00 P.M.\" as the scheduled start time.  \n4. No other evening events are listed, confirming that this seminar is the sole evening activity.  \n5. The document’s structure and consistent formatting ensure that \"8:00 P.M.\" is directly associated with the seminar on crown testing.  \n\n<final>8:00 P.M.</final>"
+      ],
+      "chunks": [
+        "1. The schedule clearly lists the \"Evening\" session at the bottom of the document, indicating it occurs after the afternoon presentations.",
+        "2. Under the \"Evening\" heading, there is a single entry for \"Seminar on Crown Testing,\" which is the last item on the agenda.",
+        "3. The \"Time\" column corresponding to this seminar entry shows \"8:00 P.M.\" as the scheduled start time.",
+        "4. No other evening events are listed, confirming that this seminar is the sole evening activity.",
+        "5. The document’s structure and consistent formatting ensure that \"8:00 P.M.\" is directly associated with the seminar on crown testing.",
+        "<final>8:00 P.M.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          49
+        ],
+        [
+          50,
+          82
+        ],
+        [
+          83,
+          110
+        ],
+        [
+          111,
+          130
+        ],
+        [
+          131,
+          160
+        ],
+        [
+          161,
+          173
+        ]
+      ],
+      "anchor_vector": [
+        9.900901182523024,
+        9.706118344250983,
+        8.936674874596694,
+        7.5497176948635065,
+        7.848307291666667,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho speaks \" Plant design in Canada\"? Answer the question using a single word or phrase.",
+      "reasoning_text": "L. Hunter",
+      "raw_generation": [
+        "1. The document is a schedule for a conference or seminar on Thursday, May 23, 1963.\n2. It lists sessions by subject, speaker, and time.\n3. The subject \"Plant Design in Canada\" is listed under the morning session.\n4. The speaker assigned to this subject is L. Hunter.\n5. The time for this session is 10:00 A.M.\n\n<final>L. Hunter</final>",
+        "L. Hunter"
+      ],
+      "chunks": [
+        "L. Hunter"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          47
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho speaks \" Plant design in Canada\"?",
+      "reasoning_text": "1. The schedule clearly lists \"Plant Design in Canada\" as a topic under the morning session, positioned after \"Bottling Plant Design, Including New Developments in Water Treating Equipment.\"  \n2. The speaker column directly next to \"Plant Design in Canada\" indicates that L. Hunter is assigned to this presentation.  \n3. The time slot for L. Hunter’s talk is explicitly listed as 10:00 A.M., matching the sequence of morning sessions.  \n4. No other speaker is associated with this specific topic, as the next item is a half-hour break, confirming L. Hunter’s exclusive responsibility.  \n5. The document’s structure, with aligned columns, confirms that \"Plant Design in Canada\" corresponds solely to L. Hunter’s session without ambiguity.  \n\n<final>L. Hunter</final>",
+      "raw_generation": [
+        "1. The document is a schedule for a conference or seminar held on Thursday, May 23, 1963, detailing morning, afternoon, and evening sessions with speakers and times.\n2. Under the \"Morning\" section, the first topic listed is \"Bottling Plant Design, Including New Developments in Water Treating Equipment,\" scheduled for 9:00 A.M., with W.E. Lee as the speaker.\n3. The next topic listed is \"Plant Design in Canada,\" scheduled for 10:00 A.M., and the speaker assigned to this session is L. Hunter.\n4. The schedule clearly separates topics and speakers, with \"Plant Design in Canada\" appearing directly after the first topic and before a half-hour break.\n5. No other speaker is listed for the \"Plant Design in Canada\" session, confirming that L. Hunter is the sole presenter for this subject.\n\n<final>L. Hunter</final>",
+        "1. The schedule clearly lists \"Plant Design in Canada\" as a topic under the morning session, positioned after \"Bottling Plant Design, Including New Developments in Water Treating Equipment.\"  \n2. The speaker column directly next to \"Plant Design in Canada\" indicates that L. Hunter is assigned to this presentation.  \n3. The time slot for L. Hunter’s talk is explicitly listed as 10:00 A.M., matching the sequence of morning sessions.  \n4. No other speaker is associated with this specific topic, as the next item is a half-hour break, confirming L. Hunter’s exclusive responsibility.  \n5. The document’s structure, with aligned columns, confirms that \"Plant Design in Canada\" corresponds solely to L. Hunter’s session without ambiguity.  \n\n<final>L. Hunter</final>"
+      ],
+      "chunks": [
+        "1. The schedule clearly lists \"Plant Design in Canada\" as a topic under the morning session, positioned after \"Bottling Plant Design, Including New Developments in Water Treating Equipment.\"  \n2.",
+        "The speaker column directly next to \"Plant Design in Canada\" indicates that L.",
+        "Hunter is assigned to this presentation.",
+        "3. The time slot for L.",
+        "Hunter’s talk is explicitly listed as 10:00 A.M., matching the sequence of morning sessions.",
+        "4. No other speaker is associated with this specific topic, as the next item is a half-hour break, confirming L.",
+        "Hunter’s exclusive responsibility.",
+        "5. The document’s structure, with aligned columns, confirms that \"Plant Design in Canada\" corresponds solely to L.",
+        "Hunter’s session without ambiguity.",
+        "<final>L. Hunter</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          66
+        ],
+        [
+          66,
+          82
+        ],
+        [
+          82,
+          89
+        ],
+        [
+          90,
+          98
+        ],
+        [
+          98,
+          121
+        ],
+        [
+          122,
+          147
+        ],
+        [
+          147,
+          152
+        ],
+        [
+          153,
+          177
+        ],
+        [
+          177,
+          183
+        ],
+        [
+          184,
+          192
+        ]
+      ],
+      "anchor_vector": [
+        8.605350295602797,
+        8.57540163142834,
+        8.327460778277853,
+        8.222304330724448,
+        8.337687713623046,
+        7.490362548828125,
+        6.591451432969836,
+        5.703529357910156,
+        2.92041015625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        10,
+        10
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 379,
+  "subset": "docvqa",
+  "subset_local_idx": 13
+}

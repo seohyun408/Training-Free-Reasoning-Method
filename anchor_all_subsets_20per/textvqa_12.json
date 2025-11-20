@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/115cd193d32b331f.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: c0OS, HOCKEY",
+      "reasoning_text": "<steps>\n1. The image displays eight distinct Canadian coins, including a 2000 maple leaf, a 2004 Women’s Hockey commemorative, and a 2002 25-cent piece with a maple leaf wreath.\n2. A golden 2003 $2 coin with a beaver design sits at the bottom left, while a silver 2004 commemorative coin features a red poppy for the Canadian Armed Forces.\n3. The 2004 Women’s Hockey coin, located at the bottom center, depicts two athletes in action, with “WOMEN’S HOCKEY” and “FÉMININ” inscribed below.\n4. A 1982 coin with a red maple leaf and portrait of Queen Elizabeth II is positioned top right, alongside a 2000 coin featuring a maple leaf and “CANADA” around its edge.\n5. The coins rest on a textured beige fabric surface, showcasing varied metallic finishes, engravings, and commemorative themes like sports, military, and national symbols.\n</steps>\n\n<final>Eight commemorative Canadian coins, including a 2004 Women’s Hockey piece and a 2002",
+      "raw_generation": [
+        "1. The image displays a collection of eight Canadian commemorative coins, including a gold-colored $2 coin and several silver coins featuring maple leaves, hockey, and military themes.  \n2. One coin prominently shows “2004 WOMEN’S HOCKEY” with a depiction of female hockey players, indicating its commemorative nature for the 2004 event.  \n3. Another coin features a red poppy and “1914-2004,” marking the 90th anniversary of the Canadian Armed Forces, with a detailed soldier portrait.  \n4. A coin with “2000” and a maple leaf design is clearly visible, suggesting it commemorates the year 2000 with a national symbol.  \n5. The coins are arranged on a textured beige fabric surface, highlighting their metallic sheen and intricate engravings for collectors or display purposes.  \n\n<final>Eight Canadian commemorative coins, including a 2004 Women’s Hockey and 1914-2004 Armed Forces issue, are displayed on a textured fabric surface.</final>",
+        "<steps>\n1. The image displays eight distinct Canadian coins, including a 2000 maple leaf, a 2004 Women’s Hockey commemorative, and a 2002 25-cent piece with a maple leaf wreath.\n2. A golden 2003 $2 coin with a beaver design sits at the bottom left, while a silver 2004 commemorative coin features a red poppy for the Canadian Armed Forces.\n3. The 2004 Women’s Hockey coin, located at the bottom center, depicts two athletes in action, with “WOMEN’S HOCKEY” and “FÉMININ” inscribed below.\n4. A 1982 coin with a red maple leaf and portrait of Queen Elizabeth II is positioned top right, alongside a 2000 coin featuring a maple leaf and “CANADA” around its edge.\n5. The coins rest on a textured beige fabric surface, showcasing varied metallic finishes, engravings, and commemorative themes like sports, military, and national symbols.\n</steps>\n\n<final>Eight commemorative Canadian coins, including a 2004 Women’s Hockey piece and a 2002"
+      ],
+      "chunks": [
+        "<steps>\n1.",
+        "The image displays eight distinct Canadian coins, including a 2000 maple leaf, a 2004 Women’s Hockey commemorative, and a 2002 25-cent piece with a maple leaf wreath.",
+        "2. A golden 2003 $2 coin with a beaver design sits at the bottom left, while a silver 2004 commemorative coin features a red poppy for the Canadian Armed Forces.",
+        "3. The 2004 Women’s Hockey coin, located at the bottom center, depicts two athletes in action, with “WOMEN’S HOCKEY” and “FÉMININ” inscribed below.",
+        "4. A 1982 coin with a red maple leaf and portrait of Queen Elizabeth II is positioned top right, alongside a 2000 coin featuring a maple leaf and “CANADA” around its edge.",
+        "5. The coins rest on a textured beige fabric surface, showcasing varied metallic finishes, engravings, and commemorative themes like sports, military, and national symbols.",
+        "</steps>\n\n<final>Eight commemorative Canadian coins, including a 2004 Women’s Hockey piece and a 2002"
+      ],
+      "chunk_token_ranges": [
+        [
+          56,
+          61
+        ],
+        [
+          61,
+          110
+        ],
+        [
+          110,
+          155
+        ],
+        [
+          155,
+          202
+        ],
+        [
+          202,
+          248
+        ],
+        [
+          248,
+          282
+        ],
+        [
+          282,
+          312
+        ]
+      ],
+      "anchor_vector": [
+        11.591503386224765,
+        13.5118576746766,
+        11.331797208500761,
+        10.243791324911419,
+        7.745494408700981,
+        10.060242374738058,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 981,
+  "subset": "textvqa",
+  "subset_local_idx": 12
+}

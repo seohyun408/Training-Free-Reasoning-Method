@@ -1,0 +1,134 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/multi_col_60129.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich brand has the highest penetration rate in the year 2022? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart displays penetration rates for various brands across three years: 2017 (blue), 2018 (dark blue), and 2022 (gray).\n2. For the year 2022, the gray bars represent the penetration rates, with Google/Android showing 60.3%, Apple at 17%, Samsung at 5.4%, Baidu at 22.7%, and Others at 0.1%.\n3. Comparing these 2022 values, Google/Android's 60.3% is significantly higher than all other brands' 2022 rates.\n4. No other brand exceeds 22.7% in 2022, confirming Google/Android's dominance in penetration rate for that year.\n5. Therefore, Google/Android is the brand with the highest penetration rate in 2022.\n</reasoning>\n<final>Google/Android</final>",
+      "raw_generation": [
+        "1. The bar chart displays penetration rates for various brands across three years: 2017, 2018, and 2022.\n2. Each brand is represented by three bars corresponding to these years, with 2022 marked by a gray bar.\n3. The vertical axis indicates the penetration rate percentage, ranging from 0% to 70%.\n4. For Google/Android, the 2022 penetration rate is 60.3%, the highest among all brands shown.\n5. Comparing all gray bars, Google/Android's 60.3% is significantly higher than Apple's 17%, Samsung's 5.4%, Baidu's 17%, and Others' 0.1%.\n\n<final>Google/Android</final>",
+        "<reasoning>\n1. The bar chart displays penetration rates for various brands across three years: 2017 (blue), 2018 (dark blue), and 2022 (gray).\n2. For the year 2022, the gray bars represent the penetration rates, with Google/Android showing 60.3%, Apple at 17%, Samsung at 5.4%, Baidu at 22.7%, and Others at 0.1%.\n3. Comparing these 2022 values, Google/Android's 60.3% is significantly higher than all other brands' 2022 rates.\n4. No other brand exceeds 22.7% in 2022, confirming Google/Android's dominance in penetration rate for that year.\n5. Therefore, Google/Android is the brand with the highest penetration rate in 2022.\n</reasoning>\n<final>Google/Android</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart displays penetration rates for various brands across three years: 2017 (blue), 2018 (dark blue), and 2022 (gray).",
+        "2. For the year 2022, the gray bars represent the penetration rates, with Google/Android showing 60.3%, Apple at 17%, Samsung at 5.4%, Baidu at 22.7%, and Others at 0.1%.",
+        "3. Comparing these 2022 values, Google/Android's 60.3% is significantly higher than all other brands' 2022 rates.",
+        "4. No other brand exceeds 22.7% in 2022, confirming Google/Android's dominance in penetration rate for that year.",
+        "5. Therefore, Google/Android is the brand with the highest penetration rate in 2022.",
+        "</reasoning>\n<final>Google/Android</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          66
+        ],
+        [
+          66,
+          105
+        ],
+        [
+          105,
+          166
+        ],
+        [
+          166,
+          203
+        ],
+        [
+          203,
+          235
+        ],
+        [
+          235,
+          257
+        ],
+        [
+          257,
+          270
+        ]
+      ],
+      "anchor_vector": [
+        11.9016116102758,
+        11.373942536771526,
+        10.414983002095429,
+        8.305899809012603,
+        0.0,
+        10.491736778846153,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the sum total in the brand Apple and Samsung in the year 2017? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart displays penetration rates for various brands in 2017, with Apple showing a 41.1% rate and Samsung showing a 12.7% rate.\n2. These values are clearly labeled above the respective blue bars for each brand in the 2017 category.\n3. Adding 41.1% for Apple and 12.7% for Samsung results in a total of 53.8%.\n4. The chart's legend confirms that blue bars represent data from 2017, aligning with the values used in the calculation.\n5. The sum is derived solely from the 2017 data points for Apple and Samsung, as requested in the question.\n</reasoning>\n\n<final>53.8%</final>",
+      "raw_generation": [
+        "1. The bar chart displays penetration rates for various brands across three years: 2017, 2018, and 2022.\n2. For Apple in 2017, the blue bar indicates a penetration rate of 41.1%.\n3. For Samsung in 2017, the blue bar shows a penetration rate of 12.7%.\n4. Adding these two values together: 41.1% + 12.7% equals 53.8%.\n5. The combined penetration rate for Apple and Samsung in 2017 is 53.8%.\n\n<final>53.8%</final>",
+        "<reasoning>\n1. The bar chart displays penetration rates for various brands in 2017, with Apple showing a 41.1% rate and Samsung showing a 12.7% rate.\n2. These values are clearly labeled above the respective blue bars for each brand in the 2017 category.\n3. Adding 41.1% for Apple and 12.7% for Samsung results in a total of 53.8%.\n4. The chart's legend confirms that blue bars represent data from 2017, aligning with the values used in the calculation.\n5. The sum is derived solely from the 2017 data points for Apple and Samsung, as requested in the question.\n</reasoning>\n\n<final>53.8%</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart displays penetration rates for various brands in 2017, with Apple showing a 41.1% rate and Samsung showing a 12.7% rate.",
+        "2. These values are clearly labeled above the respective blue bars for each brand in the 2017 category.",
+        "3. Adding 41.1% for Apple and 12.7% for Samsung results in a total of 53.8%.",
+        "4. The chart's legend confirms that blue bars represent data from 2017, aligning with the values used in the calculation.",
+        "5. The sum is derived solely from the 2017 data points for Apple and Samsung, as requested in the question.",
+        "</reasoning>\n\n<final>53.8%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          68,
+          74
+        ],
+        [
+          74,
+          113
+        ],
+        [
+          113,
+          137
+        ],
+        [
+          137,
+          169
+        ],
+        [
+          169,
+          198
+        ],
+        [
+          198,
+          225
+        ],
+        [
+          225,
+          239
+        ]
+      ],
+      "anchor_vector": [
+        10.52535729364118,
+        9.676603437318265,
+        10.801555070492544,
+        10.143455460364024,
+        10.628991505456348,
+        10.472787039620536,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 85,
+  "subset": "chartqa",
+  "subset_local_idx": 10
+}

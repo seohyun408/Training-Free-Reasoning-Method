@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "pisc/image/17622.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the relationship between the people in the image? \nA. professional \nB. no relation \nC. family \nD. friends",
+      "reasoning_text": "1. The batter wearing jersey number 18 is positioned at home plate, indicating active participation in a baseball game, suggesting a team-based athletic context.  \n2. The catcher in full gear crouches behind the batter, showing a standard defensive role in baseball, implying a coordinated team effort.  \n3. The umpire in the background stands near the batter’s box, indicating official oversight, confirming this is a formal game involving structured roles.  \n4. The player in the outfield, holding a bat and in motion, suggests involvement in the same game, reinforcing the idea of teammates working together.  \n5. The uniformed attire, equipment, and field layout indicate these individuals are part of organized teams, not casual acquaintances or unrelated individuals.  \n\n<final>B. no relation</final>",
+      "raw_generation": [
+        "1. The image shows a baseball game in progress, with a batter, catcher, and umpire clearly visible, indicating they are part of the same organized sport event.  \n2. The batter wears a uniform with the number 18, while the catcher and umpire also wear team-specific gear, suggesting they are teammates or officials within the same team structure.  \n3. The catcher is positioned behind home plate, and the batter is at the plate, indicating they are playing the same game and working together as part of the same team.  \n4. The umpire stands behind the catcher, which is a standard position in baseball, showing he is officiating the game and not part of the playing team.  \n5. The presence of a coach or another player in the background wearing similar attire further supports that these individuals are part of the same team or organization, not unrelated or casual acquaintances.\n\n<final>B. no relation</final>",
+        "1. The batter wearing jersey number 18 is positioned at home plate, indicating active participation in a baseball game, suggesting a team-based athletic context.  \n2. The catcher in full gear crouches behind the batter, showing a standard defensive role in baseball, implying a coordinated team effort.  \n3. The umpire in the background stands near the batter’s box, indicating official oversight, confirming this is a formal game involving structured roles.  \n4. The player in the outfield, holding a bat and in motion, suggests involvement in the same game, reinforcing the idea of teammates working together.  \n5. The uniformed attire, equipment, and field layout indicate these individuals are part of organized teams, not casual acquaintances or unrelated individuals.  \n\n<final>B. no relation</final>"
+      ],
+      "chunks": [
+        "1. The batter wearing jersey number 18 is positioned at home plate, indicating active participation in a baseball game, suggesting a team-based athletic context.",
+        "2. The catcher in full gear crouches behind the batter, showing a standard defensive role in baseball, implying a coordinated team effort.",
+        "3. The umpire in the background stands near the batter’s box, indicating official oversight, confirming this is a formal game involving structured roles.",
+        "4. The player in the outfield, holding a bat and in motion, suggests involvement in the same game, reinforcing the idea of teammates working together.",
+        "5. The uniformed attire, equipment, and field layout indicate these individuals are part of organized teams, not casual acquaintances or unrelated individuals.",
+        "<final>B. no relation</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          66,
+          97
+        ],
+        [
+          98,
+          126
+        ],
+        [
+          127,
+          156
+        ],
+        [
+          157,
+          187
+        ],
+        [
+          188,
+          217
+        ],
+        [
+          218,
+          227
+        ]
+      ],
+      "anchor_vector": [
+        12.942297033217022,
+        15.328718420737548,
+        16.939577097302045,
+        15.624004729406131,
+        15.934461805555555,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1806,
+  "subset": "pisc",
+  "subset_local_idx": 11
+}

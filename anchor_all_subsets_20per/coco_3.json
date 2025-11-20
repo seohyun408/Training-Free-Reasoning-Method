@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "coco/train2017/000000292543.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the man doing with the beans? \nA. selling them \nB. cooking \nC. eating them \nD. counting",
+      "reasoning_text": "1. The man is standing beside a cart loaded with green beans, indicating he is involved in their distribution or sale.  \n2. His posture and proximity to the cart suggest he is managing or offering the beans to customers rather than preparing or consuming them.  \n3. The cart’s design and placement in a busy street market imply it is set up for commercial purposes, not personal use.  \n4. Other individuals in the scene appear to be shoppers or passersby, reinforcing the commercial nature of the activity.  \n5. The man’s hand gestures and focus on the beans indicate he is actively engaging with buyers, which aligns with selling them.  \n\n<final>A. selling them</final>",
+      "raw_generation": [
+        "1. The man is standing beside a cart loaded with green beans, indicating he is involved in their display or sale.  \n2. His posture and proximity to the beans suggest he is managing or presenting them to potential customers.  \n3. The cart’s placement in a busy street market implies commercial activity rather than personal consumption or preparation.  \n4. No cooking equipment or eating utensils are visible near him, ruling out cooking or eating as activities.  \n5. His hands are positioned as if he is arranging or counting the beans, but the context of the market strongly suggests he is selling them.  \n\n<final>A. selling them</final>",
+        "1. The man is standing beside a cart loaded with green beans, indicating he is involved in their distribution or sale.  \n2. His posture and proximity to the cart suggest he is managing or offering the beans to customers rather than preparing or consuming them.  \n3. The cart’s design and placement in a busy street market imply it is set up for commercial purposes, not personal use.  \n4. Other individuals in the scene appear to be shoppers or passersby, reinforcing the commercial nature of the activity.  \n5. The man’s hand gestures and focus on the beans indicate he is actively engaging with buyers, which aligns with selling them.  \n\n<final>A. selling them</final>"
+      ],
+      "chunks": [
+        "1. The man is standing beside a cart loaded with green beans, indicating he is involved in their distribution or sale.",
+        "2. His posture and proximity to the cart suggest he is managing or offering the beans to customers rather than preparing or consuming them.",
+        "3. The cart’s design and placement in a busy street market imply it is set up for commercial purposes, not personal use.",
+        "4. Other individuals in the scene appear to be shoppers or passersby, reinforcing the commercial nature of the activity.",
+        "5. The man’s hand gestures and focus on the beans indicate he is actively engaging with buyers, which aligns with selling them.",
+        "<final>A. selling them</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          64,
+          88
+        ],
+        [
+          89,
+          115
+        ],
+        [
+          116,
+          142
+        ],
+        [
+          143,
+          167
+        ],
+        [
+          168,
+          195
+        ],
+        [
+          196,
+          205
+        ]
+      ],
+      "anchor_vector": [
+        10.745683536366522,
+        11.62126024903735,
+        12.20471492814429,
+        14.770369635687935,
+        11.809244791666666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 25,
+  "subset": "coco",
+  "subset_local_idx": 3
+}

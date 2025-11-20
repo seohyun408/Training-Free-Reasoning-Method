@@ -1,0 +1,60 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/10373.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAs shown in the figure, ⊙O, ∠OAC + ∠C = 50°, the measure of ∠BAC is ( )  \nA. 30°  \nB. 35°  \nC. 40°  \nD. 45°",
+      "reasoning_text": "1. The diagram shows circle ⊙O with center O, and points A, B, and C lying on its circumference, forming triangle ABC and radii OA and OC.  \n2. ∠OAC and ∠C are angles within triangle AOC, with ∠OAC + ∠C = 50° given, implying triangle AOC is not equilateral or isosceles with equal base angles.  \n3. Since OA and OC are radii of the circle, triangle AOC is isosceles with OA = OC, meaning ∠OAC = ∠OCA, and ∠OAC + ∠OCA = 50°.  \n4. The central angle ∠AOC = 180° – (∠OAC + ∠OCA) = 180° – 50° = 130°, and ∠BAC is an inscribed angle subtending the same arc as ∠AOC.  \n5. The measure of an inscribed angle is half the measure of its intercepted arc, so ∠BAC = ½ × ∠AOC = ½ × 130° = 65°, but",
+      "raw_generation": [
+        "1. The diagram shows a circle with center O and points A, B, and C on its circumference, forming triangle ABC and radii OA and OC.  \n2. Since OA and OC are radii of the circle, triangle OAC is isosceles with OA = OC, making angles ∠OAC and ∠OCA equal.  \n3. The given condition states that ∠OAC + ∠C = 50°, where ∠C refers to ∠ACB in triangle ABC.  \n4. In triangle OAC, the sum of angles is 180°, so ∠AOC = 180° - 2∠OAC.  \n5. Since ∠BAC is an inscribed angle subtending arc BC, its measure is half the measure of the central angle ∠BOC, which equals ∠AOC.  \n6. Substituting ∠OAC = x, then ∠OCA = x, and ∠C = 50° - x.  \n7. In triangle ABC, ∠BAC + ∠ABC + ∠ACB = 180°, but we need to relate ∠BAC to the",
+        "1. The diagram shows circle ⊙O with center O, and points A, B, and C lying on its circumference, forming triangle ABC and radii OA and OC.  \n2. ∠OAC and ∠C are angles within triangle AOC, with ∠OAC + ∠C = 50° given, implying triangle AOC is not equilateral or isosceles with equal base angles.  \n3. Since OA and OC are radii of the circle, triangle AOC is isosceles with OA = OC, meaning ∠OAC = ∠OCA, and ∠OAC + ∠OCA = 50°.  \n4. The central angle ∠AOC = 180° – (∠OAC + ∠OCA) = 180° – 50° = 130°, and ∠BAC is an inscribed angle subtending the same arc as ∠AOC.  \n5. The measure of an inscribed angle is half the measure of its intercepted arc, so ∠BAC = ½ × ∠AOC = ½ × 130° = 65°, but"
+      ],
+      "chunks": [
+        "1. The diagram shows circle ⊙O with center O, and points A, B, and C lying on its circumference, forming triangle ABC and radii OA and OC.",
+        "2. ∠OAC and ∠C are angles within triangle AOC, with ∠OAC + ∠C = 50° given, implying triangle AOC is not equilateral or isosceles with equal base angles.",
+        "3. Since OA and OC are radii of the circle, triangle AOC is isosceles with OA = OC, meaning ∠OAC = ∠OCA, and ∠OAC + ∠OCA = 50°.",
+        "4. The central angle ∠AOC = 180° – (∠OAC + ∠OCA) = 180° – 50° = 130°, and ∠BAC is an inscribed angle subtending the same arc as ∠AOC.",
+        "5. The measure of an inscribed angle is half the measure of its intercepted arc, so ∠BAC = ½ × ∠AOC = ½ × 130° = 65°, but"
+      ],
+      "chunk_token_ranges": [
+        [
+          134,
+          170
+        ],
+        [
+          171,
+          222
+        ],
+        [
+          223,
+          276
+        ],
+        [
+          277,
+          342
+        ],
+        [
+          343,
+          390
+        ]
+      ],
+      "anchor_vector": [
+        8.505287154280635,
+        14.300250621789727,
+        12.9538938856359,
+        8.679157662898936,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 3,
+  "subset": "geoqa+",
+  "subset_local_idx": 1
+}

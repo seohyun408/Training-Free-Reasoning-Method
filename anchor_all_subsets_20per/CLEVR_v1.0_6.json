@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "CLEVR_v1.0/images/train/CLEVR_train_013346.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many things are either green matte objects or cylinders behind the big metallic cylinder?",
+      "reasoning_text": "1. The green matte object is the small green cylinder positioned behind the large green metallic cylinder, making it one qualifying item.  \n2. The large green metallic cylinder is excluded since the question specifies objects “behind” it, not including itself.  \n3. Behind the large green metallic cylinder, there is also a small green matte cylinder and a small cyan metallic cylinder, but only the green one matches the “green matte” criterion.  \n4. The small gray cylinder and the small cyan cylinder are cylinders behind the big metallic cylinder but do not qualify as green matte objects.  \n5. Therefore, only one object meets both criteria: the small green matte cylinder behind the big metallic cylinder.  \n\n<final>1</final>",
+      "raw_generation": [
+        "1. The image contains one green matte cylinder positioned behind the large metallic green cylinder, which satisfies the first condition of the query.\n2. There is also a small green matte cylinder located behind the large metallic green cylinder, meeting the same criterion.\n3. The large metallic green cylinder itself is not matte, so it does not count as a green matte object.\n4. Behind the large metallic green cylinder, there is a small green matte cylinder and a small gray matte cylinder, but only the green one qualifies.\n5. No other objects in the scene are green matte or cylinders behind the large metallic cylinder, so the total count is two.\n\n<final>2</final>",
+        "1. The green matte object is the small green cylinder positioned behind the large green metallic cylinder, making it one qualifying item.  \n2. The large green metallic cylinder is excluded since the question specifies objects “behind” it, not including itself.  \n3. Behind the large green metallic cylinder, there is also a small green matte cylinder and a small cyan metallic cylinder, but only the green one matches the “green matte” criterion.  \n4. The small gray cylinder and the small cyan cylinder are cylinders behind the big metallic cylinder but do not qualify as green matte objects.  \n5. Therefore, only one object meets both criteria: the small green matte cylinder behind the big metallic cylinder.  \n\n<final>1</final>"
+      ],
+      "chunks": [
+        "1. The green matte object is the small green cylinder positioned behind the large green metallic cylinder, making it one qualifying item.",
+        "2. The large green metallic cylinder is excluded since the question specifies objects “behind” it, not including itself.",
+        "3. Behind the large green metallic cylinder, there is also a small green matte cylinder and a small cyan metallic cylinder, but only the green one matches the “green matte” criterion.",
+        "4. The small gray cylinder and the small cyan cylinder are cylinders behind the big metallic cylinder but do not qualify as green matte objects.",
+        "5. Therefore, only one object meets both criteria: the small green matte cylinder behind the big metallic cylinder.",
+        "<final>1</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          65
+        ],
+        [
+          66,
+          90
+        ],
+        [
+          91,
+          128
+        ],
+        [
+          129,
+          156
+        ],
+        [
+          157,
+          179
+        ],
+        [
+          180,
+          187
+        ]
+      ],
+      "anchor_vector": [
+        11.698248051470708,
+        14.553739000516345,
+        11.189578698693282,
+        11.716335544338474,
+        13.446149553571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 670,
+  "subset": "CLEVR_v1.0",
+  "subset_local_idx": 6
+}

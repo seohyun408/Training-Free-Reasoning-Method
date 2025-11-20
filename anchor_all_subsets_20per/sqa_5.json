@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/12552/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich of these states is farthest north?\nContext: N/A\nOptions: (A) Rhode Island (B) Louisiana (C) Oklahoma (D) South Carolina",
+      "reasoning_text": "1. Rhode Island is positioned in the northeastern corner of the U.S., closer to Canada than any other listed state, as seen by its northernmost placement on the map.  \n2. Louisiana lies far to the south, bordered by the Gulf of Mexico, making it clearly the southernmost of the four options shown.  \n3. Oklahoma is located in the central part of the country, situated significantly south of Rhode Island’s latitude, visible by its position relative to the northern border.  \n4. South Carolina is positioned just north of Georgia and south of North Carolina, placing it further south than Rhode Island but north of Louisiana.  \n5. Comparing all four, Rhode Island’s northernmost location, near the Atlantic coast and just below the Canadian border, confirms it as the farthest north among the choices.  \n\n<final> (A) Rhode Island",
+      "raw_generation": [
+        "1. Rhode Island is located in the northeastern corner of the United States, near the Atlantic coast, and is positioned significantly farther north than the other listed states.  \n2. Louisiana lies in the southern region of the country, bordering the Gulf of Mexico, placing it much farther south than Rhode Island.  \n3. Oklahoma is situated in the central part of the country, with its northern border near the Canadian border, but still south of Rhode Island’s northernmost point.  \n4. South Carolina is located along the southeastern coast, with its northern border lying well south of Rhode Island’s southern border.  \n5. Comparing all four states, Rhode Island’s geographic position extends the farthest north, as confirmed by its location relative to the compass rose and its proximity to the Canadian border.  \n\n<final>(A) Rhode Island</final>",
+        "1. Rhode Island is positioned in the northeastern corner of the U.S., closer to Canada than any other listed state, as seen by its northernmost placement on the map.  \n2. Louisiana lies far to the south, bordered by the Gulf of Mexico, making it clearly the southernmost of the four options shown.  \n3. Oklahoma is located in the central part of the country, situated significantly south of Rhode Island’s latitude, visible by its position relative to the northern border.  \n4. South Carolina is positioned just north of Georgia and south of North Carolina, placing it further south than Rhode Island but north of Louisiana.  \n5. Comparing all four, Rhode Island’s northernmost location, near the Atlantic coast and just below the Canadian border, confirms it as the farthest north among the choices.  \n\n<final> (A) Rhode Island"
+      ],
+      "chunks": [
+        "1. Rhode Island is positioned in the northeastern corner of the U.S., closer to Canada than any other listed state, as seen by its northernmost placement on the map.",
+        "2. Louisiana lies far to the south, bordered by the Gulf of Mexico, making it clearly the southernmost of the four options shown.",
+        "3. Oklahoma is located in the central part of the country, situated significantly south of Rhode Island’s latitude, visible by its position relative to the northern border.",
+        "4. South Carolina is positioned just north of Georgia and south of North Carolina, placing it further south than Rhode Island but north of Louisiana.",
+        "5. Comparing all four, Rhode Island’s northernmost location, near the Atlantic coast and just below the Canadian border, confirms it as the farthest north among the choices.",
+        "<final> (A) Rhode Island"
+      ],
+      "chunk_token_ranges": [
+        [
+          78,
+          113
+        ],
+        [
+          114,
+          142
+        ],
+        [
+          143,
+          175
+        ],
+        [
+          176,
+          204
+        ],
+        [
+          205,
+          241
+        ],
+        [
+          242,
+          250
+        ]
+      ],
+      "anchor_vector": [
+        12.363855561755953,
+        12.534620012555804,
+        10.936073908730158,
+        15.218302408854166,
+        12.384033203125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 23,
+  "subset": "sqa",
+  "subset_local_idx": 5
+}

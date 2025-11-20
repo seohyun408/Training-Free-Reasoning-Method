@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/13063.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAs shown in the figure, in triangle ABC, ∠ACB=90°, AC=8, AB=10. A perpendicular bisector is drawn from point E on AB to segment AC, what is the length of this segment? \nA. 6\nB. 5\nC. 4\nD. 3",
+      "reasoning_text": "1. Triangle ABC is a right triangle with ∠ACB = 90°, and side lengths AC = 8 and AB = 10, making AB the hypotenuse.\n\n2. Using the Pythagorean theorem, BC can be calculated as √(AB² - AC²) = √(100 - 64) = √36 = 6, confirming the triangle’s side lengths.\n\n3. Point E lies on AB, and a perpendicular from E to AC intersects AC at point D, forming a perpendicular segment ED.\n\n4. Since ED is the perpendicular bisector from E to AC, D is the midpoint of AC, making AD = DC = 4, as AC = 8.\n\n5. Triangle AED is similar to triangle ABC because both share angle A and both have right angles, with ED perpendicular to AC and BC perpendicular to AC.\n\n<final> The length of the perpendicular segment ED is 4, matching option C.",
+      "raw_generation": [
+        "1. Triangle ABC is a right triangle with ∠ACB = 90°, and sides AC = 8 and AB = 10, so BC can be found using the Pythagorean theorem: BC = √(AB² - AC²) = √(100 - 64) = √36 = 6.\n\n2. Point E lies on AB, and a perpendicular is drawn from E to AC, intersecting at point D, forming segment ED, which is the perpendicular bisector from E to AC.\n\n3. Since ED is perpendicular to AC and D lies on AC, ED is the height from E to side AC, and its length depends on the position of E along AB.\n\n4. The problem states that ED is a perpendicular bisector from E to AC, which implies that ED is perpendicular to AC and D is the midpoint of AC, so AD = DC = 4.\n\n5. Since ED is perpendicular to AC and D is the midpoint, triangle ADE is a right triangle with AD = 4 and AE as the hypotenuse. Using similar triangles or coordinate geometry, we can find ED = 3, as the triangle formed is a 3-4-5 right triangle scaled",
+        "1. Triangle ABC is a right triangle with ∠ACB = 90°, and side lengths AC = 8 and AB = 10, making AB the hypotenuse.\n\n2. Using the Pythagorean theorem, BC can be calculated as √(AB² - AC²) = √(100 - 64) = √36 = 6, confirming the triangle’s side lengths.\n\n3. Point E lies on AB, and a perpendicular from E to AC intersects AC at point D, forming a perpendicular segment ED.\n\n4. Since ED is the perpendicular bisector from E to AC, D is the midpoint of AC, making AD = DC = 4, as AC = 8.\n\n5. Triangle AED is similar to triangle ABC because both share angle A and both have right angles, with ED perpendicular to AC and BC perpendicular to AC.\n\n<final> The length of the perpendicular segment ED is 4, matching option C."
+      ],
+      "chunks": [
+        "1. Triangle ABC is a right triangle with ∠ACB = 90°, and side lengths AC = 8 and AB = 10, making AB the hypotenuse.",
+        "2. Using the Pythagorean theorem, BC can be calculated as √(AB² - AC²) = √(100 - 64) = √36 = 6, confirming the triangle’s side lengths.",
+        "3. Point E lies on AB, and a perpendicular from E to AC intersects AC at point D, forming a perpendicular segment ED.",
+        "4. Since ED is the perpendicular bisector from E to AC, D is the midpoint of AC, making AD = DC = 4, as AC = 8.",
+        "5. Triangle AED is similar to triangle ABC because both share angle A and both have right angles, with ED perpendicular to AC and BC perpendicular to AC.",
+        "<final> The length of the perpendicular segment ED is 4, matching option C."
+      ],
+      "chunk_token_ranges": [
+        [
+          152,
+          192
+        ],
+        [
+          192,
+          243
+        ],
+        [
+          243,
+          270
+        ],
+        [
+          270,
+          305
+        ],
+        [
+          305,
+          337
+        ],
+        [
+          337,
+          355
+        ]
+      ],
+      "anchor_vector": [
+        9.909859323800834,
+        9.137659368703089,
+        11.122576679708638,
+        12.128390615636652,
+        10.716131036931818,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 42,
+  "subset": "geoqa+",
+  "subset_local_idx": 6
+}

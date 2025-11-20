@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "CLEVR_v1.0/images/train/CLEVR_train_028673.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat number of other things are there of the same material as the cylinder",
+      "reasoning_text": "1. The cylinder is made of a matte teal material, visibly non-reflective and uniform in texture, differing from the glossy surfaces of the other objects.  \n2. The large blue cube has a matte finish, matching the cylinder’s texture and lack of specular highlights, indicating shared material properties.  \n3. The small blue cube also exhibits a matte finish, consistent with the cylinder’s surface, suggesting both are constructed from identical or similar non-glossy materials.  \n4. The purple sphere is highly reflective and glossy, clearly contrasting with the cylinder’s matte surface, meaning it is not made of the same material.  \n5. The large blue sphere is also glossy and reflective, with visible highlights, further confirming it does not share the cylinder’s matte material.  \n\n<final>There are two other things — the large blue cube and the small blue cube — made of the same material as the cylinder.</final>",
+      "raw_generation": [
+        "1. The cylinder is made of a matte, non-reflective teal material, which contrasts with the shiny surfaces of the other objects.  \n2. The large blue cube has a matte finish similar to the cylinder, lacking any reflective highlights or metallic sheen.  \n3. The small blue cube also shares the same matte texture and non-reflective surface as the cylinder.  \n4. The purple sphere has a matte finish, matching the cylinder’s surface properties despite its different color.  \n5. The large blue sphere, however, is highly reflective and metallic, making it distinctly different from the cylinder’s material.  \n\n<final>3</final>",
+        "1. The cylinder is made of a matte teal material, visibly non-reflective and uniform in texture, differing from the glossy surfaces of the other objects.  \n2. The large blue cube has a matte finish, matching the cylinder’s texture and lack of specular highlights, indicating shared material properties.  \n3. The small blue cube also exhibits a matte finish, consistent with the cylinder’s surface, suggesting both are constructed from identical or similar non-glossy materials.  \n4. The purple sphere is highly reflective and glossy, clearly contrasting with the cylinder’s matte surface, meaning it is not made of the same material.  \n5. The large blue sphere is also glossy and reflective, with visible highlights, further confirming it does not share the cylinder’s matte material.  \n\n<final>There are two other things — the large blue cube and the small blue cube — made of the same material as the cylinder.</final>"
+      ],
+      "chunks": [
+        "1. The cylinder is made of a matte teal material, visibly non-reflective and uniform in texture, differing from the glossy surfaces of the other objects.",
+        "2. The large blue cube has a matte finish, matching the cylinder’s texture and lack of specular highlights, indicating shared material properties.",
+        "3. The small blue cube also exhibits a matte finish, consistent with the cylinder’s surface, suggesting both are constructed from identical or similar non-glossy materials.",
+        "4. The purple sphere is highly reflective and glossy, clearly contrasting with the cylinder’s matte surface, meaning it is not made of the same material.",
+        "5. The large blue sphere is also glossy and reflective, with visible highlights, further confirming it does not share the cylinder’s matte material.",
+        "<final>There are two other things — the large blue cube and the small blue cube — made of the same material as the cylinder.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          70
+        ],
+        [
+          71,
+          98
+        ],
+        [
+          99,
+          132
+        ],
+        [
+          133,
+          163
+        ],
+        [
+          164,
+          192
+        ],
+        [
+          193,
+          223
+        ]
+      ],
+      "anchor_vector": [
+        13.118343657933503,
+        13.693940066878413,
+        13.137949916294643,
+        11.417693074544271,
+        13.014192708333333,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1337,
+  "subset": "CLEVR_v1.0",
+  "subset_local_idx": 14
+}

@@ -1,0 +1,92 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/two_col_2318.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat country had the second most scanners? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The bar chart lists countries ranked by CT scanners per million population.\n2. Japan is at the top with 111.49 scanners per million, indicating the highest count.\n3. The next bar, labeled Australia, shows 70.25 scanners per million, placing it second.\n4. No other country on the chart has a value between Japan’s and Australia’s.\n5. Therefore, Australia is the country with the second most scanners per million population.\n\n<final>Australia</final>",
+      "raw_generation": [
+        "1. The bar chart ranks countries by the number of CT scanners per million population.\n2. Japan leads with 111.49 scanners per million, the highest value on the chart.\n3. The second-longest bar corresponds to Australia, indicating it has the second-highest number.\n4. Australia’s value is clearly labeled as 70.25 scanners per million population.\n5. No other country has a value between Japan and Australia, confirming Australia’s position as second.\n\n<final>Australia</final>",
+        "1. The bar chart lists countries ranked by CT scanners per million population.\n2. Japan is at the top with 111.49 scanners per million, indicating the highest count.\n3. The next bar, labeled Australia, shows 70.25 scanners per million, placing it second.\n4. No other country on the chart has a value between Japan’s and Australia’s.\n5. Therefore, Australia is the country with the second most scanners per million population.\n\n<final>Australia</final>"
+      ],
+      "chunks": [
+        "1. The bar chart lists countries ranked by CT scanners per million population.",
+        "2. Japan is at the top with 111.49 scanners per million, indicating the highest count.",
+        "3. The next bar, labeled Australia, shows 70.25 scanners per million, placing it second.",
+        "4. No other country on the chart has a value between Japan’s and Australia’s.",
+        "5. Therefore, Australia is the country with the second most scanners per million population.",
+        "<final>Australia</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          59
+        ],
+        [
+          59,
+          83
+        ],
+        [
+          83,
+          107
+        ],
+        [
+          107,
+          125
+        ],
+        [
+          125,
+          142
+        ],
+        [
+          142,
+          149
+        ]
+      ],
+      "anchor_vector": [
+        10.697793205823995,
+        12.742234800821372,
+        10.389157230817673,
+        10.444680606617647,
+        8.524553571428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many CT scanners did Japan have per million people in 2019? Answer the question using a single word or phrase.",
+      "reasoning_text": "111.49\n\n<final>111.49</final>",
+      "raw_generation": [
+        "111.49",
+        "111.49\n\n<final>111.49</final>"
+      ],
+      "chunks": [
+        "111.49\n\n<final>111.49</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          81
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 36,
+  "subset": "chartqa",
+  "subset_local_idx": 6
+}

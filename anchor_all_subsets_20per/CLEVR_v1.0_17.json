@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "CLEVR_v1.0/images/train/CLEVR_train_029354.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAdd 3 cyan matte objects. How many cyan matte objects exist?",
+      "reasoning_text": "1. The original image contains one small cyan matte sphere located near the center-left, positioned between a purple cylinder and a larger red sphere.  \n2. No other cyan matte objects are visible in the initial scene, as the only other cyan object is a shiny cylinder, not matte.  \n3. Adding three new cyan matte objects increases the total count by exactly three, as specified in the instruction.  \n4. The original cyan matte sphere remains unchanged and still counts as one, so the new total includes it plus the three added.  \n5. After adding the three, the total number of cyan matte objects becomes four, since one was already present before the addition.  \n\n<final>4</final>",
+      "raw_generation": [
+        "1. The original image contains one small cyan matte sphere located near the center-left area.  \n2. There is also a small cyan cylinder with a metallic finish, which is not matte, positioned near the center.  \n3. Adding three new cyan matte objects increases the total count of matte cyan items.  \n4. The initial matte cyan object plus the three newly added ones equals four matte cyan objects.  \n5. The metallic cyan cylinder remains unchanged and does not contribute to the matte count.  \n\n<final>4</final>",
+        "1. The original image contains one small cyan matte sphere located near the center-left, positioned between a purple cylinder and a larger red sphere.  \n2. No other cyan matte objects are visible in the initial scene, as the only other cyan object is a shiny cylinder, not matte.  \n3. Adding three new cyan matte objects increases the total count by exactly three, as specified in the instruction.  \n4. The original cyan matte sphere remains unchanged and still counts as one, so the new total includes it plus the three added.  \n5. After adding the three, the total number of cyan matte objects becomes four, since one was already present before the addition.  \n\n<final>4</final>"
+      ],
+      "chunks": [
+        "1. The original image contains one small cyan matte sphere located near the center-left, positioned between a purple cylinder and a larger red sphere.",
+        "2. No other cyan matte objects are visible in the initial scene, as the only other cyan object is a shiny cylinder, not matte.",
+        "3. Adding three new cyan matte objects increases the total count by exactly three, as specified in the instruction.",
+        "4. The original cyan matte sphere remains unchanged and still counts as one, so the new total includes it plus the three added.",
+        "5. After adding the three, the total number of cyan matte objects becomes four, since one was already present before the addition.",
+        "<final>4</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          36,
+          64
+        ],
+        [
+          65,
+          93
+        ],
+        [
+          94,
+          116
+        ],
+        [
+          117,
+          143
+        ],
+        [
+          144,
+          170
+        ],
+        [
+          171,
+          178
+        ]
+      ],
+      "anchor_vector": [
+        12.764775946709541,
+        12.310304929445556,
+        15.050101591117217,
+        17.032151442307693,
+        11.132254464285714,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1467,
+  "subset": "CLEVR_v1.0",
+  "subset_local_idx": 17
+}

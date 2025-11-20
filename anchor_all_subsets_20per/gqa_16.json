@@ -1,0 +1,688 @@
+{
+  "total_pairs": 12,
+  "successful_pairs": 12,
+  "image_path": "gqa/images/2371830.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is in front of the curtains?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The image shows three men standing on a stage with a red curtain as the backdrop, indicating they are positioned directly in front of it.\n2. The man on the right, wearing glasses and a light-colored shirt with a patterned tie, is closest to the curtain, with his body partially obscuring it.\n3. The man in the center, dressed in a dark shirt, stands slightly behind the man on the right but still in front of the curtain.\n4. The man on the left, wearing a striped shirt, is also in front of the curtain, positioned behind the man in the center.\n5. All three individuals are clearly visible against the curtain, confirming they are positioned in front of it.\n</reasoning>\n<final>three men</final>",
+      "raw_generation": [
+        "1. The image shows three men standing on a stage with a red curtain backdrop.  \n2. The man on the left wears a purple striped shirt and smiles broadly.  \n3. The central figure, in a black shirt, laughs while looking toward the right.  \n4. The man on the right, in a white shirt and red tie, stands with his hands clasped and looks downward.  \n5. All three individuals are positioned directly in front of the curtains, indicating they are the main subjects of the scene.  \n\n<final>three men</final>",
+        "<reasoning>\n1. The image shows three men standing on a stage with a red curtain as the backdrop, indicating they are positioned directly in front of it.\n2. The man on the right, wearing glasses and a light-colored shirt with a patterned tie, is closest to the curtain, with his body partially obscuring it.\n3. The man in the center, dressed in a dark shirt, stands slightly behind the man on the right but still in front of the curtain.\n4. The man on the left, wearing a striped shirt, is also in front of the curtain, positioned behind the man in the center.\n5. All three individuals are clearly visible against the curtain, confirming they are positioned in front of it.\n</reasoning>\n<final>three men</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The image shows three men standing on a stage with a red curtain as the backdrop, indicating they are positioned directly in front of it.",
+        "2. The man on the right, wearing glasses and a light-colored shirt with a patterned tie, is closest to the curtain, with his body partially obscuring it.",
+        "3. The man in the center, dressed in a dark shirt, stands slightly behind the man on the right but still in front of the curtain.",
+        "4. The man on the left, wearing a striped shirt, is also in front of the curtain, positioned behind the man in the center.",
+        "5. All three individuals are clearly visible against the curtain, confirming they are positioned in front of it.",
+        "</reasoning>\n<final>three men</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          50
+        ],
+        [
+          50,
+          77
+        ],
+        [
+          77,
+          112
+        ],
+        [
+          112,
+          142
+        ],
+        [
+          142,
+          171
+        ],
+        [
+          171,
+          192
+        ],
+        [
+          192,
+          204
+        ]
+      ],
+      "anchor_vector": [
+        16.401450975633033,
+        13.757376430367406,
+        11.368806725613197,
+        12.369712825413929,
+        14.46406482514881,
+        13.464029947916666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is in front of the red curtains?",
+      "reasoning_text": "1. The man on the right, wearing glasses and a light-colored shirt with a red tie, stands closest to the red curtains, making him the most forward in the frame.\n\n2. His body is angled slightly toward the center, and his hands are clasped in front of him, indicating he is positioned prominently in the foreground.\n\n3. The other two men are behind him, slightly to the left, so they are not as close to the curtains as he is.\n\n4. The red curtains form a solid backdrop behind all three individuals, with no visible space between them and the fabric, confirming they are all on stage.\n\n5. The lighting focuses more intensely on the man in the center and the one on the right, highlighting their positions in front of the curtains.\n\n<final> The man wearing glasses and a light-colored shirt with a red tie is in front of the red curtains.",
+      "raw_generation": [
+        "1. The image shows three men standing on a stage with a deep red curtain as the backdrop, indicating a performance or event setting.  \n2. The man on the left wears a purple and white striped button-up shirt and is smiling broadly, suggesting he is engaged in the moment.  \n3. The central figure, dressed in a black shirt, is turned slightly toward the man on the left, appearing to be in conversation or reacting to him.  \n4. The man on the right, wearing glasses, a light-colored shirt, and a red tie, stands with his hands clasped in front of him, looking toward the other two.  \n5. All three individuals are positioned directly in front of the red curtains, which serve as the stage’s background, confirming they are the subjects in front of the curtains.  \n\n<final>Three men are standing in front of the red curtains.</final>",
+        "1. The man on the right, wearing glasses and a light-colored shirt with a red tie, stands closest to the red curtains, making him the most forward in the frame.\n\n2. His body is angled slightly toward the center, and his hands are clasped in front of him, indicating he is positioned prominently in the foreground.\n\n3. The other two men are behind him, slightly to the left, so they are not as close to the curtains as he is.\n\n4. The red curtains form a solid backdrop behind all three individuals, with no visible space between them and the fabric, confirming they are all on stage.\n\n5. The lighting focuses more intensely on the man in the center and the one on the right, highlighting their positions in front of the curtains.\n\n<final> The man wearing glasses and a light-colored shirt with a red tie is in front of the red curtains."
+      ],
+      "chunks": [
+        "1. The man on the right, wearing glasses and a light-colored shirt with a red tie, stands closest to the red curtains, making him the most forward in the frame.",
+        "2. His body is angled slightly toward the center, and his hands are clasped in front of him, indicating he is positioned prominently in the foreground.",
+        "3. The other two men are behind him, slightly to the left, so they are not as close to the curtains as he is.",
+        "4. The red curtains form a solid backdrop behind all three individuals, with no visible space between them and the fabric, confirming they are all on stage.",
+        "5. The lighting focuses more intensely on the man in the center and the one on the right, highlighting their positions in front of the curtains.",
+        "<final> The man wearing glasses and a light-colored shirt with a red tie is in front of the red curtains."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          62
+        ],
+        [
+          62,
+          93
+        ],
+        [
+          93,
+          121
+        ],
+        [
+          121,
+          152
+        ],
+        [
+          152,
+          181
+        ],
+        [
+          181,
+          205
+        ]
+      ],
+      "anchor_vector": [
+        10.190819702116107,
+        16.163635000926696,
+        14.058240906297314,
+        13.962181354391163,
+        13.280171712239584,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wears a shirt?",
+      "reasoning_text": "1. The man on the left wears a purple and white vertically striped button-up shirt with a collar, clearly visible under the stage lights.  \n2. The man in the center wears a solid black short-sleeved shirt, partially rolled up at the sleeves, revealing a dark wristband on his left arm.  \n3. The man on the right wears a white button-up shirt with thin red stripes, paired with a red patterned tie and glasses.  \n4. All three individuals on stage are dressed in shirts, indicating a formal or semi-formal event, despite the casual body language.  \n5. The shirts’ colors and patterns vary, including stripes and solids, contrasting with the deep red curtain backdrop behind them.  \n\n<final> All three men on stage wear shirts.",
+      "raw_generation": [
+        "1. The person on the left wears a purple and white striped button-up shirt with the sleeves rolled up, paired with dark pants.  \n2. The central figure wears a solid black short-sleeved shirt, with their sleeves rolled up and a dark wristband visible on their left arm.  \n3. The person on the right wears a light-colored, possibly white or pale pink, button-up shirt with a subtle pattern and a red tie.  \n4. All three individuals are wearing shirts, indicating this is a common attire for the scene, likely a performance or presentation.  \n5. The shirts vary in color, pattern, and style, suggesting individual choices or roles within the group, such as casual, formal, or stage-appropriate wear.  \n\n<final>Everyone in the image wears a shirt.</final>",
+        "1. The man on the left wears a purple and white vertically striped button-up shirt with a collar, clearly visible under the stage lights.  \n2. The man in the center wears a solid black short-sleeved shirt, partially rolled up at the sleeves, revealing a dark wristband on his left arm.  \n3. The man on the right wears a white button-up shirt with thin red stripes, paired with a red patterned tie and glasses.  \n4. All three individuals on stage are dressed in shirts, indicating a formal or semi-formal event, despite the casual body language.  \n5. The shirts’ colors and patterns vary, including stripes and solids, contrasting with the deep red curtain backdrop behind them.  \n\n<final> All three men on stage wear shirts."
+      ],
+      "chunks": [
+        "1. The man on the left wears a purple and white vertically striped button-up shirt with a collar, clearly visible under the stage lights.",
+        "2. The man in the center wears a solid black short-sleeved shirt, partially rolled up at the sleeves, revealing a dark wristband on his left arm.",
+        "3. The man on the right wears a white button-up shirt with thin red stripes, paired with a red patterned tie and glasses.",
+        "4. All three individuals on stage are dressed in shirts, indicating a formal or semi-formal event, despite the casual body language.",
+        "5. The shirts’ colors and patterns vary, including stripes and solids, contrasting with the deep red curtain backdrop behind them.",
+        "<final> All three men on stage wear shirts."
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          46
+        ],
+        [
+          47,
+          81
+        ],
+        [
+          82,
+          110
+        ],
+        [
+          111,
+          138
+        ],
+        [
+          139,
+          164
+        ],
+        [
+          165,
+          176
+        ]
+      ],
+      "anchor_vector": [
+        7.844058498326335,
+        12.158666120843856,
+        12.985087594696969,
+        12.880246360085227,
+        14.978693181818182,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the young boy wearing?",
+      "reasoning_text": "1. The young boy is wearing a light-colored, long-sleeved, button-up shirt with a subtle checkered pattern, visible from the chest up.  \n2. He has on a red patterned tie, loosely knotted and hanging over his shirt’s front, with the knot slightly askew.  \n3. His trousers appear to be dark blue denim jeans, partially visible below the shirt’s hemline and waistband.  \n4. He wears thin-framed glasses that sit on his nose, with clear lenses and a light-colored frame matching his outfit.  \n5. His hair is light brown, slightly tousled, and cut short, framing his face as he looks away from the camera.  \n\n<final> The young boy is wearing a light-colored checkered button-up shirt, red patterned tie, dark blue jeans, and thin-framed glasses.",
+      "raw_generation": [
+        "1. The young boy is wearing a light-colored, long-sleeved button-up shirt with a subtle checkered or striped pattern.  \n2. He has on a red patterned tie that appears to be loosely knotted around his neck.  \n3. His attire includes dark-colored pants, likely jeans or slacks, visible below the shirt’s hem.  \n4. He is wearing eyeglasses with thin frames, positioned on his face as he looks downward.  \n5. The boy’s shirt sleeves are rolled up slightly, revealing his forearms and wrists.  \n\n<final>The young boy is wearing a light-colored checkered button-up shirt, a red patterned tie, dark pants, and eyeglasses with rolled-up sleeves.</final>",
+        "1. The young boy is wearing a light-colored, long-sleeved, button-up shirt with a subtle checkered pattern, visible from the chest up.  \n2. He has on a red patterned tie, loosely knotted and hanging over his shirt’s front, with the knot slightly askew.  \n3. His trousers appear to be dark blue denim jeans, partially visible below the shirt’s hemline and waistband.  \n4. He wears thin-framed glasses that sit on his nose, with clear lenses and a light-colored frame matching his outfit.  \n5. His hair is light brown, slightly tousled, and cut short, framing his face as he looks away from the camera.  \n\n<final> The young boy is wearing a light-colored checkered button-up shirt, red patterned tie, dark blue jeans, and thin-framed glasses."
+      ],
+      "chunks": [
+        "1. The young boy is wearing a light-colored, long-sleeved, button-up shirt with a subtle checkered pattern, visible from the chest up.",
+        "2. He has on a red patterned tie, loosely knotted and hanging over his shirt’s front, with the knot slightly askew.",
+        "3. His trousers appear to be dark blue denim jeans, partially visible below the shirt’s hemline and waistband.",
+        "4. He wears thin-framed glasses that sit on his nose, with clear lenses and a light-colored frame matching his outfit.",
+        "5. His hair is light brown, slightly tousled, and cut short, framing his face as he looks away from the camera.",
+        "<final> The young boy is wearing a light-colored checkered button-up shirt, red patterned tie, dark blue jeans, and thin-framed glasses."
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          54
+        ],
+        [
+          55,
+          84
+        ],
+        [
+          85,
+          109
+        ],
+        [
+          110,
+          136
+        ],
+        [
+          137,
+          164
+        ],
+        [
+          165,
+          197
+        ]
+      ],
+      "anchor_vector": [
+        16.84513970676838,
+        12.904571446258458,
+        14.48862253679962,
+        14.9747393572772,
+        13.150146484375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat clothing item is black?",
+      "reasoning_text": "1. The man positioned in the center of the image wears a black shirt, which contrasts with the other two men’s lighter-colored shirts and stands out against the red curtain backdrop.  \n2. The black shirt has short sleeves and a casual fit, with the sleeves slightly rolled up, indicating a relaxed or informal style appropriate for the stage setting.  \n3. The man wearing the black shirt is turned slightly away from the camera, revealing the side of his torso and the shirt’s smooth texture under the stage lighting.  \n4. The black shirt’s dark hue absorbs more light compared to the purple and white shirts, making it visually dominant in the composition of the scene.  \n5. The black shirt is the only dark-colored clothing item among the three men, drawing attention to the central figure’s posture and interaction with the others.  \n\n<final>The black clothing item is the shirt worn by the man in the center of the image.</final>",
+      "raw_generation": [
+        "1. The man positioned in the center of the image is wearing a black shirt, which stands out against the red curtain backdrop and the other individuals' lighter-colored attire.  \n2. This black shirt appears to be a casual button-up or polo-style garment, with sleeves rolled up to the elbows, suggesting a relaxed or performance-related setting.  \n3. The black shirt contrasts sharply with the striped purple shirt worn by the man on the left and the light-colored shirt with a tie worn by the man on the right.  \n4. The black shirt’s dark hue absorbs the stage lighting, making it appear more subdued compared to the brighter, more reflective fabrics of the other clothing items.  \n5. The black shirt is the only dark-colored garment visible in the image, making it the most prominent and easily identifiable black clothing item among the three men.  \n\n<final>Black shirt</final>",
+        "1. The man positioned in the center of the image wears a black shirt, which contrasts with the other two men’s lighter-colored shirts and stands out against the red curtain backdrop.  \n2. The black shirt has short sleeves and a casual fit, with the sleeves slightly rolled up, indicating a relaxed or informal style appropriate for the stage setting.  \n3. The man wearing the black shirt is turned slightly away from the camera, revealing the side of his torso and the shirt’s smooth texture under the stage lighting.  \n4. The black shirt’s dark hue absorbs more light compared to the purple and white shirts, making it visually dominant in the composition of the scene.  \n5. The black shirt is the only dark-colored clothing item among the three men, drawing attention to the central figure’s posture and interaction with the others.  \n\n<final>The black clothing item is the shirt worn by the man in the center of the image.</final>"
+      ],
+      "chunks": [
+        "1. The man positioned in the center of the image wears a black shirt, which contrasts with the other two men’s lighter-colored shirts and stands out against the red curtain backdrop.",
+        "2. The black shirt has short sleeves and a casual fit, with the sleeves slightly rolled up, indicating a relaxed or informal style appropriate for the stage setting.",
+        "3. The man wearing the black shirt is turned slightly away from the camera, revealing the side of his torso and the shirt’s smooth texture under the stage lighting.",
+        "4. The black shirt’s dark hue absorbs more light compared to the purple and white shirts, making it visually dominant in the composition of the scene.",
+        "5. The black shirt is the only dark-colored clothing item among the three men, drawing attention to the central figure’s posture and interaction with the others.",
+        "<final>The black clothing item is the shirt worn by the man in the center of the image.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          56
+        ],
+        [
+          57,
+          89
+        ],
+        [
+          90,
+          123
+        ],
+        [
+          124,
+          154
+        ],
+        [
+          155,
+          186
+        ],
+        [
+          187,
+          209
+        ]
+      ],
+      "anchor_vector": [
+        13.66361386833303,
+        14.867793961540812,
+        12.376641445961633,
+        14.420358607496334,
+        13.127041903409092,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre the curtains behind the boy that is not old?",
+      "reasoning_text": "1. The boy on the right, wearing glasses and a light shirt, appears younger than the other two men, suggesting he is not old.  \n2. Behind him, the deep red curtains form a solid, unbroken backdrop, extending from floor to ceiling and framing the stage area.  \n3. The curtains are positioned directly behind the boy, with no visible gaps or obstructions between him and the fabric.  \n4. The lighting highlights the boy’s figure against the curtain, emphasizing the curtain’s role as a background element behind him.  \n5. The curtains are clearly visible behind the boy, confirming they are behind the boy who is not old.\n\n<final>Yes, the curtains are behind the boy who is not old.</final>",
+      "raw_generation": [
+        "1. The boy on the right, who appears younger than the other two men, is standing in front of a dark red curtain backdrop.  \n2. The curtain’s vertical folds and rich color are clearly visible behind him, indicating it serves as the stage or performance setting.  \n3. His posture and position suggest he is on a stage or in front of a curtain, consistent with a theatrical or event environment.  \n4. The lighting highlights the boy and the curtain behind him, emphasizing their proximity and the curtain’s role as a background element.  \n5. Since the boy is the youngest person in the image and the curtain is directly behind him, the curtains are indeed behind the boy who is not old.  \n\n<final>Yes, the curtains are behind the boy who is not old.</final>",
+        "1. The boy on the right, wearing glasses and a light shirt, appears younger than the other two men, suggesting he is not old.  \n2. Behind him, the deep red curtains form a solid, unbroken backdrop, extending from floor to ceiling and framing the stage area.  \n3. The curtains are positioned directly behind the boy, with no visible gaps or obstructions between him and the fabric.  \n4. The lighting highlights the boy’s figure against the curtain, emphasizing the curtain’s role as a background element behind him.  \n5. The curtains are clearly visible behind the boy, confirming they are behind the boy who is not old.\n\n<final>Yes, the curtains are behind the boy who is not old.</final>"
+      ],
+      "chunks": [
+        "1. The boy on the right, wearing glasses and a light shirt, appears younger than the other two men, suggesting he is not old.",
+        "2. Behind him, the deep red curtains form a solid, unbroken backdrop, extending from floor to ceiling and framing the stage area.",
+        "3. The curtains are positioned directly behind the boy, with no visible gaps or obstructions between him and the fabric.",
+        "4. The lighting highlights the boy’s figure against the curtain, emphasizing the curtain’s role as a background element behind him.",
+        "5. The curtains are clearly visible behind the boy, confirming they are behind the boy who is not old.",
+        "<final>Yes, the curtains are behind the boy who is not old.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          59
+        ],
+        [
+          60,
+          88
+        ],
+        [
+          89,
+          113
+        ],
+        [
+          114,
+          139
+        ],
+        [
+          140,
+          162
+        ],
+        [
+          162,
+          180
+        ]
+      ],
+      "anchor_vector": [
+        14.167295190324001,
+        15.668116763336489,
+        11.53832909169823,
+        12.895979601927477,
+        12.770941840277779,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there any boys in front of the curtains?",
+      "reasoning_text": "1. The image shows three individuals standing on a stage with a red curtain as the backdrop, indicating they are positioned directly in front of the curtains.  \n2. All three individuals appear to be young men, with the one on the right wearing glasses and a checkered shirt, suggesting a youthful appearance.  \n3. The lighting focuses on the three figures, emphasizing their presence in front of the curtain and highlighting their proximity to the stage edge.  \n4. The man in the center is turned slightly toward the left, while the one on the right is looking down, indicating they are engaged with each other or the audience, reinforcing their front-facing position.  \n5. Their attire, including button-down shirts and casual pants, suggests they are participants in a performance or event, further supporting that they are in front of the curtains.  \n\n<final>Yes, there are boys in front of the curtains.</final>",
+      "raw_generation": [
+        "1. The image shows three individuals standing on a stage with a red curtain as the backdrop, indicating they are positioned in front of the curtains.  \n2. All three people appear to be young males, likely teenagers or young adults, based on their facial features and body proportions.  \n3. The lighting focuses on the individuals, casting shadows behind them against the curtain, which confirms their placement in front of it.  \n4. Their casual yet semi-formal attire, including button-down shirts and ties, suggests they may be part of a performance or presentation in front of the curtain.  \n5. The spatial arrangement and perspective of the photo clearly place the individuals between the viewer and the curtain, confirming they are in front of it.  \n\n<final>Yes, there are boys in front of the curtains.</final>",
+        "1. The image shows three individuals standing on a stage with a red curtain as the backdrop, indicating they are positioned directly in front of the curtains.  \n2. All three individuals appear to be young men, with the one on the right wearing glasses and a checkered shirt, suggesting a youthful appearance.  \n3. The lighting focuses on the three figures, emphasizing their presence in front of the curtain and highlighting their proximity to the stage edge.  \n4. The man in the center is turned slightly toward the left, while the one on the right is looking down, indicating they are engaged with each other or the audience, reinforcing their front-facing position.  \n5. Their attire, including button-down shirts and casual pants, suggests they are participants in a performance or event, further supporting that they are in front of the curtains.  \n\n<final>Yes, there are boys in front of the curtains.</final>"
+      ],
+      "chunks": [
+        "1. The image shows three individuals standing on a stage with a red curtain as the backdrop, indicating they are positioned directly in front of the curtains.",
+        "2. All three individuals appear to be young men, with the one on the right wearing glasses and a checkered shirt, suggesting a youthful appearance.",
+        "3. The lighting focuses on the three figures, emphasizing their presence in front of the curtain and highlighting their proximity to the stage edge.",
+        "4. The man in the center is turned slightly toward the left, while the one on the right is looking down, indicating they are engaged with each other or the audience, reinforcing their front-facing position.",
+        "5. Their attire, including button-down shirts and casual pants, suggests they are participants in a performance or event, further supporting that they are in front of the curtains.",
+        "<final>Yes, there are boys in front of the curtains.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          58
+        ],
+        [
+          59,
+          89
+        ],
+        [
+          90,
+          117
+        ],
+        [
+          118,
+          159
+        ],
+        [
+          160,
+          194
+        ],
+        [
+          195,
+          211
+        ]
+      ],
+      "anchor_vector": [
+        14.323873818047502,
+        12.027732604659384,
+        14.33604013378229,
+        15.738855249741498,
+        12.807815551757812,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the black clothing item called?",
+      "reasoning_text": "1. The black clothing item worn by the central figure is a long-sleeved shirt, evident from its collar and sleeves extending to the wrists, fitting the typical shirt style.\n2. The shirt’s fabric appears smooth and solid black, with no visible patterns, suggesting it is a plain, casual or performance-oriented garment rather than formal attire.\n3. The sleeves are rolled up slightly, indicating a relaxed or informal setting, and the shirt’s fit is loose, not tailored or fitted to the body.\n4. The black shirt contrasts sharply with the stage’s red curtain backdrop and the other individuals’ lighter-colored shirts, making it visually distinct and prominent.\n5. The central figure’s posture and interaction with the others suggest the shirt is part of a performance or casual social event, not a formal occasion requiring suits or dress shirts.\n\n<final>Black shirt</final>",
+      "raw_generation": [
+        "1. The black clothing item is a long-sleeved shirt worn by the man in the center of the image, who is turned slightly to his right.  \n2. It appears to be made of a smooth, dark fabric that contrasts with the lighter-colored shirts worn by the other two men.  \n3. The shirt has a collar and button-front design, typical of casual or semi-formal attire, and is not a jacket or coat.  \n4. The sleeves are rolled up slightly, suggesting a relaxed or informal setting, possibly a performance or event.  \n5. The fit is loose and comfortable, allowing for ease of movement, which is consistent with stage or social settings.  \n\n<final>shirt</final>",
+        "1. The black clothing item worn by the central figure is a long-sleeved shirt, evident from its collar and sleeves extending to the wrists, fitting the typical shirt style.\n2. The shirt’s fabric appears smooth and solid black, with no visible patterns, suggesting it is a plain, casual or performance-oriented garment rather than formal attire.\n3. The sleeves are rolled up slightly, indicating a relaxed or informal setting, and the shirt’s fit is loose, not tailored or fitted to the body.\n4. The black shirt contrasts sharply with the stage’s red curtain backdrop and the other individuals’ lighter-colored shirts, making it visually distinct and prominent.\n5. The central figure’s posture and interaction with the others suggest the shirt is part of a performance or casual social event, not a formal occasion requiring suits or dress shirts.\n\n<final>Black shirt</final>"
+      ],
+      "chunks": [
+        "1. The black clothing item worn by the central figure is a long-sleeved shirt, evident from its collar and sleeves extending to the wrists, fitting the typical shirt style.",
+        "2. The shirt’s fabric appears smooth and solid black, with no visible patterns, suggesting it is a plain, casual or performance-oriented garment rather than formal attire.",
+        "3. The sleeves are rolled up slightly, indicating a relaxed or informal setting, and the shirt’s fit is loose, not tailored or fitted to the body.",
+        "4. The black shirt contrasts sharply with the stage’s red curtain backdrop and the other individuals’ lighter-colored shirts, making it visually distinct and prominent.",
+        "5. The central figure’s posture and interaction with the others suggest the shirt is part of a performance or casual social event, not a formal occasion requiring suits or dress shirts.",
+        "<final>Black shirt</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          60
+        ],
+        [
+          60,
+          93
+        ],
+        [
+          93,
+          125
+        ],
+        [
+          125,
+          155
+        ],
+        [
+          155,
+          190
+        ],
+        [
+          190,
+          198
+        ]
+      ],
+      "anchor_vector": [
+        11.87081276897744,
+        16.79091360909598,
+        0.0,
+        15.219607979910714,
+        15.512451171875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nThe shirt the boy is wearing is which color?",
+      "reasoning_text": "1. The boy on the right side of the image is wearing a light-colored, patterned shirt that appears to be white or off-white with thin stripes or checks visible under the stage lighting.\n\n2. The shirt’s fabric reflects the warm stage lighting, giving it a slightly yellowish tint, but the base color remains clearly light and neutral.\n\n3. The shirt contrasts with the dark background curtain and the other two men’s darker attire, making its light hue stand out distinctly in the composition.\n\n4. The boy’s shirt is not solid-colored; its subtle pattern suggests a fine grid or check design, typical of dress shirts worn in formal or semi-formal settings.\n\n5. The shirt’s color is consistent across the visible portions, with no discernible fading or variation, confirming its uniform light tone despite lighting effects.\n\n<final>White or off-white</final>",
+      "raw_generation": [
+        "1. The boy on the right side of the image is wearing a light-colored shirt with a subtle pattern, likely white or off-white, under a dark vest.  \n2. The shirt’s fabric appears to have a fine checkered or striped texture, visible under the stage lighting.  \n3. The shirt’s collar and sleeves are clearly visible, showing a crisp, clean design that contrasts with the darker vest.  \n4. The shirt’s color remains consistent across the visible portions, with no noticeable fading or discoloration.  \n5. The shirt’s hue is bright enough to reflect light, suggesting it is white or a very light shade, not gray or beige.  \n\n<final>White</final>",
+        "1. The boy on the right side of the image is wearing a light-colored, patterned shirt that appears to be white or off-white with thin stripes or checks visible under the stage lighting.\n\n2. The shirt’s fabric reflects the warm stage lighting, giving it a slightly yellowish tint, but the base color remains clearly light and neutral.\n\n3. The shirt contrasts with the dark background curtain and the other two men’s darker attire, making its light hue stand out distinctly in the composition.\n\n4. The boy’s shirt is not solid-colored; its subtle pattern suggests a fine grid or check design, typical of dress shirts worn in formal or semi-formal settings.\n\n5. The shirt’s color is consistent across the visible portions, with no discernible fading or variation, confirming its uniform light tone despite lighting effects.\n\n<final>White or off-white</final>"
+      ],
+      "chunks": [
+        "1. The boy on the right side of the image is wearing a light-colored, patterned shirt that appears to be white or off-white with thin stripes or checks visible under the stage lighting.",
+        "2. The shirt’s fabric reflects the warm stage lighting, giving it a slightly yellowish tint, but the base color remains clearly light and neutral.",
+        "3. The shirt contrasts with the dark background curtain and the other two men’s darker attire, making its light hue stand out distinctly in the composition.",
+        "4. The boy’s shirt is not solid-colored; its subtle pattern suggests a fine grid or check design, typical of dress shirts worn in formal or semi-formal settings.",
+        "5. The shirt’s color is consistent across the visible portions, with no discernible fading or variation, confirming its uniform light tone despite lighting effects.",
+        "<final>White or off-white</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          67
+        ],
+        [
+          67,
+          97
+        ],
+        [
+          97,
+          127
+        ],
+        [
+          127,
+          162
+        ],
+        [
+          162,
+          192
+        ],
+        [
+          192,
+          202
+        ]
+      ],
+      "anchor_vector": [
+        13.773287527901786,
+        13.99029519217355,
+        14.334161086309527,
+        15.666178385416666,
+        15.9466796875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the color of the tie the boy is wearing?",
+      "reasoning_text": "1. The boy on the right side of the image is wearing a tie that is clearly visible against his light-colored shirt.  \n2. The tie features a patterned design with a mix of red and darker tones, making it stand out from the rest of his attire.  \n3. The red hue of the tie is consistent throughout its length, indicating it is not a solid color but rather a patterned red.  \n4. The lighting in the image highlights the tie’s texture and color, confirming it is predominantly red with darker accents.  \n5. The boy’s posture and the way the tie is knotted further emphasize its red color, which matches the red curtain behind him.  \n\n<final>Red</final>",
+      "raw_generation": [
+        "1. The boy on the right side of the image is wearing a tie that stands out against his light-colored shirt.  \n2. The tie features a patterned design with multiple colors, including red and white, arranged in a diagonal or checkered style.  \n3. The red tones are most prominent, especially along the edges and in the larger sections of the pattern.  \n4. The white sections create contrast, making the red elements more visible and adding visual interest to the tie.  \n5. The tie appears to be a classic necktie, neatly knotted and worn with a button-up shirt, suggesting a semi-formal or performance setting.  \n\n<final>Red and white patterned</final>",
+        "1. The boy on the right side of the image is wearing a tie that is clearly visible against his light-colored shirt.  \n2. The tie features a patterned design with a mix of red and darker tones, making it stand out from the rest of his attire.  \n3. The red hue of the tie is consistent throughout its length, indicating it is not a solid color but rather a patterned red.  \n4. The lighting in the image highlights the tie’s texture and color, confirming it is predominantly red with darker accents.  \n5. The boy’s posture and the way the tie is knotted further emphasize its red color, which matches the red curtain behind him.  \n\n<final>Red</final>"
+      ],
+      "chunks": [
+        "1. The boy on the right side of the image is wearing a tie that is clearly visible against his light-colored shirt.",
+        "2. The tie features a patterned design with a mix of red and darker tones, making it stand out from the rest of his attire.",
+        "3. The red hue of the tie is consistent throughout its length, indicating it is not a solid color but rather a patterned red.",
+        "4. The lighting in the image highlights the tie’s texture and color, confirming it is predominantly red with darker accents.",
+        "5. The boy’s posture and the way the tie is knotted further emphasize its red color, which matches the red curtain behind him.",
+        "<final>Red</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          57
+        ],
+        [
+          58,
+          87
+        ],
+        [
+          88,
+          116
+        ],
+        [
+          117,
+          141
+        ],
+        [
+          142,
+          170
+        ],
+        [
+          171,
+          178
+        ]
+      ],
+      "anchor_vector": [
+        9.39662966798679,
+        12.218141828264509,
+        9.756174995785669,
+        10.468237391539983,
+        13.070870535714286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 10,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there both glasses and ties in this image?",
+      "reasoning_text": "1. The person on the right wears glasses, clearly visible on their face, confirming their presence in the image.  \n2. The same individual also wears a red patterned tie, knotted at their collar, making it evident they are wearing one.  \n3. The other two individuals do not wear glasses or ties, so only one person possesses both accessories.  \n4. The lighting highlights the tie’s texture and the glasses’ frames, making both items unmistakable upon close inspection.  \n5. Since only one person has both accessories, the image contains both glasses and ties, even if only one person wears them.  \n\n<final>Yes, there are both glasses and ties in this image.</final>",
+      "raw_generation": [
+        "1. The person on the right side of the image is clearly wearing eyeglasses with thin frames, positioned on their face.  \n2. The same individual on the right is also wearing a red patterned tie knotted at their collar.  \n3. The two other individuals in the image do not appear to be wearing glasses or ties.  \n4. The person in the center is dressed in a black shirt with no visible neckwear.  \n5. The person on the far left wears a striped shirt but no tie or glasses are visible on them.  \n\n<final>Yes, there are both glasses and ties in this image.</final>",
+        "1. The person on the right wears glasses, clearly visible on their face, confirming their presence in the image.  \n2. The same individual also wears a red patterned tie, knotted at their collar, making it evident they are wearing one.  \n3. The other two individuals do not wear glasses or ties, so only one person possesses both accessories.  \n4. The lighting highlights the tie’s texture and the glasses’ frames, making both items unmistakable upon close inspection.  \n5. Since only one person has both accessories, the image contains both glasses and ties, even if only one person wears them.  \n\n<final>Yes, there are both glasses and ties in this image.</final>"
+      ],
+      "chunks": [
+        "1. The person on the right wears glasses, clearly visible on their face, confirming their presence in the image.",
+        "2. The same individual also wears a red patterned tie, knotted at their collar, making it evident they are wearing one.",
+        "3. The other two individuals do not wear glasses or ties, so only one person possesses both accessories.",
+        "4. The lighting highlights the tie’s texture and the glasses’ frames, making both items unmistakable upon close inspection.",
+        "5. Since only one person has both accessories, the image contains both glasses and ties, even if only one person wears them.",
+        "<final>Yes, there are both glasses and ties in this image.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          51
+        ],
+        [
+          52,
+          79
+        ],
+        [
+          80,
+          101
+        ],
+        [
+          102,
+          126
+        ],
+        [
+          127,
+          153
+        ],
+        [
+          154,
+          171
+        ]
+      ],
+      "anchor_vector": [
+        14.293789506779941,
+        14.490251833343015,
+        9.932495278290853,
+        9.394177328946903,
+        14.875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 11,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow old is the boy that the glasses are on?",
+      "reasoning_text": "1. The boy wearing glasses has a youthful facial structure with rounded cheeks and a small nose, typical of a teenager or young adult, not an elderly person.  \n2. His hairstyle, featuring short, light brown hair with a slightly messy fringe, matches common styles worn by adolescents aged 15 to 18.  \n3. His clothing, including a light-colored button-down shirt and a patterned tie, suggests a formal or semi-formal event, often associated with high school or college-aged individuals.  \n4. His posture, standing with one hand in his pocket and the other slightly raised, appears relaxed and casual, common among teens or young adults in social settings.  \n5. The overall context of the image, showing him on a stage with two other men, implies he is part of a performance or presentation, likely involving a younger demographic such as students or young performers.  \n\n<final>Approximately 15 to 18 years old.",
+      "raw_generation": [
+        "1. The boy wearing glasses appears to be in his late teens or early twenties, judging by his facial features and body proportions relative to the other men on stage.  \n2. His hairstyle, slightly tousled and medium-length, suggests a youthful, casual style typical of young adults rather than children or older individuals.  \n3. The lighting highlights his youthful facial structure, including a defined jawline and smooth skin, which are common in people aged 18 to 25.  \n4. His posture and clothing—a button-up shirt with a tie—indicate he is dressed for a formal or semi-formal event, consistent with a young adult attending or performing at such an occasion.  \n5. The context of the scene, with two other men standing beside him, implies he is part of a group, likely peers or colleagues, reinforcing his age as a young adult rather than a child or senior.  \n\n<final>Approximately 18 to 25 years old</final>",
+        "1. The boy wearing glasses has a youthful facial structure with rounded cheeks and a small nose, typical of a teenager or young adult, not an elderly person.  \n2. His hairstyle, featuring short, light brown hair with a slightly messy fringe, matches common styles worn by adolescents aged 15 to 18.  \n3. His clothing, including a light-colored button-down shirt and a patterned tie, suggests a formal or semi-formal event, often associated with high school or college-aged individuals.  \n4. His posture, standing with one hand in his pocket and the other slightly raised, appears relaxed and casual, common among teens or young adults in social settings.  \n5. The overall context of the image, showing him on a stage with two other men, implies he is part of a performance or presentation, likely involving a younger demographic such as students or young performers.  \n\n<final>Approximately 15 to 18 years old."
+      ],
+      "chunks": [
+        "1. The boy wearing glasses has a youthful facial structure with rounded cheeks and a small nose, typical of a teenager or young adult, not an elderly person.",
+        "2. His hairstyle, featuring short, light brown hair with a slightly messy fringe, matches common styles worn by adolescents aged 15 to 18.",
+        "3. His clothing, including a light-colored button-down shirt and a patterned tie, suggests a formal or semi-formal event, often associated with high school or college-aged individuals.",
+        "4. His posture, standing with one hand in his pocket and the other slightly raised, appears relaxed and casual, common among teens or young adults in social settings.",
+        "5. The overall context of the image, showing him on a stage with two other men, implies he is part of a performance or presentation, likely involving a younger demographic such as students or young performers.",
+        "<final>Approximately 15 to 18 years old."
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          62
+        ],
+        [
+          63,
+          95
+        ],
+        [
+          96,
+          133
+        ],
+        [
+          134,
+          167
+        ],
+        [
+          168,
+          209
+        ],
+        [
+          210,
+          225
+        ]
+      ],
+      "anchor_vector": [
+        12.380589387539,
+        15.019638394674121,
+        12.856349025368251,
+        10.757683879573172,
+        12.334765625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 509,
+  "subset": "gqa",
+  "subset_local_idx": 16
+}

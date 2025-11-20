@@ -1,0 +1,296 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/1426304005.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the author of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover clearly displays the author's name directly beneath the title, indicating Kay Winters as the writer.  \n2. The text “BY KAY WINTERS” is prominently placed in the center of the cover, just below the title “VOICES OF ANCIENT EGYPT.”  \n3. The illustrator’s name, Barry Moser, is also mentioned, but the authorship is distinctly attributed to Kay Winters.  \n4. The National Geographic logo at the top does not indicate authorship, merely the publisher or associated brand.  \n5. No other names appear in the author position, confirming Kay Winters as the sole credited author.  \n\n<final>Kay Winters</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the author's name directly beneath the title \"Voices of Ancient Egypt.\"  \n2. The text explicitly states \"BY KAY WINTERS\" in capital letters, indicating authorship.  \n3. The National Geographic logo at the top confirms this is an official publication.  \n4. The illustrator, Barry Moser, is credited separately, distinguishing his role from the author's.  \n5. No other names appear in the author credit section, confirming Kay Winters as the sole author.  \n\n<final>Kay Winters</final>",
+        "1. The book cover clearly displays the author's name directly beneath the title, indicating Kay Winters as the writer.  \n2. The text “BY KAY WINTERS” is prominently placed in the center of the cover, just below the title “VOICES OF ANCIENT EGYPT.”  \n3. The illustrator’s name, Barry Moser, is also mentioned, but the authorship is distinctly attributed to Kay Winters.  \n4. The National Geographic logo at the top does not indicate authorship, merely the publisher or associated brand.  \n5. No other names appear in the author position, confirming Kay Winters as the sole credited author.  \n\n<final>Kay Winters</final>"
+      ],
+      "chunks": [
+        "1. The book cover clearly displays the author's name directly beneath the title, indicating Kay Winters as the writer.",
+        "2. The text “BY KAY WINTERS” is prominently placed in the center of the cover, just below the title “VOICES OF ANCIENT EGYPT.”  \n3.",
+        "The illustrator’s name, Barry Moser, is also mentioned, but the authorship is distinctly attributed to Kay Winters.",
+        "4. The National Geographic logo at the top does not indicate authorship, merely the publisher or associated brand.",
+        "5. No other names appear in the author position, confirming Kay Winters as the sole credited author.",
+        "<final>Kay Winters</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          68
+        ],
+        [
+          69,
+          108
+        ],
+        [
+          108,
+          133
+        ],
+        [
+          134,
+          156
+        ],
+        [
+          157,
+          178
+        ],
+        [
+          179,
+          188
+        ]
+      ],
+      "anchor_vector": [
+        15.898740166951104,
+        13.588107103400072,
+        16.37283831619769,
+        15.032970610119047,
+        12.927381727430555,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book’s title is prominently displayed in large, bold letters at the top center of the cover, reading “Voices of Ancient Egypt.”  \n2. The title is positioned directly beneath the “National Geographic” logo, indicating its association with the publisher.  \n3. The author’s name, “Kay Winters,” is written just below the title, followed by “Illustrated by Barry Moser,” crediting the artist.  \n4. The cover’s illustration features three Egyptian figures in white robes, standing near palm trees with pyramids in the background, reinforcing the ancient Egyptian theme.  \n5. The overall design, including the sepia-toned background and hieroglyphic-inspired typography, aligns with the book’s historical subject matter and visual storytelling approach.  \n\n<final>Voices of Ancient Egypt</final>",
+      "raw_generation": [
+        "1. The title is prominently displayed in large, bold letters near the top of the cover, making it the most noticeable text.  \n2. The words “VOICES OF ANCIENT EGYPT” are clearly legible and centered above the author’s name.  \n3. The font style is stylized to evoke an ancient or historical theme, matching the book’s subject matter.  \n4. The National Geographic logo appears above the title, indicating the publisher or series affiliation.  \n5. The author and illustrator credits are positioned directly below the title, confirming its primary importance on the cover.  \n\n<final>Voices of Ancient Egypt</final>",
+        "1. The book’s title is prominently displayed in large, bold letters at the top center of the cover, reading “Voices of Ancient Egypt.”  \n2. The title is positioned directly beneath the “National Geographic” logo, indicating its association with the publisher.  \n3. The author’s name, “Kay Winters,” is written just below the title, followed by “Illustrated by Barry Moser,” crediting the artist.  \n4. The cover’s illustration features three Egyptian figures in white robes, standing near palm trees with pyramids in the background, reinforcing the ancient Egyptian theme.  \n5. The overall design, including the sepia-toned background and hieroglyphic-inspired typography, aligns with the book’s historical subject matter and visual storytelling approach.  \n\n<final>Voices of Ancient Egypt</final>"
+      ],
+      "chunks": [
+        "1. The book’s title is prominently displayed in large, bold letters at the top center of the cover, reading “Voices of Ancient Egypt.”  \n2.",
+        "The title is positioned directly beneath the “National Geographic” logo, indicating its association with the publisher.",
+        "3. The author’s name, “Kay Winters,” is written just below the title, followed by “Illustrated by Barry Moser,” crediting the artist.",
+        "4. The cover’s illustration features three Egyptian figures in white robes, standing near palm trees with pyramids in the background, reinforcing the ancient Egyptian theme.",
+        "5. The overall design, including the sepia-toned background and hieroglyphic-inspired typography, aligns with the book’s historical subject matter and visual storytelling approach.",
+        "<final>Voices of Ancient Egypt</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          57
+        ],
+        [
+          57,
+          77
+        ],
+        [
+          78,
+          112
+        ],
+        [
+          113,
+          144
+        ],
+        [
+          145,
+          180
+        ],
+        [
+          181,
+          192
+        ]
+      ],
+      "anchor_vector": [
+        14.867635026208523,
+        17.77902087738963,
+        16.423781676572755,
+        13.963546316964287,
+        19.07528409090909,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The book’s title, “Voices of Ancient Egypt,” suggests it focuses on personal narratives or firsthand accounts from historical figures, rather than dry academic texts.  \n2. The National Geographic logo implies it targets a general audience with visually engaging, educational content about ancient civilizations.  \n3. The cover illustration features three Egyptians in traditional attire, standing before pyramids and palm trees, indicating a focus on cultural and historical scenes.  \n4. The author, Kay Winters, is known for writing accessible historical nonfiction, while Barry Moser’s illustrations enhance the book’s visual storytelling for readers.  \n5. The design and subject matter confirm this is a nonfiction historical narrative, likely aimed at young adults or general readers interested in ancient Egypt’s daily life and voices.  \n\n<final>Nonfiction historical narrative about ancient Egypt, aimed at general readers with educational and visual storytelling elements.</final>",
+      "raw_generation": [
+        "1. The title \"Voices of Ancient Egypt\" suggests a focus on historical narratives or personal accounts from ancient Egyptian civilization, indicating a non-fiction work centered on cultural or historical exploration.\n\n2. The National Geographic logo prominently displayed at the top implies the book is part of their educational or documentary-style publishing line, known for authoritative and visually engaging content on global history and culture.\n\n3. The illustration style, featuring three figures in traditional Egyptian attire against a backdrop of pyramids and palm trees, reinforces the book’s thematic focus on ancient Egyptian life and its iconic landscapes, appealing to readers interested in visual history.\n\n4. The author, Kay Winters, and illustrator, Barry Moser, are credited on the cover, suggesting a collaborative effort that blends scholarly research with artistic interpretation, typical of educational or illustrated history books.\n\n5. The overall design, including the aged parchment-like background and formal typography, evokes a sense of historical authenticity and academic rigor, positioning the book as a resource for learning about ancient Egypt’s civilization and daily life.\n\n<final>Non-fiction historical book focused on ancient Egyptian culture, published by National Geographic with illustrated content.</final>",
+        "1. The book’s title, “Voices of Ancient Egypt,” suggests it focuses on personal narratives or firsthand accounts from historical figures, rather than dry academic texts.  \n2. The National Geographic logo implies it targets a general audience with visually engaging, educational content about ancient civilizations.  \n3. The cover illustration features three Egyptians in traditional attire, standing before pyramids and palm trees, indicating a focus on cultural and historical scenes.  \n4. The author, Kay Winters, is known for writing accessible historical nonfiction, while Barry Moser’s illustrations enhance the book’s visual storytelling for readers.  \n5. The design and subject matter confirm this is a nonfiction historical narrative, likely aimed at young adults or general readers interested in ancient Egypt’s daily life and voices.  \n\n<final>Nonfiction historical narrative about ancient Egypt, aimed at general readers with educational and visual storytelling elements.</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “Voices of Ancient Egypt,” suggests it focuses on personal narratives or firsthand accounts from historical figures, rather than dry academic texts.",
+        "2. The National Geographic logo implies it targets a general audience with visually engaging, educational content about ancient civilizations.",
+        "3. The cover illustration features three Egyptians in traditional attire, standing before pyramids and palm trees, indicating a focus on cultural and historical scenes.",
+        "4. The author, Kay Winters, is known for writing accessible historical nonfiction, while Barry Moser’s illustrations enhance the book’s visual storytelling for readers.",
+        "5. The design and subject matter confirm this is a nonfiction historical narrative, likely aimed at young adults or general readers interested in ancient Egypt’s daily life and voices.",
+        "<final>Nonfiction historical narrative about ancient Egypt, aimed at general readers with educational and visual storytelling elements.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          55
+        ],
+        [
+          56,
+          78
+        ],
+        [
+          79,
+          108
+        ],
+        [
+          109,
+          142
+        ],
+        [
+          143,
+          177
+        ],
+        [
+          178,
+          202
+        ]
+      ],
+      "anchor_vector": [
+        13.301033551155573,
+        21.421596817146966,
+        19.571477644087935,
+        16.052612229889515,
+        15.12744140625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a kids book?",
+      "reasoning_text": "1. The cover displays “National Geographic,” which typically targets educational content suitable for young readers while maintaining factual accuracy and engaging visuals.  \n2. The title “Voices of Ancient Egypt” suggests a focus on historical narratives and cultural perspectives, often adapted for children to foster curiosity about ancient civilizations.  \n3. The illustration style, featuring three figures in traditional Egyptian attire against a backdrop of pyramids and palm trees, appeals visually to younger audiences through vibrant and accessible imagery.  \n4. The author, Kay Winters, and illustrator, Barry Moser, are names commonly associated with children’s educational books, particularly those with historical or cultural themes.  \n5. The overall design, including the bold, clear typography and thematic artwork, aligns with children’s book standards, emphasizing readability and visual storytelling over academic complexity.  \n\n<final>Yes, this is a kids book.</final>",
+      "raw_generation": [
+        "1. The cover features stylized illustrations of ancient Egyptian figures, suggesting a historical or educational theme suitable for young readers.  \n2. The title “Voices of Ancient Egypt” implies storytelling and cultural exploration, often appealing to children’s curiosity about history.  \n3. The National Geographic branding indicates a reputable publisher known for educational content, frequently adapted for younger audiences.  \n4. The author and illustrator credits are prominently displayed, signaling a professionally produced book likely designed for classroom or home learning.  \n5. The visual style, with simplified figures and warm tones, aligns with children’s picture books or early reader nonfiction titles.  \n\n<final>Yes, this is a kids book.</final>",
+        "1. The cover displays “National Geographic,” which typically targets educational content suitable for young readers while maintaining factual accuracy and engaging visuals.  \n2. The title “Voices of Ancient Egypt” suggests a focus on historical narratives and cultural perspectives, often adapted for children to foster curiosity about ancient civilizations.  \n3. The illustration style, featuring three figures in traditional Egyptian attire against a backdrop of pyramids and palm trees, appeals visually to younger audiences through vibrant and accessible imagery.  \n4. The author, Kay Winters, and illustrator, Barry Moser, are names commonly associated with children’s educational books, particularly those with historical or cultural themes.  \n5. The overall design, including the bold, clear typography and thematic artwork, aligns with children’s book standards, emphasizing readability and visual storytelling over academic complexity.  \n\n<final>Yes, this is a kids book.</final>"
+      ],
+      "chunks": [
+        "1. The cover displays “National Geographic,” which typically targets educational content suitable for young readers while maintaining factual accuracy and engaging visuals.",
+        "2. The title “Voices of Ancient Egypt” suggests a focus on historical narratives and cultural perspectives, often adapted for children to foster curiosity about ancient civilizations.",
+        "3. The illustration style, featuring three figures in traditional Egyptian attire against a backdrop of pyramids and palm trees, appeals visually to younger audiences through vibrant and accessible imagery.",
+        "4. The author, Kay Winters, and illustrator, Barry Moser, are names commonly associated with children’s educational books, particularly those with historical or cultural themes.",
+        "5. The overall design, including the bold, clear typography and thematic artwork, aligns with children’s book standards, emphasizing readability and visual storytelling over academic complexity.",
+        "<final>Yes, this is a kids book.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          46
+        ],
+        [
+          47,
+          79
+        ],
+        [
+          80,
+          114
+        ],
+        [
+          115,
+          149
+        ],
+        [
+          150,
+          183
+        ],
+        [
+          184,
+          197
+        ]
+      ],
+      "anchor_vector": [
+        16.942461148064176,
+        16.333038576963784,
+        15.260454926969606,
+        15.170368043414918,
+        16.580528846153847,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a recipe book?",
+      "reasoning_text": "1. The cover prominently displays “Voices of Ancient Egypt,” indicating a historical or cultural theme, not culinary instruction, which would typically feature ingredients or cooking steps.  \n2. The author, Kay Winters, and illustrator, Barry Moser, are credited, suggesting a narrative or educational work rather than a cookbook, which usually lists recipes or chefs.  \n3. The visual depicts Egyptian figures with palm trees and pyramids, reinforcing an archaeological or anthropological focus, not food preparation or kitchen scenes.  \n4. The National Geographic branding implies non-fiction exploration, not practical guides like recipe books, which often have photos of dishes or utensils.  \n5. No kitchen tools, ingredients, or cooking methods are visible on the cover, which strongly contradicts the format and purpose of a recipe book.\n\n<final> No, this is not a recipe book. It is a historical or cultural publication about ancient Egypt.",
+      "raw_generation": [
+        "1. The cover prominently displays the title “Voices of Ancient Egypt,” indicating a focus on historical narratives or cultural exploration rather than culinary instructions.  \n2. The author, Kay Winters, and illustrator, Barry Moser, are credited, suggesting a non-cooking publication aimed at storytelling or education.  \n3. The National Geographic logo implies a scholarly or documentary-style approach, typically not associated with recipe books.  \n4. The illustration depicts ancient Egyptian figures in a desert setting with pyramids, reinforcing the historical and cultural theme over food preparation.  \n5. No visual cues such as ingredients, utensils, or cooking steps appear on the cover, confirming it is not a recipe book.  \n\n<final>No, this is not a recipe book.</final>",
+        "1. The cover prominently displays “Voices of Ancient Egypt,” indicating a historical or cultural theme, not culinary instruction, which would typically feature ingredients or cooking steps.  \n2. The author, Kay Winters, and illustrator, Barry Moser, are credited, suggesting a narrative or educational work rather than a cookbook, which usually lists recipes or chefs.  \n3. The visual depicts Egyptian figures with palm trees and pyramids, reinforcing an archaeological or anthropological focus, not food preparation or kitchen scenes.  \n4. The National Geographic branding implies non-fiction exploration, not practical guides like recipe books, which often have photos of dishes or utensils.  \n5. No kitchen tools, ingredients, or cooking methods are visible on the cover, which strongly contradicts the format and purpose of a recipe book.\n\n<final> No, this is not a recipe book. It is a historical or cultural publication about ancient Egypt."
+      ],
+      "chunks": [
+        "1. The cover prominently displays “Voices of Ancient Egypt,” indicating a historical or cultural theme, not culinary instruction, which would typically feature ingredients or cooking steps.",
+        "2. The author, Kay Winters, and illustrator, Barry Moser, are credited, suggesting a narrative or educational work rather than a cookbook, which usually lists recipes or chefs.",
+        "3. The visual depicts Egyptian figures with palm trees and pyramids, reinforcing an archaeological or anthropological focus, not food preparation or kitchen scenes.",
+        "4. The National Geographic branding implies non-fiction exploration, not practical guides like recipe books, which often have photos of dishes or utensils.",
+        "5. No kitchen tools, ingredients, or cooking methods are visible on the cover, which strongly contradicts the format and purpose of a recipe book.",
+        "<final> No, this is not a recipe book.",
+        "It is a historical or cultural publication about ancient Egypt."
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          53
+        ],
+        [
+          54,
+          91
+        ],
+        [
+          92,
+          121
+        ],
+        [
+          122,
+          150
+        ],
+        [
+          151,
+          181
+        ],
+        [
+          181,
+          193
+        ],
+        [
+          193,
+          204
+        ]
+      ],
+      "anchor_vector": [
+        13.088255351684348,
+        15.123578253138295,
+        15.84864997285785,
+        12.094714725378788,
+        14.693684895833334,
+        15.595880681818182,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 267,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 12
+}

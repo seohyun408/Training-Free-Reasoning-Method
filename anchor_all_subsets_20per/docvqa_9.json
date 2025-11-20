@@ -1,0 +1,174 @@
+{
+  "total_pairs": 4,
+  "successful_pairs": 4,
+  "image_path": "docvqa/train/documents/mmwg0065_1.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat kind of document is this? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>Activity Report</final>",
+      "raw_generation": [
+        "1. The document is titled \"ACTIVITY REPORT\" at the top center, indicating its primary purpose.  \n2. It contains structured tables with columns for remote stations, start times, durations, pages, modes, and results.  \n3. The report includes timestamps and error codes, suggesting it logs communication activities.  \n4. It is divided into \"SEND\" and \"RECEIVE\" sections, showing bidirectional data transmission logs.  \n5. A \"BEST COPY\" stamp and terminal ID imply it is an official operational record from a business or technical system.  \n\n<final>Activity Report</final>",
+        "<final>Activity Report</final>"
+      ],
+      "chunks": [
+        "<final>Activity Report</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          50
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat kind of document is this?",
+      "reasoning_text": "1. The document’s title, “ACTIVITY REPORT,” is prominently displayed at the top, indicating it summarizes operational data.  \n2. It lists remote stations, start times, durations, pages, modes, and results for communications, suggesting it tracks transmission activity.  \n3. The “SEND” and “RECEIVE” sections show outbound and inbound transmissions with error codes and completion statuses, confirming its function as a communication log.  \n4. The header includes date/time, terminal ID, and company name (RJR SCI & REG AFF), proving it’s an internal operational record from a specific organization.  \n5. The “BEST COPY” stamp and footer number imply it’s an archived or official document for record-keeping or auditing purposes.  \n\n<final>Activity Report</final>",
+      "raw_generation": [
+        "1. The document is titled \"ACTIVITY REPORT\" in bold, centered text at the top, indicating its primary purpose is to summarize operational data.  \n2. It contains structured tables with columns for remote station numbers, start times, durations, page counts, modes, and results, suggesting it logs communication events.  \n3. The \"SEND\" and \"RECEIVE\" sections show distinct categories of activity, implying it tracks both outgoing and incoming transmissions.  \n4. Error codes like \"COMMUNICATION ERROR E200\" and \"TERMINAL FAULT OP66\" are listed under results, confirming it monitors system performance and failures.  \n5. The date/time stamp (8-29-95 9:53AM) and terminal ID (19107410815) provide context for when and where the report was generated, reinforcing its role as a system log.  \n\n<final>Activity Report</final>",
+        "1. The document’s title, “ACTIVITY REPORT,” is prominently displayed at the top, indicating it summarizes operational data.  \n2. It lists remote stations, start times, durations, pages, modes, and results for communications, suggesting it tracks transmission activity.  \n3. The “SEND” and “RECEIVE” sections show outbound and inbound transmissions with error codes and completion statuses, confirming its function as a communication log.  \n4. The header includes date/time, terminal ID, and company name (RJR SCI & REG AFF), proving it’s an internal operational record from a specific organization.  \n5. The “BEST COPY” stamp and footer number imply it’s an archived or official document for record-keeping or auditing purposes.  \n\n<final>Activity Report</final>"
+      ],
+      "chunks": [
+        "1. The document’s title, “ACTIVITY REPORT,” is prominently displayed at the top, indicating it summarizes operational data.",
+        "2. It lists remote stations, start times, durations, pages, modes, and results for communications, suggesting it tracks transmission activity.",
+        "3. The “SEND” and “RECEIVE” sections show outbound and inbound transmissions with error codes and completion statuses, confirming its function as a communication log.",
+        "4. The header includes date/time, terminal ID, and company name (RJR SCI & REG AFF), proving it’s an internal operational record from a specific organization.",
+        "5. The “BEST COPY” stamp and footer number imply it’s an archived or official document for record-keeping or auditing purposes.",
+        "<final>Activity Report</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          47
+        ],
+        [
+          48,
+          75
+        ],
+        [
+          76,
+          109
+        ],
+        [
+          110,
+          144
+        ],
+        [
+          145,
+          172
+        ],
+        [
+          173,
+          181
+        ]
+      ],
+      "anchor_vector": [
+        10.54087016573517,
+        10.58809330185278,
+        10.92237391918573,
+        10.726598668981481,
+        7.127685546875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Local Terminal ID mentioned in the report? Answer the question using a single word or phrase.",
+      "reasoning_text": "19107410815",
+      "raw_generation": [
+        "19107410815",
+        "19107410815"
+      ],
+      "chunks": [
+        "19107410815"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          61
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Local Terminal ID mentioned in the report?",
+      "reasoning_text": "1. The document is an activity report with a header section containing metadata, including the Local Terminal ID.  \n2. The Local Terminal ID is located directly under the DATE/TIME field, which is listed as “8-29-95 9:53AM.”  \n3. The value for Local Terminal ID is clearly printed as “19107410815” in the same header section.  \n4. This ID is formatted as a numeric sequence without any spaces or punctuation, matching standard terminal identification conventions.  \n5. The report’s footer and other sections do not contain any conflicting or additional terminal IDs, confirming that 19107410815 is the only Local Terminal ID mentioned.  \n\n<final>19107410815</final>",
+      "raw_generation": [
+        "1. The report header contains several fields including \"LOCAL TERMINAL ID.\"  \n2. This field is located directly below the \"DATE/TIME\" field in the upper right section.  \n3. The value listed next to \"LOCAL TERMINAL ID.\" is \"19107410815\".  \n4. This ID is printed in a clear, legible font and is distinct from other data in the report.  \n5. No other terminal ID is mentioned in the document, confirming this is the only Local Terminal ID referenced.  \n\n<final>19107410815</final>",
+        "1. The document is an activity report with a header section containing metadata, including the Local Terminal ID.  \n2. The Local Terminal ID is located directly under the DATE/TIME field, which is listed as “8-29-95 9:53AM.”  \n3. The value for Local Terminal ID is clearly printed as “19107410815” in the same header section.  \n4. This ID is formatted as a numeric sequence without any spaces or punctuation, matching standard terminal identification conventions.  \n5. The report’s footer and other sections do not contain any conflicting or additional terminal IDs, confirming that 19107410815 is the only Local Terminal ID mentioned.  \n\n<final>19107410815</final>"
+      ],
+      "chunks": [
+        "1. The document is an activity report with a header section containing metadata, including the Local Terminal ID.",
+        "2. The Local Terminal ID is located directly under the DATE/TIME field, which is listed as “8-29-95 9:53AM.”  \n3.",
+        "The value for Local Terminal ID is clearly printed as “19107410815” in the same header section.",
+        "4. This ID is formatted as a numeric sequence without any spaces or punctuation, matching standard terminal identification conventions.",
+        "5. The report’s footer and other sections do not contain any conflicting or additional terminal IDs, confirming that 19107410815 is the only Local Terminal ID mentioned.",
+        "<final>19107410815</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          51
+        ],
+        [
+          52,
+          90
+        ],
+        [
+          90,
+          119
+        ],
+        [
+          120,
+          142
+        ],
+        [
+          143,
+          184
+        ],
+        [
+          185,
+          202
+        ]
+      ],
+      "anchor_vector": [
+        9.46422799913428,
+        9.623719840420051,
+        10.418101047237078,
+        9.406257706016858,
+        8.464039522058824,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 219,
+  "subset": "docvqa",
+  "subset_local_idx": 9
+}

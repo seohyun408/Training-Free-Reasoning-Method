@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/179e8840e2a1e60c.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: 11, 12, 10, 8, 3, 4",
+      "reasoning_text": "<1> The vintage black alarm clock, with its glossy finish and twin bells, displays the time as 4:35, highlighted by warm lighting and a crisp white face.  \n<2> The clock’s hour hand points between 4 and 5, while the minute hand rests precisely at the 7, indicating 35 minutes past the hour.  \n<3> A small sub-dial near the 12 o'clock position shows a secondary time zone or alarm setting, adding complexity to the design.  \n<4> The polished brass handle connecting the bells and the metallic feet provide elegant contrast against the deep black casing.  \n<5> The image’s shallow depth of field blurs the background, drawing attention to the clock’s intricate details and timeless aesthetic.  \n<final>The vintage black alarm clock, with its glossy finish and twin bells, displays the time as 4:35, highlighted by warm lighting and a crisp white face.</final>",
+      "raw_generation": [
+        "1. The vintage black alarm clock features a white face with bold black numerals and a small secondary dial near the 12 o'clock position.  \n2. Its two rounded bells are connected by a curved brass handle, suggesting a classic design from the mid-20th century.  \n3. The hour hand points just past the 4, while the minute hand rests at the 7, indicating the time is approximately 4:35.  \n4. The clock’s glossy finish reflects light, emphasizing its smooth curves and metallic accents on the bells and handle.  \n5. The background is softly blurred, drawing focus to the clock’s intricate details and timeless aesthetic against a neutral backdrop.  \n\n<final>A vintage black alarm clock with a white face and brass accents shows the time as approximately 4:35, exuding classic mid-century charm.</final>",
+        "<1> The vintage black alarm clock, with its glossy finish and twin bells, displays the time as 4:35, highlighted by warm lighting and a crisp white face.  \n<2> The clock’s hour hand points between 4 and 5, while the minute hand rests precisely at the 7, indicating 35 minutes past the hour.  \n<3> A small sub-dial near the 12 o'clock position shows a secondary time zone or alarm setting, adding complexity to the design.  \n<4> The polished brass handle connecting the bells and the metallic feet provide elegant contrast against the deep black casing.  \n<5> The image’s shallow depth of field blurs the background, drawing attention to the clock’s intricate details and timeless aesthetic.  \n<final>The vintage black alarm clock, with its glossy finish and twin bells, displays the time as 4:35, highlighted by warm lighting and a crisp white face.</final>"
+      ],
+      "chunks": [
+        "<1> The vintage black alarm clock, with its glossy finish and twin bells, displays the time as 4:35, highlighted by warm lighting and a crisp white face.",
+        "<2> The clock’s hour hand points between 4 and 5, while the minute hand rests precisely at the 7, indicating 35 minutes past the hour.",
+        "<3> A small sub-dial near the 12 o'clock position shows a secondary time zone or alarm setting, adding complexity to the design.",
+        "<4> The polished brass handle connecting the bells and the metallic feet provide elegant contrast against the deep black casing.",
+        "<5> The image’s shallow depth of field blurs the background, drawing attention to the clock’s intricate details and timeless aesthetic.",
+        "<final>The vintage black alarm clock, with its glossy finish and twin bells, displays the time as 4:35, highlighted by warm lighting and a crisp white face.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          80,
+          117
+        ],
+        [
+          118,
+          154
+        ],
+        [
+          155,
+          186
+        ],
+        [
+          187,
+          210
+        ],
+        [
+          211,
+          238
+        ],
+        [
+          239,
+          277
+        ]
+      ],
+      "anchor_vector": [
+        14.526276099176068,
+        13.04950197769465,
+        14.883349968719763,
+        13.409429539016813,
+        14.526418585526315,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 103,
+  "subset": "textvqa",
+  "subset_local_idx": 1
+}

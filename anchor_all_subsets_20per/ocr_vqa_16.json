@@ -1,0 +1,302 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/1849180253.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the author of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>F. Bergese - B. Assa</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the names \"F. Bergese - B. Assa\" beneath the \"Cinebook recounts\" title, indicating these are the creators.  \n2. The publisher's logo, \"Cinebook,\" is visible at the bottom, confirming the book's origin and likely editorial oversight.  \n3. The title \"Battle of Britain\" is prominently featured, suggesting the content focuses on this historical event.  \n4. The artwork depicts fighter planes in mid-air combat, aligning with the book’s subject matter and visual storytelling style.  \n5. The cover design and layout are consistent with Cinebook’s typical format for historical recount books, reinforcing the authors' roles.  \n\n<final>F. Bergese - B. Assa</final>",
+        "<final>F. Bergese - B. Assa</final>"
+      ],
+      "chunks": [
+        "<final>F. Bergese - B.",
+        "Assa</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          53
+        ],
+        [
+          53,
+          58
+        ]
+      ],
+      "anchor_vector": [
+        17.5625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        2,
+        2
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book’s cover prominently displays “Battle of Britain” in large, bold yellow letters, indicating it is the central theme of the publication.  \n2. Above the title, the “Cinebook recounts” series branding is visible, suggesting it is part of a historical documentary-style comic book collection.  \n3. The authors, F. Bergese and B. Assa, are credited beneath the series name, confirming their collaborative effort in creating this volume.  \n4. The artwork depicts multiple fighter planes engaged in aerial combat, with British and German aircraft clearly distinguishable by their markings and insignia.  \n5. The bottom corner features the “90 Cinebook” logo, signaling it is a 90th-anniversary edition or part of a commemorative series celebrating the publisher’s history.  \n\n<final>Battle of Britain</final>",
+      "raw_generation": [
+        "1. The title is prominently displayed in large yellow letters across the top of the cover, clearly stating \"Battle of Britain.\"  \n2. The series name \"Cinebook recounts\" appears in red and white text above the main title, indicating the book’s genre or collection.  \n3. The authors' names, \"F. Bergese - B. Assa,\" are printed in smaller white text just below the series name, identifying the creators.  \n4. The cover art depicts a dynamic aerial battle scene with multiple fighter planes, including a British Supermarine Spitfire marked \"GZ-E\" in the foreground.  \n5. The publisher’s logo, \"90 CINEBOOK,\" is visible at the bottom, confirming the book’s origin and series branding.  \n\n<final>Battle of Britain</final>",
+        "1. The book’s cover prominently displays “Battle of Britain” in large, bold yellow letters, indicating it is the central theme of the publication.  \n2. Above the title, the “Cinebook recounts” series branding is visible, suggesting it is part of a historical documentary-style comic book collection.  \n3. The authors, F. Bergese and B. Assa, are credited beneath the series name, confirming their collaborative effort in creating this volume.  \n4. The artwork depicts multiple fighter planes engaged in aerial combat, with British and German aircraft clearly distinguishable by their markings and insignia.  \n5. The bottom corner features the “90 Cinebook” logo, signaling it is a 90th-anniversary edition or part of a commemorative series celebrating the publisher’s history.  \n\n<final>Battle of Britain</final>"
+      ],
+      "chunks": [
+        "1. The book’s cover prominently displays “Battle of Britain” in large, bold yellow letters, indicating it is the central theme of the publication.",
+        "2. Above the title, the “Cinebook recounts” series branding is visible, suggesting it is part of a historical documentary-style comic book collection.",
+        "3. The authors, F.",
+        "Bergese and B.",
+        "Assa, are credited beneath the series name, confirming their collaborative effort in creating this volume.",
+        "4. The artwork depicts multiple fighter planes engaged in aerial combat, with British and German aircraft clearly distinguishable by their markings and insignia.",
+        "5. The bottom corner features the “90 Cinebook” logo, signaling it is a 90th-anniversary edition or part of a commemorative series celebrating the publisher’s history.",
+        "<final>Battle of Britain</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          54
+        ],
+        [
+          55,
+          86
+        ],
+        [
+          87,
+          94
+        ],
+        [
+          94,
+          99
+        ],
+        [
+          99,
+          118
+        ],
+        [
+          119,
+          147
+        ],
+        [
+          148,
+          189
+        ],
+        [
+          190,
+          199
+        ]
+      ],
+      "anchor_vector": [
+        14.802053033289875,
+        13.87471731742594,
+        14.650496285801125,
+        11.019553140922842,
+        11.589153105188975,
+        12.98413879890752,
+        7.711371527777778,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The cover prominently displays the “Cinebook recounts” branding, indicating it’s part of a series focused on historical events adapted for graphic storytelling, blending factual accuracy with visual narrative.\n\n2. The title “Battle of Britain” references a major World War II air campaign, suggesting the book’s content centers on military history and aerial combat during the 1940s.\n\n3. The artwork features detailed illustrations of British and German fighter planes in mid-air combat, emphasizing action-packed, visually driven storytelling typical of graphic novels or illustrated histories.\n\n4. The inclusion of pilot insignias, such as the RAF roundel and German crosses, reinforces the book’s historical authenticity and focus on aviation warfare during the Battle of Britain.\n\n5. The “Cinebook” logo at the bottom, along with the “90 Cinebook” branding, confirms it’s part of a publisher known for comics and illustrated books, placing it squarely within the graphic novel or illustrated history genre.\n\n<final>Illustrated historical graphic novel</final>",
+      "raw_generation": [
+        "1. The cover prominently displays the title \"Battle of Britain,\" indicating a focus on a major historical military conflict, specifically World War II aerial combat over the United Kingdom.\n\n2. The illustration style, featuring dynamic fighter planes in mid-air combat with smoke trails and detailed markings, suggests a visual narrative approach typical of historical war comics or graphic novels.\n\n3. The \"Cinebook recounts\" branding implies the book is part of a series that adapts historical events into illustrated stories, often combining factual accuracy with dramatic storytelling for broader appeal.\n\n4. The presence of specific aircraft markings, such as the Royal Air Force roundels and German crosses, confirms the book's subject matter is grounded in authentic military history, not fiction.\n\n5. The overall design, including the bold title and action-oriented artwork, targets readers interested in historical military events, particularly those who enjoy visual storytelling formats like graphic novels or illustrated histories.\n\n<final>Historical military graphic novel</final>",
+        "1. The cover prominently displays the “Cinebook recounts” branding, indicating it’s part of a series focused on historical events adapted for graphic storytelling, blending factual accuracy with visual narrative.\n\n2. The title “Battle of Britain” references a major World War II air campaign, suggesting the book’s content centers on military history and aerial combat during the 1940s.\n\n3. The artwork features detailed illustrations of British and German fighter planes in mid-air combat, emphasizing action-packed, visually driven storytelling typical of graphic novels or illustrated histories.\n\n4. The inclusion of pilot insignias, such as the RAF roundel and German crosses, reinforces the book’s historical authenticity and focus on aviation warfare during the Battle of Britain.\n\n5. The “Cinebook” logo at the bottom, along with the “90 Cinebook” branding, confirms it’s part of a publisher known for comics and illustrated books, placing it squarely within the graphic novel or illustrated history genre.\n\n<final>Illustrated historical graphic novel</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently displays the “Cinebook recounts” branding, indicating it’s part of a series focused on historical events adapted for graphic storytelling, blending factual accuracy with visual narrative.",
+        "2. The title “Battle of Britain” references a major World War II air campaign, suggesting the book’s content centers on military history and aerial combat during the 1940s.",
+        "3. The artwork features detailed illustrations of British and German fighter planes in mid-air combat, emphasizing action-packed, visually driven storytelling typical of graphic novels or illustrated histories.",
+        "4. The inclusion of pilot insignias, such as the RAF roundel and German crosses, reinforces the book’s historical authenticity and focus on aviation warfare during the Battle of Britain.",
+        "5. The “Cinebook” logo at the bottom, along with the “90 Cinebook” branding, confirms it’s part of a publisher known for comics and illustrated books, placing it squarely within the graphic novel or illustrated history genre.",
+        "<final>Illustrated historical graphic novel</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          62
+        ],
+        [
+          62,
+          101
+        ],
+        [
+          101,
+          134
+        ],
+        [
+          134,
+          170
+        ],
+        [
+          170,
+          221
+        ],
+        [
+          221,
+          232
+        ]
+      ],
+      "anchor_vector": [
+        16.06282329045853,
+        13.333390052872476,
+        11.764715553203606,
+        13.49096592649844,
+        13.934303977272727,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Children's Books?",
+      "reasoning_text": "1. The cover art depicts intense aerial combat with detailed fighter planes, suggesting a historical military theme rather than a lighthearted or simplified children’s narrative.  \n2. The title “Battle of Britain” references a major WWII conflict, typically studied in educational contexts rather than marketed to young children.  \n3. The authors’ names, F. Bergese and B. Assa, appear in a professional format, indicating this is a serious historical recount, not a children’s illustrated storybook.  \n4. The “Cinebook recounts” branding suggests a graphic novel or illustrated history format, often aimed at teens or adults seeking detailed historical accounts.  \n5. The presence of authentic aircraft markings, like “GZ-E” and German crosses, implies a focus on factual accuracy, which is uncommon in children’s books designed for younger audiences.  \n\n<final> No, this book is not related to Children's Books.",
+      "raw_generation": [
+        "1. The cover art depicts intense aerial combat with detailed fighter planes, suggesting a historical military theme rather than a lighthearted or age-restricted subject matter typically found in children’s books.  \n2. The title “Battle of Britain” refers to a major World War II air campaign, which is a complex historical event requiring contextual understanding beyond the scope of most children’s literature.  \n3. The authors’ names, F. Bergese and B. Assa, are not associated with children’s book publishing, and the publisher “Cinebook” specializes in graphic novels and mature-themed comics.  \n4. The visual style, with realistic aircraft and dramatic smoke trails, aligns with graphic novel aesthetics designed for adult or teen readers rather than simplified illustrations for young children.  \n5. The presence of military insignia, such as the RAF roundel and German crosses, indicates a serious historical narrative that would not be appropriate for very young audiences without significant adaptation.  \n\n<final>No</final>",
+        "1. The cover art depicts intense aerial combat with detailed fighter planes, suggesting a historical military theme rather than a lighthearted or simplified children’s narrative.  \n2. The title “Battle of Britain” references a major WWII conflict, typically studied in educational contexts rather than marketed to young children.  \n3. The authors’ names, F. Bergese and B. Assa, appear in a professional format, indicating this is a serious historical recount, not a children’s illustrated storybook.  \n4. The “Cinebook recounts” branding suggests a graphic novel or illustrated history format, often aimed at teens or adults seeking detailed historical accounts.  \n5. The presence of authentic aircraft markings, like “GZ-E” and German crosses, implies a focus on factual accuracy, which is uncommon in children’s books designed for younger audiences.  \n\n<final> No, this book is not related to Children's Books."
+      ],
+      "chunks": [
+        "1. The cover art depicts intense aerial combat with detailed fighter planes, suggesting a historical military theme rather than a lighthearted or simplified children’s narrative.",
+        "2. The title “Battle of Britain” references a major WWII conflict, typically studied in educational contexts rather than marketed to young children.",
+        "3. The authors’ names, F.",
+        "Bergese and B.",
+        "Assa, appear in a professional format, indicating this is a serious historical recount, not a children’s illustrated storybook.",
+        "4. The “Cinebook recounts” branding suggests a graphic novel or illustrated history format, often aimed at teens or adults seeking detailed historical accounts.",
+        "5. The presence of authentic aircraft markings, like “GZ-E” and German crosses, implies a focus on factual accuracy, which is uncommon in children’s books designed for younger audiences.",
+        "<final> No, this book is not related to Children's Books."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          59
+        ],
+        [
+          60,
+          87
+        ],
+        [
+          88,
+          97
+        ],
+        [
+          97,
+          102
+        ],
+        [
+          102,
+          127
+        ],
+        [
+          128,
+          158
+        ],
+        [
+          159,
+          197
+        ],
+        [
+          198,
+          213
+        ]
+      ],
+      "anchor_vector": [
+        15.967441520467835,
+        12.989463671113548,
+        11.267604851973683,
+        12.548097930372807,
+        13.711496596308479,
+        14.149892064144737,
+        15.672916666666667,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Science & Math?",
+      "reasoning_text": "1. The book cover explicitly states “Battle of Britain,” indicating its focus is on a major historical military conflict, not scientific or mathematical theory or practice.\n\n2. The artwork depicts fighter planes in aerial combat, showing a wartime aviation theme, which belongs to history and military studies, not science or math.\n\n3. The title “Cinebook recounts” implies a narrative or illustrated historical account, typical of educational or historical publications, not scientific or mathematical texts.\n\n4. The authors’ names, F. Bergese and B. Assa, are associated with historical or journalistic works, not scientific or mathematical research, further confirming its non-scientific nature.\n\n5. The presence of military insignia and aircraft markings, such as “GZ-E” on the plane, reinforces its focus on historical military events rather than scientific or mathematical principles.\n\n<final> No, this book is not related to Science & Math; it is a historical recount of the Battle of Britain, focused on military history and aviation.",
+      "raw_generation": [
+        "1. The book's title, \"Battle of Britain,\" clearly indicates it covers a major historical military conflict, not scientific or mathematical concepts.  \n2. The cover art depicts fighter planes in aerial combat, emphasizing historical warfare rather than scientific theory or mathematical principles.  \n3. The authors' names, F. Bergese and B. Assa, suggest a focus on historical narrative or military history, not STEM subjects.  \n4. The \"Cinebook recounts\" branding implies a graphic novel or illustrated historical account, not academic science or math material.  \n5. The visual style and subject matter are consistent with military history or war-themed fiction, not science or mathematics education.  \n\n<final>no</final>",
+        "1. The book cover explicitly states “Battle of Britain,” indicating its focus is on a major historical military conflict, not scientific or mathematical theory or practice.\n\n2. The artwork depicts fighter planes in aerial combat, showing a wartime aviation theme, which belongs to history and military studies, not science or math.\n\n3. The title “Cinebook recounts” implies a narrative or illustrated historical account, typical of educational or historical publications, not scientific or mathematical texts.\n\n4. The authors’ names, F. Bergese and B. Assa, are associated with historical or journalistic works, not scientific or mathematical research, further confirming its non-scientific nature.\n\n5. The presence of military insignia and aircraft markings, such as “GZ-E” on the plane, reinforces its focus on historical military events rather than scientific or mathematical principles.\n\n<final> No, this book is not related to Science & Math; it is a historical recount of the Battle of Britain, focused on military history and aviation."
+      ],
+      "chunks": [
+        "1. The book cover explicitly states “Battle of Britain,” indicating its focus is on a major historical military conflict, not scientific or mathematical theory or practice.",
+        "2. The artwork depicts fighter planes in aerial combat, showing a wartime aviation theme, which belongs to history and military studies, not science or math.",
+        "3. The title “Cinebook recounts” implies a narrative or illustrated historical account, typical of educational or historical publications, not scientific or mathematical texts.",
+        "4. The authors’ names, F.",
+        "Bergese and B.",
+        "Assa, are associated with historical or journalistic works, not scientific or mathematical research, further confirming its non-scientific nature.",
+        "5. The presence of military insignia and aircraft markings, such as “GZ-E” on the plane, reinforces its focus on historical military events rather than scientific or mathematical principles.",
+        "<final> No, this book is not related to Science & Math; it is a historical recount of the Battle of Britain, focused on military history and aviation."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          57
+        ],
+        [
+          57,
+          87
+        ],
+        [
+          87,
+          118
+        ],
+        [
+          118,
+          127
+        ],
+        [
+          127,
+          132
+        ],
+        [
+          132,
+          158
+        ],
+        [
+          158,
+          195
+        ],
+        [
+          195,
+          228
+        ]
+      ],
+      "anchor_vector": [
+        15.363196564897674,
+        16.944284824367575,
+        17.93028429437243,
+        15.113889211374563,
+        13.807143707778474,
+        16.999281524733185,
+        14.870550213438092,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 301,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 16
+}

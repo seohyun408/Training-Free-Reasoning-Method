@@ -1,0 +1,54 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/3063.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, AB is the diameter of circle O, chord CD is perpendicular to AB, and P is any point on line segment CD (not coinciding with points C or D). If the measure of angle BCD is 50°, then the measure of angle CPA is ()\nA. 65°\nB. 50°\nC. 130°\nD. 100°",
+      "reasoning_text": "1. Since AB is the diameter of circle O and chord CD is perpendicular to AB, the perpendicular from the center O to chord CD bisects CD, meaning point O lies on the perpendicular bisector of CD.  \n2. Angle BCD is given as 50°, which is an inscribed angle subtending arc BD; thus, the measure of arc BD is twice that, or 100°, because the central angle equals twice the inscribed angle subtending the same arc.  \n3. Since AB is the diameter, the measure of arc ADB is 180°, and arc AD must be 180° minus arc BD, which equals 80°, because the total semicircle from A to B through D is 180°.  \n4. Angle CPA is an inscribed angle subtending arc PA, but since P lies on chord CD and angle BCD = 50°, and angle CPA and angle BCD are both inscribed angles subtending arcs that are supplementary, angle CPA must be 130°, because angle CPA = 180° - angle BCD = 180° - 50° = 130°",
+      "raw_generation": [
+        "1. Since AB is the diameter of circle O, any angle subtended by AB at the circumference is a right angle, meaning angle ACB is 90°.  \n2. Given that angle BCD is 50°, and angle ACB is 90°, angle ACD must be 90° minus 50°, which equals 40°.  \n3. Chord CD is perpendicular to diameter AB, so AB bisects CD, and any point P on CD forms equal angles with A and B due to symmetry.  \n4. Angle CPA is an inscribed angle subtending arc CA, and since angle ACD is 40°, angle CPA is twice that value because it spans the same arc as angle ACD but from point P.  \n5. Therefore, angle CPA equals 80°, but this contradicts the options. Re-evaluating, angle CPA is actually the supplement of angle ACD because P lies on CD, making angle CPA = 180° - 40° = 140°, which also doesn't match. The correct approach is recognizing that angle CPA is equal to angle BCD due to cyclic quadrilateral properties or vertical angles,",
+        "1. Since AB is the diameter of circle O and chord CD is perpendicular to AB, the perpendicular from the center O to chord CD bisects CD, meaning point O lies on the perpendicular bisector of CD.  \n2. Angle BCD is given as 50°, which is an inscribed angle subtending arc BD; thus, the measure of arc BD is twice that, or 100°, because the central angle equals twice the inscribed angle subtending the same arc.  \n3. Since AB is the diameter, the measure of arc ADB is 180°, and arc AD must be 180° minus arc BD, which equals 80°, because the total semicircle from A to B through D is 180°.  \n4. Angle CPA is an inscribed angle subtending arc PA, but since P lies on chord CD and angle BCD = 50°, and angle CPA and angle BCD are both inscribed angles subtending arcs that are supplementary, angle CPA must be 130°, because angle CPA = 180° - angle BCD = 180° - 50° = 130°"
+      ],
+      "chunks": [
+        "1. Since AB is the diameter of circle O and chord CD is perpendicular to AB, the perpendicular from the center O to chord CD bisects CD, meaning point O lies on the perpendicular bisector of CD.",
+        "2. Angle BCD is given as 50°, which is an inscribed angle subtending arc BD; thus, the measure of arc BD is twice that, or 100°, because the central angle equals twice the inscribed angle subtending the same arc.",
+        "3. Since AB is the diameter, the measure of arc ADB is 180°, and arc AD must be 180° minus arc BD, which equals 80°, because the total semicircle from A to B through D is 180°.",
+        "4. Angle CPA is an inscribed angle subtending arc PA, but since P lies on chord CD and angle BCD = 50°, and angle CPA and angle BCD are both inscribed angles subtending arcs that are supplementary, angle CPA must be 130°, because angle CPA = 180° - angle BCD = 180° - 50° = 130°"
+      ],
+      "chunk_token_ranges": [
+        [
+          186,
+          230
+        ],
+        [
+          231,
+          289
+        ],
+        [
+          290,
+          351
+        ],
+        [
+          352,
+          442
+        ]
+      ],
+      "anchor_vector": [
+        9.861039802618203,
+        9.997958665183791,
+        8.365366907680736,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        4,
+        4
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 47,
+  "subset": "geoqa+",
+  "subset_local_idx": 7
+}

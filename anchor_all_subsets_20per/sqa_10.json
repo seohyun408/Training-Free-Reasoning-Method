@@ -1,0 +1,78 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/14311/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the capital of Oregon?\nContext: N/A\nOptions: (A) Portland (B) Salem (C) Cheyenne (D) Arlington",
+      "reasoning_text": "1. The image highlights Oregon in dark green, distinguishing it from other U.S. states, which are shaded in light green for emphasis.  \n2. Oregon is located in the Pacific Northwest, bordered by California to the south and Idaho to the east, matching its geographical position on the map.  \n3. Among the options, Salem is the actual capital of Oregon, confirmed by official U.S. government sources and state records.  \n4. Portland, while a major city in Oregon, is not the capital, as indicated by the fact that Salem holds legislative and governmental authority.  \n5. Cheyenne and Arlington are capitals of Wyoming and Texas respectively, so they are irrelevant to Oregon’s political center, as shown by their geographical exclusion from the map.  \n\n<final> (B) Salem",
+      "raw_generation": [
+        "1. The image displays a map of the United States with Oregon highlighted in dark green, indicating it is the focus of the question.  \n2. Oregon is located in the Pacific Northwest region, bordered by Washington to the north, Idaho to the east, and California to the south.  \n3. Among the given options, only Salem is the actual capital city of Oregon, while Portland is its largest city but not the capital.  \n4. Cheyenne is the capital of Wyoming, and Arlington is not a state capital at all, making them incorrect choices for Oregon.  \n5. The correct answer must be (B) Salem, as it is the official capital of Oregon and matches the highlighted state on the map.  \n\n<final>(B) Salem</final>",
+        "1. The image highlights Oregon in dark green, distinguishing it from other U.S. states, which are shaded in light green for emphasis.  \n2. Oregon is located in the Pacific Northwest, bordered by California to the south and Idaho to the east, matching its geographical position on the map.  \n3. Among the options, Salem is the actual capital of Oregon, confirmed by official U.S. government sources and state records.  \n4. Portland, while a major city in Oregon, is not the capital, as indicated by the fact that Salem holds legislative and governmental authority.  \n5. Cheyenne and Arlington are capitals of Wyoming and Texas respectively, so they are irrelevant to Oregon’s political center, as shown by their geographical exclusion from the map.  \n\n<final> (B) Salem"
+      ],
+      "chunks": [
+        "1. The image highlights Oregon in dark green, distinguishing it from other U.S.",
+        "states, which are shaded in light green for emphasis.",
+        "2. Oregon is located in the Pacific Northwest, bordered by California to the south and Idaho to the east, matching its geographical position on the map.",
+        "3. Among the options, Salem is the actual capital of Oregon, confirmed by official U.S.",
+        "government sources and state records.",
+        "4. Portland, while a major city in Oregon, is not the capital, as indicated by the fact that Salem holds legislative and governmental authority.",
+        "5. Cheyenne and Arlington are capitals of Wyoming and Texas respectively, so they are irrelevant to Oregon’s political center, as shown by their geographical exclusion from the map.",
+        "<final> (B) Salem"
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          91
+        ],
+        [
+          91,
+          102
+        ],
+        [
+          103,
+          133
+        ],
+        [
+          134,
+          154
+        ],
+        [
+          154,
+          160
+        ],
+        [
+          161,
+          190
+        ],
+        [
+          191,
+          226
+        ],
+        [
+          227,
+          234
+        ]
+      ],
+      "anchor_vector": [
+        12.136997819920483,
+        9.79402757466133,
+        9.199437859195402,
+        12.036441977114121,
+        11.630659893267653,
+        12.684068080357143,
+        9.4853515625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 62,
+  "subset": "sqa",
+  "subset_local_idx": 10
+}

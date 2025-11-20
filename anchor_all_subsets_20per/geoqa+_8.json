@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/426.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, ∠1=62°. If m∥n, then the measure of ∠2 is ()\nA. 118°\nB. 28°\nC. 62°\nD. 38°",
+      "reasoning_text": "1. The figure shows two parallel lines, m and n, intersected by a transversal line, forming angles ∠1 and ∠2 at the points of intersection.  \n2. Since m is parallel to n, the transversal creates corresponding angles that are congruent, meaning ∠1 and ∠2 are either corresponding or supplementary based on their positions.  \n3. ∠1 is located above line m and to the right of the transversal, while ∠2 is located below line n and to the left of the transversal, indicating they are alternate exterior angles.  \n4. Alternate exterior angles formed by a transversal cutting parallel lines are congruent, so ∠2 must equal ∠1, which is given as 62°.  \n5. Therefore, since ∠1 = 62° and ∠1 and ∠2 are alternate exterior angles, ∠2 also measures 62°, making option C the correct answer.\n\n<final>C. 62°</final>",
+      "raw_generation": [
+        "1. The figure shows two parallel lines, m and n, intersected by a transversal line, forming angles ∠1 and ∠2 at different points of intersection.  \n2. ∠1 is located above line m and to the right of the transversal, while ∠2 is located below line n and to the left of the transversal, indicating they are corresponding angles.  \n3. Since lines m and n are parallel, corresponding angles formed by a transversal are congruent, meaning ∠1 and ∠2 must have equal measures.  \n4. Given that ∠1 measures 62°, and ∠2 is its corresponding angle, ∠2 must also measure 62° due to the properties of parallel lines and transversals.  \n5. Therefore, the correct answer is C. 62°, as it matches the measure of ∠1 and satisfies the geometric relationship between corresponding angles when lines are parallel.\n\n<final>C. 62°</final>",
+        "1. The figure shows two parallel lines, m and n, intersected by a transversal line, forming angles ∠1 and ∠2 at the points of intersection.  \n2. Since m is parallel to n, the transversal creates corresponding angles that are congruent, meaning ∠1 and ∠2 are either corresponding or supplementary based on their positions.  \n3. ∠1 is located above line m and to the right of the transversal, while ∠2 is located below line n and to the left of the transversal, indicating they are alternate exterior angles.  \n4. Alternate exterior angles formed by a transversal cutting parallel lines are congruent, so ∠2 must equal ∠1, which is given as 62°.  \n5. Therefore, since ∠1 = 62° and ∠1 and ∠2 are alternate exterior angles, ∠2 also measures 62°, making option C the correct answer.\n\n<final>C. 62°</final>"
+      ],
+      "chunks": [
+        "1. The figure shows two parallel lines, m and n, intersected by a transversal line, forming angles ∠1 and ∠2 at the points of intersection.",
+        "2. Since m is parallel to n, the transversal creates corresponding angles that are congruent, meaning ∠1 and ∠2 are either corresponding or supplementary based on their positions.",
+        "3. ∠1 is located above line m and to the right of the transversal, while ∠2 is located below line n and to the left of the transversal, indicating they are alternate exterior angles.",
+        "4. Alternate exterior angles formed by a transversal cutting parallel lines are congruent, so ∠2 must equal ∠1, which is given as 62°.",
+        "5. Therefore, since ∠1 = 62° and ∠1 and ∠2 are alternate exterior angles, ∠2 also measures 62°, making option C the correct answer.",
+        "<final>C. 62°</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          118,
+          155
+        ],
+        [
+          156,
+          195
+        ],
+        [
+          196,
+          242
+        ],
+        [
+          243,
+          280
+        ],
+        [
+          281,
+          324
+        ],
+        [
+          324,
+          335
+        ]
+      ],
+      "anchor_vector": [
+        12.019390803201539,
+        17.519351039479375,
+        12.15228813096841,
+        13.013268759084301,
+        11.978232990611684,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 55,
+  "subset": "geoqa+",
+  "subset_local_idx": 8
+}

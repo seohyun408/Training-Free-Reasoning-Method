@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/10572.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nThere is a regular pentagon and a square with equal side lengths. If placed as shown, the value of ∠1 is ()\nA. 15°\nB. 18°\nC. 20°\nD. 9°",
+      "reasoning_text": "1. The regular pentagon has interior angles of 108° each, calculated as (5-2)×180°/5, and the square has 90° interior angles, confirming the geometric context of the figure.\n\n2. The square’s side AB aligns with the pentagon’s side AB, meaning their shared side forms a straight line, and the adjacent sides of both shapes are equal in length.\n\n3. The angle ∠1 is formed at vertex A between side AE of the pentagon and side AG of the square, requiring calculation based on the pentagon’s interior angle and the square’s right angle.\n\n4. The pentagon’s interior angle at A is 108°, and since the square’s angle at A is 90°, the angle between the square’s side and the pentagon’s side AE is 108° – 90° = 18°, which is ∠1.\n\n5. The configuration shows that ∠1 is the difference between the pentagon’s interior angle and the square’s right angle, directly yielding 18° as the answer.\n\n<final>B. 18°</final>",
+      "raw_generation": [
+        "1. The regular pentagon has interior angles of 108°, calculated using the formula (n-2)×180°/n for n=5.  \n2. The square has interior angles of 90°, as all its angles are right angles by definition.  \n3. At vertex A, the angle of the pentagon (108°) is adjacent to the square’s angle (90°), forming a linear pair with the remaining angle ∠1.  \n4. The sum of angles around point A is 360°, so ∠1 = 360° - 108° - 90° = 162°, but this is incorrect as it ignores the geometric configuration.  \n5. The correct approach is to recognize that ∠1 is the angle between the side of the pentagon and the side of the square, which is the difference between the pentagon’s interior angle and the square’s interior angle: 108° - 90° = 18°.  \n\n<final>B. 18°</final>",
+        "1. The regular pentagon has interior angles of 108° each, calculated as (5-2)×180°/5, and the square has 90° interior angles, confirming the geometric context of the figure.\n\n2. The square’s side AB aligns with the pentagon’s side AB, meaning their shared side forms a straight line, and the adjacent sides of both shapes are equal in length.\n\n3. The angle ∠1 is formed at vertex A between side AE of the pentagon and side AG of the square, requiring calculation based on the pentagon’s interior angle and the square’s right angle.\n\n4. The pentagon’s interior angle at A is 108°, and since the square’s angle at A is 90°, the angle between the square’s side and the pentagon’s side AE is 108° – 90° = 18°, which is ∠1.\n\n5. The configuration shows that ∠1 is the difference between the pentagon’s interior angle and the square’s right angle, directly yielding 18° as the answer.\n\n<final>B. 18°</final>"
+      ],
+      "chunks": [
+        "1. The regular pentagon has interior angles of 108° each, calculated as (5-2)×180°/5, and the square has 90° interior angles, confirming the geometric context of the figure.",
+        "2. The square’s side AB aligns with the pentagon’s side AB, meaning their shared side forms a straight line, and the adjacent sides of both shapes are equal in length.",
+        "3. The angle ∠1 is formed at vertex A between side AE of the pentagon and side AG of the square, requiring calculation based on the pentagon’s interior angle and the square’s right angle.",
+        "4. The pentagon’s interior angle at A is 108°, and since the square’s angle at A is 90°, the angle between the square’s side and the pentagon’s side AE is 108° – 90° = 18°, which is ∠1.",
+        "5. The configuration shows that ∠1 is the difference between the pentagon’s interior angle and the square’s right angle, directly yielding 18° as the answer.",
+        "<final>B. 18°</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          116,
+          167
+        ],
+        [
+          167,
+          205
+        ],
+        [
+          205,
+          248
+        ],
+        [
+          248,
+          316
+        ],
+        [
+          316,
+          352
+        ],
+        [
+          352,
+          363
+        ]
+      ],
+      "anchor_vector": [
+        9.372462793763031,
+        17.80491767612046,
+        13.378494924544155,
+        17.192329792061237,
+        13.49774169921875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 40,
+  "subset": "geoqa+",
+  "subset_local_idx": 5
+}

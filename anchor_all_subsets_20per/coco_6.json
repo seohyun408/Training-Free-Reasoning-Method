@@ -1,0 +1,484 @@
+{
+  "total_pairs": 9,
+  "successful_pairs": 9,
+  "image_path": "coco/train2017/000000554378.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide the bounding box coordinate of the region this sentence describes: second bike from the right.",
+      "reasoning_text": "<step>1. The second bike from the right is a red motorcycle with a black seat and visible engine components, positioned behind the third bike.</step>\n<step>2. This motorcycle has a white front fender and a silver-colored front wheel rim, with a black tire and visible spokes.</step>\n<step>3. The bike’s handlebars are angled upward, and the front suspension fork is silver with a black protective cover.</step>\n<step>4. The motorcycle’s fuel tank is red with a black stripe, and the exhaust pipe is visible beneath the seat.</step>\n<step>5. Behind this bike, the wall is decorated with posters and framed pictures, and a wooden cabinet is visible to the right.</step>\n<final>656,274,991,715</final>",
+      "raw_generation": [
+        "1. The second bike from the right is a red dirt bike with a visible front fender and knobby tires, positioned behind the third bike in the row.\n2. This motorcycle features a prominent red fuel tank and a black seat, with its front wheel and suspension components clearly visible.\n3. The bike’s handlebars are equipped with black grips and a small orange reflector, and it has a classic dirt bike design with exposed engine parts.\n4. The front wheel has a white rim and thick tread, suitable for off-road use, and the suspension forks are red with silver accents.\n5. The bike is parked indoors, with a wooden cabinet and posters visible in the background, indicating a garage or collection space.\n\n<final>[[447, 162, 815, 902]]</final>",
+        "<step>1. The second bike from the right is a red motorcycle with a black seat and visible engine components, positioned behind the third bike.</step>\n<step>2. This motorcycle has a white front fender and a silver-colored front wheel rim, with a black tire and visible spokes.</step>\n<step>3. The bike’s handlebars are angled upward, and the front suspension fork is silver with a black protective cover.</step>\n<step>4. The motorcycle’s fuel tank is red with a black stripe, and the exhaust pipe is visible beneath the seat.</step>\n<step>5. Behind this bike, the wall is decorated with posters and framed pictures, and a wooden cabinet is visible to the right.</step>\n<final>656,274,991,715</final>"
+      ],
+      "chunks": [
+        "<step>1. The second bike from the right is a red motorcycle with a black seat and visible engine components, positioned behind the third bike.</step>\n<step>2.",
+        "This motorcycle has a white front fender and a silver-colored front wheel rim, with a black tire and visible spokes.</step>\n<step>3.",
+        "The bike’s handlebars are angled upward, and the front suspension fork is silver with a black protective cover.</step>\n<step>4.",
+        "The motorcycle’s fuel tank is red with a black stripe, and the exhaust pipe is visible beneath the seat.</step>\n<step>5.",
+        "Behind this bike, the wall is decorated with posters and framed pictures, and a wooden cabinet is visible to the right.</step>\n<final>656,274,991,715</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          83
+        ],
+        [
+          83,
+          114
+        ],
+        [
+          114,
+          143
+        ],
+        [
+          143,
+          172
+        ],
+        [
+          172,
+          219
+        ]
+      ],
+      "anchor_vector": [
+        13.028639827996681,
+        10.495372015621179,
+        11.547711132382611,
+        12.678981050531915,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide the bounding box coordinate of the region this sentence describes: farthest bike.",
+      "reasoning_text": "<points x1=\"894\" y1=\"563\" alt=\"farthest bike\">farthest bike</points>",
+      "raw_generation": [
+        "1. The farthest bike is positioned at the rear of the lineup, partially obscured by the other motorcycles in the foreground.\n2. It features a red frame and black seat, with visible handlebars and front wheel.\n3. The bike’s front wheel has a knobby tire, suggesting it is designed for off-road use.\n4. Its rear fender is red, matching the body, and it sits on a wooden floor with scattered debris.\n5. The bike is positioned behind two other motorcycles, making it the last in the row from the viewer’s perspective.\n\n<final>[[823, 288, 991, 695]]</final>",
+        "<points x1=\"894\" y1=\"563\" alt=\"farthest bike\">farthest bike</points>"
+      ],
+      "chunks": [
+        "<points x1=\"894\" y1=\"563\" alt=\"farthest bike\">farthest bike</points>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          70
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.39, 0.27, 0.74, 0.76].",
+      "reasoning_text": "<steps>\n1. The motorcycle in the center has a red fuel tank and black seat, with chrome accents on its engine and exhaust, positioned between two other red bikes.\n2. Its front wheel features a white rim and knobby tire, indicating it's designed for off-road use, matching the rugged style of the other bikes.\n3. The handlebars are equipped with black grips and a small orange turn signal, while the headlight is circular and centered above the front fender.\n4. Behind the bike, a wooden cabinet and colorful posters decorate the wall, suggesting a garage or workshop setting filled with memorabilia.\n5. The bike’s suspension system, including the red front fork, is visible, showcasing its off-road capability and classic design elements.\n</steps>\n\n<final>Red off-road motorcycle with chrome accents, knobby tires, and a wooden cabinet backdrop, positioned centrally among other vintage bikes.</final>",
+      "raw_generation": [
+        "1. This motorcycle features a vibrant red fuel tank and matching fenders, creating a bold visual contrast against the darker background.  \n2. Its front suspension includes prominent red shock absorbers, adding to its rugged, off-road aesthetic.  \n3. The white-walled tires and spoked wheels suggest it is designed for dirt or trail riding, not paved roads.  \n4. A small emblem or logo is visible on the side of the fuel tank, hinting at its brand or model identity.  \n5. The bike is positioned in a garage or workshop, surrounded by other motorcycles and vintage posters on the walls.  \n\n<final>Red dirt bike with white-walled tires and red suspension, parked in a garage with vintage posters on the walls.</final>",
+        "<steps>\n1. The motorcycle in the center has a red fuel tank and black seat, with chrome accents on its engine and exhaust, positioned between two other red bikes.\n2. Its front wheel features a white rim and knobby tire, indicating it's designed for off-road use, matching the rugged style of the other bikes.\n3. The handlebars are equipped with black grips and a small orange turn signal, while the headlight is circular and centered above the front fender.\n4. Behind the bike, a wooden cabinet and colorful posters decorate the wall, suggesting a garage or workshop setting filled with memorabilia.\n5. The bike’s suspension system, including the red front fork, is visible, showcasing its off-road capability and classic design elements.\n</steps>\n\n<final>Red off-road motorcycle with chrome accents, knobby tires, and a wooden cabinet backdrop, positioned centrally among other vintage bikes.</final>"
+      ],
+      "chunks": [
+        "<steps>\n1.",
+        "The motorcycle in the center has a red fuel tank and black seat, with chrome accents on its engine and exhaust, positioned between two other red bikes.",
+        "2. Its front wheel features a white rim and knobby tire, indicating it's designed for off-road use, matching the rugged style of the other bikes.",
+        "3. The handlebars are equipped with black grips and a small orange turn signal, while the headlight is circular and centered above the front fender.",
+        "4. Behind the bike, a wooden cabinet and colorful posters decorate the wall, suggesting a garage or workshop setting filled with memorabilia.",
+        "5. The bike’s suspension system, including the red front fork, is visible, showcasing its off-road capability and classic design elements.",
+        "</steps>\n\n<final>Red off-road motorcycle with chrome accents, knobby tires, and a wooden cabinet backdrop, positioned centrally among other vintage bikes.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          79
+        ],
+        [
+          79,
+          109
+        ],
+        [
+          109,
+          141
+        ],
+        [
+          141,
+          172
+        ],
+        [
+          172,
+          199
+        ],
+        [
+          199,
+          226
+        ],
+        [
+          226,
+          259
+        ]
+      ],
+      "anchor_vector": [
+        7.06866068872655,
+        9.82474746679242,
+        9.245599635043309,
+        8.457944242774973,
+        7.810407131207912,
+        8.303947679924242,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.55, 0.33, 0.82, 0.69].",
+      "reasoning_text": "<steps>\n1. This motorcycle features a red frame with a black seat and white-walled tires, positioned behind another red bike in the foreground.\n2. The handlebars have black grips, and the front fender displays a small emblem near its center.\n3. The engine is partially visible beneath the red bodywork, showing metallic components and a black exhaust pipe.\n4. The bike’s rear wheel is partially obscured by the one in front, but its spokes and tire tread are still discernible.\n5. The motorcycle rests on a wooden floor, with posters and memorabilia visible on the wall behind it.\n</steps>\n<final>Red motorcycle with black seat and white-walled tires, partially obscured by another bike, positioned behind in a room with posters.</final>",
+      "raw_generation": [
+        "1. This motorcycle features a red frame with a black seat and prominent front fender.  \n2. Its front wheel has a white rim and knobby tire, suitable for off-road use.  \n3. The handlebars are equipped with black grips and a visible rearview mirror.  \n4. A small blue and white sticker is visible on the side of the fuel tank.  \n5. The bike is parked indoors, positioned behind another red motorcycle in a garage setting.  \n\n<final>Red motorcycle with black seat and knobby tires, parked indoors behind another bike in a garage setting.</final>",
+        "<steps>\n1. This motorcycle features a red frame with a black seat and white-walled tires, positioned behind another red bike in the foreground.\n2. The handlebars have black grips, and the front fender displays a small emblem near its center.\n3. The engine is partially visible beneath the red bodywork, showing metallic components and a black exhaust pipe.\n4. The bike’s rear wheel is partially obscured by the one in front, but its spokes and tire tread are still discernible.\n5. The motorcycle rests on a wooden floor, with posters and memorabilia visible on the wall behind it.\n</steps>\n<final>Red motorcycle with black seat and white-walled tires, partially obscured by another bike, positioned behind in a room with posters.</final>"
+      ],
+      "chunks": [
+        "<steps>\n1.",
+        "This motorcycle features a red frame with a black seat and white-walled tires, positioned behind another red bike in the foreground.",
+        "2. The handlebars have black grips, and the front fender displays a small emblem near its center.",
+        "3. The engine is partially visible beneath the red bodywork, showing metallic components and a black exhaust pipe.",
+        "4. The bike’s rear wheel is partially obscured by the one in front, but its spokes and tire tread are still discernible.",
+        "5. The motorcycle rests on a wooden floor, with posters and memorabilia visible on the wall behind it.",
+        "</steps>\n<final>Red motorcycle with black seat and white-walled tires, partially obscured by another bike, positioned behind in a room with posters.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          79
+        ],
+        [
+          79,
+          104
+        ],
+        [
+          104,
+          126
+        ],
+        [
+          126,
+          148
+        ],
+        [
+          148,
+          175
+        ],
+        [
+          175,
+          197
+        ],
+        [
+          197,
+          230
+        ]
+      ],
+      "anchor_vector": [
+        11.331381052276235,
+        18.015578966750837,
+        17.52046177925084,
+        23.04262678872054,
+        21.474875710227273,
+        18.09872159090909,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide the bounding box coordinate of the region this sentence describes: second bike from right.",
+      "reasoning_text": "<steps>\n1. The second bike from the right is a red dirt bike with a black seat and a visible number \"1\" on its side.\n2. This bike has a red fuel tank and a black rear fender, with a white-rimmed front wheel and knobby tires.\n3. It is positioned behind the third bike from the right, partially obscured by its front fender.\n4. The handlebars are equipped with black grips and a small orange reflector near the left side.\n5. The bike appears to be parked inside a garage, with posters and memorabilia visible on the walls behind it.\n</steps>\n<final>[[439, 168, 815, 902]]</final>",
+      "raw_generation": [
+        "1. The second bike from the right is a red dirt bike with a visible front wheel and handlebars, positioned behind the third bike in the row.\n2. This bike features a red fuel tank and fenders, with a black seat and a visible engine block beneath the red bodywork.\n3. The front suspension forks are silver with red accents, and the wheel has a white rim and knobby tire suitable for off-road use.\n4. The bike is angled slightly toward the viewer, with its front fender partially obscuring the view of the bike in front of it.\n5. The background behind this bike includes a wooden cabinet and a wall covered with posters and memorabilia, indicating a garage or collection space.\n\n<final>[[447, 162, 815, 902]]</final>",
+        "<steps>\n1. The second bike from the right is a red dirt bike with a black seat and a visible number \"1\" on its side.\n2. This bike has a red fuel tank and a black rear fender, with a white-rimmed front wheel and knobby tires.\n3. It is positioned behind the third bike from the right, partially obscured by its front fender.\n4. The handlebars are equipped with black grips and a small orange reflector near the left side.\n5. The bike appears to be parked inside a garage, with posters and memorabilia visible on the walls behind it.\n</steps>\n<final>[[439, 168, 815, 902]]</final>"
+      ],
+      "chunks": [
+        "<steps>\n1.",
+        "The second bike from the right is a red dirt bike with a black seat and a visible number \"1\" on its side.",
+        "2. This bike has a red fuel tank and a black rear fender, with a white-rimmed front wheel and knobby tires.",
+        "3. It is positioned behind the third bike from the right, partially obscured by its front fender.",
+        "4. The handlebars are equipped with black grips and a small orange reflector near the left side.",
+        "5. The bike appears to be parked inside a garage, with posters and memorabilia visible on the walls behind it.",
+        "</steps>\n<final>[[439, 168, 815, 902]]</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          49
+        ],
+        [
+          49,
+          75
+        ],
+        [
+          75,
+          104
+        ],
+        [
+          104,
+          125
+        ],
+        [
+          125,
+          146
+        ],
+        [
+          146,
+          170
+        ],
+        [
+          170,
+          199
+        ]
+      ],
+      "anchor_vector": [
+        10.119299818543825,
+        12.107679806162768,
+        12.581866886032431,
+        11.606649497981664,
+        10.742919921875,
+        9.120100350215518,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide the bounding box coordinate of the region this sentence describes: number 2 bike closest to us.",
+      "reasoning_text": "<box>433,163,728,905</box>",
+      "raw_generation": [
+        "1. The motorcycle positioned second from the front in the image has a red fuel tank and matching red fenders, clearly visible in the foreground.\n2. This bike features a white front fork with red suspension components and a knobby tire suitable for off-road use.\n3. The handlebars are equipped with orange grips and a round headlight, adding to its vintage aesthetic.\n4. The engine and exhaust system are partially visible beneath the red bodywork, showing signs of classic design.\n5. The bike is parked next to another red motorcycle, with its front wheel slightly overlapping the rear wheel of the bike in front of it.\n\n<final>447,158,733,902</final>",
+        "<box>433,163,728,905</box>"
+      ],
+      "chunks": [
+        "<box>433,163,728,905</box>"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          71
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.55, 0.33, 0.82, 0.69].",
+      "reasoning_text": "<reasoning>\n1. This motorcycle features a red frame and fenders with a black seat, positioned behind the central bike in the lineup.\n2. Its front wheel has a white rim and knobby tire, matching the rugged style of the other bikes in the garage.\n3. The handlebars are raised with visible grips and a small headlight, indicating it’s designed for off-road or motocross use.\n4. It’s parked in a row with other vintage motorcycles, suggesting a collection or restoration project.\n5. The background wall behind it is covered in posters and memorabilia, adding to the garage’s nostalgic, enthusiast atmosphere.\n</reasoning>\n<final>Red motocross bike with black seat and knobby tires, parked in a row with vintage motorcycles against a wall covered in posters.</final>",
+      "raw_generation": [
+        "1. This motorcycle features a red frame with a black seat and prominent front fender.  \n2. Its front wheel has a white rim and knobby tire, suitable for off-road use.  \n3. The handlebars are equipped with black grips and a visible rearview mirror.  \n4. A small blue and white sticker is visible on the side of the fuel tank.  \n5. The bike is parked indoors, positioned behind another red motorcycle in a garage setting.  \n\n<final>Red motorcycle with black seat and knobby tires, parked indoors behind another bike in a garage setting.</final>",
+        "<reasoning>\n1. This motorcycle features a red frame and fenders with a black seat, positioned behind the central bike in the lineup.\n2. Its front wheel has a white rim and knobby tire, matching the rugged style of the other bikes in the garage.\n3. The handlebars are raised with visible grips and a small headlight, indicating it’s designed for off-road or motocross use.\n4. It’s parked in a row with other vintage motorcycles, suggesting a collection or restoration project.\n5. The background wall behind it is covered in posters and memorabilia, adding to the garage’s nostalgic, enthusiast atmosphere.\n</reasoning>\n<final>Red motocross bike with black seat and knobby tires, parked in a row with vintage motorcycles against a wall covered in posters.</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "This motorcycle features a red frame and fenders with a black seat, positioned behind the central bike in the lineup.",
+        "2. Its front wheel has a white rim and knobby tire, matching the rugged style of the other bikes in the garage.",
+        "3. The handlebars are raised with visible grips and a small headlight, indicating it’s designed for off-road or motocross use.",
+        "4. It’s parked in a row with other vintage motorcycles, suggesting a collection or restoration project.",
+        "5. The background wall behind it is covered in posters and memorabilia, adding to the garage’s nostalgic, enthusiast atmosphere.",
+        "</reasoning>\n<final>Red motocross bike with black seat and knobby tires, parked in a row with vintage motorcycles against a wall covered in posters.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          80
+        ],
+        [
+          80,
+          103
+        ],
+        [
+          103,
+          129
+        ],
+        [
+          129,
+          158
+        ],
+        [
+          158,
+          178
+        ],
+        [
+          178,
+          203
+        ],
+        [
+          203,
+          239
+        ]
+      ],
+      "anchor_vector": [
+        10.17042252167436,
+        10.670881670011099,
+        10.738185501975575,
+        11.961637008101851,
+        13.239696180555555,
+        12.404486762152779,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide the bounding box coordinate of the region this sentence describes: bike in the middle.",
+      "reasoning_text": "<steps>\n1. The bike in the middle is a red motorcycle with a visible engine and silver exhaust pipe, positioned between two other red bikes in a garage setting.\n2. Its front wheel has a white rim and black tire, and the suspension forks are red with silver accents, matching the bike's overall color scheme.\n3. The handlebars have black grips and a round headlight, and the seat is black with a red rear fender, contributing to its classic dirt bike appearance.\n4. Behind the bike, a wooden cabinet and wall adorned with posters and photos create a vintage garage atmosphere, enhancing the bike's nostalgic aesthetic.\n5. The bike's frame and engine components are clearly visible, indicating it is well-maintained and likely used for display or occasional riding.\n</steps>\n\n<final>445, 158, 733, 911</final>",
+      "raw_generation": [
+        "1. The bike in the middle is a red dirt bike with a prominent front fender and a visible engine block, positioned between two other motorcycles in the lineup.\n2. Its front wheel features a white rim and thick knobby tire, suitable for off-road terrain, and the suspension forks are clearly visible.\n3. The handlebars are equipped with black grips and a small orange reflector, and the headlight is mounted centrally above the front wheel.\n4. The bike’s red fuel tank has a white logo or decal, and the seat is black with a slight curve for rider comfort.\n5. Behind the front wheel, the engine and exhaust system are partially visible, showing the bike’s mechanical components and design.\n\n<final>[[267, 158, 733, 900]]</final>",
+        "<steps>\n1. The bike in the middle is a red motorcycle with a visible engine and silver exhaust pipe, positioned between two other red bikes in a garage setting.\n2. Its front wheel has a white rim and black tire, and the suspension forks are red with silver accents, matching the bike's overall color scheme.\n3. The handlebars have black grips and a round headlight, and the seat is black with a red rear fender, contributing to its classic dirt bike appearance.\n4. Behind the bike, a wooden cabinet and wall adorned with posters and photos create a vintage garage atmosphere, enhancing the bike's nostalgic aesthetic.\n5. The bike's frame and engine components are clearly visible, indicating it is well-maintained and likely used for display or occasional riding.\n</steps>\n\n<final>445, 158, 733, 911</final>"
+      ],
+      "chunks": [
+        "<steps>\n1.",
+        "The bike in the middle is a red motorcycle with a visible engine and silver exhaust pipe, positioned between two other red bikes in a garage setting.",
+        "2. Its front wheel has a white rim and black tire, and the suspension forks are red with silver accents, matching the bike's overall color scheme.",
+        "3. The handlebars have black grips and a round headlight, and the seat is black with a red rear fender, contributing to its classic dirt bike appearance.",
+        "4. Behind the bike, a wooden cabinet and wall adorned with posters and photos create a vintage garage atmosphere, enhancing the bike's nostalgic aesthetic.",
+        "5. The bike's frame and engine components are clearly visible, indicating it is well-maintained and likely used for display or occasional riding.",
+        "</steps>\n\n<final>445, 158, 733, 911</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          49
+        ],
+        [
+          49,
+          78
+        ],
+        [
+          78,
+          109
+        ],
+        [
+          109,
+          143
+        ],
+        [
+          143,
+          172
+        ],
+        [
+          172,
+          201
+        ],
+        [
+          201,
+          228
+        ]
+      ],
+      "anchor_vector": [
+        9.880470765133476,
+        12.961807552032216,
+        8.059155854855712,
+        9.322715450723713,
+        8.112405711206897,
+        8.356119791666666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide the bounding box coordinate of the region this sentence describes: next to last bike.",
+      "reasoning_text": "<steps>\n1. The next-to-last bike is positioned directly behind the foremost red motorcycle, with its front wheel visible and aligned with the others in the row.\n2. This bike features a red fuel tank and black seat, matching the color scheme of the other motorcycles in the lineup.\n3. Its front fender is red, and the suspension forks are white with red accents, consistent with the styling of the surrounding bikes.\n4. The bike's handlebars are equipped with orange turn signals, and the headlight is centrally located above the front wheel.\n5. The last bike in the row is partially obscured by the next-to-last bike, indicating it is positioned slightly behind and to the right.\n</steps>\n<final>[\"455\", \"168\", \"731\", \"899\"]</final>",
+      "raw_generation": [
+        "1. The motorcycle positioned second from the right in the row, featuring a red frame and black seat, is the next-to-last bike in the lineup.\n2. This bike has a visible front fender and handlebars, with a white-rimmed front wheel and a black tire.\n3. The engine area is partially visible, showing metallic components and a red fuel tank with a white stripe.\n4. The bike is parked next to another red motorcycle, with its rear wheel and fender partially obscured by the adjacent bike.\n5. The background includes a wooden cabinet and a wall covered with posters and memorabilia, indicating a garage or collection space.\n\n<final>[[317, 158, 728, 902]]</final>",
+        "<steps>\n1. The next-to-last bike is positioned directly behind the foremost red motorcycle, with its front wheel visible and aligned with the others in the row.\n2. This bike features a red fuel tank and black seat, matching the color scheme of the other motorcycles in the lineup.\n3. Its front fender is red, and the suspension forks are white with red accents, consistent with the styling of the surrounding bikes.\n4. The bike's handlebars are equipped with orange turn signals, and the headlight is centrally located above the front wheel.\n5. The last bike in the row is partially obscured by the next-to-last bike, indicating it is positioned slightly behind and to the right.\n</steps>\n<final>[\"455\", \"168\", \"731\", \"899\"]</final>"
+      ],
+      "chunks": [
+        "<steps>\n1.",
+        "The next-to-last bike is positioned directly behind the foremost red motorcycle, with its front wheel visible and aligned with the others in the row.",
+        "2. This bike features a red fuel tank and black seat, matching the color scheme of the other motorcycles in the lineup.",
+        "3. Its front fender is red, and the suspension forks are white with red accents, consistent with the styling of the surrounding bikes.",
+        "4. The bike's handlebars are equipped with orange turn signals, and the headlight is centrally located above the front wheel.",
+        "5. The last bike in the row is partially obscured by the next-to-last bike, indicating it is positioned slightly behind and to the right.",
+        "</steps>\n<final>[\"455\", \"168\", \"731\", \"899\"]</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          49
+        ],
+        [
+          49,
+          77
+        ],
+        [
+          77,
+          102
+        ],
+        [
+          102,
+          130
+        ],
+        [
+          130,
+          156
+        ],
+        [
+          156,
+          185
+        ],
+        [
+          185,
+          214
+        ]
+      ],
+      "anchor_vector": [
+        11.212001222275838,
+        8.564497147652995,
+        7.372894732326031,
+        9.879835322723252,
+        12.461787782866379,
+        7.8086568898168105,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 29,
+  "subset": "coco",
+  "subset_local_idx": 6
+}

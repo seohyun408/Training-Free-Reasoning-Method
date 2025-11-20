@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "llava/llava_pretrain/images/00011/000116684.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat do you think is going on in this snapshot?",
+      "reasoning_text": "1. Three climbers stand triumphantly atop a rugged mountain peak, their gear and expressions conveying accomplishment after a challenging ascent under a clear blue sky.\n\n2. The person on the left wears a red helmet and dark jacket, suggesting preparedness for cold weather and potential hazards, while the middle climber dons a white helmet and bright orange jacket for visibility.\n\n3. The individual on the right, in a maroon hoodie and headband, appears relaxed yet proud, indicating they’ve reached the summit and are enjoying the panoramic view of snow-dusted valleys below.\n\n4. A red glove lies discarded on the rocky ground beside them, hinting they’ve just removed it to take this photo or are taking a moment to rest before continuing their journey.\n\n5. The expansive background reveals layered mountain ranges fading into the distance under brilliant sunlight, emphasizing the scale and beauty of their achievement in this remote, high-altitude environment.\n\n<final>Three climbers celebrate reaching a mountain summit, posing with pride against a vast, snow-dusted landscape under a clear blue sky, capturing their triumph after a demanding ascent.",
+      "raw_generation": [
+        "1. Three hikers stand triumphantly atop a rugged mountain peak, their gear and expressions suggesting a successful ascent through challenging terrain.  \n2. The clear blue sky and distant snow-capped ridges indicate they’ve reached a high elevation, likely after a long and physically demanding climb.  \n3. Their layered clothing, including hats, gloves, and sturdy boots, shows they’re prepared for cold, windy, and potentially unpredictable alpine conditions.  \n4. The presence of snow patches near their feet and the vast mountainous backdrop implies they’re in a remote, high-altitude region, possibly in the Rockies or Alps.  \n5. Their relaxed poses and smiles suggest camaraderie and shared accomplishment, capturing a moment of joy and pride after conquering the mountain’s steep slopes.  \n\n<final>Three hikers celebrate reaching a high mountain summit, dressed for cold weather, with a breathtaking view of snow-dusted peaks and clear blue skies behind them.</final>",
+        "1. Three climbers stand triumphantly atop a rugged mountain peak, their gear and expressions conveying accomplishment after a challenging ascent under a clear blue sky.\n\n2. The person on the left wears a red helmet and dark jacket, suggesting preparedness for cold weather and potential hazards, while the middle climber dons a white helmet and bright orange jacket for visibility.\n\n3. The individual on the right, in a maroon hoodie and headband, appears relaxed yet proud, indicating they’ve reached the summit and are enjoying the panoramic view of snow-dusted valleys below.\n\n4. A red glove lies discarded on the rocky ground beside them, hinting they’ve just removed it to take this photo or are taking a moment to rest before continuing their journey.\n\n5. The expansive background reveals layered mountain ranges fading into the distance under brilliant sunlight, emphasizing the scale and beauty of their achievement in this remote, high-altitude environment.\n\n<final>Three climbers celebrate reaching a mountain summit, posing with pride against a vast, snow-dusted landscape under a clear blue sky, capturing their triumph after a demanding ascent."
+      ],
+      "chunks": [
+        "1. Three climbers stand triumphantly atop a rugged mountain peak, their gear and expressions conveying accomplishment after a challenging ascent under a clear blue sky.",
+        "2. The person on the left wears a red helmet and dark jacket, suggesting preparedness for cold weather and potential hazards, while the middle climber dons a white helmet and bright orange jacket for visibility.",
+        "3. The individual on the right, in a maroon hoodie and headband, appears relaxed yet proud, indicating they’ve reached the summit and are enjoying the panoramic view of snow-dusted valleys below.",
+        "4. A red glove lies discarded on the rocky ground beside them, hinting they’ve just removed it to take this photo or are taking a moment to rest before continuing their journey.",
+        "5. The expansive background reveals layered mountain ranges fading into the distance under brilliant sunlight, emphasizing the scale and beauty of their achievement in this remote, high-altitude environment.",
+        "<final>Three climbers celebrate reaching a mountain summit, posing with pride against a vast, snow-dusted landscape under a clear blue sky, capturing their triumph after a demanding ascent."
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          59
+        ],
+        [
+          59,
+          101
+        ],
+        [
+          101,
+          142
+        ],
+        [
+          142,
+          179
+        ],
+        [
+          179,
+          213
+        ],
+        [
+          213,
+          249
+        ]
+      ],
+      "anchor_vector": [
+        13.712474761908211,
+        11.792741061184538,
+        13.037998418915238,
+        14.298912696589053,
+        13.52951388888889,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 576,
+  "subset": "llava",
+  "subset_local_idx": 0
+}

@@ -1,0 +1,260 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/1605067296.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>Anonymous</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the author's name as \"by Anonymous\" at the bottom, indicating no specific author is credited.  \n2. The title \"Jainism: Short Essays on Jain Philosophy\" suggests scholarly content, yet the author remains unnamed.  \n3. The publisher \"Forgotten Books\" is noted at the top, but this does not imply authorship.  \n4. The red wax seal with the letter \"F\" likely represents the publisher's branding, not the author.  \n5. No other names or identifiers appear on the cover, confirming the work is attributed to an anonymous author.  \n\n<final>Anonymous</final>",
+        "<final>Anonymous</final>"
+      ],
+      "chunks": [
+        "<final>Anonymous</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          45
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book cover clearly displays the title “Jainism” in a prominent, centered font beneath the publisher’s name, “Forgotten Books,” at the top.  \n2. Below the main title, the subtitle “Short Essays on Jain Philosophy” provides context for the book’s content and scholarly nature.  \n3. The red wax seal with the letter “F” and droplets visually reinforces the publisher’s branding while adding an antique aesthetic to the cover’s design.  \n4. The author is listed as “by Anonymous,” indicating the work’s origin is unattributed despite its scholarly presentation and thematic focus.  \n5. The aged, parchment-like background texture and elegant typography suggest a historical or reprinted edition, aligning with the “Forgotten Books” imprint.  \n\n<final>Jainism: Short Essays on Jain Philosophy</final>",
+      "raw_generation": [
+        "1. The title is prominently displayed in the center of the cover in a large, elegant serif font, making it the most visually dominant text element.  \n2. The text \"Jainism\" is written in a dark, bold typeface that contrasts sharply with the pale yellow background, ensuring immediate readability.  \n3. Below the main title, the subtitle \"Short Essays on Jain Philosophy\" is printed in a smaller, yet still legible, font to provide context for the book’s content.  \n4. The publisher’s name, \"Forgotten Books,\" appears at the top in a decorative, gothic-style font, suggesting a historical or classic reprint edition.  \n5. The author is credited as \"by Anonymous\" at the bottom, indicating the work’s origin is unknown or deliberately unattributed, which is common for reprinted historical texts.  \n\n<final>Jainism: Short Essays on Jain Philosophy</final>",
+        "1. The book cover clearly displays the title “Jainism” in a prominent, centered font beneath the publisher’s name, “Forgotten Books,” at the top.  \n2. Below the main title, the subtitle “Short Essays on Jain Philosophy” provides context for the book’s content and scholarly nature.  \n3. The red wax seal with the letter “F” and droplets visually reinforces the publisher’s branding while adding an antique aesthetic to the cover’s design.  \n4. The author is listed as “by Anonymous,” indicating the work’s origin is unattributed despite its scholarly presentation and thematic focus.  \n5. The aged, parchment-like background texture and elegant typography suggest a historical or reprinted edition, aligning with the “Forgotten Books” imprint.  \n\n<final>Jainism: Short Essays on Jain Philosophy</final>"
+      ],
+      "chunks": [
+        "1. The book cover clearly displays the title “Jainism” in a prominent, centered font beneath the publisher’s name, “Forgotten Books,” at the top.",
+        "2. Below the main title, the subtitle “Short Essays on Jain Philosophy” provides context for the book’s content and scholarly nature.",
+        "3. The red wax seal with the letter “F” and droplets visually reinforces the publisher’s branding while adding an antique aesthetic to the cover’s design.",
+        "4. The author is listed as “by Anonymous,” indicating the work’s origin is unattributed despite its scholarly presentation and thematic focus.",
+        "5. The aged, parchment-like background texture and elegant typography suggest a historical or reprinted edition, aligning with the “Forgotten Books” imprint.",
+        "<final>Jainism: Short Essays on Jain Philosophy</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          59
+        ],
+        [
+          60,
+          87
+        ],
+        [
+          88,
+          120
+        ],
+        [
+          121,
+          149
+        ],
+        [
+          150,
+          181
+        ],
+        [
+          182,
+          196
+        ]
+      ],
+      "anchor_vector": [
+        11.30671973683399,
+        11.176808722008209,
+        12.69102803829445,
+        11.353882398473502,
+        12.807477678571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The book’s title, “Jainism: Short Essays on Jain Philosophy,” clearly indicates its focus on religious doctrine and metaphysical thought, placing it firmly in the religious or philosophical genre.\n\n2. The publisher, “Forgotten Books,” specializes in reprints of historical and classic texts, suggesting this book is a revival of older philosophical or religious writings rather than a modern original.\n\n3. The cover’s vintage design, including the wax seal with an “F” and aged parchment texture, reinforces the book’s historical context and scholarly nature, aligning with academic or religious studies.\n\n4. The attribution to “Anonymous” implies it may be a compilation or translation of older Jain texts, often preserved and reprinted without known original authorship, common in religious philosophy compilations.\n\n5. The subject matter, Jainism, is a major Indian religion with intricate philosophical systems, making this book suitable for readers interested in Eastern spirituality, ethics, and metaphysical traditions.\n\n<final>Religious and Philosophical</final>",
+      "raw_generation": [
+        "1. The title \"Jainism\" and subtitle \"Short Essays on Jain Philosophy\" clearly indicate the book focuses on religious and philosophical concepts specific to Jainism, a major Indian religion.  \n2. The publisher \"Forgotten Books\" specializes in reprints of historical and philosophical texts, suggesting this work is a scholarly or academic compilation rather than fiction.  \n3. The cover design, featuring a red wax seal with a stylized \"J\" and aged parchment texture, evokes a classical, scholarly aesthetic typical of philosophy and religious studies publications.  \n4. The attribution \"by Anonymous\" implies the work may be a compilation of historical essays or a reprinted text from an earlier era, reinforcing its academic and philosophical nature.  \n5. The absence of any imagery or narrative elements confirms this is not a novel, biography, or popular science book, but a serious treatise on Jain doctrine and metaphysical principles.  \n\n<final>Philosophy</final>",
+        "1. The book’s title, “Jainism: Short Essays on Jain Philosophy,” clearly indicates its focus on religious doctrine and metaphysical thought, placing it firmly in the religious or philosophical genre.\n\n2. The publisher, “Forgotten Books,” specializes in reprints of historical and classic texts, suggesting this book is a revival of older philosophical or religious writings rather than a modern original.\n\n3. The cover’s vintage design, including the wax seal with an “F” and aged parchment texture, reinforces the book’s historical context and scholarly nature, aligning with academic or religious studies.\n\n4. The attribution to “Anonymous” implies it may be a compilation or translation of older Jain texts, often preserved and reprinted without known original authorship, common in religious philosophy compilations.\n\n5. The subject matter, Jainism, is a major Indian religion with intricate philosophical systems, making this book suitable for readers interested in Eastern spirituality, ethics, and metaphysical traditions.\n\n<final>Religious and Philosophical</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “Jainism: Short Essays on Jain Philosophy,” clearly indicates its focus on religious doctrine and metaphysical thought, placing it firmly in the religious or philosophical genre.",
+        "2. The publisher, “Forgotten Books,” specializes in reprints of historical and classic texts, suggesting this book is a revival of older philosophical or religious writings rather than a modern original.",
+        "3. The cover’s vintage design, including the wax seal with an “F” and aged parchment texture, reinforces the book’s historical context and scholarly nature, aligning with academic or religious studies.",
+        "4. The attribution to “Anonymous” implies it may be a compilation or translation of older Jain texts, often preserved and reprinted without known original authorship, common in religious philosophy compilations.",
+        "5. The subject matter, Jainism, is a major Indian religion with intricate philosophical systems, making this book suitable for readers interested in Eastern spirituality, ethics, and metaphysical traditions.",
+        "<final>Religious and Philosophical</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          64
+        ],
+        [
+          64,
+          102
+        ],
+        [
+          102,
+          142
+        ],
+        [
+          142,
+          181
+        ],
+        [
+          181,
+          218
+        ],
+        [
+          218,
+          229
+        ]
+      ],
+      "anchor_vector": [
+        15.82577777651277,
+        14.536665233784376,
+        13.51017424869964,
+        14.80267199017199,
+        15.406605113636363,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Religion & Spirituality?",
+      "reasoning_text": "1. The book's title, \"Jainism: Short Essays on Jain Philosophy,\" explicitly references Jainism, a major world religion with deep spiritual and philosophical traditions originating in ancient India.\n\n2. The cover's design, featuring a red wax seal with an ornate 'J' and vintage parchment texture, visually evokes classical religious texts and scholarly treatises on spiritual subjects.\n\n3. The publisher, \"Forgotten Books,\" specializes in reprints of historical religious, philosophical, and spiritual works, indicating this book’s thematic alignment with such content.\n\n4. The attribution \"by Anonymous\" suggests the essays may be compilations of historical or traditional Jain teachings, often preserved anonymously in religious scriptures and commentaries.\n\n5. Jainism’s core tenets—non-violence, asceticism, karma, and liberation—are foundational spiritual concepts, directly placing this book within the Religion & Spirituality category.\n\n<final>Yes, this book is related to Religion & Spirituality.</final>",
+      "raw_generation": [
+        "1. The title \"Jainism\" directly references a major world religion with ancient Indian origins, centered on non-violence, asceticism, and the cycle of rebirth.  \n2. The subtitle \"Short Essays on Jain Philosophy\" confirms the book explores core doctrinal and metaphysical concepts central to Jain thought.  \n3. The publisher \"Forgotten Books\" specializes in reprints of historical religious, philosophical, and spiritual texts, indicating the book's thematic alignment.  \n4. The red wax seal with a stylized \"J\" symbolizes authenticity and tradition, often associated with religious or scholarly publications.  \n5. The authorship by \"Anonymous\" suggests the work may be a compilation of historical Jain writings or essays from early scholars, reinforcing its spiritual and philosophical nature.  \n\n<final>Yes</final>",
+        "1. The book's title, \"Jainism: Short Essays on Jain Philosophy,\" explicitly references Jainism, a major world religion with deep spiritual and philosophical traditions originating in ancient India.\n\n2. The cover's design, featuring a red wax seal with an ornate 'J' and vintage parchment texture, visually evokes classical religious texts and scholarly treatises on spiritual subjects.\n\n3. The publisher, \"Forgotten Books,\" specializes in reprints of historical religious, philosophical, and spiritual works, indicating this book’s thematic alignment with such content.\n\n4. The attribution \"by Anonymous\" suggests the essays may be compilations of historical or traditional Jain teachings, often preserved anonymously in religious scriptures and commentaries.\n\n5. Jainism’s core tenets—non-violence, asceticism, karma, and liberation—are foundational spiritual concepts, directly placing this book within the Religion & Spirituality category.\n\n<final>Yes, this book is related to Religion & Spirituality.</final>"
+      ],
+      "chunks": [
+        "1. The book's title, \"Jainism: Short Essays on Jain Philosophy,\" explicitly references Jainism, a major world religion with deep spiritual and philosophical traditions originating in ancient India.",
+        "2. The cover's design, featuring a red wax seal with an ornate 'J' and vintage parchment texture, visually evokes classical religious texts and scholarly treatises on spiritual subjects.",
+        "3. The publisher, \"Forgotten Books,\" specializes in reprints of historical religious, philosophical, and spiritual works, indicating this book’s thematic alignment with such content.",
+        "4. The attribution \"by Anonymous\" suggests the essays may be compilations of historical or traditional Jain teachings, often preserved anonymously in religious scriptures and commentaries.",
+        "5. Jainism’s core tenets—non-violence, asceticism, karma, and liberation—are foundational spiritual concepts, directly placing this book within the Religion & Spirituality category.",
+        "<final>Yes, this book is related to Religion & Spirituality.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          66
+        ],
+        [
+          66,
+          104
+        ],
+        [
+          104,
+          138
+        ],
+        [
+          138,
+          170
+        ],
+        [
+          170,
+          208
+        ],
+        [
+          208,
+          225
+        ]
+      ],
+      "anchor_vector": [
+        22.63803983044698,
+        12.985364293904496,
+        11.887933469286153,
+        13.345861854198915,
+        12.297219669117647,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Mystery, Thriller & Suspense?",
+      "reasoning_text": "1. The book’s title, “Jainism: Short Essays on Jain Philosophy,” explicitly indicates its subject matter is Jain religious and philosophical teachings, not mystery or suspense genres.  \n2. The publisher, “Forgotten Books,” specializes in reprints of historical and non-fiction works, further confirming this is not a genre fiction title.  \n3. The cover design with a red wax seal and aged parchment aesthetic reinforces its academic or historical nature, unrelated to thrillers or suspense narratives.  \n4. The author is listed as “Anonymous,” which is common for scholarly or philosophical compilations, not for mystery novels where authorship is typically prominent.  \n5. No imagery, symbols, or text on the cover suggests crime, investigation, or dramatic tension, all hallmarks of mystery and thriller genres.  \n\n<final> No, this book is not related to Mystery, Thriller & Suspense; it is a philosophical text on Jainism.",
+      "raw_generation": [
+        "1. The book's title, \"Jainism,\" and subtitle, \"Short Essays on Jain Philosophy,\" clearly indicate it is a scholarly work focused on a specific religious and philosophical tradition, not a genre of fiction.\n2. The cover design, featuring a red wax seal with a stylized \"J\" and the \"Forgotten Books\" imprint, suggests it is a reprint of historical or academic texts, not a modern mystery or thriller novel.\n3. The author is listed as \"Anonymous,\" which is common for reprinted philosophical or religious texts, not for contemporary mystery or thriller authors who typically sign their work.\n4. The overall aesthetic, including the aged parchment background and classic typography, reinforces its academic nature and historical context, contrasting sharply with the modern, suspenseful themes of mystery and thriller genres.\n5. Jainism is a non-theistic, ascetic religion with a rich philosophical tradition centered on non-violence, karma, and liberation, which has no thematic connection to the plot-driven, suspenseful narratives characteristic of mystery and thriller genres.\n\n<final>No</final>",
+        "1. The book’s title, “Jainism: Short Essays on Jain Philosophy,” explicitly indicates its subject matter is Jain religious and philosophical teachings, not mystery or suspense genres.  \n2. The publisher, “Forgotten Books,” specializes in reprints of historical and non-fiction works, further confirming this is not a genre fiction title.  \n3. The cover design with a red wax seal and aged parchment aesthetic reinforces its academic or historical nature, unrelated to thrillers or suspense narratives.  \n4. The author is listed as “Anonymous,” which is common for scholarly or philosophical compilations, not for mystery novels where authorship is typically prominent.  \n5. No imagery, symbols, or text on the cover suggests crime, investigation, or dramatic tension, all hallmarks of mystery and thriller genres.  \n\n<final> No, this book is not related to Mystery, Thriller & Suspense; it is a philosophical text on Jainism."
+      ],
+      "chunks": [
+        "1. The book’s title, “Jainism: Short Essays on Jain Philosophy,” explicitly indicates its subject matter is Jain religious and philosophical teachings, not mystery or suspense genres.",
+        "2. The publisher, “Forgotten Books,” specializes in reprints of historical and non-fiction works, further confirming this is not a genre fiction title.",
+        "3. The cover design with a red wax seal and aged parchment aesthetic reinforces its academic or historical nature, unrelated to thrillers or suspense narratives.",
+        "4. The author is listed as “Anonymous,” which is common for scholarly or philosophical compilations, not for mystery novels where authorship is typically prominent.",
+        "5. No imagery, symbols, or text on the cover suggests crime, investigation, or dramatic tension, all hallmarks of mystery and thriller genres.",
+        "<final> No, this book is not related to Mystery, Thriller & Suspense; it is a philosophical text on Jainism."
+      ],
+      "chunk_token_ranges": [
+        [
+          34,
+          70
+        ],
+        [
+          71,
+          102
+        ],
+        [
+          103,
+          132
+        ],
+        [
+          133,
+          164
+        ],
+        [
+          165,
+          195
+        ],
+        [
+          196,
+          224
+        ]
+      ],
+      "anchor_vector": [
+        11.75043170693959,
+        12.862679588648845,
+        13.225367373511906,
+        14.40474330357143,
+        14.016043526785714,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 293,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 14
+}

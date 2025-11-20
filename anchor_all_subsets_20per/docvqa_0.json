@@ -1,0 +1,222 @@
+{
+  "total_pairs": 4,
+  "successful_pairs": 4,
+  "image_path": "docvqa/train/documents/mnph0227_1.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the date mentioned in the document? Answer the question using a single word or phrase.",
+      "reasoning_text": "September 24, 1968",
+      "raw_generation": [
+        "1. The document is a formal letter from Allen's Press Clipping Bureau, dated September 24, 1968, as clearly printed in the upper right-hand corner.\n2. The date is positioned directly below the address of the sender, San Francisco, California, indicating its importance as part of the letterhead.\n3. The format follows standard business letter conventions, with the date appearing after the sender’s location and before the recipient’s address.\n4. The handwriting and typewritten text are consistent with the era, and the date is legible without ambiguity.\n5. No other dates are present in the document, making September 24, 1968, the only relevant date mentioned.\n\n<final>September 24, 1968</final>",
+        "September 24, 1968"
+      ],
+      "chunks": [
+        "September 24, 1968"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          56
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the date mentioned in the document?",
+      "reasoning_text": "1. The document is a letter from Allen's Press Clipping Bureau, dated September 24, 1968, located in the upper right-hand corner.  \n2. The letterhead includes the address and telephone number of the bureau in San Francisco, California, with the date directly below it.  \n3. The letter is addressed to Mr. Jim Lyon at the Great Western Sugar Company in Denver, Colorado, and references a signed contract.  \n4. The body of the letter confirms the addition of trade press coverage with a fee structure, indicating the date is relevant to the contractual terms.  \n5. The signature at the bottom is from Philip N. McCombs, Senior Partner, and the document was established in 1888, adding context to its historical nature.  \n\n<final>September 24, 1968</final>",
+      "raw_generation": [
+        "1. The document is a letter from Allen's Press Clipping Bureau, dated September 24, 1968, located in the top right corner.\n2. The letterhead clearly states the date as \"September 24, 1968\" beneath the address and phone number.\n3. The date is formatted in a standard month-day-year structure, consistent with American conventions.\n4. The letter is addressed to Mr. Jim Lyon at the Great Western Sugar Company in Denver, Colorado.\n5. The letter confirms the addition of trade press coverage with a specified fee structure, signed by Philip N. McCombs, Senior Partner.\n\n<final>September 24, 1968</final>",
+        "1. The document is a letter from Allen's Press Clipping Bureau, dated September 24, 1968, located in the upper right-hand corner.  \n2. The letterhead includes the address and telephone number of the bureau in San Francisco, California, with the date directly below it.  \n3. The letter is addressed to Mr. Jim Lyon at the Great Western Sugar Company in Denver, Colorado, and references a signed contract.  \n4. The body of the letter confirms the addition of trade press coverage with a fee structure, indicating the date is relevant to the contractual terms.  \n5. The signature at the bottom is from Philip N. McCombs, Senior Partner, and the document was established in 1888, adding context to its historical nature.  \n\n<final>September 24, 1968</final>"
+      ],
+      "chunks": [
+        "1. The document is a letter from Allen's Press Clipping Bureau, dated September 24, 1968, located in the upper right-hand corner.",
+        "2. The letterhead includes the address and telephone number of the bureau in San Francisco, California, with the date directly below it.",
+        "3. The letter is addressed to Mr.",
+        "Jim Lyon at the Great Western Sugar Company in Denver, Colorado, and references a signed contract.",
+        "4. The body of the letter confirms the addition of trade press coverage with a fee structure, indicating the date is relevant to the contractual terms.",
+        "5. The signature at the bottom is from Philip N.",
+        "McCombs, Senior Partner, and the document was established in 1888, adding context to its historical nature.",
+        "<final>September 24, 1968</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          61
+        ],
+        [
+          62,
+          89
+        ],
+        [
+          90,
+          99
+        ],
+        [
+          99,
+          118
+        ],
+        [
+          119,
+          148
+        ],
+        [
+          149,
+          161
+        ],
+        [
+          161,
+          187
+        ],
+        [
+          188,
+          204
+        ]
+      ],
+      "anchor_vector": [
+        13.906424448737429,
+        13.804420955738296,
+        14.6023990153756,
+        14.15173361430012,
+        12.382886576856302,
+        13.15466073843149,
+        11.76171875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is a senior partner ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Philip N. McCombs",
+      "raw_generation": [
+        "1. The letterhead at the top of the document identifies Philip N. McCombs as the Senior Partner and General Manager of Allen's Press Clipping Bureau.  \n2. The signature block at the end of the letter also explicitly states \"Philip N. McCombs, Senior Partner.\"  \n3. The letter is dated September 24, 1968, and originates from San Francisco, California, indicating its historical context.  \n4. The letter is addressed to Mr. Jim Lyon at the Great Western Sugar Company in Denver, Colorado, confirming the recipient and sender relationship.  \n5. The letter confirms that Philip N. McCombs is the senior partner responsible for the business operations and client communications.  \n\n<final>Philip N. McCombs</final>",
+        "Philip N. McCombs"
+      ],
+      "chunks": [
+        "Philip N. McCombs"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          46
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is a senior partner ?",
+      "reasoning_text": "1. The letterhead clearly identifies Philip N. McCombs as the Senior Partner and General Manager of Allen’s Press Clipping Bureau, indicating his senior position within the organization.  \n2. The signature block at the end of the letter confirms Philip N. McCombs as the Senior Partner, reinforcing his official title and authority in the company.  \n3. The letter is dated September 24, 1968, and originates from San Francisco, California, placing Philip N. McCombs in a leadership role during that time.  \n4. The bureau’s establishment date, 1888, suggests a long-standing business, and Philip N. McCombs likely holds a senior position within this legacy company.  \n5. The letter’s tone and content, addressed to a client regarding contractual terms, demonstrate Philip N. McCombs’ seniority and responsibility for managing client relations.  \n\n<final>Philip N. McCombs is the senior partner.</final>",
+      "raw_generation": [
+        "1. The letterhead at the top of the document clearly identifies Philip N. McCombs as the Senior Partner and General Manager of Allen's Press Clipping Bureau.\n2. His name and title are printed directly beneath the company name, indicating his official role within the organization.\n3. The signature block at the end of the letter also confirms his identity as Philip N. McCombs, Senior Partner.\n4. The letter is dated September 24, 1968, and originates from San Francisco, California, providing context for the document's origin.\n5. The company's establishment date, 1888, is noted at the bottom, suggesting a long-standing business with McCombs holding a senior position.\n\n<final>Philip N. McCombs is the senior partner.</final>",
+        "1. The letterhead clearly identifies Philip N. McCombs as the Senior Partner and General Manager of Allen’s Press Clipping Bureau, indicating his senior position within the organization.  \n2. The signature block at the end of the letter confirms Philip N. McCombs as the Senior Partner, reinforcing his official title and authority in the company.  \n3. The letter is dated September 24, 1968, and originates from San Francisco, California, placing Philip N. McCombs in a leadership role during that time.  \n4. The bureau’s establishment date, 1888, suggests a long-standing business, and Philip N. McCombs likely holds a senior position within this legacy company.  \n5. The letter’s tone and content, addressed to a client regarding contractual terms, demonstrate Philip N. McCombs’ seniority and responsibility for managing client relations.  \n\n<final>Philip N. McCombs is the senior partner.</final>"
+      ],
+      "chunks": [
+        "1. The letterhead clearly identifies Philip N.",
+        "McCombs as the Senior Partner and General Manager of Allen’s Press Clipping Bureau, indicating his senior position within the organization.",
+        "2. The signature block at the end of the letter confirms Philip N.",
+        "McCombs as the Senior Partner, reinforcing his official title and authority in the company.",
+        "3. The letter is dated September 24, 1968, and originates from San Francisco, California, placing Philip N.",
+        "McCombs in a leadership role during that time.",
+        "4. The bureau’s establishment date, 1888, suggests a long-standing business, and Philip N.",
+        "McCombs likely holds a senior position within this legacy company.",
+        "5. The letter’s tone and content, addressed to a client regarding contractual terms, demonstrate Philip N.",
+        "McCombs’ seniority and responsibility for managing client relations.",
+        "<final>Philip N.",
+        "McCombs is the senior partner.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          30
+        ],
+        [
+          30,
+          56
+        ],
+        [
+          57,
+          72
+        ],
+        [
+          72,
+          90
+        ],
+        [
+          91,
+          120
+        ],
+        [
+          120,
+          131
+        ],
+        [
+          132,
+          156
+        ],
+        [
+          156,
+          169
+        ],
+        [
+          170,
+          191
+        ],
+        [
+          191,
+          204
+        ],
+        [
+          205,
+          211
+        ],
+        [
+          211,
+          221
+        ]
+      ],
+      "anchor_vector": [
+        15.499285207551395,
+        15.583635185705694,
+        16.44524033559931,
+        15.921928889963304,
+        15.649439948072759,
+        13.449055426927131,
+        14.518369963369963,
+        11.595449415493361,
+        12.385443376068375,
+        12.788590494791666,
+        16.25546875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        12,
+        12
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 18,
+  "subset": "docvqa",
+  "subset_local_idx": 0
+}

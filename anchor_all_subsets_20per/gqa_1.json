@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "gqa/images/2338237.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nOn which side of the image is the surfboard?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The surfboard is located on the right side of the image, held by a person standing near the water's edge.\n2. The person holding the surfboard is positioned on the right bank of the river, close to the bridge’s arch.\n3. The surfboard is clearly visible, white with some markings, and is being carried by an individual in a wetsuit.\n4. Other surfboards are also visible nearby, all situated on the right side of the image, indicating a group of surfers.\n5. The left side of the image is dominated by foliage and the bridge’s structure, with no surfboards present.\n</reasoning>\n<final>right</final>",
+      "raw_generation": [
+        "right",
+        "<reasoning>\n1. The surfboard is located on the right side of the image, held by a person standing near the water's edge.\n2. The person holding the surfboard is positioned on the right bank of the river, close to the bridge’s arch.\n3. The surfboard is clearly visible, white with some markings, and is being carried by an individual in a wetsuit.\n4. Other surfboards are also visible nearby, all situated on the right side of the image, indicating a group of surfers.\n5. The left side of the image is dominated by foliage and the bridge’s structure, with no surfboards present.\n</reasoning>\n<final>right</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The surfboard is located on the right side of the image, held by a person standing near the water's edge.",
+        "2. The person holding the surfboard is positioned on the right bank of the river, close to the bridge’s arch.",
+        "3. The surfboard is clearly visible, white with some markings, and is being carried by an individual in a wetsuit.",
+        "4. Other surfboards are also visible nearby, all situated on the right side of the image, indicating a group of surfers.",
+        "5. The left side of the image is dominated by foliage and the bridge’s structure, with no surfboards present.",
+        "</reasoning>\n<final>right</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          56
+        ],
+        [
+          56,
+          80
+        ],
+        [
+          80,
+          105
+        ],
+        [
+          105,
+          132
+        ],
+        [
+          132,
+          159
+        ],
+        [
+          159,
+          183
+        ],
+        [
+          183,
+          194
+        ]
+      ],
+      "anchor_vector": [
+        17.210515542249755,
+        15.512293798170507,
+        10.689018994469434,
+        9.583707353482744,
+        17.511703953598484,
+        12.570667613636363,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 75,
+  "subset": "gqa",
+  "subset_local_idx": 1
+}

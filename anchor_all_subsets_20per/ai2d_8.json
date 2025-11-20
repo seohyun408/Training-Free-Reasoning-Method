@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "ai2d/images/4447.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat does the diagram depicts?\n\nOptions:\n- Types of Plants\n- Types of Leaflets\n- Growth of Leaflets\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram clearly shows two distinct leaf structures, each composed of multiple smaller leaf units, indicating a focus on leaf morphology rather than plant types or growth stages.  \n2. The label “compound leaf” directly identifies the subject, confirming the diagram is illustrating variations in how leaves are divided into leaflets.  \n3. The left example displays a leaf with leaflets arranged along a central axis, typical of pinnately compound leaves, while the right shows a palmately compound leaf with leaflets radiating from a single point.  \n4. Neither diagram includes roots, stems, or flowers, eliminating any connection to overall plant types or developmental growth processes of leaflets.  \n5. Since both examples are labeled and visually contrast different compound leaf arrangements, the diagram’s purpose is to depict types of leaflets, not growth or plant categories.  \n\n<final>Types of Leaflets</final>",
+      "raw_generation": [
+        "1. The diagram shows two distinct leaf structures, each with multiple smaller leaf units attached to a central stem, indicating a focus on leaf composition rather than plant types or growth stages.  \n2. The label “compound leaf” explicitly identifies the subject matter, emphasizing the arrangement and structure of leaflets rather than plant species or developmental processes.  \n3. Both illustrations depict leaves divided into multiple leaflets, which is the defining characteristic of compound leaves, not the overall growth or classification of plants.  \n4. The diagram does not show any stages of development or growth patterns, nor does it compare different plant species, making “Growth of Leaflets” an inaccurate description.  \n5. The visual emphasis is on the structural variation of compound leaves, specifically contrasting a pinnately compound leaf with a palmately compound leaf, which aligns with “Types of Leaflets.”  \n\n<final>Types of Leaflets</final>",
+        "1. The diagram clearly shows two distinct leaf structures, each composed of multiple smaller leaf units, indicating a focus on leaf morphology rather than plant types or growth stages.  \n2. The label “compound leaf” directly identifies the subject, confirming the diagram is illustrating variations in how leaves are divided into leaflets.  \n3. The left example displays a leaf with leaflets arranged along a central axis, typical of pinnately compound leaves, while the right shows a palmately compound leaf with leaflets radiating from a single point.  \n4. Neither diagram includes roots, stems, or flowers, eliminating any connection to overall plant types or developmental growth processes of leaflets.  \n5. Since both examples are labeled and visually contrast different compound leaf arrangements, the diagram’s purpose is to depict types of leaflets, not growth or plant categories.  \n\n<final>Types of Leaflets</final>"
+      ],
+      "chunks": [
+        "1. The diagram clearly shows two distinct leaf structures, each composed of multiple smaller leaf units, indicating a focus on leaf morphology rather than plant types or growth stages.",
+        "2. The label “compound leaf” directly identifies the subject, confirming the diagram is illustrating variations in how leaves are divided into leaflets.",
+        "3. The left example displays a leaf with leaflets arranged along a central axis, typical of pinnately compound leaves, while the right shows a palmately compound leaf with leaflets radiating from a single point.",
+        "4. Neither diagram includes roots, stems, or flowers, eliminating any connection to overall plant types or developmental growth processes of leaflets.",
+        "5. Since both examples are labeled and visually contrast different compound leaf arrangements, the diagram’s purpose is to depict types of leaflets, not growth or plant categories.",
+        "<final>Types of Leaflets</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          80,
+          113
+        ],
+        [
+          114,
+          142
+        ],
+        [
+          143,
+          187
+        ],
+        [
+          188,
+          215
+        ],
+        [
+          216,
+          249
+        ],
+        [
+          250,
+          260
+        ]
+      ],
+      "anchor_vector": [
+        11.026128056513798,
+        11.896737311263678,
+        11.884920822811447,
+        11.524006421638259,
+        10.26484375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 84,
+  "subset": "ai2d",
+  "subset_local_idx": 8
+}

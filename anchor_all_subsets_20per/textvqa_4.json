@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/d4cd04d49035071e.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: ",
+      "reasoning_text": "<1> A bright white restaurant with red-and-white striped awnings and a red door stands under a blue sky with fluffy clouds, surrounded by green shrubs and trees.  \n<2> The building’s facade features a large circular red logo above the entrance, likely indicating the restaurant’s brand identity.  \n<3> A paved sidewalk leads to the red double doors, flanked by black metal railings and bordered by decorative gravel and ornamental grasses.  \n<4> The roofline includes a gabled section with beige shingles and vertical yellow trim, contrasting with the flat upper walls and air conditioning units.  \n<5> The scene suggests a sunny day, with vibrant greenery and clear skies enhancing the inviting, well-maintained appearance of the establishment.  \n<final> A cheerful, white restaurant with red accents and striped awnings sits under a sunny sky, surrounded by lush greenery and well-kept landscaping.",
+      "raw_generation": [
+        "1. The building features a prominent red circular logo above the entrance, which is flanked by striped awnings and surrounded by manicured landscaping under a partly cloudy sky.  \n2. The facade is painted white with beige trim, and the roofline includes a gabled section with shingles, contrasting with the flat upper walls.  \n3. Large windows line the right side of the structure, framed by vertical beige siding, allowing natural light into the interior while maintaining privacy.  \n4. The entrance is marked by a bold red double door beneath a striped awning, suggesting a welcoming and vibrant atmosphere for customers.  \n5. Mature trees and shrubs provide shade and greenery around the property, enhancing the aesthetic appeal and creating a serene environment for patrons.  \n\n<final>The image shows a white restaurant building with red and beige accents, featuring a distinctive circular logo, striped awnings, and lush landscaping under a partly cloudy sky.</final>",
+        "<1> A bright white restaurant with red-and-white striped awnings and a red door stands under a blue sky with fluffy clouds, surrounded by green shrubs and trees.  \n<2> The building’s facade features a large circular red logo above the entrance, likely indicating the restaurant’s brand identity.  \n<3> A paved sidewalk leads to the red double doors, flanked by black metal railings and bordered by decorative gravel and ornamental grasses.  \n<4> The roofline includes a gabled section with beige shingles and vertical yellow trim, contrasting with the flat upper walls and air conditioning units.  \n<5> The scene suggests a sunny day, with vibrant greenery and clear skies enhancing the inviting, well-maintained appearance of the establishment.  \n<final> A cheerful, white restaurant with red accents and striped awnings sits under a sunny sky, surrounded by lush greenery and well-kept landscaping."
+      ],
+      "chunks": [
+        "<1> A bright white restaurant with red-and-white striped awnings and a red door stands under a blue sky with fluffy clouds, surrounded by green shrubs and trees.",
+        "<2> The building’s facade features a large circular red logo above the entrance, likely indicating the restaurant’s brand identity.",
+        "<3> A paved sidewalk leads to the red double doors, flanked by black metal railings and bordered by decorative gravel and ornamental grasses.",
+        "<4> The roofline includes a gabled section with beige shingles and vertical yellow trim, contrasting with the flat upper walls and air conditioning units.",
+        "<5> The scene suggests a sunny day, with vibrant greenery and clear skies enhancing the inviting, well-maintained appearance of the establishment.",
+        "<final> A cheerful, white restaurant with red accents and striped awnings sits under a sunny sky, surrounded by lush greenery and well-kept landscaping."
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          75
+        ],
+        [
+          76,
+          101
+        ],
+        [
+          102,
+          133
+        ],
+        [
+          134,
+          165
+        ],
+        [
+          166,
+          196
+        ],
+        [
+          197,
+          229
+        ]
+      ],
+      "anchor_vector": [
+        15.482667435840892,
+        18.23300334971438,
+        15.11402848219786,
+        16.960324096679688,
+        9.2689208984375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 215,
+  "subset": "textvqa",
+  "subset_local_idx": 4
+}

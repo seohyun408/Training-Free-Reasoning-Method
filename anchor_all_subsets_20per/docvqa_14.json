@@ -1,0 +1,406 @@
+{
+  "total_pairs": 10,
+  "successful_pairs": 9,
+  "image_path": "docvqa/train/documents/mtnk0226_1.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the patent number mentioned in the given form ? Answer the question using a single word or phrase.",
+      "reasoning_text": "5,108,761",
+      "raw_generation": [
+        "5,108,761",
+        "5,108,761"
+      ],
+      "chunks": [
+        "5,108,761"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          59
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the date of patent mentioned in the given form ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Apr. 28, 1992",
+      "raw_generation": [
+        "1. The document is a United States Patent form, clearly labeled at the top left corner.\n2. The patent number is listed as 5,108,761, located in the upper right section.\n3. Directly beneath the patent number, the date of patent is explicitly stated.\n4. The text reads \"Apr. 28, 1992,\" indicating the specific date the patent was granted.\n5. This information is presented in a standard patent format, ensuring clarity and official recognition.\n\n<final>Apr. 28, 1992</final>",
+        "Apr. 28, 1992"
+      ],
+      "chunks": [
+        "Apr. 28, 1992"
+      ],
+      "chunk_token_ranges": [
+        [
+          52,
+          63
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the date of patent mentioned in the given form ?",
+      "reasoning_text": "1. The patent document clearly displays the date of patent in the upper right section, directly beneath the patent number.  \n2. The specific date listed is “Apr. 28, 1992,” which is formatted with the month abbreviation and full year.  \n3. This date is labeled under the heading “[45] Date of Patent:,” confirming its official designation in the patent record.  \n4. The patent number “5,108,761” is positioned directly above this date, indicating the two are associated with the same patent filing.  \n5. The abstract and inventor details are printed below this date, confirming the patent’s official metadata structure.  \n\n<final>Apr. 28, 1992</final>",
+      "raw_generation": [
+        "1. The document is a United States Patent form, clearly labeled at the top with the title \"United States Patent\".\n2. On the right-hand side of the document, under the heading \"[45] Date of Patent:\", the specific date is explicitly stated.\n3. The date listed is \"Apr. 28, 1992\", which corresponds to the patent's official grant date.\n4. This date is positioned directly below the patent number \"5,108,761\" and is part of the standard patent information layout.\n5. The abstract and other sections of the document do not contain conflicting or alternative dates, confirming the accuracy of this information.\n\n<final>Apr. 28, 1992</final>",
+        "1. The patent document clearly displays the date of patent in the upper right section, directly beneath the patent number.  \n2. The specific date listed is “Apr. 28, 1992,” which is formatted with the month abbreviation and full year.  \n3. This date is labeled under the heading “[45] Date of Patent:,” confirming its official designation in the patent record.  \n4. The patent number “5,108,761” is positioned directly above this date, indicating the two are associated with the same patent filing.  \n5. The abstract and inventor details are printed below this date, confirming the patent’s official metadata structure.  \n\n<final>Apr. 28, 1992</final>"
+      ],
+      "chunks": [
+        "1. The patent document clearly displays the date of patent in the upper right section, directly beneath the patent number.",
+        "2. The specific date listed is “Apr.",
+        "28, 1992,” which is formatted with the month abbreviation and full year.",
+        "3. This date is labeled under the heading “[45] Date of Patent:,” confirming its official designation in the patent record.",
+        "4. The patent number “5,108,761” is positioned directly above this date, indicating the two are associated with the same patent filing.",
+        "5. The abstract and inventor details are printed below this date, confirming the patent’s official metadata structure.",
+        "<final>Apr.",
+        "28, 1992</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          55
+        ],
+        [
+          56,
+          66
+        ],
+        [
+          67,
+          87
+        ],
+        [
+          88,
+          115
+        ],
+        [
+          116,
+          150
+        ],
+        [
+          151,
+          172
+        ],
+        [
+          173,
+          178
+        ],
+        [
+          179,
+          190
+        ]
+      ],
+      "anchor_vector": [
+        11.27687030719011,
+        10.11259589615518,
+        8.454317413123709,
+        8.415907912792248,
+        10.573223163555195,
+        9.916938920454545,
+        9.137428977272727,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the name of primary examiner mentioned in the given form ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Carolyn Paden",
+      "raw_generation": [
+        "1. The document is a United States Patent form, specifically patent number 5,108,761.\n2. The section labeled \"Primary Examiner\" is clearly visible on the right side of the page.\n3. The name listed directly under \"Primary Examiner\" is Carolyn Paden.\n4. This name is printed in bold, indicating its importance in the patent documentation.\n5. No other names are listed under this specific heading, confirming Carolyn Paden as the sole primary examiner.\n\n<final>Carolyn Paden</final>",
+        "Carolyn Paden"
+      ],
+      "chunks": [
+        "Carolyn Paden"
+      ],
+      "chunk_token_ranges": [
+        [
+          54,
+          58
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the name of primary examiner mentioned in the given form ?",
+      "reasoning_text": "1. The document clearly states “Primary Examiner—Carolyn Paden” under the “FOREIGN PATENT DOCUMENTS” section, indicating her official role in this patent application.\n2. The name “Carolyn Paden” is positioned directly after the label “Primary Examiner,” making it the designated individual responsible for reviewing this patent.\n3. No other names are listed as primary examiners in the visible portion of the document, confirming Carolyn Paden’s exclusive role in this context.\n4. The abstract and other sections do not mention any other examiner, reinforcing that Carolyn Paden is the sole primary examiner referenced in this form.\n5. The attorney or firm listed is separate from the primary examiner, further distinguishing Carolyn Paden as the official examiner handling this patent application.\n\n<final>Carolyn Paden</final>",
+      "raw_generation": [
+        "1. The document is a United States Patent form, specifically patent number 5,108,761, issued on April 28, 1992.\n2. The section labeled \"Primary Examiner\" is located in the right-hand column, beneath the \"FOREIGN PATENT DOCUMENTS\" heading.\n3. The name listed directly under \"Primary Examiner\" is \"Carolyn Paden.\"\n4. The patent was assigned to The Procter & Gamble Company, indicating a corporate interest in the invention.\n5. The abstract describes a method to prevent tooth enamel erosion using acidic beverages with calcium citrate malate, which aligns with the patent's purpose.\n\n<final>Carolyn Paden</final>",
+        "1. The document clearly states “Primary Examiner—Carolyn Paden” under the “FOREIGN PATENT DOCUMENTS” section, indicating her official role in this patent application.\n2. The name “Carolyn Paden” is positioned directly after the label “Primary Examiner,” making it the designated individual responsible for reviewing this patent.\n3. No other names are listed as primary examiners in the visible portion of the document, confirming Carolyn Paden’s exclusive role in this context.\n4. The abstract and other sections do not mention any other examiner, reinforcing that Carolyn Paden is the sole primary examiner referenced in this form.\n5. The attorney or firm listed is separate from the primary examiner, further distinguishing Carolyn Paden as the official examiner handling this patent application.\n\n<final>Carolyn Paden</final>"
+      ],
+      "chunks": [
+        "1. The document clearly states “Primary Examiner—Carolyn Paden” under the “FOREIGN PATENT DOCUMENTS” section, indicating her official role in this patent application.",
+        "2. The name “Carolyn Paden” is positioned directly after the label “Primary Examiner,” making it the designated individual responsible for reviewing this patent.",
+        "3. No other names are listed as primary examiners in the visible portion of the document, confirming Carolyn Paden’s exclusive role in this context.",
+        "4. The abstract and other sections do not mention any other examiner, reinforcing that Carolyn Paden is the sole primary examiner referenced in this form.",
+        "5. The attorney or firm listed is separate from the primary examiner, further distinguishing Carolyn Paden as the official examiner handling this patent application.",
+        "<final>Carolyn Paden</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          34,
+          70
+        ],
+        [
+          70,
+          101
+        ],
+        [
+          101,
+          131
+        ],
+        [
+          131,
+          160
+        ],
+        [
+          160,
+          188
+        ],
+        [
+          188,
+          198
+        ]
+      ],
+      "anchor_vector": [
+        9.43286821236947,
+        10.031167619216617,
+        9.353477420399734,
+        10.673276846749442,
+        11.325,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the appl. no. mentioned in the given form ? Answer the question using a single word or phrase.",
+      "reasoning_text": "590,983",
+      "raw_generation": [
+        "590,983",
+        "590,983"
+      ],
+      "chunks": [
+        "590,983"
+      ],
+      "chunk_token_ranges": [
+        [
+          54,
+          61
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the appl. no. mentioned in the given form ?",
+      "reasoning_text": "1. The application number is explicitly listed under the section labeled [21] in the document.\n2. This section is located directly below the assignee information and above the international classification codes.\n3. The text clearly states “Appl. No.: 590,983” as part of the patent metadata.\n4. The number is formatted with a comma separating the thousands, indicating it is a standard U.S. patent application identifier.\n5. The application number 590,983 corresponds to the patent filed on October 1, 1990, as noted in the same section.\n\n<final>590,983</final>",
+      "raw_generation": [
+        "1. The application number is clearly labeled as \"[21] Appl. No.:\" in the left column of the patent document.\n2. Directly beneath this label, the number \"590,983\" is printed, indicating the specific application number.\n3. This number is positioned between the assignee information above and the international classification codes below.\n4. The format includes a comma separating the digits, which is standard for patent application numbering.\n5. The number is unambiguous and appears in a consistent font and alignment with other patent metadata.\n\n<final>590,983</final>",
+        "1. The application number is explicitly listed under the section labeled [21] in the document.\n2. This section is located directly below the assignee information and above the international classification codes.\n3. The text clearly states “Appl. No.: 590,983” as part of the patent metadata.\n4. The number is formatted with a comma separating the thousands, indicating it is a standard U.S. patent application identifier.\n5. The application number 590,983 corresponds to the patent filed on October 1, 1990, as noted in the same section.\n\n<final>590,983</final>"
+      ],
+      "chunks": [
+        "1. The application number is explicitly listed under the section labeled [21] in the document.",
+        "2. This section is located directly below the assignee information and above the international classification codes.",
+        "3. The text clearly states “Appl.",
+        "No.: 590,983” as part of the patent metadata.",
+        "4. The number is formatted with a comma separating the thousands, indicating it is a standard U.S.",
+        "patent application identifier.",
+        "5. The application number 590,983 corresponds to the patent filed on October 1, 1990, as noted in the same section.",
+        "<final>590,983</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          34,
+          54
+        ],
+        [
+          54,
+          73
+        ],
+        [
+          73,
+          83
+        ],
+        [
+          83,
+          101
+        ],
+        [
+          101,
+          122
+        ],
+        [
+          122,
+          126
+        ],
+        [
+          126,
+          162
+        ],
+        [
+          162,
+          175
+        ]
+      ],
+      "anchor_vector": [
+        12.37197570444971,
+        9.938485309133503,
+        11.376693408858937,
+        10.3104981363038,
+        10.590697546630164,
+        8.389601487379807,
+        10.668907752403847,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the date of filed as mentioned in the given form ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Oct. 1, 1990",
+      "raw_generation": [
+        "1. The document is a United States Patent form, specifically patent number 5,108,761, issued on April 28, 1992.\n2. The filing date is located under the section labeled [22], which is situated below the application number [21].\n3. The text clearly states “Filed: Oct. 1, 1990” directly under the application number 590,983.\n4. This date indicates when the patent application was officially submitted to the United States Patent and Trademark Office.\n5. The filing date is crucial for determining the priority and timeline of the patent’s legal protection.\n\n<final>Oct. 1, 1990</final>",
+        "Oct. 1, 1990"
+      ],
+      "chunks": [
+        "Oct. 1, 1990"
+      ],
+      "chunk_token_ranges": [
+        [
+          54,
+          64
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the date of filed as mentioned in the given form ?",
+      "reasoning_text": "1. The document is a United States Patent form with specific metadata fields clearly labeled, including the filing date.  \n2. The field labeled “[22] Filed:” is located directly under the application number and above the international classification codes.  \n3. The text immediately following “[22] Filed:” explicitly states “Oct. 1, 1990,” indicating the official date the patent application was submitted.  \n4. This date aligns with the patent’s application number (590,983) and the subsequent patent issuance date of April 28, 1992, confirming its chronological order.  \n5. No conflicting dates appear in any other section of the document, making “Oct. 1, 1990” the definitive filing date for this patent application.  \n\n<final>Oct. 1, 1990</final>",
+      "raw_generation": [
+        "1. The document is a United States Patent form, specifically patent number 5,108,761, issued on April 28, 1992.\n2. The \"Filed\" date is located under the \"Applicant Information\" section, specifically labeled as [22].\n3. The text clearly states \"Filed: Oct. 1, 1990\" directly beneath the application number.\n4. This date indicates when the patent application was officially submitted to the United States Patent and Trademark Office.\n5. The filing date is crucial for determining the priority of the invention and for calculating patent term expiration.\n\n<final>Oct. 1, 1990</final>",
+        "1. The document is a United States Patent form with specific metadata fields clearly labeled, including the filing date.  \n2. The field labeled “[22] Filed:” is located directly under the application number and above the international classification codes.  \n3. The text immediately following “[22] Filed:” explicitly states “Oct. 1, 1990,” indicating the official date the patent application was submitted.  \n4. This date aligns with the patent’s application number (590,983) and the subsequent patent issuance date of April 28, 1992, confirming its chronological order.  \n5. No conflicting dates appear in any other section of the document, making “Oct. 1, 1990” the definitive filing date for this patent application.  \n\n<final>Oct. 1, 1990</final>"
+      ],
+      "chunks": [
+        "1. The document is a United States Patent form with specific metadata fields clearly labeled, including the filing date.",
+        "2. The field labeled “[22] Filed:” is located directly under the application number and above the international classification codes.",
+        "3. The text immediately following “[22] Filed:” explicitly states “Oct.",
+        "1, 1990,” indicating the official date the patent application was submitted.",
+        "4. This date aligns with the patent’s application number (590,983) and the subsequent patent issuance date of April 28, 1992, confirming its chronological order.",
+        "5. No conflicting dates appear in any other section of the document, making “Oct.",
+        "1, 1990” the definitive filing date for this patent application.",
+        "<final>Oct.",
+        "1, 1990</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          34,
+          56
+        ],
+        [
+          57,
+          83
+        ],
+        [
+          84,
+          102
+        ],
+        [
+          103,
+          121
+        ],
+        [
+          122,
+          166
+        ],
+        [
+          167,
+          185
+        ],
+        [
+          186,
+          203
+        ],
+        [
+          204,
+          209
+        ],
+        [
+          210,
+          220
+        ]
+      ],
+      "anchor_vector": [
+        8.468945918694956,
+        9.191872402962133,
+        11.171159274848671,
+        8.646845151886513,
+        11.790758878421158,
+        12.26690793504902,
+        8.819091796875,
+        5.17236328125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        9,
+        9
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 387,
+  "subset": "docvqa",
+  "subset_local_idx": 14
+}

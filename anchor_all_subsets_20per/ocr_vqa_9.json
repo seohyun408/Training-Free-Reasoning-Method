@@ -1,0 +1,104 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "ocr_vqa/images/849371023.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>Caffeine and Activation Theory: Effects on Health and Behavior</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the main title in large, bold, yellow letters against a blue background, making it immediately visible.  \n2. The subtitle, \"Effects on Health and Behavior,\" is written in smaller blue text below the main title, indicating the book’s specific focus area.  \n3. The editors' names—Barry D. Smith, Uma Gupta, and B.S. Gupta—are listed beneath the subtitle, confirming their editorial role in compiling the content.  \n4. The publisher, CRC Press, is identified at the bottom of the cover with its logo, establishing the book’s academic and scientific publishing context.  \n5. The overall design uses a clean, professional layout with contrasting colors to emphasize the title and ensure readability for potential readers.  \n\n<final>Caffeine and Activation Theory: Effects on Health and Behavior</final>",
+        "<final>Caffeine and Activation Theory: Effects on Health and Behavior</final>"
+      ],
+      "chunks": [
+        "<final>Caffeine and Activation Theory: Effects on Health and Behavior</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          61
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The book’s title, \"Caffeine and Activation Theory,\" suggests a scientific focus on the biochemical and psychological impacts of caffeine, indicating it belongs to the health sciences or pharmacology genre.\n\n2. The subtitle, \"Effects on Health and Behavior,\" explicitly states the book examines how caffeine influences physiological and psychological outcomes, confirming its place within behavioral or medical science literature.\n\n3. The editors listed—Barry D. Smith, Uma Gupta, and B.S. Gupta—are academic researchers, which implies the content is scholarly, intended for professionals or students in psychology, neuroscience, or public health.\n\n4. The publisher, CRC Press, specializes in scientific and technical publications, particularly in engineering, medicine, and life sciences, further reinforcing the book’s academic and research-oriented nature.\n\n5. The cover design, with clean lines, bold typography, and institutional branding, is typical of academic texts, designed to appeal to educators, researchers, and students in the sciences rather than general audiences.\n\n<final>Health Sciences / Pharmacology</final>",
+      "raw_generation": [
+        "1. The title \"Caffeine and Activation Theory\" suggests a scientific exploration of how caffeine influences physiological and psychological processes, indicating a focus on neuroscience or pharmacology.\n\n2. The subtitle \"Effects on Health and Behavior\" explicitly points to the book's content covering both medical implications and psychological impacts, aligning with health sciences and behavioral studies.\n\n3. The editors' names—Barry D. Smith, Uma Gupta, and B.S. Gupta—are associated with academic research, implying the book is scholarly and intended for researchers, students, or professionals in related fields.\n\n4. The publisher, CRC Press, is known for academic and technical publications, particularly in science, engineering, and health, reinforcing the book's scholarly and research-oriented nature.\n\n5. The clean, professional design with a blue and yellow color scheme and formal typography further supports its classification as an academic or scientific textbook rather than popular or fiction literature.\n\n<final>Academic/Scientific</final>",
+        "1. The book’s title, \"Caffeine and Activation Theory,\" suggests a scientific focus on the biochemical and psychological impacts of caffeine, indicating it belongs to the health sciences or pharmacology genre.\n\n2. The subtitle, \"Effects on Health and Behavior,\" explicitly states the book examines how caffeine influences physiological and psychological outcomes, confirming its place within behavioral or medical science literature.\n\n3. The editors listed—Barry D. Smith, Uma Gupta, and B.S. Gupta—are academic researchers, which implies the content is scholarly, intended for professionals or students in psychology, neuroscience, or public health.\n\n4. The publisher, CRC Press, specializes in scientific and technical publications, particularly in engineering, medicine, and life sciences, further reinforcing the book’s academic and research-oriented nature.\n\n5. The cover design, with clean lines, bold typography, and institutional branding, is typical of academic texts, designed to appeal to educators, researchers, and students in the sciences rather than general audiences.\n\n<final>Health Sciences / Pharmacology</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, \"Caffeine and Activation Theory,\" suggests a scientific focus on the biochemical and psychological impacts of caffeine, indicating it belongs to the health sciences or pharmacology genre.",
+        "2. The subtitle, \"Effects on Health and Behavior,\" explicitly states the book examines how caffeine influences physiological and psychological outcomes, confirming its place within behavioral or medical science literature.",
+        "3. The editors listed—Barry D.",
+        "Smith, Uma Gupta, and B.S.",
+        "Gupta—are academic researchers, which implies the content is scholarly, intended for professionals or students in psychology, neuroscience, or public health.",
+        "4. The publisher, CRC Press, specializes in scientific and technical publications, particularly in engineering, medicine, and life sciences, further reinforcing the book’s academic and research-oriented nature.",
+        "5. The cover design, with clean lines, bold typography, and institutional branding, is typical of academic texts, designed to appeal to educators, researchers, and students in the sciences rather than general audiences.",
+        "<final>Health Sciences / Pharmacology</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          64
+        ],
+        [
+          64,
+          99
+        ],
+        [
+          99,
+          109
+        ],
+        [
+          109,
+          118
+        ],
+        [
+          118,
+          144
+        ],
+        [
+          144,
+          180
+        ],
+        [
+          180,
+          221
+        ],
+        [
+          221,
+          232
+        ]
+      ],
+      "anchor_vector": [
+        15.217763721439953,
+        14.995907357622812,
+        16.699600987307242,
+        14.433645131587214,
+        15.775625823626251,
+        14.803522283380682,
+        17.022017045454547,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 250,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 9
+}

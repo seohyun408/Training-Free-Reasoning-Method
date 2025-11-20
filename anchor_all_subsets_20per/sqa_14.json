@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/3737/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the capital of Rhode Island?\nContext: N/A\nOptions: (A) Boston (B) Milwaukee (C) Newport (D) Providence",
+      "reasoning_text": "1. The map displays the contiguous United States, including Alaska and Hawaii, with all states outlined in light green.  \n2. Rhode Island is the smallest state, located in the Northeast, bordered by Massachusetts and Connecticut, and clearly identifiable by its compact shape.  \n3. Among the given options, Boston is the capital of Massachusetts, not Rhode Island, making it incorrect.  \n4. Milwaukee is the capital of Wisconsin, located in the Midwest, and is not relevant to Rhode Island’s geography or politics.  \n5. Newport is a coastal city in Rhode Island but not its capital, whereas Providence is the actual state capital, situated in the central part of the state.  \n\n<final>Providence</final>",
+      "raw_generation": [
+        "1. The image displays a map of the United States with all states outlined and shaded in green, including Rhode Island, which is the smallest state in the country.  \n2. Rhode Island is located in the New England region, situated to the east of Massachusetts and south of Connecticut, making it easily identifiable on the map.  \n3. The capital city of Rhode Island is Providence, which is the largest city in the state and serves as its political, economic, and cultural center.  \n4. Among the given options, Boston is the capital of Massachusetts, Milwaukee is the capital of Wisconsin, and Newport is a major coastal city but not the capital.  \n5. Providence is the correct answer as it is the official capital of Rhode Island, confirmed by geographic and governmental records.\n\n<final>(D) Providence</final>",
+        "1. The map displays the contiguous United States, including Alaska and Hawaii, with all states outlined in light green.  \n2. Rhode Island is the smallest state, located in the Northeast, bordered by Massachusetts and Connecticut, and clearly identifiable by its compact shape.  \n3. Among the given options, Boston is the capital of Massachusetts, not Rhode Island, making it incorrect.  \n4. Milwaukee is the capital of Wisconsin, located in the Midwest, and is not relevant to Rhode Island’s geography or politics.  \n5. Newport is a coastal city in Rhode Island but not its capital, whereas Providence is the actual state capital, situated in the central part of the state.  \n\n<final>Providence</final>"
+      ],
+      "chunks": [
+        "1. The map displays the contiguous United States, including Alaska and Hawaii, with all states outlined in light green.",
+        "2. Rhode Island is the smallest state, located in the Northeast, bordered by Massachusetts and Connecticut, and clearly identifiable by its compact shape.",
+        "3. Among the given options, Boston is the capital of Massachusetts, not Rhode Island, making it incorrect.",
+        "4. Milwaukee is the capital of Wisconsin, located in the Midwest, and is not relevant to Rhode Island’s geography or politics.",
+        "5. Newport is a coastal city in Rhode Island but not its capital, whereas Providence is the actual state capital, situated in the central part of the state.",
+        "<final>Providence</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          72,
+          95
+        ],
+        [
+          96,
+          124
+        ],
+        [
+          125,
+          147
+        ],
+        [
+          148,
+          174
+        ],
+        [
+          175,
+          207
+        ],
+        [
+          208,
+          216
+        ]
+      ],
+      "anchor_vector": [
+        14.330193853997566,
+        9.17753016865337,
+        13.664125100160257,
+        11.374588012695312,
+        12.905029296875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 129,
+  "subset": "sqa",
+  "subset_local_idx": 14
+}

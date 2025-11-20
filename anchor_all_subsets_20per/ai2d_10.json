@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "ai2d/images/3612.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat are the two large structure on the left and right?\n\nOptions:\n- sinuses\n- lungs\n- trachea\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram clearly labels two large, symmetrical organs positioned on the left and right sides of the thoracic cavity, directly beneath the trachea.\n2. These organs are explicitly marked with the label “Lung” in the main illustration, indicating their identity.\n3. The inset magnified view shows a bronchiole and alveoli, which are components within the lungs, confirming the labeled structures are indeed lungs.\n4. The sinuses are located in the skull above the nose and are not the large structures on the left and right; they are separate from the lungs.\n5. The trachea is a single, central tube connecting the larynx to the bronchial tubes and does not appear as two separate structures on either side.\n\n<final>lungs</final>",
+      "raw_generation": [
+        "1. The diagram clearly shows two large, reddish organs positioned symmetrically on the left and right sides of the thoracic cavity, beneath the trachea.  \n2. These structures are explicitly labeled as “Lung” in the main illustration, indicating their identity.  \n3. The inset magnification further highlights the internal structure of one of these organs, showing bronchioles and alveoli, which are characteristic features of the lungs.  \n4. The sinuses are located in the skull and nasal cavity, not as large structures on the left and right sides of the chest.  \n5. The trachea is a single, central tube connecting the larynx to the bronchial tubes, not a paired structure on either side.  \n\n<final>lungs</final>",
+        "1. The diagram clearly labels two large, symmetrical organs positioned on the left and right sides of the thoracic cavity, directly beneath the trachea.\n2. These organs are explicitly marked with the label “Lung” in the main illustration, indicating their identity.\n3. The inset magnified view shows a bronchiole and alveoli, which are components within the lungs, confirming the labeled structures are indeed lungs.\n4. The sinuses are located in the skull above the nose and are not the large structures on the left and right; they are separate from the lungs.\n5. The trachea is a single, central tube connecting the larynx to the bronchial tubes and does not appear as two separate structures on either side.\n\n<final>lungs</final>"
+      ],
+      "chunks": [
+        "1. The diagram clearly labels two large, symmetrical organs positioned on the left and right sides of the thoracic cavity, directly beneath the trachea.",
+        "2. These organs are explicitly marked with the label “Lung” in the main illustration, indicating their identity.",
+        "3. The inset magnified view shows a bronchiole and alveoli, which are components within the lungs, confirming the labeled structures are indeed lungs.",
+        "4. The sinuses are located in the skull above the nose and are not the large structures on the left and right; they are separate from the lungs.",
+        "5. The trachea is a single, central tube connecting the larynx to the bronchial tubes and does not appear as two separate structures on either side.",
+        "<final>lungs</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          82,
+          114
+        ],
+        [
+          114,
+          137
+        ],
+        [
+          137,
+          169
+        ],
+        [
+          169,
+          201
+        ],
+        [
+          201,
+          236
+        ],
+        [
+          236,
+          244
+        ]
+      ],
+      "anchor_vector": [
+        13.067696671811689,
+        13.452437046595982,
+        12.401668802897134,
+        13.057875279017857,
+        13.6455078125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 105,
+  "subset": "ai2d",
+  "subset_local_idx": 10
+}

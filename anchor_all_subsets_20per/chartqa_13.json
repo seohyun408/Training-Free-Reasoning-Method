@@ -1,0 +1,36 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "chartqa/train/png/two_col_41927.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat percentage of households had a member earning below 9.5 thousand Philippine pesos who lost their jobs from the enhanced community quarantine? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>78.12%</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The bar chart displays the share of respondents based on household income brackets in Philippine pesos, likely related to job loss during the enhanced community quarantine.\n2. The top bar, labeled \"Under Php 9.52K,\" represents households where at least one member earned below 9.5 thousand Philippine pesos.\n3. The value associated with this bar is 78.12%, indicating the percentage of respondents in this income category.\n4. The chart does not provide specific data on job loss for each income bracket, but the question implies that the 78.12% figure corresponds to households with members earning below 9.5K who lost their jobs.\n5. Since the chart's context and the question's phrasing suggest that the 78.12% represents the relevant group, this is the answer.\n</reasoning>\n<final>78.12%</final>",
+        "<final>78.12%</final>"
+      ],
+      "chunks": [
+        "<final>78.12%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          80,
+          91
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 97,
+  "subset": "chartqa",
+  "subset_local_idx": 13
+}

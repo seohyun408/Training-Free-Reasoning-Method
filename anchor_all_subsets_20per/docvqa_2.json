@@ -1,0 +1,420 @@
+{
+  "total_pairs": 10,
+  "successful_pairs": 10,
+  "image_path": "docvqa/train/documents/rfgk0023_1.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the name of the Author? Answer the question using a single word or phrase.",
+      "reasoning_text": "Carol Martin\n\n<final>Carol Martin</final>",
+      "raw_generation": [
+        "1. The document is titled \"Team Minutes P14 FLOPPY EDGE Meeting Minutes,\" indicating it is a formal record of a team meeting.  \n2. The \"Author\" field is clearly labeled and positioned directly under the title, making it easy to locate.  \n3. The name \"Carol Martin\" is written next to the \"Author\" label, confirming her as the document's author.  \n4. The meeting date and today’s date are listed below the author’s name, further validating the document’s structure and authenticity.  \n5. The presence of a guest and a list of members present supports the document’s official nature, reinforcing that Carol Martin authored it.  \n\n<final>Carol Martin</final>",
+        "Carol Martin\n\n<final>Carol Martin</final>"
+      ],
+      "chunks": [
+        "Carol Martin\n\n<final>Carol Martin</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          55
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the name of the Author?",
+      "reasoning_text": "1. The document header clearly states “Author: Carol Martin,” indicating the individual who prepared these meeting minutes.\n2. This information is positioned directly under the title “Team Minutes P14 FLOPPY EDGE Meeting Minutes,” confirming its relevance to the document’s origin.\n3. Carol Martin is also listed among the “Members Present,” suggesting she participated in the meeting and authored the minutes.\n4. The “Today’s Date” and “Meeting Date” are provided alongside the author’s name, reinforcing the document’s context and timestamp.\n5. No other names are listed as the author in the metadata or header section, confirming Carol Martin as the sole author.\n\n<final>Carol Martin</final>",
+      "raw_generation": [
+        "1. The document is titled \"Team Minutes P14 FLOPPY EDGE Meeting Minutes,\" indicating it is a formal record of a team meeting.\n2. Below the title, there is a clearly labeled section titled \"Author,\" which directly identifies the person who compiled the minutes.\n3. The name \"Carol Martin\" is printed immediately after the \"Author:\" label, confirming her role as the document's author.\n4. The meeting date and today's date are listed below the author's name, further contextualizing the document's creation timeline.\n5. The list of members present and guests present follows, indicating the document's purpose is to record meeting discussions and decisions.\n\n<final>Carol Martin</final>",
+        "1. The document header clearly states “Author: Carol Martin,” indicating the individual who prepared these meeting minutes.\n2. This information is positioned directly under the title “Team Minutes P14 FLOPPY EDGE Meeting Minutes,” confirming its relevance to the document’s origin.\n3. Carol Martin is also listed among the “Members Present,” suggesting she participated in the meeting and authored the minutes.\n4. The “Today’s Date” and “Meeting Date” are provided alongside the author’s name, reinforcing the document’s context and timestamp.\n5. No other names are listed as the author in the metadata or header section, confirming Carol Martin as the sole author.\n\n<final>Carol Martin</final>"
+      ],
+      "chunks": [
+        "1. The document header clearly states “Author: Carol Martin,” indicating the individual who prepared these meeting minutes.",
+        "2. This information is positioned directly under the title “Team Minutes P14 FLOPPY EDGE Meeting Minutes,” confirming its relevance to the document’s origin.",
+        "3. Carol Martin is also listed among the “Members Present,” suggesting she participated in the meeting and authored the minutes.",
+        "4. The “Today’s Date” and “Meeting Date” are provided alongside the author’s name, reinforcing the document’s context and timestamp.",
+        "5. No other names are listed as the author in the metadata or header section, confirming Carol Martin as the sole author.",
+        "<final>Carol Martin</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          46
+        ],
+        [
+          46,
+          79
+        ],
+        [
+          79,
+          103
+        ],
+        [
+          103,
+          132
+        ],
+        [
+          132,
+          157
+        ],
+        [
+          157,
+          165
+        ]
+      ],
+      "anchor_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        13.35986328125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the meeting date mention in the document? Answer the question using a single word or phrase.",
+      "reasoning_text": "04/23/96",
+      "raw_generation": [
+        "04/23/96",
+        "04/23/96"
+      ],
+      "chunks": [
+        "04/23/96"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          56
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the meeting date mention in the document?",
+      "reasoning_text": "1. The document clearly states the meeting date under the \"Meeting Date\" heading, which is formatted as 04/23/96.  \n2. This date is positioned directly below the \"Author\" line and above \"Today's Date,\" indicating it is the date of the original meeting.  \n3. The meeting date is written in a standard MM/DD/YY format, consistent with the rest of the document’s date entries.  \n4. The \"Today's Date\" field, listed as 04/26/96, confirms the document was reviewed or updated later, but the meeting occurred earlier on 04/23/96.  \n5. The minutes section references events that occurred after this meeting date, such as the upcoming test runs and humidity monitoring, further validating the meeting’s date as 04/23/96.  \n\n<final>04/23/96</final>",
+      "raw_generation": [
+        "1. The document is a formal meeting minutes record titled \"Team Minutes P14 FLOPPY EDGE Meeting Minutes.\"  \n2. It includes a clearly labeled section titled \"Meeting Date\" located directly under the \"Author\" field.  \n3. The date specified in this section is \"04/23/96,\" formatted as month/day/year.  \n4. This date is distinct from \"Today's Date,\" which is listed as \"04/26/96 04:39 AM,\" indicating the document was reviewed or updated later.  \n5. The meeting date is explicitly stated as April 23, 1996, and is consistent with the context of the meeting's content and attendees.  \n\n<final>04/23/96</final>",
+        "1. The document clearly states the meeting date under the \"Meeting Date\" heading, which is formatted as 04/23/96.  \n2. This date is positioned directly below the \"Author\" line and above \"Today's Date,\" indicating it is the date of the original meeting.  \n3. The meeting date is written in a standard MM/DD/YY format, consistent with the rest of the document’s date entries.  \n4. The \"Today's Date\" field, listed as 04/26/96, confirms the document was reviewed or updated later, but the meeting occurred earlier on 04/23/96.  \n5. The minutes section references events that occurred after this meeting date, such as the upcoming test runs and humidity monitoring, further validating the meeting’s date as 04/23/96.  \n\n<final>04/23/96</final>"
+      ],
+      "chunks": [
+        "1. The document clearly states the meeting date under the \"Meeting Date\" heading, which is formatted as 04/23/96.",
+        "2. This date is positioned directly below the \"Author\" line and above \"Today's Date,\" indicating it is the date of the original meeting.",
+        "3. The meeting date is written in a standard MM/DD/YY format, consistent with the rest of the document’s date entries.",
+        "4. The \"Today's Date\" field, listed as 04/26/96, confirms the document was reviewed or updated later, but the meeting occurred earlier on 04/23/96.",
+        "5. The minutes section references events that occurred after this meeting date, such as the upcoming test runs and humidity monitoring, further validating the meeting’s date as 04/23/96.",
+        "<final>04/23/96</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          59
+        ],
+        [
+          60,
+          90
+        ],
+        [
+          91,
+          118
+        ],
+        [
+          119,
+          166
+        ],
+        [
+          167,
+          208
+        ],
+        [
+          209,
+          223
+        ]
+      ],
+      "anchor_vector": [
+        9.714051053344564,
+        0.0,
+        9.195373699557663,
+        9.003132570911369,
+        9.690290178571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is todays date in the document? Answer the question using a single word or phrase.",
+      "reasoning_text": "04/26/96 04:39 AM",
+      "raw_generation": [
+        "04/26/96 04:39 AM",
+        "04/26/96 04:39 AM"
+      ],
+      "chunks": [
+        "04/26/96 04:39 AM"
+      ],
+      "chunk_token_ranges": [
+        [
+          46,
+          61
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is todays date in the document?",
+      "reasoning_text": "1. The document clearly states \"Today's Date\" near the top, below \"Meeting Date,\" indicating the date the minutes were finalized or last updated.  \n2. The exact date listed is \"04/26/96,\" formatted as month/day/year, consistent with the meeting's original date of \"04/23/96.\"  \n3. The time stamp next to \"Today's Date\" is \"04:39 AM,\" suggesting the document was reviewed or saved early in the morning on that date.  \n4. The meeting was held on April 23, 1996, but this document was accessed or edited on April 26, 1996, as indicated by the date and time.  \n5. The date \"04/26/96\" is also aligned with the \"Next Meeting\" section, which lists a future meeting scheduled for May 7, 1996, implying this document was created after the meeting.  \n\n<final>Today's date in the document is 04/26/96, as explicitly written under the \"Today's Date\" heading with a timestamp of 04:39 AM.</final>",
+      "raw_generation": [
+        "1. The document clearly states \"Today's Date\" in the header section, directly below \"Meeting Date\".\n2. The date listed is formatted as \"04/26/96 04:39 AM\", indicating the specific day, month, year, and time.\n3. The month \"04\" corresponds to April, and the year \"96\" refers to 1996, based on standard date conventions.\n4. The time \"04:39 AM\" suggests the document was accessed or generated early in the morning on that date.\n5. This date is distinct from the \"Meeting Date\" of \"04/23/96\", confirming it is the current date at the time of document review.\n\n<final>04/26/96 04:39 AM</final>",
+        "1. The document clearly states \"Today's Date\" near the top, below \"Meeting Date,\" indicating the date the minutes were finalized or last updated.  \n2. The exact date listed is \"04/26/96,\" formatted as month/day/year, consistent with the meeting's original date of \"04/23/96.\"  \n3. The time stamp next to \"Today's Date\" is \"04:39 AM,\" suggesting the document was reviewed or saved early in the morning on that date.  \n4. The meeting was held on April 23, 1996, but this document was accessed or edited on April 26, 1996, as indicated by the date and time.  \n5. The date \"04/26/96\" is also aligned with the \"Next Meeting\" section, which lists a future meeting scheduled for May 7, 1996, implying this document was created after the meeting.  \n\n<final>Today's date in the document is 04/26/96, as explicitly written under the \"Today's Date\" heading with a timestamp of 04:39 AM.</final>"
+      ],
+      "chunks": [
+        "1. The document clearly states \"Today's Date\" near the top, below \"Meeting Date,\" indicating the date the minutes were finalized or last updated.",
+        "2. The exact date listed is \"04/26/96,\" formatted as month/day/year, consistent with the meeting's original date of \"04/23/96.\"  \n3.",
+        "The time stamp next to \"Today's Date\" is \"04:39 AM,\" suggesting the document was reviewed or saved early in the morning on that date.",
+        "4. The meeting was held on April 23, 1996, but this document was accessed or edited on April 26, 1996, as indicated by the date and time.",
+        "5. The date \"04/26/96\" is also aligned with the \"Next Meeting\" section, which lists a future meeting scheduled for May 7, 1996, implying this document was created after the meeting.",
+        "<final>Today's date in the document is 04/26/96, as explicitly written under the \"Today's Date\" heading with a timestamp of 04:39 AM.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          57
+        ],
+        [
+          58,
+          102
+        ],
+        [
+          102,
+          136
+        ],
+        [
+          137,
+          182
+        ],
+        [
+          183,
+          234
+        ],
+        [
+          235,
+          280
+        ]
+      ],
+      "anchor_vector": [
+        7.703878374740047,
+        10.32334175857843,
+        9.485203389352703,
+        10.091657890369689,
+        9.086805555555555,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nname the guests present in the document? Answer the question using a single word or phrase.",
+      "reasoning_text": "Stacey Albright",
+      "raw_generation": [
+        "Stacey Albright",
+        "Stacey Albright"
+      ],
+      "chunks": [
+        "Stacey Albright"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          48
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nname the guests present in the document?",
+      "reasoning_text": "1. The document clearly lists “Guests Present” under the meeting details section, indicating who attended as non-members.\n2. The only name listed under “Guests Present” is “Stacey Albright,” confirming her attendance as the sole guest.\n3. This designation distinguishes her from the “Members Present,” who are the primary team participants.\n4. The document’s structure places “Guests Present” directly below “Members Present,” showing intentional separation of attendees.\n5. No other names appear in the “Guests Present” line, making “Stacey Albright” the exclusive guest mentioned.\n\n<final>Stacey Albright</final>",
+      "raw_generation": [
+        "1. The document clearly lists attendees under the \"Members Present\" and \"Guests Present\" sections, which are formatted distinctly for easy identification.  \n2. The \"Guests Present\" line is explicitly labeled and contains only one name, indicating a single guest attended the meeting.  \n3. The name listed under \"Guests Present\" is \"Stacey Albright,\" which is written in standard font and aligned with the other attendee names.  \n4. No other names appear under the \"Guests Present\" heading, confirming that Stacey Albright is the sole guest mentioned in the document.  \n5. The document’s structure and formatting ensure that guest names are separated from member names, making \"Stacey Albright\" the only guest present as per the provided text.  \n\n<final>Stacey Albright</final>",
+        "1. The document clearly lists “Guests Present” under the meeting details section, indicating who attended as non-members.\n2. The only name listed under “Guests Present” is “Stacey Albright,” confirming her attendance as the sole guest.\n3. This designation distinguishes her from the “Members Present,” who are the primary team participants.\n4. The document’s structure places “Guests Present” directly below “Members Present,” showing intentional separation of attendees.\n5. No other names appear in the “Guests Present” line, making “Stacey Albright” the exclusive guest mentioned.\n\n<final>Stacey Albright</final>"
+      ],
+      "chunks": [
+        "1. The document clearly lists “Guests Present” under the meeting details section, indicating who attended as non-members.",
+        "2. The only name listed under “Guests Present” is “Stacey Albright,” confirming her attendance as the sole guest.",
+        "3. This designation distinguishes her from the “Members Present,” who are the primary team participants.",
+        "4. The document’s structure places “Guests Present” directly below “Members Present,” showing intentional separation of attendees.",
+        "5. No other names appear in the “Guests Present” line, making “Stacey Albright” the exclusive guest mentioned.",
+        "<final>Stacey Albright</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          48
+        ],
+        [
+          48,
+          75
+        ],
+        [
+          75,
+          95
+        ],
+        [
+          95,
+          119
+        ],
+        [
+          119,
+          146
+        ],
+        [
+          146,
+          156
+        ]
+      ],
+      "anchor_vector": [
+        0.0,
+        0.0,
+        8.054485179759839,
+        0.0,
+        9.38359375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is meeting type ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Normal Team Meeting",
+      "raw_generation": [
+        "Normal Team Meeting",
+        "Normal Team Meeting"
+      ],
+      "chunks": [
+        "Normal Team Meeting"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          41
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is meeting type ?",
+      "reasoning_text": "1. The document clearly labels the meeting type under the \"Meeting Type\" heading, which is positioned directly below the \"Guests Present\" section and above the \"Next Meeting\" details.  \n2. The text explicitly states \"Normal Team Meeting\" as the meeting type, indicating this was a standard, routine gathering for the team.  \n3. This designation suggests the meeting was not an emergency or special session but part of regular operations, aligning with the team’s ongoing workflow.  \n4. The presence of multiple members and one guest, along with the discussion of test runs and humidity monitoring, supports the classification as a normal team meeting.  \n5. The meeting’s purpose, involving coordination of test paper runs and equipment usage, confirms its classification as a routine operational team meeting rather than a strategic or ad hoc session.  \n<final>Normal Team Meeting</final>",
+      "raw_generation": [
+        "1. The document clearly labels the meeting type under the \"Meeting Type\" heading, which is positioned directly below the \"Guests Present\" section.  \n2. The text explicitly states \"Normal Team Meeting\" as the designated meeting type, indicating this was a routine gathering for the team.  \n3. This classification suggests the meeting was not an emergency, special event, or formal review, but rather a standard operational session.  \n4. The presence of multiple team members and a guest further supports the informal yet structured nature of a normal team meeting.  \n5. The meeting type is consistent with the context of discussing production issues and test runs, which are typical of regular team operations.  \n\n<final>Normal Team Meeting</final>",
+        "1. The document clearly labels the meeting type under the \"Meeting Type\" heading, which is positioned directly below the \"Guests Present\" section and above the \"Next Meeting\" details.  \n2. The text explicitly states \"Normal Team Meeting\" as the meeting type, indicating this was a standard, routine gathering for the team.  \n3. This designation suggests the meeting was not an emergency or special session but part of regular operations, aligning with the team’s ongoing workflow.  \n4. The presence of multiple members and one guest, along with the discussion of test runs and humidity monitoring, supports the classification as a normal team meeting.  \n5. The meeting’s purpose, involving coordination of test paper runs and equipment usage, confirms its classification as a routine operational team meeting rather than a strategic or ad hoc session.  \n<final>Normal Team Meeting</final>"
+      ],
+      "chunks": [
+        "1. The document clearly labels the meeting type under the \"Meeting Type\" heading, which is positioned directly below the \"Guests Present\" section and above the \"Next Meeting\" details.",
+        "2. The text explicitly states \"Normal Team Meeting\" as the meeting type, indicating this was a standard, routine gathering for the team.",
+        "3. This designation suggests the meeting was not an emergency or special session but part of regular operations, aligning with the team’s ongoing workflow.",
+        "4. The presence of multiple members and one guest, along with the discussion of test runs and humidity monitoring, supports the classification as a normal team meeting.",
+        "5. The meeting’s purpose, involving coordination of test paper runs and equipment usage, confirms its classification as a routine operational team meeting rather than a strategic or ad hoc session.",
+        "<final>Normal Team Meeting</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          56
+        ],
+        [
+          57,
+          85
+        ],
+        [
+          86,
+          115
+        ],
+        [
+          116,
+          147
+        ],
+        [
+          148,
+          183
+        ],
+        [
+          184,
+          193
+        ]
+      ],
+      "anchor_vector": [
+        9.890028732183689,
+        11.358425451297848,
+        0.0,
+        10.18658234126984,
+        10.133680555555555,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 49,
+  "subset": "docvqa",
+  "subset_local_idx": 2
+}

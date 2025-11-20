@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/12240.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the right triangle ABC, ∠C = 90°, point D is a point on AC, DE ⊥ AB at point E, AB = 10, BC = 6, DE = 2.4, then the length of AD is ()\nA. 1.2\nB. 3\nC. 4\nD. 5",
+      "reasoning_text": "1. Triangle ABC is right-angled at C, with AB = 10 and BC = 6, so by the Pythagorean theorem, AC = √(10² - 6²) = √(100 - 36) = √64 = 8.  \n2. DE is perpendicular to AB, forming a right triangle ADE, with DE = 2.4 and angle AED = 90°, so we can use similar triangles or trigonometry to find AD.  \n3. Triangle ABC and triangle ADE are similar because both share angle A and both have a right angle (at C and E respectively).  \n4. Using the similarity ratio: DE/BC = AD/AC → 2.4/6 = AD/8 → 0.4 = AD/8 → AD = 3.2, but this does not match any option, indicating an error in the assumption or calculation.  \n5. Rechecking the problem, if DE = 2.4, and DE corresponds to the altitude from D to AB, and since AC = 8, the proportion of similarity should be based on the ratio of the altitudes. But since DE is not the",
+      "raw_generation": [
+        "1. Since triangle ABC is a right triangle with ∠C = 90°, and AB = 10, BC = 6, we can use the Pythagorean theorem to find AC. Calculating AC = √(AB² - BC²) = √(100 - 36) = √64 = 8.\n\n2. The segment DE is perpendicular to AB, forming a smaller right triangle ADE similar to triangle ABC because both share ∠A and have right angles at E and C respectively.\n\n3. The similarity ratio between triangles ADE and ABC is determined by the ratio of their corresponding sides. Since DE corresponds to BC, the ratio is DE/BC = 2.4/6 = 0.4.\n\n4. Since AD corresponds to AC in the similar triangles, we can find AD by multiplying AC by the similarity ratio: AD = AC × 0.4 = 8 × 0.4 = 3.2.\n\n5. However, 3.2 is not among the given options, indicating a possible error in the problem or options. Rechecking the problem, if DE = 2.4 and BC = 6, the ratio is 0.4",
+        "1. Triangle ABC is right-angled at C, with AB = 10 and BC = 6, so by the Pythagorean theorem, AC = √(10² - 6²) = √(100 - 36) = √64 = 8.  \n2. DE is perpendicular to AB, forming a right triangle ADE, with DE = 2.4 and angle AED = 90°, so we can use similar triangles or trigonometry to find AD.  \n3. Triangle ABC and triangle ADE are similar because both share angle A and both have a right angle (at C and E respectively).  \n4. Using the similarity ratio: DE/BC = AD/AC → 2.4/6 = AD/8 → 0.4 = AD/8 → AD = 3.2, but this does not match any option, indicating an error in the assumption or calculation.  \n5. Rechecking the problem, if DE = 2.4, and DE corresponds to the altitude from D to AB, and since AC = 8, the proportion of similarity should be based on the ratio of the altitudes. But since DE is not the"
+      ],
+      "chunks": [
+        "1. Triangle ABC is right-angled at C, with AB = 10 and BC = 6, so by the Pythagorean theorem, AC = √(10² - 6²) = √(100 - 36) = √64 = 8.",
+        "2. DE is perpendicular to AB, forming a right triangle ADE, with DE = 2.4 and angle AED = 90°, so we can use similar triangles or trigonometry to find AD.",
+        "3. Triangle ABC and triangle ADE are similar because both share angle A and both have a right angle (at C and E respectively).",
+        "4. Using the similarity ratio: DE/BC = AD/AC → 2.4/6 = AD/8 → 0.4 = AD/8 → AD = 3.2, but this does not match any option, indicating an error in the assumption or calculation.",
+        "5. Rechecking the problem, if DE = 2.4, and DE corresponds to the altitude from D to AB, and since AC = 8, the proportion of similarity should be based on the ratio of the altitudes.",
+        "But since DE is not the"
+      ],
+      "chunk_token_ranges": [
+        [
+          164,
+          229
+        ],
+        [
+          230,
+          276
+        ],
+        [
+          277,
+          305
+        ],
+        [
+          306,
+          365
+        ],
+        [
+          366,
+          414
+        ],
+        [
+          414,
+          420
+        ]
+      ],
+      "anchor_vector": [
+        8.902990081927129,
+        9.721776735984674,
+        10.36294894029865,
+        9.379898071289062,
+        NaN,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 4,
+  "subset": "geoqa+",
+  "subset_local_idx": 2
+}

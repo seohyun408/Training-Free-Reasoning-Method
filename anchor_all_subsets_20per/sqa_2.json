@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/253/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat did the scientists discover?\nContext: Read the passage about a new discovery.\nA few scientists were looking for sharks when they saw something surprising. They found a sea turtle that glowed! The turtle's shell was bright red and green. This was a new discovery. Scientists had never seen a sea turtle with a glowing shell before.\nScientists want to know why these turtles have a shell that glows. Sadly, there are not many of these turtles left in the world. So, it is hard to learn about them.\nOptions: (A) a sea turtle that can fly (B) a sea turtle with a glowing shell",
+      "reasoning_text": "1. The scientists were originally searching for sharks in the ocean, which is why they were focused on marine predators rather than unusual species.  \n2. They unexpectedly spotted a sea turtle whose shell emitted a bright red and green glow, which is visually striking and unusual in marine life.  \n3. This glowing feature was entirely new to science, as no prior records or observations mentioned sea turtles with such luminous shells.  \n4. The discovery is significant because it challenges existing biological knowledge and raises questions about the turtle’s adaptation or survival mechanisms.  \n5. Scientists are now concerned about the species’ rarity, as few individuals remain, making further study difficult and urgent.  \n\n<final> (B) a sea turtle with a glowing shell",
+      "raw_generation": [
+        "1. The scientists were originally searching for sharks in the ocean, indicating their initial focus was on predatory marine life.  \n2. During their search, they unexpectedly encountered a sea turtle exhibiting an unusual trait: its shell emitted light.  \n3. The turtle’s shell displayed vivid red and green hues, which stood out dramatically against the surrounding water.  \n4. This glowing characteristic was entirely new to science, as no prior records existed of sea turtles possessing such a feature.  \n5. The discovery has sparked scientific curiosity about the biological mechanism behind the glow and the rarity of this species in the wild.  \n<final>(B) a sea turtle with a glowing shell</final>",
+        "1. The scientists were originally searching for sharks in the ocean, which is why they were focused on marine predators rather than unusual species.  \n2. They unexpectedly spotted a sea turtle whose shell emitted a bright red and green glow, which is visually striking and unusual in marine life.  \n3. This glowing feature was entirely new to science, as no prior records or observations mentioned sea turtles with such luminous shells.  \n4. The discovery is significant because it challenges existing biological knowledge and raises questions about the turtle’s adaptation or survival mechanisms.  \n5. Scientists are now concerned about the species’ rarity, as few individuals remain, making further study difficult and urgent.  \n\n<final> (B) a sea turtle with a glowing shell"
+      ],
+      "chunks": [
+        "1. The scientists were originally searching for sharks in the ocean, which is why they were focused on marine predators rather than unusual species.",
+        "2. They unexpectedly spotted a sea turtle whose shell emitted a bright red and green glow, which is visually striking and unusual in marine life.",
+        "3. This glowing feature was entirely new to science, as no prior records or observations mentioned sea turtles with such luminous shells.",
+        "4. The discovery is significant because it challenges existing biological knowledge and raises questions about the turtle’s adaptation or survival mechanisms.",
+        "5. Scientists are now concerned about the species’ rarity, as few individuals remain, making further study difficult and urgent.",
+        "<final> (B) a sea turtle with a glowing shell"
+      ],
+      "chunk_token_ranges": [
+        [
+          262,
+          289
+        ],
+        [
+          290,
+          318
+        ],
+        [
+          319,
+          345
+        ],
+        [
+          346,
+          370
+        ],
+        [
+          371,
+          395
+        ],
+        [
+          396,
+          409
+        ]
+      ],
+      "anchor_vector": [
+        12.621349516369046,
+        10.797288161057693,
+        13.8984375,
+        NaN,
+        NaN,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 10,
+  "subset": "sqa",
+  "subset_local_idx": 2
+}

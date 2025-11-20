@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "chartqa/train/png/two_col_1285.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich former US president was ranked first on Facebook in June 2020? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The bar chart shows Facebook follower counts for various political figures as of June 2020, with Barack Obama leading at 55.02 million followers.  \n2. The chart ranks individuals by their Facebook follower count, with Barack Obama at the top, significantly ahead of others like Narendra Modi and Hillary Clinton.  \n3. The horizontal axis indicates follower counts in millions, and Barack Obama’s bar extends the furthest, confirming his lead.  \n4. Other U.S. presidents like Mitt Romney and Bernie Sanders are included but ranked much lower than Obama, with Sanders having only 5.41 million followers.  \n5. The data source is Statista 2021, which corroborates the June 2020 follower count for Barack Obama as the highest among all listed figures.  \n\n<final>Barack Obama</final>",
+      "raw_generation": [
+        "1. The bar chart displays Facebook follower counts for various political figures as of June 2020, sourced from Statista.  \n2. Barack Obama leads with the longest bar, indicating the highest number of followers at 55.02 million.  \n3. The chart ranks individuals by follower count, with Obama positioned at the top.  \n4. Other former U.S. presidents like Mitt Romney and Bernie Sanders are listed but have significantly fewer followers.  \n5. The data confirms Barack Obama as the top-ranked former U.S. president on Facebook during that period.  \n\n<final>Barack Obama</final>",
+        "1. The bar chart shows Facebook follower counts for various political figures as of June 2020, with Barack Obama leading at 55.02 million followers.  \n2. The chart ranks individuals by their Facebook follower count, with Barack Obama at the top, significantly ahead of others like Narendra Modi and Hillary Clinton.  \n3. The horizontal axis indicates follower counts in millions, and Barack Obama’s bar extends the furthest, confirming his lead.  \n4. Other U.S. presidents like Mitt Romney and Bernie Sanders are included but ranked much lower than Obama, with Sanders having only 5.41 million followers.  \n5. The data source is Statista 2021, which corroborates the June 2020 follower count for Barack Obama as the highest among all listed figures.  \n\n<final>Barack Obama</final>"
+      ],
+      "chunks": [
+        "1. The bar chart shows Facebook follower counts for various political figures as of June 2020, with Barack Obama leading at 55.02 million followers.",
+        "2. The chart ranks individuals by their Facebook follower count, with Barack Obama at the top, significantly ahead of others like Narendra Modi and Hillary Clinton.",
+        "3. The horizontal axis indicates follower counts in millions, and Barack Obama’s bar extends the furthest, confirming his lead.",
+        "4. Other U.S.",
+        "presidents like Mitt Romney and Bernie Sanders are included but ranked much lower than Obama, with Sanders having only 5.41 million followers.",
+        "5. The data source is Statista 2021, which corroborates the June 2020 follower count for Barack Obama as the highest among all listed figures.",
+        "<final>Barack Obama</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          98
+        ],
+        [
+          99,
+          129
+        ],
+        [
+          130,
+          155
+        ],
+        [
+          156,
+          162
+        ],
+        [
+          162,
+          190
+        ],
+        [
+          191,
+          228
+        ],
+        [
+          229,
+          238
+        ]
+      ],
+      "anchor_vector": [
+        12.204631363017592,
+        10.622757199477658,
+        9.312899255282067,
+        13.28293096737921,
+        12.349133099163616,
+        12.821038140190971,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 100,
+  "subset": "chartqa",
+  "subset_local_idx": 14
+}

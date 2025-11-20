@@ -1,0 +1,260 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/B00U6NB3UW.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the author of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>Progressive Management</final>",
+      "raw_generation": [
+        "1. The book cover displays the title \"Democratic Republic of the Congo (DRC) in Perspective\" prominently at the top, indicating the subject matter.  \n2. Below the title, the phrase \"Orientation Guide\" suggests the book's purpose is to provide foundational information about the country.  \n3. The cover lists key topics such as Geography, History, Cities, Economy, Society, Security, Military, Religion, and Traditions, which are typical of a reference guide.  \n4. Specific historical and thematic elements like \"Mobutu Era, Congo Wars, Hazards\" are highlighted, pointing to a focus on political and social history.  \n5. The publisher, \"Progressive Management,\" is noted at the bottom, but the author's name is not visible on the cover provided.  \n\n<final>Unknown</final>",
+        "<final>Progressive Management</final>"
+      ],
+      "chunks": [
+        "<final>Progressive Management</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          53
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The title is prominently displayed in large, bold white text at the top of the book cover, clearly reading “Democratic Republic of the Congo (DRC) in Perspective.”  \n2. The title is split into two lines, with “Democratic Republic of the Congo (DRC)” above “IN PERSPECTIVE,” both centered and emphasized for visual impact.  \n3. Below the title, the phrase “Orientation Guide” appears in a smaller font, indicating the book’s purpose as an introductory reference.  \n4. The cover also includes a national flag and a map of the DRC, visually reinforcing the title’s geographical and political focus.  \n5. The subtitle lists topics like “Geography, History, Cities, Economy, Society, Security, Military, Religion, Traditions,” further clarifying the book’s scope aligned with its title.  \n\n<final>Democratic Republic of the Congo (DRC) in Perspective</final>",
+      "raw_generation": [
+        "1. The title is prominently displayed at the top of the book cover in large, bold, white and yellow text.  \n2. The main title reads “Democratic Republic of the Congo (DRC)” followed by “In Perspective” in a larger font size.  \n3. Below the title, a subtitle “Orientation Guide” is visible in a smaller, centered font.  \n4. The cover also includes thematic keywords such as “Geography, History, Cities, Economy, Society, Security, Military, Religion, Traditions.”  \n5. Additional context is provided with phrases like “Mobutu Era, Congo Wars, Hazards,” indicating the book’s focus on historical and contemporary issues.  \n\n<final>Democratic Republic of the Congo (DRC) in Perspective: Orientation Guide</final>",
+        "1. The title is prominently displayed in large, bold white text at the top of the book cover, clearly reading “Democratic Republic of the Congo (DRC) in Perspective.”  \n2. The title is split into two lines, with “Democratic Republic of the Congo (DRC)” above “IN PERSPECTIVE,” both centered and emphasized for visual impact.  \n3. Below the title, the phrase “Orientation Guide” appears in a smaller font, indicating the book’s purpose as an introductory reference.  \n4. The cover also includes a national flag and a map of the DRC, visually reinforcing the title’s geographical and political focus.  \n5. The subtitle lists topics like “Geography, History, Cities, Economy, Society, Security, Military, Religion, Traditions,” further clarifying the book’s scope aligned with its title.  \n\n<final>Democratic Republic of the Congo (DRC) in Perspective</final>"
+      ],
+      "chunks": [
+        "1. The title is prominently displayed in large, bold white text at the top of the book cover, clearly reading “Democratic Republic of the Congo (DRC) in Perspective.”  \n2.",
+        "The title is split into two lines, with “Democratic Republic of the Congo (DRC)” above “IN PERSPECTIVE,” both centered and emphasized for visual impact.",
+        "3. Below the title, the phrase “Orientation Guide” appears in a smaller font, indicating the book’s purpose as an introductory reference.",
+        "4. The cover also includes a national flag and a map of the DRC, visually reinforcing the title’s geographical and political focus.",
+        "5. The subtitle lists topics like “Geography, History, Cities, Economy, Society, Security, Military, Religion, Traditions,” further clarifying the book’s scope aligned with its title.",
+        "<final>Democratic Republic of the Congo (DRC) in Perspective</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          63
+        ],
+        [
+          63,
+          98
+        ],
+        [
+          99,
+          127
+        ],
+        [
+          128,
+          155
+        ],
+        [
+          156,
+          196
+        ],
+        [
+          197,
+          214
+        ]
+      ],
+      "anchor_vector": [
+        17.078767263849986,
+        10.548638971104936,
+        10.254220778299747,
+        9.858220717486212,
+        10.693704044117647,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The cover explicitly labels this as an “Orientation Guide,” indicating it’s designed for newcomers seeking foundational knowledge about the Democratic Republic of the Congo.  \n2. It lists specific topics like geography, history, cities, economy, society, security, military, religion, and traditions, suggesting a comprehensive overview rather than a specialized academic or fiction work.  \n3. The inclusion of “Mobutu Era, Congo Wars, Hazards” highlights a focus on political and historical events, making it suitable for travelers, students, or professionals needing context on complex regional issues.  \n4. The publisher, Progressive Management, typically produces practical, educational guides, reinforcing its role as a reference tool for understanding the DRC’s multifaceted reality.  \n5. The visual design, featuring the national flag and map, emphasizes its purpose as a cultural and geopolitical primer, ideal for diplomats, aid workers, or researchers entering the region.  \n\n<final> This is a geopolitical and cultural orientation guide for the Democratic Republic of the Congo, covering history, economy, security, and societal aspects for travelers, students, or professionals.</final>",
+      "raw_generation": [
+        "1. The cover prominently displays “Orientation Guide,” indicating it’s designed for newcomers or those seeking foundational knowledge about the Democratic Republic of the Congo.  \n2. The subtitle lists key topics like Geography, History, Cities, Economy, Society, Security, Military, Religion, and Traditions, suggesting a comprehensive overview rather than a specialized academic text.  \n3. Specific historical references such as “Mobutu Era,” “Congo Wars,” and “Hazards” imply the book focuses on political and social context, not just general facts.  \n4. The publisher, Progressive Management, typically produces practical, educational guides for travelers, students, or professionals needing quick reference material.  \n5. The visual design with national flag and map reinforces its purpose as a country-specific resource for understanding political, cultural, and geographic realities.  \n\n<final>Non-fiction orientation guide focused on the Democratic Republic of the Congo, covering history, geography, society, and security for travelers, students, or professionals.</final>",
+        "1. The cover explicitly labels this as an “Orientation Guide,” indicating it’s designed for newcomers seeking foundational knowledge about the Democratic Republic of the Congo.  \n2. It lists specific topics like geography, history, cities, economy, society, security, military, religion, and traditions, suggesting a comprehensive overview rather than a specialized academic or fiction work.  \n3. The inclusion of “Mobutu Era, Congo Wars, Hazards” highlights a focus on political and historical events, making it suitable for travelers, students, or professionals needing context on complex regional issues.  \n4. The publisher, Progressive Management, typically produces practical, educational guides, reinforcing its role as a reference tool for understanding the DRC’s multifaceted reality.  \n5. The visual design, featuring the national flag and map, emphasizes its purpose as a cultural and geopolitical primer, ideal for diplomats, aid workers, or researchers entering the region.  \n\n<final> This is a geopolitical and cultural orientation guide for the Democratic Republic of the Congo, covering history, economy, security, and societal aspects for travelers, students, or professionals.</final>"
+      ],
+      "chunks": [
+        "1. The cover explicitly labels this as an “Orientation Guide,” indicating it’s designed for newcomers seeking foundational knowledge about the Democratic Republic of the Congo.",
+        "2. It lists specific topics like geography, history, cities, economy, society, security, military, religion, and traditions, suggesting a comprehensive overview rather than a specialized academic or fiction work.",
+        "3. The inclusion of “Mobutu Era, Congo Wars, Hazards” highlights a focus on political and historical events, making it suitable for travelers, students, or professionals needing context on complex regional issues.",
+        "4. The publisher, Progressive Management, typically produces practical, educational guides, reinforcing its role as a reference tool for understanding the DRC’s multifaceted reality.",
+        "5. The visual design, featuring the national flag and map, emphasizes its purpose as a cultural and geopolitical primer, ideal for diplomats, aid workers, or researchers entering the region.",
+        "<final> This is a geopolitical and cultural orientation guide for the Democratic Republic of the Congo, covering history, economy, security, and societal aspects for travelers, students, or professionals.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          52
+        ],
+        [
+          53,
+          92
+        ],
+        [
+          93,
+          136
+        ],
+        [
+          137,
+          170
+        ],
+        [
+          171,
+          207
+        ],
+        [
+          208,
+          247
+        ]
+      ],
+      "anchor_vector": [
+        17.771999845630386,
+        13.899041470228335,
+        12.64765486384389,
+        12.402717785957531,
+        12.979216746794872,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Travel?",
+      "reasoning_text": "1. The book's title, “Democratic Republic of the Congo (DRC) in Perspective,” suggests a comprehensive overview aimed at providing foundational knowledge rather than practical travel advice for tourists.  \n2. The subtitle “Orientation Guide” implies it is designed for readers seeking context about the country’s geography, history, and societal structures, which is typical of informational resources.  \n3. The detailed list of topics — including “Mobutu Era, Congo Wars, Hazards” — indicates a focus on political and historical background, not tourist attractions or travel logistics.  \n4. The cover includes a map and flag, reinforcing its purpose as a reference tool for understanding the nation’s identity, not a guidebook for travelers planning excursions.  \n5. The publisher, Progressive Management, specializes in educational and professional resources, which further supports the book’s non-travel orientation.  \n\n<final>Yes, this book is related to Travel as an orientation guide for understanding the DRC’s context before visiting, but it is not a practical travel guidebook.</final>",
+      "raw_generation": [
+        "1. The book's title, \"Democratic Republic of the Congo (DRC) in Perspective,\" suggests it offers a comprehensive overview rather than a travel itinerary or guidebook for tourists.  \n2. The subtitle \"Orientation Guide\" indicates it is designed for understanding the country’s context, not for practical travel planning or destination-specific advice.  \n3. The listed topics—Geography, History, Cities, Economy, Society, Security, Military, Religion, Traditions—focus on cultural, political, and historical analysis rather than tourist attractions or logistics.  \n4. Specific historical references like \"Mobutu Era, Congo Wars, Hazards\" imply the book targets readers seeking geopolitical or academic insight, not casual travelers.  \n5. The publisher, \"Progressive Management,\" is known for producing educational and reference materials, further confirming its non-travel purpose.  \n\n<final>Yes</final>",
+        "1. The book's title, “Democratic Republic of the Congo (DRC) in Perspective,” suggests a comprehensive overview aimed at providing foundational knowledge rather than practical travel advice for tourists.  \n2. The subtitle “Orientation Guide” implies it is designed for readers seeking context about the country’s geography, history, and societal structures, which is typical of informational resources.  \n3. The detailed list of topics — including “Mobutu Era, Congo Wars, Hazards” — indicates a focus on political and historical background, not tourist attractions or travel logistics.  \n4. The cover includes a map and flag, reinforcing its purpose as a reference tool for understanding the nation’s identity, not a guidebook for travelers planning excursions.  \n5. The publisher, Progressive Management, specializes in educational and professional resources, which further supports the book’s non-travel orientation.  \n\n<final>Yes, this book is related to Travel as an orientation guide for understanding the DRC’s context before visiting, but it is not a practical travel guidebook.</final>"
+      ],
+      "chunks": [
+        "1. The book's title, “Democratic Republic of the Congo (DRC) in Perspective,” suggests a comprehensive overview aimed at providing foundational knowledge rather than practical travel advice for tourists.",
+        "2. The subtitle “Orientation Guide” implies it is designed for readers seeking context about the country’s geography, history, and societal structures, which is typical of informational resources.",
+        "3. The detailed list of topics — including “Mobutu Era, Congo Wars, Hazards” — indicates a focus on political and historical background, not tourist attractions or travel logistics.",
+        "4. The cover includes a map and flag, reinforcing its purpose as a reference tool for understanding the nation’s identity, not a guidebook for travelers planning excursions.",
+        "5. The publisher, Progressive Management, specializes in educational and professional resources, which further supports the book’s non-travel orientation.",
+        "<final>Yes, this book is related to Travel as an orientation guide for understanding the DRC’s context before visiting, but it is not a practical travel guidebook.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          59
+        ],
+        [
+          60,
+          95
+        ],
+        [
+          96,
+          134
+        ],
+        [
+          135,
+          169
+        ],
+        [
+          170,
+          196
+        ],
+        [
+          197,
+          234
+        ]
+      ],
+      "anchor_vector": [
+        12.62861942090269,
+        10.994737663486832,
+        15.335899924664341,
+        12.588426617723492,
+        13.873363597972974,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Literature & Fiction?",
+      "reasoning_text": "1. The book’s title, “Democratic Republic of the Congo (DRC) in Perspective,” indicates it is a factual, informational guide rather than a fictional narrative, ruling out literature.  \n2. The subtitle “Orientation Guide” explicitly states it is designed for educational or situational awareness purposes, not for storytelling or literary analysis.  \n3. The cover lists subjects such as Geography, History, Economy, and Society, which are academic and reference-based topics, not literary genres.  \n4. The inclusion of specific historical periods like “Mobutu Era” and “Congo Wars” emphasizes factual historical documentation rather than imaginative or fictional content.  \n5. The publisher, “Progressive Management,” is known for producing nonfiction reference materials, further confirming it is not a work of literature or fiction.\n\n<final>No</final>",
+      "raw_generation": [
+        "1. The book's title, \"Democratic Republic of the Congo (DRC) in Perspective,\" indicates it is a factual, informational guide rather than a fictional narrative.  \n2. The subtitle \"Orientation Guide\" confirms its purpose is to provide structured, educational content about a specific country.  \n3. The listed topics—Geography, History, Cities, Economy, Society, Security, Military, Religion, Traditions—clearly focus on non-fictional, real-world data.  \n4. Specific historical references like \"Mobutu Era, Congo Wars, Hazards\" further emphasize its factual, documentary nature rather than imaginative storytelling.  \n5. The publisher, \"Progressive Management,\" is known for producing non-fiction educational materials, not literary works.  \n\n<final>No</final>",
+        "1. The book’s title, “Democratic Republic of the Congo (DRC) in Perspective,” indicates it is a factual, informational guide rather than a fictional narrative, ruling out literature.  \n2. The subtitle “Orientation Guide” explicitly states it is designed for educational or situational awareness purposes, not for storytelling or literary analysis.  \n3. The cover lists subjects such as Geography, History, Economy, and Society, which are academic and reference-based topics, not literary genres.  \n4. The inclusion of specific historical periods like “Mobutu Era” and “Congo Wars” emphasizes factual historical documentation rather than imaginative or fictional content.  \n5. The publisher, “Progressive Management,” is known for producing nonfiction reference materials, further confirming it is not a work of literature or fiction.\n\n<final>No</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “Democratic Republic of the Congo (DRC) in Perspective,” indicates it is a factual, informational guide rather than a fictional narrative, ruling out literature.",
+        "2. The subtitle “Orientation Guide” explicitly states it is designed for educational or situational awareness purposes, not for storytelling or literary analysis.",
+        "3. The cover lists subjects such as Geography, History, Economy, and Society, which are academic and reference-based topics, not literary genres.",
+        "4. The inclusion of specific historical periods like “Mobutu Era” and “Congo Wars” emphasizes factual historical documentation rather than imaginative or fictional content.",
+        "5. The publisher, “Progressive Management,” is known for producing nonfiction reference materials, further confirming it is not a work of literature or fiction.",
+        "<final>No</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          64
+        ],
+        [
+          65,
+          93
+        ],
+        [
+          94,
+          123
+        ],
+        [
+          124,
+          156
+        ],
+        [
+          157,
+          188
+        ],
+        [
+          188,
+          194
+        ]
+      ],
+      "anchor_vector": [
+        14.803521734981555,
+        9.310844933407635,
+        8.533087453534526,
+        11.30506355531754,
+        9.912109375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 206,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 7
+}

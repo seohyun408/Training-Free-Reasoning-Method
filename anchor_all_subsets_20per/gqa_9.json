@@ -1,0 +1,800 @@
+{
+  "total_pairs": 14,
+  "successful_pairs": 14,
+  "image_path": "gqa/images/2357092.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich side of the photo is the faucet on?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The faucet is mounted on the wall above the sink, which is positioned on the right side of the image, near the corner where the bathtub and sink meet.\n2. The faucet’s metallic finish and curved spout are clearly visible, extending over the red basin of the sink.\n3. To the left of the faucet, there is a white towel hanging on the edge of the bathtub, indicating the faucet is not on that side.\n4. The faucet is located below a mirror and a shelf holding toiletries, confirming its placement on the right side of the photo.\n5. The faucet is aligned with the right-hand wall, which is adjacent to the glass shower enclosure, further confirming its position on the right side of the photo.\n</reasoning>\n\n<final>right</final>",
+      "raw_generation": [
+        "right",
+        "<reasoning>\n1. The faucet is mounted on the wall above the sink, which is positioned on the right side of the image, near the corner where the bathtub and sink meet.\n2. The faucet’s metallic finish and curved spout are clearly visible, extending over the red basin of the sink.\n3. To the left of the faucet, there is a white towel hanging on the edge of the bathtub, indicating the faucet is not on that side.\n4. The faucet is located below a mirror and a shelf holding toiletries, confirming its placement on the right side of the photo.\n5. The faucet is aligned with the right-hand wall, which is adjacent to the glass shower enclosure, further confirming its position on the right side of the photo.\n</reasoning>\n\n<final>right</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The faucet is mounted on the wall above the sink, which is positioned on the right side of the image, near the corner where the bathtub and sink meet.",
+        "2. The faucet’s metallic finish and curved spout are clearly visible, extending over the red basin of the sink.",
+        "3. To the left of the faucet, there is a white towel hanging on the edge of the bathtub, indicating the faucet is not on that side.",
+        "4. The faucet is located below a mirror and a shelf holding toiletries, confirming its placement on the right side of the photo.",
+        "5. The faucet is aligned with the right-hand wall, which is adjacent to the glass shower enclosure, further confirming its position on the right side of the photo.",
+        "</reasoning>\n\n<final>right</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          54
+        ],
+        [
+          54,
+          86
+        ],
+        [
+          86,
+          110
+        ],
+        [
+          110,
+          141
+        ],
+        [
+          141,
+          168
+        ],
+        [
+          168,
+          201
+        ],
+        [
+          201,
+          212
+        ]
+      ],
+      "anchor_vector": [
+        9.154410182598909,
+        11.975997341102559,
+        9.966355051268737,
+        10.674798659336423,
+        13.814808238636363,
+        10.730113636363637,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the mirror to the right of the cabinet on the right of the picture?",
+      "reasoning_text": "1. The cabinet is located on the right side of the image, positioned beneath the mirror and above the sink.  \n2. The mirror is mounted on the wall directly above the cabinet, reflecting the floral tile pattern.  \n3. The mirror’s reflection shows a portion of the tiled wall and floral motif, confirming its placement above the cabinet.  \n4. The cabinet’s edge is visible below the mirror, indicating the mirror is positioned directly above it, not to its right.  \n5. The mirror is not to the right of the cabinet; instead, it is directly above it, as confirmed by their vertical alignment in the image.  \n\n<final>No, the mirror is not to the right of the cabinet—it is directly above it.</final>",
+      "raw_generation": [
+        "1. The cabinet is located on the right side of the image, mounted on the wall above the sink.  \n2. The mirror is positioned directly above the cabinet, reflecting part of the room.  \n3. The mirror’s placement is vertically aligned with the cabinet, not to its right.  \n4. The cabinet and mirror form a single unit, with the mirror serving as a decorative and functional element above the cabinet.  \n5. Since the mirror is above the cabinet, it is not to the right of it, but rather directly above.  \n\n<final>no</final>",
+        "1. The cabinet is located on the right side of the image, positioned beneath the mirror and above the sink.  \n2. The mirror is mounted on the wall directly above the cabinet, reflecting the floral tile pattern.  \n3. The mirror’s reflection shows a portion of the tiled wall and floral motif, confirming its placement above the cabinet.  \n4. The cabinet’s edge is visible below the mirror, indicating the mirror is positioned directly above it, not to its right.  \n5. The mirror is not to the right of the cabinet; instead, it is directly above it, as confirmed by their vertical alignment in the image.  \n\n<final>No, the mirror is not to the right of the cabinet—it is directly above it.</final>"
+      ],
+      "chunks": [
+        "1. The cabinet is located on the right side of the image, positioned beneath the mirror and above the sink.",
+        "2. The mirror is mounted on the wall directly above the cabinet, reflecting the floral tile pattern.",
+        "3. The mirror’s reflection shows a portion of the tiled wall and floral motif, confirming its placement above the cabinet.",
+        "4. The cabinet’s edge is visible below the mirror, indicating the mirror is positioned directly above it, not to its right.",
+        "5. The mirror is not to the right of the cabinet; instead, it is directly above it, as confirmed by their vertical alignment in the image.",
+        "<final>No, the mirror is not to the right of the cabinet—it is directly above it.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          63
+        ],
+        [
+          64,
+          84
+        ],
+        [
+          85,
+          109
+        ],
+        [
+          110,
+          136
+        ],
+        [
+          137,
+          168
+        ],
+        [
+          169,
+          191
+        ]
+      ],
+      "anchor_vector": [
+        8.664707345535849,
+        9.192092915012994,
+        8.618204302837619,
+        10.660181666399378,
+        10.661587801846592,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the soap on the left side?",
+      "reasoning_text": "1. The soap is located on the right side of the image, resting on a small shelf above the sink, not on the left side of the bathtub or any adjacent surface.\n\n2. The shelf holding the soap is mounted on the tiled wall near the glass-enclosed shower area, positioned directly above the red sink basin.\n\n3. The soap is accompanied by a folded towel and a small glass container, all situated on the right-hand side of the bathroom’s visible layout.\n\n4. The left side of the image features the bathtub, a white towel draped over its edge, and a chrome shower fixture with a flexible hose, none of which include soap.\n\n5. The mirror above the sink reflects floral wallpaper, but the soap remains unambiguously on the right, confirming it is not positioned on the left side of the scene.\n\n<final> No, the soap is not on the left side; it is on the right side, placed on a shelf above the sink.",
+      "raw_generation": [
+        "1. The image shows a bathroom with a bathtub, sink, and mirror, all featuring a consistent reddish-brown color scheme.  \n2. A white towel hangs on the edge of the bathtub, positioned centrally in the foreground.  \n3. The soap is located on a shelf above the sink, which is on the right side of the image.  \n4. The shelf holds multiple items, including a bar of soap wrapped in paper, positioned near the edge.  \n5. Since the sink and its shelf are on the right side of the image, the soap is not on the left side.  \n\n<final>no</final>",
+        "1. The soap is located on the right side of the image, resting on a small shelf above the sink, not on the left side of the bathtub or any adjacent surface.\n\n2. The shelf holding the soap is mounted on the tiled wall near the glass-enclosed shower area, positioned directly above the red sink basin.\n\n3. The soap is accompanied by a folded towel and a small glass container, all situated on the right-hand side of the bathroom’s visible layout.\n\n4. The left side of the image features the bathtub, a white towel draped over its edge, and a chrome shower fixture with a flexible hose, none of which include soap.\n\n5. The mirror above the sink reflects floral wallpaper, but the soap remains unambiguously on the right, confirming it is not positioned on the left side of the scene.\n\n<final> No, the soap is not on the left side; it is on the right side, placed on a shelf above the sink."
+      ],
+      "chunks": [
+        "1. The soap is located on the right side of the image, resting on a small shelf above the sink, not on the left side of the bathtub or any adjacent surface.",
+        "2. The shelf holding the soap is mounted on the tiled wall near the glass-enclosed shower area, positioned directly above the red sink basin.",
+        "3. The soap is accompanied by a folded towel and a small glass container, all situated on the right-hand side of the bathroom’s visible layout.",
+        "4. The left side of the image features the bathtub, a white towel draped over its edge, and a chrome shower fixture with a flexible hose, none of which include soap.",
+        "5. The mirror above the sink reflects floral wallpaper, but the soap remains unambiguously on the right, confirming it is not positioned on the left side of the scene.",
+        "<final> No, the soap is not on the left side; it is on the right side, placed on a shelf above the sink."
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          60
+        ],
+        [
+          60,
+          90
+        ],
+        [
+          90,
+          120
+        ],
+        [
+          120,
+          156
+        ],
+        [
+          156,
+          192
+        ],
+        [
+          192,
+          221
+        ]
+      ],
+      "anchor_vector": [
+        14.719369537236592,
+        11.389128048483894,
+        10.314914942092214,
+        11.480254074622845,
+        11.682852909482758,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nOn which side of the image is the cabinet?",
+      "reasoning_text": "1. The cabinet is located on the right side of the image, visible as a built-in shelving unit with a mirrored surface above it.  \n2. It features a curved red countertop that matches the sink, and a towel is draped over its edge.  \n3. The cabinet's structure includes a shelf holding toiletries, such as folded towels and a small bottle.  \n4. The mirrored surface reflects floral tile patterns, indicating its placement adjacent to the shower area.  \n5. No cabinet is visible on the left side, where only the bathtub and tiled wall are present.  \n\n<final>Right side</final>",
+      "raw_generation": [
+        "1. The cabinet is positioned on the right side of the image, adjacent to the sink and mirror.  \n2. It features a reddish-brown finish that matches the sink and bathtub, creating a cohesive design.  \n3. The cabinet has a built-in shelf holding folded towels and toiletries, indicating its functional use.  \n4. Its placement next to the sink and mirror suggests it is part of the bathroom’s vanity area.  \n5. The cabinet’s surface is smooth and slightly curved, blending seamlessly with the overall aesthetic of the bathroom.  \n\n<final>Right side</final>",
+        "1. The cabinet is located on the right side of the image, visible as a built-in shelving unit with a mirrored surface above it.  \n2. It features a curved red countertop that matches the sink, and a towel is draped over its edge.  \n3. The cabinet's structure includes a shelf holding toiletries, such as folded towels and a small bottle.  \n4. The mirrored surface reflects floral tile patterns, indicating its placement adjacent to the shower area.  \n5. No cabinet is visible on the left side, where only the bathtub and tiled wall are present.  \n\n<final>Right side</final>"
+      ],
+      "chunks": [
+        "1. The cabinet is located on the right side of the image, visible as a built-in shelving unit with a mirrored surface above it.",
+        "2. It features a curved red countertop that matches the sink, and a towel is draped over its edge.",
+        "3. The cabinet's structure includes a shelf holding toiletries, such as folded towels and a small bottle.",
+        "4. The mirrored surface reflects floral tile patterns, indicating its placement adjacent to the shower area.",
+        "5. No cabinet is visible on the left side, where only the bathtub and tiled wall are present.",
+        "<final>Right side</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          57
+        ],
+        [
+          58,
+          81
+        ],
+        [
+          82,
+          104
+        ],
+        [
+          105,
+          124
+        ],
+        [
+          125,
+          146
+        ],
+        [
+          147,
+          155
+        ]
+      ],
+      "anchor_vector": [
+        13.525692898214842,
+        12.118613628353554,
+        8.216882538377194,
+        15.504557291666666,
+        12.16943359375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat do you think is the piece of furniture called?",
+      "reasoning_text": "1. The object in question is a reddish-brown, curved basin mounted on a wall with a chrome faucet and drain, positioned next to a bathtub.  \n2. It is integrated with a glass-enclosed shower area and has a shelf above it holding toiletries, indicating its functional role in a bathroom.  \n3. The basin’s shape and material match a typical bathroom sink, designed for washing hands or face, with a modern aesthetic that complements the tiled walls.  \n4. Its placement beside the tub and under a mirror confirms it is part of the bathing area, often called a washbasin or bathroom sink.  \n5. The basin’s glossy finish and matching color with the tub suggest it is a coordinated fixture, commonly referred to as a sink or lavatory in formal terminology.  \n\n<final>It is called a sink.</final>",
+      "raw_generation": [
+        "1. The image shows a bathroom with a bathtub, sink, and shower, indicating it is a functional space for personal hygiene.  \n2. The bathtub is large and rectangular, with a glossy red finish, positioned against tiled walls.  \n3. A handheld showerhead is mounted on the wall above the tub, connected by a flexible hose for adjustable use.  \n4. The sink is also red and rounded, with a chrome faucet and a small shelf above it holding toiletries.  \n5. The overall setup includes a mirror, towels, and decorative floral tiles, suggesting a well-appointed bathroom designed for comfort and style.  \n\n<final>bathtub</final>",
+        "1. The object in question is a reddish-brown, curved basin mounted on a wall with a chrome faucet and drain, positioned next to a bathtub.  \n2. It is integrated with a glass-enclosed shower area and has a shelf above it holding toiletries, indicating its functional role in a bathroom.  \n3. The basin’s shape and material match a typical bathroom sink, designed for washing hands or face, with a modern aesthetic that complements the tiled walls.  \n4. Its placement beside the tub and under a mirror confirms it is part of the bathing area, often called a washbasin or bathroom sink.  \n5. The basin’s glossy finish and matching color with the tub suggest it is a coordinated fixture, commonly referred to as a sink or lavatory in formal terminology.  \n\n<final>It is called a sink.</final>"
+      ],
+      "chunks": [
+        "1. The object in question is a reddish-brown, curved basin mounted on a wall with a chrome faucet and drain, positioned next to a bathtub.",
+        "2. It is integrated with a glass-enclosed shower area and has a shelf above it holding toiletries, indicating its functional role in a bathroom.",
+        "3. The basin’s shape and material match a typical bathroom sink, designed for washing hands or face, with a modern aesthetic that complements the tiled walls.",
+        "4. Its placement beside the tub and under a mirror confirms it is part of the bathing area, often called a washbasin or bathroom sink.",
+        "5. The basin’s glossy finish and matching color with the tub suggest it is a coordinated fixture, commonly referred to as a sink or lavatory in formal terminology.",
+        "<final>It is called a sink.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          62
+        ],
+        [
+          63,
+          94
+        ],
+        [
+          95,
+          127
+        ],
+        [
+          128,
+          158
+        ],
+        [
+          159,
+          192
+        ],
+        [
+          193,
+          204
+        ]
+      ],
+      "anchor_vector": [
+        11.936548635533129,
+        12.109466182824338,
+        11.278284801136365,
+        12.045395359848484,
+        10.979758522727273,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich kind of furniture is it?",
+      "reasoning_text": "1. The image shows a bathroom with a bathtub, sink, and mirror, all integrated into a cohesive unit with tiled walls and decorative floral patterns, indicating it’s not standalone furniture but part of a bathroom suite.\n\n2. The bathtub is large and deep, with a red interior and chrome fixtures, suggesting it’s designed for relaxation and bathing, which is characteristic of bathroom fixtures rather than typical furniture.\n\n3. The sink is mounted on a red countertop with a chrome faucet, positioned next to the bathtub, showing it’s part of a functional bathroom layout rather than freestanding furniture.\n\n4. The mirror above the sink is round and framed, reflecting part of the room and adding to the bathroom’s aesthetic, reinforcing that it’s built into the bathroom’s design, not movable furniture.\n\n5. The towel rack and shelf are fixed to the wall, holding towels and toiletries, which are functional bathroom accessories, not furniture items meant for storage or seating.\n\n<final>It is bathroom furniture, specifically a bathtub and sink unit integrated into a bathroom suite with fixed fixtures and decorative elements.</final>",
+      "raw_generation": [
+        "1. The image shows a bathroom with a bathtub, sink, and toilet, indicating it is not traditional furniture but rather bathroom fixtures.  \n2. The bathtub is a large, reddish-brown vessel designed for bathing, not a piece of movable furniture.  \n3. The sink is a ceramic basin mounted on a countertop, serving as a functional fixture rather than furniture.  \n4. The toilet is a sanitary fixture, not classified as furniture, despite its placement in the room.  \n5. The glass shower enclosure and wall-mounted shelves are also fixtures, not furniture, as they are permanently installed for utility.  \n<final>It is not furniture; it is bathroom fixtures including a bathtub, sink, toilet, and shower enclosure.</final>",
+        "1. The image shows a bathroom with a bathtub, sink, and mirror, all integrated into a cohesive unit with tiled walls and decorative floral patterns, indicating it’s not standalone furniture but part of a bathroom suite.\n\n2. The bathtub is large and deep, with a red interior and chrome fixtures, suggesting it’s designed for relaxation and bathing, which is characteristic of bathroom fixtures rather than typical furniture.\n\n3. The sink is mounted on a red countertop with a chrome faucet, positioned next to the bathtub, showing it’s part of a functional bathroom layout rather than freestanding furniture.\n\n4. The mirror above the sink is round and framed, reflecting part of the room and adding to the bathroom’s aesthetic, reinforcing that it’s built into the bathroom’s design, not movable furniture.\n\n5. The towel rack and shelf are fixed to the wall, holding towels and toiletries, which are functional bathroom accessories, not furniture items meant for storage or seating.\n\n<final>It is bathroom furniture, specifically a bathtub and sink unit integrated into a bathroom suite with fixed fixtures and decorative elements.</final>"
+      ],
+      "chunks": [
+        "1. The image shows a bathroom with a bathtub, sink, and mirror, all integrated into a cohesive unit with tiled walls and decorative floral patterns, indicating it’s not standalone furniture but part of a bathroom suite.",
+        "2. The bathtub is large and deep, with a red interior and chrome fixtures, suggesting it’s designed for relaxation and bathing, which is characteristic of bathroom fixtures rather than typical furniture.",
+        "3. The sink is mounted on a red countertop with a chrome faucet, positioned next to the bathtub, showing it’s part of a functional bathroom layout rather than freestanding furniture.",
+        "4. The mirror above the sink is round and framed, reflecting part of the room and adding to the bathroom’s aesthetic, reinforcing that it’s built into the bathroom’s design, not movable furniture.",
+        "5. The towel rack and shelf are fixed to the wall, holding towels and toiletries, which are functional bathroom accessories, not furniture items meant for storage or seating.",
+        "<final>It is bathroom furniture, specifically a bathtub and sink unit integrated into a bathroom suite with fixed fixtures and decorative elements.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          65
+        ],
+        [
+          65,
+          102
+        ],
+        [
+          102,
+          140
+        ],
+        [
+          140,
+          180
+        ],
+        [
+          180,
+          214
+        ],
+        [
+          214,
+          242
+        ]
+      ],
+      "anchor_vector": [
+        14.465412943469635,
+        9.868725267399311,
+        12.522462339427959,
+        11.531973189666491,
+        12.003487723214286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is on the wall near the hose?",
+      "reasoning_text": "1. The wall near the hose displays a decorative floral tile mural with soft pastel colors, featuring stylized flowers and leaves above the bathtub’s edge.  \n2. This mural is positioned directly above the chrome shower hose’s mounting point, enhancing the bathroom’s aesthetic with artistic detail.  \n3. The tile design includes subtle shading and brushwork, mimicking hand-painted floral art, contrasting with the uniform beige tiles surrounding it.  \n4. The mural’s placement ensures visual balance, drawing attention upward near the shower fixture while complementing the reddish-brown bathtub.  \n5. No other objects or fixtures are visible near the hose’s wall attachment, allowing the mural to remain the focal decorative element in that area.  \n\n<final>Floral tile mural</final>",
+      "raw_generation": [
+        "1. The wall near the hose features a decorative tile mural depicting flowers and leaves, adding a touch of nature to the bathroom's design.  \n2. This mural is positioned directly above the bathtub, enhancing the visual appeal of the tiled wall.  \n3. The mural’s colors harmonize with the surrounding beige tiles, creating a cohesive aesthetic.  \n4. The floral design includes detailed petals and stems, suggesting a hand-painted or high-quality printed finish.  \n5. The mural is centered above the shower hose’s attachment point, making it a focal point near the bathing area.  \n\n<final>Decorative floral mural</final>",
+        "1. The wall near the hose displays a decorative floral tile mural with soft pastel colors, featuring stylized flowers and leaves above the bathtub’s edge.  \n2. This mural is positioned directly above the chrome shower hose’s mounting point, enhancing the bathroom’s aesthetic with artistic detail.  \n3. The tile design includes subtle shading and brushwork, mimicking hand-painted floral art, contrasting with the uniform beige tiles surrounding it.  \n4. The mural’s placement ensures visual balance, drawing attention upward near the shower fixture while complementing the reddish-brown bathtub.  \n5. No other objects or fixtures are visible near the hose’s wall attachment, allowing the mural to remain the focal decorative element in that area.  \n\n<final>Floral tile mural</final>"
+      ],
+      "chunks": [
+        "1. The wall near the hose displays a decorative floral tile mural with soft pastel colors, featuring stylized flowers and leaves above the bathtub’s edge.",
+        "2. This mural is positioned directly above the chrome shower hose’s mounting point, enhancing the bathroom’s aesthetic with artistic detail.",
+        "3. The tile design includes subtle shading and brushwork, mimicking hand-painted floral art, contrasting with the uniform beige tiles surrounding it.",
+        "4. The mural’s placement ensures visual balance, drawing attention upward near the shower fixture while complementing the reddish-brown bathtub.",
+        "5. No other objects or fixtures are visible near the hose’s wall attachment, allowing the mural to remain the focal decorative element in that area.",
+        "<final>Floral tile mural</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          57
+        ],
+        [
+          58,
+          83
+        ],
+        [
+          84,
+          113
+        ],
+        [
+          114,
+          141
+        ],
+        [
+          142,
+          171
+        ],
+        [
+          172,
+          182
+        ]
+      ],
+      "anchor_vector": [
+        11.873044580140483,
+        10.935352061382504,
+        13.046737474723287,
+        11.580859375,
+        10.834765625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there either any bottles or toilet papers in this image?",
+      "reasoning_text": "1. A small bottle with a dark cap is visible on the tiled ledge beside the bathtub, suggesting toiletries for bath use.\n2. No toilet paper is visible anywhere in the image, including near the toilet, sink, or bathtub area.\n3. The toilet lid is partially visible in the bottom left corner but no toilet paper is placed beside or on it.\n4. The bathroom appears tidy, with no rolls or sheets of toilet paper found on shelves, counters, or holders.\n5. The only bottle-like object is a small toiletry bottle on the ledge, not a toilet paper roll or dispenser.\n\n<final>There is one bottle visible, but no toilet paper in the image.</final>",
+      "raw_generation": [
+        "1. A small, dark bottle is visible on the edge of the bathtub, likely containing shampoo or body wash.  \n2. A white towel is draped over the bathtub’s edge, but no toilet paper is visible in the image.  \n3. The toilet paper holder is not in view, and no rolls of toilet paper are present in the frame.  \n4. The bathroom features a red sink and a glass-enclosed shower area, but no toilet paper is seen in these areas.  \n5. The countertop near the sink holds toiletries, but no toilet paper is among the items displayed.  \n\n<final>No bottles or toilet paper are visible in this image.</final>",
+        "1. A small bottle with a dark cap is visible on the tiled ledge beside the bathtub, suggesting toiletries for bath use.\n2. No toilet paper is visible anywhere in the image, including near the toilet, sink, or bathtub area.\n3. The toilet lid is partially visible in the bottom left corner but no toilet paper is placed beside or on it.\n4. The bathroom appears tidy, with no rolls or sheets of toilet paper found on shelves, counters, or holders.\n5. The only bottle-like object is a small toiletry bottle on the ledge, not a toilet paper roll or dispenser.\n\n<final>There is one bottle visible, but no toilet paper in the image.</final>"
+      ],
+      "chunks": [
+        "1. A small bottle with a dark cap is visible on the tiled ledge beside the bathtub, suggesting toiletries for bath use.",
+        "2. No toilet paper is visible anywhere in the image, including near the toilet, sink, or bathtub area.",
+        "3. The toilet lid is partially visible in the bottom left corner but no toilet paper is placed beside or on it.",
+        "4. The bathroom appears tidy, with no rolls or sheets of toilet paper found on shelves, counters, or holders.",
+        "5. The only bottle-like object is a small toiletry bottle on the ledge, not a toilet paper roll or dispenser.",
+        "<final>There is one bottle visible, but no toilet paper in the image.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          58
+        ],
+        [
+          58,
+          81
+        ],
+        [
+          81,
+          105
+        ],
+        [
+          105,
+          129
+        ],
+        [
+          129,
+          154
+        ],
+        [
+          154,
+          173
+        ]
+      ],
+      "anchor_vector": [
+        9.89090653101312,
+        9.032099405924479,
+        12.3015881704587,
+        13.078767475328949,
+        12.242701480263158,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich kind of furniture is to the left of the mirror?",
+      "reasoning_text": "1. The mirror is mounted on the wall above the sink, reflecting part of the tiled wall and floral pattern, positioned to the right of the bathtub.\n2. To the left of the mirror, there is a glass-enclosed shower stall with a chrome showerhead and handheld nozzle attached to the wall.\n3. The shower stall has a sliding glass door with a silver handle, and the tiled walls inside match the surrounding bathroom tiles.\n4. The shower area is adjacent to the bathtub, which is a deep, reddish-brown unit with a chrome faucet and a towel hanging over its edge.\n5. No traditional furniture like a chair or table is present in this area; instead, the functional bathroom fixtures, including the shower stall and bathtub, serve as the primary elements to the left of the mirror.\n\n<final>There is no traditional furniture to the left of the mirror; instead, a glass-enclosed shower stall is present.</final>",
+      "raw_generation": [
+        "1. The image shows a bathroom with a mirror mounted on the wall above a sink.  \n2. To the left of the mirror, there is a built-in shelf or ledge attached to the wall.  \n3. This shelf holds folded towels and toiletries, indicating its use for storage.  \n4. The shelf is integrated into the wall structure, not freestanding or separate furniture.  \n5. It is positioned directly above the sink and adjacent to the mirror, serving as a functional bathroom accessory.  \n\n<final>shelf</final>",
+        "1. The mirror is mounted on the wall above the sink, reflecting part of the tiled wall and floral pattern, positioned to the right of the bathtub.\n2. To the left of the mirror, there is a glass-enclosed shower stall with a chrome showerhead and handheld nozzle attached to the wall.\n3. The shower stall has a sliding glass door with a silver handle, and the tiled walls inside match the surrounding bathroom tiles.\n4. The shower area is adjacent to the bathtub, which is a deep, reddish-brown unit with a chrome faucet and a towel hanging over its edge.\n5. No traditional furniture like a chair or table is present in this area; instead, the functional bathroom fixtures, including the shower stall and bathtub, serve as the primary elements to the left of the mirror.\n\n<final>There is no traditional furniture to the left of the mirror; instead, a glass-enclosed shower stall is present.</final>"
+      ],
+      "chunks": [
+        "1. The mirror is mounted on the wall above the sink, reflecting part of the tiled wall and floral pattern, positioned to the right of the bathtub.",
+        "2. To the left of the mirror, there is a glass-enclosed shower stall with a chrome showerhead and handheld nozzle attached to the wall.",
+        "3. The shower stall has a sliding glass door with a silver handle, and the tiled walls inside match the surrounding bathroom tiles.",
+        "4. The shower area is adjacent to the bathtub, which is a deep, reddish-brown unit with a chrome faucet and a towel hanging over its edge.",
+        "5. No traditional furniture like a chair or table is present in this area; instead, the functional bathroom fixtures, including the shower stall and bathtub, serve as the primary elements to the left of the mirror.",
+        "<final>There is no traditional furniture to the left of the mirror; instead, a glass-enclosed shower stall is present.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          63
+        ],
+        [
+          63,
+          94
+        ],
+        [
+          94,
+          120
+        ],
+        [
+          120,
+          153
+        ],
+        [
+          153,
+          195
+        ],
+        [
+          195,
+          224
+        ]
+      ],
+      "anchor_vector": [
+        12.584749183945965,
+        8.552818403029711,
+        9.185736798597118,
+        11.138271388161947,
+        12.284280711206897,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat color is the bathtub?",
+      "reasoning_text": "1. The bathtub’s surface is a deep, glossy red, matching the sink and faucet fixtures, creating a cohesive design throughout the bathroom’s fixtures.  \n2. The red hue is consistent across the tub’s interior and exterior, with a smooth, reflective finish that catches the ambient light.  \n3. A white towel rests on the tub’s edge, contrasting sharply with the rich red, emphasizing its bold color choice.  \n4. The surrounding beige tiles provide a neutral backdrop, making the red bathtub stand out as the room’s focal point.  \n5. The color remains uniform even in shadowed areas, suggesting a solid, non-variegated paint or enamel coating on the tub’s surface.  \n\n<final>Red</final>",
+      "raw_generation": [
+        "1. The bathtub’s surface is a deep, glossy red, matching the sink and faucet fixtures for a cohesive design.  \n2. The red hue is consistent across the tub’s interior and rim, reflecting light to emphasize its smooth, polished finish.  \n3. The color contrasts with the beige tiled walls, making the tub stand out as a central feature in the bathroom.  \n4. The red tone appears slightly darker in shadowed areas, indicating a rich, saturated pigment rather than a faded shade.  \n5. The tub’s color complements the decorative floral tile above it, creating a warm, coordinated aesthetic in the space.  \n\n<final>Red</final>",
+        "1. The bathtub’s surface is a deep, glossy red, matching the sink and faucet fixtures, creating a cohesive design throughout the bathroom’s fixtures.  \n2. The red hue is consistent across the tub’s interior and exterior, with a smooth, reflective finish that catches the ambient light.  \n3. A white towel rests on the tub’s edge, contrasting sharply with the rich red, emphasizing its bold color choice.  \n4. The surrounding beige tiles provide a neutral backdrop, making the red bathtub stand out as the room’s focal point.  \n5. The color remains uniform even in shadowed areas, suggesting a solid, non-variegated paint or enamel coating on the tub’s surface.  \n\n<final>Red</final>"
+      ],
+      "chunks": [
+        "1. The bathtub’s surface is a deep, glossy red, matching the sink and faucet fixtures, creating a cohesive design throughout the bathroom’s fixtures.",
+        "2. The red hue is consistent across the tub’s interior and exterior, with a smooth, reflective finish that catches the ambient light.",
+        "3. A white towel rests on the tub’s edge, contrasting sharply with the rich red, emphasizing its bold color choice.",
+        "4. The surrounding beige tiles provide a neutral backdrop, making the red bathtub stand out as the room’s focal point.",
+        "5. The color remains uniform even in shadowed areas, suggesting a solid, non-variegated paint or enamel coating on the tub’s surface.",
+        "<final>Red</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          50
+        ],
+        [
+          51,
+          78
+        ],
+        [
+          79,
+          104
+        ],
+        [
+          105,
+          129
+        ],
+        [
+          130,
+          160
+        ],
+        [
+          161,
+          168
+        ]
+      ],
+      "anchor_vector": [
+        14.847308862433863,
+        7.722050664992558,
+        15.518771701388888,
+        19.466964285714287,
+        14.229910714285714,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 10,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the mirror to the left or to the right of the cabinet the water hose is to the left of?",
+      "reasoning_text": "1. The water hose is attached to the wall above the bathtub, positioned to the left of the red sink cabinet.  \n2. The mirror is mounted on the wall above the sink cabinet, directly to the right of the cabinet.  \n3. Since the water hose is to the left of the cabinet, and the mirror is to the right of the cabinet, the mirror lies on the opposite side of the cabinet from the hose.  \n4. The mirror is not to the left of the cabinet, nor is it aligned with the hose’s position; it is spatially separated by the cabinet’s placement.  \n5. Therefore, the mirror is to the right of the cabinet, which the water hose is to the left of.  \n\n<final>Right</final>",
+      "raw_generation": [
+        "1. The water hose is attached to the wall above the bathtub, positioned to the left of the red sink cabinet.  \n2. The mirror is mounted on the wall above the sink cabinet, directly to the right of the sink.  \n3. Since the sink cabinet is to the right of the water hose, the mirror is also to the right of the water hose.  \n4. The mirror is not to the left of the cabinet; it is positioned above and to the right of the sink cabinet.  \n5. Therefore, the mirror is to the right of the cabinet the water hose is to the left of.  \n\n<final>right</final>",
+        "1. The water hose is attached to the wall above the bathtub, positioned to the left of the red sink cabinet.  \n2. The mirror is mounted on the wall above the sink cabinet, directly to the right of the cabinet.  \n3. Since the water hose is to the left of the cabinet, and the mirror is to the right of the cabinet, the mirror lies on the opposite side of the cabinet from the hose.  \n4. The mirror is not to the left of the cabinet, nor is it aligned with the hose’s position; it is spatially separated by the cabinet’s placement.  \n5. Therefore, the mirror is to the right of the cabinet, which the water hose is to the left of.  \n\n<final>Right</final>"
+      ],
+      "chunks": [
+        "1. The water hose is attached to the wall above the bathtub, positioned to the left of the red sink cabinet.",
+        "2. The mirror is mounted on the wall above the sink cabinet, directly to the right of the cabinet.",
+        "3. Since the water hose is to the left of the cabinet, and the mirror is to the right of the cabinet, the mirror lies on the opposite side of the cabinet from the hose.",
+        "4. The mirror is not to the left of the cabinet, nor is it aligned with the hose’s position; it is spatially separated by the cabinet’s placement.",
+        "5. Therefore, the mirror is to the right of the cabinet, which the water hose is to the left of.",
+        "<final>Right</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          52,
+          76
+        ],
+        [
+          77,
+          99
+        ],
+        [
+          100,
+          139
+        ],
+        [
+          140,
+          174
+        ],
+        [
+          175,
+          199
+        ],
+        [
+          200,
+          207
+        ]
+      ],
+      "anchor_vector": [
+        9.425966471990211,
+        9.496973239098919,
+        8.424251773666823,
+        7.617280778430757,
+        16.143415178571427,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 11,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there any towels or bottles in this photo?",
+      "reasoning_text": "1. A white towel is visibly draped over the edge of the red bathtub, positioned directly below the faucet and showerhead assembly.  \n2. Two small, dark-colored bottles are placed on the tiled shelf above the bathtub, near the shower controls.  \n3. The bottles appear to be toiletries, likely shampoo or lotion, based on their size and placement near the bathing area.  \n4. The towel is folded and hanging neatly, indicating it’s ready for use after a bath or shower.  \n5. The bottles are unopened and upright, suggesting they are unused or freshly placed in the bathroom.  \n\n<final>Yes, there is a white towel and two small bottles in the photo.</final>",
+      "raw_generation": [
+        "1. A white towel is clearly visible hanging over the edge of the bathtub, positioned centrally in the lower half of the image.  \n2. Two small bottles, likely toiletries, are placed on the tiled ledge above the bathtub, near the showerhead.  \n3. The bottles are transparent with dark caps and appear to be positioned for easy access during bathing.  \n4. No other towels are visible in the image, though the white towel is prominently displayed.  \n5. The bottles are the only containers visible in the photo, and they are situated near the shower area for convenience.  \n\n<final>Yes, there is a white towel and two small bottles in the photo.</final>",
+        "1. A white towel is visibly draped over the edge of the red bathtub, positioned directly below the faucet and showerhead assembly.  \n2. Two small, dark-colored bottles are placed on the tiled shelf above the bathtub, near the shower controls.  \n3. The bottles appear to be toiletries, likely shampoo or lotion, based on their size and placement near the bathing area.  \n4. The towel is folded and hanging neatly, indicating it’s ready for use after a bath or shower.  \n5. The bottles are unopened and upright, suggesting they are unused or freshly placed in the bathroom.  \n\n<final>Yes, there is a white towel and two small bottles in the photo.</final>"
+      ],
+      "chunks": [
+        "1. A white towel is visibly draped over the edge of the red bathtub, positioned directly below the faucet and showerhead assembly.",
+        "2. Two small, dark-colored bottles are placed on the tiled shelf above the bathtub, near the shower controls.",
+        "3. The bottles appear to be toiletries, likely shampoo or lotion, based on their size and placement near the bathing area.",
+        "4. The towel is folded and hanging neatly, indicating it’s ready for use after a bath or shower.",
+        "5. The bottles are unopened and upright, suggesting they are unused or freshly placed in the bathroom.",
+        "<final>Yes, there is a white towel and two small bottles in the photo.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          54
+        ],
+        [
+          55,
+          78
+        ],
+        [
+          79,
+          105
+        ],
+        [
+          106,
+          128
+        ],
+        [
+          129,
+          150
+        ],
+        [
+          151,
+          171
+        ]
+      ],
+      "anchor_vector": [
+        14.386190277114192,
+        11.835009477013871,
+        9.929665516774891,
+        13.890704055059523,
+        11.43369140625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 12,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the mirror on the right?",
+      "reasoning_text": "1. The mirror is mounted on the wall above the sink, positioned directly to the right of the bathtub’s edge and adjacent to the glass shower enclosure.\n\n2. Its round shape and floral design are clearly visible, reflecting part of the tiled wall and the shower area behind it.\n\n3. The mirror is situated at a slight angle, allowing it to capture the reflection of the showerhead and the wall-mounted soap dispenser nearby.\n\n4. It is framed by the same reddish-brown tiles as the sink and bathtub, maintaining a cohesive color scheme throughout the bathroom.\n\n5. The mirror’s placement is consistent with standard bathroom layouts, where it is positioned for practical use while standing at the sink.\n\n<final>Yes, the mirror is on the right.</final>",
+      "raw_generation": [
+        "1. The image shows a bathroom with a bathtub, sink, and tiled walls.  \n2. A mirror is visible mounted on the wall above the sink area.  \n3. The mirror is positioned to the right of the bathtub and sink.  \n4. Its reflection shows part of the tiled wall and floral decoration.  \n5. The mirror’s placement confirms it is on the right side of the scene.  \n\n<final>Yes, the mirror is on the right.</final>",
+        "1. The mirror is mounted on the wall above the sink, positioned directly to the right of the bathtub’s edge and adjacent to the glass shower enclosure.\n\n2. Its round shape and floral design are clearly visible, reflecting part of the tiled wall and the shower area behind it.\n\n3. The mirror is situated at a slight angle, allowing it to capture the reflection of the showerhead and the wall-mounted soap dispenser nearby.\n\n4. It is framed by the same reddish-brown tiles as the sink and bathtub, maintaining a cohesive color scheme throughout the bathroom.\n\n5. The mirror’s placement is consistent with standard bathroom layouts, where it is positioned for practical use while standing at the sink.\n\n<final>Yes, the mirror is on the right.</final>"
+      ],
+      "chunks": [
+        "1. The mirror is mounted on the wall above the sink, positioned directly to the right of the bathtub’s edge and adjacent to the glass shower enclosure.",
+        "2. Its round shape and floral design are clearly visible, reflecting part of the tiled wall and the shower area behind it.",
+        "3. The mirror is situated at a slight angle, allowing it to capture the reflection of the showerhead and the wall-mounted soap dispenser nearby.",
+        "4. It is framed by the same reddish-brown tiles as the sink and bathtub, maintaining a cohesive color scheme throughout the bathroom.",
+        "5. The mirror’s placement is consistent with standard bathroom layouts, where it is positioned for practical use while standing at the sink.",
+        "<final>Yes, the mirror is on the right.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          53
+        ],
+        [
+          53,
+          78
+        ],
+        [
+          78,
+          107
+        ],
+        [
+          107,
+          135
+        ],
+        [
+          135,
+          161
+        ],
+        [
+          161,
+          175
+        ]
+      ],
+      "anchor_vector": [
+        10.914585475457624,
+        14.750004255577396,
+        9.898573431776557,
+        11.751711667239011,
+        12.184430803571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 13,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nDo you see both mirrors and faucets in the image?",
+      "reasoning_text": "1. The image shows a circular mirror mounted on the tiled wall above the sink, reflecting floral wallpaper patterns and part of the shower area.  \n2. A chrome faucet with a curved spout is installed on the red sink basin, positioned directly above the drain opening.  \n3. The faucet’s design includes a single lever handle for controlling water flow and temperature, typical of modern bathroom fixtures.  \n4. The mirror’s reflective surface captures the surrounding tiles and a portion of the shower enclosure’s glass panel.  \n5. Both the mirror and faucet are clearly visible and functional elements within the bathroom’s layout, confirming their presence in the image.  \n\n<final>Yes, both mirrors and faucets are visible in the image.</final>",
+      "raw_generation": [
+        "1. The image clearly shows a round mirror mounted on the wall above the sink area, reflecting part of the tiled wall and floral decoration.  \n2. A chrome faucet is visible on the red sink, positioned centrally with a curved spout and handles for hot and cold water control.  \n3. The bathtub also has a chrome faucet fixture mounted on the wall, connected to a handheld showerhead via a flexible hose.  \n4. The mirror’s reflection confirms the presence of the faucet and surrounding tiles, reinforcing the visual evidence of both items.  \n5. Both mirrors and faucets are distinctly present in the bathroom, fulfilling the condition of the question without ambiguity.  \n\n<final>Yes</final>",
+        "1. The image shows a circular mirror mounted on the tiled wall above the sink, reflecting floral wallpaper patterns and part of the shower area.  \n2. A chrome faucet with a curved spout is installed on the red sink basin, positioned directly above the drain opening.  \n3. The faucet’s design includes a single lever handle for controlling water flow and temperature, typical of modern bathroom fixtures.  \n4. The mirror’s reflective surface captures the surrounding tiles and a portion of the shower enclosure’s glass panel.  \n5. Both the mirror and faucet are clearly visible and functional elements within the bathroom’s layout, confirming their presence in the image.  \n\n<final>Yes, both mirrors and faucets are visible in the image.</final>"
+      ],
+      "chunks": [
+        "1. The image shows a circular mirror mounted on the tiled wall above the sink, reflecting floral wallpaper patterns and part of the shower area.",
+        "2. A chrome faucet with a curved spout is installed on the red sink basin, positioned directly above the drain opening.",
+        "3. The faucet’s design includes a single lever handle for controlling water flow and temperature, typical of modern bathroom fixtures.",
+        "4. The mirror’s reflective surface captures the surrounding tiles and a portion of the shower enclosure’s glass panel.",
+        "5. Both the mirror and faucet are clearly visible and functional elements within the bathroom’s layout, confirming their presence in the image.",
+        "<final>Yes, both mirrors and faucets are visible in the image.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          60
+        ],
+        [
+          61,
+          86
+        ],
+        [
+          87,
+          111
+        ],
+        [
+          112,
+          134
+        ],
+        [
+          135,
+          161
+        ],
+        [
+          162,
+          180
+        ]
+      ],
+      "anchor_vector": [
+        14.679838122814687,
+        13.722599245914676,
+        11.59084459377428,
+        12.10094484508547,
+        14.94900173611111,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 275,
+  "subset": "gqa",
+  "subset_local_idx": 9
+}

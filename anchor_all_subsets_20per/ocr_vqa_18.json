@@ -1,0 +1,234 @@
+{
+  "total_pairs": 4,
+  "successful_pairs": 4,
+  "image_path": "ocr_vqa/images/1493928147.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover prominently displays the title \"Malaria Vaccines\" in large, bold white text against a green background, making it the most visually dominant element.\n2. Below the main title, the subtitle \"Methods and Protocols\" is clearly printed in smaller white text, indicating the book’s practical, instructional nature.\n3. The top left corner shows the series name \"Methods in Molecular Biology 1325,\" confirming this is part of a specific scientific publication series.\n4. The top right corner features \"Springer Protocols,\" identifying the publisher’s imprint known for detailed laboratory techniques.\n5. The editor, \"Ashley Vaughan,\" is credited in white text on a maroon background, positioned just above the main title for clear attribution.\n<final>Malaria Vaccines</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the title \"Malaria Vaccines\" in large, bold white text, making it the most visible element.  \n2. Below the main title, the subtitle \"Methods and Protocols\" is clearly printed in smaller white font, indicating the book's practical focus.  \n3. The editor's name, \"Ashley Vaughan,\" is positioned above the title, signifying their editorial role in compiling the content.  \n4. The series name \"Springer Protocols\" appears at the top right, while \"Methods in Molecular Biology 1325\" is on the top left, establishing its academic and scientific context.  \n5. The publisher, \"Humana Press,\" is located at the bottom right, confirming its origin within the scientific publishing industry.  \n\n<final>Malaria Vaccines</final>",
+        "1. The book cover prominently displays the title \"Malaria Vaccines\" in large, bold white text against a green background, making it the most visually dominant element.\n2. Below the main title, the subtitle \"Methods and Protocols\" is clearly printed in smaller white text, indicating the book’s practical, instructional nature.\n3. The top left corner shows the series name \"Methods in Molecular Biology 1325,\" confirming this is part of a specific scientific publication series.\n4. The top right corner features \"Springer Protocols,\" identifying the publisher’s imprint known for detailed laboratory techniques.\n5. The editor, \"Ashley Vaughan,\" is credited in white text on a maroon background, positioned just above the main title for clear attribution.\n<final>Malaria Vaccines</final>"
+      ],
+      "chunks": [
+        "1. The book cover prominently displays the title \"Malaria Vaccines\" in large, bold white text against a green background, making it the most visually dominant element.",
+        "2. Below the main title, the subtitle \"Methods and Protocols\" is clearly printed in smaller white text, indicating the book’s practical, instructional nature.",
+        "3. The top left corner shows the series name \"Methods in Molecular Biology 1325,\" confirming this is part of a specific scientific publication series.",
+        "4. The top right corner features \"Springer Protocols,\" identifying the publisher’s imprint known for detailed laboratory techniques.",
+        "5. The editor, \"Ashley Vaughan,\" is credited in white text on a maroon background, positioned just above the main title for clear attribution.",
+        "<final>Malaria Vaccines</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          78
+        ],
+        [
+          78,
+          110
+        ],
+        [
+          110,
+          142
+        ],
+        [
+          142,
+          166
+        ],
+        [
+          166,
+          197
+        ],
+        [
+          197,
+          206
+        ]
+      ],
+      "anchor_vector": [
+        18.650537459397402,
+        12.65687014125154,
+        13.018123904721568,
+        11.796547729054659,
+        16.295247395833332,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The book’s title, “Malaria Vaccines,” combined with the subtitle “Methods and Protocols,” clearly indicates it is a scientific guide focused on experimental techniques for vaccine development against malaria.  \n2. The “Springer Protocols” branding confirms it belongs to a series known for detailed, step-by-step laboratory procedures used by researchers in molecular biology and related disciplines.  \n3. The “Methods in Molecular Biology 1325” series designation shows this book is part of a scholarly collection designed for advanced academic and industry scientists working in molecular research.  \n4. The editor, Ashley Vaughan, is a recognized name in malaria research, suggesting the book contains peer-reviewed, authoritative protocols from experts in the field.  \n5. The publisher, Humana Press, specializes in life sciences and biomedical protocols, reinforcing the book’s technical, research-oriented nature for academic and laboratory use.  \n\n<final> This is a scientific laboratory manual focused on malaria vaccine development protocols for researchers in molecular biology and immunology.",
+      "raw_generation": [
+        "1. The book's title, \"Malaria Vaccines,\" clearly indicates its subject matter is focused on medical research related to preventing malaria through vaccination.  \n2. The subtitle, \"Methods and Protocols,\" suggests it contains detailed, step-by-step procedures for scientific experiments or clinical applications in vaccine development.  \n3. The \"Springer Protocols\" branding implies it is part of a series known for publishing standardized, reproducible laboratory techniques used by researchers.  \n4. The \"Methods in Molecular Biology\" series designation confirms its academic and scientific nature, targeting professionals in molecular biology and immunology.  \n5. The publisher, Humana Press, is a well-known entity specializing in life sciences and biomedical research, further confirming its scholarly and technical purpose.  \n\n<final>Scientific research book focused on malaria vaccine development methods and protocols for molecular biology professionals.</final>",
+        "1. The book’s title, “Malaria Vaccines,” combined with the subtitle “Methods and Protocols,” clearly indicates it is a scientific guide focused on experimental techniques for vaccine development against malaria.  \n2. The “Springer Protocols” branding confirms it belongs to a series known for detailed, step-by-step laboratory procedures used by researchers in molecular biology and related disciplines.  \n3. The “Methods in Molecular Biology 1325” series designation shows this book is part of a scholarly collection designed for advanced academic and industry scientists working in molecular research.  \n4. The editor, Ashley Vaughan, is a recognized name in malaria research, suggesting the book contains peer-reviewed, authoritative protocols from experts in the field.  \n5. The publisher, Humana Press, specializes in life sciences and biomedical protocols, reinforcing the book’s technical, research-oriented nature for academic and laboratory use.  \n\n<final> This is a scientific laboratory manual focused on malaria vaccine development protocols for researchers in molecular biology and immunology."
+      ],
+      "chunks": [
+        "1. The book’s title, “Malaria Vaccines,” combined with the subtitle “Methods and Protocols,” clearly indicates it is a scientific guide focused on experimental techniques for vaccine development against malaria.",
+        "2. The “Springer Protocols” branding confirms it belongs to a series known for detailed, step-by-step laboratory procedures used by researchers in molecular biology and related disciplines.",
+        "3. The “Methods in Molecular Biology 1325” series designation shows this book is part of a scholarly collection designed for advanced academic and industry scientists working in molecular research.",
+        "4. The editor, Ashley Vaughan, is a recognized name in malaria research, suggesting the book contains peer-reviewed, authoritative protocols from experts in the field.",
+        "5. The publisher, Humana Press, specializes in life sciences and biomedical protocols, reinforcing the book’s technical, research-oriented nature for academic and laboratory use.",
+        "<final> This is a scientific laboratory manual focused on malaria vaccine development protocols for researchers in molecular biology and immunology."
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          62
+        ],
+        [
+          63,
+          98
+        ],
+        [
+          99,
+          136
+        ],
+        [
+          137,
+          168
+        ],
+        [
+          169,
+          201
+        ],
+        [
+          202,
+          226
+        ]
+      ],
+      "anchor_vector": [
+        13.166592029035126,
+        13.59156015091807,
+        16.330032622087813,
+        14.28348159790039,
+        15.897623697916666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Medical Books?",
+      "reasoning_text": "1. The book's title, “Malaria Vaccines: Methods and Protocols,” directly indicates its focus on medical research, specifically vaccine development for malaria, a major global health issue affecting millions annually.\n\n2. It is published under “Springer Protocols” and “Methods in Molecular Biology,” both renowned series that specialize in detailed, reproducible laboratory techniques used in biomedical and medical research settings.\n\n3. The editor, Ashley Vaughan, is associated with academic and medical research institutions, suggesting the book targets professionals and researchers in medicine, immunology, and infectious disease fields.\n\n4. The publisher, Humana Press, is a respected imprint known for publishing high-quality scientific and medical texts, reinforcing the book’s relevance to medical and life sciences audiences.\n\n5. The microscopic image on the cover, showing cellular structures likely related to malaria parasites or immune responses, visually reinforces the book’s biomedical and diagnostic focus.\n\n<final>Yes, this book is directly related to medical books, focusing on malaria vaccine research and laboratory methods for medical professionals and researchers.</final>",
+      "raw_generation": [
+        "1. The book's title, \"Malaria Vaccines,\" directly indicates its subject matter is a specific medical intervention targeting a major infectious disease, confirming its medical relevance.  \n2. The subtitle, \"Methods and Protocols,\" suggests it contains detailed scientific procedures, commonly found in medical and biomedical research literature.  \n3. The publisher, \"Springer Protocols,\" specializes in scientific and medical methodologies, reinforcing its academic and clinical utility for healthcare professionals and researchers.  \n4. The series designation, \"Methods in Molecular Biology,\" further confirms its focus on molecular-level medical science, aligning with advanced medical research and therapeutic development.  \n5. The editor, Ashley Vaughan, is associated with medical research, and the cover image of a microscopic biological sample visually reinforces its connection to medical diagnostics and vaccine development.  \n\n<final>Yes</final>",
+        "1. The book's title, “Malaria Vaccines: Methods and Protocols,” directly indicates its focus on medical research, specifically vaccine development for malaria, a major global health issue affecting millions annually.\n\n2. It is published under “Springer Protocols” and “Methods in Molecular Biology,” both renowned series that specialize in detailed, reproducible laboratory techniques used in biomedical and medical research settings.\n\n3. The editor, Ashley Vaughan, is associated with academic and medical research institutions, suggesting the book targets professionals and researchers in medicine, immunology, and infectious disease fields.\n\n4. The publisher, Humana Press, is a respected imprint known for publishing high-quality scientific and medical texts, reinforcing the book’s relevance to medical and life sciences audiences.\n\n5. The microscopic image on the cover, showing cellular structures likely related to malaria parasites or immune responses, visually reinforces the book’s biomedical and diagnostic focus.\n\n<final>Yes, this book is directly related to medical books, focusing on malaria vaccine research and laboratory methods for medical professionals and researchers.</final>"
+      ],
+      "chunks": [
+        "1. The book's title, “Malaria Vaccines: Methods and Protocols,” directly indicates its focus on medical research, specifically vaccine development for malaria, a major global health issue affecting millions annually.",
+        "2. It is published under “Springer Protocols” and “Methods in Molecular Biology,” both renowned series that specialize in detailed, reproducible laboratory techniques used in biomedical and medical research settings.",
+        "3. The editor, Ashley Vaughan, is associated with academic and medical research institutions, suggesting the book targets professionals and researchers in medicine, immunology, and infectious disease fields.",
+        "4. The publisher, Humana Press, is a respected imprint known for publishing high-quality scientific and medical texts, reinforcing the book’s relevance to medical and life sciences audiences.",
+        "5. The microscopic image on the cover, showing cellular structures likely related to malaria parasites or immune responses, visually reinforces the book’s biomedical and diagnostic focus.",
+        "<final>Yes, this book is directly related to medical books, focusing on malaria vaccine research and laboratory methods for medical professionals and researchers.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          65
+        ],
+        [
+          65,
+          104
+        ],
+        [
+          104,
+          139
+        ],
+        [
+          139,
+          174
+        ],
+        [
+          174,
+          205
+        ],
+        [
+          205,
+          235
+        ]
+      ],
+      "anchor_vector": [
+        11.82766118416194,
+        13.808739003827496,
+        10.946834447404633,
+        12.943596821446572,
+        14.188541666666667,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Education & Teaching?",
+      "reasoning_text": "1. The book’s title, “Malaria Vaccines: Methods and Protocols,” indicates it is a technical guide for researchers, not a general educational text for students or teachers in classrooms.\n\n2. The “Springer Protocols” and “Methods in Molecular Biology” series branding suggests it targets scientists and professionals needing lab techniques, not educators.\n\n3. The editor, Ashley Vaughan, and publisher, Humana Press, are known for scientific publications, reinforcing its research-focused nature rather than pedagogical content.\n\n4. The cover image of a microscopic tissue sample visually supports a scientific, laboratory-oriented audience, not an educational teaching context.\n\n5. The book’s purpose is to provide standardized experimental procedures for malaria vaccine research, making it a reference tool for specialists, not a teaching curriculum or educational resource.\n\n<final> No, this book is not related to Education & Teaching; it is a scientific research manual for molecular biologists and vaccine developers.",
+      "raw_generation": [
+        "1. The book's title, \"Malaria Vaccines: Methods and Protocols,\" indicates it focuses on scientific techniques and experimental procedures rather than general education or teaching methodologies.  \n2. The publisher, Springer Protocols and Humana Press, specializes in research and laboratory manuals, not educational textbooks for classroom use.  \n3. The editor, Ashley Vaughan, is likely a researcher or scientist, suggesting the content targets professionals or students in biomedical sciences, not general educators.  \n4. The series \"Methods in Molecular Biology\" implies the book provides detailed protocols for laboratory work, not pedagogical strategies or curriculum development.  \n5. The cover image of a microscopic tissue sample reinforces its scientific, research-oriented purpose, not educational instruction or teaching theory.  \n\n<final>no</final>",
+        "1. The book’s title, “Malaria Vaccines: Methods and Protocols,” indicates it is a technical guide for researchers, not a general educational text for students or teachers in classrooms.\n\n2. The “Springer Protocols” and “Methods in Molecular Biology” series branding suggests it targets scientists and professionals needing lab techniques, not educators.\n\n3. The editor, Ashley Vaughan, and publisher, Humana Press, are known for scientific publications, reinforcing its research-focused nature rather than pedagogical content.\n\n4. The cover image of a microscopic tissue sample visually supports a scientific, laboratory-oriented audience, not an educational teaching context.\n\n5. The book’s purpose is to provide standardized experimental procedures for malaria vaccine research, making it a reference tool for specialists, not a teaching curriculum or educational resource.\n\n<final> No, this book is not related to Education & Teaching; it is a scientific research manual for molecular biologists and vaccine developers."
+      ],
+      "chunks": [
+        "1. The book’s title, “Malaria Vaccines: Methods and Protocols,” indicates it is a technical guide for researchers, not a general educational text for students or teachers in classrooms.",
+        "2. The “Springer Protocols” and “Methods in Molecular Biology” series branding suggests it targets scientists and professionals needing lab techniques, not educators.",
+        "3. The editor, Ashley Vaughan, and publisher, Humana Press, are known for scientific publications, reinforcing its research-focused nature rather than pedagogical content.",
+        "4. The cover image of a microscopic tissue sample visually supports a scientific, laboratory-oriented audience, not an educational teaching context.",
+        "5. The book’s purpose is to provide standardized experimental procedures for malaria vaccine research, making it a reference tool for specialists, not a teaching curriculum or educational resource.",
+        "<final> No, this book is not related to Education & Teaching; it is a scientific research manual for molecular biologists and vaccine developers."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          65
+        ],
+        [
+          65,
+          96
+        ],
+        [
+          96,
+          129
+        ],
+        [
+          129,
+          154
+        ],
+        [
+          154,
+          187
+        ],
+        [
+          187,
+          216
+        ]
+      ],
+      "anchor_vector": [
+        13.053112165051605,
+        17.230755398629725,
+        12.442928340517241,
+        14.105211056636543,
+        14.423221982758621,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 341,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 18
+}

@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/11407/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIdentify the question that Judith's experiment can best answer.\nContext: The passage below describes an experiment. Read the passage and then follow the instructions below.\n\nJudith glued lids onto 16 cardboard shoe boxes of equal size. She painted eight of the boxes black and eight of the boxes white. Judith made a small hole in the side of each box and then stuck a thermometer partially into each hole so she could measure the temperatures inside the boxes. She placed the boxes in direct sunlight in her backyard. Two hours later, she measured the temperature inside each box. Judith compared the average temperature inside the black boxes to the average temperature inside the white boxes.\nFigure: a shoebox painted black.\nOptions: (A) Do the temperatures inside boxes depend on the sizes of the boxes? (B) Do the insides of white boxes get hotter than the insides of black boxes when the boxes are left in the sun?",
+      "reasoning_text": "1. Judith used identical-sized cardboard shoe boxes to ensure size did not influence temperature differences, eliminating that variable from her experiment.  \n2. She painted half the boxes black and half white to create a controlled contrast in surface reflectivity, testing how color affects heat absorption.  \n3. Thermometers were inserted into each box to measure internal temperatures accurately, allowing direct comparison between black and white boxes.  \n4. Placing all boxes in direct sunlight ensured consistent external conditions, isolating the effect of box color on internal temperature.  \n5. By comparing the average temperatures of black versus white boxes, Judith’s experiment specifically tests whether white boxes become hotter than black ones under sunlight.  \n<final>B</final>",
+      "raw_generation": [
+        "1. Judith’s experiment uses boxes of equal size to ensure that size does not influence temperature differences, eliminating size as a variable.  \n2. The boxes are painted either black or white to test how color affects heat absorption under sunlight, making color the key independent variable.  \n3. Thermometers measure internal temperatures, allowing Judith to compare heat retention between black and white surfaces under identical sunlight exposure.  \n4. The experiment isolates color as the only differing factor, making it impossible to answer questions about box size or other variables not tested.  \n5. The comparison of average temperatures between black and white boxes directly addresses whether white boxes get hotter than black ones in sunlight, matching option (B).  \n\n<final>(B) Do the insides of white boxes get hotter than the insides of black boxes when the boxes are left in the sun?</final>",
+        "1. Judith used identical-sized cardboard shoe boxes to ensure size did not influence temperature differences, eliminating that variable from her experiment.  \n2. She painted half the boxes black and half white to create a controlled contrast in surface reflectivity, testing how color affects heat absorption.  \n3. Thermometers were inserted into each box to measure internal temperatures accurately, allowing direct comparison between black and white boxes.  \n4. Placing all boxes in direct sunlight ensured consistent external conditions, isolating the effect of box color on internal temperature.  \n5. By comparing the average temperatures of black versus white boxes, Judith’s experiment specifically tests whether white boxes become hotter than black ones under sunlight.  \n<final>B</final>"
+      ],
+      "chunks": [
+        "1. Judith used identical-sized cardboard shoe boxes to ensure size did not influence temperature differences, eliminating that variable from her experiment.",
+        "2. She painted half the boxes black and half white to create a controlled contrast in surface reflectivity, testing how color affects heat absorption.",
+        "3. Thermometers were inserted into each box to measure internal temperatures accurately, allowing direct comparison between black and white boxes.",
+        "4. Placing all boxes in direct sunlight ensured consistent external conditions, isolating the effect of box color on internal temperature.",
+        "5. By comparing the average temperatures of black versus white boxes, Judith’s experiment specifically tests whether white boxes become hotter than black ones under sunlight.",
+        "<final>B</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          378,
+          403
+        ],
+        [
+          404,
+          432
+        ],
+        [
+          433,
+          457
+        ],
+        [
+          458,
+          483
+        ],
+        [
+          484,
+          513
+        ],
+        [
+          514,
+          520
+        ]
+      ],
+      "anchor_vector": [
+        21.125,
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 50,
+  "subset": "sqa",
+  "subset_local_idx": 8
+}

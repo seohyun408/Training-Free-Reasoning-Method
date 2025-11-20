@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "CLEVR_v1.0/images/train/CLEVR_train_003545.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nSubtract all balls. How many objects are left?",
+      "reasoning_text": "1. The image contains six distinct geometric objects placed on a neutral gray surface, each with unique color and shape.  \n2. Among them, two spherical objects are identifiable: one shiny red ball and one matte yellow ball.  \n3. Removing these two balls leaves four remaining objects: a large silver cube, a small cyan cube, a small gold cube, and a green cylinder.  \n4. The silver cube has a reflective metallic finish, while the cyan cube appears matte with a soft blue hue.  \n5. The gold cube has a polished yellow surface, and the green cylinder is glossy with a rounded top and bottom.  \n<final>4</final>",
+      "raw_generation": [
+        "1. The image contains six distinct geometric objects arranged on a flat, neutral gray surface.  \n2. Among these, two are spherical balls: a small red metallic ball and a pale yellow matte ball.  \n3. The remaining four objects are non-spherical: a large silver metallic cube, a small cyan matte cube, a small gold metallic cube, and a green metallic cylinder.  \n4. Subtracting the two balls leaves exactly four objects that are not balls.  \n5. These four objects are all solid, geometric shapes with defined edges and surfaces, confirming the count after removal.  \n\n<final>4</final>",
+        "1. The image contains six distinct geometric objects placed on a neutral gray surface, each with unique color and shape.  \n2. Among them, two spherical objects are identifiable: one shiny red ball and one matte yellow ball.  \n3. Removing these two balls leaves four remaining objects: a large silver cube, a small cyan cube, a small gold cube, and a green cylinder.  \n4. The silver cube has a reflective metallic finish, while the cyan cube appears matte with a soft blue hue.  \n5. The gold cube has a polished yellow surface, and the green cylinder is glossy with a rounded top and bottom.  \n<final>4</final>"
+      ],
+      "chunks": [
+        "1. The image contains six distinct geometric objects placed on a neutral gray surface, each with unique color and shape.",
+        "2. Among them, two spherical objects are identifiable: one shiny red ball and one matte yellow ball.",
+        "3. Removing these two balls leaves four remaining objects: a large silver cube, a small cyan cube, a small gold cube, and a green cylinder.",
+        "4. The silver cube has a reflective metallic finish, while the cyan cube appears matte with a soft blue hue.",
+        "5. The gold cube has a polished yellow surface, and the green cylinder is glossy with a rounded top and bottom.",
+        "<final>4</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          53
+        ],
+        [
+          54,
+          75
+        ],
+        [
+          76,
+          107
+        ],
+        [
+          108,
+          131
+        ],
+        [
+          132,
+          156
+        ],
+        [
+          157,
+          164
+        ]
+      ],
+      "anchor_vector": [
+        12.605184220920574,
+        10.157590185975707,
+        13.279579262638025,
+        14.718784877232142,
+        12.981026785714286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 236,
+  "subset": "CLEVR_v1.0",
+  "subset_local_idx": 1
+}

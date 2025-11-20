@@ -1,0 +1,452 @@
+{
+  "total_pairs": 8,
+  "successful_pairs": 8,
+  "image_path": "docvqa/train/documents/flcj0227_3.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich institute is mentioned at the top of the page? Answer the question using a single word or phrase.",
+      "reasoning_text": "INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES\n\n<final>INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES</final>",
+      "raw_generation": [
+        "1. The letterhead at the top of the page clearly displays the name of the institution.\n2. The text reads \"INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES\" in bold, uppercase letters.\n3. Below this, it specifies \"THE CITY COLLEGE OF NEW YORK\" as the affiliated institution.\n4. The address and director's name are also listed, confirming the official nature of the letterhead.\n5. The unicorn logo with \"MSR\" further reinforces the identity of the institute mentioned.\n\n<final>INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES</final>",
+        "INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES\n\n<final>INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES</final>"
+      ],
+      "chunks": [
+        "INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES\n\n<final>INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          85
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich institute is mentioned at the top of the page?",
+      "reasoning_text": "1. The letterhead at the top of the page clearly states the name of the institution, which is “Institute for Medieval and Renaissance Studies.”  \n2. This institute is affiliated with “The City College of New York,” as indicated directly below its name.  \n3. The address listed is “Convent Avenue at 138th Street, New York, New York 10031,” confirming its location.  \n4. The director, Dr. Madeleine Pelner Cosman, is also mentioned under the institute’s name, indicating her official role.  \n5. The unicorn logo with the initials “IMSR” further reinforces the identity of the Institute for Medieval and Renaissance Studies.  \n<final>Institute for Medieval and Renaissance Studies</final>",
+      "raw_generation": [
+        "1. The letterhead at the top of the page clearly displays the name of the institution.  \n2. The text reads “INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES” in bold, uppercase letters.  \n3. Below this, it specifies “THE CITY COLLEGE OF NEW YORK” as the affiliated institution.  \n4. The address provided confirms the location as Convent Avenue at 138th Street, New York, New York 10031.  \n5. The logo on the right side features a unicorn with the initials “MSR,” which likely stands for the institute’s name.  \n\n<final>INSTITUTE FOR MEDIEVAL AND RENAISSANCE STUDIES</final>",
+        "1. The letterhead at the top of the page clearly states the name of the institution, which is “Institute for Medieval and Renaissance Studies.”  \n2. This institute is affiliated with “The City College of New York,” as indicated directly below its name.  \n3. The address listed is “Convent Avenue at 138th Street, New York, New York 10031,” confirming its location.  \n4. The director, Dr. Madeleine Pelner Cosman, is also mentioned under the institute’s name, indicating her official role.  \n5. The unicorn logo with the initials “IMSR” further reinforces the identity of the Institute for Medieval and Renaissance Studies.  \n<final>Institute for Medieval and Renaissance Studies</final>"
+      ],
+      "chunks": [
+        "1. The letterhead at the top of the page clearly states the name of the institution, which is “Institute for Medieval and Renaissance Studies.”  \n2.",
+        "This institute is affiliated with “The City College of New York,” as indicated directly below its name.",
+        "3. The address listed is “Convent Avenue at 138th Street, New York, New York 10031,” confirming its location.",
+        "4. The director, Dr.",
+        "Madeleine Pelner Cosman, is also mentioned under the institute’s name, indicating her official role.",
+        "5. The unicorn logo with the initials “IMSR” further reinforces the identity of the Institute for Medieval and Renaissance Studies.",
+        "<final>Institute for Medieval and Renaissance Studies</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          63
+        ],
+        [
+          63,
+          83
+        ],
+        [
+          84,
+          118
+        ],
+        [
+          119,
+          126
+        ],
+        [
+          126,
+          147
+        ],
+        [
+          148,
+          173
+        ],
+        [
+          174,
+          186
+        ]
+      ],
+      "anchor_vector": [
+        11.31666302393353,
+        12.195893272934175,
+        11.849928385416668,
+        13.6274857390873,
+        14.96021484375,
+        19.757161458333332,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich College is mentioned? Answer the question using a single word or phrase.",
+      "reasoning_text": "The City College of New York",
+      "raw_generation": [
+        "1. The letterhead at the top of the document clearly states the institution's affiliation.  \n2. It reads \"THE CITY COLLEGE OF NEW YORK\" directly beneath the institute’s name.  \n3. The address listed further confirms the location as New York, New York.  \n4. The letter is from Dr. Madeleine Pelner Cosman, who is identified as the Director of the Institute.  \n5. The document’s official letterhead and institutional branding confirm the college’s identity without ambiguity.  \n\n<final>THE CITY COLLEGE OF NEW YORK</final>",
+        "The City College of New York"
+      ],
+      "chunks": [
+        "The City College of New York"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          44
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich College is mentioned?",
+      "reasoning_text": "1. The letterhead at the top of the document clearly states “THE CITY COLLEGE OF NEW YORK” as the institution associated with the Institute for Medieval and Renaissance Studies.  \n2. The address listed below the institute’s name confirms its location at Convent Avenue and 138th Street, New York, New York, which is consistent with the City College of New York’s campus.  \n3. The letter is signed by Dr. Madeleine Pelner Cosman, who is identified as the Director of the Institute, further linking the document to the City College of New York’s academic structure.  \n4. The handwritten note “hand-delivered by Dr. Cosman 3/3/80” reinforces that the letter was physically delivered from her position at the City College of New York.  \n5. The signature at the bottom, “Cordially, Madeleine,” matches the typed name on the letterhead, confirming the sender’s affiliation with the City College of New York.  \n\n<final>The City College of New York</final>",
+      "raw_generation": [
+        "1. The letterhead at the top of the document clearly states “THE CITY COLLEGE OF NEW YORK” as the institution associated with the Institute for Medieval and Renaissance Studies.  \n2. The address listed directly below the institute’s name confirms the location as “Convent Avenue at 138th Street, New York, New York 10031,” which is consistent with The City College of New York’s campus.  \n3. The letter is signed by Dr. Madeleine Pelner Cosman, who is identified as the Director of the Institute, further linking the document to the college’s academic structure.  \n4. The footer of the letter includes “Shepard Hall 222,” a building on The City College of New York’s campus, reinforcing the institutional connection.  \n5. The handwritten note in the upper left corner, “hand-delivered by Dr. Cosman 3/3/80,” corroborates that the letter was physically delivered from her office at the college.  \n\n<final>The City College of New York</final>",
+        "1. The letterhead at the top of the document clearly states “THE CITY COLLEGE OF NEW YORK” as the institution associated with the Institute for Medieval and Renaissance Studies.  \n2. The address listed below the institute’s name confirms its location at Convent Avenue and 138th Street, New York, New York, which is consistent with the City College of New York’s campus.  \n3. The letter is signed by Dr. Madeleine Pelner Cosman, who is identified as the Director of the Institute, further linking the document to the City College of New York’s academic structure.  \n4. The handwritten note “hand-delivered by Dr. Cosman 3/3/80” reinforces that the letter was physically delivered from her position at the City College of New York.  \n5. The signature at the bottom, “Cordially, Madeleine,” matches the typed name on the letterhead, confirming the sender’s affiliation with the City College of New York.  \n\n<final>The City College of New York</final>"
+      ],
+      "chunks": [
+        "1. The letterhead at the top of the document clearly states “THE CITY COLLEGE OF NEW YORK” as the institution associated with the Institute for Medieval and Renaissance Studies.",
+        "2. The address listed below the institute’s name confirms its location at Convent Avenue and 138th Street, New York, New York, which is consistent with the City College of New York’s campus.",
+        "3. The letter is signed by Dr.",
+        "Madeleine Pelner Cosman, who is identified as the Director of the Institute, further linking the document to the City College of New York’s academic structure.",
+        "4. The handwritten note “hand-delivered by Dr.",
+        "Cosman 3/3/80” reinforces that the letter was physically delivered from her position at the City College of New York.",
+        "5. The signature at the bottom, “Cordially, Madeleine,” matches the typed name on the letterhead, confirming the sender’s affiliation with the City College of New York.",
+        "<final>The City College of New York</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          54
+        ],
+        [
+          55,
+          99
+        ],
+        [
+          100,
+          109
+        ],
+        [
+          109,
+          141
+        ],
+        [
+          142,
+          154
+        ],
+        [
+          154,
+          182
+        ],
+        [
+          183,
+          221
+        ],
+        [
+          222,
+          233
+        ]
+      ],
+      "anchor_vector": [
+        11.37896026242809,
+        13.356530660665632,
+        12.390677112814886,
+        12.297249276645092,
+        13.803034356743687,
+        14.739489067114139,
+        14.947975852272727,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the director? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The letterhead at the top of the document clearly states the name of the director under the institute's title.  \n2. The name \"Dr. Madeleine Pelner Cosman\" is printed directly below the institute's name and address.  \n3. The title \"Director\" is explicitly written beneath her name on the letterhead.  \n4. The handwritten note on the left margin, dated 3/3/80, confirms the document was delivered by Dr. Cosman, reinforcing her role.  \n5. The signature at the bottom of the letter matches the typed name, confirming Dr. Cosman as the sender and director.  \n\n<final>Dr. Madeleine Pelner Cosman</final>",
+      "raw_generation": [
+        "1. The letterhead at the top of the document clearly identifies the institution as the Institute for Medieval and Renaissance Studies.\n2. Directly beneath the institution's name, the address and title of the director are printed.\n3. The name \"Dr. Madeleine Pelner Cosman\" is explicitly listed as the Director.\n4. The signature at the bottom of the letter matches the typed name, confirming the identity.\n5. The handwritten note on the left margin also references \"Dr. Cosman,\" corroborating the director's name.\n\n<final>Dr. Madeleine Pelner Cosman</final>",
+        "1. The letterhead at the top of the document clearly states the name of the director under the institute's title.  \n2. The name \"Dr. Madeleine Pelner Cosman\" is printed directly below the institute's name and address.  \n3. The title \"Director\" is explicitly written beneath her name on the letterhead.  \n4. The handwritten note on the left margin, dated 3/3/80, confirms the document was delivered by Dr. Cosman, reinforcing her role.  \n5. The signature at the bottom of the letter matches the typed name, confirming Dr. Cosman as the sender and director.  \n\n<final>Dr. Madeleine Pelner Cosman</final>"
+      ],
+      "chunks": [
+        "1. The letterhead at the top of the document clearly states the name of the director under the institute's title.",
+        "2. The name \"Dr.",
+        "Madeleine Pelner Cosman\" is printed directly below the institute's name and address.",
+        "3. The title \"Director\" is explicitly written beneath her name on the letterhead.",
+        "4. The handwritten note on the left margin, dated 3/3/80, confirms the document was delivered by Dr.",
+        "Cosman, reinforcing her role.",
+        "5. The signature at the bottom of the letter matches the typed name, confirming Dr.",
+        "Cosman as the sender and director.",
+        "<final>Dr.",
+        "Madeleine Pelner Cosman</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          62
+        ],
+        [
+          63,
+          70
+        ],
+        [
+          70,
+          88
+        ],
+        [
+          89,
+          107
+        ],
+        [
+          108,
+          135
+        ],
+        [
+          135,
+          142
+        ],
+        [
+          143,
+          161
+        ],
+        [
+          161,
+          169
+        ],
+        [
+          170,
+          175
+        ],
+        [
+          175,
+          184
+        ]
+      ],
+      "anchor_vector": [
+        11.51237925788643,
+        13.059642245782117,
+        11.039638140412416,
+        10.429377007190093,
+        15.245814361572267,
+        10.589978875054253,
+        11.629350563331888,
+        14.911305395762126,
+        12.596354166666666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        10,
+        10
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the director?",
+      "reasoning_text": "1. The letterhead at the top of the document clearly lists Dr. Madeleine Pelner Cosman as the Director of the Institute for Medieval and Renaissance Studies.\n2. The name “Dr. Madeleine Pelner Cosman” is printed directly beneath the institute’s title and address, indicating her official role.\n3. The handwritten note in the top-left corner, “hand-delivered by Dr. Cosman 3/3/80,” corroborates her identity and involvement with the letter’s delivery.\n4. The letter’s closing signature is “Madeleine,” matching the printed name and confirming the sender’s identity.\n5. The formal letter format and institutional letterhead reinforce that Dr. Madeleine Pelner Cosman holds the position of Director as stated.\n\n<final>Dr. Madeleine Pelner Cosman is the director, as clearly stated in the letterhead and confirmed by her signature and handwritten note.</final>",
+      "raw_generation": [
+        "1. The letterhead at the top of the document clearly identifies the institution as the Institute for Medieval and Renaissance Studies at The City College of New York.  \n2. Directly beneath the institution’s name and address, the name “Dr. Madeleine Pelner Cosman” is printed, followed by the title “Director.”  \n3. The handwritten note in the upper-left corner, “hand-delivered by Dr. Cosman 3/3/80,” corroborates that Dr. Cosman was the sender and likely the director at that time.  \n4. The signature at the bottom of the letter matches the typed name “Dr. Madeleine Pelner Cosman,” confirming her identity as the author and likely the director.  \n5. The letter’s content, which references proposals and meetings related to the institute’s work, implies that the director is actively involved in its operations and communications.  \n\n<final>Dr. Madeleine Pelner Cosman</final>",
+        "1. The letterhead at the top of the document clearly lists Dr. Madeleine Pelner Cosman as the Director of the Institute for Medieval and Renaissance Studies.\n2. The name “Dr. Madeleine Pelner Cosman” is printed directly beneath the institute’s title and address, indicating her official role.\n3. The handwritten note in the top-left corner, “hand-delivered by Dr. Cosman 3/3/80,” corroborates her identity and involvement with the letter’s delivery.\n4. The letter’s closing signature is “Madeleine,” matching the printed name and confirming the sender’s identity.\n5. The formal letter format and institutional letterhead reinforce that Dr. Madeleine Pelner Cosman holds the position of Director as stated.\n\n<final>Dr. Madeleine Pelner Cosman is the director, as clearly stated in the letterhead and confirmed by her signature and handwritten note.</final>"
+      ],
+      "chunks": [
+        "1. The letterhead at the top of the document clearly lists Dr.",
+        "Madeleine Pelner Cosman as the Director of the Institute for Medieval and Renaissance Studies.",
+        "2. The name “Dr.",
+        "Madeleine Pelner Cosman” is printed directly beneath the institute’s title and address, indicating her official role.",
+        "3. The handwritten note in the top-left corner, “hand-delivered by Dr.",
+        "Cosman 3/3/80,” corroborates her identity and involvement with the letter’s delivery.",
+        "4. The letter’s closing signature is “Madeleine,” matching the printed name and confirming the sender’s identity.",
+        "5. The formal letter format and institutional letterhead reinforce that Dr.",
+        "Madeleine Pelner Cosman holds the position of Director as stated.",
+        "<final>Dr.",
+        "Madeleine Pelner Cosman is the director, as clearly stated in the letterhead and confirmed by her signature and handwritten note.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          33
+        ],
+        [
+          33,
+          51
+        ],
+        [
+          51,
+          58
+        ],
+        [
+          58,
+          81
+        ],
+        [
+          81,
+          99
+        ],
+        [
+          99,
+          121
+        ],
+        [
+          121,
+          144
+        ],
+        [
+          144,
+          158
+        ],
+        [
+          158,
+          172
+        ],
+        [
+          172,
+          177
+        ],
+        [
+          177,
+          205
+        ]
+      ],
+      "anchor_vector": [
+        11.339616943556582,
+        10.346510488727644,
+        10.666768373127631,
+        11.398544895354387,
+        12.894724467108977,
+        13.779670273680125,
+        11.893263462611609,
+        11.76528087797619,
+        12.483258928571429,
+        11.548549107142858,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        11,
+        11
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhen was the letter hand-delivered by Dr Cosman? Answer the question using a single word or phrase.",
+      "reasoning_text": "3/3/80",
+      "raw_generation": [
+        "1. The letterhead indicates the letter was written on March 4, 1982, as noted in the handwritten date.\n2. In the top-left corner, there is a handwritten note stating “hand-delivered by Dr. Cosman 3/3/80.”\n3. This note explicitly mentions the delivery date as March 3, 1980.\n4. The handwriting is legible and clearly states the date as “3/3/80,” which corresponds to March 3, 1980.\n5. The note is signed by Dr. Cosman, confirming his involvement in the delivery.\n\n<final>March 3, 1980</final>",
+        "3/3/80"
+      ],
+      "chunks": [
+        "3/3/80"
+      ],
+      "chunk_token_ranges": [
+        [
+          52,
+          58
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhen was the letter hand-delivered by Dr Cosman?",
+      "reasoning_text": "1. The handwritten notation in the upper-left corner of the letter explicitly states “hand-delivered by Dr. Cosman 3/3/80,” indicating the exact date of delivery.  \n2. The notation is written in cursive script, placed just beneath the institutional letterhead, making it a clear administrative record of the letter’s physical delivery.  \n3. The date “3/3/80” corresponds to March 3, 1980, which is the precise day the letter was handed directly to its recipient.  \n4. The signature at the bottom of the letter, signed “Madeleine,” matches the typed name “Dr. Madeleine Pelner Cosman” above the letter’s body, confirming the sender’s identity.  \n5. The letter’s date of composition, “4 March 82,” is written in the center of the page, which means the delivery occurred just one day before the letter was written, supporting the March 3, 1980, delivery date.  \n\n<final>March 3, 1980</final>",
+      "raw_generation": [
+        "1. The handwritten note in the upper-left corner of the letter explicitly states “hand-delivered by Dr Cosman 3/3/80.”  \n2. This notation is written in cursive script and positioned directly beneath the letterhead.  \n3. The date “3/3/80” corresponds to March 3, 1980, using the month/day/year format common in American documentation.  \n4. The phrase “hand-delivered by Dr Cosman” confirms the sender and method of delivery, aligning with the signature at the bottom.  \n5. No other dates on the letter contradict this delivery date, making it the definitive timestamp for physical receipt.  \n\n<final>March 3, 1980</final>",
+        "1. The handwritten notation in the upper-left corner of the letter explicitly states “hand-delivered by Dr. Cosman 3/3/80,” indicating the exact date of delivery.  \n2. The notation is written in cursive script, placed just beneath the institutional letterhead, making it a clear administrative record of the letter’s physical delivery.  \n3. The date “3/3/80” corresponds to March 3, 1980, which is the precise day the letter was handed directly to its recipient.  \n4. The signature at the bottom of the letter, signed “Madeleine,” matches the typed name “Dr. Madeleine Pelner Cosman” above the letter’s body, confirming the sender’s identity.  \n5. The letter’s date of composition, “4 March 82,” is written in the center of the page, which means the delivery occurred just one day before the letter was written, supporting the March 3, 1980, delivery date.  \n\n<final>March 3, 1980</final>"
+      ],
+      "chunks": [
+        "1. The handwritten notation in the upper-left corner of the letter explicitly states “hand-delivered by Dr.",
+        "Cosman 3/3/80,” indicating the exact date of delivery.",
+        "2. The notation is written in cursive script, placed just beneath the institutional letterhead, making it a clear administrative record of the letter’s physical delivery.",
+        "3. The date “3/3/80” corresponds to March 3, 1980, which is the precise day the letter was handed directly to its recipient.",
+        "4. The signature at the bottom of the letter, signed “Madeleine,” matches the typed name “Dr.",
+        "Madeleine Pelner Cosman” above the letter’s body, confirming the sender’s identity.",
+        "5. The letter’s date of composition, “4 March 82,” is written in the center of the page, which means the delivery occurred just one day before the letter was written, supporting the March 3, 1980, delivery date.",
+        "<final>March 3, 1980</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          54
+        ],
+        [
+          54,
+          71
+        ],
+        [
+          72,
+          104
+        ],
+        [
+          105,
+          143
+        ],
+        [
+          144,
+          167
+        ],
+        [
+          167,
+          186
+        ],
+        [
+          187,
+          241
+        ],
+        [
+          242,
+          257
+        ]
+      ],
+      "anchor_vector": [
+        12.923986148301113,
+        12.992437639639775,
+        11.59321162698673,
+        11.80086325509577,
+        13.181987593404807,
+        13.20034530074508,
+        14.903125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 179,
+  "subset": "docvqa",
+  "subset_local_idx": 6
+}

@@ -1,0 +1,62 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/two_col_41387.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat was Orlando's score out of 100? Answer the question using a single word or phrase.",
+      "reasoning_text": "64.53\n\n<final>64.53</final>",
+      "raw_generation": [
+        "64.53\n\n<final>64.53</final>",
+        "64.53\n\n<final>64.53</final>"
+      ],
+      "chunks": [
+        "64.53\n\n<final>64.53</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          52,
+          69
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat was Seattle's score out of 100 in 2018? Answer the question using a single word or phrase.",
+      "reasoning_text": "67.72\n\n<final>67.72</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The bar chart displays scores for various U.S. cities, with Seattle, WA listed at the top.\n2. The horizontal axis represents the score ranking, ranging from 0 to 80.\n3. The value at the end of Seattle's bar is explicitly labeled as 67.72.\n4. The chart's source is cited as Statista 2021, indicating the data is from that year.\n5. The question asks for Seattle's score in 2018, but the chart only provides data from 2021, making the 2018 score unanswerable from this image.\n</reasoning>\n<final>Not available</final>",
+        "67.72\n\n<final>67.72</final>"
+      ],
+      "chunks": [
+        "67.72\n\n<final>67.72</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          64,
+          81
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 17,
+  "subset": "chartqa",
+  "subset_local_idx": 4
+}

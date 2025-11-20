@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "CLEVR_v1.0/images/train/CLEVR_train_036671.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there an equal number of large purple things that are to the left of the large green metal cylinder and yellow cylinders?",
+      "reasoning_text": "1. The large purple cube is positioned to the left of the large green metal cylinder, and there is one such purple object visible in the image.  \n2. There is one small yellow cylinder located to the right of the gray cube, which is also to the left of the green cylinder.  \n3. No other large purple objects appear in the image, and no other yellow cylinders exist.  \n4. The large purple cube and the yellow cylinder are both single objects, matching in count.  \n5. Since one large purple object and one yellow cylinder exist, their quantities are equal.  \n\n<final>Yes, there is an equal number of large purple things to the left of the green cylinder and yellow cylinders.</final>",
+      "raw_generation": [
+        "1. The image contains one large purple cube positioned prominently in the foreground, to the left of the large green metal cylinder.  \n2. There is one small yellow cylinder located on the far right side of the scene, near the gray cube.  \n3. The large purple cube is clearly visible and occupies a significant portion of the frame, making it a “large” object.  \n4. The yellow cylinder is small in comparison to the other objects, but it is still a cylinder and matches the description.  \n5. Since there is one large purple cube and one yellow cylinder, the count of each type of object is equal.  \n\n<final>Yes</final>",
+        "1. The large purple cube is positioned to the left of the large green metal cylinder, and there is one such purple object visible in the image.  \n2. There is one small yellow cylinder located to the right of the gray cube, which is also to the left of the green cylinder.  \n3. No other large purple objects appear in the image, and no other yellow cylinders exist.  \n4. The large purple cube and the yellow cylinder are both single objects, matching in count.  \n5. Since one large purple object and one yellow cylinder exist, their quantities are equal.  \n\n<final>Yes, there is an equal number of large purple things to the left of the green cylinder and yellow cylinders.</final>"
+      ],
+      "chunks": [
+        "1. The large purple cube is positioned to the left of the large green metal cylinder, and there is one such purple object visible in the image.",
+        "2. There is one small yellow cylinder located to the right of the gray cube, which is also to the left of the green cylinder.",
+        "3. No other large purple objects appear in the image, and no other yellow cylinders exist.",
+        "4. The large purple cube and the yellow cylinder are both single objects, matching in count.",
+        "5. Since one large purple object and one yellow cylinder exist, their quantities are equal.",
+        "<final>Yes, there is an equal number of large purple things to the left of the green cylinder and yellow cylinders.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          56,
+          86
+        ],
+        [
+          87,
+          115
+        ],
+        [
+          116,
+          135
+        ],
+        [
+          136,
+          155
+        ],
+        [
+          156,
+          174
+        ],
+        [
+          175,
+          202
+        ]
+      ],
+      "anchor_vector": [
+        12.83402906057729,
+        13.22136695668479,
+        11.95184959104264,
+        10.743233425749672,
+        11.542534722222221,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1696,
+  "subset": "CLEVR_v1.0",
+  "subset_local_idx": 19
+}

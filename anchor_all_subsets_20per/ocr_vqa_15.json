@@ -1,0 +1,296 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/141009004.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover clearly displays the authors' names beneath the title, indicating James Lasdun and Pia Davis as the writers.  \n2. The text \"James Lasdun & Pia Davis\" is positioned directly under the subtitle \"2005 Edition,\" confirming their authorship.  \n3. The Penguin logo at the bottom right corner suggests a reputable publisher, which typically credits authors prominently on the cover.  \n4. The title \"Walking and Eating in Tuscany and Umbria\" is prominently placed at the top, with authors listed below, a standard layout for book covers.  \n5. No other names appear on the cover, reinforcing that only James Lasdun and Pia Davis are credited as the authors of this edition.  \n\n<final>James Lasdun & Pia Davis</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the authors' names beneath the title, indicating who wrote it.  \n2. The names \"James Lasdun & Pia Davis\" are printed in a legible font, confirming their authorship.  \n3. The cover design includes the title \"Walking and Eating in Tuscany and Umbria,\" which matches the authors' known works.  \n4. The 2005 edition label suggests this is a specific publication, but the authors remain unchanged.  \n5. The Penguin logo at the bottom right confirms it is a published book, further validating the authors' credit.  \n\n<final>James Lasdun & Pia Davis</final>",
+        "1. The book cover clearly displays the authors' names beneath the title, indicating James Lasdun and Pia Davis as the writers.  \n2. The text \"James Lasdun & Pia Davis\" is positioned directly under the subtitle \"2005 Edition,\" confirming their authorship.  \n3. The Penguin logo at the bottom right corner suggests a reputable publisher, which typically credits authors prominently on the cover.  \n4. The title \"Walking and Eating in Tuscany and Umbria\" is prominently placed at the top, with authors listed below, a standard layout for book covers.  \n5. No other names appear on the cover, reinforcing that only James Lasdun and Pia Davis are credited as the authors of this edition.  \n\n<final>James Lasdun & Pia Davis</final>"
+      ],
+      "chunks": [
+        "1. The book cover clearly displays the authors' names beneath the title, indicating James Lasdun and Pia Davis as the writers.",
+        "2. The text \"James Lasdun & Pia Davis\" is positioned directly under the subtitle \"2005 Edition,\" confirming their authorship.",
+        "3. The Penguin logo at the bottom right corner suggests a reputable publisher, which typically credits authors prominently on the cover.",
+        "4. The title \"Walking and Eating in Tuscany and Umbria\" is prominently placed at the top, with authors listed below, a standard layout for book covers.",
+        "5. No other names appear on the cover, reinforcing that only James Lasdun and Pia Davis are credited as the authors of this edition.",
+        "<final>James Lasdun & Pia Davis</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          66
+        ],
+        [
+          67,
+          99
+        ],
+        [
+          100,
+          124
+        ],
+        [
+          125,
+          160
+        ],
+        [
+          161,
+          191
+        ],
+        [
+          192,
+          206
+        ]
+      ],
+      "anchor_vector": [
+        13.567854933965773,
+        17.289239211309525,
+        16.260807291666666,
+        13.009677269345238,
+        20.7890625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book’s title is prominently displayed in large, green serif font across the upper half of the cover, reading “Walking and Eating in Tuscany and Umbria.”  \n2. The subtitle “2005 Edition” is centered beneath the main title in smaller, italicized text, indicating the publication year and version.  \n3. The authors’ names, “James Lasdun & Pia Davis,” are printed in green below the subtitle, matching the title’s font style and color for visual cohesion.  \n4. The cover image depicts a sunlit Tuscan hillside with cypress trees, a winding road, and vineyards, visually reinforcing the regions mentioned in the title.  \n5. The Penguin logo is subtly placed in the bottom-right corner, confirming the publisher and adding to the book’s branding and design integrity.  \n\n<final>Walking and Eating in Tuscany and Umbria</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the title in large, green serif font, making it the most visually dominant text element.  \n2. The title reads “Walking and Eating in Tuscany and Umbria,” indicating a travel guide focused on culinary and walking experiences in those Italian regions.  \n3. The phrase “2005 Edition” is printed below the main title, specifying the publication year of this particular version.  \n4. The authors’ names, “James Lasdun & Pia Davis,” are clearly visible beneath the edition information, identifying the creators of the guide.  \n5. The background image of rolling hills, cypress trees, and a winding road reinforces the book’s theme of exploring rural Italy through walking and dining.  \n\n<final>Walking and Eating in Tuscany and Umbria</final>",
+        "1. The book’s title is prominently displayed in large, green serif font across the upper half of the cover, reading “Walking and Eating in Tuscany and Umbria.”  \n2. The subtitle “2005 Edition” is centered beneath the main title in smaller, italicized text, indicating the publication year and version.  \n3. The authors’ names, “James Lasdun & Pia Davis,” are printed in green below the subtitle, matching the title’s font style and color for visual cohesion.  \n4. The cover image depicts a sunlit Tuscan hillside with cypress trees, a winding road, and vineyards, visually reinforcing the regions mentioned in the title.  \n5. The Penguin logo is subtly placed in the bottom-right corner, confirming the publisher and adding to the book’s branding and design integrity.  \n\n<final>Walking and Eating in Tuscany and Umbria</final>"
+      ],
+      "chunks": [
+        "1. The book’s title is prominently displayed in large, green serif font across the upper half of the cover, reading “Walking and Eating in Tuscany and Umbria.”  \n2.",
+        "The subtitle “2005 Edition” is centered beneath the main title in smaller, italicized text, indicating the publication year and version.",
+        "3. The authors’ names, “James Lasdun & Pia Davis,” are printed in green below the subtitle, matching the title’s font style and color for visual cohesion.",
+        "4. The cover image depicts a sunlit Tuscan hillside with cypress trees, a winding road, and vineyards, visually reinforcing the regions mentioned in the title.",
+        "5. The Penguin logo is subtly placed in the bottom-right corner, confirming the publisher and adding to the book’s branding and design integrity.",
+        "<final>Walking and Eating in Tuscany and Umbria</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          63
+        ],
+        [
+          63,
+          92
+        ],
+        [
+          93,
+          130
+        ],
+        [
+          131,
+          166
+        ],
+        [
+          167,
+          195
+        ],
+        [
+          196,
+          212
+        ]
+      ],
+      "anchor_vector": [
+        14.384595909723028,
+        14.486006783150337,
+        11.766205415271578,
+        14.587803431919642,
+        16.9658203125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The book’s title, “Walking and Eating in Tuscany and Umbria,” clearly indicates a focus on travel, food, and regional exploration, suggesting it belongs to the travel or culinary guide genre.\n\n2. The cover art depicts scenic Tuscan hills, vineyards, and cypress trees, reinforcing the book’s purpose as a guide to visually and experientially engaging with the Italian countryside.\n\n3. The authors’ names, James Lasdun and Pia Davis, are prominently displayed, hinting at a collaborative effort likely blending narrative writing with practical travel advice.\n\n4. The 2005 edition label implies the book is updated with current information, typical of travel guides that require seasonal or location-specific content to remain useful.\n\n5. The Penguin logo at the bottom confirms this is a published guidebook, designed for readers seeking structured, reliable information on walking and dining in specific Italian regions.\n\n<final>Travel and Culinary Guide</final>",
+      "raw_generation": [
+        "1. The book's title, \"Walking and Eating in Tuscany and Umbria,\" suggests a focus on travel and culinary experiences, indicating it belongs to the travel guide genre.  \n2. The authors' names, James Lasdun and Pia Davis, are associated with travel writing, reinforcing the book’s purpose as a guide for tourists.  \n3. The cover image of rolling hills, vineyards, and cypress trees visually represents the scenic landscapes of Tuscany and Umbria, typical of travel literature.  \n4. The mention of the \"2005 Edition\" implies the book is updated with current information, a hallmark of practical travel guides.  \n5. The Penguin logo indicates it is published by a major publisher known for travel and lifestyle books, further confirming its genre as a travel guide.  \n\n<final>Travel Guide</final>",
+        "1. The book’s title, “Walking and Eating in Tuscany and Umbria,” clearly indicates a focus on travel, food, and regional exploration, suggesting it belongs to the travel or culinary guide genre.\n\n2. The cover art depicts scenic Tuscan hills, vineyards, and cypress trees, reinforcing the book’s purpose as a guide to visually and experientially engaging with the Italian countryside.\n\n3. The authors’ names, James Lasdun and Pia Davis, are prominently displayed, hinting at a collaborative effort likely blending narrative writing with practical travel advice.\n\n4. The 2005 edition label implies the book is updated with current information, typical of travel guides that require seasonal or location-specific content to remain useful.\n\n5. The Penguin logo at the bottom confirms this is a published guidebook, designed for readers seeking structured, reliable information on walking and dining in specific Italian regions.\n\n<final>Travel and Culinary Guide</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “Walking and Eating in Tuscany and Umbria,” clearly indicates a focus on travel, food, and regional exploration, suggesting it belongs to the travel or culinary guide genre.",
+        "2. The cover art depicts scenic Tuscan hills, vineyards, and cypress trees, reinforcing the book’s purpose as a guide to visually and experientially engaging with the Italian countryside.",
+        "3. The authors’ names, James Lasdun and Pia Davis, are prominently displayed, hinting at a collaborative effort likely blending narrative writing with practical travel advice.",
+        "4. The 2005 edition label implies the book is updated with current information, typical of travel guides that require seasonal or location-specific content to remain useful.",
+        "5. The Penguin logo at the bottom confirms this is a published guidebook, designed for readers seeking structured, reliable information on walking and dining in specific Italian regions.",
+        "<final>Travel and Culinary Guide</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          67
+        ],
+        [
+          67,
+          106
+        ],
+        [
+          106,
+          141
+        ],
+        [
+          141,
+          175
+        ],
+        [
+          175,
+          208
+        ],
+        [
+          208,
+          219
+        ]
+      ],
+      "anchor_vector": [
+        13.873915216313254,
+        16.099564991041028,
+        13.953666374220143,
+        14.557883522727273,
+        14.844815340909092,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Travel?",
+      "reasoning_text": "1. The book’s title, “Walking and Eating in Tuscany and Umbria,” directly references two renowned Italian regions, indicating a focus on experiential travel through food and nature.  \n2. The cover image displays rolling hills, cypress trees, and vineyards, visually reinforcing the scenic and rural travel destinations covered in the book.  \n3. The authors’ names, James Lasdun and Pia Davis, suggest a collaborative effort likely centered on travel writing, culinary experiences, and cultural exploration.  \n4. The “2005 Edition” label implies the book is a curated guidebook, typically updated for travelers seeking current information on routes and dining.  \n5. The Penguin logo confirms it is a published guide, commonly associated with travel literature, further establishing its relevance to the travel genre.  \n\n<final>Yes</final>",
+      "raw_generation": [
+        "1. The title \"Walking and Eating in Tuscany and Umbria\" explicitly indicates a focus on travel experiences within these Italian regions, combining physical exploration with culinary enjoyment.  \n2. The authors, James Lasdun and Pia Davis, are known for travel writing, and their names on the cover reinforce the book’s travel-oriented content.  \n3. The cover image depicts scenic Tuscan hills, vineyards, and a winding road, visually representing the travel and exploration themes central to the book.  \n4. The 2005 edition label suggests the book is a guide updated for that year, typical of travel publications offering current information for tourists.  \n5. The Penguin logo confirms it is a published guidebook, a format commonly used for travel literature, further solidifying its connection to travel.  \n\n<final>Yes</final>",
+        "1. The book’s title, “Walking and Eating in Tuscany and Umbria,” directly references two renowned Italian regions, indicating a focus on experiential travel through food and nature.  \n2. The cover image displays rolling hills, cypress trees, and vineyards, visually reinforcing the scenic and rural travel destinations covered in the book.  \n3. The authors’ names, James Lasdun and Pia Davis, suggest a collaborative effort likely centered on travel writing, culinary experiences, and cultural exploration.  \n4. The “2005 Edition” label implies the book is a curated guidebook, typically updated for travelers seeking current information on routes and dining.  \n5. The Penguin logo confirms it is a published guide, commonly associated with travel literature, further establishing its relevance to the travel genre.  \n\n<final>Yes</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “Walking and Eating in Tuscany and Umbria,” directly references two renowned Italian regions, indicating a focus on experiential travel through food and nature.",
+        "2. The cover image displays rolling hills, cypress trees, and vineyards, visually reinforcing the scenic and rural travel destinations covered in the book.",
+        "3. The authors’ names, James Lasdun and Pia Davis, suggest a collaborative effort likely centered on travel writing, culinary experiences, and cultural exploration.",
+        "4. The “2005 Edition” label implies the book is a curated guidebook, typically updated for travelers seeking current information on routes and dining.",
+        "5. The Penguin logo confirms it is a published guide, commonly associated with travel literature, further establishing its relevance to the travel genre.",
+        "<final>Yes</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          61
+        ],
+        [
+          62,
+          92
+        ],
+        [
+          93,
+          126
+        ],
+        [
+          127,
+          159
+        ],
+        [
+          160,
+          187
+        ],
+        [
+          188,
+          195
+        ]
+      ],
+      "anchor_vector": [
+        15.565415708423524,
+        14.644005669487848,
+        18.977985361896497,
+        16.46432705026455,
+        11.704799107142858,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Education & Teaching?",
+      "reasoning_text": "1. The book's title, “Walking and Eating in Tuscany and Umbria,” clearly indicates a focus on travel, cuisine, and regional exploration, not academic instruction or pedagogy typically associated with education.  \n2. The authors, James Lasdun and Pia Davis, are known for travel writing and culinary guides, not for developing curricula or teaching methodologies used in educational settings.  \n3. The cover image of rolling hills, vineyards, and cypress trees emphasizes scenic beauty and cultural immersion rather than classroom learning or instructional content.  \n4. The 2005 edition label suggests a guidebook format, aimed at tourists or food enthusiasts, not an academic or educational resource for schools or universities.  \n5. The Penguin logo, often associated with general interest and travel literature, further confirms this is not an educational publication.  \n\n<final> No, this book is not related to Education & Teaching. It is a travel and culinary guide focused on exploring Tuscany and Umbria.",
+      "raw_generation": [
+        "1. The book's title, \"Walking and Eating in Tuscany and Umbria,\" clearly indicates a focus on travel, cuisine, and regional exploration rather than academic instruction or pedagogy.  \n2. The cover image depicts scenic Tuscan landscapes with vineyards and cypress trees, suggesting a guidebook for tourists or food enthusiasts, not an educational curriculum.  \n3. The authors, James Lasdun and Pia Davis, are known for travel writing and culinary guides, not for creating educational materials or teaching methodologies.  \n4. The 2005 edition label implies this is a practical guide updated for that year, reinforcing its purpose as a travel companion rather than an academic text.  \n5. The Penguin logo indicates a general interest or travel publishing imprint, which typically does not specialize in education or teaching resources.  \n\n<final>No</final>",
+        "1. The book's title, “Walking and Eating in Tuscany and Umbria,” clearly indicates a focus on travel, cuisine, and regional exploration, not academic instruction or pedagogy typically associated with education.  \n2. The authors, James Lasdun and Pia Davis, are known for travel writing and culinary guides, not for developing curricula or teaching methodologies used in educational settings.  \n3. The cover image of rolling hills, vineyards, and cypress trees emphasizes scenic beauty and cultural immersion rather than classroom learning or instructional content.  \n4. The 2005 edition label suggests a guidebook format, aimed at tourists or food enthusiasts, not an academic or educational resource for schools or universities.  \n5. The Penguin logo, often associated with general interest and travel literature, further confirms this is not an educational publication.  \n\n<final> No, this book is not related to Education & Teaching. It is a travel and culinary guide focused on exploring Tuscany and Umbria."
+      ],
+      "chunks": [
+        "1. The book's title, “Walking and Eating in Tuscany and Umbria,” clearly indicates a focus on travel, cuisine, and regional exploration, not academic instruction or pedagogy typically associated with education.",
+        "2. The authors, James Lasdun and Pia Davis, are known for travel writing and culinary guides, not for developing curricula or teaching methodologies used in educational settings.",
+        "3. The cover image of rolling hills, vineyards, and cypress trees emphasizes scenic beauty and cultural immersion rather than classroom learning or instructional content.",
+        "4. The 2005 edition label suggests a guidebook format, aimed at tourists or food enthusiasts, not an academic or educational resource for schools or universities.",
+        "5. The Penguin logo, often associated with general interest and travel literature, further confirms this is not an educational publication.",
+        "<final> No, this book is not related to Education & Teaching.",
+        "It is a travel and culinary guide focused on exploring Tuscany and Umbria."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          70
+        ],
+        [
+          71,
+          107
+        ],
+        [
+          108,
+          138
+        ],
+        [
+          139,
+          173
+        ],
+        [
+          174,
+          198
+        ],
+        [
+          199,
+          214
+        ],
+        [
+          214,
+          231
+        ]
+      ],
+      "anchor_vector": [
+        14.769986234511164,
+        14.311415249693628,
+        14.316897164139093,
+        15.147604549632353,
+        14.138212316176471,
+        11.934972426470589,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 295,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 15
+}

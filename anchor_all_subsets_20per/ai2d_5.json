@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "ai2d/images/1995.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat do birds feed on?\n\nOptions:\n- bacteria\n- sunlight\n- earthworms\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows arrows indicating feeding relationships, with one arrow pointing from earthworms directly to birds, suggesting birds consume earthworms as a food source.  \n2. No arrow connects bacteria to birds, meaning birds do not feed on bacteria based on the provided food web illustration.  \n3. Sunlight is depicted as a source of energy for plants but has no direct connection to birds, so birds do not feed on sunlight in this ecosystem.  \n4. Earthworms are shown as a primary consumer of organic matter and fungi, and their position in the food chain places them as prey for birds.  \n5. The arrow from earthworms to birds confirms that birds feed on earthworms, making it the only correct option among the given choices based on the diagram.  \n\n<final>earthworms</final>",
+      "raw_generation": [
+        "1. The diagram shows arrows indicating feeding relationships between organisms, with arrows pointing from the food source to the consumer.  \n2. An arrow originates from “ARTHROPODS Predators” and points directly to “BIRDS,” indicating birds consume these arthropods.  \n3. No arrow connects “BIRDS” to “BACTERIA,” meaning birds do not feed on bacteria according to this food web.  \n4. There is no arrow from “SUNLIGHT” to “BIRDS,” confirming birds do not directly consume sunlight as their food source.  \n5. While “EARTHWORMS” are shown in the diagram, no arrow points from them to “BIRDS,” so they are not depicted as a direct food source for birds in this specific illustration.  \n\n<final>arthropods</final>",
+        "1. The diagram shows arrows indicating feeding relationships, with one arrow pointing from earthworms directly to birds, suggesting birds consume earthworms as a food source.  \n2. No arrow connects bacteria to birds, meaning birds do not feed on bacteria based on the provided food web illustration.  \n3. Sunlight is depicted as a source of energy for plants but has no direct connection to birds, so birds do not feed on sunlight in this ecosystem.  \n4. Earthworms are shown as a primary consumer of organic matter and fungi, and their position in the food chain places them as prey for birds.  \n5. The arrow from earthworms to birds confirms that birds feed on earthworms, making it the only correct option among the given choices based on the diagram.  \n\n<final>earthworms</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows arrows indicating feeding relationships, with one arrow pointing from earthworms directly to birds, suggesting birds consume earthworms as a food source.",
+        "2. No arrow connects bacteria to birds, meaning birds do not feed on bacteria based on the provided food web illustration.",
+        "3. Sunlight is depicted as a source of energy for plants but has no direct connection to birds, so birds do not feed on sunlight in this ecosystem.",
+        "4. Earthworms are shown as a primary consumer of organic matter and fungi, and their position in the food chain places them as prey for birds.",
+        "5. The arrow from earthworms to birds confirms that birds feed on earthworms, making it the only correct option among the given choices based on the diagram.",
+        "<final>earthworms</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          68,
+          101
+        ],
+        [
+          102,
+          126
+        ],
+        [
+          127,
+          159
+        ],
+        [
+          160,
+          191
+        ],
+        [
+          192,
+          226
+        ],
+        [
+          227,
+          236
+        ]
+      ],
+      "anchor_vector": [
+        9.03209063284462,
+        10.10002597886853,
+        10.051764950211714,
+        9.435977711397058,
+        7.432291666666667,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 37,
+  "subset": "ai2d",
+  "subset_local_idx": 5
+}

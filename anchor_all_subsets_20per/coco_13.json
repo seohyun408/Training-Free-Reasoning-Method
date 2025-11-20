@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "coco/train2017/000000327209.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow does the boy in the light blue jacket feel?\nA. scared\nB. upset\nC. amused\nD. angry\nAnswer with the option's letter from the given choices directly.",
+      "reasoning_text": "1. The boy in the light blue jacket has a relaxed posture, indicating he is not tense or anxious, which rules out feeling scared or upset.  \n2. His facial expression shows a slight smile and relaxed eyes, suggesting he is enjoying the interaction rather than being angry.  \n3. He is looking at the girl with interest, which indicates he is engaged and likely amused by her actions or words.  \n4. The casual setting and his relaxed body language support the idea he is comfortable and entertained by the moment.  \n5. The girl’s animated expression and his calm, smiling reaction align with him being amused rather than any other listed emotion.  \n<final>C</final>",
+      "raw_generation": [
+        "1. The boy in the light blue jacket is smiling broadly, indicating a positive emotional state.  \n2. His relaxed posture and direct gaze toward the girl suggest comfort and ease in the interaction.  \n3. The absence of tense facial muscles or furrowed brow rules out fear or anger as possible emotions.  \n4. His expression lacks signs of distress or sadness, making “upset” an unlikely description.  \n5. The combination of his smile and engaged body language strongly suggests amusement or enjoyment of the moment.  \n\n<final>C</final>",
+        "1. The boy in the light blue jacket has a relaxed posture, indicating he is not tense or anxious, which rules out feeling scared or upset.  \n2. His facial expression shows a slight smile and relaxed eyes, suggesting he is enjoying the interaction rather than being angry.  \n3. He is looking at the girl with interest, which indicates he is engaged and likely amused by her actions or words.  \n4. The casual setting and his relaxed body language support the idea he is comfortable and entertained by the moment.  \n5. The girl’s animated expression and his calm, smiling reaction align with him being amused rather than any other listed emotion.  \n<final>C</final>"
+      ],
+      "chunks": [
+        "1. The boy in the light blue jacket has a relaxed posture, indicating he is not tense or anxious, which rules out feeling scared or upset.",
+        "2. His facial expression shows a slight smile and relaxed eyes, suggesting he is enjoying the interaction rather than being angry.",
+        "3. He is looking at the girl with interest, which indicates he is engaged and likely amused by her actions or words.",
+        "4. The casual setting and his relaxed body language support the idea he is comfortable and entertained by the moment.",
+        "5. The girl’s animated expression and his calm, smiling reaction align with him being amused rather than any other listed emotion.",
+        "<final>C</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          86,
+          116
+        ],
+        [
+          117,
+          141
+        ],
+        [
+          142,
+          167
+        ],
+        [
+          168,
+          190
+        ],
+        [
+          191,
+          216
+        ],
+        [
+          217,
+          223
+        ]
+      ],
+      "anchor_vector": [
+        7.638097918886126,
+        13.751999733664773,
+        9.704409623579545,
+        7.076234537760417,
+        12.891438802083334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 51,
+  "subset": "coco",
+  "subset_local_idx": 13
+}

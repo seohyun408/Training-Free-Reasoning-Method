@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/a95676946ff68906.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: AVIVASTADIUM, 3, TEAM, PROUD, SUPPORTER, IRISH, FOOTBALL, 0:00, Republic, of, 0, WELCOME, WEL, TO, THE, REPUBLIC, OF, IRELAND'S, Ireland, NEW, MANAGEMENT, TEAM, MARTIN, O'NEILL, &, ROY, KEANE, Latvia, 0",
+      "reasoning_text": "<1> The AVIVA STADIUM scoreboard welcomes fans to the Republic of Ireland’s new management team, Martin O’Neill and Roy Keane, as the match against Latvia begins at 0:00 with a 0-0 scoreline.  \n<2> A large screen prominently features the 3 logo, declaring them a proud supporter of the Irish football team, emphasizing national pride before kickoff.  \n<3> Both Martin O’Neill and Roy Keane are shown in matching green jackets with the Irish crest, symbolizing unity and professionalism for the national team’s fresh leadership.  \n<4> The scoreboard’s clean digital layout clearly displays the teams, scores, and time, ensuring fans have instant access to match details without confusion.  \n<5> Spectators visible in the foreground suggest the stadium is filling up for this historic managerial debut, creating an electric atmosphere for Ireland’s new coaching duo.  \n<final>The AVIVA STADIUM scoreboard introduces Martin O’Neill and Roy Keane as Ireland’s new management team, with the match against Latvia at 0:00 and a 0-0 scoreline.",
+      "raw_generation": [
+        "<reasoning>\n1. The large green scoreboard at Aviva Stadium prominently displays a welcome message for the Republic of Ireland's new management team, Martin O'Neill and Roy Keane.\n2. The scoreboard shows the match is at 0:00 with both teams, Republic of Ireland and Latvia, having zero goals scored.\n3. The image features a photo of Martin O'Neill and Roy Keane in matching dark jackets with the Irish Football Association crest visible on their chests.\n4. The right side of the screen includes branding for \"3\" as a proud supporter of the Irish football team, reinforcing the national pride theme.\n5. The scoreboard's design and content suggest this is a pre-match introduction, likely during a friendly or international fixture at the stadium.\n</reasoning>\n<final>Aviva Stadium's scoreboard welcomes Martin O'Neill and Roy Keane as the Republic of Ireland's new management team before a 0-0 match against Latvia.</final>",
+        "<1> The AVIVA STADIUM scoreboard welcomes fans to the Republic of Ireland’s new management team, Martin O’Neill and Roy Keane, as the match against Latvia begins at 0:00 with a 0-0 scoreline.  \n<2> A large screen prominently features the 3 logo, declaring them a proud supporter of the Irish football team, emphasizing national pride before kickoff.  \n<3> Both Martin O’Neill and Roy Keane are shown in matching green jackets with the Irish crest, symbolizing unity and professionalism for the national team’s fresh leadership.  \n<4> The scoreboard’s clean digital layout clearly displays the teams, scores, and time, ensuring fans have instant access to match details without confusion.  \n<5> Spectators visible in the foreground suggest the stadium is filling up for this historic managerial debut, creating an electric atmosphere for Ireland’s new coaching duo.  \n<final>The AVIVA STADIUM scoreboard introduces Martin O’Neill and Roy Keane as Ireland’s new management team, with the match against Latvia at 0:00 and a 0-0 scoreline."
+      ],
+      "chunks": [
+        "<1> The AVIVA STADIUM scoreboard welcomes fans to the Republic of Ireland’s new management team, Martin O’Neill and Roy Keane, as the match against Latvia begins at 0:00 with a 0-0 scoreline.",
+        "<2> A large screen prominently features the 3 logo, declaring them a proud supporter of the Irish football team, emphasizing national pride before kickoff.",
+        "<3> Both Martin O’Neill and Roy Keane are shown in matching green jackets with the Irish crest, symbolizing unity and professionalism for the national team’s fresh leadership.",
+        "<4> The scoreboard’s clean digital layout clearly displays the teams, scores, and time, ensuring fans have instant access to match details without confusion.",
+        "<5> Spectators visible in the foreground suggest the stadium is filling up for this historic managerial debut, creating an electric atmosphere for Ireland’s new coaching duo.",
+        "<final>The AVIVA STADIUM scoreboard introduces Martin O’Neill and Roy Keane as Ireland’s new management team, with the match against Latvia at 0:00 and a 0-0 scoreline."
+      ],
+      "chunk_token_ranges": [
+        [
+          206,
+          258
+        ],
+        [
+          259,
+          289
+        ],
+        [
+          290,
+          326
+        ],
+        [
+          327,
+          357
+        ],
+        [
+          358,
+          390
+        ],
+        [
+          391,
+          436
+        ]
+      ],
+      "anchor_vector": [
+        11.045763456556532,
+        15.906622907850478,
+        11.320063364947282,
+        13.02748506334093,
+        13.010689968532986,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1473,
+  "subset": "textvqa",
+  "subset_local_idx": 15
+}

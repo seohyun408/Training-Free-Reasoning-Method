@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/8b2f4b60ec675cb9.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: Edy, CocaCola, ., MILTO, P, EdyTANAO, Fanta, az, CocaCola, C, Cmode, ce, S",
+      "reasoning_text": "<1> A red Coca-Cola vending machine in Japan offers a variety of drinks, including Fanta, Georgia, and Aquarius, with payment options like Edy and cash.  \n<2> The machine's top shelf displays canned beverages with Japanese labels, priced at ¥150 each, alongside a \"Edy 使えます\" sticker indicating electronic payment support.  \n<3> The middle section features bottled water and flavored drinks like Aquarius and Fanta, with prices ranging from ¥100 to ¥150, clearly marked under each item.  \n<4> The bottom shelf holds Coca-Cola cans and other sodas, with a blue payment panel and a black coin slot system for users to select their drinks.  \n<5> A small sign indicates the machine’s location in Hokkaido, Japan, with a \"Cmode\" logo and recycling instructions visible near the bottom.  \n<final> A Japanese Coca-Cola vending machine with Edy payment support offers a wide selection of drinks, including Fanta, Aquarius, and Coca-Cola, priced between ¥100 and ¥150.",
+      "raw_generation": [
+        "1. The red Coca-Cola vending machine offers a variety of beverages including Fanta, Coca-Cola, and Georgia, with payment options like Edy and cash.\n2. The machine features a prominent Coca-Cola logo and a Cmode branding on its lower front panel.\n3. The top shelf displays canned drinks such as Georgia and MILTO, while the middle shelves hold bottled water and flavored drinks.\n4. The lower section contains classic Coca-Cola cans, Fanta bottles, and other soft drinks with price tags in yen.\n5. The machine includes a coin slot, card reader, and a small screen for selecting drinks, with a note indicating it accepts Edy payments.\n\n<final>Red Coca-Cola vending machine stocked with various beverages and payment options including Edy, featuring a prominent logo and Cmode branding.</final>",
+        "<1> A red Coca-Cola vending machine in Japan offers a variety of drinks, including Fanta, Georgia, and Aquarius, with payment options like Edy and cash.  \n<2> The machine's top shelf displays canned beverages with Japanese labels, priced at ¥150 each, alongside a \"Edy 使えます\" sticker indicating electronic payment support.  \n<3> The middle section features bottled water and flavored drinks like Aquarius and Fanta, with prices ranging from ¥100 to ¥150, clearly marked under each item.  \n<4> The bottom shelf holds Coca-Cola cans and other sodas, with a blue payment panel and a black coin slot system for users to select their drinks.  \n<5> A small sign indicates the machine’s location in Hokkaido, Japan, with a \"Cmode\" logo and recycling instructions visible near the bottom.  \n<final> A Japanese Coca-Cola vending machine with Edy payment support offers a wide selection of drinks, including Fanta, Aquarius, and Coca-Cola, priced between ¥100 and ¥150."
+      ],
+      "chunks": [
+        "<1> A red Coca-Cola vending machine in Japan offers a variety of drinks, including Fanta, Georgia, and Aquarius, with payment options like Edy and cash.",
+        "<2> The machine's top shelf displays canned beverages with Japanese labels, priced at ¥150 each, alongside a \"Edy 使えます\" sticker indicating electronic payment support.",
+        "<3> The middle section features bottled water and flavored drinks like Aquarius and Fanta, with prices ranging from ¥100 to ¥150, clearly marked under each item.",
+        "<4> The bottom shelf holds Coca-Cola cans and other sodas, with a blue payment panel and a black coin slot system for users to select their drinks.",
+        "<5> A small sign indicates the machine’s location in Hokkaido, Japan, with a \"Cmode\" logo and recycling instructions visible near the bottom.",
+        "<final> A Japanese Coca-Cola vending machine with Edy payment support offers a wide selection of drinks, including Fanta, Aquarius, and Coca-Cola, priced between ¥100 and ¥150."
+      ],
+      "chunk_token_ranges": [
+        [
+          114,
+          150
+        ],
+        [
+          151,
+          189
+        ],
+        [
+          190,
+          229
+        ],
+        [
+          230,
+          263
+        ],
+        [
+          264,
+          298
+        ],
+        [
+          299,
+          343
+        ]
+      ],
+      "anchor_vector": [
+        8.197660432344367,
+        7.867400687858596,
+        8.769658778298842,
+        8.685638182940966,
+        9.194524591619318,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1622,
+  "subset": "textvqa",
+  "subset_local_idx": 16
+}

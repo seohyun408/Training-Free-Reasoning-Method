@@ -1,0 +1,682 @@
+{
+  "total_pairs": 12,
+  "successful_pairs": 12,
+  "image_path": "gqa/images/2410961.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nDoes the arrow have a different color than the sign?",
+      "reasoning_text": "1. The arrow is white, contrasting with the dark green background of the sign, making it stand out visually for direction.  \n2. The sign’s green hue is solid and uniform, while the arrow is a stark white, ensuring high visibility for drivers.  \n3. The arrow’s white color matches the white text on the sign, maintaining visual consistency in the signage’s design.  \n4. The arrow’s placement within the sign is clearly defined, with no blending or shadowing that would make it appear to share the sign’s color.  \n5. The arrow and sign are intentionally designed with contrasting colors to ensure readability and clear directional guidance for pedestrians or drivers.  \n\n<final>Yes, the arrow is white, while the sign is green, making them distinctly different colors.</final>",
+      "raw_generation": [
+        "1. The arrow is white and points to the right, contrasting with the dark background of the sign.  \n2. The sign itself is dark, possibly black or dark gray, with white text and symbols.  \n3. The arrow is clearly visible against the sign’s background, indicating a directional cue.  \n4. The white arrow and white text on the sign share the same color, creating visual consistency.  \n5. The arrow’s color matches the text on the sign, making it part of the same design scheme.  \n\n<final>Yes, the arrow has a different color than the sign.</final>",
+        "1. The arrow is white, contrasting with the dark green background of the sign, making it stand out visually for direction.  \n2. The sign’s green hue is solid and uniform, while the arrow is a stark white, ensuring high visibility for drivers.  \n3. The arrow’s white color matches the white text on the sign, maintaining visual consistency in the signage’s design.  \n4. The arrow’s placement within the sign is clearly defined, with no blending or shadowing that would make it appear to share the sign’s color.  \n5. The arrow and sign are intentionally designed with contrasting colors to ensure readability and clear directional guidance for pedestrians or drivers.  \n\n<final>Yes, the arrow is white, while the sign is green, making them distinctly different colors.</final>"
+      ],
+      "chunks": [
+        "1. The arrow is white, contrasting with the dark green background of the sign, making it stand out visually for direction.",
+        "2. The sign’s green hue is solid and uniform, while the arrow is a stark white, ensuring high visibility for drivers.",
+        "3. The arrow’s white color matches the white text on the sign, maintaining visual consistency in the signage’s design.",
+        "4. The arrow’s placement within the sign is clearly defined, with no blending or shadowing that would make it appear to share the sign’s color.",
+        "5. The arrow and sign are intentionally designed with contrasting colors to ensure readability and clear directional guidance for pedestrians or drivers.",
+        "<final>Yes, the arrow is white, while the sign is green, making them distinctly different colors.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          55
+        ],
+        [
+          56,
+          82
+        ],
+        [
+          83,
+          107
+        ],
+        [
+          108,
+          139
+        ],
+        [
+          140,
+          164
+        ],
+        [
+          165,
+          189
+        ]
+      ],
+      "anchor_vector": [
+        13.525651061860268,
+        16.23769046414283,
+        16.414900803651435,
+        13.805564880371094,
+        12.422004699707031,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat color do you think the arrow is?",
+      "reasoning_text": "1. The arrow is visible on a green signboard positioned above the sidewalk, near the storefront with the red awning.  \n2. The arrow points to the right and is painted in a light, contrasting color that stands out against the dark green background.  \n3. The arrow’s color appears to be white, making it easily readable for pedestrians and drivers navigating the area.  \n4. The white arrow is part of directional signage, likely guiding traffic or foot traffic toward a specific location or entrance.  \n5. The arrow’s placement and clarity suggest it is designed for visibility, ensuring people can follow directions without confusion.  \n\n<final>White</final>",
+      "raw_generation": [
+        "1. The arrow is visible on a green signboard positioned above the sidewalk, indicating a directional path for vehicles or pedestrians.  \n2. The arrow’s color contrasts sharply with the green background, making it easily noticeable to viewers passing by.  \n3. The arrow appears to be white, a common choice for high-visibility signage in urban environments to ensure clarity.  \n4. Its placement near a street corner suggests it directs traffic flow, likely pointing toward a specific route or turning lane.  \n5. The arrow’s design is simple and uncluttered, ensuring it remains legible even from a distance or under varying lighting conditions.  \n\n<final>white</final>",
+        "1. The arrow is visible on a green signboard positioned above the sidewalk, near the storefront with the red awning.  \n2. The arrow points to the right and is painted in a light, contrasting color that stands out against the dark green background.  \n3. The arrow’s color appears to be white, making it easily readable for pedestrians and drivers navigating the area.  \n4. The white arrow is part of directional signage, likely guiding traffic or foot traffic toward a specific location or entrance.  \n5. The arrow’s placement and clarity suggest it is designed for visibility, ensuring people can follow directions without confusion.  \n\n<final>White</final>"
+      ],
+      "chunks": [
+        "1. The arrow is visible on a green signboard positioned above the sidewalk, near the storefront with the red awning.",
+        "2. The arrow points to the right and is painted in a light, contrasting color that stands out against the dark green background.",
+        "3. The arrow’s color appears to be white, making it easily readable for pedestrians and drivers navigating the area.",
+        "4. The white arrow is part of directional signage, likely guiding traffic or foot traffic toward a specific location or entrance.",
+        "5. The arrow’s placement and clarity suggest it is designed for visibility, ensuring people can follow directions without confusion.",
+        "<final>White</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          51
+        ],
+        [
+          52,
+          78
+        ],
+        [
+          79,
+          102
+        ],
+        [
+          103,
+          127
+        ],
+        [
+          128,
+          151
+        ],
+        [
+          152,
+          159
+        ]
+      ],
+      "anchor_vector": [
+        12.609605395807204,
+        11.488576742926492,
+        15.158975141800381,
+        19.87720788043478,
+        13.915736607142858,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the man on the right or on the left?",
+      "reasoning_text": "1. The man is positioned on the right side of the image, riding a motorcycle with a rear cargo rack.  \n2. He wears a pink cap and a white t-shirt with a graphic design, visible from behind.  \n3. His motorcycle’s rear wheel and rack are clearly visible, contrasting with the road and sidewalk.  \n4. The man is positioned to the right of another motorcyclist wearing an orange vest and helmet.  \n5. His posture and direction indicate he is moving forward along the street, aligned with the right lane.  \n\n<final> The man is on the right.",
+      "raw_generation": [
+        "1. The image shows two main individuals on motorcycles, positioned side by side on a street.  \n2. The man wearing a pink cap and a white t-shirt is located on the right side of the frame.  \n3. The other individual, wearing an orange vest and a helmet, is on the left side of the frame.  \n4. The man in the pink cap is riding a motorcycle with a rear cargo rack, while the other rider is on a smaller scooter.  \n5. Based on their positions relative to the viewer, the man in the pink cap is clearly on the right side of the image.  \n\n<final>Right</final>",
+        "1. The man is positioned on the right side of the image, riding a motorcycle with a rear cargo rack.  \n2. He wears a pink cap and a white t-shirt with a graphic design, visible from behind.  \n3. His motorcycle’s rear wheel and rack are clearly visible, contrasting with the road and sidewalk.  \n4. The man is positioned to the right of another motorcyclist wearing an orange vest and helmet.  \n5. His posture and direction indicate he is moving forward along the street, aligned with the right lane.  \n\n<final> The man is on the right."
+      ],
+      "chunks": [
+        "1. The man is positioned on the right side of the image, riding a motorcycle with a rear cargo rack.",
+        "2. He wears a pink cap and a white t-shirt with a graphic design, visible from behind.",
+        "3. His motorcycle’s rear wheel and rack are clearly visible, contrasting with the road and sidewalk.",
+        "4. The man is positioned to the right of another motorcyclist wearing an orange vest and helmet.",
+        "5. His posture and direction indicate he is moving forward along the street, aligned with the right lane.",
+        "<final> The man is on the right."
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          53
+        ],
+        [
+          54,
+          75
+        ],
+        [
+          76,
+          96
+        ],
+        [
+          97,
+          118
+        ],
+        [
+          119,
+          140
+        ],
+        [
+          141,
+          151
+        ]
+      ],
+      "anchor_vector": [
+        15.292276785714284,
+        14.28072204589844,
+        12.858632114955357,
+        13.623846726190475,
+        15.330078125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nThe graffiti is on what?",
+      "reasoning_text": "1. The graffiti is visible on the side of a blue truck parked on the right side of the street, near the curb.  \n2. The truck’s side panel displays colorful, stylized artwork, which is characteristic of graffiti.  \n3. The graffiti appears to be painted directly onto the truck’s metal surface, likely using spray paint.  \n4. The artwork includes bright, abstract shapes and possibly text or symbols, typical of urban street art.  \n5. The truck is positioned behind a motorcycle and in front of a building with a red awning, placing the graffiti in a busy street environment.  \n\n<final>The graffiti is on the side of a blue truck parked on the right side of the street.</final>",
+      "raw_generation": [
+        "1. The graffiti is visible on the side of a dark-colored vehicle, likely a truck or van, parked on the right side of the street.  \n2. The vehicle’s side panel features colorful, stylized artwork with a prominent circular design and bright hues.  \n3. The graffiti appears to be painted directly onto the metal surface of the vehicle’s body, indicating it is not a sticker or temporary marking.  \n4. The design includes abstract shapes and possibly text or symbols, though the exact details are not fully legible from this angle.  \n5. The vehicle’s rear wheel and part of its bumper are visible, confirming the graffiti is located on the side panel near the rear of the vehicle.  \n\n<final>The graffiti is on the side of a dark-colored truck or van parked on the right side of the street.</final>",
+        "1. The graffiti is visible on the side of a blue truck parked on the right side of the street, near the curb.  \n2. The truck’s side panel displays colorful, stylized artwork, which is characteristic of graffiti.  \n3. The graffiti appears to be painted directly onto the truck’s metal surface, likely using spray paint.  \n4. The artwork includes bright, abstract shapes and possibly text or symbols, typical of urban street art.  \n5. The truck is positioned behind a motorcycle and in front of a building with a red awning, placing the graffiti in a busy street environment.  \n\n<final>The graffiti is on the side of a blue truck parked on the right side of the street.</final>"
+      ],
+      "chunks": [
+        "1. The graffiti is visible on the side of a blue truck parked on the right side of the street, near the curb.",
+        "2. The truck’s side panel displays colorful, stylized artwork, which is characteristic of graffiti.",
+        "3. The graffiti appears to be painted directly onto the truck’s metal surface, likely using spray paint.",
+        "4. The artwork includes bright, abstract shapes and possibly text or symbols, typical of urban street art.",
+        "5. The truck is positioned behind a motorcycle and in front of a building with a red awning, placing the graffiti in a busy street environment.",
+        "<final>The graffiti is on the side of a blue truck parked on the right side of the street.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          46
+        ],
+        [
+          47,
+          67
+        ],
+        [
+          68,
+          89
+        ],
+        [
+          90,
+          111
+        ],
+        [
+          112,
+          142
+        ],
+        [
+          143,
+          166
+        ]
+      ],
+      "anchor_vector": [
+        11.815002534917669,
+        14.512127369629917,
+        15.62419098300552,
+        15.514863564311593,
+        17.464673913043477,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the man wearing?",
+      "reasoning_text": "1. The man is wearing a white t-shirt with a graphic design on the back, featuring a cartoon-like figure and text, paired with black shorts that end above his knees.  \n2. He has a pink baseball cap on his head, tilted slightly backward, which casts a shadow over his face and neck.  \n3. His footwear consists of brown flip-flops with thick soles, suitable for casual street wear and warm weather.  \n4. A light-colored towel or cloth is draped over the rear rack of his motorcycle, partially covering the cargo or equipment he is transporting.  \n5. The man’s posture suggests he is riding a motorcycle with a rear-mounted cargo rack, indicating he is likely commuting or transporting goods.  \n<final> The man is wearing a white graphic t-shirt, black shorts, a pink cap, and brown flip-flops while riding a motorcycle.",
+      "raw_generation": [
+        "1. The man is wearing a pink baseball cap on his head, which stands out against his dark shirt.  \n2. He has on a white t-shirt with a graphic design on the back, featuring a blue and silver motorcycle.  \n3. His lower body is covered by black shorts that end above his knees, suitable for riding.  \n4. He is wearing open-toed sandals on his feet, typical footwear for warm weather or casual riding.  \n5. A thin, dark strap, possibly from a bag or harness, is visible over his right shoulder, suggesting he may be carrying gear.  \n\n<final>The man is wearing a pink cap, white graphic t-shirt, black shorts, and sandals.</final>",
+        "1. The man is wearing a white t-shirt with a graphic design on the back, featuring a cartoon-like figure and text, paired with black shorts that end above his knees.  \n2. He has a pink baseball cap on his head, tilted slightly backward, which casts a shadow over his face and neck.  \n3. His footwear consists of brown flip-flops with thick soles, suitable for casual street wear and warm weather.  \n4. A light-colored towel or cloth is draped over the rear rack of his motorcycle, partially covering the cargo or equipment he is transporting.  \n5. The man’s posture suggests he is riding a motorcycle with a rear-mounted cargo rack, indicating he is likely commuting or transporting goods.  \n<final> The man is wearing a white graphic t-shirt, black shorts, a pink cap, and brown flip-flops while riding a motorcycle."
+      ],
+      "chunks": [
+        "1. The man is wearing a white t-shirt with a graphic design on the back, featuring a cartoon-like figure and text, paired with black shorts that end above his knees.",
+        "2. He has a pink baseball cap on his head, tilted slightly backward, which casts a shadow over his face and neck.",
+        "3. His footwear consists of brown flip-flops with thick soles, suitable for casual street wear and warm weather.",
+        "4. A light-colored towel or cloth is draped over the rear rack of his motorcycle, partially covering the cargo or equipment he is transporting.",
+        "5. The man’s posture suggests he is riding a motorcycle with a rear-mounted cargo rack, indicating he is likely commuting or transporting goods.",
+        "<final> The man is wearing a white graphic t-shirt, black shorts, a pink cap, and brown flip-flops while riding a motorcycle."
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          56
+        ],
+        [
+          57,
+          83
+        ],
+        [
+          84,
+          108
+        ],
+        [
+          109,
+          137
+        ],
+        [
+          138,
+          166
+        ],
+        [
+          167,
+          197
+        ]
+      ],
+      "anchor_vector": [
+        14.363986521291206,
+        14.555001104445683,
+        15.95771329365079,
+        13.663118489583333,
+        13.748763020833334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the person that is riding wearing?",
+      "reasoning_text": "1. The rider is wearing a pink cap, a white t-shirt with a graphic design on the back, black shorts, and flip-flops, visible from behind as they ride the motorcycle.  \n2. The t-shirt features a graphic of a motorcycle engine, suggesting the rider’s interest in motorcycling or mechanics, and it is paired with casual shorts.  \n3. The rider’s footwear consists of simple, open-toed flip-flops, indicating a relaxed, possibly hot, urban environment where comfort is prioritized over formal attire.  \n4. The pink cap adds a pop of color to the outfit and may serve as sun protection or a personal style statement, contrasting with the neutral tones of the shirt and shorts.  \n5. The overall attire, including the cap, t-shirt, shorts, and flip-flops, is typical for warm-weather urban commuting, allowing freedom of movement and easy ventilation.  \n\n<final> The person is wearing a pink cap, a white graphic t-shirt, black shorts, and flip-flops.",
+      "raw_generation": [
+        "1. The rider is wearing a white t-shirt with a graphic design on the back, featuring a blue and silver motorcycle illustration.  \n2. They have on black shorts that end above the knee, paired with dark-colored flip-flops.  \n3. A pink baseball cap is worn backward on their head, partially obscuring their hair.  \n4. The rider’s left arm is visible, showing a dark-colored sleeveless shirt underneath the t-shirt.  \n5. A white towel or cloth is draped over the rear rack of the motorcycle, near the rider’s right side.  \n\n<final>The rider is wearing a white graphic t-shirt, black shorts, a pink cap, and flip-flops.</final>",
+        "1. The rider is wearing a pink cap, a white t-shirt with a graphic design on the back, black shorts, and flip-flops, visible from behind as they ride the motorcycle.  \n2. The t-shirt features a graphic of a motorcycle engine, suggesting the rider’s interest in motorcycling or mechanics, and it is paired with casual shorts.  \n3. The rider’s footwear consists of simple, open-toed flip-flops, indicating a relaxed, possibly hot, urban environment where comfort is prioritized over formal attire.  \n4. The pink cap adds a pop of color to the outfit and may serve as sun protection or a personal style statement, contrasting with the neutral tones of the shirt and shorts.  \n5. The overall attire, including the cap, t-shirt, shorts, and flip-flops, is typical for warm-weather urban commuting, allowing freedom of movement and easy ventilation.  \n\n<final> The person is wearing a pink cap, a white graphic t-shirt, black shorts, and flip-flops."
+      ],
+      "chunks": [
+        "1. The rider is wearing a pink cap, a white t-shirt with a graphic design on the back, black shorts, and flip-flops, visible from behind as they ride the motorcycle.",
+        "2. The t-shirt features a graphic of a motorcycle engine, suggesting the rider’s interest in motorcycling or mechanics, and it is paired with casual shorts.",
+        "3. The rider’s footwear consists of simple, open-toed flip-flops, indicating a relaxed, possibly hot, urban environment where comfort is prioritized over formal attire.",
+        "4. The pink cap adds a pop of color to the outfit and may serve as sun protection or a personal style statement, contrasting with the neutral tones of the shirt and shorts.",
+        "5. The overall attire, including the cap, t-shirt, shorts, and flip-flops, is typical for warm-weather urban commuting, allowing freedom of movement and easy ventilation.",
+        "<final> The person is wearing a pink cap, a white graphic t-shirt, black shorts, and flip-flops."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          65
+        ],
+        [
+          66,
+          99
+        ],
+        [
+          100,
+          135
+        ],
+        [
+          136,
+          172
+        ],
+        [
+          173,
+          210
+        ],
+        [
+          211,
+          236
+        ]
+      ],
+      "anchor_vector": [
+        14.174649347450128,
+        15.26968130379263,
+        15.354012762762764,
+        14.221744087837838,
+        15.13109375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the graffiti on?",
+      "reasoning_text": "1. The graffiti is painted on the side panel of a blue and yellow truck parked on the right side of the street, visible behind the motorcycle riders.  \n2. The graffiti features bold, colorful designs, including a large circular motif with vibrant hues and abstract shapes that contrast with the truck’s metallic surface.  \n3. The truck’s rear wheel and fender are partially visible beneath the graffiti, indicating the artwork is located near the lower portion of the vehicle’s body.  \n4. The graffiti’s placement near the truck’s rear suggests it might be a custom or promotional design, possibly related to a local business or event.  \n5. The truck’s visible license plate and faded paint around the graffiti indicate the vehicle has been in use for some time, adding context to the artwork’s placement.  \n\n<final>There is no graffiti on the image; the blue and yellow truck has decorative artwork, not graffiti.</final>",
+      "raw_generation": [
+        "1. The graffiti is visible on the side of a blue truck parked on the right side of the street, near the curb.  \n2. The truck’s side panel features colorful, stylized artwork with a circular design and bright hues.  \n3. The graffiti appears to be painted directly onto the truck’s metal surface, likely as a form of street art or advertisement.  \n4. The design includes a yellow sun-like motif with red and green accents, suggesting a cultural or commercial theme.  \n5. The truck’s rear wheel and fender are partially visible, confirming the graffiti is on the truck’s bodywork rather than a separate object.  \n\n<final>graffiti on the side of a blue truck</final>",
+        "1. The graffiti is painted on the side panel of a blue and yellow truck parked on the right side of the street, visible behind the motorcycle riders.  \n2. The graffiti features bold, colorful designs, including a large circular motif with vibrant hues and abstract shapes that contrast with the truck’s metallic surface.  \n3. The truck’s rear wheel and fender are partially visible beneath the graffiti, indicating the artwork is located near the lower portion of the vehicle’s body.  \n4. The graffiti’s placement near the truck’s rear suggests it might be a custom or promotional design, possibly related to a local business or event.  \n5. The truck’s visible license plate and faded paint around the graffiti indicate the vehicle has been in use for some time, adding context to the artwork’s placement.  \n\n<final>There is no graffiti on the image; the blue and yellow truck has decorative artwork, not graffiti.</final>"
+      ],
+      "chunks": [
+        "1. The graffiti is painted on the side panel of a blue and yellow truck parked on the right side of the street, visible behind the motorcycle riders.",
+        "2. The graffiti features bold, colorful designs, including a large circular motif with vibrant hues and abstract shapes that contrast with the truck’s metallic surface.",
+        "3. The truck’s rear wheel and fender are partially visible beneath the graffiti, indicating the artwork is located near the lower portion of the vehicle’s body.",
+        "4. The graffiti’s placement near the truck’s rear suggests it might be a custom or promotional design, possibly related to a local business or event.",
+        "5. The truck’s visible license plate and faded paint around the graffiti indicate the vehicle has been in use for some time, adding context to the artwork’s placement.",
+        "<final>There is no graffiti on the image; the blue and yellow truck has decorative artwork, not graffiti.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          51
+        ],
+        [
+          52,
+          82
+        ],
+        [
+          83,
+          115
+        ],
+        [
+          116,
+          146
+        ],
+        [
+          147,
+          180
+        ],
+        [
+          181,
+          206
+        ]
+      ],
+      "anchor_vector": [
+        12.280317521528765,
+        15.293808445785984,
+        11.271094736426768,
+        14.172681107954546,
+        13.890625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is on the door in the scene?",
+      "reasoning_text": "1. The door in the scene is a metallic roll-up shutter door, partially lowered, indicating it is likely part of a storefront or commercial establishment.\n\n2. The door is situated behind a tree trunk and next to a red-and-white curb, suggesting it is on the sidewalk side of the street.\n\n3. Above the door, a red-and-white striped awning extends outward, shading the area and adding to the commercial ambiance of the scene.\n\n4. A blue tarp is draped over the left side of the door, possibly for protection or as a temporary covering, indicating possible work or storage activity.\n\n5. The door’s surface is mostly unadorned except for the visible metal slats and the blue tarp, with no visible signage or branding on the visible portion.\n\n<final>There is a blue tarp draped over part of the metallic roll-up shutter door, which is partially lowered and under a red-and-white awning.</final>",
+      "raw_generation": [
+        "1. The door in the scene is a metal roll-up shutter, commonly used for storefronts or workshops, and it is currently closed.  \n2. The shutter has horizontal slats that are tightly rolled up, indicating the establishment is not currently open for business.  \n3. A blue tarp or cloth is draped over the left side of the shutter, possibly for protection or as a makeshift cover.  \n4. The shutter is mounted on a wooden frame, which shows signs of weathering and age, suggesting it has been in place for some time.  \n5. The door is positioned behind a tree trunk and next to a sidewalk, indicating it is part of a street-side commercial or residential building.  \n\n<final>There is a closed metal roll-up shutter on the door, partially covered by a blue tarp, mounted on a wooden frame behind a tree trunk.</final>",
+        "1. The door in the scene is a metallic roll-up shutter door, partially lowered, indicating it is likely part of a storefront or commercial establishment.\n\n2. The door is situated behind a tree trunk and next to a red-and-white curb, suggesting it is on the sidewalk side of the street.\n\n3. Above the door, a red-and-white striped awning extends outward, shading the area and adding to the commercial ambiance of the scene.\n\n4. A blue tarp is draped over the left side of the door, possibly for protection or as a temporary covering, indicating possible work or storage activity.\n\n5. The door’s surface is mostly unadorned except for the visible metal slats and the blue tarp, with no visible signage or branding on the visible portion.\n\n<final>There is a blue tarp draped over part of the metallic roll-up shutter door, which is partially lowered and under a red-and-white awning.</final>"
+      ],
+      "chunks": [
+        "1. The door in the scene is a metallic roll-up shutter door, partially lowered, indicating it is likely part of a storefront or commercial establishment.",
+        "2. The door is situated behind a tree trunk and next to a red-and-white curb, suggesting it is on the sidewalk side of the street.",
+        "3. Above the door, a red-and-white striped awning extends outward, shading the area and adding to the commercial ambiance of the scene.",
+        "4. A blue tarp is draped over the left side of the door, possibly for protection or as a temporary covering, indicating possible work or storage activity.",
+        "5. The door’s surface is mostly unadorned except for the visible metal slats and the blue tarp, with no visible signage or branding on the visible portion.",
+        "<final>There is a blue tarp draped over part of the metallic roll-up shutter door, which is partially lowered and under a red-and-white awning.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          56
+        ],
+        [
+          56,
+          86
+        ],
+        [
+          86,
+          115
+        ],
+        [
+          115,
+          147
+        ],
+        [
+          147,
+          183
+        ],
+        [
+          183,
+          218
+        ]
+      ],
+      "anchor_vector": [
+        13.856514989459324,
+        14.90793508144435,
+        14.319104003906249,
+        14.659854368179563,
+        14.775558035714285,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 8,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is on the door?",
+      "reasoning_text": "1. The door has a dark blue tarp partially covering its lower half, secured with visible straps along the edges.\n2. Above the tarp, the upper portion of the door is made of metal with horizontal ridges and a weathered appearance.\n3. A red and white striped awning extends over the door, casting shadows on its surface.\n4. The door’s frame is painted gray, showing signs of wear and rust near the base.\n5. No visible locks, handles, or other hardware are present on the door’s surface.\n\n<final>There is a dark blue tarp secured with straps, covering part of the door, which also shows metal ridges and signs of weathering under a red and white awning.</final>",
+      "raw_generation": [
+        "1. The door features a metal roll-down shutter, commonly used for storefronts, which is partially closed and has a corrugated texture.  \n2. Above the shutter, a red and white striped awning extends outward, providing shade and adding visual contrast to the building’s facade.  \n3. A thin wire or cable runs diagonally across the upper portion of the door, possibly for securing the awning or supporting signage.  \n4. The door’s surface appears weathered, with visible signs of wear and tear, suggesting frequent use or exposure to the elements.  \n5. No specific objects, logos, or decorations are clearly visible on the door itself, aside from the functional shutter and awning elements.  \n\n<final>There is a metal roll-down shutter on the door, with a red and white striped awning above it and a diagonal wire running across the top.</final>",
+        "1. The door has a dark blue tarp partially covering its lower half, secured with visible straps along the edges.\n2. Above the tarp, the upper portion of the door is made of metal with horizontal ridges and a weathered appearance.\n3. A red and white striped awning extends over the door, casting shadows on its surface.\n4. The door’s frame is painted gray, showing signs of wear and rust near the base.\n5. No visible locks, handles, or other hardware are present on the door’s surface.\n\n<final>There is a dark blue tarp secured with straps, covering part of the door, which also shows metal ridges and signs of weathering under a red and white awning.</final>"
+      ],
+      "chunks": [
+        "1. The door has a dark blue tarp partially covering its lower half, secured with visible straps along the edges.",
+        "2. Above the tarp, the upper portion of the door is made of metal with horizontal ridges and a weathered appearance.",
+        "3. A red and white striped awning extends over the door, casting shadows on its surface.",
+        "4. The door’s frame is painted gray, showing signs of wear and rust near the base.",
+        "5. No visible locks, handles, or other hardware are present on the door’s surface.",
+        "<final>There is a dark blue tarp secured with straps, covering part of the door, which also shows metal ridges and signs of weathering under a red and white awning.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          44
+        ],
+        [
+          44,
+          71
+        ],
+        [
+          71,
+          91
+        ],
+        [
+          91,
+          111
+        ],
+        [
+          111,
+          130
+        ],
+        [
+          130,
+          171
+        ]
+      ],
+      "anchor_vector": [
+        16.463123156728415,
+        10.733549740439967,
+        13.88307116161211,
+        16.506593990693197,
+        13.545255335365853,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 9,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there pink helmets or kites?",
+      "reasoning_text": "1. The image shows a person wearing a pink cap, not a pink helmet, as the cap is on the head of the rider on the right, and helmets are worn by the person on the left.\n2. There are no kites visible in the image, as the scene depicts street traffic with motorcycles, a truck, and storefronts, with no airborne objects resembling kites.\n3. The helmet worn by the person on the left is silver and black, not pink, and is clearly visible as protective headgear for the rider.\n4. The pink cap is worn by the person on the right, who is riding a motorcycle with a rear cargo rack, and it is a soft fabric cap, not a helmet.\n5. The image contains no kites or pink helmets, as all visible headwear is either a silver helmet or a pink cap, and no kite-like objects are present in the sky or on the ground.\n\n<final>There are no pink helmets or kites in the image.</final>",
+      "raw_generation": [
+        "1. The image shows a person riding a motorcycle wearing a pink cap, not a pink helmet. Helmets are not pink in the image.  \n2. There are no kites visible in the image; the scene is focused on street traffic and pedestrians.  \n3. The pink cap is worn by the rider in the foreground, contrasting with the helmet worn by the person on the left.  \n4. The background includes buildings, trees, and vehicles, but no kites are present in the sky or on the ground.  \n5. The pink cap is the only pink item visible, and it is not a helmet, so neither pink helmets nor kites appear in the image.  \n\n<final>No, there are no pink helmets or kites in the image.</final>",
+        "1. The image shows a person wearing a pink cap, not a pink helmet, as the cap is on the head of the rider on the right, and helmets are worn by the person on the left.\n2. There are no kites visible in the image, as the scene depicts street traffic with motorcycles, a truck, and storefronts, with no airborne objects resembling kites.\n3. The helmet worn by the person on the left is silver and black, not pink, and is clearly visible as protective headgear for the rider.\n4. The pink cap is worn by the person on the right, who is riding a motorcycle with a rear cargo rack, and it is a soft fabric cap, not a helmet.\n5. The image contains no kites or pink helmets, as all visible headwear is either a silver helmet or a pink cap, and no kite-like objects are present in the sky or on the ground.\n\n<final>There are no pink helmets or kites in the image.</final>"
+      ],
+      "chunks": [
+        "1. The image shows a person wearing a pink cap, not a pink helmet, as the cap is on the head of the rider on the right, and helmets are worn by the person on the left.",
+        "2. There are no kites visible in the image, as the scene depicts street traffic with motorcycles, a truck, and storefronts, with no airborne objects resembling kites.",
+        "3. The helmet worn by the person on the left is silver and black, not pink, and is clearly visible as protective headgear for the rider.",
+        "4. The pink cap is worn by the person on the right, who is riding a motorcycle with a rear cargo rack, and it is a soft fabric cap, not a helmet.",
+        "5. The image contains no kites or pink helmets, as all visible headwear is either a silver helmet or a pink cap, and no kite-like objects are present in the sky or on the ground.",
+        "<final>There are no pink helmets or kites in the image.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          66
+        ],
+        [
+          66,
+          102
+        ],
+        [
+          102,
+          133
+        ],
+        [
+          133,
+          170
+        ],
+        [
+          170,
+          212
+        ],
+        [
+          212,
+          229
+        ]
+      ],
+      "anchor_vector": [
+        15.99970598046733,
+        17.492829398593436,
+        14.195412825180748,
+        11.042241799063376,
+        16.02780330882353,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 10,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there any helmets or catchers in the scene?",
+      "reasoning_text": "1. A person riding a scooter on the left wears a silver helmet with a black visor, clearly visible on their head, indicating safety gear for motorbike use.\n\n2. No catchers are visible in the scene, as catchers are typically associated with baseball or softball and none of the people or objects resemble athletic field equipment.\n\n3. The person on the right, riding a motorcycle with a cargo rack, wears no helmet, only a pink cap, suggesting they may not be prioritizing head protection.\n\n4. The background contains a tree, storefronts, and a parked truck, but none of these elements show any catcher-related gear or figures.\n\n5. The image depicts a street scene with motorcyclists and urban infrastructure, making it inconsistent with sports contexts where catchers would appear.\n\n<final>There is one helmet visible, worn by the scooter rider; no catchers are present in the scene.</final>",
+      "raw_generation": [
+        "1. The person on the left motorcycle is wearing a silver helmet, clearly visible on their head as they ride.  \n2. No baseball catchers or fielding gear are present in the image, as the scene depicts street traffic, not a sports setting.  \n3. The person on the right motorcycle is not wearing a helmet, only a pink cap, and no catcher’s equipment is visible.  \n4. The background includes a tree, storefronts, and a parked vehicle, none of which contain any catcher-related items.  \n5. The image focuses on motorcyclists and urban surroundings, with no indication of sports activities or catcher gear being present.  \n\n<final>No, there are no catchers in the scene, but one person is wearing a helmet.</final>",
+        "1. A person riding a scooter on the left wears a silver helmet with a black visor, clearly visible on their head, indicating safety gear for motorbike use.\n\n2. No catchers are visible in the scene, as catchers are typically associated with baseball or softball and none of the people or objects resemble athletic field equipment.\n\n3. The person on the right, riding a motorcycle with a cargo rack, wears no helmet, only a pink cap, suggesting they may not be prioritizing head protection.\n\n4. The background contains a tree, storefronts, and a parked truck, but none of these elements show any catcher-related gear or figures.\n\n5. The image depicts a street scene with motorcyclists and urban infrastructure, making it inconsistent with sports contexts where catchers would appear.\n\n<final>There is one helmet visible, worn by the scooter rider; no catchers are present in the scene.</final>"
+      ],
+      "chunks": [
+        "1. A person riding a scooter on the left wears a silver helmet with a black visor, clearly visible on their head, indicating safety gear for motorbike use.",
+        "2. No catchers are visible in the scene, as catchers are typically associated with baseball or softball and none of the people or objects resemble athletic field equipment.",
+        "3. The person on the right, riding a motorcycle with a cargo rack, wears no helmet, only a pink cap, suggesting they may not be prioritizing head protection.",
+        "4. The background contains a tree, storefronts, and a parked truck, but none of these elements show any catcher-related gear or figures.",
+        "5. The image depicts a street scene with motorcyclists and urban infrastructure, making it inconsistent with sports contexts where catchers would appear.",
+        "<final>There is one helmet visible, worn by the scooter rider; no catchers are present in the scene.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          64
+        ],
+        [
+          64,
+          97
+        ],
+        [
+          97,
+          132
+        ],
+        [
+          132,
+          161
+        ],
+        [
+          161,
+          189
+        ],
+        [
+          189,
+          215
+        ]
+      ],
+      "anchor_vector": [
+        12.350385530866404,
+        11.648918232225748,
+        12.37087116479964,
+        14.307826450892858,
+        14.6533203125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 11,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the helmet black or pink?",
+      "reasoning_text": "1. The helmet worn by the person on the left motorcycle is clearly visible and has a metallic, reflective finish with a matte black base tone, not pink.  \n2. The pink color is only present on the cap worn by the person on the right motorcycle, not on any helmet.  \n3. The helmet’s design includes a black visor and black straps, consistent with safety gear typically used for motorcycling.  \n4. No pink hues or accents are visible on the helmet’s surface, even under bright sunlight that highlights its details.  \n5. The helmet’s black color matches the rider’s orange vest and the overall street scene’s neutral tones.  \n\n<final>Black</final>",
+      "raw_generation": [
+        "1. The helmet worn by the person on the left side of the image is clearly visible and has a metallic, reflective surface.  \n2. Its color appears to be a dark shade, consistent with black, rather than any hue associated with pink.  \n3. The helmet’s design includes a visor and ventilation slots typical of motorcycle helmets, which are often black for safety and durability.  \n4. The lighting in the image highlights the helmet’s glossy finish, which further supports its black coloration.  \n5. There are no pink accents or tones on the helmet, confirming it is not pink.  \n\n<final>black</final>",
+        "1. The helmet worn by the person on the left motorcycle is clearly visible and has a metallic, reflective finish with a matte black base tone, not pink.  \n2. The pink color is only present on the cap worn by the person on the right motorcycle, not on any helmet.  \n3. The helmet’s design includes a black visor and black straps, consistent with safety gear typically used for motorcycling.  \n4. No pink hues or accents are visible on the helmet’s surface, even under bright sunlight that highlights its details.  \n5. The helmet’s black color matches the rider’s orange vest and the overall street scene’s neutral tones.  \n\n<final>Black</final>"
+      ],
+      "chunks": [
+        "1. The helmet worn by the person on the left motorcycle is clearly visible and has a metallic, reflective finish with a matte black base tone, not pink.",
+        "2. The pink color is only present on the cap worn by the person on the right motorcycle, not on any helmet.",
+        "3. The helmet’s design includes a black visor and black straps, consistent with safety gear typically used for motorcycling.",
+        "4. No pink hues or accents are visible on the helmet’s surface, even under bright sunlight that highlights its details.",
+        "5. The helmet’s black color matches the rider’s orange vest and the overall street scene’s neutral tones.",
+        "<final>Black</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          54
+        ],
+        [
+          55,
+          80
+        ],
+        [
+          81,
+          107
+        ],
+        [
+          108,
+          132
+        ],
+        [
+          133,
+          155
+        ],
+        [
+          156,
+          163
+        ]
+      ],
+      "anchor_vector": [
+        13.52837417558841,
+        14.479124635130495,
+        17.46610003494769,
+        17.195211038961038,
+        11.784319196428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 214,
+  "subset": "gqa",
+  "subset_local_idx": 6
+}

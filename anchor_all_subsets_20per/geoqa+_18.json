@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/588.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAs shown in the figure, place the template on the triangular cardboard so that point C is located on the semicircle. Points A and B are 86° and 30° respectively, and the angle ∠ACB measures ( )  \nA. 15°  \nB. 28°  \nC. 30°  \nD. 56°",
+      "reasoning_text": "1. The protractor is positioned such that point C lies on the semicircular arc, indicating it is the vertex of the angle being measured relative to points A and B on the arc.  \n2. Point A aligns with the 86° mark, and point B aligns with the 30° mark on the protractor's scale, establishing the angular positions of the triangle's vertices relative to the center.  \n3. Since points A and B are on the circumference of the semicircle, and point C is also on the arc, the angle ∠ACB is an inscribed angle subtending the arc AB.  \n4. The measure of an inscribed angle is half the measure of the intercepted arc, so we calculate the arc AB as the difference between the two angular positions: 86° – 30° = 56°.  \n5. Dividing the intercepted arc by two gives the inscribed angle ∠ACB = 56° ÷ 2 = 28°, which matches option B.\n\n<final>B. 28°</final>",
+      "raw_generation": [
+        "1. The diagram shows a semicircular protractor with points A, B, and C positioned on its arc, indicating angles measured from the center.  \n2. Point A corresponds to an angle of 86°, and point B corresponds to an angle of 30°, both measured from the baseline of the protractor.  \n3. Point C lies on the semicircle, and the angle ∠ACB is an inscribed angle subtended by the arc AB.  \n4. The measure of an inscribed angle is half the measure of the intercepted arc, which is the difference between the angles at A and B: 86° - 30° = 56°.  \n5. Therefore, ∠ACB = 56° / 2 = 28°, as the inscribed angle is half the intercepted arc’s measure.  \n\n<final>B. 28°</final>",
+        "1. The protractor is positioned such that point C lies on the semicircular arc, indicating it is the vertex of the angle being measured relative to points A and B on the arc.  \n2. Point A aligns with the 86° mark, and point B aligns with the 30° mark on the protractor's scale, establishing the angular positions of the triangle's vertices relative to the center.  \n3. Since points A and B are on the circumference of the semicircle, and point C is also on the arc, the angle ∠ACB is an inscribed angle subtending the arc AB.  \n4. The measure of an inscribed angle is half the measure of the intercepted arc, so we calculate the arc AB as the difference between the two angular positions: 86° – 30° = 56°.  \n5. Dividing the intercepted arc by two gives the inscribed angle ∠ACB = 56° ÷ 2 = 28°, which matches option B.\n\n<final>B. 28°</final>"
+      ],
+      "chunks": [
+        "1. The protractor is positioned such that point C lies on the semicircular arc, indicating it is the vertex of the angle being measured relative to points A and B on the arc.",
+        "2. Point A aligns with the 86° mark, and point B aligns with the 30° mark on the protractor's scale, establishing the angular positions of the triangle's vertices relative to the center.",
+        "3. Since points A and B are on the circumference of the semicircle, and point C is also on the arc, the angle ∠ACB is an inscribed angle subtending the arc AB.",
+        "4. The measure of an inscribed angle is half the measure of the intercepted arc, so we calculate the arc AB as the difference between the two angular positions: 86° – 30° = 56°.",
+        "5. Dividing the intercepted arc by two gives the inscribed angle ∠ACB = 56° ÷ 2 = 28°, which matches option B.",
+        "<final>B. 28°</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          168,
+          207
+        ],
+        [
+          208,
+          255
+        ],
+        [
+          256,
+          299
+        ],
+        [
+          300,
+          348
+        ],
+        [
+          349,
+          387
+        ],
+        [
+          387,
+          398
+        ]
+      ],
+      "anchor_vector": [
+        15.397083349381969,
+        14.299174421663334,
+        14.34940057051809,
+        14.771332590203535,
+        24.119791666666668,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 102,
+  "subset": "geoqa+",
+  "subset_local_idx": 18
+}

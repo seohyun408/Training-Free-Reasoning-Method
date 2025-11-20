@@ -760,11 +760,11 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
 
 
 if __name__ == "__main__":
-    output_dir = Path('anchor_vectors_output')
-    result_files = sorted(output_dir.glob('example_*.json'))
+    output_dir = Path('anchor_all_subsets_20per')
+    result_files = sorted(output_dir.glob('*.json'))
 
     if not result_files:
-        print("❌ No result files found in anchor_vectors_output/")
+        print("❌ No result files found in anchor_all_subsets_20per/")
     else:
         print(f"Found {len(result_files)} result files")
         output_path = generate_html_report(result_files)

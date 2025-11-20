@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "coco/train2017/000000514860.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow is the man's sight without assistance? \nA. colorblind \nB. blind \nC. perfect \nD. impaired",
+      "reasoning_text": "1. The man in the image is wearing glasses, suggesting he may require visual correction for clear vision without them.  \n2. His eyes appear focused and he is smiling directly at the camera, indicating he can see the photographer and surroundings.  \n3. The clarity of the photo, including facial details and background elements, implies his vision is functional even with glasses.  \n4. He is not using any other assistive devices, and his posture and expression suggest he is not visually impaired.  \n5. His ability to interact naturally with the woman and observe the environment points to his vision being adequate, not impaired or defective.  \n\n<final>D. impaired</final>",
+      "raw_generation": [
+        "1. The man in the image is wearing glasses, which suggests he may require visual correction for optimal vision.  \n2. His ability to see clearly without them is not evident from the photo, as he is not shown without eyewear.  \n3. The glasses are positioned correctly on his face, indicating they are likely necessary for his vision.  \n4. There is no visual evidence to suggest he is colorblind, blind, or has perfect unaided vision.  \n5. The presence of corrective lenses strongly implies his sight is impaired without assistance.  \n\n<final>D. impaired</final>",
+        "1. The man in the image is wearing glasses, suggesting he may require visual correction for clear vision without them.  \n2. His eyes appear focused and he is smiling directly at the camera, indicating he can see the photographer and surroundings.  \n3. The clarity of the photo, including facial details and background elements, implies his vision is functional even with glasses.  \n4. He is not using any other assistive devices, and his posture and expression suggest he is not visually impaired.  \n5. His ability to interact naturally with the woman and observe the environment points to his vision being adequate, not impaired or defective.  \n\n<final>D. impaired</final>"
+      ],
+      "chunks": [
+        "1. The man in the image is wearing glasses, suggesting he may require visual correction for clear vision without them.",
+        "2. His eyes appear focused and he is smiling directly at the camera, indicating he can see the photographer and surroundings.",
+        "3. The clarity of the photo, including facial details and background elements, implies his vision is functional even with glasses.",
+        "4. He is not using any other assistive devices, and his posture and expression suggest he is not visually impaired.",
+        "5. His ability to interact naturally with the woman and observe the environment points to his vision being adequate, not impaired or defective.",
+        "<final>D. impaired</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          85
+        ],
+        [
+          86,
+          110
+        ],
+        [
+          111,
+          135
+        ],
+        [
+          136,
+          160
+        ],
+        [
+          161,
+          187
+        ],
+        [
+          188,
+          196
+        ]
+      ],
+      "anchor_vector": [
+        10.29807629707532,
+        14.147346692207533,
+        14.959969284188034,
+        13.935190054086538,
+        16.875732421875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 43,
+  "subset": "coco",
+  "subset_local_idx": 11
+}

@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "chartqa/train/png/two_col_62742.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat confectionery company had the most revenue in 2016? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart displays percentage change in revenue for confectionery companies, not absolute revenue figures, so direct ranking by revenue is impossible from this image alone.\n2. The chart shows Lindt & Sprungli with the highest percentage change at +16.8%, indicating the strongest growth among the listed companies in the period measured.\n3. Ferrero follows with a +15.1% change, suggesting it also performed well but slightly less than Lindt & Sprungli.\n4. Mondelez shows a modest +3.1% change, while Nestle Confectionery barely changed at -0.1%, indicating minimal growth or slight decline.\n5. Mars had the lowest performance with a -3.5% change, indicating a decline in revenue compared to the baseline year.\n</reasoning>\n\n<final>Cannot determine from this chart</final>",
+      "raw_generation": [
+        "1. The bar chart displays percentage changes in revenue for confectionery companies, not absolute revenue figures.  \n2. Lindt & Sprungli shows the highest percentage change at 16.8%, indicating the strongest growth among the listed companies.  \n3. Ferrero follows with a 15.1% increase, while Mondelez had a modest 3.1% growth.  \n4. Nestle Confectionery experienced a negligible -0.1% change, and Mars saw a decline of -3.5%.  \n5. Since the chart lacks absolute revenue data, it is impossible to determine which company had the most revenue in 2016 based solely on this visualization.  \n\n<final>Cannot be determined from the chart</final>",
+        "<reasoning>\n1. The bar chart displays percentage change in revenue for confectionery companies, not absolute revenue figures, so direct ranking by revenue is impossible from this image alone.\n2. The chart shows Lindt & Sprungli with the highest percentage change at +16.8%, indicating the strongest growth among the listed companies in the period measured.\n3. Ferrero follows with a +15.1% change, suggesting it also performed well but slightly less than Lindt & Sprungli.\n4. Mondelez shows a modest +3.1% change, while Nestle Confectionery barely changed at -0.1%, indicating minimal growth or slight decline.\n5. Mars had the lowest performance with a -3.5% change, indicating a decline in revenue compared to the baseline year.\n</reasoning>\n\n<final>Cannot determine from this chart</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart displays percentage change in revenue for confectionery companies, not absolute revenue figures, so direct ranking by revenue is impossible from this image alone.",
+        "2. The chart shows Lindt & Sprungli with the highest percentage change at +16.8%, indicating the strongest growth among the listed companies in the period measured.",
+        "3. Ferrero follows with a +15.1% change, suggesting it also performed well but slightly less than Lindt & Sprungli.",
+        "4. Mondelez shows a modest +3.1% change, while Nestle Confectionery barely changed at -0.1%, indicating minimal growth or slight decline.",
+        "5. Mars had the lowest performance with a -3.5% change, indicating a decline in revenue compared to the baseline year.",
+        "</reasoning>\n\n<final>Cannot determine from this chart</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          66
+        ],
+        [
+          66,
+          97
+        ],
+        [
+          97,
+          133
+        ],
+        [
+          133,
+          164
+        ],
+        [
+          164,
+          200
+        ],
+        [
+          200,
+          227
+        ],
+        [
+          227,
+          242
+        ]
+      ],
+      "anchor_vector": [
+        18.472752933965552,
+        20.16147508773895,
+        19.69421471307497,
+        14.83317599826389,
+        15.063266782407407,
+        16.7125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 9,
+  "subset": "chartqa",
+  "subset_local_idx": 3
+}

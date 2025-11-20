@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "coco/train2017/000000238772.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat form of heating is used here? \nA. steam \nB. coal \nC. gas \nD. wood",
+      "reasoning_text": "1. The image shows a fireplace with a decorative mantel and ornate metalwork, indicating a traditional heating method rather than modern appliances.  \n2. The fireplace is situated in a rustic-style room with stone walls and wooden beams, suggesting historical or countryside architecture.  \n3. No visible gas lines, vents, or modern burners are present near the fireplace, ruling out gas or steam heating systems.  \n4. There is no coal bin, ash pit, or chimney stack typical of coal-fired furnaces, eliminating coal as the heating source.  \n5. The fireplace’s design, with logs and a grate for burning fuel, implies wood is the most likely heat source.  \n\n<final>D. wood</final>",
+      "raw_generation": [
+        "1. The image shows a fireplace with a decorative mantel and ornate surround, indicating a traditional heating method.  \n2. The fireplace is centrally located and features a hearth, typical of wood-burning fireplaces used for warmth.  \n3. No visible pipes, vents, or burners suggest gas or steam heating systems are present.  \n4. The absence of coal bins, ash pans, or industrial equipment rules out coal as the heating source.  \n5. The design and materials around the fireplace, including the stone and wood, are consistent with wood-burning fireplaces common in rustic homes.  \n\n<final>D. wood</final>",
+        "1. The image shows a fireplace with a decorative mantel and ornate metalwork, indicating a traditional heating method rather than modern appliances.  \n2. The fireplace is situated in a rustic-style room with stone walls and wooden beams, suggesting historical or countryside architecture.  \n3. No visible gas lines, vents, or modern burners are present near the fireplace, ruling out gas or steam heating systems.  \n4. There is no coal bin, ash pit, or chimney stack typical of coal-fired furnaces, eliminating coal as the heating source.  \n5. The fireplace’s design, with logs and a grate for burning fuel, implies wood is the most likely heat source.  \n\n<final>D. wood</final>"
+      ],
+      "chunks": [
+        "1. The image shows a fireplace with a decorative mantel and ornate metalwork, indicating a traditional heating method rather than modern appliances.",
+        "2. The fireplace is situated in a rustic-style room with stone walls and wooden beams, suggesting historical or countryside architecture.",
+        "3. No visible gas lines, vents, or modern burners are present near the fireplace, ruling out gas or steam heating systems.",
+        "4. There is no coal bin, ash pit, or chimney stack typical of coal-fired furnaces, eliminating coal as the heating source.",
+        "5. The fireplace’s design, with logs and a grate for burning fuel, implies wood is the most likely heat source.",
+        "<final>D. wood</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          58,
+          86
+        ],
+        [
+          87,
+          111
+        ],
+        [
+          112,
+          139
+        ],
+        [
+          140,
+          168
+        ],
+        [
+          169,
+          194
+        ],
+        [
+          195,
+          203
+        ]
+      ],
+      "anchor_vector": [
+        10.457496465773811,
+        11.452462668444113,
+        11.606388113839287,
+        10.579345703125,
+        11.8984375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 19,
+  "subset": "coco",
+  "subset_local_idx": 2
+}

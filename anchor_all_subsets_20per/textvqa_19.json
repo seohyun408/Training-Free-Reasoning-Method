@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/3be9d865af4a8cac.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: symbol, Reportesde, Laborat, 006-12-04, 2008-12-04, uestra, encont, 12_Editados, VARIEDA, 1205050CCP72, 1205050CC, 1201110070, CP70-, 1201120C, 12011101.CP22, Reportes, symbol, symbol",
+      "reasoning_text": "<steps>\n1. The Symbol handheld device displays a Spanish-language labor report with date range 2006-12-04 to 2008-12-04, indicating it’s used for industrial data collection or inventory tracking.\n2. The screen shows 122 found samples, with highlighted rows like “195” and “199” listing codes such as “1201110070 CP 70-” and “1201120C CP 72-,” suggesting batch or product tracking.\n3. The device rests in a cradle with a stylus nearby, indicating it’s designed for field use, possibly for warehouse or manufacturing environments requiring mobile data entry.\n4. The visible “MUESTRA,” “BRIGADA,” “LOTE,” and “VARIEDAD” headers imply the device manages sample, team, batch, and variety data for quality control or inventory management.\n5. The presence of a wireless router in the background suggests this device connects to a local network, enabling real-time data synchronization with central systems.\n</steps>\n\n<final>Symbol handheld device displaying a Spanish labor report with sample data from 2006 to",
+      "raw_generation": [
+        "1. The image shows a black Symbol handheld device displaying a Spanish-language report titled \"Reportes de Laboratorio\" with date range 2006-12-04 to 2008-12-04.  \n2. The screen lists 12 found samples with columns for \"MUESTRA,\" \"BRIGADA,\" \"LOTE,\" and \"VARIEDAD,\" including entries like \"1205050C CP 72-\" and \"12011101 CP 72-.\"  \n3. The device features a numeric keypad with function keys, a stylus lying on the wooden surface below, and a charging dock beneath it.  \n4. A blue wireless router is partially visible in the background, suggesting a work environment with network connectivity.  \n5. The device’s branding, \"Symbol,\" is visible on both the top and bottom of the unit, indicating its manufacturer and industrial use.  \n\n<final>A black Symbol handheld device displays a Spanish-language laboratory report with sample data from 2006 to 2008, resting on a wooden surface with a stylus and router nearby.</final>",
+        "<steps>\n1. The Symbol handheld device displays a Spanish-language labor report with date range 2006-12-04 to 2008-12-04, indicating it’s used for industrial data collection or inventory tracking.\n2. The screen shows 122 found samples, with highlighted rows like “195” and “199” listing codes such as “1201110070 CP 70-” and “1201120C CP 72-,” suggesting batch or product tracking.\n3. The device rests in a cradle with a stylus nearby, indicating it’s designed for field use, possibly for warehouse or manufacturing environments requiring mobile data entry.\n4. The visible “MUESTRA,” “BRIGADA,” “LOTE,” and “VARIEDAD” headers imply the device manages sample, team, batch, and variety data for quality control or inventory management.\n5. The presence of a wireless router in the background suggests this device connects to a local network, enabling real-time data synchronization with central systems.\n</steps>\n\n<final>Symbol handheld device displaying a Spanish labor report with sample data from 2006 to"
+      ],
+      "chunks": [
+        "<steps>\n1.",
+        "The Symbol handheld device displays a Spanish-language labor report with date range 2006-12-04 to 2008-12-04, indicating it’s used for industrial data collection or inventory tracking.",
+        "2. The screen shows 122 found samples, with highlighted rows like “195” and “199” listing codes such as “1201110070 CP 70-” and “1201120C CP 72-,” suggesting batch or product tracking.",
+        "3. The device rests in a cradle with a stylus nearby, indicating it’s designed for field use, possibly for warehouse or manufacturing environments requiring mobile data entry.",
+        "4. The visible “MUESTRA,” “BRIGADA,” “LOTE,” and “VARIEDAD” headers imply the device manages sample, team, batch, and variety data for quality control or inventory management.",
+        "5. The presence of a wireless router in the background suggests this device connects to a local network, enabling real-time data synchronization with central systems.",
+        "</steps>\n\n<final>Symbol handheld device displaying a Spanish labor report with sample data from 2006 to"
+      ],
+      "chunk_token_ranges": [
+        [
+          274,
+          279
+        ],
+        [
+          279,
+          328
+        ],
+        [
+          328,
+          398
+        ],
+        [
+          398,
+          432
+        ],
+        [
+          432,
+          477
+        ],
+        [
+          477,
+          506
+        ],
+        [
+          506,
+          530
+        ]
+      ],
+      "anchor_vector": [
+        15.983943977986497,
+        12.437749954283078,
+        12.344021286619443,
+        14.937520243716575,
+        9.84557824847342,
+        13.861653645833334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1813,
+  "subset": "textvqa",
+  "subset_local_idx": 19
+}

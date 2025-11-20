@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "chartqa/train/png/two_col_102544.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is Google's annual revenue? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The bar chart displays annual revenue in million euros for various companies, with Google at the top.  \n2. Google’s bar extends farthest to the right, indicating the highest revenue among all listed entities.  \n3. The exact revenue value is labeled at the end of Google’s bar as 1,913.85 million euros.  \n4. This figure is significantly larger than the next company, iTunes, which earned 368.77 million euros.  \n5. The chart’s x-axis confirms revenue is measured in million euros, aligning with the labeled value for Google.  \n\n<final>1,913.85 million euros</final>",
+      "raw_generation": [
+        "1913.85 million euros\n\n1. The bar chart displays annual revenue for various companies in million euros.\n2. Google is positioned at the top with the longest bar, indicating the highest revenue.\n3. The numerical value \"1 913.85\" is clearly labeled at the end of Google's bar.\n4. The x-axis label confirms the unit is \"Revenue in million euros.\"\n5. The data source is Statista 2021, indicating the revenue figure is for that year.\n\n<final>1913.85 million euros</final>",
+        "1. The bar chart displays annual revenue in million euros for various companies, with Google at the top.  \n2. Google’s bar extends farthest to the right, indicating the highest revenue among all listed entities.  \n3. The exact revenue value is labeled at the end of Google’s bar as 1,913.85 million euros.  \n4. This figure is significantly larger than the next company, iTunes, which earned 368.77 million euros.  \n5. The chart’s x-axis confirms revenue is measured in million euros, aligning with the labeled value for Google.  \n\n<final>1,913.85 million euros</final>"
+      ],
+      "chunks": [
+        "1. The bar chart displays annual revenue in million euros for various companies, with Google at the top.",
+        "2. Google’s bar extends farthest to the right, indicating the highest revenue among all listed entities.",
+        "3. The exact revenue value is labeled at the end of Google’s bar as 1,913.85 million euros.",
+        "4. This figure is significantly larger than the next company, iTunes, which earned 368.77 million euros.",
+        "5. The chart’s x-axis confirms revenue is measured in million euros, aligning with the labeled value for Google.",
+        "<final>1,913.85 million euros</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          63
+        ],
+        [
+          64,
+          85
+        ],
+        [
+          86,
+          114
+        ],
+        [
+          115,
+          141
+        ],
+        [
+          142,
+          166
+        ],
+        [
+          167,
+          183
+        ]
+      ],
+      "anchor_vector": [
+        15.72546896462912,
+        17.898449125744047,
+        12.992494240785257,
+        13.193684895833332,
+        12.1591796875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 5,
+  "subset": "chartqa",
+  "subset_local_idx": 1
+}

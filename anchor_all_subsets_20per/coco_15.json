@@ -1,0 +1,122 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "coco/train2017/000000508055.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat kind of food does the woman have on her tray or plate?",
+      "reasoning_text": "1. The woman has a burger with a visible bun, patty, and toppings such as lettuce and tomato, placed on a wooden tray.  \n2. Alongside the burger, there is a white bowl filled with golden, crispy french fries.  \n3. A small basket of sliced bread sits nearby, suggesting it may be used for dipping or side accompaniment.  \n4. The tray is set on a wooden table with a glass of water and a glass of dark beverage, indicating a casual dining setup.  \n5. The woman holds a fork and knife, actively preparing to eat, reinforcing the presence of a complete meal on the tray.  \n<final> The woman has a burger, french fries, and sliced bread on her tray.",
+      "raw_generation": [
+        "1. The woman has a hamburger with a visible bun, patty, and toppings like lettuce and tomato on her tray.  \n2. Beside the burger, there is a white bowl filled with golden-brown french fries.  \n3. A small basket of sliced bread is also visible near the tray, suggesting a side accompaniment.  \n4. The tray is placed on a wooden board, indicating a casual dining setup, possibly outdoors.  \n5. The woman is holding a fork and knife, ready to eat, with a glass of water and a drink nearby.  \n\n<final>She has a hamburger, french fries, and sliced bread on her tray.</final>",
+        "1. The woman has a burger with a visible bun, patty, and toppings such as lettuce and tomato, placed on a wooden tray.  \n2. Alongside the burger, there is a white bowl filled with golden, crispy french fries.  \n3. A small basket of sliced bread sits nearby, suggesting it may be used for dipping or side accompaniment.  \n4. The tray is set on a wooden table with a glass of water and a glass of dark beverage, indicating a casual dining setup.  \n5. The woman holds a fork and knife, actively preparing to eat, reinforcing the presence of a complete meal on the tray.  \n<final> The woman has a burger, french fries, and sliced bread on her tray."
+      ],
+      "chunks": [
+        "1. The woman has a burger with a visible bun, patty, and toppings such as lettuce and tomato, placed on a wooden tray.",
+        "2. Alongside the burger, there is a white bowl filled with golden, crispy french fries.",
+        "3. A small basket of sliced bread sits nearby, suggesting it may be used for dipping or side accompaniment.",
+        "4. The tray is set on a wooden table with a glass of water and a glass of dark beverage, indicating a casual dining setup.",
+        "5. The woman holds a fork and knife, actively preparing to eat, reinforcing the presence of a complete meal on the tray.",
+        "<final> The woman has a burger, french fries, and sliced bread on her tray."
+      ],
+      "chunk_token_ranges": [
+        [
+          36,
+          65
+        ],
+        [
+          66,
+          86
+        ],
+        [
+          87,
+          111
+        ],
+        [
+          112,
+          140
+        ],
+        [
+          141,
+          167
+        ],
+        [
+          168,
+          187
+        ]
+      ],
+      "anchor_vector": [
+        10.020229659748832,
+        12.686989785160016,
+        12.432963982974263,
+        10.147288951796558,
+        5.894839638157895,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the woman eating her meal indoors or outdoors?",
+      "reasoning_text": "1. The woman is seated at a wooden table with a basket of bread and glasses, suggesting a dining setup, but the presence of trees and parked cars indicates an outdoor environment.  \n2. The background reveals a clear sky and distant buildings, confirming she is not inside a building, but rather under an open-air setting, likely a patio or sidewalk café.  \n3. The table has a woven basket and napkins, typical of casual outdoor dining, and the natural lighting supports the outdoor setting.  \n4. The woman’s posture and the visible cars parked nearby further reinforce that she is dining in an outdoor public space, not enclosed indoors.  \n5. The combination of natural elements like trees and ambient lighting, along with the absence of walls or ceilings, confirms she is dining outdoors.  \n\n<final>outdoors",
+      "raw_generation": [
+        "1. The presence of trees and visible sky in the background indicates an open-air environment, suggesting the woman is not inside a building.  \n2. The table is set on a wooden surface with natural lighting, typical of an outdoor dining area rather than an enclosed space.  \n3. A parked car and distant buildings are visible behind her, confirming she is in an outdoor public or semi-public space.  \n4. The woman is wearing a light blue shawl, which may indicate cooler weather, often experienced outdoors during evening dining.  \n5. The overall ambiance, including the natural elements and lack of interior walls or ceilings, strongly supports an outdoor dining setting.  \n\n<final>outdoors</final>",
+        "1. The woman is seated at a wooden table with a basket of bread and glasses, suggesting a dining setup, but the presence of trees and parked cars indicates an outdoor environment.  \n2. The background reveals a clear sky and distant buildings, confirming she is not inside a building, but rather under an open-air setting, likely a patio or sidewalk café.  \n3. The table has a woven basket and napkins, typical of casual outdoor dining, and the natural lighting supports the outdoor setting.  \n4. The woman’s posture and the visible cars parked nearby further reinforce that she is dining in an outdoor public space, not enclosed indoors.  \n5. The combination of natural elements like trees and ambient lighting, along with the absence of walls or ceilings, confirms she is dining outdoors.  \n\n<final>outdoors"
+      ],
+      "chunks": [
+        "1. The woman is seated at a wooden table with a basket of bread and glasses, suggesting a dining setup, but the presence of trees and parked cars indicates an outdoor environment.",
+        "2. The background reveals a clear sky and distant buildings, confirming she is not inside a building, but rather under an open-air setting, likely a patio or sidewalk café.",
+        "3. The table has a woven basket and napkins, typical of casual outdoor dining, and the natural lighting supports the outdoor setting.",
+        "4. The woman’s posture and the visible cars parked nearby further reinforce that she is dining in an outdoor public space, not enclosed indoors.",
+        "5. The combination of natural elements like trees and ambient lighting, along with the absence of walls or ceilings, confirms she is dining outdoors.",
+        "<final>outdoors"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          64
+        ],
+        [
+          65,
+          100
+        ],
+        [
+          101,
+          128
+        ],
+        [
+          129,
+          157
+        ],
+        [
+          158,
+          186
+        ],
+        [
+          187,
+          192
+        ]
+      ],
+      "anchor_vector": [
+        14.179369212962962,
+        17.97180007853836,
+        9.674128069196428,
+        19.71559709821429,
+        13.15546875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 57,
+  "subset": "coco",
+  "subset_local_idx": 15
+}

@@ -1,0 +1,36 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "chartqa/train/png/two_col_5665.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many hospitals were owned by the state or the local government in Michigan in 2019? Answer the question using a single word or phrase.",
+      "reasoning_text": "6\n\n<final>6</final>",
+      "raw_generation": [
+        "6\n\n1. The bar chart displays hospital ownership types in Michigan for the year 2019, with categories including state/local government, non-profit, for-profit, and total.\n2. The first bar on the left corresponds to \"State/local government\" ownership type, indicating the number of hospitals under this category.\n3. The value labeled directly above this bar is clearly marked as \"6,\" representing the count of such hospitals.\n4. The chart's vertical axis measures the number of hospitals, and the horizontal axis lists the ownership types, confirming the data's context.\n5. The source is cited as Statista 2021, which aligns with the data being presented for the year 2019.\n\n<final>6</final>",
+        "6\n\n<final>6</final>"
+      ],
+      "chunks": [
+        "6\n\n<final>6</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          70,
+          79
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 120,
+  "subset": "chartqa",
+  "subset_local_idx": 18
+}

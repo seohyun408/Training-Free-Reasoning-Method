@@ -1,0 +1,452 @@
+{
+  "total_pairs": 8,
+  "successful_pairs": 8,
+  "image_path": "coco/train2017/000000579997.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.26, 0.35, 0.66, 0.78].",
+      "reasoning_text": "<1> The player wears a blue shirt with orange and white accents, featuring sponsor logos like “Caffé Excelsior” and “Joola” on the front.  \n<2> His right hand grips a red paddle, poised for action, indicating he’s actively engaged in a table tennis rally.  \n<3> His focused expression, slightly open mouth, and intense gaze suggest he’s concentrating on an incoming ball or anticipating his opponent’s move.  \n<4> The player’s posture, leaning forward with knees bent, demonstrates athletic readiness and balance for quick lateral movements during play.  \n<5> Behind him, blurred spectators in the background indicate this is a competitive match, likely indoors under artificial lighting.  \n<final> A male table tennis player in a blue and orange uniform, mid-action with a red paddle, intensely focused during a match.",
+      "raw_generation": [
+        "1. The man is wearing a blue and orange sports jersey with visible sponsor logos.  \n2. He holds a red table tennis paddle in his right hand, poised for action.  \n3. His focused expression and slightly open mouth suggest intense concentration during play.  \n4. The jersey features text including “CAFFE EXCELSIOR” and “tonoli,” indicating brand or team affiliation.  \n5. His dark hair is slightly tousled, and he appears mid-motion, likely preparing to return a shot.  \n\n<final>Man in blue and orange jersey holding a red table tennis paddle, intensely focused during a match.</final>",
+        "<1> The player wears a blue shirt with orange and white accents, featuring sponsor logos like “Caffé Excelsior” and “Joola” on the front.  \n<2> His right hand grips a red paddle, poised for action, indicating he’s actively engaged in a table tennis rally.  \n<3> His focused expression, slightly open mouth, and intense gaze suggest he’s concentrating on an incoming ball or anticipating his opponent’s move.  \n<4> The player’s posture, leaning forward with knees bent, demonstrates athletic readiness and balance for quick lateral movements during play.  \n<5> Behind him, blurred spectators in the background indicate this is a competitive match, likely indoors under artificial lighting.  \n<final> A male table tennis player in a blue and orange uniform, mid-action with a red paddle, intensely focused during a match."
+      ],
+      "chunks": [
+        "<1> The player wears a blue shirt with orange and white accents, featuring sponsor logos like “Caffé Excelsior” and “Joola” on the front.",
+        "<2> His right hand grips a red paddle, poised for action, indicating he’s actively engaged in a table tennis rally.",
+        "<3> His focused expression, slightly open mouth, and intense gaze suggest he’s concentrating on an incoming ball or anticipating his opponent’s move.",
+        "<4> The player’s posture, leaning forward with knees bent, demonstrates athletic readiness and balance for quick lateral movements during play.",
+        "<5> Behind him, blurred spectators in the background indicate this is a competitive match, likely indoors under artificial lighting.",
+        "<final> A male table tennis player in a blue and orange uniform, mid-action with a red paddle, intensely focused during a match."
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          110
+        ],
+        [
+          111,
+          137
+        ],
+        [
+          138,
+          167
+        ],
+        [
+          168,
+          194
+        ],
+        [
+          195,
+          219
+        ],
+        [
+          220,
+          248
+        ]
+      ],
+      "anchor_vector": [
+        11.102655760916974,
+        15.868257006777348,
+        13.466274610805861,
+        13.232648577008929,
+        12.962960379464286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide the bounding box coordinate of the region this sentence describes: player.",
+      "reasoning_text": "<region>256,271,668,922</region>\n<final>256,271,668,922</final>",
+      "raw_generation": [
+        "1. The player is a male athlete with dark hair, wearing a blue and orange sports jersey with visible sponsor logos.  \n2. He holds a red table tennis paddle in his right hand, poised for action near the net.  \n3. His focused expression and slightly open mouth suggest he is intensely concentrating during a match.  \n4. The jersey features text including “CAFFE EXCELSIOR” and “tonoli,” indicating sponsorship or team affiliation.  \n5. The background shows blurred spectators and indoor lighting, confirming the setting is a competitive table tennis venue.  \n\n<final> [257, 274, 668, 924] </final>",
+        "<region>256,271,668,922</region>\n<final>256,271,668,922</final>"
+      ],
+      "chunks": [
+        "<region>256,271,668,922</region>\n<final>256,271,668,922</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          80
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.66, 0.51, 0.85, 0.78].",
+      "reasoning_text": "<steps>\n1. The person in the background on the right side is wearing a dark suit jacket and appears to be seated, possibly as an official or spectator at the table tennis match.\n2. Their face is blurred, suggesting motion or shallow depth of field, indicating they are not the main subject of the photograph.\n3. The individual is positioned behind the table, likely observing the ongoing game, and their posture is upright and attentive.\n4. The lighting in the background is dimmer compared to the foreground, emphasizing the focus on the player in the blue shirt.\n5. Their presence adds context to the competitive environment, reinforcing that this is a formal or organized table tennis event.\n</steps>\n\n<final>Person in dark suit seated in background, likely an official or spectator, blurred due to shallow depth of field, observing the match.",
+      "raw_generation": [
+        "1. The person is wearing a dark suit jacket with a light-colored shirt underneath.  \n2. Their face is partially obscured by shadows, making facial features difficult to discern.  \n3. They appear to be seated or standing in the background, behind the table tennis table.  \n4. The individual’s posture suggests they are observing the game rather than actively participating.  \n5. Their presence adds depth to the scene, indicating spectators or officials at the event.  \n\n<final>Person in dark suit observing the table tennis match from the background.</final>",
+        "<steps>\n1. The person in the background on the right side is wearing a dark suit jacket and appears to be seated, possibly as an official or spectator at the table tennis match.\n2. Their face is blurred, suggesting motion or shallow depth of field, indicating they are not the main subject of the photograph.\n3. The individual is positioned behind the table, likely observing the ongoing game, and their posture is upright and attentive.\n4. The lighting in the background is dimmer compared to the foreground, emphasizing the focus on the player in the blue shirt.\n5. Their presence adds context to the competitive environment, reinforcing that this is a formal or organized table tennis event.\n</steps>\n\n<final>Person in dark suit seated in background, likely an official or spectator, blurred due to shallow depth of field, observing the match."
+      ],
+      "chunks": [
+        "<steps>\n1.",
+        "The person in the background on the right side is wearing a dark suit jacket and appears to be seated, possibly as an official or spectator at the table tennis match.",
+        "2. Their face is blurred, suggesting motion or shallow depth of field, indicating they are not the main subject of the photograph.",
+        "3. The individual is positioned behind the table, likely observing the ongoing game, and their posture is upright and attentive.",
+        "4. The lighting in the background is dimmer compared to the foreground, emphasizing the focus on the player in the blue shirt.",
+        "5. Their presence adds context to the competitive environment, reinforcing that this is a formal or organized table tennis event.",
+        "</steps>\n\n<final>Person in dark suit seated in background, likely an official or spectator, blurred due to shallow depth of field, observing the match."
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          79
+        ],
+        [
+          79,
+          112
+        ],
+        [
+          112,
+          138
+        ],
+        [
+          138,
+          162
+        ],
+        [
+          162,
+          188
+        ],
+        [
+          188,
+          211
+        ],
+        [
+          211,
+          243
+        ]
+      ],
+      "anchor_vector": [
+        15.242420311356867,
+        11.813480100769928,
+        13.601318801658742,
+        13.69648992736204,
+        16.543499822201937,
+        18.5526123046875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.66, 0.51, 0.85, 0.78].",
+      "reasoning_text": "<reasoning>\n1. The individual in this region is standing behind the table tennis net, wearing a dark suit and appearing to be observing the game intently.\n2. Their posture suggests they are a spectator or possibly an official, as they are not holding a paddle or actively participating.\n3. The lighting highlights their silhouette against the dimmer background, emphasizing their presence as an onlooker.\n4. Their position near the edge of the table suggests they are close to the playing area but not involved in the match.\n5. The blurred background indicates the focus is on this person’s role as a passive observer in the competitive environment.\n</reasoning>\n<final>Observer in a dark suit standing behind the table tennis net, watching the match intently without participating.</final>",
+      "raw_generation": [
+        "1. The person is wearing a dark suit jacket with a light-colored shirt underneath.  \n2. Their face is partially obscured by shadows, making facial features difficult to discern.  \n3. They appear to be seated or standing in the background, behind the table tennis table.  \n4. The individual’s posture suggests they are observing the game rather than actively participating.  \n5. Their presence adds depth to the scene, indicating spectators or officials at the event.  \n\n<final>Person in dark suit observing the table tennis match from the background.</final>",
+        "<reasoning>\n1. The individual in this region is standing behind the table tennis net, wearing a dark suit and appearing to be observing the game intently.\n2. Their posture suggests they are a spectator or possibly an official, as they are not holding a paddle or actively participating.\n3. The lighting highlights their silhouette against the dimmer background, emphasizing their presence as an onlooker.\n4. Their position near the edge of the table suggests they are close to the playing area but not involved in the match.\n5. The blurred background indicates the focus is on this person’s role as a passive observer in the competitive environment.\n</reasoning>\n<final>Observer in a dark suit standing behind the table tennis net, watching the match intently without participating.</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The individual in this region is standing behind the table tennis net, wearing a dark suit and appearing to be observing the game intently.",
+        "2. Their posture suggests they are a spectator or possibly an official, as they are not holding a paddle or actively participating.",
+        "3. The lighting highlights their silhouette against the dimmer background, emphasizing their presence as an onlooker.",
+        "4. Their position near the edge of the table suggests they are close to the playing area but not involved in the match.",
+        "5. The blurred background indicates the focus is on this person’s role as a passive observer in the competitive environment.",
+        "</reasoning>\n<final>Observer in a dark suit standing behind the table tennis net, watching the match intently without participating.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          80
+        ],
+        [
+          80,
+          107
+        ],
+        [
+          107,
+          132
+        ],
+        [
+          132,
+          154
+        ],
+        [
+          154,
+          179
+        ],
+        [
+          179,
+          202
+        ],
+        [
+          202,
+          231
+        ]
+      ],
+      "anchor_vector": [
+        23.77624698946757,
+        13.455036452654355,
+        17.45739644204886,
+        17.81861952812656,
+        13.562060766491754,
+        17.882475754310345,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide the bounding box coordinate of the region this sentence describes: blurry man in background with yellow vest.",
+      "reasoning_text": "1. The blurry man in the background wears a yellow vest and is positioned behind the table tennis net, slightly left of center, with his face out of focus.\n2. His yellow vest contrasts with the darker background, making him visually distinct despite the blur and low lighting conditions.\n3. He appears to be seated or standing behind the spectators' area, likely observing the match with no direct interaction visible.\n4. His posture suggests he is watching intently, but his facial features and exact position are obscured by motion blur and shallow depth of field.\n5. The man’s presence adds context to the environment, indicating an audience or support staff in the background of the competitive scene.\n\n<final> [1, 461, 168, 715] </final>",
+      "raw_generation": [
+        "1. The blurry man in the background wearing a yellow vest is positioned to the left of the table tennis player, partially obscured by the net.\n2. His face is out of focus, making it difficult to discern specific facial features or expressions, but his posture suggests he is watching the match.\n3. The yellow vest contrasts with the darker tones of the background, drawing attention to his presence despite the blur.\n4. He appears to be seated or standing behind the table, likely as a spectator or official, given his proximity to the playing area.\n5. The lighting in the background is dimmer than in the foreground, contributing to the blur and reducing the clarity of his figure.\n\n<final>[[1, 467, 168, 700]]</final>",
+        "1. The blurry man in the background wears a yellow vest and is positioned behind the table tennis net, slightly left of center, with his face out of focus.\n2. His yellow vest contrasts with the darker background, making him visually distinct despite the blur and low lighting conditions.\n3. He appears to be seated or standing behind the spectators' area, likely observing the match with no direct interaction visible.\n4. His posture suggests he is watching intently, but his facial features and exact position are obscured by motion blur and shallow depth of field.\n5. The man’s presence adds context to the environment, indicating an audience or support staff in the background of the competitive scene.\n\n<final> [1, 461, 168, 715] </final>"
+      ],
+      "chunks": [
+        "1. The blurry man in the background wears a yellow vest and is positioned behind the table tennis net, slightly left of center, with his face out of focus.",
+        "2. His yellow vest contrasts with the darker background, making him visually distinct despite the blur and low lighting conditions.",
+        "3. He appears to be seated or standing behind the spectators' area, likely observing the match with no direct interaction visible.",
+        "4. His posture suggests he is watching intently, but his facial features and exact position are obscured by motion blur and shallow depth of field.",
+        "5. The man’s presence adds context to the environment, indicating an audience or support staff in the background of the competitive scene.",
+        "<final> [1, 461, 168, 715] </final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          83
+        ],
+        [
+          83,
+          106
+        ],
+        [
+          106,
+          131
+        ],
+        [
+          131,
+          160
+        ],
+        [
+          160,
+          186
+        ],
+        [
+          186,
+          210
+        ]
+      ],
+      "anchor_vector": [
+        15.108143708794643,
+        14.128558846093405,
+        17.28669592612548,
+        14.564471905048077,
+        15.089680989583334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.66, 0.51, 0.85, 0.78].",
+      "reasoning_text": "<reasoning>\n1. The individual in the background is positioned behind the table tennis table, partially obscured by the net and the player in the foreground, indicating they are spectators or possibly officials.\n2. This person is wearing a dark-colored suit jacket, which contrasts with the brightly colored attire of the player actively engaged in the game.\n3. Their facial features are blurred due to the shallow depth of field, making it difficult to discern specific expressions, but they appear to be focused on the ongoing match.\n4. The individual's posture suggests they are standing upright and attentive, likely watching the rally unfold with interest or anticipation.\n5. The lighting in the venue highlights the player in the foreground, while the background figure remains relatively dimmer, emphasizing the central action of the game.\n</reasoning>\n<final>Person in the background wearing a dark suit, standing behind the table, likely a spectator or official, observing the match intently.</final>",
+      "raw_generation": [
+        "1. The person is wearing a dark suit jacket with a light-colored shirt underneath.  \n2. Their face is partially obscured by shadows, making facial features difficult to discern.  \n3. They appear to be seated or standing in the background, behind the table tennis table.  \n4. The individual’s posture suggests they are observing the game rather than actively participating.  \n5. Their presence adds depth to the scene, indicating spectators or officials at the event.  \n\n<final>Person in dark suit observing the table tennis match from the background.</final>",
+        "<reasoning>\n1. The individual in the background is positioned behind the table tennis table, partially obscured by the net and the player in the foreground, indicating they are spectators or possibly officials.\n2. This person is wearing a dark-colored suit jacket, which contrasts with the brightly colored attire of the player actively engaged in the game.\n3. Their facial features are blurred due to the shallow depth of field, making it difficult to discern specific expressions, but they appear to be focused on the ongoing match.\n4. The individual's posture suggests they are standing upright and attentive, likely watching the rally unfold with interest or anticipation.\n5. The lighting in the venue highlights the player in the foreground, while the background figure remains relatively dimmer, emphasizing the central action of the game.\n</reasoning>\n<final>Person in the background wearing a dark suit, standing behind the table, likely a spectator or official, observing the match intently.</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The individual in the background is positioned behind the table tennis table, partially obscured by the net and the player in the foreground, indicating they are spectators or possibly officials.",
+        "2. This person is wearing a dark-colored suit jacket, which contrasts with the brightly colored attire of the player actively engaged in the game.",
+        "3. Their facial features are blurred due to the shallow depth of field, making it difficult to discern specific expressions, but they appear to be focused on the ongoing match.",
+        "4. The individual's posture suggests they are standing upright and attentive, likely watching the rally unfold with interest or anticipation.",
+        "5. The lighting in the venue highlights the player in the foreground, while the background figure remains relatively dimmer, emphasizing the central action of the game.",
+        "</reasoning>\n<final>Person in the background wearing a dark suit, standing behind the table, likely a spectator or official, observing the match intently.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          80
+        ],
+        [
+          80,
+          113
+        ],
+        [
+          113,
+          141
+        ],
+        [
+          141,
+          175
+        ],
+        [
+          175,
+          199
+        ],
+        [
+          199,
+          230
+        ],
+        [
+          230,
+          265
+        ]
+      ],
+      "anchor_vector": [
+        16.670197159463125,
+        13.449275853360499,
+        17.782369526061434,
+        14.128104298675117,
+        17.03755895377304,
+        11.425946916852679,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.66, 0.51, 0.85, 0.78].",
+      "reasoning_text": "<reasoning>\n1. The individual in this region is dressed in dark formal attire, likely a suit, with a light-colored shirt and dark tie, suggesting a professional or formal setting.\n2. Their posture is upright, and they appear to be seated, possibly in an audience or spectator role, given the blurred background indicating a public venue.\n3. The person’s face is partially obscured by blurring, but their silhouette and attire suggest they are an observer rather than a participant in the foreground activity.\n4. The lighting in this area is dimmer compared to the brightly lit foreground, indicating they are further back in the venue, possibly in the stands or audience seating.\n5. Their presence contrasts with the focused, active player in the foreground, reinforcing their role as a spectator or non-participant in the table tennis match.\n</reasoning>\n<final>Person in dark suit seated in the background, observing the table tennis match.</final>",
+      "raw_generation": [
+        "1. The person is wearing a dark suit jacket with a light-colored shirt underneath.  \n2. Their face is partially obscured by shadows, making facial features difficult to discern.  \n3. They appear to be seated or standing in the background, behind the table tennis table.  \n4. The individual’s posture suggests they are observing the game rather than actively participating.  \n5. Their presence adds depth to the scene, indicating spectators or officials at the event.  \n\n<final>Person in dark suit observing the table tennis match from the background.</final>",
+        "<reasoning>\n1. The individual in this region is dressed in dark formal attire, likely a suit, with a light-colored shirt and dark tie, suggesting a professional or formal setting.\n2. Their posture is upright, and they appear to be seated, possibly in an audience or spectator role, given the blurred background indicating a public venue.\n3. The person’s face is partially obscured by blurring, but their silhouette and attire suggest they are an observer rather than a participant in the foreground activity.\n4. The lighting in this area is dimmer compared to the brightly lit foreground, indicating they are further back in the venue, possibly in the stands or audience seating.\n5. Their presence contrasts with the focused, active player in the foreground, reinforcing their role as a spectator or non-participant in the table tennis match.\n</reasoning>\n<final>Person in dark suit seated in the background, observing the table tennis match.</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The individual in this region is dressed in dark formal attire, likely a suit, with a light-colored shirt and dark tie, suggesting a professional or formal setting.",
+        "2. Their posture is upright, and they appear to be seated, possibly in an audience or spectator role, given the blurred background indicating a public venue.",
+        "3. The person’s face is partially obscured by blurring, but their silhouette and attire suggest they are an observer rather than a participant in the foreground activity.",
+        "4. The lighting in this area is dimmer compared to the brightly lit foreground, indicating they are further back in the venue, possibly in the stands or audience seating.",
+        "5. Their presence contrasts with the focused, active player in the foreground, reinforcing their role as a spectator or non-participant in the table tennis match.",
+        "</reasoning>\n<final>Person in dark suit seated in the background, observing the table tennis match.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          80
+        ],
+        [
+          80,
+          112
+        ],
+        [
+          112,
+          143
+        ],
+        [
+          143,
+          175
+        ],
+        [
+          175,
+          209
+        ],
+        [
+          209,
+          240
+        ],
+        [
+          240,
+          264
+        ]
+      ],
+      "anchor_vector": [
+        14.728838675086969,
+        15.940456070438506,
+        13.012092561377973,
+        11.430172178078221,
+        18.390697192120296,
+        15.070515950520834,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nPlease provide a short description for this region: [0.66, 0.51, 0.85, 0.78].",
+      "reasoning_text": "<1> The blurred figure in the background appears to be a spectator, wearing a dark suit, seated near the table tennis table, observing the match intently.  \n<2> This person’s face is out of focus, suggesting they are not the main subject, but their presence adds to the atmosphere of the competitive event.  \n<3> Their position behind the table indicates they are likely part of the audience or officials, positioned to view the game without interfering.  \n<4> The lighting highlights the player in the foreground, making the spectator’s silhouette less distinct and emphasizing the focus on the active athlete.  \n<5> Their still posture contrasts with the dynamic movement of the player, reinforcing the tension and concentration of the ongoing match.  \n<final> A blurred spectator in a dark suit, seated and observing the table tennis match from behind the table.",
+      "raw_generation": [
+        "1. The person is wearing a dark suit jacket with a light-colored shirt underneath.  \n2. Their face is partially obscured by shadows, making facial features difficult to discern.  \n3. They appear to be seated or standing in the background, behind the table tennis table.  \n4. The individual’s posture suggests they are observing the game rather than actively participating.  \n5. Their presence adds depth to the scene, indicating spectators or officials at the event.  \n\n<final>Person in dark suit observing the table tennis match from the background.</final>",
+        "<1> The blurred figure in the background appears to be a spectator, wearing a dark suit, seated near the table tennis table, observing the match intently.  \n<2> This person’s face is out of focus, suggesting they are not the main subject, but their presence adds to the atmosphere of the competitive event.  \n<3> Their position behind the table indicates they are likely part of the audience or officials, positioned to view the game without interfering.  \n<4> The lighting highlights the player in the foreground, making the spectator’s silhouette less distinct and emphasizing the focus on the active athlete.  \n<5> Their still posture contrasts with the dynamic movement of the player, reinforcing the tension and concentration of the ongoing match.  \n<final> A blurred spectator in a dark suit, seated and observing the table tennis match from behind the table."
+      ],
+      "chunks": [
+        "<1> The blurred figure in the background appears to be a spectator, wearing a dark suit, seated near the table tennis table, observing the match intently.",
+        "<2> This person’s face is out of focus, suggesting they are not the main subject, but their presence adds to the atmosphere of the competitive event.",
+        "<3> Their position behind the table indicates they are likely part of the audience or officials, positioned to view the game without interfering.",
+        "<4> The lighting highlights the player in the foreground, making the spectator’s silhouette less distinct and emphasizing the focus on the active athlete.",
+        "<5> Their still posture contrasts with the dynamic movement of the player, reinforcing the tension and concentration of the ongoing match.",
+        "<final> A blurred spectator in a dark suit, seated and observing the table tennis match from behind the table."
+      ],
+      "chunk_token_ranges": [
+        [
+          74,
+          107
+        ],
+        [
+          108,
+          140
+        ],
+        [
+          141,
+          168
+        ],
+        [
+          169,
+          197
+        ],
+        [
+          198,
+          223
+        ],
+        [
+          224,
+          247
+        ]
+      ],
+      "anchor_vector": [
+        14.995908254345668,
+        12.19023926118228,
+        12.221981592908902,
+        15.868661260190217,
+        14.370584239130435,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 46,
+  "subset": "coco",
+  "subset_local_idx": 12
+}

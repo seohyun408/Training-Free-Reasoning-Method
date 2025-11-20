@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "ai2d/images/449.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the relationship between fox and rabbit?\n\nOptions:\n- predator-prey\n- competition\n- host-parasite\n- mutualism\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows an arrow pointing from the rabbit to the fox, indicating that the fox consumes the rabbit as a food source.  \n2. This directional relationship signifies that the fox hunts and eats the rabbit, establishing a clear feeding hierarchy.  \n3. The fox is positioned higher in the food chain, while the rabbit occupies a lower trophic level, reinforcing the predator-prey dynamic.  \n4. No other arrows connect the fox and rabbit in a way that suggests competition, mutualism, or host-parasite interaction, ruling out those options.  \n5. The visual evidence confirms the fox preys upon the rabbit, making “predator-prey” the only accurate relationship among the given options.  \n\n<final>predator-prey</final>",
+      "raw_generation": [
+        "1. The diagram shows an arrow pointing from the rabbit to the fox, indicating that the fox consumes the rabbit as a food source.  \n2. This directional relationship implies that the fox benefits by obtaining energy and nutrients from the rabbit.  \n3. The rabbit, in turn, is negatively affected as it is being eaten, which is characteristic of a predator-prey dynamic.  \n4. No other arrows connect the fox and rabbit to suggest competition, parasitism, or mutualistic interactions.  \n5. The presence of a single directional arrow from rabbit to fox confirms the fox is the predator and the rabbit is the prey.  \n\n<final>predator-prey</final>",
+        "1. The diagram shows an arrow pointing from the rabbit to the fox, indicating that the fox consumes the rabbit as a food source.  \n2. This directional relationship signifies that the fox hunts and eats the rabbit, establishing a clear feeding hierarchy.  \n3. The fox is positioned higher in the food chain, while the rabbit occupies a lower trophic level, reinforcing the predator-prey dynamic.  \n4. No other arrows connect the fox and rabbit in a way that suggests competition, mutualism, or host-parasite interaction, ruling out those options.  \n5. The visual evidence confirms the fox preys upon the rabbit, making “predator-prey” the only accurate relationship among the given options.  \n\n<final>predator-prey</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows an arrow pointing from the rabbit to the fox, indicating that the fox consumes the rabbit as a food source.",
+        "2. This directional relationship signifies that the fox hunts and eats the rabbit, establishing a clear feeding hierarchy.",
+        "3. The fox is positioned higher in the food chain, while the rabbit occupies a lower trophic level, reinforcing the predator-prey dynamic.",
+        "4. No other arrows connect the fox and rabbit in a way that suggests competition, mutualism, or host-parasite interaction, ruling out those options.",
+        "5. The visual evidence confirms the fox preys upon the rabbit, making “predator-prey” the only accurate relationship among the given options.",
+        "<final>predator-prey</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          88,
+          115
+        ],
+        [
+          116,
+          137
+        ],
+        [
+          138,
+          168
+        ],
+        [
+          169,
+          201
+        ],
+        [
+          202,
+          232
+        ],
+        [
+          233,
+          243
+        ]
+      ],
+      "anchor_vector": [
+        13.701502511160715,
+        17.139739990234375,
+        13.255659993489582,
+        16.457486979166667,
+        17.5953125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 79,
+  "subset": "ai2d",
+  "subset_local_idx": 7
+}

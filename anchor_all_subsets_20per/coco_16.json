@@ -1,0 +1,204 @@
+{
+  "total_pairs": 4,
+  "successful_pairs": 4,
+  "image_path": "coco/train2017/000000014070.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat color are the tennis shoes?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>black</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The image shows a young baseball player in a red jersey and white pants, standing at home plate with a bat.\n2. The player is wearing athletic shoes, which are visible on both feet.\n3. The shoes have a dark upper, likely black, with white soles and white accents.\n4. The laces are also white, contrasting with the dark upper material.\n5. The shoes appear to be Nike brand, identifiable by the logo on the side.\n</reasoning>\n<final>black and white</final>",
+        "<final>black</final>"
+      ],
+      "chunks": [
+        "<final>black</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          49
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat color are the boy's pants?",
+      "reasoning_text": "1. The boy in the image is wearing baseball pants that are clearly visible from the waist down, positioned between his red jersey and black cleats.  \n2. The pants are predominantly white, with distinct blue stripes running along the outer sides of each leg, extending from the waist to the ankles.  \n3. The white fabric appears clean and contrasts sharply with the red jersey and blue stripes, making the color easily identifiable even from a distance.  \n4. The blue stripes are not faded or discolored, suggesting the boy’s uniform is well-maintained and the color is intentional for team or league standards.  \n5. The pants also show no visible dirt or stains, further confirming their original white color and the clarity of the blue accents on the sides.  \n\n<final>White with blue stripes</final>",
+      "raw_generation": [
+        "1. The boy in the image is wearing a baseball uniform, and his pants are clearly visible from the waist down.  \n2. The pants are predominantly white, matching the typical color of baseball uniforms for contrast and visibility.  \n3. There are blue stripes running down the sides of the pants, adding a design element to the uniform.  \n4. The blue stripes are consistent in color and placement, suggesting they are part of the team’s official uniform design.  \n5. The white color of the pants stands out against the brown dirt of the field and the boy’s red jersey, making them easily identifiable.  \n\n<final>White with blue stripes</final>",
+        "1. The boy in the image is wearing baseball pants that are clearly visible from the waist down, positioned between his red jersey and black cleats.  \n2. The pants are predominantly white, with distinct blue stripes running along the outer sides of each leg, extending from the waist to the ankles.  \n3. The white fabric appears clean and contrasts sharply with the red jersey and blue stripes, making the color easily identifiable even from a distance.  \n4. The blue stripes are not faded or discolored, suggesting the boy’s uniform is well-maintained and the color is intentional for team or league standards.  \n5. The pants also show no visible dirt or stains, further confirming their original white color and the clarity of the blue accents on the sides.  \n\n<final>White with blue stripes</final>"
+      ],
+      "chunks": [
+        "1. The boy in the image is wearing baseball pants that are clearly visible from the waist down, positioned between his red jersey and black cleats.",
+        "2. The pants are predominantly white, with distinct blue stripes running along the outer sides of each leg, extending from the waist to the ankles.",
+        "3. The white fabric appears clean and contrasts sharply with the red jersey and blue stripes, making the color easily identifiable even from a distance.",
+        "4. The blue stripes are not faded or discolored, suggesting the boy’s uniform is well-maintained and the color is intentional for team or league standards.",
+        "5. The pants also show no visible dirt or stains, further confirming their original white color and the clarity of the blue accents on the sides.",
+        "<final>White with blue stripes</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          54
+        ],
+        [
+          55,
+          84
+        ],
+        [
+          85,
+          113
+        ],
+        [
+          114,
+          148
+        ],
+        [
+          149,
+          178
+        ],
+        [
+          179,
+          189
+        ]
+      ],
+      "anchor_vector": [
+        12.803607797105911,
+        16.55662534410316,
+        11.432766808231912,
+        14.328825431034483,
+        8.56796875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat color is the boy's helmet?",
+      "reasoning_text": "1. The boy is positioned at home plate, holding a bat with both hands, preparing to swing during a baseball game.  \n2. He wears a bright red helmet that covers his head fully, offering protection during play.  \n3. The helmet’s surface is smooth and glossy, reflecting sunlight and contrasting with his red jersey.  \n4. Its design includes a small logo or emblem near the front, matching the team’s branding.  \n5. The helmet’s color is consistent across its entire surface, with no visible markings or patterns altering its primary hue.  \n\n<final>Red</final>",
+      "raw_generation": [
+        "1. The boy is positioned at home plate, holding a bat in a ready stance, indicating he is preparing to bat during a baseball game.  \n2. He is wearing protective gear, including a helmet that is clearly visible on his head, designed to safeguard against potential impacts.  \n3. The helmet’s surface is uniformly colored without any visible patterns or markings, making its hue easy to identify.  \n4. The color appears to be a bright, vivid shade that stands out against the dirt field and his red jersey, suggesting it is designed for high visibility.  \n5. Based on visual analysis, the helmet is distinctly red, matching the color of his jersey and creating a cohesive team appearance.  \n\n<final>Red</final>",
+        "1. The boy is positioned at home plate, holding a bat with both hands, preparing to swing during a baseball game.  \n2. He wears a bright red helmet that covers his head fully, offering protection during play.  \n3. The helmet’s surface is smooth and glossy, reflecting sunlight and contrasting with his red jersey.  \n4. Its design includes a small logo or emblem near the front, matching the team’s branding.  \n5. The helmet’s color is consistent across its entire surface, with no visible markings or patterns altering its primary hue.  \n\n<final>Red</final>"
+      ],
+      "chunks": [
+        "1. The boy is positioned at home plate, holding a bat with both hands, preparing to swing during a baseball game.",
+        "2. He wears a bright red helmet that covers his head fully, offering protection during play.",
+        "3. The helmet’s surface is smooth and glossy, reflecting sunlight and contrasting with his red jersey.",
+        "4. Its design includes a small logo or emblem near the front, matching the team’s branding.",
+        "5. The helmet’s color is consistent across its entire surface, with no visible markings or patterns altering its primary hue.",
+        "<final>Red</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          49
+        ],
+        [
+          50,
+          69
+        ],
+        [
+          70,
+          90
+        ],
+        [
+          91,
+          111
+        ],
+        [
+          112,
+          136
+        ],
+        [
+          137,
+          144
+        ]
+      ],
+      "anchor_vector": [
+        16.47394296287594,
+        11.974555896577382,
+        13.95874720982143,
+        14.927310035342263,
+        13.156808035714286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the boy doing?",
+      "reasoning_text": "1. The boy is standing in a batting stance, gripping a baseball bat with both hands, indicating he is preparing to swing at a pitch during a game.  \n2. His red helmet and focused posture suggest he is actively engaged in the game, anticipating the ball’s trajectory.  \n3. The dirt field and chain-link fence in the background confirm this is a youth baseball or softball game setting.  \n4. The bat is held horizontally, aligned with home plate, showing he is ready to make contact with the incoming ball.  \n5. A person’s hand holding a bat in the foreground implies another player is also ready to bat, adding context to the game’s flow.  \n<final>The boy is preparing to bat in a baseball game.</final>",
+      "raw_generation": [
+        "1. The boy is holding a baseball bat with both hands, positioned in a ready stance near home plate, indicating he is preparing to hit a pitch.  \n2. He is wearing a red jersey, white pants, and a red helmet, typical attire for a young baseball player during a game or practice.  \n3. His body is slightly crouched with knees bent, suggesting he is focused and anticipating the ball’s arrival for optimal swing timing.  \n4. The bat is angled forward, aligned with the pitcher’s mound, showing he is tracking the incoming pitch with intent to make contact.  \n5. The presence of a chain-link fence and other players in the background confirms this is a youth baseball game or organized practice session.  \n\n<final>The boy is preparing to bat during a youth baseball game or practice.</final>",
+        "1. The boy is standing in a batting stance, gripping a baseball bat with both hands, indicating he is preparing to swing at a pitch during a game.  \n2. His red helmet and focused posture suggest he is actively engaged in the game, anticipating the ball’s trajectory.  \n3. The dirt field and chain-link fence in the background confirm this is a youth baseball or softball game setting.  \n4. The bat is held horizontally, aligned with home plate, showing he is ready to make contact with the incoming ball.  \n5. A person’s hand holding a bat in the foreground implies another player is also ready to bat, adding context to the game’s flow.  \n<final>The boy is preparing to bat in a baseball game.</final>"
+      ],
+      "chunks": [
+        "1. The boy is standing in a batting stance, gripping a baseball bat with both hands, indicating he is preparing to swing at a pitch during a game.",
+        "2. His red helmet and focused posture suggest he is actively engaged in the game, anticipating the ball’s trajectory.",
+        "3. The dirt field and chain-link fence in the background confirm this is a youth baseball or softball game setting.",
+        "4. The bat is held horizontally, aligned with home plate, showing he is ready to make contact with the incoming ball.",
+        "5. A person’s hand holding a bat in the foreground implies another player is also ready to bat, adding context to the game’s flow.",
+        "<final>The boy is preparing to bat in a baseball game.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          52
+        ],
+        [
+          53,
+          76
+        ],
+        [
+          77,
+          100
+        ],
+        [
+          101,
+          126
+        ],
+        [
+          127,
+          156
+        ],
+        [
+          157,
+          172
+        ]
+      ],
+      "anchor_vector": [
+        13.159232200306096,
+        11.790651985408664,
+        13.926638903855363,
+        9.112801106770833,
+        11.147135416666666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 61,
+  "subset": "coco",
+  "subset_local_idx": 16
+}

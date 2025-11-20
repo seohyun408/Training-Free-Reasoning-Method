@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/802d80cd61ea2a10.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: THIS, 9999, WAY, UP, ONYRL",
+      "reasoning_text": "<1> A cardboard box labeled \"THIS WAY UP\" with an arrow and a dog silhouette sits atop a white shelf beside a telephone and storage bins.  \n<2> The box has a black label with gold text and symbols indicating correct orientation for handling.  \n<3> A white telephone with blue buttons is mounted on the wall to the right of the box.  \n<4> Below the shelf, a pair of red and white sneakers rests on a carpeted floor next to a wooden edge.  \n<5> A blue-trimmed white storage drawer is positioned to the left of the box, partially open.  \n<final> A cardboard box labeled \"THIS WAY UP\" with a dog silhouette and arrows sits atop a shelf beside a telephone and sneakers.",
+      "raw_generation": [
+        "1. A cardboard box labeled \"THIS WAY UP\" with a bull graphic and arrows sits atop a white shelf, surrounded by a blue-trimmed organizer and a wall-mounted phone.  \n2. The box features multiple shipping labels and handwritten text, including \"HAS LANDED,\" indicating it has recently arrived.  \n3. A transparent plastic storage bin with compartments is visible to the left, suggesting an organized but cluttered workspace.  \n4. A pair of red and white sneakers rests on the floor beneath the shelf, adding a casual, lived-in feel to the scene.  \n5. A black electrical cord snakes across the top of the shelf, connecting to a device partially obscured by the box.  \n<final>Cardboard box labeled \"THIS WAY UP\" with a bull graphic sits atop a white shelf, surrounded by a blue organizer, a wall phone, and sneakers on the floor.</final>",
+        "<1> A cardboard box labeled \"THIS WAY UP\" with an arrow and a dog silhouette sits atop a white shelf beside a telephone and storage bins.  \n<2> The box has a black label with gold text and symbols indicating correct orientation for handling.  \n<3> A white telephone with blue buttons is mounted on the wall to the right of the box.  \n<4> Below the shelf, a pair of red and white sneakers rests on a carpeted floor next to a wooden edge.  \n<5> A blue-trimmed white storage drawer is positioned to the left of the box, partially open.  \n<final> A cardboard box labeled \"THIS WAY UP\" with a dog silhouette and arrows sits atop a shelf beside a telephone and sneakers."
+      ],
+      "chunks": [
+        "<1> A cardboard box labeled \"THIS WAY UP\" with an arrow and a dog silhouette sits atop a white shelf beside a telephone and storage bins.",
+        "<2> The box has a black label with gold text and symbols indicating correct orientation for handling.",
+        "<3> A white telephone with blue buttons is mounted on the wall to the right of the box.",
+        "<4> Below the shelf, a pair of red and white sneakers rests on a carpeted floor next to a wooden edge.",
+        "<5> A blue-trimmed white storage drawer is positioned to the left of the box, partially open.",
+        "<final> A cardboard box labeled \"THIS WAY UP\" with a dog silhouette and arrows sits atop a shelf beside a telephone and sneakers."
+      ],
+      "chunk_token_ranges": [
+        [
+          70,
+          101
+        ],
+        [
+          102,
+          122
+        ],
+        [
+          123,
+          144
+        ],
+        [
+          145,
+          171
+        ],
+        [
+          172,
+          195
+        ],
+        [
+          196,
+          224
+        ]
+      ],
+      "anchor_vector": [
+        14.508016987117276,
+        14.618521311116421,
+        17.18557059307314,
+        16.071698490877328,
+        13.248360770089286,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 332,
+  "subset": "textvqa",
+  "subset_local_idx": 5
+}

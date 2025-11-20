@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/3138.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAs shown in the figure, AB is the diameter of circle O, and points C and D are on circle O. If ∠ABC = 70°, then the measure of ∠BDC is ()\nA. 50°\nB. 40°\nC. 30°\nD. 20°",
+      "reasoning_text": "1. Since AB is the diameter of circle O, any angle subtended by AB at the circumference, such as ∠ACB, is a right angle (90°) by the Thales' theorem.  \n2. Given ∠ABC = 70°, and knowing ∠ACB = 90°, we can calculate ∠BAC by subtracting these angles from 180°, resulting in ∠BAC = 20°.  \n3. ∠BDC is an inscribed angle subtending the same arc BC as ∠BAC, so both angles are equal because they intercept the same arc.  \n4. Therefore, ∠BDC must equal ∠BAC, which is 20°, as inscribed angles subtending the same arc are congruent.  \n5. This matches option D, confirming that ∠BDC = 20°, based on geometric properties of circles and inscribed angles.\n\n<final>D. 20°</final>",
+      "raw_generation": [
+        "1. Since AB is the diameter of circle O, any angle subtended by AB at the circumference is a right angle, meaning ∠ACB = 90° by the inscribed angle theorem for a semicircle.\n\n2. In triangle ABC, the sum of interior angles is 180°, and since ∠ACB = 90° and ∠ABC = 70°, the remaining angle ∠BAC = 180° - 90° - 70° = 20°.\n\n3. ∠BDC and ∠BAC both subtend the same arc BC on the circle, so they are equal as angles in the same segment.\n\n4. Therefore, ∠BDC = ∠BAC = 20°, as both angles are inscribed angles subtending the same arc BC.\n\n5. The correct answer is D. 20°, as it matches the calculated measure of ∠BDC.\n\n<final>D. 20°</final>",
+        "1. Since AB is the diameter of circle O, any angle subtended by AB at the circumference, such as ∠ACB, is a right angle (90°) by the Thales' theorem.  \n2. Given ∠ABC = 70°, and knowing ∠ACB = 90°, we can calculate ∠BAC by subtracting these angles from 180°, resulting in ∠BAC = 20°.  \n3. ∠BDC is an inscribed angle subtending the same arc BC as ∠BAC, so both angles are equal because they intercept the same arc.  \n4. Therefore, ∠BDC must equal ∠BAC, which is 20°, as inscribed angles subtending the same arc are congruent.  \n5. This matches option D, confirming that ∠BDC = 20°, based on geometric properties of circles and inscribed angles.\n\n<final>D. 20°</final>"
+      ],
+      "chunks": [
+        "1. Since AB is the diameter of circle O, any angle subtended by AB at the circumference, such as ∠ACB, is a right angle (90°) by the Thales' theorem.",
+        "2. Given ∠ABC = 70°, and knowing ∠ACB = 90°, we can calculate ∠BAC by subtracting these angles from 180°, resulting in ∠BAC = 20°.",
+        "3. ∠BDC is an inscribed angle subtending the same arc BC as ∠BAC, so both angles are equal because they intercept the same arc.",
+        "4. Therefore, ∠BDC must equal ∠BAC, which is 20°, as inscribed angles subtending the same arc are congruent.",
+        "5. This matches option D, confirming that ∠BDC = 20°, based on geometric properties of circles and inscribed angles.",
+        "<final>D. 20°</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          152,
+          196
+        ],
+        [
+          197,
+          252
+        ],
+        [
+          253,
+          288
+        ],
+        [
+          289,
+          324
+        ],
+        [
+          325,
+          355
+        ],
+        [
+          355,
+          366
+        ]
+      ],
+      "anchor_vector": [
+        10.483031723385766,
+        11.821994980743952,
+        11.996557044982909,
+        9.469700368245443,
+        13.677831013997396,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 99,
+  "subset": "geoqa+",
+  "subset_local_idx": 17
+}

@@ -1,0 +1,524 @@
+{
+  "total_pairs": 8,
+  "successful_pairs": 8,
+  "image_path": "docvqa/train/documents/njhx0227_1.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the grant No.? Answer the question using a single word or phrase.",
+      "reasoning_text": "478",
+      "raw_generation": [
+        "478",
+        "478"
+      ],
+      "chunks": [
+        "478"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          43
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the grant No.?",
+      "reasoning_text": "1. The document clearly displays the text \"Grant No. 478\" centered below the title \"THE NUTRITION FOUNDATION,\" indicating the specific grant number associated with this report.\n2. The grant number is also corroborated by the handwritten notation in the top right corner, which reads \"Pitkin, Roy m. #478,\" matching the typed number.\n3. The grant period, \"July 1, 1973–June 30, 1976,\" is positioned directly beneath the grant number, further contextualizing its relevance to this specific funding period.\n4. The report is authored by Roy M. Pitkin, M.D., affiliated with the Department of Obstetrics and Gynecology at the University of Iowa, suggesting institutional oversight and alignment with the grant's objectives.\n5. The watermark in the background, though faint, hints at a university seal, likely from the University of Iowa, reinforcing the institutional context of the grant and the author’s affiliation.\n\n<final>Grant No. 478</final>",
+      "raw_generation": [
+        "1. The document is a formal report submitted to The Nutrition Foundation, indicating its official nature and purpose.\n2. The grant number is clearly stated as \"Grant No. 478\" directly beneath the foundation's name.\n3. The report covers the period from July 1, 1973, to June 30, 1976, suggesting a three-year funding duration.\n4. The report is authored by Roy M. Pitkin, M.D., affiliated with the Department of Obstetrics and Gynecology at the University of Iowa.\n5. The handwritten notation in the top right corner, \"Pitkin, Roy M. #478,\" corroborates the grant number found in the typed text.\n\n<final>478</final>",
+        "1. The document clearly displays the text \"Grant No. 478\" centered below the title \"THE NUTRITION FOUNDATION,\" indicating the specific grant number associated with this report.\n2. The grant number is also corroborated by the handwritten notation in the top right corner, which reads \"Pitkin, Roy m. #478,\" matching the typed number.\n3. The grant period, \"July 1, 1973–June 30, 1976,\" is positioned directly beneath the grant number, further contextualizing its relevance to this specific funding period.\n4. The report is authored by Roy M. Pitkin, M.D., affiliated with the Department of Obstetrics and Gynecology at the University of Iowa, suggesting institutional oversight and alignment with the grant's objectives.\n5. The watermark in the background, though faint, hints at a university seal, likely from the University of Iowa, reinforcing the institutional context of the grant and the author’s affiliation.\n\n<final>Grant No. 478</final>"
+      ],
+      "chunks": [
+        "1. The document clearly displays the text \"Grant No.",
+        "478\" centered below the title \"THE NUTRITION FOUNDATION,\" indicating the specific grant number associated with this report.",
+        "2. The grant number is also corroborated by the handwritten notation in the top right corner, which reads \"Pitkin, Roy m.",
+        "#478,\" matching the typed number.",
+        "3. The grant period, \"July 1, 1973–June 30, 1976,\" is positioned directly beneath the grant number, further contextualizing its relevance to this specific funding period.",
+        "4. The report is authored by Roy M.",
+        "Pitkin, M.D., affiliated with the Department of Obstetrics and Gynecology at the University of Iowa, suggesting institutional oversight and alignment with the grant's objectives.",
+        "5. The watermark in the background, though faint, hints at a university seal, likely from the University of Iowa, reinforcing the institutional context of the grant and the author’s affiliation.",
+        "<final>Grant No.",
+        "478</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          34
+        ],
+        [
+          35,
+          62
+        ],
+        [
+          62,
+          91
+        ],
+        [
+          91,
+          101
+        ],
+        [
+          101,
+          148
+        ],
+        [
+          148,
+          158
+        ],
+        [
+          158,
+          192
+        ],
+        [
+          192,
+          229
+        ],
+        [
+          229,
+          235
+        ],
+        [
+          236,
+          242
+        ]
+      ],
+      "anchor_vector": [
+        12.648418072616497,
+        12.614207029725627,
+        13.413666363337798,
+        13.049327174771323,
+        12.763664686652044,
+        12.961197005167296,
+        14.3901440503003,
+        16.011962890625,
+        13.582356770833334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        10,
+        10
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhen is the document dated? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The document is a formal report submitted to The Nutrition Foundation, as indicated by the title centered at the top.  \n2. The report covers a specific time period, which is explicitly stated as “July 1, 1973–June 30, 1976,” directly beneath the grant number.  \n3. This date range indicates the duration of the funded project or research, suggesting the report summarizes work completed over a three-year span.  \n4. The document is authored by Roy M. Pitkin, M.D., affiliated with the University of Iowa’s Department of Obstetrics and Gynecology, further contextualizing the report’s academic origin.  \n5. The handwritten notation in the top-right corner, “Pitkin, Roy M. #478,” corroborates the author’s identity and matches the grant number listed, reinforcing the document’s authenticity and purpose.  \n\n<final>July 1, 1973–June 30, 1976</final>",
+      "raw_generation": [
+        "1. The document is a formal report submitted to The Nutrition Foundation, indicating its official nature and purpose.\n2. The report covers a specific time frame, which is clearly stated as July 1, 1973, to June 30, 1976.\n3. This date range suggests the document summarizes activities or findings over a three-year period.\n4. The document is authored by Roy M. Pitkin, M.D., affiliated with the University of Iowa, adding context to its origin.\n5. The handwritten notation in the top right corner, “Pitkin, Roy M. #478,” corroborates the author's identity and the grant number.\n\n<final>July 1, 1973–June 30, 1976</final>",
+        "1. The document is a formal report submitted to The Nutrition Foundation, as indicated by the title centered at the top.  \n2. The report covers a specific time period, which is explicitly stated as “July 1, 1973–June 30, 1976,” directly beneath the grant number.  \n3. This date range indicates the duration of the funded project or research, suggesting the report summarizes work completed over a three-year span.  \n4. The document is authored by Roy M. Pitkin, M.D., affiliated with the University of Iowa’s Department of Obstetrics and Gynecology, further contextualizing the report’s academic origin.  \n5. The handwritten notation in the top-right corner, “Pitkin, Roy M. #478,” corroborates the author’s identity and matches the grant number listed, reinforcing the document’s authenticity and purpose.  \n\n<final>July 1, 1973–June 30, 1976</final>"
+      ],
+      "chunks": [
+        "1. The document is a formal report submitted to The Nutrition Foundation, as indicated by the title centered at the top.",
+        "2. The report covers a specific time period, which is explicitly stated as “July 1, 1973–June 30, 1976,” directly beneath the grant number.",
+        "3. This date range indicates the duration of the funded project or research, suggesting the report summarizes work completed over a three-year span.",
+        "4. The document is authored by Roy M.",
+        "Pitkin, M.D., affiliated with the University of Iowa’s Department of Obstetrics and Gynecology, further contextualizing the report’s academic origin.",
+        "5. The handwritten notation in the top-right corner, “Pitkin, Roy M.",
+        "#478,” corroborates the author’s identity and matches the grant number listed, reinforcing the document’s authenticity and purpose.",
+        "<final>July 1, 1973–June 30, 1976</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          64
+        ],
+        [
+          65,
+          108
+        ],
+        [
+          109,
+          136
+        ],
+        [
+          137,
+          147
+        ],
+        [
+          147,
+          178
+        ],
+        [
+          179,
+          198
+        ],
+        [
+          198,
+          224
+        ],
+        [
+          225,
+          251
+        ]
+      ],
+      "anchor_vector": [
+        0.0,
+        9.93274658777442,
+        10.860922378394566,
+        10.58039314516129,
+        10.050496584008096,
+        11.782451923076923,
+        10.805739182692308,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhen is the document dated?",
+      "reasoning_text": "1. The document’s central text clearly states the date range as \"July 1, 1973–June 30, 1976,\" indicating the grant’s duration, not a single date.  \n2. The top right corner has a handwritten note that reads \"Pitkin, Roy m. #478,\" likely referencing the grantor or document identifier, not a date.  \n3. The bottom section lists Roy M. Pitkin, M.D., his department, and university, providing institutional context but no specific date.  \n4. The faint watermark in the center suggests a university seal, possibly Iowa, but does not include any date information.  \n5. The source URL at the bottom is a digital archive link, unrelated to the document’s original date.  \n<final>The document is dated July 1, 1973–June 30, 1976.</final>",
+      "raw_generation": [
+        "1. The document is a formal report submitted to The Nutrition Foundation, indicating its official nature and purpose.  \n2. The report covers a specific time frame, which is clearly stated as July 1, 1973, to June 30, 1976.  \n3. This date range suggests the report summarizes activities or findings over a three-year period, likely for grant evaluation.  \n4. The document is authored by Roy M. Pitkin, M.D., affiliated with the University of Iowa’s Department of Obstetrics and Gynecology.  \n5. The handwritten notation in the top right corner, “Pitkin, Roy M. #478,” corroborates the author’s identity and aligns with the grant number mentioned in the report.  \n\n<final>July 1, 1973–June 30, 1976</final>",
+        "1. The document’s central text clearly states the date range as \"July 1, 1973–June 30, 1976,\" indicating the grant’s duration, not a single date.  \n2. The top right corner has a handwritten note that reads \"Pitkin, Roy m. #478,\" likely referencing the grantor or document identifier, not a date.  \n3. The bottom section lists Roy M. Pitkin, M.D., his department, and university, providing institutional context but no specific date.  \n4. The faint watermark in the center suggests a university seal, possibly Iowa, but does not include any date information.  \n5. The source URL at the bottom is a digital archive link, unrelated to the document’s original date.  \n<final>The document is dated July 1, 1973–June 30, 1976.</final>"
+      ],
+      "chunks": [
+        "1. The document’s central text clearly states the date range as \"July 1, 1973–June 30, 1976,\" indicating the grant’s duration, not a single date.",
+        "2. The top right corner has a handwritten note that reads \"Pitkin, Roy m.",
+        "#478,\" likely referencing the grantor or document identifier, not a date.",
+        "3. The bottom section lists Roy M.",
+        "Pitkin, M.D., his department, and university, providing institutional context but no specific date.",
+        "4. The faint watermark in the center suggests a university seal, possibly Iowa, but does not include any date information.",
+        "5. The source URL at the bottom is a digital archive link, unrelated to the document’s original date.",
+        "<final>The document is dated July 1, 1973–June 30, 1976.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          66
+        ],
+        [
+          67,
+          87
+        ],
+        [
+          87,
+          105
+        ],
+        [
+          106,
+          115
+        ],
+        [
+          115,
+          135
+        ],
+        [
+          136,
+          160
+        ],
+        [
+          161,
+          183
+        ],
+        [
+          184,
+          213
+        ]
+      ],
+      "anchor_vector": [
+        9.980364974138126,
+        11.4293749564729,
+        9.755543423888161,
+        17.33501751659557,
+        18.19193721971874,
+        13.229527631897163,
+        14.198990986264985,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhose name is given? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The document is titled “REPORT TO THE NUTRITION FOUNDATION,” indicating it is an official report submitted to a funding or oversight body.  \n2. The name “Roy M. Pitkin, M.D.” is prominently listed at the bottom, identifying the author or principal investigator of the report.  \n3. The handwritten note in the upper right corner also repeats “Pitkin, Roy M.” and “#478,” reinforcing that Roy M. Pitkin is the associated individual.  \n4. His affiliation is clearly stated as “Department of Obstetrics and Gynecology, University of Iowa, Iowa City, Iowa,” confirming his professional identity.  \n5. The grant number “478” is aligned with his name, tying the report directly to his work and responsibility.  \n\n<final>Pitkin, Roy M.</final>",
+      "raw_generation": [
+        "1. The document is a report addressed to The Nutrition Foundation, indicating it is an official submission.  \n2. The report is specifically tied to Grant No. 478, which is a funding identifier for the project.  \n3. The report covers the period from July 1, 1973, to June 30, 1976, suggesting a three-year research or study duration.  \n4. The author of the report is identified as Roy M. Pitkin, M.D., affiliated with the Department of Obstetrics and Gynecology at the University of Iowa.  \n5. The handwritten notation in the top right corner also confirms the name \"Pitkin, Roy M.\" and the grant number, reinforcing the author's identity.  \n\n<final>Pitkin, Roy M.</final>",
+        "1. The document is titled “REPORT TO THE NUTRITION FOUNDATION,” indicating it is an official report submitted to a funding or oversight body.  \n2. The name “Roy M. Pitkin, M.D.” is prominently listed at the bottom, identifying the author or principal investigator of the report.  \n3. The handwritten note in the upper right corner also repeats “Pitkin, Roy M.” and “#478,” reinforcing that Roy M. Pitkin is the associated individual.  \n4. His affiliation is clearly stated as “Department of Obstetrics and Gynecology, University of Iowa, Iowa City, Iowa,” confirming his professional identity.  \n5. The grant number “478” is aligned with his name, tying the report directly to his work and responsibility.  \n\n<final>Pitkin, Roy M.</final>"
+      ],
+      "chunks": [
+        "1. The document is titled “REPORT TO THE NUTRITION FOUNDATION,” indicating it is an official report submitted to a funding or oversight body.",
+        "2. The name “Roy M.",
+        "Pitkin, M.D.” is prominently listed at the bottom, identifying the author or principal investigator of the report.",
+        "3. The handwritten note in the upper right corner also repeats “Pitkin, Roy M.” and “#478,” reinforcing that Roy M.",
+        "Pitkin is the associated individual.",
+        "4. His affiliation is clearly stated as “Department of Obstetrics and Gynecology, University of Iowa, Iowa City, Iowa,” confirming his professional identity.",
+        "5. The grant number “478” is aligned with his name, tying the report directly to his work and responsibility.",
+        "<final>Pitkin, Roy M.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          71
+        ],
+        [
+          72,
+          80
+        ],
+        [
+          80,
+          103
+        ],
+        [
+          104,
+          136
+        ],
+        [
+          136,
+          143
+        ],
+        [
+          144,
+          176
+        ],
+        [
+          177,
+          203
+        ],
+        [
+          204,
+          215
+        ]
+      ],
+      "anchor_vector": [
+        12.868460882480884,
+        12.964487919933177,
+        16.352332267704067,
+        15.657247796758906,
+        15.306834792201613,
+        14.502352627840908,
+        20.269886363636363,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhose name is given?",
+      "reasoning_text": "1. The typed text at the bottom of the page clearly identifies Roy M. Pitkin, M.D. as the author of this report.  \n2. His professional title and affiliation, “Department of Obstetrics and Gynecology, University of Iowa,” are listed directly beneath his name.  \n3. The handwritten note in the upper right corner also spells out “Pitkin, Roy m.” and includes the grant number “#478,” confirming his identity.  \n4. The report’s subject line, “REPORT TO THE NUTRITION FOUNDATION,” implies he is the principal investigator or recipient of the grant.  \n5. The document’s date range, “July 1, 1973–June 30, 1976,” suggests Roy M. Pitkin, M.D., conducted the work covered in this report.  \n\n<final>Roy M. Pitkin, M.D.</final>",
+      "raw_generation": [
+        "1. The document clearly displays the name \"Roy M. Pitkin, M.D.\" at the bottom, indicating the author or recipient of the report.  \n2. The handwritten note in the top right corner also spells out \"Pitkin, Roy m.\" confirming the individual's identity.  \n3. The typed text below the report title further identifies \"Roy M. Pitkin, M.D.\" as the affiliated medical professional.  \n4. The affiliation listed as \"Department of Obstetrics and Gynecology, University of Iowa\" reinforces that this is the name of the medical doctor involved.  \n5. The grant number \"#478\" and the date range \"July 1, 1973–June 30, 1976\" are associated with this individual’s report, solidifying his role.  \n\n<final>Roy M. Pitkin, M.D.</final>",
+        "1. The typed text at the bottom of the page clearly identifies Roy M. Pitkin, M.D. as the author of this report.  \n2. His professional title and affiliation, “Department of Obstetrics and Gynecology, University of Iowa,” are listed directly beneath his name.  \n3. The handwritten note in the upper right corner also spells out “Pitkin, Roy m.” and includes the grant number “#478,” confirming his identity.  \n4. The report’s subject line, “REPORT TO THE NUTRITION FOUNDATION,” implies he is the principal investigator or recipient of the grant.  \n5. The document’s date range, “July 1, 1973–June 30, 1976,” suggests Roy M. Pitkin, M.D., conducted the work covered in this report.  \n\n<final>Roy M. Pitkin, M.D.</final>"
+      ],
+      "chunks": [
+        "1. The typed text at the bottom of the page clearly identifies Roy M.",
+        "Pitkin, M.D.",
+        "as the author of this report.",
+        "2. His professional title and affiliation, “Department of Obstetrics and Gynecology, University of Iowa,” are listed directly beneath his name.",
+        "3. The handwritten note in the upper right corner also spells out “Pitkin, Roy m.” and includes the grant number “#478,” confirming his identity.",
+        "4. The report’s subject line, “REPORT TO THE NUTRITION FOUNDATION,” implies he is the principal investigator or recipient of the grant.",
+        "5. The document’s date range, “July 1, 1973–June 30, 1976,” suggests Roy M.",
+        "Pitkin, M.D., conducted the work covered in this report.",
+        "<final>Roy M.",
+        "Pitkin, M.D.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          36
+        ],
+        [
+          36,
+          42
+        ],
+        [
+          42,
+          49
+        ],
+        [
+          50,
+          79
+        ],
+        [
+          80,
+          116
+        ],
+        [
+          117,
+          148
+        ],
+        [
+          149,
+          183
+        ],
+        [
+          183,
+          197
+        ],
+        [
+          198,
+          204
+        ],
+        [
+          204,
+          212
+        ]
+      ],
+      "anchor_vector": [
+        10.204265068527267,
+        13.78217208866178,
+        10.693115376480023,
+        10.543204009580203,
+        14.631109519318063,
+        15.200044135085676,
+        13.199823288690476,
+        15.862223307291668,
+        24.3955078125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        10,
+        10
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 6,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich university is mentioned? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The document clearly states \"University of Iowa\" as the institution affiliated with Roy M. Pitkin, M.D.  \n2. The affiliation is listed directly under his name and department title, indicating institutional association.  \n3. The text “University of Iowa” appears in the lower portion of the page, beneath the department name.  \n4. The location “Iowa City, Iowa” further confirms the university’s geographical placement.  \n5. The document’s formal structure and official tone suggest the university is the primary institution referenced.  \n\n<final>University of Iowa</final>",
+      "raw_generation": [
+        "1. The document clearly states the name of the institution associated with Roy M. Pitkin, M.D.  \n2. Below his name and title, the text specifies “University of Iowa” as his affiliated institution.  \n3. The department listed is “Department of Obstetrics and Gynecology,” which is part of this university.  \n4. The location “Iowa City, Iowa” further confirms the university’s geographical association.  \n5. The document’s header and footer do not mention any other universities, making this the only one referenced.  \n\n<final>University of Iowa</final>",
+        "1. The document clearly states \"University of Iowa\" as the institution affiliated with Roy M. Pitkin, M.D.  \n2. The affiliation is listed directly under his name and department title, indicating institutional association.  \n3. The text “University of Iowa” appears in the lower portion of the page, beneath the department name.  \n4. The location “Iowa City, Iowa” further confirms the university’s geographical placement.  \n5. The document’s formal structure and official tone suggest the university is the primary institution referenced.  \n\n<final>University of Iowa</final>"
+      ],
+      "chunks": [
+        "1. The document clearly states \"University of Iowa\" as the institution affiliated with Roy M.",
+        "Pitkin, M.D.",
+        "2. The affiliation is listed directly under his name and department title, indicating institutional association.",
+        "3. The text “University of Iowa” appears in the lower portion of the page, beneath the department name.",
+        "4. The location “Iowa City, Iowa” further confirms the university’s geographical placement.",
+        "5. The document’s formal structure and official tone suggest the university is the primary institution referenced.",
+        "<final>University of Iowa</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          57
+        ],
+        [
+          57,
+          63
+        ],
+        [
+          64,
+          82
+        ],
+        [
+          83,
+          106
+        ],
+        [
+          107,
+          126
+        ],
+        [
+          127,
+          146
+        ],
+        [
+          147,
+          156
+        ]
+      ],
+      "anchor_vector": [
+        18.60015503415941,
+        20.507497457411645,
+        19.039788652308985,
+        22.977613304093566,
+        21.94302100466009,
+        23.796875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 7,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich university is mentioned?",
+      "reasoning_text": "1. The document clearly states “University of Iowa” as the institution affiliated with Roy M. Pitkin, M.D., located in Iowa City, Iowa.  \n2. The text directly under the department name specifies “University of Iowa,” confirming the academic institution involved.  \n3. The university’s name is typed in all capital letters, making it prominent and easily identifiable in the document.  \n4. The department listed, “Department of Obstetrics and Gynecology,” is part of the University of Iowa’s structure, reinforcing institutional affiliation.  \n5. The document’s header and footer both reference the University of Iowa as the originating institution, ensuring consistency across the document.  \n\n<final>University of Iowa</final>",
+      "raw_generation": [
+        "1. The document clearly states the name of the institution associated with Roy M. Pitkin, M.D., who is the author of the report.  \n2. The text directly identifies the institution as the “University of Iowa,” located in Iowa City, Iowa.  \n3. The university’s name appears in the typed address block beneath the author’s name and title.  \n4. The document’s header also references a grant from “The Nutrition Foundation,” but the university is explicitly named in the author’s affiliation section.  \n5. The watermark faintly visible in the background further corroborates the university’s identity as the “University of Iowa.”  \n\n<final>University of Iowa</final>",
+        "1. The document clearly states “University of Iowa” as the institution affiliated with Roy M. Pitkin, M.D., located in Iowa City, Iowa.  \n2. The text directly under the department name specifies “University of Iowa,” confirming the academic institution involved.  \n3. The university’s name is typed in all capital letters, making it prominent and easily identifiable in the document.  \n4. The department listed, “Department of Obstetrics and Gynecology,” is part of the University of Iowa’s structure, reinforcing institutional affiliation.  \n5. The document’s header and footer both reference the University of Iowa as the originating institution, ensuring consistency across the document.  \n\n<final>University of Iowa</final>"
+      ],
+      "chunks": [
+        "1. The document clearly states “University of Iowa” as the institution affiliated with Roy M.",
+        "Pitkin, M.D., located in Iowa City, Iowa.",
+        "2. The text directly under the department name specifies “University of Iowa,” confirming the academic institution involved.",
+        "3. The university’s name is typed in all capital letters, making it prominent and easily identifiable in the document.",
+        "4. The department listed, “Department of Obstetrics and Gynecology,” is part of the University of Iowa’s structure, reinforcing institutional affiliation.",
+        "5. The document’s header and footer both reference the University of Iowa as the originating institution, ensuring consistency across the document.",
+        "<final>University of Iowa</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          37
+        ],
+        [
+          37,
+          50
+        ],
+        [
+          51,
+          72
+        ],
+        [
+          73,
+          96
+        ],
+        [
+          97,
+          127
+        ],
+        [
+          128,
+          153
+        ],
+        [
+          154,
+          163
+        ]
+      ],
+      "anchor_vector": [
+        9.112136535174706,
+        7.731390406638198,
+        7.570918110280797,
+        8.301887839988426,
+        11.330849880642361,
+        8.670145670572916,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 30,
+  "subset": "docvqa",
+  "subset_local_idx": 1
+}

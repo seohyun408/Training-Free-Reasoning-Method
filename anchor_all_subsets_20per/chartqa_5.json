@@ -1,0 +1,92 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "chartqa/train/png/two_col_5185.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat was the total health expenditure in the Netherlands in 2020? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>14.5%</final>",
+      "raw_generation": [
+        "14.5% of GDP\n\n1. The chart displays the share of GDP allocated to health expenditure in the Netherlands from 1998 to 2020.\n2. Each data point represents a specific year, with the percentage value labeled above the point.\n3. The final data point on the right corresponds to the year 2020.\n4. The value associated with the 2020 data point is clearly labeled as 14.5%.\n5. This percentage indicates the proportion of the country's Gross Domestic Product spent on health in that year.\n\n<final>14.5% of GDP</final>",
+        "<final>14.5%</final>"
+      ],
+      "chunks": [
+        "<final>14.5%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          70
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn what year was it compulsory to pay a total mandatory excess before the basic health insurance reimburses medical costs? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The graph shows the share of GDP for health-related expenditures from 1998 to 2020.\n2. It does not provide information about mandatory excesses or health insurance reimbursement rules.\n3. The chart's data focuses on economic percentages, not policy changes or insurance regulations.\n4. No year or policy detail related to mandatory excesses is visible or implied in the visual data.\n5. The graph cannot determine when a total mandatory excess became compulsory for health insurance reimbursements.\n\n<final>Not answerable from the image</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The image is a line graph showing the \"Share of GDP\" over time, from 1998 to 2020, with data points labeled for each year.\n2. The graph does not contain any information about health insurance policies, mandatory excesses, or reimbursement rules.\n3. The vertical axis represents percentages of GDP, and the horizontal axis represents years, with no mention of health insurance or related regulations.\n4. The data presented is purely economic, showing trends in GDP share, unrelated to healthcare financing or insurance requirements.\n5. Since the graph lacks any reference to health insurance or mandatory excesses, it is impossible to determine the year such a policy was implemented.\n</reasoning>\n<final>Not answerable from the image</final>",
+        "1. The graph shows the share of GDP for health-related expenditures from 1998 to 2020.\n2. It does not provide information about mandatory excesses or health insurance reimbursement rules.\n3. The chart's data focuses on economic percentages, not policy changes or insurance regulations.\n4. No year or policy detail related to mandatory excesses is visible or implied in the visual data.\n5. The graph cannot determine when a total mandatory excess became compulsory for health insurance reimbursements.\n\n<final>Not answerable from the image</final>"
+      ],
+      "chunks": [
+        "1. The graph shows the share of GDP for health-related expenditures from 1998 to 2020.",
+        "2. It does not provide information about mandatory excesses or health insurance reimbursement rules.",
+        "3. The chart's data focuses on economic percentages, not policy changes or insurance regulations.",
+        "4. No year or policy detail related to mandatory excesses is visible or implied in the visual data.",
+        "5. The graph cannot determine when a total mandatory excess became compulsory for health insurance reimbursements.",
+        "<final>Not answerable from the image</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          72,
+          98
+        ],
+        [
+          98,
+          115
+        ],
+        [
+          115,
+          133
+        ],
+        [
+          133,
+          154
+        ],
+        [
+          154,
+          173
+        ],
+        [
+          173,
+          185
+        ]
+      ],
+      "anchor_vector": [
+        14.854280303815605,
+        9.341650354931925,
+        13.320329632675438,
+        12.202315146462958,
+        10.894694010416666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 21,
+  "subset": "chartqa",
+  "subset_local_idx": 5
+}

@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "llava/llava_pretrain/images/00011/000116602.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWrite a detailed description of the given image.",
+      "reasoning_text": "1. The image shows a person with a dark complexion holding a black credit card in their left hand, positioned above a laptop keyboard, indicating they are about to enter payment details.  \n2. Their right hand is actively typing on the laptop’s keyboard, suggesting they are in the process of completing an online transaction or form.  \n3. The laptop is silver and sleek, with a visible trackpad and keyboard, placed on a light-colored wooden surface, likely a desk or table in a home or office setting.  \n4. The person’s face is partially visible at the top of the frame, with a blurred background emphasizing the action of payment processing and online shopping.  \n5. The credit card has a white stripe near the top and a chip on the front, typical of modern payment cards, and the person’s grip suggests careful attention to the transaction details.  \n\n<final> A person with a dark complexion holds a black credit card above a silver laptop while typing, indicating an online payment in progress on a wooden surface.",
+      "raw_generation": [
+        "1. A person with a dark complexion holds a black credit card in their left hand, positioned above a laptop keyboard, suggesting an online transaction or payment process.  \n2. The individual’s right hand is actively typing on the laptop’s keyboard, indicating engagement in data entry or navigation during a financial transaction.  \n3. The laptop is silver-colored with a sleek, modern design, featuring a visible trackpad and keyboard layout, placed on a light-colored wooden or laminate surface.  \n4. The person wears a white shirt, partially visible in the frame, and their facial features are blurred, focusing attention on the action of using the credit card and laptop.  \n5. The background is softly blurred, emphasizing the foreground activity and creating a shallow depth of field that highlights the transactional moment.  \n\n<final>Person using a credit card for an online transaction on a silver laptop, with hands actively engaged in typing and holding the card.</final>",
+        "1. The image shows a person with a dark complexion holding a black credit card in their left hand, positioned above a laptop keyboard, indicating they are about to enter payment details.  \n2. Their right hand is actively typing on the laptop’s keyboard, suggesting they are in the process of completing an online transaction or form.  \n3. The laptop is silver and sleek, with a visible trackpad and keyboard, placed on a light-colored wooden surface, likely a desk or table in a home or office setting.  \n4. The person’s face is partially visible at the top of the frame, with a blurred background emphasizing the action of payment processing and online shopping.  \n5. The credit card has a white stripe near the top and a chip on the front, typical of modern payment cards, and the person’s grip suggests careful attention to the transaction details.  \n\n<final> A person with a dark complexion holds a black credit card above a silver laptop while typing, indicating an online payment in progress on a wooden surface."
+      ],
+      "chunks": [
+        "1. The image shows a person with a dark complexion holding a black credit card in their left hand, positioned above a laptop keyboard, indicating they are about to enter payment details.",
+        "2. Their right hand is actively typing on the laptop’s keyboard, suggesting they are in the process of completing an online transaction or form.",
+        "3. The laptop is silver and sleek, with a visible trackpad and keyboard, placed on a light-colored wooden surface, likely a desk or table in a home or office setting.",
+        "4. The person’s face is partially visible at the top of the frame, with a blurred background emphasizing the action of payment processing and online shopping.",
+        "5. The credit card has a white stripe near the top and a chip on the front, typical of modern payment cards, and the person’s grip suggests careful attention to the transaction details.",
+        "<final> A person with a dark complexion holds a black credit card above a silver laptop while typing, indicating an online payment in progress on a wooden surface."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          62
+        ],
+        [
+          63,
+          91
+        ],
+        [
+          92,
+          129
+        ],
+        [
+          130,
+          160
+        ],
+        [
+          161,
+          199
+        ],
+        [
+          200,
+          232
+        ]
+      ],
+      "anchor_vector": [
+        9.959912723902239,
+        11.456557207392425,
+        12.331132355628654,
+        11.325204949629935,
+        11.8638916015625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 6282,
+  "subset": "llava",
+  "subset_local_idx": 7
+}

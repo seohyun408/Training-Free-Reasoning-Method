@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/7891/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the capital of Illinois?\nContext: N/A\nOptions: (A) Biloxi (B) Chicago (C) Frankfort (D) Springfield",
+      "reasoning_text": "1. The image highlights Illinois in dark green, indicating it is the focus of the question, while all other states are in a lighter green for contrast.  \n2. Illinois is located in the Midwest, bordered by Wisconsin to the north, Indiana to the east, and Missouri to the south, making its capital easily identifiable from geography.  \n3. Among the options, Biloxi is in Mississippi, Frankfort is in Kentucky, and Chicago is a major city but not the capital, narrowing down to Springfield as the only correct choice.  \n4. Springfield is the actual capital of Illinois, located in central Illinois and historically significant as the state’s seat of government since 1839.  \n5. The correct answer must be (D) Springfield, as it is the only option matching Illinois’s actual capital, confirmed by geographic and historical knowledge.  \n\n<final>(D) Springfield</final>",
+      "raw_generation": [
+        "1. The image displays a map of the United States with the state of Illinois highlighted in a darker shade, indicating it is the focus of the question.  \n2. Illinois is located in the Midwest region, bordered by Wisconsin to the north, Indiana to the east, Kentucky to the south, and Missouri to the west.  \n3. Among the given options, Biloxi is the capital of Mississippi, Frankfort is the capital of Kentucky, and Chicago is a major city but not the capital of Illinois.  \n4. Springfield is the correct capital of Illinois, as it is the seat of government and the location of the Illinois State Capitol building.  \n5. The map’s visual emphasis on Illinois confirms the question is asking for its capital, and Springfield is the only option that matches Illinois’s actual capital city.\n\n<final>Springfield</final>",
+        "1. The image highlights Illinois in dark green, indicating it is the focus of the question, while all other states are in a lighter green for contrast.  \n2. Illinois is located in the Midwest, bordered by Wisconsin to the north, Indiana to the east, and Missouri to the south, making its capital easily identifiable from geography.  \n3. Among the options, Biloxi is in Mississippi, Frankfort is in Kentucky, and Chicago is a major city but not the capital, narrowing down to Springfield as the only correct choice.  \n4. Springfield is the actual capital of Illinois, located in central Illinois and historically significant as the state’s seat of government since 1839.  \n5. The correct answer must be (D) Springfield, as it is the only option matching Illinois’s actual capital, confirmed by geographic and historical knowledge.  \n\n<final>(D) Springfield</final>"
+      ],
+      "chunks": [
+        "1. The image highlights Illinois in dark green, indicating it is the focus of the question, while all other states are in a lighter green for contrast.",
+        "2. Illinois is located in the Midwest, bordered by Wisconsin to the north, Indiana to the east, and Missouri to the south, making its capital easily identifiable from geography.",
+        "3. Among the options, Biloxi is in Mississippi, Frankfort is in Kentucky, and Chicago is a major city but not the capital, narrowing down to Springfield as the only correct choice.",
+        "4. Springfield is the actual capital of Illinois, located in central Illinois and historically significant as the state’s seat of government since 1839.",
+        "5. The correct answer must be (D) Springfield, as it is the only option matching Illinois’s actual capital, confirmed by geographic and historical knowledge.",
+        "<final>(D) Springfield</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          76,
+          107
+        ],
+        [
+          108,
+          143
+        ],
+        [
+          144,
+          184
+        ],
+        [
+          185,
+          216
+        ],
+        [
+          217,
+          248
+        ],
+        [
+          249,
+          258
+        ]
+      ],
+      "anchor_vector": [
+        9.979208166822676,
+        9.785809741823478,
+        11.111221951538232,
+        9.212037445396506,
+        11.799262152777779,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 28,
+  "subset": "sqa",
+  "subset_local_idx": 6
+}

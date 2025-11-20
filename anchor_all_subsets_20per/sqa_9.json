@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/15549/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nSelect the organism in the same genus as the Burmese python.\nContext: This organism is a Burmese python. Its scientific name is Python bivittatus.\nOptions: (A) Python reticulatus (B) Chroicocephalus novaehollandiae (C) Melanoplus bivittatus",
+      "reasoning_text": "1. The Burmese python, identified as Python bivittatus, belongs to the genus Python, which is clearly indicated by its binomial nomenclature in the context provided.\n\n2. Option (A), Python reticulatus, shares the same genus name “Python” as the Burmese python, making it taxonomically correct and directly comparable within the same genus.\n\n3. Option (B), Chroicocephalus novaehollandiae, belongs to the genus Chroicocephalus, which is distinct from Python and unrelated to the Burmese python’s taxonomic classification.\n\n4. Option (C), Melanoplus bivittatus, is classified under the genus Melanoplus, which is a grasshopper genus, not related to snakes or the genus Python.\n\n5. Therefore, the only organism that matches the genus Python, and thus the correct answer, is Python reticulatus, as it is the only option sharing the same genus designation.\n\n<final>Python reticulatus</final>",
+      "raw_generation": [
+        "1. The Burmese python, identified as Python bivittatus, belongs to the genus Python, which includes other large constrictor snakes such as the reticulated python.\n2. Option (A), Python reticulatus, shares the same genus name, Python, with the Burmese python, making it a direct taxonomic match.\n3. Option (B), Chroicocephalus novaehollandiae, is a bird species, specifically a silver gull, and does not belong to the genus Python or the snake family.\n4. Option (C), Melanoplus bivittatus, is a grasshopper species, placing it in a completely different taxonomic class and genus unrelated to snakes.\n5. Since only option (A) shares the genus Python with the Burmese python, it is the correct selection based on biological classification.\n\n<final>(A) Python reticulatus</final>",
+        "1. The Burmese python, identified as Python bivittatus, belongs to the genus Python, which is clearly indicated by its binomial nomenclature in the context provided.\n\n2. Option (A), Python reticulatus, shares the same genus name “Python” as the Burmese python, making it taxonomically correct and directly comparable within the same genus.\n\n3. Option (B), Chroicocephalus novaehollandiae, belongs to the genus Chroicocephalus, which is distinct from Python and unrelated to the Burmese python’s taxonomic classification.\n\n4. Option (C), Melanoplus bivittatus, is classified under the genus Melanoplus, which is a grasshopper genus, not related to snakes or the genus Python.\n\n5. Therefore, the only organism that matches the genus Python, and thus the correct answer, is Python reticulatus, as it is the only option sharing the same genus designation.\n\n<final>Python reticulatus</final>"
+      ],
+      "chunks": [
+        "1. The Burmese python, identified as Python bivittatus, belongs to the genus Python, which is clearly indicated by its binomial nomenclature in the context provided.",
+        "2. Option (A), Python reticulatus, shares the same genus name “Python” as the Burmese python, making it taxonomically correct and directly comparable within the same genus.",
+        "3. Option (B), Chroicocephalus novaehollandiae, belongs to the genus Chroicocephalus, which is distinct from Python and unrelated to the Burmese python’s taxonomic classification.",
+        "4. Option (C), Melanoplus bivittatus, is classified under the genus Melanoplus, which is a grasshopper genus, not related to snakes or the genus Python.",
+        "5. Therefore, the only organism that matches the genus Python, and thus the correct answer, is Python reticulatus, as it is the only option sharing the same genus designation.",
+        "<final>Python reticulatus</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          146,
+          184
+        ],
+        [
+          184,
+          225
+        ],
+        [
+          225,
+          269
+        ],
+        [
+          269,
+          311
+        ],
+        [
+          311,
+          349
+        ],
+        [
+          349,
+          360
+        ]
+      ],
+      "anchor_vector": [
+        14.44958024782369,
+        18.975696187378958,
+        19.304793559419384,
+        18.39535361842105,
+        34.375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 56,
+  "subset": "sqa",
+  "subset_local_idx": 9
+}

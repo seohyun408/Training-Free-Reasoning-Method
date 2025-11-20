@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "coco/train2017/000000292543.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the man doing with the beans?\nA. cooking\nB. eating them\nC. counting\nD. selling them\nAnswer with the option's letter from the given choices directly.",
+      "reasoning_text": "1. The man is standing beside a cart piled high with green beans, indicating he is involved in handling or displaying produce for sale.  \n2. His hands are positioned near the beans, suggesting he is arranging or preparing them for customers rather than consuming or cooking them.  \n3. The cart’s location in a busy street market, surrounded by pedestrians and other vendors, supports the idea that he is engaged in commerce.  \n4. The presence of other market stalls and shoppers implies a commercial environment where goods are sold, not consumed or counted privately.  \n5. The man’s posture and focus on the beans, combined with the cart’s setup, strongly indicate he is selling them to customers passing by.  \n\n<final>D</final>",
+      "raw_generation": [
+        "1. The man is standing beside a cart loaded with green beans, indicating he is involved in their display or distribution.  \n2. His posture and proximity to the beans suggest he is managing or presenting them for potential buyers.  \n3. The cart’s design and location in a busy street imply it is set up for commercial purposes rather than personal use.  \n4. No cooking equipment, eating utensils, or counting tools are visible near the beans, eliminating those options.  \n5. The context of a market street and the man’s role beside the produce strongly supports that he is selling them.  \n\n<final>D</final>",
+        "1. The man is standing beside a cart piled high with green beans, indicating he is involved in handling or displaying produce for sale.  \n2. His hands are positioned near the beans, suggesting he is arranging or preparing them for customers rather than consuming or cooking them.  \n3. The cart’s location in a busy street market, surrounded by pedestrians and other vendors, supports the idea that he is engaged in commerce.  \n4. The presence of other market stalls and shoppers implies a commercial environment where goods are sold, not consumed or counted privately.  \n5. The man’s posture and focus on the beans, combined with the cart’s setup, strongly indicate he is selling them to customers passing by.  \n\n<final>D</final>"
+      ],
+      "chunks": [
+        "1. The man is standing beside a cart piled high with green beans, indicating he is involved in handling or displaying produce for sale.",
+        "2. His hands are positioned near the beans, suggesting he is arranging or preparing them for customers rather than consuming or cooking them.",
+        "3. The cart’s location in a busy street market, surrounded by pedestrians and other vendors, supports the idea that he is engaged in commerce.",
+        "4. The presence of other market stalls and shoppers implies a commercial environment where goods are sold, not consumed or counted privately.",
+        "5. The man’s posture and focus on the beans, combined with the cart’s setup, strongly indicate he is selling them to customers passing by.",
+        "<final>D</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          86,
+          113
+        ],
+        [
+          114,
+          140
+        ],
+        [
+          141,
+          170
+        ],
+        [
+          171,
+          196
+        ],
+        [
+          197,
+          227
+        ],
+        [
+          228,
+          234
+        ]
+      ],
+      "anchor_vector": [
+        12.088297717727674,
+        11.360669113685343,
+        16.55550347222222,
+        13.848046875,
+        22.05859375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 16,
+  "subset": "coco",
+  "subset_local_idx": 1
+}

@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "coco/train2017/000000062726.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat company uses the vehicles parked near the curb? \nA. tesla \nB. mta \nC. huffy \nD. yamaha",
+      "reasoning_text": "1. The vehicles parked near the curb are large public transit buses with visible route numbers and branding.  \n2. One bus clearly displays “MTA” on its side, identifying the operator as the Metropolitan Transportation Authority.  \n3. The buses feature a blue and white livery commonly used by MTA buses in New York City.  \n4. The surrounding infrastructure, including elevated tracks and pedestrian walkways, is typical of MTA transit hubs.  \n5. Tesla, Huffy, and Yamaha do not operate public transit buses, making them irrelevant to the vehicles shown.  \n\n<final>B. mta</final>",
+      "raw_generation": [
+        "1. The buses parked near the curb display a logo on their side that clearly reads “MTA,” which stands for Metropolitan Transportation Authority.  \n2. The vehicles are large public transit buses, consistent with the type of vehicles operated by a metropolitan transit authority rather than a car or bicycle manufacturer.  \n3. The MTA logo is prominently displayed on the side of the bus, indicating direct affiliation with the organization that owns and operates these vehicles.  \n4. The setting, including the elevated train tracks and urban infrastructure, matches typical MTA service areas in New York City or surrounding regions.  \n5. None of the other options—Tesla, Huffy, or Yamaha—are known for operating public transit buses, making MTA the only logical and correct choice.  \n\n<final>B. mta</final>",
+        "1. The vehicles parked near the curb are large public transit buses with visible route numbers and branding.  \n2. One bus clearly displays “MTA” on its side, identifying the operator as the Metropolitan Transportation Authority.  \n3. The buses feature a blue and white livery commonly used by MTA buses in New York City.  \n4. The surrounding infrastructure, including elevated tracks and pedestrian walkways, is typical of MTA transit hubs.  \n5. Tesla, Huffy, and Yamaha do not operate public transit buses, making them irrelevant to the vehicles shown.  \n\n<final>B. mta</final>"
+      ],
+      "chunks": [
+        "1. The vehicles parked near the curb are large public transit buses with visible route numbers and branding.",
+        "2. One bus clearly displays “MTA” on its side, identifying the operator as the Metropolitan Transportation Authority.",
+        "3. The buses feature a blue and white livery commonly used by MTA buses in New York City.",
+        "4. The surrounding infrastructure, including elevated tracks and pedestrian walkways, is typical of MTA transit hubs.",
+        "5. Tesla, Huffy, and Yamaha do not operate public transit buses, making them irrelevant to the vehicles shown.",
+        "<final>B. mta</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          70,
+          90
+        ],
+        [
+          91,
+          114
+        ],
+        [
+          115,
+          137
+        ],
+        [
+          138,
+          160
+        ],
+        [
+          161,
+          185
+        ],
+        [
+          186,
+          195
+        ]
+      ],
+      "anchor_vector": [
+        10.815458894309948,
+        14.708412247474747,
+        16.131849089856903,
+        13.62155490451389,
+        13.269097222222221,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 35,
+  "subset": "coco",
+  "subset_local_idx": 8
+}

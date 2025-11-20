@@ -1,0 +1,290 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "ocr_vqa/images/1550379623.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>Youth for Youth</final>",
+      "raw_generation": [
+        "1. The book cover clearly states \"by Youth for Youth\" beneath the title, indicating the authorship group.  \n2. The title \"The Little Black Book for Guys\" suggests a targeted audience, likely young males.  \n3. The publisher, \"St. Stephen's Community House,\" is mentioned at the bottom, confirming institutional backing.  \n4. The design features a stylized male figure within a red circle, reinforcing the book’s focus on male readers.  \n5. The phrase \"Guys Talk About Sex\" implies the content is peer-driven and conversational, aligning with the \"Youth for Youth\" authorship.  \n\n<final>Youth for Youth</final>",
+        "<final>Youth for Youth</final>"
+      ],
+      "chunks": [
+        "<final>Youth for Youth</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          47
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book’s title is clearly printed in large, white text at the top of the cover, reading “The Little Black Book for Guys.”  \n2. Below the main title, a subtitle in red text reads “Guys Talk About Sex,” indicating the book’s subject matter.  \n3. The design features a red circular graphic resembling a play button, with a blue stick figure in the center, suggesting a multimedia or conversational theme.  \n4. The publisher, “St. Stephen’s Community House,” is printed at the bottom, showing the organization responsible for the book’s creation.  \n5. The cover’s minimalist black-and-red color scheme, combined with the title and subtitle, suggests a direct, no-nonsense approach to discussing sexual topics with young males.  \n\n<final>The Little Black Book for Guys: Guys Talk About Sex</final>",
+      "raw_generation": [
+        "1. The title is prominently displayed at the top of the cover in large, white, sans-serif font, making it the most visually dominant text element.  \n2. The phrase “The Little Black Book for Guys” is clearly legible and centered above the subtitle, indicating its primary importance as the book’s main title.  \n3. The subtitle “Guys Talk About Sex” appears directly beneath the main title in a smaller, red font, providing context for the book’s content.  \n4. The design includes a red circular graphic with a blue silhouette of a person, which visually reinforces the book’s focus on male perspectives and discussions.  \n5. The publisher, “St. Stephen’s Community House,” is noted at the bottom, confirming the book’s origin and aligning with its youth-oriented, community-based theme.  \n\n<final>The Little Black Book for Guys</final>",
+        "1. The book’s title is clearly printed in large, white text at the top of the cover, reading “The Little Black Book for Guys.”  \n2. Below the main title, a subtitle in red text reads “Guys Talk About Sex,” indicating the book’s subject matter.  \n3. The design features a red circular graphic resembling a play button, with a blue stick figure in the center, suggesting a multimedia or conversational theme.  \n4. The publisher, “St. Stephen’s Community House,” is printed at the bottom, showing the organization responsible for the book’s creation.  \n5. The cover’s minimalist black-and-red color scheme, combined with the title and subtitle, suggests a direct, no-nonsense approach to discussing sexual topics with young males.  \n\n<final>The Little Black Book for Guys: Guys Talk About Sex</final>"
+      ],
+      "chunks": [
+        "1. The book’s title is clearly printed in large, white text at the top of the cover, reading “The Little Black Book for Guys.”  \n2.",
+        "Below the main title, a subtitle in red text reads “Guys Talk About Sex,” indicating the book’s subject matter.",
+        "3. The design features a red circular graphic resembling a play button, with a blue stick figure in the center, suggesting a multimedia or conversational theme.",
+        "4. The publisher, “St.",
+        "Stephen’s Community House,” is printed at the bottom, showing the organization responsible for the book’s creation.",
+        "5. The cover’s minimalist black-and-red color scheme, combined with the title and subtitle, suggests a direct, no-nonsense approach to discussing sexual topics with young males.",
+        "<final>The Little Black Book for Guys: Guys Talk About Sex</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          57
+        ],
+        [
+          57,
+          82
+        ],
+        [
+          83,
+          114
+        ],
+        [
+          115,
+          123
+        ],
+        [
+          123,
+          144
+        ],
+        [
+          145,
+          180
+        ],
+        [
+          181,
+          197
+        ]
+      ],
+      "anchor_vector": [
+        10.610179343352975,
+        11.100867753036194,
+        12.021001325334822,
+        12.966265178862074,
+        13.125215366908483,
+        9.52099609375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The title \"The Little Black Book for Guys\" implies a concise, practical guide tailored specifically for male readers, suggesting a self-help or advice genre.  \n2. The subtitle \"Guys Talk About Sex\" explicitly indicates the content revolves around sexual education, relationships, or male experiences, placing it firmly in the health or relationship advice category.  \n3. The cover design features a minimalist, modern aesthetic with bold colors and a play button icon, signaling an accessible, youth-oriented, and possibly digital-friendly approach to the subject matter.  \n4. The authorship by \"Youth for Youth\" and the publisher \"St. Stephen's Community House\" suggest community-based, peer-to-peer guidance, often associated with educational or outreach programs for young adults.  \n5. The overall visual presentation and language indicate this book is not academic or clinical but rather conversational and supportive, fitting squarely within the self-help or personal development genre for young men.\n\n<final>Self-help / Relationship advice for young men</final>",
+      "raw_generation": [
+        "1. The title \"The Little Black Book for Guys\" suggests a targeted, accessible guide aimed at young males, indicating a self-help or educational genre.  \n2. The subtitle \"Guys Talk About Sex\" explicitly reveals the book's focus on sexual health, relationships, or puberty-related topics for adolescent males.  \n3. The publisher, \"St. Stephen's Community House,\" implies a community-based or nonprofit origin, often associated with youth development or educational programming.  \n4. The minimalist design with a play button icon and a stylized male figure hints at a modern, conversational, or multimedia-influenced approach to delivering content.  \n5. The overall tone and visual cues suggest the book is designed to be relatable, nonjudgmental, and practical for young men navigating sexual and social challenges.  \n\n<final>Self-help / Youth Education / Sexual Health</final>",
+        "1. The title \"The Little Black Book for Guys\" implies a concise, practical guide tailored specifically for male readers, suggesting a self-help or advice genre.  \n2. The subtitle \"Guys Talk About Sex\" explicitly indicates the content revolves around sexual education, relationships, or male experiences, placing it firmly in the health or relationship advice category.  \n3. The cover design features a minimalist, modern aesthetic with bold colors and a play button icon, signaling an accessible, youth-oriented, and possibly digital-friendly approach to the subject matter.  \n4. The authorship by \"Youth for Youth\" and the publisher \"St. Stephen's Community House\" suggest community-based, peer-to-peer guidance, often associated with educational or outreach programs for young adults.  \n5. The overall visual presentation and language indicate this book is not academic or clinical but rather conversational and supportive, fitting squarely within the self-help or personal development genre for young men.\n\n<final>Self-help / Relationship advice for young men</final>"
+      ],
+      "chunks": [
+        "1. The title \"The Little Black Book for Guys\" implies a concise, practical guide tailored specifically for male readers, suggesting a self-help or advice genre.",
+        "2. The subtitle \"Guys Talk About Sex\" explicitly indicates the content revolves around sexual education, relationships, or male experiences, placing it firmly in the health or relationship advice category.",
+        "3. The cover design features a minimalist, modern aesthetic with bold colors and a play button icon, signaling an accessible, youth-oriented, and possibly digital-friendly approach to the subject matter.",
+        "4. The authorship by \"Youth for Youth\" and the publisher \"St.",
+        "Stephen's Community House\" suggest community-based, peer-to-peer guidance, often associated with educational or outreach programs for young adults.",
+        "5. The overall visual presentation and language indicate this book is not academic or clinical but rather conversational and supportive, fitting squarely within the self-help or personal development genre for young men.",
+        "<final>Self-help / Relationship advice for young men</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          56
+        ],
+        [
+          57,
+          94
+        ],
+        [
+          95,
+          132
+        ],
+        [
+          133,
+          151
+        ],
+        [
+          151,
+          176
+        ],
+        [
+          177,
+          214
+        ],
+        [
+          214,
+          228
+        ]
+      ],
+      "anchor_vector": [
+        13.305438037437549,
+        12.533376201222149,
+        11.602574995475386,
+        13.024143741956243,
+        13.30920834338803,
+        16.93359375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Teen & Young Adult?",
+      "reasoning_text": "1. The book’s title, “The Little Black Book for Guys,” suggests targeted content for male readers, likely adolescents or young adults given the phrasing and context.  \n2. The subtitle “Guys Talk About Sex” implies candid, peer-to-peer discussion, common in teen and young adult educational or guidance materials.  \n3. The authorship credit “by Youth for Youth” indicates peer-driven content, a hallmark of teen and young adult resources that prioritize relatability and authenticity.  \n4. The publisher, “St. Stephen’s Community House,” often supports community-based programs for youth, reinforcing its likely focus on adolescent and young adult audiences.  \n5. The visual design, including the stylized play button and silhouette, evokes digital media and youth culture, aligning with teen and young adult engagement styles.  \n\n<final>Yes, this book is related to Teen & Young Adult.</final>",
+      "raw_generation": [
+        "1. The title \"The Little Black Book for Guys\" suggests a targeted audience, likely young males, given the informal and direct phrasing.  \n2. The subtitle \"Guys Talk About Sex\" indicates the content focuses on sexual education or discussion, commonly relevant to adolescents and young adults.  \n3. The authorship by \"Youth for Youth\" implies the material is created by peers, a common approach for engaging teen and young adult readers.  \n4. The publisher, \"St. Stephen's Community House,\" often supports youth programs, further aligning with a teen or young adult demographic.  \n5. The minimalist design with a stylized male figure and media player icons evokes a modern, relatable aesthetic for younger audiences.  \n\n<final>Yes</final>",
+        "1. The book’s title, “The Little Black Book for Guys,” suggests targeted content for male readers, likely adolescents or young adults given the phrasing and context.  \n2. The subtitle “Guys Talk About Sex” implies candid, peer-to-peer discussion, common in teen and young adult educational or guidance materials.  \n3. The authorship credit “by Youth for Youth” indicates peer-driven content, a hallmark of teen and young adult resources that prioritize relatability and authenticity.  \n4. The publisher, “St. Stephen’s Community House,” often supports community-based programs for youth, reinforcing its likely focus on adolescent and young adult audiences.  \n5. The visual design, including the stylized play button and silhouette, evokes digital media and youth culture, aligning with teen and young adult engagement styles.  \n\n<final>Yes, this book is related to Teen & Young Adult.</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “The Little Black Book for Guys,” suggests targeted content for male readers, likely adolescents or young adults given the phrasing and context.",
+        "2. The subtitle “Guys Talk About Sex” implies candid, peer-to-peer discussion, common in teen and young adult educational or guidance materials.",
+        "3. The authorship credit “by Youth for Youth” indicates peer-driven content, a hallmark of teen and young adult resources that prioritize relatability and authenticity.",
+        "4. The publisher, “St.",
+        "Stephen’s Community House,” often supports community-based programs for youth, reinforcing its likely focus on adolescent and young adult audiences.",
+        "5. The visual design, including the stylized play button and silhouette, evokes digital media and youth culture, aligning with teen and young adult engagement styles.",
+        "<final>Yes, this book is related to Teen & Young Adult.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          62
+        ],
+        [
+          63,
+          93
+        ],
+        [
+          94,
+          127
+        ],
+        [
+          128,
+          136
+        ],
+        [
+          136,
+          160
+        ],
+        [
+          161,
+          194
+        ],
+        [
+          195,
+          212
+        ]
+      ],
+      "anchor_vector": [
+        13.119144618937959,
+        15.512329403888733,
+        12.766781893643465,
+        13.990055882073696,
+        11.748090393827987,
+        13.511029411764707,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Business & Money?",
+      "reasoning_text": "1. The book’s title, “The Little Black Book for Guys,” and subtitle, “Guys Talk About Sex,” indicate its focus is on personal development and relationships rather than financial or professional topics.\n\n2. The cover design includes a stylized male figure within a red circle and media player icons, suggesting themes of communication, education, and peer-to-peer dialogue among young men.\n\n3. The publisher, “St. Stephen’s Community House,” is a community-based organization known for social services and youth programs, not business or finance publications.\n\n4. The phrase “by Youth for Youth” implies the content is peer-generated and community-focused, reinforcing its educational and social purpose over commercial or economic themes.\n\n5. No financial terminology, business models, or economic concepts appear on the cover or in the visible text, confirming the book’s thematic alignment with personal growth and sexual health for young males.\n\n<final> No, this book is not related to Business & Money. It focuses on sexual education and peer dialogue for young men.",
+      "raw_generation": [
+        "1. The book's title, \"The Little Black Book for Guys,\" suggests a targeted audience of males, indicating a focus on personal development or social topics rather than professional or financial matters.\n\n2. The subtitle, \"Guys Talk About Sex,\" explicitly points to the content being centered on sexual health, relationships, or gender-specific discussions, which are unrelated to business or financial education.\n\n3. The authorship credit, \"by Youth for Youth,\" implies the material is created by young people for young people, likely addressing peer-to-peer communication and life experiences rather than corporate or economic themes.\n\n4. The publisher, \"St. Stephen's Community House,\" is a community organization, which typically produces educational or social support materials, not business or financial publications.\n\n5. The cover design, featuring a stylized male figure within a red circle and media player icons, visually reinforces themes of communication, personal growth, or social interaction rather than business strategy or financial literacy.\n\n<final>No</final>",
+        "1. The book’s title, “The Little Black Book for Guys,” and subtitle, “Guys Talk About Sex,” indicate its focus is on personal development and relationships rather than financial or professional topics.\n\n2. The cover design includes a stylized male figure within a red circle and media player icons, suggesting themes of communication, education, and peer-to-peer dialogue among young men.\n\n3. The publisher, “St. Stephen’s Community House,” is a community-based organization known for social services and youth programs, not business or finance publications.\n\n4. The phrase “by Youth for Youth” implies the content is peer-generated and community-focused, reinforcing its educational and social purpose over commercial or economic themes.\n\n5. No financial terminology, business models, or economic concepts appear on the cover or in the visible text, confirming the book’s thematic alignment with personal growth and sexual health for young males.\n\n<final> No, this book is not related to Business & Money. It focuses on sexual education and peer dialogue for young men."
+      ],
+      "chunks": [
+        "1. The book’s title, “The Little Black Book for Guys,” and subtitle, “Guys Talk About Sex,” indicate its focus is on personal development and relationships rather than financial or professional topics.",
+        "2. The cover design includes a stylized male figure within a red circle and media player icons, suggesting themes of communication, education, and peer-to-peer dialogue among young men.",
+        "3. The publisher, “St.",
+        "Stephen’s Community House,” is a community-based organization known for social services and youth programs, not business or finance publications.",
+        "4. The phrase “by Youth for Youth” implies the content is peer-generated and community-focused, reinforcing its educational and social purpose over commercial or economic themes.",
+        "5. No financial terminology, business models, or economic concepts appear on the cover or in the visible text, confirming the book’s thematic alignment with personal growth and sexual health for young males.",
+        "<final> No, this book is not related to Business & Money.",
+        "It focuses on sexual education and peer dialogue for young men."
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          67
+        ],
+        [
+          67,
+          103
+        ],
+        [
+          103,
+          111
+        ],
+        [
+          111,
+          135
+        ],
+        [
+          135,
+          167
+        ],
+        [
+          167,
+          205
+        ],
+        [
+          205,
+          220
+        ],
+        [
+          220,
+          232
+        ]
+      ],
+      "anchor_vector": [
+        12.73061892733339,
+        12.710972514905427,
+        13.629992691843132,
+        17.003479164525082,
+        13.09790581597222,
+        14.497493489583334,
+        15.041178385416666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 41,
+  "subset": "ocr_vqa",
+  "subset_local_idx": 0
+}

@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "geoqa+/images/12747.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, in the rhombus ABCD, BC = 10, point E is on BD, F is the midpoint of AD, FE ⊥ BD, and the foot of the perpendicular is E. If EF = 4, then the length of BD is ( )\nA. 8\nB. 10\nC. 12\nD. 16",
+      "reasoning_text": "1. Since ABCD is a rhombus, all sides are equal, so AD = BC = 10, and diagonals bisect each other at right angles, implying BD and AC intersect perpendicularly at their midpoints.\n\n2. Point F is the midpoint of AD, so AF = FD = 5, placing F exactly halfway along side AD, which is 10 units long.\n\n3. FE is perpendicular to diagonal BD, and E is the foot of this perpendicular, meaning triangle FED is a right triangle with right angle at E and leg EF = 4.\n\n4. Because diagonals in a rhombus bisect each other at right angles, point E must lie on BD, and since FE is perpendicular to BD, E is the projection of F onto BD, forming a right triangle with hypotenuse FD = 5.\n\n5. In right triangle FED, with legs EF = 4 and FD = 5, the Pythagorean theorem gives ED = √(5² - 4²) = √9 = 3. Since diagonals bisect each other, BD = 2 × ED = 2 × 3 = 6, but this contradicts the diagram and answer choices.",
+      "raw_generation": [
+        "1. Since ABCD is a rhombus, all sides are equal, so AD = BC = 10.  \n2. F being the midpoint of AD means AF = FD = 5, as AD is divided equally.  \n3. FE is perpendicular to diagonal BD, forming a right triangle FED with EF = 4 as one leg.  \n4. In a rhombus, diagonals bisect each other at right angles, so E lies on BD and FE is perpendicular to BD, making triangle FED a right triangle.  \n5. Using the Pythagorean theorem in triangle FED, FD² = FE² + ED² → 5² = 4² + ED² → 25 = 16 + ED² → ED² = 9 → ED = 3. Since E is on BD and diagonals bisect each other, BD = 2 × ED = 6, but this contradicts the options. Re-evaluating: since F is midpoint of AD, and FE ⊥ BD, and ABCD is a rhombus, the perpendicular from midpoint to diagonal implies symmetry. Actually, in a rhombus, the perpendicular from midpoint of a side to the diagonal creates a right triangle",
+        "1. Since ABCD is a rhombus, all sides are equal, so AD = BC = 10, and diagonals bisect each other at right angles, implying BD and AC intersect perpendicularly at their midpoints.\n\n2. Point F is the midpoint of AD, so AF = FD = 5, placing F exactly halfway along side AD, which is 10 units long.\n\n3. FE is perpendicular to diagonal BD, and E is the foot of this perpendicular, meaning triangle FED is a right triangle with right angle at E and leg EF = 4.\n\n4. Because diagonals in a rhombus bisect each other at right angles, point E must lie on BD, and since FE is perpendicular to BD, E is the projection of F onto BD, forming a right triangle with hypotenuse FD = 5.\n\n5. In right triangle FED, with legs EF = 4 and FD = 5, the Pythagorean theorem gives ED = √(5² - 4²) = √9 = 3. Since diagonals bisect each other, BD = 2 × ED = 2 × 3 = 6, but this contradicts the diagram and answer choices."
+      ],
+      "chunks": [
+        "1. Since ABCD is a rhombus, all sides are equal, so AD = BC = 10, and diagonals bisect each other at right angles, implying BD and AC intersect perpendicularly at their midpoints.",
+        "2. Point F is the midpoint of AD, so AF = FD = 5, placing F exactly halfway along side AD, which is 10 units long.",
+        "3. FE is perpendicular to diagonal BD, and E is the foot of this perpendicular, meaning triangle FED is a right triangle with right angle at E and leg EF = 4.",
+        "4. Because diagonals in a rhombus bisect each other at right angles, point E must lie on BD, and since FE is perpendicular to BD, E is the projection of F onto BD, forming a right triangle with hypotenuse FD = 5.",
+        "5. In right triangle FED, with legs EF = 4 and FD = 5, the Pythagorean theorem gives ED = √(5² - 4²) = √9 = 3.",
+        "Since diagonals bisect each other, BD = 2 × ED = 2 × 3 = 6, but this contradicts the diagram and answer choices."
+      ],
+      "chunk_token_ranges": [
+        [
+          172,
+          221
+        ],
+        [
+          221,
+          255
+        ],
+        [
+          255,
+          293
+        ],
+        [
+          293,
+          348
+        ],
+        [
+          348,
+          394
+        ],
+        [
+          394,
+          428
+        ]
+      ],
+      "anchor_vector": [
+        11.792054308564287,
+        15.83546445024021,
+        12.500018089193384,
+        11.351220661224435,
+        13.620271381578947,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 73,
+  "subset": "geoqa+",
+  "subset_local_idx": 12
+}

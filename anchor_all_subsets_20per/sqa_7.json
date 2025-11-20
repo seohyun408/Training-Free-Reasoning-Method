@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "sqa/train/8125/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the capital of Alaska?\nContext: N/A\nOptions: (A) Seattle (B) Juneau (C) Saint Paul (D) Anchorage",
+      "reasoning_text": "1. The map highlights Alaska in dark green, distinguishing it from the rest of the United States, which are shaded in light green.  \n2. Alaska’s capital is not the largest city, Anchorage, nor a coastal city like Seattle, which is located in Washington.  \n3. Juneau is the correct answer because it is the only capital city listed among the options that is actually located in Alaska.  \n4. Saint Paul, located in Minnesota, is not in Alaska, and thus cannot be its capital.  \n5. The map’s visual emphasis on Alaska confirms the focus is on identifying its capital among the given choices.  \n\n<final>Juneau</final>",
+      "raw_generation": [
+        "1. The image displays a map of the United States with Alaska highlighted in a darker shade, indicating it is the focus of the question.  \n2. Alaska is the largest state by area and is located in the far northwest of North America, separate from the contiguous U.S.  \n3. The capital city of Alaska is Juneau, which is located in the southeastern part of the state and is the only state capital not located on a major river or coastline.  \n4. Among the given options, Juneau is the correct answer, as Seattle is the capital of Washington, Saint Paul is the capital of Minnesota, and Anchorage is the largest city in Alaska but not its capital.  \n5. The map’s visual emphasis on Alaska confirms the question is asking about its capital, and Juneau is the only option that matches this fact.\n\n<final>Juneau</final>",
+        "1. The map highlights Alaska in dark green, distinguishing it from the rest of the United States, which are shaded in light green.  \n2. Alaska’s capital is not the largest city, Anchorage, nor a coastal city like Seattle, which is located in Washington.  \n3. Juneau is the correct answer because it is the only capital city listed among the options that is actually located in Alaska.  \n4. Saint Paul, located in Minnesota, is not in Alaska, and thus cannot be its capital.  \n5. The map’s visual emphasis on Alaska confirms the focus is on identifying its capital among the given choices.  \n\n<final>Juneau</final>"
+      ],
+      "chunks": [
+        "1. The map highlights Alaska in dark green, distinguishing it from the rest of the United States, which are shaded in light green.",
+        "2. Alaska’s capital is not the largest city, Anchorage, nor a coastal city like Seattle, which is located in Washington.",
+        "3. Juneau is the correct answer because it is the only capital city listed among the options that is actually located in Alaska.",
+        "4. Saint Paul, located in Minnesota, is not in Alaska, and thus cannot be its capital.",
+        "5. The map’s visual emphasis on Alaska confirms the focus is on identifying its capital among the given choices.",
+        "<final>Juneau</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          76,
+          103
+        ],
+        [
+          104,
+          131
+        ],
+        [
+          132,
+          158
+        ],
+        [
+          159,
+          180
+        ],
+        [
+          181,
+          203
+        ],
+        [
+          204,
+          212
+        ]
+      ],
+      "anchor_vector": [
+        11.642751488601096,
+        11.764955401857257,
+        11.147119387231692,
+        13.606500799005682,
+        11.97119140625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 33,
+  "subset": "sqa",
+  "subset_local_idx": 7
+}

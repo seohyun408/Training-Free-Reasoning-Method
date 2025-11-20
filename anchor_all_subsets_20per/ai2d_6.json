@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "ai2d/images/2268.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat happens after the meduse stage of the life cycle?\n\nOptions:\n- larva\n- adult\n- ephyrule\n- planula\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows the meduse stage releasing gametes, which then develop into a planula larva, indicating this is the next stage in the life cycle.\n2. The planula larva is depicted as a small, free-swimming form that eventually settles on a substrate, showing its role as a dispersal stage.\n3. After settling, the planula transforms into a polyp, which begins to grow and reproduce asexually, as shown by the arrow leading to “jeunes polypes.”\n4. The polyp then undergoes strobilation, producing multiple ephyrules that detach and develop into new medusae, as shown by the labeled arrow.\n5. The ephyrule stage directly follows the polyp’s strobilation and precedes the medusa stage, confirming it is the stage immediately after the polyp in the cycle.\n\n<final>eфyrule</final>",
+      "raw_generation": [
+        "1. The diagram shows the meduse stage releasing gametes, which then develop into a planula larva, indicating the next stage in the life cycle.\n2. The planula larva is depicted as a small, free-swimming stage that eventually settles and develops into a polyp.\n3. The arrow from the meduse points directly to the planula, confirming that the planula is the stage that follows the meduse.\n4. The ephyrule stage is shown as an intermediate stage between the polyp and the meduse, not following the meduse directly.\n5. The diagram does not show the meduse transforming into an adult; instead, it shows the meduse producing planulae, which then develop into polyps and eventually back into meduses.\n\n<final>planula</final>",
+        "1. The diagram shows the meduse stage releasing gametes, which then develop into a planula larva, indicating this is the next stage in the life cycle.\n2. The planula larva is depicted as a small, free-swimming form that eventually settles on a substrate, showing its role as a dispersal stage.\n3. After settling, the planula transforms into a polyp, which begins to grow and reproduce asexually, as shown by the arrow leading to “jeunes polypes.”\n4. The polyp then undergoes strobilation, producing multiple ephyrules that detach and develop into new medusae, as shown by the labeled arrow.\n5. The ephyrule stage directly follows the polyp’s strobilation and precedes the medusa stage, confirming it is the stage immediately after the polyp in the cycle.\n\n<final>eфyrule</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows the meduse stage releasing gametes, which then develop into a planula larva, indicating this is the next stage in the life cycle.",
+        "2. The planula larva is depicted as a small, free-swimming form that eventually settles on a substrate, showing its role as a dispersal stage.",
+        "3. After settling, the planula transforms into a polyp, which begins to grow and reproduce asexually, as shown by the arrow leading to “jeunes polypes.”\n4.",
+        "The polyp then undergoes strobilation, producing multiple ephyrules that detach and develop into new medusae, as shown by the labeled arrow.",
+        "5. The ephyrule stage directly follows the polyp’s strobilation and precedes the medusa stage, confirming it is the stage immediately after the polyp in the cycle.",
+        "<final>eфyrule</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          92,
+          126
+        ],
+        [
+          126,
+          159
+        ],
+        [
+          159,
+          198
+        ],
+        [
+          198,
+          231
+        ],
+        [
+          231,
+          270
+        ],
+        [
+          270,
+          279
+        ]
+      ],
+      "anchor_vector": [
+        11.290231415719697,
+        13.491401773140055,
+        13.348977556008805,
+        13.946698050213676,
+        11.93185763888889,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 53,
+  "subset": "ai2d",
+  "subset_local_idx": 6
+}

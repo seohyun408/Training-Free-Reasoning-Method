@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "llava/llava_pretrain/images/00012/000120035.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat do you think is going on in this snapshot?",
+      "reasoning_text": "1. The woman is actively retrieving her blue suitcase from a conveyor belt, indicating she has just arrived at an airport or travel hub after a flight.  \n2. Her posture and focused gaze suggest she’s carefully ensuring the bag is secure and correctly identified before collecting it.  \n3. The background’s blurred lights and other travelers imply a busy terminal environment, emphasizing the typical airport atmosphere.  \n4. Her casual attire and relaxed demeanor suggest she’s likely a leisure traveler rather than a business commuter, enjoying a vacation or personal trip.  \n5. The suitcase’s prominent placement and her interaction with it highlight the moment of reuniting with personal belongings after a journey, a common travel milestone.  \n\n<final> The woman is retrieving her suitcase from an airport conveyor belt, likely after landing, in a busy terminal while dressed casually for travel.",
+      "raw_generation": [
+        "1. The woman is at an airport, likely near a baggage carousel, as she leans over a blue suitcase that appears to be arriving on a conveyor belt.  \n2. Her posture and focused gaze suggest she is actively retrieving her luggage, indicating she has just completed a flight or is preparing to depart.  \n3. The background shows blurred airport infrastructure, including signage and other travelers, reinforcing the setting as a busy transit hub.  \n4. Her casual attire—blue sweater, striped shirt, and jeans—implies she is traveling for leisure or a short trip rather than a formal business journey.  \n5. The suitcase’s position on the conveyor belt and her hand placement indicate she is either about to pull it away or has just received it after a delay or long wait.  \n\n<final>She is retrieving her blue suitcase from an airport baggage carousel after arriving or before departing, likely for a leisure trip.</final>",
+        "1. The woman is actively retrieving her blue suitcase from a conveyor belt, indicating she has just arrived at an airport or travel hub after a flight.  \n2. Her posture and focused gaze suggest she’s carefully ensuring the bag is secure and correctly identified before collecting it.  \n3. The background’s blurred lights and other travelers imply a busy terminal environment, emphasizing the typical airport atmosphere.  \n4. Her casual attire and relaxed demeanor suggest she’s likely a leisure traveler rather than a business commuter, enjoying a vacation or personal trip.  \n5. The suitcase’s prominent placement and her interaction with it highlight the moment of reuniting with personal belongings after a journey, a common travel milestone.  \n\n<final> The woman is retrieving her suitcase from an airport conveyor belt, likely after landing, in a busy terminal while dressed casually for travel."
+      ],
+      "chunks": [
+        "1. The woman is actively retrieving her blue suitcase from a conveyor belt, indicating she has just arrived at an airport or travel hub after a flight.",
+        "2. Her posture and focused gaze suggest she’s carefully ensuring the bag is secure and correctly identified before collecting it.",
+        "3. The background’s blurred lights and other travelers imply a busy terminal environment, emphasizing the typical airport atmosphere.",
+        "4. Her casual attire and relaxed demeanor suggest she’s likely a leisure traveler rather than a business commuter, enjoying a vacation or personal trip.",
+        "5. The suitcase’s prominent placement and her interaction with it highlight the moment of reuniting with personal belongings after a journey, a common travel milestone.",
+        "<final> The woman is retrieving her suitcase from an airport conveyor belt, likely after landing, in a busy terminal while dressed casually for travel."
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          60
+        ],
+        [
+          61,
+          84
+        ],
+        [
+          85,
+          107
+        ],
+        [
+          108,
+          136
+        ],
+        [
+          137,
+          168
+        ],
+        [
+          169,
+          198
+        ]
+      ],
+      "anchor_vector": [
+        13.728397643972318,
+        14.500369850007589,
+        12.605996990703957,
+        13.249657822928253,
+        15.035021551724139,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 9796,
+  "subset": "llava",
+  "subset_local_idx": 12
+}

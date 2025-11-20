@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "ai2d/images/2578.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many months are between the Solstices?\n\nOptions:\n- 12\n- 4\n- 3\n- 6\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” indicating the extreme tilt positions of Earth’s orbit around the Sun.  \n2. Between June 21 and December 22, there are six months: July, August, September, October, November, and December.  \n3. The diagram also shows equinoxes in March and September, confirming the seasonal cycle spans six months from one solstice to the next.  \n4. The dashed orbital path around the Sun illustrates the Earth’s 12-month year, but the question specifically asks for the months between solstices, not the full year.  \n5. Since the solstices occur approximately six months apart, and the options include 6, this is the correct and only accurate choice based on the diagram.  \n\n<final>6</final>",
+      "raw_generation": [
+        "1. The diagram shows Earth’s orbit around the Sun with key dates marked: June 21 (Summer Solstice), December 22 (Winter Solstice), March 21 (Spring Equinox), and September 22 (Autumn Equinox).  \n2. The Solstices occur on June 21 and December 22, which are directly opposite each other in the annual cycle.  \n3. Counting the months between June 21 and December 22, we include July, August, September, October, November, and December — totaling six months.  \n4. The diagram visually confirms that the Solstices are separated by half the orbit, which corresponds to six months in the calendar.  \n5. Among the given options — 12, 4, 3, and 6 — only “6” accurately represents the number of months between the two Solstices.  \n\n<final>6</final>",
+        "1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” indicating the extreme tilt positions of Earth’s orbit around the Sun.  \n2. Between June 21 and December 22, there are six months: July, August, September, October, November, and December.  \n3. The diagram also shows equinoxes in March and September, confirming the seasonal cycle spans six months from one solstice to the next.  \n4. The dashed orbital path around the Sun illustrates the Earth’s 12-month year, but the question specifically asks for the months between solstices, not the full year.  \n5. Since the solstices occur approximately six months apart, and the options include 6, this is the correct and only accurate choice based on the diagram.  \n\n<final>6</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” indicating the extreme tilt positions of Earth’s orbit around the Sun.",
+        "2. Between June 21 and December 22, there are six months: July, August, September, October, November, and December.",
+        "3. The diagram also shows equinoxes in March and September, confirming the seasonal cycle spans six months from one solstice to the next.",
+        "4. The dashed orbital path around the Sun illustrates the Earth’s 12-month year, but the question specifically asks for the months between solstices, not the full year.",
+        "5. Since the solstices occur approximately six months apart, and the options include 6, this is the correct and only accurate choice based on the diagram.",
+        "<final>6</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          88,
+          128
+        ],
+        [
+          129,
+          160
+        ],
+        [
+          161,
+          190
+        ],
+        [
+          191,
+          228
+        ],
+        [
+          229,
+          262
+        ],
+        [
+          263,
+          270
+        ]
+      ],
+      "anchor_vector": [
+        15.946659115106097,
+        12.848374176508647,
+        12.803573256698257,
+        12.170450317911255,
+        13.946149553571429,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 8,
+  "subset": "ai2d",
+  "subset_local_idx": 0
+}

@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "chartqa/train/png/two_col_82655.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat was Scotland's total HFCE in 2018? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart displays HFCE (Household Final Consumption Expenditure) in Scotland from 2000 to 2018, with values measured in million GBP on the vertical axis.\n2. The horizontal axis shows each year in sequence, with 2018 being the rightmost bar, indicating the most recent data point.\n3. The bar corresponding to 2018 reaches a height just below the 100,000 million GBP mark, visually positioned between 100,000 and 120,000 on the vertical scale.\n4. The bar for 2018 is the tallest in the chart, indicating the highest HFCE value among all years shown, reflecting consistent growth from 2000 to 2018.\n5. Based on the chart's scale and visual alignment, Scotland's HFCE in 2018 was approximately 101,000 million GBP, as it aligns closely with the 100,000 mark and is visibly higher than the 2017 bar.\n</reasoning>\n\n<final>101,000 million GBP</",
+      "raw_generation": [
+        "101,000 million GBP\n\n1. The bar chart displays Scotland's total HFCE (Household Final Consumption Expenditure) from 2000 to 2018, with values measured in million GBP.\n2. The vertical axis represents HFCE in million GBP, ranging from 0 to 120,000, while the horizontal axis shows the years.\n3. Each bar corresponds to a specific year, with the height indicating the HFCE value for that year.\n4. The bar for 2018 is the tallest, reaching just below the 100,000 million GBP mark on the vertical axis.\n5. Based on the chart's scale and the bar's position, Scotland's total HFCE in 2018 was approximately 101,000 million GBP.\n\n<final>101,000 million GBP</final>",
+        "<reasoning>\n1. The bar chart displays HFCE (Household Final Consumption Expenditure) in Scotland from 2000 to 2018, with values measured in million GBP on the vertical axis.\n2. The horizontal axis shows each year in sequence, with 2018 being the rightmost bar, indicating the most recent data point.\n3. The bar corresponding to 2018 reaches a height just below the 100,000 million GBP mark, visually positioned between 100,000 and 120,000 on the vertical scale.\n4. The bar for 2018 is the tallest in the chart, indicating the highest HFCE value among all years shown, reflecting consistent growth from 2000 to 2018.\n5. Based on the chart's scale and visual alignment, Scotland's HFCE in 2018 was approximately 101,000 million GBP, as it aligns closely with the 100,000 mark and is visibly higher than the 2017 bar.\n</reasoning>\n\n<final>101,000 million GBP</"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart displays HFCE (Household Final Consumption Expenditure) in Scotland from 2000 to 2018, with values measured in million GBP on the vertical axis.",
+        "2. The horizontal axis shows each year in sequence, with 2018 being the rightmost bar, indicating the most recent data point.",
+        "3. The bar corresponding to 2018 reaches a height just below the 100,000 million GBP mark, visually positioned between 100,000 and 120,000 on the vertical scale.",
+        "4. The bar for 2018 is the tallest in the chart, indicating the highest HFCE value among all years shown, reflecting consistent growth from 2000 to 2018.",
+        "5. Based on the chart's scale and visual alignment, Scotland's HFCE in 2018 was approximately 101,000 million GBP, as it aligns closely with the 100,000 mark and is visibly higher than the 2017 bar.",
+        "</reasoning>\n\n<final>101,000 million GBP</"
+      ],
+      "chunk_token_ranges": [
+        [
+          56,
+          62
+        ],
+        [
+          62,
+          103
+        ],
+        [
+          103,
+          133
+        ],
+        [
+          133,
+          187
+        ],
+        [
+          187,
+          231
+        ],
+        [
+          231,
+          295
+        ],
+        [
+          295,
+          312
+        ]
+      ],
+      "anchor_vector": [
+        5.5506989493165255,
+        12.97730124056705,
+        4.9304592276143655,
+        6.354047555549472,
+        11.671900132123163,
+        6.8454733455882355,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 87,
+  "subset": "chartqa",
+  "subset_local_idx": 11
+}

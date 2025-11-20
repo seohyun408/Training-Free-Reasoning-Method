@@ -1,0 +1,78 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/d7a3a2a1347f5b91.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: Yonder, See, the, Morning, Blink, Builder:, Bill, Holly, Ward, Inspiredby, Yonder, See, Morning, Housman., Partthe, Great, Poetry, Vignette, serie, ndHollyWard, Key, featues:, sunrise, mosaic, bed, featuring, footboards, www.b, wards.ne, VGM1503, Handle, Carefully",
+      "reasoning_text": "<1> A LEGO diorama titled \"Yonder See the Morning Blink\" by Bill & Holly Ward, inspired by A. E. Housman’s poem, depicts a figure sleeping in a bed with a sunrise mosaic above.  \n<2> The display card notes it’s part of the Great Poetry Vignette series and highlights key features like half-stud offsets and SNOT head/footboards.  \n<3> The miniature scene includes a brown bed frame, blue mattress, and a window with a yellow circular sunrise mosaic above the bed.  \n<4> The LEGO figure lies on its back with arms outstretched, wearing a white shirt and yellow hands, suggesting peaceful sleep during dawn.  \n<5> The display card includes a VGM1503 ID and requests handlers to be careful, with links to the builders’ blogs at brickpile.com and holly.wards.net.  \n<final> A LEGO creation titled “Yonder See the Morning Blink” by Bill & Holly Ward, inspired by A. E. Housman, depicts a sleeping figure under a sunrise mosaic in a cozy bed.",
+      "raw_generation": [
+        "<reasoning>\n1. The image displays a LEGO diorama titled \"Yonder See the Morning Blink,\" built by Bill & Holly Ward, as indicated on the accompanying card.\n2. The diorama depicts a small bed with a LEGO minifigure lying on it, positioned under a red canopy with a yellow sunrise mosaic visible through a window.\n3. The card specifies that this piece is part of the \"Great Poetry Vignette series\" and highlights key features like half-stud offsets and SNOT head/footboards.\n4. The builders' websites, www.brickpile.com and holly.wards.net, are listed for further information, along with the unique identifier VGM1503.\n5. The display is set on a white surface with a shadow cast by the diorama, suggesting it is part of an exhibition or showcase.\n</reasoning>\n<final>LEGO diorama \"Yonder See the Morning Blink\" by Bill & Holly Ward, inspired by A. E. Housman's poem, features a minifigure in bed under a canopy with a sunrise mosaic, displayed with its informational card.</final>",
+        "<1> A LEGO diorama titled \"Yonder See the Morning Blink\" by Bill & Holly Ward, inspired by A. E. Housman’s poem, depicts a figure sleeping in a bed with a sunrise mosaic above.  \n<2> The display card notes it’s part of the Great Poetry Vignette series and highlights key features like half-stud offsets and SNOT head/footboards.  \n<3> The miniature scene includes a brown bed frame, blue mattress, and a window with a yellow circular sunrise mosaic above the bed.  \n<4> The LEGO figure lies on its back with arms outstretched, wearing a white shirt and yellow hands, suggesting peaceful sleep during dawn.  \n<5> The display card includes a VGM1503 ID and requests handlers to be careful, with links to the builders’ blogs at brickpile.com and holly.wards.net.  \n<final> A LEGO creation titled “Yonder See the Morning Blink” by Bill & Holly Ward, inspired by A. E. Housman, depicts a sleeping figure under a sunrise mosaic in a cozy bed."
+      ],
+      "chunks": [
+        "<1> A LEGO diorama titled \"Yonder See the Morning Blink\" by Bill & Holly Ward, inspired by A.",
+        "E. Housman’s poem, depicts a figure sleeping in a bed with a sunrise mosaic above.",
+        "<2> The display card notes it’s part of the Great Poetry Vignette series and highlights key features like half-stud offsets and SNOT head/footboards.",
+        "<3> The miniature scene includes a brown bed frame, blue mattress, and a window with a yellow circular sunrise mosaic above the bed.",
+        "<4> The LEGO figure lies on its back with arms outstretched, wearing a white shirt and yellow hands, suggesting peaceful sleep during dawn.",
+        "<5> The display card includes a VGM1503 ID and requests handlers to be careful, with links to the builders’ blogs at brickpile.com and holly.wards.net.",
+        "<final> A LEGO creation titled “Yonder See the Morning Blink” by Bill & Holly Ward, inspired by A.",
+        "E. Housman, depicts a sleeping figure under a sunrise mosaic in a cozy bed."
+      ],
+      "chunk_token_ranges": [
+        [
+          210,
+          236
+        ],
+        [
+          236,
+          257
+        ],
+        [
+          258,
+          293
+        ],
+        [
+          294,
+          322
+        ],
+        [
+          323,
+          353
+        ],
+        [
+          354,
+          394
+        ],
+        [
+          395,
+          420
+        ],
+        [
+          420,
+          439
+        ]
+      ],
+      "anchor_vector": [
+        11.82075966457718,
+        18.246025154030914,
+        14.949053271606749,
+        21.158956090023644,
+        12.234690583881578,
+        18.114166837993423,
+        15.87047697368421,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 1215,
+  "subset": "textvqa",
+  "subset_local_idx": 13
+}

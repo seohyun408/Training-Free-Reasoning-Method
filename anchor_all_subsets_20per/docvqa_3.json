@@ -1,0 +1,274 @@
+{
+  "total_pairs": 6,
+  "successful_pairs": 6,
+  "image_path": "docvqa/train/documents/qhhk0226_3.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the name mentioned in the given report ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Roger Adams",
+      "raw_generation": [
+        "1. The report is a traveling expense report from E. I. du Pont de Nemours & Company, specifically for the Central Research Department Experimental Station.  \n2. The name field is clearly labeled at the top left section of the form, directly under the \"NAME\" heading.  \n3. The handwritten entry in this field reads \"Roger Adams,\" which is the individual’s full name as recorded on the document.  \n4. The address listed below the name is \"605 N. Michigan Ave., Urbana, Ill.,\" confirming the report belongs to this person.  \n5. No other names appear in the report, and the signature section is blank, indicating this is the only individual associated with the report.  \n\n<final>Roger Adams</final>",
+        "Roger Adams"
+      ],
+      "chunks": [
+        "Roger Adams"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          50
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the name mentioned in the given report ?",
+      "reasoning_text": "1. The report clearly displays a field labeled \"NAME\" at the top left section, indicating the individual who filled out the form.  \n2. Directly beneath this label, the handwritten entry reads \"Roger Adams,\" identifying the person responsible for the travel expenses.  \n3. The report also includes the address \"605 N. Michigan Ave., Urbana, Ill.,\" which further confirms the identity of Roger Adams as the traveler.  \n4. The date \"11/12/62\" and the department \"Central Research Department\" suggest this is an official expense report from that time period, making the name more credible.  \n5. The total expenses amounting to $130.01 and the signature block imply Roger Adams submitted this document for reimbursement.  \n\n<final>Roger Adams</final>",
+      "raw_generation": [
+        "1. The report is a traveling expense document from E. I. Du Pont de Nemours & Company, specifically for the Central Research Department's Experimental Station.\n2. The name field is clearly labeled \"NAME\" and is located in the upper-left section of the form, directly below the company and department information.\n3. The handwritten entry in the \"NAME\" field is legible and reads \"Roger Adams,\" indicating the individual who submitted this expense report.\n4. The address listed for Roger Adams is \"605 N. Michigan Ave., Urbana, Ill.,\" which is consistent with the company's location and the traveler's affiliation.\n5. The date of the report is \"11/12/62,\" suggesting this expense report was submitted in November 1962, and the name \"Roger Adams\" is the primary subject of the document.\n\n<final>Roger Adams</final>",
+        "1. The report clearly displays a field labeled \"NAME\" at the top left section, indicating the individual who filled out the form.  \n2. Directly beneath this label, the handwritten entry reads \"Roger Adams,\" identifying the person responsible for the travel expenses.  \n3. The report also includes the address \"605 N. Michigan Ave., Urbana, Ill.,\" which further confirms the identity of Roger Adams as the traveler.  \n4. The date \"11/12/62\" and the department \"Central Research Department\" suggest this is an official expense report from that time period, making the name more credible.  \n5. The total expenses amounting to $130.01 and the signature block imply Roger Adams submitted this document for reimbursement.  \n\n<final>Roger Adams</final>"
+      ],
+      "chunks": [
+        "1. The report clearly displays a field labeled \"NAME\" at the top left section, indicating the individual who filled out the form.",
+        "2. Directly beneath this label, the handwritten entry reads \"Roger Adams,\" identifying the person responsible for the travel expenses.",
+        "3. The report also includes the address \"605 N.",
+        "Michigan Ave., Urbana, Ill.,\" which further confirms the identity of Roger Adams as the traveler.",
+        "4. The date \"11/12/62\" and the department \"Central Research Department\" suggest this is an official expense report from that time period, making the name more credible.",
+        "5. The total expenses amounting to $130.01 and the signature block imply Roger Adams submitted this document for reimbursement.",
+        "<final>Roger Adams</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          55
+        ],
+        [
+          56,
+          81
+        ],
+        [
+          82,
+          96
+        ],
+        [
+          96,
+          117
+        ],
+        [
+          118,
+          158
+        ],
+        [
+          159,
+          187
+        ],
+        [
+          188,
+          196
+        ]
+      ],
+      "anchor_vector": [
+        11.28378438313802,
+        8.90869390578497,
+        9.852248927525112,
+        11.203276715959822,
+        13.07598876953125,
+        13.2772216796875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the date mentioned in the given report ? Answer the question using a single word or phrase.",
+      "reasoning_text": "11/12/62",
+      "raw_generation": [
+        "11/12/62",
+        "11/12/62"
+      ],
+      "chunks": [
+        "11/12/62"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          56
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the date mentioned in the given report ?",
+      "reasoning_text": "1. The report header clearly states the date as “11/12/62,” indicating November 12, 1962, as the submission date for the traveling expense report.  \n2. This date is positioned next to the name “Roger Adams,” confirming it is the date associated with his travel and expense documentation.  \n3. The report’s structure includes a “DATE” field in the upper-left corner, which is filled with “11/12/62,” matching the submission date.  \n4. The entries in the expense log, such as travel days from November 6 to November 8, are consistent with the report’s submission date of November 12, 1962.  \n5. The “MAILING DISTRIBUTION” section references “Bldg. No. 320” for supervisors and plant cashiers, confirming the report was processed during that fiscal period, aligning with the November 12, 1962, date.  \n\n<final>11/12/62</final>",
+      "raw_generation": [
+        "1. The report header clearly displays the date field labeled \"DATE\" near the top right section.  \n2. The handwritten entry in this field reads \"11/12/62,\" indicating the month, day, and year of the report.  \n3. This date format follows the standard MM/DD/YY convention, common in mid-20th century American documents.  \n4. The date is positioned directly next to the traveler's name, Roger Adams, and his address, confirming its relevance to his travel period.  \n5. The date aligns with the travel entries below, which span November 6–8, 1962, validating its accuracy as the report's submission date.  \n\n<final>11/12/62</final>",
+        "1. The report header clearly states the date as “11/12/62,” indicating November 12, 1962, as the submission date for the traveling expense report.  \n2. This date is positioned next to the name “Roger Adams,” confirming it is the date associated with his travel and expense documentation.  \n3. The report’s structure includes a “DATE” field in the upper-left corner, which is filled with “11/12/62,” matching the submission date.  \n4. The entries in the expense log, such as travel days from November 6 to November 8, are consistent with the report’s submission date of November 12, 1962.  \n5. The “MAILING DISTRIBUTION” section references “Bldg. No. 320” for supervisors and plant cashiers, confirming the report was processed during that fiscal period, aligning with the November 12, 1962, date.  \n\n<final>11/12/62</final>"
+      ],
+      "chunks": [
+        "1. The report header clearly states the date as “11/12/62,” indicating November 12, 1962, as the submission date for the traveling expense report.",
+        "2. This date is positioned next to the name “Roger Adams,” confirming it is the date associated with his travel and expense documentation.",
+        "3. The report’s structure includes a “DATE” field in the upper-left corner, which is filled with “11/12/62,” matching the submission date.",
+        "4. The entries in the expense log, such as travel days from November 6 to November 8, are consistent with the report’s submission date of November 12, 1962.",
+        "5. The “MAILING DISTRIBUTION” section references “Bldg.",
+        "No. 320” for supervisors and plant cashiers, confirming the report was processed during that fiscal period, aligning with the November 12, 1962, date.",
+        "<final>11/12/62</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          70
+        ],
+        [
+          71,
+          98
+        ],
+        [
+          99,
+          136
+        ],
+        [
+          137,
+          179
+        ],
+        [
+          180,
+          196
+        ],
+        [
+          196,
+          237
+        ],
+        [
+          238,
+          252
+        ]
+      ],
+      "anchor_vector": [
+        10.291519507694309,
+        10.268488875596047,
+        12.359706267247216,
+        11.784702110512052,
+        12.761300223214285,
+        11.170340401785714,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the name of the department mentioned in the given report ? Answer the question using a single word or phrase.",
+      "reasoning_text": "Central Research Department",
+      "raw_generation": [
+        "1. The report header clearly states the organization as E. I. DU PONT DE NEMOURS & COMPANY.  \n2. Directly beneath the company name, the department is explicitly labeled as CENTRAL RESEARCH DEPARTMENT.  \n3. The document further specifies the location as EXPERIMENTAL STATION, which is part of the department’s designation.  \n4. No other department names appear in the visible sections of the report.  \n5. The department name is unambiguous and directly readable from the top portion of the form.  \n\n<final>Central Research Department</final>",
+        "Central Research Department"
+      ],
+      "chunks": [
+        "Central Research Department"
+      ],
+      "chunk_token_ranges": [
+        [
+          54,
+          57
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nwhat is the name of the department mentioned in the given report ?",
+      "reasoning_text": "1. The report header clearly indicates the department as “CENTRAL RESEARCH DEPARTMENT,” positioned directly below the company name “E. I. DU PONT DE NEMOURS & COMPANY.”  \n2. The department’s full title is printed in bold, uppercase letters, making it prominent and easy to locate for quick reference.  \n3. Below the department name, the report specifies “EXPERIMENTAL STATION,” indicating a subunit or location within the department.  \n4. The department is part of the organizational structure of the company, as shown by its placement at the top of the form, before the employee’s personal details.  \n5. The department’s name is consistent with the document’s purpose, as it relates to research activities, aligning with the report’s travel expense context for a research worker.  \n<final> CENTRAL RESEARCH DEPARTMENT </final>",
+      "raw_generation": [
+        "1. The report header clearly identifies the organization as E. I. DU PONT DE NEMOURS & COMPANY, indicating the corporate entity responsible for the document.  \n2. Directly beneath the company name, the text specifies “CENTRAL RESEARCH DEPARTMENT,” which is the department associated with this expense report.  \n3. The department’s name is printed in bold, capital letters, making it visually prominent and easy to locate for quick reference.  \n4. The report also mentions “EXPERIMENTAL STATION” as a sub-division or location within the department, but the primary department name remains “CENTRAL RESEARCH DEPARTMENT.”  \n5. No other department names appear in the visible sections of the report, confirming that “CENTRAL RESEARCH DEPARTMENT” is the only department explicitly mentioned.  \n\n<final>Central Research Department</final>",
+        "1. The report header clearly indicates the department as “CENTRAL RESEARCH DEPARTMENT,” positioned directly below the company name “E. I. DU PONT DE NEMOURS & COMPANY.”  \n2. The department’s full title is printed in bold, uppercase letters, making it prominent and easy to locate for quick reference.  \n3. Below the department name, the report specifies “EXPERIMENTAL STATION,” indicating a subunit or location within the department.  \n4. The department is part of the organizational structure of the company, as shown by its placement at the top of the form, before the employee’s personal details.  \n5. The department’s name is consistent with the document’s purpose, as it relates to research activities, aligning with the report’s travel expense context for a research worker.  \n<final> CENTRAL RESEARCH DEPARTMENT </final>"
+      ],
+      "chunks": [
+        "1. The report header clearly indicates the department as “CENTRAL RESEARCH DEPARTMENT,” positioned directly below the company name “E.",
+        "I. DU PONT DE NEMOURS & COMPANY.”  \n2.",
+        "The department’s full title is printed in bold, uppercase letters, making it prominent and easy to locate for quick reference.",
+        "3. Below the department name, the report specifies “EXPERIMENTAL STATION,” indicating a subunit or location within the department.",
+        "4. The department is part of the organizational structure of the company, as shown by its placement at the top of the form, before the employee’s personal details.",
+        "5. The department’s name is consistent with the document’s purpose, as it relates to research activities, aligning with the report’s travel expense context for a research worker.",
+        "<final> CENTRAL RESEARCH DEPARTMENT </final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          34,
+          61
+        ],
+        [
+          61,
+          76
+        ],
+        [
+          76,
+          100
+        ],
+        [
+          101,
+          129
+        ],
+        [
+          130,
+          163
+        ],
+        [
+          164,
+          199
+        ],
+        [
+          200,
+          212
+        ]
+      ],
+      "anchor_vector": [
+        13.69499234458241,
+        10.454889388972031,
+        11.834094020298549,
+        10.975613169924692,
+        13.215991356259302,
+        10.7216796875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 96,
+  "subset": "docvqa",
+  "subset_local_idx": 3
+}

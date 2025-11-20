@@ -1,0 +1,66 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "coco/train2017/000000462998.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich side of the image is the warmest? \nA. top \nB. left \nC. bottom \nD. right",
+      "reasoning_text": "1. The bottom of the image features people dressed in thick winter gear, including insulated jackets and snow pants, suggesting they are actively engaged in cold-weather activities, indicating warmth is needed there.  \n2. The left side shows a ski lodge with heated indoor areas and people near a covered walkway, which implies warmth is available for those seeking shelter from the cold outdoors.  \n3. The top of the image displays a snow-covered hill with bare trees and an overcast sky, suggesting colder, less sheltered conditions without visible heat sources.  \n4. The right side of the image has a wide, open snowy slope with no visible structures or signs of warmth, and people are walking in the open, exposed to the cold.  \n5. The bottom and left sides are the warmest because they contain people in winter clothing, a ski lodge, and sheltered walkways, offering warmth compared to the exposed, open areas above and to the right.  \n\n<final>B. left</final>",
+      "raw_generation": [
+        "1. The image depicts a snowy mountain environment with people dressed in winter gear, indicating cold temperatures across the entire scene.  \n2. The sky appears overcast and gray, suggesting no direct sunlight warming any specific area.  \n3. The ground is covered in snow, which reflects light but does not generate heat, maintaining a consistent cold temperature throughout.  \n4. The signpost and surrounding structures are also blanketed in snow, with no visible heat sources or warm surfaces.  \n5. Since all areas are uniformly cold and no thermal gradients are visible, no side of the image is warmer than the others.  \n\n<final>None of the options are correct as all sides are equally cold.</final>",
+        "1. The bottom of the image features people dressed in thick winter gear, including insulated jackets and snow pants, suggesting they are actively engaged in cold-weather activities, indicating warmth is needed there.  \n2. The left side shows a ski lodge with heated indoor areas and people near a covered walkway, which implies warmth is available for those seeking shelter from the cold outdoors.  \n3. The top of the image displays a snow-covered hill with bare trees and an overcast sky, suggesting colder, less sheltered conditions without visible heat sources.  \n4. The right side of the image has a wide, open snowy slope with no visible structures or signs of warmth, and people are walking in the open, exposed to the cold.  \n5. The bottom and left sides are the warmest because they contain people in winter clothing, a ski lodge, and sheltered walkways, offering warmth compared to the exposed, open areas above and to the right.  \n\n<final>B. left</final>"
+      ],
+      "chunks": [
+        "1. The bottom of the image features people dressed in thick winter gear, including insulated jackets and snow pants, suggesting they are actively engaged in cold-weather activities, indicating warmth is needed there.",
+        "2. The left side shows a ski lodge with heated indoor areas and people near a covered walkway, which implies warmth is available for those seeking shelter from the cold outdoors.",
+        "3. The top of the image displays a snow-covered hill with bare trees and an overcast sky, suggesting colder, less sheltered conditions without visible heat sources.",
+        "4. The right side of the image has a wide, open snowy slope with no visible structures or signs of warmth, and people are walking in the open, exposed to the cold.",
+        "5. The bottom and left sides are the warmest because they contain people in winter clothing, a ski lodge, and sheltered walkways, offering warmth compared to the exposed, open areas above and to the right.",
+        "<final>B. left</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          101
+        ],
+        [
+          102,
+          137
+        ],
+        [
+          138,
+          171
+        ],
+        [
+          172,
+          209
+        ],
+        [
+          210,
+          254
+        ],
+        [
+          255,
+          263
+        ]
+      ],
+      "anchor_vector": [
+        17.31029994362514,
+        14.959279903127559,
+        8.627867602599048,
+        15.036521218039773,
+        14.05322265625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 68,
+  "subset": "coco",
+  "subset_local_idx": 17
+}

@@ -1,0 +1,72 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "textvqa/train_images/3e56656524c837fe.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: UONTED, AZERE, LIDERT",
+      "reasoning_text": "<1> A compact red circuit board with a USB connector sits beside a quarter, showcasing its small size and intricate design for electronic projects.  \n<2> The quarter, featuring George Washington’s profile and “UNITED STATES OF AMERICA,” provides scale to the miniature USB module.  \n<3> The red PCB has labeled pins (P1 to P4) and a gear icon, indicating its use in DIY electronics or microcontroller setups.  \n<4> The USB connector’s metallic housing and internal contacts suggest it’s designed for reliable data transfer and power delivery.  \n<5> The image highlights the precision engineering of small electronic components, ideal for embedded systems or prototyping.  \n<final> A tiny red USB circuit board, labeled with pins and a gear icon, is shown next to a U.S. quarter to emphasize its compact size and suitability for electronics projects.",
+      "raw_generation": [
+        "1. The image displays a compact USB connector module mounted on a red circuit board, positioned next to a U.S. quarter for size comparison.  \n2. The USB port’s metallic housing and internal contacts are clearly visible, showcasing its robust construction for electronic interfacing.  \n3. The red PCB features labeled pins (P1 through P4) and a small gear icon, indicating its use in microcontroller or embedded systems projects.  \n4. The quarter’s inscriptions, including “UNITED STATES OF AMERICA,” “LIBERTY,” and “QUARTER DOLLAR,” confirm its origin and denomination.  \n5. The clean white background emphasizes the components’ details, making them ideal for technical documentation or product photography.  \n\n<final>Compact USB connector module on a red PCB, shown beside a U.S. quarter to illustrate its small size for electronics projects.</final>",
+        "<1> A compact red circuit board with a USB connector sits beside a quarter, showcasing its small size and intricate design for electronic projects.  \n<2> The quarter, featuring George Washington’s profile and “UNITED STATES OF AMERICA,” provides scale to the miniature USB module.  \n<3> The red PCB has labeled pins (P1 to P4) and a gear icon, indicating its use in DIY electronics or microcontroller setups.  \n<4> The USB connector’s metallic housing and internal contacts suggest it’s designed for reliable data transfer and power delivery.  \n<5> The image highlights the precision engineering of small electronic components, ideal for embedded systems or prototyping.  \n<final> A tiny red USB circuit board, labeled with pins and a gear icon, is shown next to a U.S. quarter to emphasize its compact size and suitability for electronics projects."
+      ],
+      "chunks": [
+        "<1> A compact red circuit board with a USB connector sits beside a quarter, showcasing its small size and intricate design for electronic projects.",
+        "<2> The quarter, featuring George Washington’s profile and “UNITED STATES OF AMERICA,” provides scale to the miniature USB module.",
+        "<3> The red PCB has labeled pins (P1 to P4) and a gear icon, indicating its use in DIY electronics or microcontroller setups.",
+        "<4> The USB connector’s metallic housing and internal contacts suggest it’s designed for reliable data transfer and power delivery.",
+        "<5> The image highlights the precision engineering of small electronic components, ideal for embedded systems or prototyping.",
+        "<final> A tiny red USB circuit board, labeled with pins and a gear icon, is shown next to a U.S.",
+        "quarter to emphasize its compact size and suitability for electronics projects."
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          88
+        ],
+        [
+          89,
+          117
+        ],
+        [
+          118,
+          150
+        ],
+        [
+          151,
+          175
+        ],
+        [
+          176,
+          198
+        ],
+        [
+          199,
+          225
+        ],
+        [
+          225,
+          237
+        ]
+      ],
+      "anchor_vector": [
+        12.343794504377998,
+        13.781673803084937,
+        12.746811588883121,
+        12.506194001311188,
+        14.912772936698719,
+        16.2119140625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 156,
+  "subset": "textvqa",
+  "subset_local_idx": 2
+}
