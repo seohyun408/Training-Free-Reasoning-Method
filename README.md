@@ -40,20 +40,6 @@ python main.py \
 python generate_report.py
 ```
 
-**Outputs**: `thought_anchor_report.html` (interactive results with trial details)
 
-### Step 3: Generate Methodology Documentation
 
-```bash
-python generate_methodology.py
-```
 
-**Outputs**: `methodology_report.html` (complete method explanation)
-
----
-
-## 📊 Results Summary
-
-- **60% accuracy improvement** on diagram reasoning (40% → 100%)
-- **Training-free**: No fine-tuning required
-- **Non-linear steering**: Optimal at scale 0.5-1.0, over-steering at 2.0, force mode at 5.0
