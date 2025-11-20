@@ -331,6 +331,27 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
             padding-bottom: 8px;
             border-bottom: 2px solid #667eea;
         }
+        .correct-answer-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .correct-answer-label {
+            font-weight: bold;
+            color: #1976d2;
+            margin-right: 8px;
+        }
+        .correct-answer-text {
+            font-family: 'Courier New', monospace;
+            color: #333;
+            background: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
         .trial-item {
             padding: 8px 12px;
             margin: 6px 0;
@@ -699,9 +720,16 @@ def generate_html_report(json_files, output_path="thought_anchor_report.html"):
                         answer_probs = result.get('answer_probabilities', [])
 
                         if generated_answers:
+                            # Truncate long correct answers for display
+                            display_correct = correct_answer if len(str(correct_answer)) <= 150 else str(correct_answer)[:150] + "..."
+
                             html_parts.append(f"""
                     <div class="trials-details">
                         <div class="trials-header">📋 Scale {scale} - Individual Trial Results</div>
+                        <div class="correct-answer-box">
+                            <span class="correct-answer-label">🎯 Correct Answer:</span>
+                            <span class="correct-answer-text">{display_correct}</span>
+                        </div>
 """)
 
                             for trial_idx, (answer, prob) in enumerate(zip(generated_answers, answer_probs), 1):

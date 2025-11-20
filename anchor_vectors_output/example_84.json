@@ -1,0 +1,216 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/4447.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat does the diagram depicts?\n\nOptions:\n- Types of Plants\n- Types of Leaflets\n- Growth of Leaflets\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram displays two distinct leaf structures, each with multiple smaller leaf units attached to a central stem, indicating a focus on leaf composition rather than plant types or growth stages.  \n2. The left illustration shows a leaf with several leaflets arranged along a single axis, while the right one features leaflets radiating from a central point, both labeled as compound leaves.  \n3. The term “compound leaf” is explicitly written next to the right illustration, confirming the diagram’s purpose is to demonstrate variations in leaf structure, not plant species or developmental phases.  \n4. Both drawings emphasize the division of a single leaf into multiple leaflets, highlighting morphological differences rather than growth patterns or plant classification.  \n5. The diagram’s clear labeling and structural focus on leaflet arrangement confirm it depicts types of leaflets, aligning with the second option provided in the question.  \n\n<final>Types of Leaflets</final>",
+      "raw_generation": [
+        "1. The diagram shows two distinct leaf structures, each with multiple smaller leaf units attached to a central stem, indicating a focus on leaf composition rather than plant types or growth stages.  \n2. The label “compound leaf” explicitly identifies the subject matter, emphasizing the arrangement and structure of leaflets rather than plant species or developmental processes.  \n3. Both illustrations depict leaves divided into multiple leaflets, which is the defining characteristic of compound leaves, not the overall growth or classification of plants.  \n4. The diagram does not show any stages of development, such as germination or maturation, nor does it illustrate how leaflets grow over time, making “Growth of Leaflets” an inaccurate description.  \n5. Since the diagram highlights the structural variation in compound leaves, it specifically addresses the types of leaflets and their arrangement, aligning with “Types of Leaflets” as the most accurate option.  \n\n<final>Types of Leaflets</final>",
+        "1. The diagram displays two distinct leaf structures, each with multiple smaller leaf units attached to a central stem, indicating a focus on leaf composition rather than plant types or growth stages.  \n2. The left illustration shows a leaf with several leaflets arranged along a single axis, while the right one features leaflets radiating from a central point, both labeled as compound leaves.  \n3. The term “compound leaf” is explicitly written next to the right illustration, confirming the diagram’s purpose is to demonstrate variations in leaf structure, not plant species or developmental phases.  \n4. Both drawings emphasize the division of a single leaf into multiple leaflets, highlighting morphological differences rather than growth patterns or plant classification.  \n5. The diagram’s clear labeling and structural focus on leaflet arrangement confirm it depicts types of leaflets, aligning with the second option provided in the question.  \n\n<final>Types of Leaflets</final>"
+      ],
+      "chunks": [
+        "1. The diagram displays two distinct leaf structures, each with multiple smaller leaf units attached to a central stem, indicating a focus on leaf composition rather than plant types or growth stages.",
+        "2. The left illustration shows a leaf with several leaflets arranged along a single axis, while the right one features leaflets radiating from a central point, both labeled as compound leaves.",
+        "3. The term “compound leaf” is explicitly written next to the right illustration, confirming the diagram’s purpose is to demonstrate variations in leaf structure, not plant species or developmental phases.",
+        "4. Both drawings emphasize the division of a single leaf into multiple leaflets, highlighting morphological differences rather than growth patterns or plant classification.",
+        "5. The diagram’s clear labeling and structural focus on leaflet arrangement confirm it depicts types of leaflets, aligning with the second option provided in the question.",
+        "<final>Types of Leaflets</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          80,
+          116
+        ],
+        [
+          117,
+          155
+        ],
+        [
+          156,
+          193
+        ],
+        [
+          194,
+          222
+        ],
+        [
+          223,
+          256
+        ],
+        [
+          257,
+          267
+        ]
+      ],
+      "anchor_vector": [
+        12.546844216749644,
+        13.816593290226102,
+        13.668704060696248,
+        14.291459517045453,
+        17.16171875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The diagram does not show any plant species or categorization of plants, so the first option, “Types of Plants,” is incorrect.",
+        "negative_sentence": "Based on the observations and analysis above, the diagram does not depict plant types or growth stages, as there is no indication of different species, life cycles, or developmental phases.",
+        "positive_full": " \n6. The diagram does not show any plant species or categorization of plants, so the first option, “Types of Plants,” is incorrect. 7. The diagram does not illustrate any growth phases or timelines, so the third option, “Growth of Leaflets,” is also incorrect. 8. Therefore, based on the evidence, the diagram depicts **Types of Leaflets**.\n\n**Final Answer: Types of Leaflets**",
+        "negative_full": " \n\n6. Based on the observations and analysis above, the diagram does not depict plant types or growth stages, as there is no indication of different species, life cycles, or developmental phases. 7. Since the diagram explicitly shows two compound leaf structures with varying leaflet arrangements (pinnate vs. palmate), and the term “compound leaf” is clearly labeled, the focus is on the morphology of leaflets, not their growth. 8. Therefore, the correct answer, according to the options provided, is:\n\n**- Types of Leaflets**",
+        "positive_probability": 0.687688112871534,
+        "negative_probability": 0.005456617307857794,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " \n6. The diagram does not show any plant species or categorization of plants, so the first option, “Types of Plants,” is incorrect. 7. The diagram does not illustrate any growth phases or timelines, so the third option, “Growth of Leaflets,” is also incorrect. 8. Therefore, based on the evidence, the diagram depicts **Types of Leaflets**.\n\n**Final Answer: Types of Leaflets**",
+            "first_sentence": "The diagram does not show any plant species or categorization of plants, so the first option, “Types of Plants,” is incorrect.",
+            "answer_probability": 0.687688112871534,
+            "final_answer": "Types of Leaflets"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n6. The options given are limited to Types of Plants, Types of Leaflets, and Growth of Leaflets. Since the diagram shows compound leaf structures with variations in how leaflets are arranged (pinnate vs. palmate), it does not show plant species or growth stages. Therefore, the most accurate choice is **Types of Leaflets**.\n\nFinal Answer: **Types of Leaflets**",
+            "first_sentence": "The options given are limited to Types of Plants, Types of Leaflets, and Growth of Leaflets.",
+            "answer_probability": 0.6643209711620761,
+            "final_answer": "Types of Leaflets"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n6. The diagram does not show any stages of development or time-based progression, which would be necessary to represent growth, so it is not about Growth of Leaflets (third option). 7. The illustrations do not provide any information about plant species or categories, so it is not about Types of Plants (first option). 8. Therefore, the diagram exclusively illustrates different configurations of leaflets within compound leaves, making the correct answer Types of Leaflets.\n\nFinal Answer: Types of Leaflets",
+            "first_sentence": "The diagram does not show any stages of development or time-based progression, which would be necessary to represent growth, so it is not about Growth of Leaflets (third option).",
+            "answer_probability": 0.557092538058,
+            "final_answer": "Types of Leaflets"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n6. The diagram does not show different plant species or categorize them, so the option “Types of Plants” can be eliminated. 7. While it does show leaf structures, it does not illustrate any growth stages or processes, such as development over time, which would be necessary for the “Growth of Leaflets” option. 8. The key feature of the diagram is the variation in how leaflets are arranged on the leaf stem — pinnately compound (left) vs. palmately compound (right). 9. This variation in arrangement is a classification of leaflet types, as different compound leaf forms are",
+            "first_sentence": "The diagram does not show different plant species or categorize them, so the option “Types of Plants” can be eliminated.",
+            "answer_probability": 0.005607001785785048,
+            "final_answer": "6. The diagram does not show different plant species or categorize them, so the option “Types of Plants” can be eliminated. 7. While it does show leaf structures, it does not illustrate any growth stages or processes, such as development over time, which would be necessary for the “Growth of Leaflets” option. 8. The key feature of the diagram is the variation in how leaflets are arranged on the leaf stem — pinnately compound (left) vs. palmately compound (right). 9. This variation in arrangement is a classification of leaflet types, as different compound leaf forms are"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n6. Based on the observations and analysis above, the diagram does not depict plant types or growth stages, as there is no indication of different species, life cycles, or developmental phases. 7. Since the diagram explicitly shows two compound leaf structures with varying leaflet arrangements (pinnate vs. palmate), and the term “compound leaf” is clearly labeled, the focus is on the morphology of leaflets, not their growth. 8. Therefore, the correct answer, according to the options provided, is:\n\n**- Types of Leaflets**",
+            "first_sentence": "Based on the observations and analysis above, the diagram does not depict plant types or growth stages, as there is no indication of different species, life cycles, or developmental phases.",
+            "answer_probability": 0.005456617307857794,
+            "final_answer": ", according to the options provided, is:"
+          }
+        ],
+        "correct_answer": "Types of Leaflets",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.46347156648431015,
+              "generated_answers": [
+                "Types of Leaflets",
+                "Types of Leaflets",
+                "Types of Leaflets",
+                "**Types of Leaflets** ✅",
+                "Types of Leaflets"
+              ],
+              "answer_probabilities": [
+                0.6410443449827119,
+                0.6050023144900462,
+                0.466447369886497,
+                0.005809696603462172,
+                0.5990541064588334
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.47413523352686315,
+              "generated_answers": [
+                "Types of Leaflets",
+                "Types of Leaflets",
+                ", as the diagram clearly illustrates two distinct configurations of compound leaves — pinnately compound and palmately compound — which are classifications based on leaflet arrangement",
+                "Types of Leaflets",
+                "Types of Leaflets"
+              ],
+              "answer_probabilities": [
+                0.6081038134395056,
+                0.57289599557033,
+                0.0065096519840143075,
+                0.5721053705380547,
+                0.6110613361024118
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.47343941045917337,
+              "generated_answers": [
+                "Types of Leaflets",
+                "must be the second option: Types of Leaflets",
+                "Types of Leaflets",
+                "Types of Leaflets",
+                "Types of Leaflets"
+              ],
+              "answer_probabilities": [
+                0.5916565467056936,
+                0.006004756719165556,
+                0.6518949830802016,
+                0.5262437952971728,
+                0.5913969704936333
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.38634338362910237,
+              "generated_answers": [
+                "is: Types of Leaflets",
+                "Types of Leaflets",
+                "Types of Leaflets",
+                "Therefore, the correct option is: **Types of Leaflets**",
+                "Types of Leaflets"
+              ],
+              "answer_probabilities": [
+                0.004416804183809181,
+                0.6493608677624864,
+                0.6198505228459629,
+                0.005558958431707667,
+                0.6525297649215459
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.49274795696896,
+              "generated_answers": [
+                "clearly Option 2: Types of Leaflets",
+                "Types of Leaflets",
+                "Types of Leaflets",
+                "Types of Leaflets",
+                "Types of Leaflets"
+              ],
+              "answer_probabilities": [
+                0.006158439880557903,
+                0.5817039606206669,
+                0.5348717175321662,
+                0.6801250649654158,
+                0.6608806018459932
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 84
+}

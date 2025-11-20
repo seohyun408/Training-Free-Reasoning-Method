@@ -1,0 +1,216 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/mnt/hdd/llava/llava-cot-100k/extracted/ai2d/images/2268.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat happens after the meduse stage of the life cycle?\n\nOptions:\n- larva\n- adult\n- ephyrule\n- planula\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows the meduse stage releasing gametes that fertilize to form a planula larva, indicating the next phase after the meduse is the planula.\n2. The arrow from the meduse points directly to the planula, confirming the planula is the immediate next stage in the life cycle.\n3. The planula then settles and develops into young polyps, as shown by the arrow leading from the planula to the young polyps.\n4. The ephyrule stage appears after the planula settles and before the polyp stage, but it is not the immediate next stage following the meduse.\n5. The adult stage is represented by the meduse itself, which is the final reproductive stage before releasing gametes, not what follows it.\n\n<final>planula</final>",
+      "raw_generation": [
+        "1. The diagram shows the meduse stage producing a structure labeled \"éphyrule\" via a downward arrow, indicating it is the next stage in the cycle after the meduse.\n2. The ephyrule is depicted as a small, developing form with tentacles, which is positioned between the meduse and the polyp stage in the life cycle.\n3. The arrow from the meduse to the ephyrule clearly suggests a direct transition without any intermediate stages shown in the diagram.\n4. The planula, shown as a small, free-swimming larva, is produced by the ephyrule, not directly by the meduse, making it a later stage.\n5. The adult stage is represented by the meduse itself, which is the mature, reproductive form in the cycle, so it does not follow the meduse.\n\n<final>ephyrule</final>",
+        "1. The diagram shows the meduse stage releasing gametes that fertilize to form a planula larva, indicating the next phase after the meduse is the planula.\n2. The arrow from the meduse points directly to the planula, confirming the planula is the immediate next stage in the life cycle.\n3. The planula then settles and develops into young polyps, as shown by the arrow leading from the planula to the young polyps.\n4. The ephyrule stage appears after the planula settles and before the polyp stage, but it is not the immediate next stage following the meduse.\n5. The adult stage is represented by the meduse itself, which is the final reproductive stage before releasing gametes, not what follows it.\n\n<final>planula</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows the meduse stage releasing gametes that fertilize to form a planula larva, indicating the next phase after the meduse is the planula.",
+        "2. The arrow from the meduse points directly to the planula, confirming the planula is the immediate next stage in the life cycle.",
+        "3. The planula then settles and develops into young polyps, as shown by the arrow leading from the planula to the young polyps.",
+        "4. The ephyrule stage appears after the planula settles and before the polyp stage, but it is not the immediate next stage following the meduse.",
+        "5. The adult stage is represented by the meduse itself, which is the final reproductive stage before releasing gametes, not what follows it.",
+        "<final>planula</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          92,
+          128
+        ],
+        [
+          128,
+          157
+        ],
+        [
+          157,
+          187
+        ],
+        [
+          187,
+          221
+        ],
+        [
+          221,
+          250
+        ],
+        [
+          250,
+          258
+        ]
+      ],
+      "anchor_vector": [
+        12.229685354071586,
+        13.102907320323064,
+        13.426914300202839,
+        13.814730940193964,
+        14.798583984375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Based on the diagram, which option correctly identifies the stage that immediately follows the meduse stage?",
+        "negative_sentence": "Therefore, based on the flow and sequence in the diagram, the correct answer is the planula, as it is the stage immediately following the meduse in the life cycle.",
+        "positive_full": " Based on the diagram, which option correctly identifies the stage that immediately follows the meduse stage?\n\nBased on the diagram, the stage that immediately follows the meduse is the **planula**. This is clearly indicated by the arrow pointing from the meduse to the planula, and the sequence shows the meduse releasing gametes that form the planula larva, which then develops into young polyps.\n\nTherefore, the correct answer is: **planula**.",
+        "negative_full": "  \n6. Therefore, based on the flow and sequence in the diagram, the correct answer is the planula, as it is the stage immediately following the meduse in the life cycle. \n\nFinal Answer: planula",
+        "positive_probability": 0.6730252898483831,
+        "negative_probability": 0.004999154874758679,
+        "all_samples": [
+          {
+            "sample_idx": 2,
+            "continuation": " Based on the diagram, which option correctly identifies the stage that immediately follows the meduse stage?\n\nBased on the diagram, the stage that immediately follows the meduse is the **planula**. This is clearly indicated by the arrow pointing from the meduse to the planula, and the sequence shows the meduse releasing gametes that form the planula larva, which then develops into young polyps.\n\nTherefore, the correct answer is: **planula**.",
+            "first_sentence": "Based on the diagram, which option correctly identifies the stage that immediately follows the meduse stage?",
+            "answer_probability": 0.6730252898483831,
+            "final_answer": "planula"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\nSo, based on the reasoning, the immediate next stage after the meduse stage is the **planula**. The other options — larva (which is a general term and not specific to this context), adult (the meduse itself), and ephyrule (which occurs later) — do not fit as the direct successor to the meduse stage.\n\nFinal Answer: **planula**",
+            "first_sentence": "So, based on the reasoning, the immediate next stage after the meduse stage is the **planula**.",
+            "answer_probability": 0.6320277993630802,
+            "final_answer": "planula"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\nStep 6: Based on the analysis, the stage that directly follows the meduse is the planula. The ephyrule is a developmental stage that comes after the planula, not immediately after the meduse. The adult stage is the meduse, which is the reproductive stage preceding gamete release. The larva stage is not specified separately in the diagram, but the planula is the larval form.\n\nStep 7: Therefore, after the meduse stage, the next stage in the life cycle is the planula.\n\nBased on the analysis, the correct answer is: **planula**.",
+            "first_sentence": "Step 6: Based on the analysis, the stage that directly follows the meduse is the planula.",
+            "answer_probability": 0.5965399651676804,
+            "final_answer": "planula"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n6. From the above steps, the meduse stage is followed directly by the planula larva, as per the diagram and the biological sequence described.\n\nWhat is the final answer?\nBased on the options and reasoning, the correct answer is **planula**. The meduse stage releases gametes that form a planula larva, which is the immediate next stage in the life cycle, as confirmed by the diagram and biological sequence. \n\n**Final Answer: planula**",
+            "first_sentence": "From the above steps, the meduse stage is followed directly by the planula larva, as per the diagram and the biological sequence described.",
+            "answer_probability": 0.5503444036625355,
+            "final_answer": ""
+          },
+          {
+            "sample_idx": 1,
+            "continuation": "  \n6. Therefore, based on the flow and sequence in the diagram, the correct answer is the planula, as it is the stage immediately following the meduse in the life cycle. \n\nFinal Answer: planula",
+            "first_sentence": "Therefore, based on the flow and sequence in the diagram, the correct answer is the planula, as it is the stage immediately following the meduse in the life cycle.",
+            "answer_probability": 0.004999154874758679,
+            "final_answer": "the planula, as it is the stage immediately following the meduse in the life cycle"
+          }
+        ],
+        "correct_answer": "planula",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.3079902351012384,
+              "generated_answers": [
+                "The next stage after the meduse is the planula",
+                "",
+                "planula",
+                "should be the planula, as it is the direct next stage after the meduse in the life cycle, according to the diagram",
+                "planula"
+              ],
+              "answer_probabilities": [
+                0.005255956376680792,
+                0.5136324035670254,
+                0.4955318985071785,
+                0.005177888151449801,
+                0.5203530289038577
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.4420806726097683,
+              "generated_answers": [
+                "planula",
+                "planula",
+                "among the given options is planula",
+                "planula",
+                "planula"
+              ],
+              "answer_probabilities": [
+                0.49785578558648097,
+                0.6542684276872559,
+                0.0055950908323048045,
+                0.5262152371239298,
+                0.5264688218188701
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.28744030394571,
+              "generated_answers": [
+                "the planula",
+                "planula",
+                "planula",
+                "planula",
+                ". The larva option is too general and not specific to this context. The adult stage is the meduse, which is the stage preceding the release of gametes. Therefore, the only option that fits the immediate next stage after the meduse is the planula"
+              ],
+              "answer_probabilities": [
+                0.005737222361437528,
+                0.44016326752181867,
+                0.45667758789778956,
+                0.5284929787324164,
+                0.0061304632150879544
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.34321579677499275,
+              "generated_answers": [
+                "planula",
+                "must be planula. 7. The other options (larva, adult, ephyrule) do not match the direct progression shown in the diagram, which explicitly links the meduse to the planula",
+                "planula",
+                "planula",
+                "Based on this reasoning, the correct option is: planula"
+              ],
+              "answer_probabilities": [
+                0.5348164256883451,
+                0.00604772873755453,
+                0.5949548967441407,
+                0.5749935363363148,
+                0.00526639636860857
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.3939912795620958,
+              "generated_answers": [
+                "planula",
+                "$\\boxed{planula}$",
+                "planula",
+                "planula",
+                "planula"
+              ],
+              "answer_probabilities": [
+                0.4921001963774462,
+                0.006572545497476205,
+                0.5016358781600928,
+                0.4075605204718489,
+                0.5620872573036148
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 53
+}
