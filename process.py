@@ -234,7 +234,7 @@ def _generate_reasoning_with_model(question, image, model, processor, tokenizer,
                 print(f"[gen-error] attempt={attempt}: {e}")
                 raise
 
-    is_thinking = "thinking" in (model_name or "").lower()
+    is_thinking = "thinking" in (model_name or "").lower() or os.getenv("DO_SAMPLE", "0") == "1"
     # Attempt loop with fallback prompts
     max_attempts = int(os.getenv("REASONING_ATTEMPTS", "2"))
     raw_generations = []
@@ -494,8 +494,8 @@ def process_qa_pair(
             # Extract correct answer from gpt_response or reasoning
             # Try to find answer in the original response or generated reasoning
             correct_answer = None
-            # Check both the generated reasoning and the source
-            for source_text in [reasoning_source_text, gpt_response]:
+            # Check dataset ground truth first, then fallback to generated reasoning
+            for source_text in [gpt_response, reasoning_source_text]:
                 for tag_pair in [("<final>", "</final>"), ("<CONCLUSION>", "</CONCLUSION>")]:
                     start_tag, end_tag = tag_pair
                     if start_tag in source_text and end_tag in source_text:
@@ -603,7 +603,7 @@ def process_qa_pair(
                             correct_answer=correct_answer,
                             device=device,
                             num_trials=int(os.getenv("PCA_NUM_TRIALS", "3")),
-                            context_scales=[0.0, 0.5, 1.0, 2.0]
+                            context_scales=[0.0, 0.5, 1.0, 2.0, 5.0]  # 5.0까지만 (더 크면 over-steering)
                         )
 
                         # Add PCA results to contrastive_result

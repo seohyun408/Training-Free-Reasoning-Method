@@ -22,17 +22,46 @@
 
 ## 🚀 How to Run
 
-### Step 1: Run Main Analysis
+### Step 1: Run Main Analysis (PCA + Sampling enabled by default)
+
+```bash
+python main.py \
+  --data llava-cot-100k \
+  --num-examples 50
+```
+
+**This runs the full pipeline**: Thought Anchor Detection → Contrastive Generation → **PCA Context Vector Testing**
+
+**Default settings**:
+- ✅ Stochastic generation (temperature=0.8, different results each run)
+- ✅ PCA context vector testing (5 trials per scale)
+
+**Outputs**: `anchor_vectors_output/example_*.json`
+
+#### Optional: Disable sampling (deterministic, reproducible results)
 
 ```bash
 python main.py \
   --data llava-cot-100k \
   --num-examples 50 \
-  --test-pca-context \
-  --pca-num-trials 5
+  --no-sampling
 ```
 
-**Outputs**: `anchor_vectors_output/example_*.json`
+#### Optional: Disable PCA (faster, but no steering results)
+
+```bash
+python main.py \
+  --data llava-cot-100k \
+  --num-examples 50 \
+  --no-pca
+```
+
+#### Optional: Add PCA to existing results
+
+If you already have results without PCA:
+```bash
+python run_pca_on_existing.py
+```
 
 ### Step 2: Generate HTML Reports
 
