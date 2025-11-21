@@ -16,6 +16,12 @@ from pathlib import Path
 
 def extract_reasoning_from_response(gpt_response: str) -> str:
 
+    if "<think>" in gpt_response and "</think>" in gpt_response:
+        s = gpt_response.find("<think>") + len("<think>")
+        e = gpt_response.find("</think>")
+        if s < e:
+            return gpt_response[s:e].strip()
+
     if "<REASONING>" in gpt_response and "</REASONING>" in gpt_response:
         start_idx = gpt_response.find("<REASONING>") + len("<REASONING>")
         end_idx = gpt_response.find("</REASONING>")
@@ -40,7 +46,7 @@ def extract_qa_pairs(conversation: List[Dict]) -> List[Tuple[str, str]]:
     return qa_pairs
 
 
-def split_solution_into_chunks(solution_text: str) -> List[str]:
+def split_solution_into_chunks(solution_text: str, tokenizer=None, min_tokens: int = 5) -> List[str]:
 
     sentence_ending_tokens = [".", "?", "!"]
     chunks = []
@@ -79,6 +85,36 @@ def split_solution_into_chunks(solution_text: str) -> List[str]:
                 break
         else:
             i += 1
+
+    # Token-based merging if tokenizer is provided
+    if tokenizer is not None and min_tokens > 0:
+        i = 0
+        while i < len(chunks):
+            try:
+                tokens = tokenizer.encode(chunks[i], add_special_tokens=False)
+                token_count = len(tokens)
+
+                # If chunk is too small, merge with next or previous
+                if token_count < min_tokens:
+                    if i < len(chunks) - 1:
+                        # Merge with next
+                        chunks[i] = chunks[i] + " " + chunks[i + 1]
+                        chunks.pop(i + 1)
+                        # Don't increment i, check merged chunk again
+                    elif i > 0:
+                        # Merge with previous (last chunk is small)
+                        chunks[i - 1] = chunks[i - 1] + " " + chunks[i]
+                        chunks.pop(i)
+                        break
+                    else:
+                        # Only one chunk and it's small, keep it
+                        i += 1
+                else:
+                    i += 1
+            except Exception as e:
+                # If tokenization fails, just keep the chunk
+                print(f"[warn] Tokenization failed for chunk: {e}")
+                i += 1
     
     return chunks
 
