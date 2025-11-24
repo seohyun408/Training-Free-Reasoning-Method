@@ -6,6 +6,8 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
+import pdb
+
 from datasets import load_dataset, Dataset
 from pathlib import Path
 from typing import List, Tuple, Optional, Dict
@@ -20,7 +22,7 @@ from pathlib import Path
 from process import DatasetProcessor
 
 
-## Environment Setting
+## Environment Settingpip install --upgrade git+https://github.com/huggingface/transformers.git
 HUGGINGFACE_TOKEN = os.getenv('HUGGINGFACE_TOKEN')
 HF_HOME = os.getenv('HF_HOME')
 DATASETS_CACHE = os.getenv('HF_DATASETS_CACHE')
@@ -47,6 +49,7 @@ def build_parser():
     ## DIRECTORY // ENVIRONMENT
     p.add_argument("--images_root", default="/scratch/tjgus0408/huggingface/datasets/LLaVA-CoT-100k", help="Directory containing images")
     p.add_argument("--gpu", type=int, default=0, help="GPU index (0-based)")
+    p.add_argument('--debug', action='store_true')
 
     ## 아직 수정중
     p.add_argument("--max-samples", type=int, default=10, help="Stop after N successful samples (0=all)")
@@ -69,6 +72,9 @@ def main():
 
     parser = build_parser()
     args = parser.parse_args()
+
+    ## for debugging
+    # pdb.set_trace()
 
     if USE_WANDB:
         wandb.login(key=WANDB_TOKEN)
@@ -108,7 +114,7 @@ def main():
         load_kwargs["quantization_config"] = quant_cfg
     elif args.load_8bit:
         load_kwargs["load_in_8bit"] = True
-    torch_dtype = torch.float16 if device.startswith("cuda") else torch.float32
+    torch_dtype = torch.float16 if device.type == "cuda" else torch.float32
     load_kwargs["dtype"] = torch_dtype 
 
     model = Qwen3VLForConditionalGeneration.from_pretrained(
@@ -132,9 +138,9 @@ def main():
         model=model,
         processor=processor,
         tokenizer=tokenizer,
-        device=args.device,
+        device=device,
         images_root=args.images_root,
-        generate_reasoning=args.generate_reasoning,
+        generate_reasoning=True,
         model_name=args.model_name
     )
     
@@ -149,63 +155,9 @@ def main():
         with open(output_dir / f"example_{idx}.json", "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
 
-
-    # ======================================================
-    # 25.11.03 :: Sample for Result 
-    # ======================================================
-
-    # Convert to list to ensure data is loaded (Only one)
-
-    # one_sample = "ai2d/images/2067.png"
-
-        
-    # sample_size = 20
-    # sample_data = []
-
-    # for i in range(min(sample_size, len(dataset))):
-    #     example = dataset[i]
-    #     if example['image'] == one_sample:
-    #         sample_data.append(example)
+        # 우선 하나만 TEST !
+        break
     
-    # print(f"Loaded {len(sample_data)} examples from cached dataset")
-
-    # model_name = "llava-hf/llava-1.5-7b-hf"
-
-    # print(f"Loading model: {model_name}")
-    # processor = LlavaProcessor.from_pretrained(model_name)
-    # model = LlavaForConditionalGeneration.from_pretrained(
-    #     model_name,
-    #     torch_dtype=torch.float16 if device == "cuda" else torch.float32,
-    #     device_map="auto" if device == "cuda" else None
-    # )
-    # model.eval()
-    
-    # tokenizer = processor.tokenizer
-    # model = model.to(device)
-    
-    # results = []
-    # output_dir = Path("anchor_vectors_output")
-    # output_dir.mkdir(exist_ok=True)
-    
-    # for idx, example in enumerate(tqdm(sample_data, desc="Processing examples")):
-    #     print(f"\nProcessing example {idx+1}/{len(sample_data)}")
-        
-    #     result = process_dataset_sample(   
-    #         example=example,
-    #         model=model,
-    #         processor=processor,
-    #         tokenizer=tokenizer,
-    #         device=device,
-    #         model_name=model_name,
-    #     )
-        
-    #     result["example_idx"] = idx
-        
-    #     # Save individual result
-    #     with open(output_dir / f"example_{idx}.json", "w", encoding="utf-8") as f:
-    #         json.dump(result, f, indent=2, ensure_ascii=False)
-        
-
 
     if USE_WANDB:
         wandb.finish()
