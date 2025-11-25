@@ -1,0 +1,217 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/ai2d/images/1995.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat do birds feed on?\n\nOptions:\n- bacteria\n- sunlight\n- earthworms\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows arrows indicating feeding relationships, with arrows pointing from consumed organisms to the consumers.\n2. An arrow points from \"ARTHROPODS Predators\" to \"BIRDS,\" indicating birds consume these arthropods.\n3. Another arrow points from \"NEMATODES Predators\" to \"BIRDS,\" showing birds also eat nematodes.\n4. There is no direct arrow from \"BACTERIA\" to \"BIRDS,\" so birds do not feed on bacteria according to this diagram.\n5. No arrow points from \"SUNLIGHT\" to \"BIRDS,\" indicating birds do not directly feed on sunlight.\n<final>birds feed on arthropods and nematodes</final>",
+      "raw_generation": [
+        "1. The diagram shows arrows indicating feeding relationships, and one arrow points from earthworms directly to birds, suggesting birds consume earthworms as part of their diet.  \n2. No arrow connects bacteria to birds, meaning bacteria are not shown as a food source for birds in this ecosystem diagram.  \n3. Sunlight is depicted as a source of energy for plants but does not have a direct arrow pointing to birds, indicating birds do not feed on sunlight.  \n4. Earthworms are explicitly labeled and positioned in the diagram with an arrow leading to birds, confirming they are a dietary component for birds in this food web.  \n5. Among the given options, only earthworms are directly linked to birds through a feeding relationship, making earthworms the correct answer based on the diagram’s visual cues.\n\n<final>earthworms</final>",
+        "1. The diagram shows arrows indicating feeding relationships, with arrows pointing from consumed organisms to the consumers.\n2. An arrow points from \"ARTHROPODS Predators\" to \"BIRDS,\" indicating birds consume these arthropods.\n3. Another arrow points from \"NEMATODES Predators\" to \"BIRDS,\" showing birds also eat nematodes.\n4. There is no direct arrow from \"BACTERIA\" to \"BIRDS,\" so birds do not feed on bacteria according to this diagram.\n5. No arrow points from \"SUNLIGHT\" to \"BIRDS,\" indicating birds do not directly feed on sunlight.\n<final>birds feed on arthropods and nematodes</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows arrows indicating feeding relationships, with arrows pointing from consumed organisms to the consumers.",
+        "2. An arrow points from \"ARTHROPODS Predators\" to \"BIRDS,\" indicating birds consume these arthropods.",
+        "3. Another arrow points from \"NEMATODES Predators\" to \"BIRDS,\" showing birds also eat nematodes.",
+        "4. There is no direct arrow from \"BACTERIA\" to \"BIRDS,\" so birds do not feed on bacteria according to this diagram.",
+        "5. No arrow points from \"SUNLIGHT\" to \"BIRDS,\" indicating birds do not directly feed on sunlight.",
+        "<final>birds feed on arthropods and nematodes</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          68,
+          88
+        ],
+        [
+          88,
+          116
+        ],
+        [
+          116,
+          145
+        ],
+        [
+          145,
+          176
+        ],
+        [
+          176,
+          202
+        ],
+        [
+          202,
+          218
+        ]
+      ],
+      "anchor_vector": [
+        10.226416362090104,
+        10.900383677996285,
+        8.657798950094344,
+        8.585867661696213,
+        13.034969329833984,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "There is an arrow from \"EARTHWORMS\" to \"BIRDS,\" indicating birds feed on earthworms.",
+        "negative_sentence": "The diagram includes an arrow pointing from \"EARTHWORMS\" to \"BIRDS,\" indicating that birds consume earthworms.",
+        "positive_full": " 6. There is an arrow from \"EARTHWORMS\" to \"BIRDS,\" indicating birds feed on earthworms. 7. Therefore, based on the diagram, birds feed on earthworms.\n\nFinal Answer: earthworms",
+        "negative_full": " 6. The diagram includes an arrow pointing from \"EARTHWORMS\" to \"BIRDS,\" indicating that birds consume earthworms. 7. Therefore, among the options given, birds feed on earthworms, based on the diagram.\n\nBased on this analysis, the correct option is: earthworms",
+        "positive_probability": 0.7933705163682734,
+        "negative_probability": 0.006569127086363968,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": " 6. There is an arrow from \"EARTHWORMS\" to \"BIRDS,\" indicating birds feed on earthworms. 7. Therefore, based on the diagram, birds feed on earthworms.\n\nFinal Answer: earthworms",
+            "first_sentence": "There is an arrow from \"EARTHWORMS\" to \"BIRDS,\" indicating birds feed on earthworms.",
+            "answer_probability": 0.7933705163682734,
+            "final_answer": "earthworms"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " 6. There is an arrow pointing from \"EARTHWORMS\" to \"BIRDS,\" indicating birds consume earthworms.\n\nConclusion: Based on the diagram, birds feed on earthworms. Therefore, the correct option is:\nAnswer: earthworms",
+            "first_sentence": "There is an arrow pointing from \"EARTHWORMS\" to \"BIRDS,\" indicating birds consume earthworms.",
+            "answer_probability": 0.714065814993928,
+            "final_answer": "earthworms"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 6. An arrow points from \"EARTHWORMS\" to \"BIRDS,\" indicating that birds consume earthworms. 7. Since \"EARTHWORMS\" is listed as an option, and the diagram shows birds eating them, \"earthworms\" is a valid answer. 8. The other options, \"bacteria\" and \"sunlight,\" are not shown as food sources for birds in this diagram.\n\nFinal answer: earthworms",
+            "first_sentence": "An arrow points from \"EARTHWORMS\" to \"BIRDS,\" indicating that birds consume earthworms.",
+            "answer_probability": 0.007190717081166181,
+            "final_answer": ". 8. The other options, \"bacteria\" and \"sunlight,\" are not shown as food sources for birds in this diagram"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n6. There is an arrow from \"EARTHWORMS\" to \"BIRDS,\" indicating that birds consume earthworms.\n\nBased on this reasoning, which of the options is correct?\n\nBased on the reasoning, the correct option is: **earthworms**. Birds feed on earthworms according to the feeding relationships shown in the diagram.",
+            "first_sentence": "There is an arrow from \"EARTHWORMS\" to \"BIRDS,\" indicating that birds consume earthworms.",
+            "answer_probability": 0.006850535018055728,
+            "final_answer": "Based on the reasoning, the correct option is: **earthworms**. Birds feed on earthworms according to the feeding relationships shown in the diagram"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " 6. The diagram includes an arrow pointing from \"EARTHWORMS\" to \"BIRDS,\" indicating that birds consume earthworms. 7. Therefore, among the options given, birds feed on earthworms, based on the diagram.\n\nBased on this analysis, the correct option is: earthworms",
+            "first_sentence": "The diagram includes an arrow pointing from \"EARTHWORMS\" to \"BIRDS,\" indicating that birds consume earthworms.",
+            "answer_probability": 0.006569127086363968,
+            "final_answer": "Based on this analysis, the correct option is: earthworms"
+          }
+        ],
+        "correct_answer": "earthworms",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.3616416590564503,
+              "generated_answers": [
+                "earthworms",
+                "The correct option is: earthworms",
+                "Based on the diagram, what do birds feed on? Based on the diagram, birds feed on earthworms",
+                "earthworms",
+                "earthworms"
+              ],
+              "answer_probabilities": [
+                0.5919570527174409,
+                0.006636281315525451,
+                0.006716647681114421,
+                0.6092224785192418,
+                0.5936758350489287
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.5154817801528643,
+              "generated_answers": [
+                "earthworms",
+                "earthworms",
+                "earthworms",
+                "earthworms",
+                "$\\boxed{earthworms}$"
+              ],
+              "answer_probabilities": [
+                0.637944613340555,
+                0.6324897126923754,
+                0.7025817543842142,
+                0.597392563394771,
+                0.007000256952406327
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.33215358506158676,
+              "generated_answers": [
+                "should include \"earthworms.\"",
+                "earthworms",
+                "earthworms",
+                "earthworms",
+                "Based on the diagram, birds feed on earthworms, arthropods, and nematodes. Among the options given, the only correct one is earthworms"
+              ],
+              "answer_probabilities": [
+                0.005331338256001456,
+                0.5992357523441276,
+                0.41115754373088875,
+                0.6384178727356263,
+                0.006625418241289597
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.40681087392354753,
+              "generated_answers": [
+                "earthworms",
+                "Given",
+                "among the given choices",
+                "earthworms",
+                "earthworms"
+              ],
+              "answer_probabilities": [
+                0.6500178083568792,
+                0.0056021459759615375,
+                0.0060093235710430475,
+                0.631950268492204,
+                0.7404748232216499
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.38459787028861836,
+              "generated_answers": [
+                "",
+                "What do birds feed on? **earthworms**",
+                "birds feed on earthworms",
+                "earthworms",
+                "earthworms"
+              ],
+              "answer_probabilities": [
+                0.5534839683805335,
+                0.006618279295928562,
+                0.007020469628792976,
+                0.6208066205935586,
+                0.7350600135442783
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 37,
+  "worker_rank": 2
+}

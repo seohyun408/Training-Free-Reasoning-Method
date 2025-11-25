@@ -1,0 +1,217 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/ai2d/images/2578.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many months are between the Solstices?\n\nOptions:\n- 12\n- 4\n- 3\n- 6\n\nPlease answer the question based on the options mentioned before.",
+      "reasoning_text": "1. The diagram shows the Earth’s orbit around the Sun with key dates marked: June 21 (Solstice), December 22 (Solstice), and equinoxes on March 21 and September 22.  \n2. The June 21 solstice is at the top of the orbit, while the December 22 solstice is at the bottom, indicating opposite positions in the Earth’s yearly cycle.  \n3. The time between June 21 and December 22 spans six months, as the calendar moves from summer to winter.  \n4. The diagram also labels the equinoxes, which occur midway between solstices, confirming a three-month interval between each equinox and solstice.  \n5. Since the solstices are directly opposite each other in the orbit, the total time between them is exactly six months, matching one of the provided options.\n\n<final>6</final>",
+      "raw_generation": [
+        "1. The diagram shows two solstices labeled “Solstice June 21” and “Solstice Dec 22,” indicating their respective months.  \n2. The time span from June 21 to December 22 includes the months of July, August, September, October, November, and December.  \n3. Counting these months reveals a total of six months between the two solstices, excluding the starting and ending months.  \n4. The equinoxes shown in March and September further divide the year into equal halves, confirming the solstices are six months apart.  \n5. Among the given options, “6” is the only one that accurately reflects the time interval between the solstices as depicted in the diagram.  \n\n<final>6</final>",
+        "1. The diagram shows the Earth’s orbit around the Sun with key dates marked: June 21 (Solstice), December 22 (Solstice), and equinoxes on March 21 and September 22.  \n2. The June 21 solstice is at the top of the orbit, while the December 22 solstice is at the bottom, indicating opposite positions in the Earth’s yearly cycle.  \n3. The time between June 21 and December 22 spans six months, as the calendar moves from summer to winter.  \n4. The diagram also labels the equinoxes, which occur midway between solstices, confirming a three-month interval between each equinox and solstice.  \n5. Since the solstices are directly opposite each other in the orbit, the total time between them is exactly six months, matching one of the provided options.\n\n<final>6</final>"
+      ],
+      "chunks": [
+        "1. The diagram shows the Earth’s orbit around the Sun with key dates marked: June 21 (Solstice), December 22 (Solstice), and equinoxes on March 21 and September 22.",
+        "2. The June 21 solstice is at the top of the orbit, while the December 22 solstice is at the bottom, indicating opposite positions in the Earth’s yearly cycle.",
+        "3. The time between June 21 and December 22 spans six months, as the calendar moves from summer to winter.",
+        "4. The diagram also labels the equinoxes, which occur midway between solstices, confirming a three-month interval between each equinox and solstice.",
+        "5. Since the solstices are directly opposite each other in the orbit, the total time between them is exactly six months, matching one of the provided options.",
+        "<final>6</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          88,
+          136
+        ],
+        [
+          137,
+          177
+        ],
+        [
+          178,
+          205
+        ],
+        [
+          206,
+          238
+        ],
+        [
+          239,
+          272
+        ],
+        [
+          272,
+          279
+        ]
+      ],
+      "anchor_vector": [
+        13.749590145035853,
+        12.656947068035057,
+        13.780400814260068,
+        12.552482836174242,
+        15.188616071428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Based on this step-by-step reasoning, the correct option is:\n- 6\n\nFinal Answer: **6**\n\nYou're absolutely right in your reasoning!",
+        "negative_sentence": "Since the solstices occur roughly six months apart in the year, the correct answer among the given options is: 6\n\nSo, the final answer is 6.",
+        "positive_full": " \n\nBased on this step-by-step reasoning, the correct option is:\n- 6\n\nFinal Answer: **6**\n\nYou're absolutely right in your reasoning! Let’s just solidify it once more for clarity:\n\n✅ **Step 1**: The two solstices — **June 21** (summer solstice in the Northern Hemisphere) and **December 22** (winter solstice) — are separated by the longest and shortest days of the year.  \n✅ **Step 2**: The Earth takes **approximately 6 months** to travel from one solstice to the other, passing through the two equinoxes",
+        "negative_full": " 6. Since the solstices occur roughly six months apart in the year, the correct answer among the given options is: 6\n\nSo, the final answer is 6.\n\nTo determine the number of months between the solstices, let's break it down step by step:\n\n1. **Definition of Solstices**  \n   - The **summer solstice** occurs around **June 21** (in the Northern Hemisphere).  \n   - The **winter solstice** occurs around **December 22** (in the Northern Hemisphere).  \n   These two events mark the points in Earth’s orbit where the",
+        "positive_probability": 0.6252860901524421,
+        "negative_probability": 0.006277856273927862,
+        "all_samples": [
+          {
+            "sample_idx": 2,
+            "continuation": " \n\nBased on this step-by-step reasoning, the correct option is:\n- 6\n\nFinal Answer: **6**\n\nYou're absolutely right in your reasoning! Let’s just solidify it once more for clarity:\n\n✅ **Step 1**: The two solstices — **June 21** (summer solstice in the Northern Hemisphere) and **December 22** (winter solstice) — are separated by the longest and shortest days of the year.  \n✅ **Step 2**: The Earth takes **approximately 6 months** to travel from one solstice to the other, passing through the two equinoxes",
+            "first_sentence": "Based on this step-by-step reasoning, the correct option is:\n- 6\n\nFinal Answer: **6**\n\nYou're absolutely right in your reasoning!",
+            "answer_probability": 0.6252860901524421,
+            "final_answer": "6"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n6. Therefore, based on the reasoning and the provided options, the correct answer is: **6**.\nThe final answer is $\\boxed{6}$.",
+            "first_sentence": "Therefore, based on the reasoning and the provided options, the correct answer is: **6**.",
+            "answer_probability": 0.5617103148812266,
+            "final_answer": "6"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n6. If there are six months between solstices, and the Earth’s orbit is 365 days (approximately), then the solstices occur roughly every 6 months apart.\n\nFinal Answer: **6**\n\nWe can confirm that six months is the correct answer by understanding the Earth’s orbit around the Sun. The Earth takes approximately 365.25 days to complete one orbit, and the solstices are two key points in this orbit — one in June (summer solstice) and one in December (winter solstice). The time between these two points is exactly six months.\n\nTherefore, the correct",
+            "first_sentence": "If there are six months between solstices, and the Earth’s orbit is 365 days (approximately), then the solstices occur roughly every 6 months apart.",
+            "answer_probability": 0.5182451781166089,
+            "final_answer": "6"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n6. The question asks for the number of months between the Solstices — not including the solstices themselves as endpoints. 7. From June 21 to December 22, the intervening months are July, August, September, October, November, and December — that’s six months. 8. The equinoxes occur at March 21 and September 22, which are exactly three months from each solstice, further confirming the six-month gap. 9. Therefore, the correct answer is 6 months.\n\nBased on the reasoning above, the correct option is:\n\n6\n\nFinal Answer:",
+            "first_sentence": "The question asks for the number of months between the Solstices — not including the solstices themselves as endpoints.",
+            "answer_probability": 0.0064153358644158855,
+            "final_answer": "6 months"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 6. Since the solstices occur roughly six months apart in the year, the correct answer among the given options is: 6\n\nSo, the final answer is 6.\n\nTo determine the number of months between the solstices, let's break it down step by step:\n\n1. **Definition of Solstices**  \n   - The **summer solstice** occurs around **June 21** (in the Northern Hemisphere).  \n   - The **winter solstice** occurs around **December 22** (in the Northern Hemisphere).  \n   These two events mark the points in Earth’s orbit where the",
+            "first_sentence": "Since the solstices occur roughly six months apart in the year, the correct answer among the given options is: 6\n\nSo, the final answer is 6.",
+            "answer_probability": 0.006277856273927862,
+            "final_answer": "among the given options is: 6"
+          }
+        ],
+        "correct_answer": "6",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.22591282655079165,
+              "generated_answers": [
+                "- 12 months would mean a full year, which is too long for the time between solstices",
+                "\"6\" aligns with the options given: 12, 4, 3, 6",
+                "6",
+                "6 months",
+                "6"
+              ],
+              "answer_probabilities": [
+                0.005765912399468691,
+                0.0056194076207417435,
+                0.6200593510681923,
+                0.0058516850988394155,
+                0.4922677765667163
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.3567986744222787,
+              "generated_answers": [
+                "6 months",
+                "6 months",
+                "",
+                "6",
+                "6"
+              ],
+              "answer_probabilities": [
+                0.006035949300510255,
+                0.006060237699017813,
+                0.5968677173860488,
+                0.6477840230104837,
+                0.5272454447153327
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.1985915906707581,
+              "generated_answers": [
+                "6",
+                "6",
+                "Okay, let's verify this reasoning step by step to be thorough",
+                "six months",
+                "6 months"
+              ],
+              "answer_probabilities": [
+                0.544342562787368,
+                0.4307718181646597,
+                0.006350803219835995,
+                0.006542773511407627,
+                0.004949995670519208
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.38642882132950285,
+              "generated_answers": [
+                "6",
+                "6 months. The correct option is 6",
+                "6",
+                "6",
+                "6 months, as it accurately represents the time between the June 21 solstice and the December 22 solstice"
+              ],
+              "answer_probabilities": [
+                0.6359702234812132,
+                0.005226521536099299,
+                0.6394494706337842,
+                0.6447058582581696,
+                0.006792032738247887
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.2366637295263863,
+              "generated_answers": [
+                "$\\boxed{6}$",
+                "6, as it accurately reflects the six-month gap between the June 21 solstice and December 22 solstice",
+                "and to select it",
+                "6",
+                "6"
+              ],
+              "answer_probabilities": [
+                0.007844449935678984,
+                0.004546168206784866,
+                0.00614526074521118,
+                0.5889913513924534,
+                0.5757914173518032
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 8,
+  "worker_rank": 0
+}

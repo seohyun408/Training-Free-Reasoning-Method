@@ -1,0 +1,35 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/gqa/images/2338237.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nOn which side of the image is the surfboard?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>right</final>",
+      "raw_generation": [
+        "right",
+        "<final>right</final>"
+      ],
+      "chunks": [
+        "<final>right</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          57
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 75,
+  "worker_rank": 3
+}

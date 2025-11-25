@@ -1,0 +1,217 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/pisc/image/24231.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the relationship between the people in the image? \nA. friends \nB. professional \nC. commercial \nD. no relation",
+      "reasoning_text": "1. The two people actively engaged in playing a video game together suggest familiarity and comfort, as they are physically close and sharing a recreational activity in a casual home environment.  \n2. The third person sitting in the background appears relaxed and observing, indicating he is part of the same social gathering rather than an unrelated bystander or professional participant.  \n3. The informal attire and dim lighting suggest a private, relaxed setting, reinforcing the likelihood that they are friends or acquaintances enjoying leisure time together.  \n4. The lack of formal equipment, branding, or staged poses rules out a professional or commercial relationship, eliminating options B and C as plausible.  \n5. The presence of multiple people interacting casually in the same room strongly implies a personal, non-professional connection, making “friends” the most accurate description.  \n\n<final>A. friends</final>",
+      "raw_generation": [
+        "1. The relaxed, casual attire of all three individuals suggests they are comfortable with each other, indicating familiarity beyond formal or professional settings.  \n2. Their engagement in a video game together implies shared leisure time, a common activity among friends or close acquaintances enjoying downtime.  \n3. The woman and man in the foreground are actively playing, while the third person sits nearby, observing without interruption, suggesting a social, informal gathering.  \n4. The dim lighting and home-like environment, including a couch and wall-mounted air conditioner, reinforce the setting as a private residence rather than a commercial or professional space.  \n5. The absence of any formal cues—such as business attire, corporate logos, or staged poses—rules out professional or commercial relationships, making friendship the most plausible connection.  \n\n<final>A. friends</final>",
+        "1. The two people actively engaged in playing a video game together suggest familiarity and comfort, as they are physically close and sharing a recreational activity in a casual home environment.  \n2. The third person sitting in the background appears relaxed and observing, indicating he is part of the same social gathering rather than an unrelated bystander or professional participant.  \n3. The informal attire and dim lighting suggest a private, relaxed setting, reinforcing the likelihood that they are friends or acquaintances enjoying leisure time together.  \n4. The lack of formal equipment, branding, or staged poses rules out a professional or commercial relationship, eliminating options B and C as plausible.  \n5. The presence of multiple people interacting casually in the same room strongly implies a personal, non-professional connection, making “friends” the most accurate description.  \n\n<final>A. friends</final>"
+      ],
+      "chunks": [
+        "1. The two people actively engaged in playing a video game together suggest familiarity and comfort, as they are physically close and sharing a recreational activity in a casual home environment.",
+        "2. The third person sitting in the background appears relaxed and observing, indicating he is part of the same social gathering rather than an unrelated bystander or professional participant.",
+        "3. The informal attire and dim lighting suggest a private, relaxed setting, reinforcing the likelihood that they are friends or acquaintances enjoying leisure time together.",
+        "4. The lack of formal equipment, branding, or staged poses rules out a professional or commercial relationship, eliminating options B and C as plausible.",
+        "5. The presence of multiple people interacting casually in the same room strongly implies a personal, non-professional connection, making “friends” the most accurate description.",
+        "<final>A. friends</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          66,
+          100
+        ],
+        [
+          101,
+          134
+        ],
+        [
+          135,
+          165
+        ],
+        [
+          166,
+          195
+        ],
+        [
+          196,
+          228
+        ],
+        [
+          229,
+          237
+        ]
+      ],
+      "anchor_vector": [
+        12.359561608134143,
+        11.309006561630074,
+        16.80852113921067,
+        13.026031494140625,
+        11.51953125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "There is no evidence of a formal or professional context (e.g., work uniforms, office equipment, or structured activities), nor any indication of a commercial relationship (e.g., sales, advertising, or transactional behavior).",
+        "negative_sentence": "There are no signs of a formal or professional context — for example, no business cards, branded equipment, or workplace attire — which rules out professional or commercial relationships.",
+        "positive_full": " \n4. There is no evidence of a formal or professional context (e.g., work uniforms, office equipment, or structured activities), nor any indication of a commercial relationship (e.g., sales, advertising, or transactional behavior). 5. The shared activity (playing a video game) and the relaxed atmosphere make it unlikely that they are strangers or have no relation. 6. Therefore, the most plausible relationship among the people in the image is that they are friends.\n\nBased on the above reasoning, the correct answer is: A. friends",
+        "negative_full": " \n4. There are no signs of a formal or professional context — for example, no business cards, branded equipment, or workplace attire — which rules out professional or commercial relationships. 5. The setting is not indicative of a commercial transaction or advertisement; there’s no evidence of sales, branding, or marketing activities. 6. Therefore, the most plausible relationship is one of personal connection — specifically, friends — given the casual, recreational nature of the scene and the relaxed atmosphere.\n\n**Final Answer: A. friends**",
+        "positive_probability": 0.005761401787495829,
+        "negative_probability": 0.004619732379997585,
+        "all_samples": [
+          {
+            "sample_idx": 2,
+            "continuation": " \n4. There is no evidence of a formal or professional context (e.g., work uniforms, office equipment, or structured activities), nor any indication of a commercial relationship (e.g., sales, advertising, or transactional behavior). 5. The shared activity (playing a video game) and the relaxed atmosphere make it unlikely that they are strangers or have no relation. 6. Therefore, the most plausible relationship among the people in the image is that they are friends.\n\nBased on the above reasoning, the correct answer is: A. friends",
+            "first_sentence": "There is no evidence of a formal or professional context (e.g., work uniforms, office equipment, or structured activities), nor any indication of a commercial relationship (e.g., sales, advertising, or transactional behavior).",
+            "answer_probability": 0.005761401787495829,
+            "final_answer": "A. friends"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n4. The context of playing a video game, especially in a home setting, is typically a social activity enjoyed by friends or family members. 5. The presence of three individuals sharing the same space in a relaxed manner, without any indicators of professional or commercial interaction (e.g., equipment, branding, or formal attire), further supports the idea that they are social acquaintances rather than professionals or strangers. 6. There is no evidence of a transactional or business relationship; the activity is recreational and the setting is informal, making a commercial relationship unlikely. 7. Given the evidence, the most plausible relationship is that they are",
+            "first_sentence": "The context of playing a video game, especially in a home setting, is typically a social activity enjoyed by friends or family members.",
+            "answer_probability": 0.005245583373739944,
+            "final_answer": "4. The context of playing a video game, especially in a home setting, is typically a social activity enjoyed by friends or family members. 5. The presence of three individuals sharing the same space in a relaxed manner, without any indicators of professional or commercial interaction (e.g., equipment, branding, or formal attire), further supports the idea that they are social acquaintances rather than professionals or strangers. 6. There is no evidence of a transactional or business relationship; the activity is recreational and the setting is informal, making a commercial relationship unlikely. 7. Given the evidence, the most plausible relationship is that they are"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n4. Since the two people are actively playing the game, their interaction is collaborative and social, which is more indicative of a personal or friendly relationship rather than a professional or commercial one. 5. The third person's relaxed posture and presence without any indication of work-related activity (such as a camera, microphone, or work documents) further support that they are not in a professional or commercial context. 6. There are no visual cues—like branded products, business cards, or formal attire—that would suggest any commercial relationship. 7. The overall scene feels like a casual social gathering, likely among friends. Therefore, the most",
+            "first_sentence": "Since the two people are actively playing the game, their interaction is collaborative and social, which is more indicative of a personal or friendly relationship rather than a professional or commercial one.",
+            "answer_probability": 0.004875043672889654,
+            "final_answer": "4. Since the two people are actively playing the game, their interaction is collaborative and social, which is more indicative of a personal or friendly relationship rather than a professional or commercial one. 5. The third person's relaxed posture and presence without any indication of work-related activity (such as a camera, microphone, or work documents) further support that they are not in a professional or commercial context. 6. There are no visual cues—like branded products, business cards, or formal attire—that would suggest any commercial relationship. 7. The overall scene feels like a casual social gathering, likely among friends. Therefore, the most"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n4. The fact that they are all together in one room, sharing a recreational activity, and the presence of the third person in a relaxed, observant posture implies that their relationship is not formal or professional. 5. The lack of any visible signs of a commercial transaction or business interaction further rules out a commercial relationship. 6. The most plausible interpretation, given the context of leisure, shared space, and casual behavior, is that they are friends.\n\nTherefore, the correct answer is: A. friends.",
+            "first_sentence": "The fact that they are all together in one room, sharing a recreational activity, and the presence of the third person in a relaxed, observant posture implies that their relationship is not formal or professional.",
+            "answer_probability": 0.004818852526156147,
+            "final_answer": "A. friends"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n4. There are no signs of a formal or professional context — for example, no business cards, branded equipment, or workplace attire — which rules out professional or commercial relationships. 5. The setting is not indicative of a commercial transaction or advertisement; there’s no evidence of sales, branding, or marketing activities. 6. Therefore, the most plausible relationship is one of personal connection — specifically, friends — given the casual, recreational nature of the scene and the relaxed atmosphere.\n\n**Final Answer: A. friends**",
+            "first_sentence": "There are no signs of a formal or professional context — for example, no business cards, branded equipment, or workplace attire — which rules out professional or commercial relationships.",
+            "answer_probability": 0.004619732379997585,
+            "final_answer": "A. friends"
+          }
+        ],
+        "correct_answer": "A",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005049210007412683,
+              "generated_answers": [
+                "A. friends",
+                "A. friends",
+                "A. friends",
+                "A. friends",
+                "A. friends"
+              ],
+              "answer_probabilities": [
+                0.005137107153933368,
+                0.004135362072185141,
+                0.005675109985326173,
+                0.005234139621023275,
+                0.005064331204595457
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0052026215933210895,
+              "generated_answers": [
+                "A. friends",
+                "The relationship between the people in the image is A. friends",
+                "A. friends",
+                "A. friends",
+                "The relationship between the people in the image is best described as friends"
+              ],
+              "answer_probabilities": [
+                0.005540345609327674,
+                0.005522719245524741,
+                0.005687970954376711,
+                0.004912314683454721,
+                0.004349757473921598
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004906053866955274,
+              "generated_answers": [
+                "A. friends",
+                "A. friends",
+                "A. friends",
+                "A. friends",
+                "A. friends"
+              ],
+              "answer_probabilities": [
+                0.004641666394605243,
+                0.005333067039281403,
+                0.005080709933240827,
+                0.005050652654069235,
+                0.004424173313579658
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004622623394374876,
+              "generated_answers": [
+                "is: A. friends",
+                "A. friends",
+                "A. friends",
+                "A. friends",
+                "A. friends"
+              ],
+              "answer_probabilities": [
+                0.004271068533472328,
+                0.005062067274344591,
+                0.004515606838279186,
+                0.004311545221078937,
+                0.004952829104699335
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004857157643754382,
+              "generated_answers": [
+                "is A. friends",
+                "A. friends",
+                "A. friends",
+                "A. friends",
+                "The image is about A. people playing games at home"
+              ],
+              "answer_probabilities": [
+                0.004563966395306731,
+                0.004441870165580492,
+                0.004771450207529101,
+                0.005006998316515252,
+                0.005501503133840341
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 64,
+  "worker_rank": 3
+}

@@ -1,0 +1,711 @@
+{
+  "total_pairs": 6,
+  "successful_pairs": 6,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/docvqa/train/documents/jrcw0228_13.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the document title? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>SAMPLE MENUS</final>",
+      "raw_generation": [
+        "1. The document features a prominent heading at the top, which serves as its main title.  \n2. This heading is centered and written in bold, uppercase letters for emphasis.  \n3. The title is positioned above the first menu section, indicating it applies to the entire content.  \n4. The text clearly reads \"SAMPLE MENUS,\" suggesting the document provides example meal plans.  \n5. No other title or subtitle appears above or below this heading, confirming its primary role.  \n\n<final>SAMPLE MENUS</final>",
+        "<final>SAMPLE MENUS</final>"
+      ],
+      "chunks": [
+        "<final>SAMPLE MENUS</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          40,
+          49
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the document title?",
+      "reasoning_text": "1. The document prominently displays the title \"SAMPLE MENUS\" at the top center, above the two menu listings.  \n2. The title is written in bold, uppercase letters, making it visually distinct from the rest of the text.  \n3. It is positioned directly beneath a small icon of a plate with a fork and knife, indicating the document’s culinary context.  \n4. The title is followed by \"Menu #1\" and \"Menu #2,\" showing it serves as an overarching heading for the entire document.  \n5. The title is not italicized or underlined, but its placement and bold formatting clearly designate it as the main heading.  \n\n<final>Sample Menus</final>",
+      "raw_generation": [
+        "1. The document title is prominently displayed at the top center of the page, indicating its primary subject.  \n2. It is written in bold, uppercase letters, making it visually distinct from the rest of the text.  \n3. The title is positioned directly above the first menu section, establishing its role as the main heading.  \n4. It is followed by a horizontal line, which further separates it from the content below and emphasizes its importance.  \n5. The title clearly states “SAMPLE MENUS,” indicating that the document contains example meal plans or dietary options.  \n\n<final>SAMPLE MENUS</final>",
+        "1. The document prominently displays the title \"SAMPLE MENUS\" at the top center, above the two menu listings.  \n2. The title is written in bold, uppercase letters, making it visually distinct from the rest of the text.  \n3. It is positioned directly beneath a small icon of a plate with a fork and knife, indicating the document’s culinary context.  \n4. The title is followed by \"Menu #1\" and \"Menu #2,\" showing it serves as an overarching heading for the entire document.  \n5. The title is not italicized or underlined, but its placement and bold formatting clearly designate it as the main heading.  \n\n<final>Sample Menus</final>"
+      ],
+      "chunks": [
+        "1. The document prominently displays the title \"SAMPLE MENUS\" at the top center, above the two menu listings.",
+        "2. The title is written in bold, uppercase letters, making it visually distinct from the rest of the text.",
+        "3. It is positioned directly beneath a small icon of a plate with a fork and knife, indicating the document’s culinary context.",
+        "4. The title is followed by \"Menu #1\" and \"Menu #2,\" showing it serves as an overarching heading for the entire document.",
+        "5. The title is not italicized or underlined, but its placement and bold formatting clearly designate it as the main heading.",
+        "<final>Sample Menus</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          44
+        ],
+        [
+          45,
+          68
+        ],
+        [
+          69,
+          95
+        ],
+        [
+          96,
+          126
+        ],
+        [
+          127,
+          153
+        ],
+        [
+          154,
+          163
+        ]
+      ],
+      "anchor_vector": [
+        10.456229868831798,
+        9.809356637286324,
+        9.420057647792023,
+        10.138905582264957,
+        9.759114583333334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The title is written in a larger, bold, and slightly stylized font compared to the rest of the text, making it stand out as the main heading.",
+        "negative_sentence": "I need to identify the type of document.",
+        "positive_full": " \n\n2. The title is written in a larger, bold, and slightly stylized font compared to the rest of the text, making it stand out as the main heading.\n\n3. The title is positioned directly above the menu headings \"Breakfast\" and \"Lunch\", indicating its role as the overall document title.\n\n4. There are no other titles or headings that are more prominent or central to the document's purpose.\n\n5. The content below the title consists of the actual menu items, confirming that \"SAMPLE MENUS\" is the main subject of the document.\n\nTherefore, the document title is \"SAMPLE MENUS\".",
+        "negative_full": " \n2. I need to identify the type of document. The content consists of structured meal plans for different days of the week, formatted with days, meals, and items, which is characteristic of a menu or menu planner.\n\nCombine these observations to determine the document title:\n3. The title is clearly visible and directly states the document's purpose. Since it's a sample of meal plans, the title is \"SAMPLE MENUS\".\n\nThe document title is \"SAMPLE MENUS\".",
+        "positive_probability": 0.006659225262897528,
+        "negative_probability": 0.004483839247106397,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n2. The title is written in a larger, bold, and slightly stylized font compared to the rest of the text, making it stand out as the main heading.\n\n3. The title is positioned directly above the menu headings \"Breakfast\" and \"Lunch\", indicating its role as the overall document title.\n\n4. There are no other titles or headings that are more prominent or central to the document's purpose.\n\n5. The content below the title consists of the actual menu items, confirming that \"SAMPLE MENUS\" is the main subject of the document.\n\nTherefore, the document title is \"SAMPLE MENUS\".",
+            "first_sentence": "The title is written in a larger, bold, and slightly stylized font compared to the rest of the text, making it stand out as the main heading.",
+            "answer_probability": 0.006659225262897528,
+            "final_answer": "Therefore, the document title is \"SAMPLE MENUS\""
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n2. This title is written in large, bold, uppercase letters, clearly indicating it is the main heading for the entire document.\n\n3. The content below consists of two separate menu sections labeled \"BREAKFAST\" and \"LUNCH,\" which are subsections under the main title.\n\n4. No other title or heading appears to be more prominent or central to the document.\n\nTherefore, the document title is:\n\nSAMPLE MENUS",
+            "first_sentence": "This title is written in large, bold, uppercase letters, clearly indicating it is the main heading for the entire document.",
+            "answer_probability": 0.006386316488119626,
+            "final_answer": "SAMPLE MENUS"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n2. The text \"SAMPLE MENUS\" is written in a larger font than the rest of the text, making it clearly stand out as the main heading or title of the document.\n\n3. There are no other titles or headings in the document that compete with \"SAMPLE MENUS\".\n\n4. The purpose of this document is to present sample menus, which aligns with the title \"SAMPLE MENUS\".\n\nTherefore, the document title is \"SAMPLE MENUS\".",
+            "first_sentence": "The text \"SAMPLE MENUS\" is written in a larger font than the rest of the text, making it clearly stand out as the main heading or title of the document.",
+            "answer_probability": 0.006220877111974629,
+            "final_answer": "Therefore, the document title is \"SAMPLE MENUS\""
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n2. This is a clear, large-font heading that appears to be the main title of the document, as it precedes all other content and is positioned at the top of the page.\n\nNext, I will consider whether there are any other potential titles or headings:\n\n3. There is no other text that serves as a title or heading in the document. The rest of the text is either menu items or page numbers.\n\nFinal step:\n\n4. Based on the clear visual hierarchy and positioning, \"SAMPLE MENUS\" is definitively the document title.\n\nThe document title is SAMPLE MENUS.",
+            "first_sentence": "This is a clear, large-font heading that appears to be the main title of the document, as it precedes all other content and is positioned at the top of the page.",
+            "answer_probability": 0.005428914731183088,
+            "final_answer": "The document title is SAMPLE MENUS"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n2. I need to identify the type of document. The content consists of structured meal plans for different days of the week, formatted with days, meals, and items, which is characteristic of a menu or menu planner.\n\nCombine these observations to determine the document title:\n3. The title is clearly visible and directly states the document's purpose. Since it's a sample of meal plans, the title is \"SAMPLE MENUS\".\n\nThe document title is \"SAMPLE MENUS\".",
+            "first_sentence": "I need to identify the type of document.",
+            "answer_probability": 0.004483839247106397,
+            "final_answer": "The document title is \"SAMPLE MENUS\""
+          }
+        ],
+        "correct_answer": "The document title is \"sample menus.\"",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0057650409823720074,
+              "generated_answers": [
+                "The document title is **SAMPLE MENUS**",
+                "The document title is \"SAMPLE MENUS\"",
+                "The document title is \"SAMPLE MENUS\"",
+                "Therefore, the document title is \"SAMPLE MENUS\"",
+                "Therefore, the document title is \"SAMPLE MENUS\""
+              ],
+              "answer_probabilities": [
+                0.0054177738624595585,
+                0.006684616231855459,
+                0.0046980786645053705,
+                0.006082384363295658,
+                0.005942351789743995
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004367518213163481,
+              "generated_answers": [
+                "SAMPLE MENUS",
+                "",
+                "SAMPLE MENUS",
+                "Therefore, the document title is \"SAMPLE MENUS\"",
+                "The document title is **SAMPLE MENUS**"
+              ],
+              "answer_probabilities": [
+                0.00567149511279206,
+                0.001,
+                0.005128120859067625,
+                0.005545556778309642,
+                0.004492418315648075
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005565331119655135,
+              "generated_answers": [
+                "Therefore, the document title is: SAMPLE MENUS",
+                "Therefore, the document title is: SAMPLE MENUS",
+                "Therefore, the document title is: SAMPLE MENUS",
+                "Therefore, the document title is: SAMPLE MENUS",
+                "The document title is: SAMPLE MENUS"
+              ],
+              "answer_probabilities": [
+                0.005257841111812513,
+                0.006022000529272338,
+                0.005502114875860448,
+                0.005783445544263069,
+                0.005261253537067308
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004430576438373963,
+              "generated_answers": [
+                "Therefore, the document title is \"SAMPLE MENUS\"",
+                "The document title is \"SAMPLE MENUS\"",
+                "The document title is SAMPLE MENUS",
+                "",
+                "SAMPLE MENUS"
+              ],
+              "answer_probabilities": [
+                0.006042022807086694,
+                0.004656853968545283,
+                0.004928356890681671,
+                0.001,
+                0.005525648525556171
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0037108099641646694,
+              "generated_answers": [
+                "",
+                "The document title is **SAMPLE MENUS**",
+                "The document title is \"SAMPLE MENUS\"",
+                "Therefore, the document title is \"SAMPLE MENUS\"",
+                ""
+              ],
+              "answer_probabilities": [
+                0.001,
+                0.0052670287201408515,
+                0.005914912906851926,
+                0.005372108193830569,
+                0.001
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many calories does 1 large apple contain? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>96 calories</final>",
+      "raw_generation": [
+        "1. The image presents two sample menus with calorie counts for each item listed.\n2. Menu #2 includes an entry for \"Apple, 1 large\" at the bottom of the list.\n3. The calorie count for this specific item is provided directly next to it.\n4. The value shown for \"Apple, 1 large\" is 96 calories.\n5. No other items or variations are mentioned for the apple in either menu.\n\n<final>96 calories</final>",
+        "<final>96 calories</final>"
+      ],
+      "chunks": [
+        "<final>96 calories</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          57
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many calories does 1 large apple contain?",
+      "reasoning_text": "1. The image presents two sample menus, each listing meals with corresponding calorie counts, clearly separated for easy comparison.  \n2. Menu #2 includes a line item for “Apple, 1 large,” indicating it’s part of that specific meal plan’s nutritional breakdown.  \n3. Directly next to “Apple, 1 large,” the calorie count is listed as “96 calories,” explicitly tied to that specific food item.  \n4. No other apple entries appear in either menu, confirming this is the only calorie value provided for a single large apple.  \n5. The formatting aligns the food item with its calorie count in a clear, right-aligned column, making “96 calories” the definitive value for 1 large apple.  \n\n<final>96 calories</final>",
+      "raw_generation": [
+        "1. The image presents two sample menus, each listing food items with their corresponding calorie counts.  \n2. Menu #2 includes a line item for \"Apple, 1 large\" at the bottom of the list.  \n3. The calorie value for this apple is clearly printed on the same line as the item description.  \n4. The value listed for \"Apple, 1 large\" is 96 calories.  \n5. No other apple entries or conflicting data are present in either menu to suggest a different calorie count.  \n\n<final>96 calories</final>",
+        "1. The image presents two sample menus, each listing meals with corresponding calorie counts, clearly separated for easy comparison.  \n2. Menu #2 includes a line item for “Apple, 1 large,” indicating it’s part of that specific meal plan’s nutritional breakdown.  \n3. Directly next to “Apple, 1 large,” the calorie count is listed as “96 calories,” explicitly tied to that specific food item.  \n4. No other apple entries appear in either menu, confirming this is the only calorie value provided for a single large apple.  \n5. The formatting aligns the food item with its calorie count in a clear, right-aligned column, making “96 calories” the definitive value for 1 large apple.  \n\n<final>96 calories</final>"
+      ],
+      "chunks": [
+        "1. The image presents two sample menus, each listing meals with corresponding calorie counts, clearly separated for easy comparison.",
+        "2. Menu #2 includes a line item for “Apple, 1 large,” indicating it’s part of that specific meal plan’s nutritional breakdown.",
+        "3. Directly next to “Apple, 1 large,” the calorie count is listed as “96 calories,” explicitly tied to that specific food item.",
+        "4. No other apple entries appear in either menu, confirming this is the only calorie value provided for a single large apple.",
+        "5. The formatting aligns the food item with its calorie count in a clear, right-aligned column, making “96 calories” the definitive value for 1 large apple.",
+        "<final>96 calories</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          51
+        ],
+        [
+          52,
+          82
+        ],
+        [
+          83,
+          115
+        ],
+        [
+          116,
+          141
+        ],
+        [
+          142,
+          178
+        ],
+        [
+          179,
+          188
+        ]
+      ],
+      "anchor_vector": [
+        13.17044607204861,
+        8.604417114257812,
+        8.197236689814813,
+        8.305609809027779,
+        5.578776041666667,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "For the first sample menu (labeled \"1\"), the breakfast items include: 1 large apple, 1 cup of plain yogurt, and 1 slice of whole wheat toast with 1 tablespoon of almond butter.",
+        "negative_sentence": "Hmm, I need to find the calorie count for a large apple.",
+        "positive_full": " \n\n2. For the first sample menu (labeled \"1\"), the breakfast items include: 1 large apple, 1 cup of plain yogurt, and 1 slice of whole wheat toast with 1 tablespoon of almond butter.\n\n3. The calorie counts for these breakfast items are explicitly stated as follows:\n   - 1 large apple: 95 calories\n   - 1 cup of plain yogurt: 100 calories\n   - 1 slice of whole wheat toast with 1 tbsp almond butter: 200 calories\n\n4. The total calorie count for breakfast in sample menu 1 is 39",
+        "negative_full": " 2.\n\nHmm, I need to find the calorie count for a large apple. But the image only shows two menus with meal items like \"Breakfast\", \"Lunch\", and \"Dinner\", each with their calorie values. There is no entry for an apple or any fruit listed in either menu.\n\nTherefore, I should look for the apple's calorie count in the text provided. Let me re-examine the text.\n\nThe text only mentions \"Breakfast\" as \"Oatmeal with 1 large apple\" (400 calories). Ah! I found it!\n\n3. The breakfast menu shows \"Oatmeal with",
+        "positive_probability": 0.006135159447962732,
+        "negative_probability": 0.004053245445567781,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n2. For the first sample menu (labeled \"1\"), the breakfast items include: 1 large apple, 1 cup of plain yogurt, and 1 slice of whole wheat toast with 1 tablespoon of almond butter.\n\n3. The calorie counts for these breakfast items are explicitly stated as follows:\n   - 1 large apple: 95 calories\n   - 1 cup of plain yogurt: 100 calories\n   - 1 slice of whole wheat toast with 1 tbsp almond butter: 200 calories\n\n4. The total calorie count for breakfast in sample menu 1 is 39",
+            "first_sentence": "For the first sample menu (labeled \"1\"), the breakfast items include: 1 large apple, 1 cup of plain yogurt, and 1 slice of whole wheat toast with 1 tablespoon of almond butter.",
+            "answer_probability": 0.006135159447962732,
+            "final_answer": "4. The total calorie count for breakfast in sample menu 1 is 39"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n2. Each menu is divided into three meal categories: breakfast, lunch, and dinner.\n\nContinue the next reasoning step:\n\n3. Each of these meal categories lists specific food items along with their calorie counts. For instance, in the breakfast section of the first menu, the item \"1 large apple\" is listed with its calorie value.\n\nTherefore, based on the information presented in the image, 1 large apple contains 95 calories.\n\n95 calories",
+            "first_sentence": "Each menu is divided into three meal categories: breakfast, lunch, and dinner.",
+            "answer_probability": 0.005394325291910952,
+            "final_answer": "95 calories"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n2. Each menu lists four meals: breakfast, lunch, dinner, and a snack, with the following calorie counts:\n   - Menu 1: 840, 540, 780, 200 calories\n   - Menu 2: 700, 660, 700, 200 calories\n\n3. The question asks for the number of calories in 1 large apple, which is not directly listed in either menu.\n\n4. I notice that both menus include a snack of 200 calories. This is a key clue, as",
+            "first_sentence": "Each menu lists four meals: breakfast, lunch, dinner, and a snack, with the following calorie counts:\n   - Menu 1: 840, 540, 780, 200 calories\n   - Menu 2: 700, 660, 700, 200 calories\n\n3.",
+            "answer_probability": 0.005390395919782731,
+            "final_answer": "4. I notice that both menus include a snack of 200 calories. This is a key clue, as"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n2. The image also lists different types of fruit and their calorie content. Specifically, it mentions \"large apple\" and gives its calorie value as \"95\".\n\nTherefore, based on the information provided in the image:\n\nThe answer is: 95 calories.",
+            "first_sentence": "The image also lists different types of fruit and their calorie content.",
+            "answer_probability": 0.004196612699028493,
+            "final_answer": "95 calories"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " 2.\n\nHmm, I need to find the calorie count for a large apple. But the image only shows two menus with meal items like \"Breakfast\", \"Lunch\", and \"Dinner\", each with their calorie values. There is no entry for an apple or any fruit listed in either menu.\n\nTherefore, I should look for the apple's calorie count in the text provided. Let me re-examine the text.\n\nThe text only mentions \"Breakfast\" as \"Oatmeal with 1 large apple\" (400 calories). Ah! I found it!\n\n3. The breakfast menu shows \"Oatmeal with",
+            "first_sentence": "Hmm, I need to find the calorie count for a large apple.",
+            "answer_probability": 0.004053245445567781,
+            "final_answer": "3. The breakfast menu shows \"Oatmeal with"
+          }
+        ],
+        "correct_answer": "One large apple contains 96 calories.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004273643394081047,
+              "generated_answers": [
+                "77 kcal",
+                "",
+                "95 calories",
+                "The image does not provide the calorie information for a large apple",
+                "95 calories"
+              ],
+              "answer_probabilities": [
+                0.0030179065603812075,
+                0.001,
+                0.006414408389874247,
+                0.004837083709188054,
+                0.006098818310961725
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005734507056033599,
+              "generated_answers": [
+                "95 calories",
+                "95 calories",
+                "70 calories",
+                "Let me re-read the question: \"How many calories",
+                "Approximately 95-100 calories"
+              ],
+              "answer_probabilities": [
+                0.0061263374812439075,
+                0.004621121791473877,
+                0.006003919627927393,
+                0.005147802617423151,
+                0.006773353762099666
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005737817362496832,
+              "generated_answers": [
+                "6. The question asks specifically about the calorie content of 1 large apple, but the image does not contain any information about apples or their calorie count",
+                "the question based on the visual information provided",
+                "The image does not provide information about the calories in 1 large apple",
+                "from general nutritional knowledge or context that might be implied",
+                "110 calories"
+              ],
+              "answer_probabilities": [
+                0.007076960614727063,
+                0.006320825159012158,
+                0.005006195688308644,
+                0.004911350862628159,
+                0.005373754487808134
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004865217263945491,
+              "generated_answers": [
+                "",
+                "choices are 55, 80, 95, and 110",
+                "The image does not provide information about the calorie content of apples.",
+                "5. For example, in Sample Menu 1, the lunch meal is 830 calories and consists of 1 cup of cooked oats, 1 tablespoon of peanut butter, and 1 cup of",
+                "80 calories"
+              ],
+              "answer_probabilities": [
+                0.001,
+                0.005425878024889715,
+                0.005320421848547976,
+                0.006525977288348547,
+                0.006053809157941217
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006379391064738622,
+              "generated_answers": [
+                "based on established nutritional data, even if it's not directly provided in the image",
+                "Therefore, based on the",
+                "The image does not provide enough information to determine the calorie content of a large apple",
+                "that the image does not provide the calorie count for 1 large apple",
+                "from the given information"
+              ],
+              "answer_probabilities": [
+                0.004953844407531325,
+                0.00673452379547554,
+                0.006334503076255934,
+                0.006218969104326692,
+                0.007655114940103624
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the total calories of Menu #1? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>883 calories</final>",
+      "raw_generation": [
+        "1. Menu #1 lists multiple food items with their individual calorie counts.  \n2. These include Breakfast and Lunch Shakes, a Basic Tossed Salad, Steamed Rice, Green Beans, a Whole Wheat Roll, Pineapple, and a Baked Potato.  \n3. Each item’s calories are clearly stated next to its description.  \n4. The total calories are summed at the bottom of the menu, after all individual items are listed.  \n5. The final line for Menu #1 explicitly states “883 calories,” indicating the total.  \n\n<final>883</final>",
+        "<final>883 calories</final>"
+      ],
+      "chunks": [
+        "<final>883 calories</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          58
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the total calories of Menu #1?",
+      "reasoning_text": "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories, as stated in the first line of the menu.\n2. The Basic Tossed Salad with Sprouts adds 80 calories, as noted next to its description.\n3. Steamed Rice, half a cup, contributes 112 calories, as indicated in the list.\n4. Green Beans, one cup, account for 31 calories, as shown beside their serving size.\n5. One Whole Wheat Roll adds 83 calories, Pineapple (half a cup) adds 48, and one medium Baked Potato adds 145, all listed with their respective calorie counts.\n\n<final>883 calories</final>",
+      "raw_generation": [
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories as the first item.  \n2. The Basic Tossed Salad with Sprouts contributes 80 calories to the total.  \n3. Steamed Rice, half a cup, adds 112 calories to the menu’s total.  \n4. Green Beans, one cup, contribute 31 calories to the overall count.  \n5. The final total for Menu #1 is 883 calories, as explicitly stated at the bottom of the menu.  \n<final>883 calories</final>",
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories, as stated in the first line of the menu.\n2. The Basic Tossed Salad with Sprouts adds 80 calories, as noted next to its description.\n3. Steamed Rice, half a cup, contributes 112 calories, as indicated in the list.\n4. Green Beans, one cup, account for 31 calories, as shown beside their serving size.\n5. One Whole Wheat Roll adds 83 calories, Pineapple (half a cup) adds 48, and one medium Baked Potato adds 145, all listed with their respective calorie counts.\n\n<final>883 calories</final>"
+      ],
+      "chunks": [
+        "1. Menu #1 includes Breakfast and Lunch Shakes totaling 384 calories, as stated in the first line of the menu.",
+        "2. The Basic Tossed Salad with Sprouts adds 80 calories, as noted next to its description.",
+        "3. Steamed Rice, half a cup, contributes 112 calories, as indicated in the list.",
+        "4. Green Beans, one cup, account for 31 calories, as shown beside their serving size.",
+        "5. One Whole Wheat Roll adds 83 calories, Pineapple (half a cup) adds 48, and one medium Baked Potato adds 145, all listed with their respective calorie counts.",
+        "<final>883 calories</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          56
+        ],
+        [
+          56,
+          79
+        ],
+        [
+          79,
+          102
+        ],
+        [
+          102,
+          124
+        ],
+        [
+          124,
+          168
+        ],
+        [
+          168,
+          178
+        ]
+      ],
+      "anchor_vector": [
+        10.66580461223135,
+        11.376453637888309,
+        10.810145337653884,
+        11.510872996937145,
+        12.702734375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Total calories for Menu #1 = 384 (Breakfast and Lunch Shakes) + 80 (Basic Tossed Salad with Sprouts) + 112 (Steamed Rice) + 31 (Green Beans) + 83 (Whole Wheat Roll) + 48 (Pineapple) + 145 (Baked Potato)\n\n7.",
+        "negative_sentence": "",
+        "positive_full": " 6. Total calories for Menu #1 = 384 (Breakfast and Lunch Shakes) + 80 (Basic Tossed Salad with Sprouts) + 112 (Steamed Rice) + 31 (Green Beans) + 83 (Whole Wheat Roll) + 48 (Pineapple) + 145 (Baked Potato)\n\n7. Now, calculate the sum: 384 + 80 = 464; 464 + 112 = 576; 576 + 31 = ",
+        "negative_full": "",
+        "positive_probability": 0.008578081299340587,
+        "negative_probability": 0.001,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": " 6. Total calories for Menu #1 = 384 (Breakfast and Lunch Shakes) + 80 (Basic Tossed Salad with Sprouts) + 112 (Steamed Rice) + 31 (Green Beans) + 83 (Whole Wheat Roll) + 48 (Pineapple) + 145 (Baked Potato)\n\n7. Now, calculate the sum: 384 + 80 = 464; 464 + 112 = 576; 576 + 31 = ",
+            "first_sentence": "Total calories for Menu #1 = 384 (Breakfast and Lunch Shakes) + 80 (Basic Tossed Salad with Sprouts) + 112 (Steamed Rice) + 31 (Green Beans) + 83 (Whole Wheat Roll) + 48 (Pineapple) + 145 (Baked Potato)\n\n7.",
+            "answer_probability": 0.008578081299340587,
+            "final_answer": "7. Now, calculate the sum: 384 + 80 = 464; 464 + 112 = 576; 576 + 31 ="
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n6. To get the total calories for Menu #1, I need to add up all these individual calorie values: 384 (Breakfast and Lunch Shakes) + 80 (Basic Tossed Salad) + 112 (Steamed Rice) + 31 (Green Beans) + 83 (Whole Wheat Roll) + 48 (Pineapple) + 145 (Baked Potato). \n\n7. Calculating the sum: 384 + 80 = 464, 464 + 112 = 576",
+            "first_sentence": "To get the total calories for Menu #1, I need to add up all these individual calorie values: 384 (Breakfast and Lunch Shakes) + 80 (Basic Tossed Salad) + 112 (Steamed Rice) + 31 (Green Beans) + 83 (Whole Wheat Roll) + 48 (Pineapple) + 145 (Baked Potato).",
+            "answer_probability": 0.008536663956318597,
+            "final_answer": "7. Calculating the sum: 384 + 80 = 464, 464 + 112 = 576"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " Now I will add all these calorie values together to get the total.\n\nTotal calories = 384 (Breakfast and Lunch Shakes) + 80 (Basic Tossed Salad with Sprouts) + 112 (Steamed Rice, half a cup) + 31 (Green Beans, one cup) + 83 (One Whole Wheat Roll) + 48 (Pineapple, half a cup) + 145 (One medium Baked Potato)\n\nLet me calculate the sum: 384 + 80 = 464; 464 + ",
+            "first_sentence": "Now I will add all these calorie values together to get the total.",
+            "answer_probability": 0.008145940867743775,
+            "final_answer": "Let me calculate the sum: 384 + 80 = 464; 464 +"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n6. The total calories for Menu #1 is the sum of all the individual items' calories.\nTherefore, the total calories of Menu #1 is 384 + 80 + 112 + 31 + 83 + 48 + 145.\n\nLet me add these numbers together: 384 + 80 = 464; 464 + 112 = 576; 576 + 31 = 607; 607 + 83 = 690; 6",
+            "first_sentence": "The total calories for Menu #1 is the sum of all the individual items' calories.",
+            "answer_probability": 0.007642087733702047,
+            "final_answer": "Let me add these numbers together: 384 + 80 = 464; 464 + 112 = 576; 576 + 31 = 607; 607 + 83 = 690; 6"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "",
+            "first_sentence": "",
+            "answer_probability": 0.001,
+            "final_answer": ""
+          }
+        ],
+        "correct_answer": "Menu #1 has a total of 883 calories.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006219674101980032,
+              "generated_answers": [
+                "883",
+                "",
+                "88",
+                "690 + 48 =",
+                "The total calories of Menu #1 are **883**"
+              ],
+              "answer_probabilities": [
+                0.00800976790237251,
+                0.001,
+                0.007711709472651069,
+                0.006361326011140652,
+                0.008015567123735932
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007489742935790318,
+              "generated_answers": [
+                "1. Menu #2 includes a Breakfast and Lunch Shake totaling 384 calories",
+                "-",
+                "883",
+                "The total calories of Menu #1 are 983",
+                "The total calories of Menu #1 is **883**"
+              ],
+              "answer_probabilities": [
+                0.008196814838301716,
+                0.007985345591037018,
+                0.008204652351940027,
+                0.004953510458203724,
+                0.008108391439469112
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007998432148092595,
+              "generated_answers": [
+                "The total calories of Menu #1 is 883",
+                "The total calories of Menu #1 is 883",
+                "---",
+                "The total calories of Menu #1 is 883",
+                "The total calories of Menu #1 is $\\boxed{883}$"
+              ],
+              "answer_probabilities": [
+                0.007791253805390235,
+                0.008374061600221113,
+                0.007836764763809746,
+                0.007852669563770882,
+                0.008137411007270995
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007850680722357535,
+              "generated_answers": [
+                "983",
+                "883 calories",
+                "Therefore, the total calories of Menu #1 is **883 calories**",
+                "The total calories of Menu #1 is 883",
+                "Pine"
+              ],
+              "answer_probabilities": [
+                0.007782138323184949,
+                0.007967488625794326,
+                0.008822656748093046,
+                0.008535038726018284,
+                0.006146081188697067
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007745791149964379,
+              "generated_answers": [
+                "$\\boxed{883}$",
+                "- 607 + 83 = **",
+                "",
+                "The total calories of Menu #1 is 883 calories",
+                "Therefore, the total calories for"
+              ],
+              "answer_probabilities": [
+                0.007863650758624625,
+                0.007876412859295138,
+                0.007785646878207512,
+                0.008371218737672152,
+                0.006832026516022469
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 167,
+  "worker_rank": 4
+}

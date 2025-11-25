@@ -1,0 +1,867 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/ocr_vqa/images/1507728786.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the author of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>Unknown</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The image shows the cover of a book titled \"HOW TO GET ABS II,\" but no author's name is visible on the cover itself.\n2. The cover features a woman with visible abdominal muscles, wearing a yellow tank top and black shorts, standing in a dimly lit room.\n3. The design is simple, with a black rectangular box containing the title in bold, gold-colored letters.\n4. No additional text, logos, or publisher information is present that would indicate the author's name.\n5. Without any visible author attribution or metadata, it is impossible to determine who wrote the book based solely on this image.\n</reasoning>\n<final>Unknown</final>",
+        "<final>Unknown</final>"
+      ],
+      "chunks": [
+        "<final>Unknown</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          51
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The image displays a book cover with bold, capitalized text centered prominently, indicating its title.\n2. The text reads “HOW TO GET ABS II,” clearly visible in a golden font against a black rectangular background.\n3. The font style is large and stylized, designed to catch attention and convey a fitness or self-improvement theme.\n4. The model’s toned abdomen visually reinforces the book’s subject matter, aligning with the title’s promise of achieving abs.\n5. The overall design suggests this is part of a series, as “II” implies a sequel or follow-up to a previous volume on the same topic.\n\n<final>HOW TO GET ABS II</final>",
+      "raw_generation": [
+        "1. The image shows a book cover with bold, capitalized text prominently displayed in the center, indicating its title.\n2. The text is framed within a black rectangular border with a gold outline, drawing attention to the title.\n3. The title reads \"HOW TO GET ABS II,\" written in a clear, sans-serif font that is easy to read.\n4. The background image features a woman with visible abdominal muscles, reinforcing the book's theme of achieving a toned core.\n5. The overall design suggests the book is part of a series, as indicated by the Roman numeral \"II,\" likely following a first volume.\n\n<final>HOW TO GET ABS II</final>",
+        "1. The image displays a book cover with bold, capitalized text centered prominently, indicating its title.\n2. The text reads “HOW TO GET ABS II,” clearly visible in a golden font against a black rectangular background.\n3. The font style is large and stylized, designed to catch attention and convey a fitness or self-improvement theme.\n4. The model’s toned abdomen visually reinforces the book’s subject matter, aligning with the title’s promise of achieving abs.\n5. The overall design suggests this is part of a series, as “II” implies a sequel or follow-up to a previous volume on the same topic.\n\n<final>HOW TO GET ABS II</final>"
+      ],
+      "chunks": [
+        "1. The image displays a book cover with bold, capitalized text centered prominently, indicating its title.",
+        "2. The text reads “HOW TO GET ABS II,” clearly visible in a golden font against a black rectangular background.",
+        "3. The font style is large and stylized, designed to catch attention and convey a fitness or self-improvement theme.",
+        "4. The model’s toned abdomen visually reinforces the book’s subject matter, aligning with the title’s promise of achieving abs.",
+        "5. The overall design suggests this is part of a series, as “II” implies a sequel or follow-up to a previous volume on the same topic.",
+        "<final>HOW TO GET ABS II</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          44
+        ],
+        [
+          44,
+          68
+        ],
+        [
+          68,
+          94
+        ],
+        [
+          94,
+          120
+        ],
+        [
+          120,
+          152
+        ],
+        [
+          152,
+          163
+        ]
+      ],
+      "anchor_vector": [
+        12.822506180343094,
+        15.355483635322198,
+        23.06124970407197,
+        21.28515625,
+        14.417810613458807,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Based on the visual evidence, there is no ambiguity in the text presented on the cover.",
+        "negative_sentence": "The cover also includes an illustration of a muscular man with abs, reinforcing the book’s fitness focus.",
+        "positive_full": " \n4. Based on the visual evidence, there is no ambiguity in the text presented on the cover. The title is explicitly stated as \"HOW TO GET ABS II.\"\n\nFinal Answer: The title of this book is “How to Get Abs II.”",
+        "negative_full": " 4. The cover also includes an illustration of a muscular man with abs, reinforcing the book’s fitness focus. 5. The subtitle “The Advanced Guide to Getting Your Abs in Shape” is written in smaller text below the main title, adding context to the book’s content. 6. Additional text, such as “The #1 Bestselling Abs Workout Book!” and “Includes 100+ Workout Plans & Nutrition Guidelines,” provides further information about the book’s value proposition. 7. The author’s name, “Mark Sisson,” is displayed at the bottom of the cover, identifying the book’s creator. ",
+        "positive_probability": 0.0059444277247978706,
+        "negative_probability": 0.00433941615581657,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": " \n4. Based on the visual evidence, there is no ambiguity in the text presented on the cover. The title is explicitly stated as \"HOW TO GET ABS II.\"\n\nFinal Answer: The title of this book is “How to Get Abs II.”",
+            "first_sentence": "Based on the visual evidence, there is no ambiguity in the text presented on the cover.",
+            "answer_probability": 0.0059444277247978706,
+            "final_answer": "The title of this book is “How to Get Abs II.”"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 4. The cover also includes additional text at the bottom, which is smaller but still readable, stating “THE ULTIMATE GUIDE TO ABS, CORE, AND A BETTER BODY.” 5. This additional text is likely a subtitle or description that elaborates on the book’s content, rather than the main title. 6. The title is the most prominent text on the cover and is designed to be the primary identifier of the book.\n\nTherefore, based on the visual information and standard book cover conventions, the title of this book is “HOW TO GET ABS II.”",
+            "first_sentence": "The cover also includes additional text at the bottom, which is smaller but still readable, stating “THE ULTIMATE GUIDE TO ABS, CORE, AND A BETTER BODY.” 5.",
+            "answer_probability": 0.005380152327096312,
+            "final_answer": "Therefore, based on the visual information and standard book cover conventions, the title of this book is “HOW TO GET ABS II.”"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " The subtitle or other text on the cover is not relevant to the main title, so I should focus on the most prominent text. 4. The title is presented as “HOW TO GET ABS II,” which includes a Roman numeral, suggesting it's part of a series.\n\nFinal answer:\nThe title of the book is “HOW TO GET ABS II.”",
+            "first_sentence": "The subtitle or other text on the cover is not relevant to the main title, so I should focus on the most prominent text.",
+            "answer_probability": 0.005164357724932478,
+            "final_answer": "The title of the book is “HOW TO GET ABS II.”"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n4. The subtitle below the main title states “A 4-week Program to Get Rid of Your Belly Fat and Get Your Abs,” which provides context about the book’s content and purpose.\n\nFinal step: \n5. Therefore, the title of the book is “HOW TO GET ABS II”.\n\nThe title of the book is: HOW TO GET ABS II.",
+            "first_sentence": "The subtitle below the main title states “A 4-week Program to Get Rid of Your Belly Fat and Get Your Abs,” which provides context about the book’s content and purpose.",
+            "answer_probability": 0.004552521741899272,
+            "final_answer": "The title of the book is: HOW TO GET ABS II"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " 4. The cover also includes an illustration of a muscular man with abs, reinforcing the book’s fitness focus. 5. The subtitle “The Advanced Guide to Getting Your Abs in Shape” is written in smaller text below the main title, adding context to the book’s content. 6. Additional text, such as “The #1 Bestselling Abs Workout Book!” and “Includes 100+ Workout Plans & Nutrition Guidelines,” provides further information about the book’s value proposition. 7. The author’s name, “Mark Sisson,” is displayed at the bottom of the cover, identifying the book’s creator. ",
+            "first_sentence": "The cover also includes an illustration of a muscular man with abs, reinforcing the book’s fitness focus.",
+            "answer_probability": 0.00433941615581657,
+            "final_answer": "4. The cover also includes an illustration of a muscular man with abs, reinforcing the book’s fitness focus. 5. The subtitle “The Advanced Guide to Getting Your Abs in Shape” is written in smaller text below the main title, adding context to the book’s content. 6. Additional text, such as “The #1 Bestselling Abs Workout Book!” and “Includes 100+ Workout Plans & Nutrition Guidelines,” provides further information about the book’s value proposition. 7. The author’s name, “Mark Sisson,” is displayed at the bottom of the cover, identifying the book’s creator"
+          }
+        ],
+        "correct_answer": "How To Get Abs: 30 Day Abs Challenge (Flat Abs) (Volume 2)",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004709080983261494,
+              "generated_answers": [
+                "The title of this book is “HOW TO GET ABS II.”",
+                "HOW TO GET ABS II",
+                "The title of this book is \"HOW TO GET ABS II\"",
+                "The title of this book is **How to Get Abs II (A 10-Minute Per Day Plan)**",
+                "How to Get Abs II: The Second Book in the How to Get Abs Series"
+              ],
+              "answer_probabilities": [
+                0.004006614654045686,
+                0.004684427626196569,
+                0.005061103722358657,
+                0.004472940011502523,
+                0.005320318902204035
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00393958907561876,
+              "generated_answers": [
+                "The title of this book is How to Get Abs II",
+                "The title of the book is **“How to Get Abs II.”**",
+                "Conclusion: The title of the book is “How to Get Abs II.”",
+                "The title of the book is “HOW TO GET ABS II”",
+                "Therefore, the title of this book is: **How to Get Abs II: The 3rd Edition — Your Guide to Getting Rid of Belly Fat**"
+              ],
+              "answer_probabilities": [
+                0.0036063482032618883,
+                0.004305156640523915,
+                0.0038353585819535635,
+                0.00386589956818939,
+                0.004085182384165044
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004359162195264081,
+              "generated_answers": [
+                "The title of the book is How to Get Abs II",
+                "The title of this book is “How to Get Abs II.”",
+                "The title of this book is HOW TO GET ABS II",
+                "The title of the book is “HOW TO GET ABS II.”",
+                "The title of this book is HOW TO GET ABS II"
+              ],
+              "answer_probabilities": [
+                0.004099255848864645,
+                0.003938270507727564,
+                0.004139226242549607,
+                0.004370124847964304,
+                0.0052489335292142895
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0049654639073911586,
+              "generated_answers": [
+                "The title of this book is “HOW TO GET ABS II: THE ABSOLUTE GUIDE TO A FLAT ABSOLUTE ABS.”",
+                "“HOW TO GET ABS II: The Ultimate Guide to Getting Lean and Strong” by Michael K. Gant",
+                "The title of this book is How to Get Abs II",
+                "The title of this book is “HOW TO GET ABS II: The Secret to Getting the Perfect Abs You’ve Always Wanted.”",
+                "How to Get Abs II"
+              ],
+              "answer_probabilities": [
+                0.0051537280481175505,
+                0.005089942682449178,
+                0.0056112198771246105,
+                0.00458979030211188,
+                0.004382638627152572
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004259751435955614,
+              "generated_answers": [
+                "HOW TO GET ABS II",
+                "The title of this book is \"HOW TO GET ABS II\"",
+                "The title of this book is \"How to Get Abs II\"",
+                "The title of the book is “HOW TO GET ABS II.”",
+                "The title of the book is “How to Get Abs II: How to Get Abs and Get Lean in Just 30 Days.”"
+              ],
+              "answer_probabilities": [
+                0.004310979579973683,
+                0.004594905598315699,
+                0.004165036870036414,
+                0.0037173528262196493,
+                0.004510482305232622
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The book's title, \"HOW TO GET ABS II,\" suggests it is instructional, focusing on fitness and body transformation through targeted exercises or dietary advice for achieving visible abdominal muscles.\n\n2. The cover image features a woman in athletic attire with a toned midsection, indicating the book targets readers interested in physical fitness, weight loss, or body sculpting goals.\n\n3. The bold, straightforward title format implies a practical, no-nonsense guide, typical of self-help or fitness manuals rather than fiction or academic literature.\n\n4. The presence of \"II\" in the title implies it is a sequel or continuation, suggesting prior content exists and this book builds upon previous advice, likely in the fitness genre.\n\n5. The visual presentation—dark background, highlighted text, and a focused image of a fit individual—commonly used in fitness guides to attract readers seeking actionable advice for improving their physique.\n\n<final>Health & Fitness</final>",
+      "raw_generation": [
+        "1. The image displays a fitness-focused cover with a woman showcasing a toned midsection, suggesting the content is health or exercise-related.  \n2. The title “HOW TO GET ABS II” implies a instructional or self-help guide aimed at body transformation.  \n3. The visual emphasis on abdominal definition and the sequential “II” indicates it’s part of a series targeting fitness enthusiasts.  \n4. The minimalistic design and direct language align with motivational or instructional genres common in fitness literature.  \n5. The absence of fictional or entertainment elements confirms it’s not a novel or entertainment book but a practical guide for physical improvement.  \n\n<final>Health & Fitness</final>",
+        "1. The book's title, \"HOW TO GET ABS II,\" suggests it is instructional, focusing on fitness and body transformation through targeted exercises or dietary advice for achieving visible abdominal muscles.\n\n2. The cover image features a woman in athletic attire with a toned midsection, indicating the book targets readers interested in physical fitness, weight loss, or body sculpting goals.\n\n3. The bold, straightforward title format implies a practical, no-nonsense guide, typical of self-help or fitness manuals rather than fiction or academic literature.\n\n4. The presence of \"II\" in the title implies it is a sequel or continuation, suggesting prior content exists and this book builds upon previous advice, likely in the fitness genre.\n\n5. The visual presentation—dark background, highlighted text, and a focused image of a fit individual—commonly used in fitness guides to attract readers seeking actionable advice for improving their physique.\n\n<final>Health & Fitness</final>"
+      ],
+      "chunks": [
+        "1. The book's title, \"HOW TO GET ABS II,\" suggests it is instructional, focusing on fitness and body transformation through targeted exercises or dietary advice for achieving visible abdominal muscles.",
+        "2. The cover image features a woman in athletic attire with a toned midsection, indicating the book targets readers interested in physical fitness, weight loss, or body sculpting goals.",
+        "3. The bold, straightforward title format implies a practical, no-nonsense guide, typical of self-help or fitness manuals rather than fiction or academic literature.",
+        "4. The presence of \"II\" in the title implies it is a sequel or continuation, suggesting prior content exists and this book builds upon previous advice, likely in the fitness genre.",
+        "5. The visual presentation—dark background, highlighted text, and a focused image of a fit individual—commonly used in fitness guides to attract readers seeking actionable advice for improving their physique.",
+        "<final>Health & Fitness</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          61
+        ],
+        [
+          61,
+          97
+        ],
+        [
+          97,
+          128
+        ],
+        [
+          128,
+          165
+        ],
+        [
+          165,
+          203
+        ],
+        [
+          203,
+          212
+        ]
+      ],
+      "anchor_vector": [
+        11.814953604381321,
+        24.014471225900635,
+        13.095740991814182,
+        17.183114850730227,
+        13.33810763888889,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The title includes \"II,\" suggesting it might be a sequel or a second volume, possibly expanding on the first book's content.",
+        "negative_sentence": "The book's cover also highlights specific benefits, such as \"Get Abs Without Dieting,\" which emphasizes the book’s method (likely focusing on workouts rather than calorie restriction or drastic dietary changes).",
+        "positive_full": " 3. The title includes \"II,\" suggesting it might be a sequel or a second volume, possibly expanding on the first book's content. 4. The content likely includes step-by-step guidance, exercise routines, and nutritional tips, common in self-help and fitness books.\n\nFinal reasoning: Based on the title, cover imagery, and common characteristics of such books, this is most likely a self-help / fitness guide.\n\nFinal Answer: self-help / fitness guide",
+        "negative_full": " 3. The book's cover also highlights specific benefits, such as \"Get Abs Without Dieting,\" which emphasizes the book’s method (likely focusing on workouts rather than calorie restriction or drastic dietary changes). 4. The use of a bold, direct title and a motivational cover design implies a practical, step-by-step guide rather than a theoretical or academic text.\n\nFinal step: 5. Based on the title, cover imagery, and promise of results without dieting, the book is designed as a practical, visual fitness guide — specifically, a \"workout guide\" or \"fitness book\" for women seeking to achieve a toned physique",
+        "positive_probability": 0.004572633056706924,
+        "negative_probability": 0.0031123861370698654,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " 3. The title includes \"II,\" suggesting it might be a sequel or a second volume, possibly expanding on the first book's content. 4. The content likely includes step-by-step guidance, exercise routines, and nutritional tips, common in self-help and fitness books.\n\nFinal reasoning: Based on the title, cover imagery, and common characteristics of such books, this is most likely a self-help / fitness guide.\n\nFinal Answer: self-help / fitness guide",
+            "first_sentence": "The title includes \"II,\" suggesting it might be a sequel or a second volume, possibly expanding on the first book's content.",
+            "answer_probability": 0.004572633056706924,
+            "final_answer": "self-help / fitness guide"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n3. The book's title includes \"How to Get,\" which is commonly associated with self-help and instructional genres, especially within health and fitness categories. 4. Given the focus on achieving a specific physical goal (abs), it is likely part of the fitness, health, and wellness market, which often includes practical guides and workout routines. 5. Therefore, the most fitting genre for this book is: \n\nSelf-Help / Health & Fitness.",
+            "first_sentence": "The book's title includes \"How to Get,\" which is commonly associated with self-help and instructional genres, especially within health and fitness categories.",
+            "answer_probability": 0.004137176080019103,
+            "final_answer": "Self-Help / Health & Fitness"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "  \n3. The tone and content of such titles typically lean toward practical, direct advice, often presented in an accessible, motivational format designed to motivate readers to achieve their goals through specific, actionable steps.\n\nFinal step:  \n4. Considering the title, cover, and presumed content, the genre of this book is most accurately categorized as Fitness/Health or Self-Help/Personal Development. The focus is on personal transformation, which aligns with self-help genres, while the core content revolves around physical exercise and body shaping, placing it squarely in the fitness category.\n\nAnswer: Fitness/Health or Self-Help/Personal Development.",
+            "first_sentence": "The tone and content of such titles typically lean toward practical, direct advice, often presented in an accessible, motivational format designed to motivate readers to achieve their goals through specific, actionable steps.",
+            "answer_probability": 0.003690157844748554,
+            "final_answer": "Fitness/Health or Self-Help/Personal Development"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n3. The author, \"Dr. M,\" is not a recognized medical professional name, but is likely a pen name or brand associated with fitness, implying the book is written for the general public seeking practical health advice rather than academic or medical research.\n\nNext: \n\n4. The subtitle, \"A 21-Day Total Body Transformation Plan,\" further confirms that the book is designed as a structured, time-bound program. This format is typical of self-help, motivational, and fitness books, where readers follow a step-by-step plan to achieve specific goals.\n\nFinal reasoning step:\n\n5. Based on the title, cover imagery, author presentation",
+            "first_sentence": "The author, \"Dr.",
+            "answer_probability": 0.0034436494683610704,
+            "final_answer": "5. Based on the title, cover imagery, author presentation"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 3. The book's cover also highlights specific benefits, such as \"Get Abs Without Dieting,\" which emphasizes the book’s method (likely focusing on workouts rather than calorie restriction or drastic dietary changes). 4. The use of a bold, direct title and a motivational cover design implies a practical, step-by-step guide rather than a theoretical or academic text.\n\nFinal step: 5. Based on the title, cover imagery, and promise of results without dieting, the book is designed as a practical, visual fitness guide — specifically, a \"workout guide\" or \"fitness book\" for women seeking to achieve a toned physique",
+            "first_sentence": "The book's cover also highlights specific benefits, such as \"Get Abs Without Dieting,\" which emphasizes the book’s method (likely focusing on workouts rather than calorie restriction or drastic dietary changes).",
+            "answer_probability": 0.0031123861370698654,
+            "final_answer": "Final step: 5. Based on the title, cover imagery, and promise of results without dieting, the book is designed as a practical, visual fitness guide — specifically, a \"workout guide\" or \"fitness book\" for women seeking to achieve a toned physique"
+          }
+        ],
+        "correct_answer": "Health, Fitness & Dieting",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0040913038281408425,
+              "generated_answers": [
+                "The genre of this book is fitness and self-help nonfiction",
+                "Therefore, the genre of this book is: Health & Fitness, specifically targeting Body Transformation and Workout Routines",
+                "Fitness/self-help genre",
+                "The genre of this book is Fitness / Self-Help",
+                "The genre of this book is **Fitness / Health & Wellness**"
+              ],
+              "answer_probabilities": [
+                0.0034327357352826244,
+                0.003429569389568422,
+                0.004243409326459909,
+                0.004095177390993038,
+                0.005255627298400218
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0041320032937326515,
+              "generated_answers": [
+                "The genre of this book is Fitness / Self-Help",
+                "The genre of this book is **Fitness & Self-Improvement**",
+                "Fitness / Self-Help / Health & Wellness",
+                "Therefore, the genre of this book is: Fitness and Health",
+                "The genre of this book is fitness/health and self-help, specifically targeted at women seeking to build or tone their abdominal muscles"
+              ],
+              "answer_probabilities": [
+                0.0034342831211965352,
+                0.003954667560623561,
+                0.005289841414951856,
+                0.0038731680108361173,
+                0.004108056361055189
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0045744957673533575,
+              "generated_answers": [
+                "The genre of this book is Health & Wellness or more specifically, Fitness & Self-Help",
+                "The most appropriate genre is: Fitness & Health",
+                "Therefore, the genre of this book is **Fitness & Health** (specifically, **Fitness Instruction**)",
+                "Fitness/Health",
+                "Therefore, the genre of this book is: **Self-Help, Fitness, Health & Wellness**"
+              ],
+              "answer_probabilities": [
+                0.004110334489851893,
+                0.004433526925248221,
+                0.004562117825224391,
+                0.004329114318485399,
+                0.005437385277956885
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004106136890075484,
+              "generated_answers": [
+                "The genre of this book is Fitness",
+                "Fitness & Health",
+                "The genre of this book is Fitness / Self-Help",
+                "The genre of this book is **Fitness/Health and Wellness**",
+                "Final conclusion: The genre of this book is Health & Fitness, with a specific focus on core training and body sculpting"
+              ],
+              "answer_probabilities": [
+                0.0037532185745523363,
+                0.003980242823169086,
+                0.004130184659489639,
+                0.004468163639563521,
+                0.004198874753602836
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.003837633399381374,
+              "generated_answers": [
+                "Fitness and Self-Improvement",
+                "The genre of this book is Fitness and Health",
+                "The genre of this book is fitness/self-help",
+                "Self-help / fitness",
+                "The genre of this book is Fitness"
+              ],
+              "answer_probabilities": [
+                0.003779820815460097,
+                0.004015613044875643,
+                0.0042219073940998894,
+                0.003199438143441148,
+                0.003971387599030089
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a fitness book?",
+      "reasoning_text": "1. The cover prominently displays the title “HOW TO GET ABS II,” indicating a focused instructional guide, typical of fitness or workout-related publications.  \n2. The image features a person with visible abdominal muscles, suggesting the book’s content revolves around achieving a toned core, a central fitness goal.  \n3. The person is dressed in athletic attire — a tank top and shorts — reinforcing the context of physical training or exercise routines promoted in the book.  \n4. The visual composition centers on the torso, highlighting the target area for the exercises described, which is characteristic of fitness instructional materials.  \n5. The use of “II” in the title implies a sequel or continuation, often seen in fitness series that build on previous content, further supporting its classification as a fitness book.  \n\n<final>Yes, this is a fitness book.</final>",
+      "raw_generation": [
+        "1. The image prominently displays the title “HOW TO GET ABS II,” which directly suggests a focus on physical fitness and abdominal muscle development, typical of fitness instructional materials.  \n2. The visual subject is a woman with a visibly toned midsection, wearing athletic attire including a sports bra and shorts, reinforcing the fitness and health theme.  \n3. The background appears to be a dimly lit indoor setting, possibly a home or gym environment, which aligns with fitness content often photographed in personal training or workout spaces.  \n4. The text is presented in a bold, attention-grabbing font inside a decorative border, a common design choice for fitness guides or workout programs aiming to attract readers seeking transformation.  \n5. The “II” in the title implies this is a sequel or continuation, suggesting a series of fitness guides, further indicating a structured, educational fitness resource rather than a casual publication.  \n\n<final>Yes, this is a fitness book.</final>",
+        "1. The cover prominently displays the title “HOW TO GET ABS II,” indicating a focused instructional guide, typical of fitness or workout-related publications.  \n2. The image features a person with visible abdominal muscles, suggesting the book’s content revolves around achieving a toned core, a central fitness goal.  \n3. The person is dressed in athletic attire — a tank top and shorts — reinforcing the context of physical training or exercise routines promoted in the book.  \n4. The visual composition centers on the torso, highlighting the target area for the exercises described, which is characteristic of fitness instructional materials.  \n5. The use of “II” in the title implies a sequel or continuation, often seen in fitness series that build on previous content, further supporting its classification as a fitness book.  \n\n<final>Yes, this is a fitness book.</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently displays the title “HOW TO GET ABS II,” indicating a focused instructional guide, typical of fitness or workout-related publications.",
+        "2. The image features a person with visible abdominal muscles, suggesting the book’s content revolves around achieving a toned core, a central fitness goal.",
+        "3. The person is dressed in athletic attire — a tank top and shorts — reinforcing the context of physical training or exercise routines promoted in the book.",
+        "4. The visual composition centers on the torso, highlighting the target area for the exercises described, which is characteristic of fitness instructional materials.",
+        "5. The use of “II” in the title implies a sequel or continuation, often seen in fitness series that build on previous content, further supporting its classification as a fitness book.",
+        "<final>Yes, this is a fitness book.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          49
+        ],
+        [
+          50,
+          79
+        ],
+        [
+          80,
+          110
+        ],
+        [
+          111,
+          138
+        ],
+        [
+          139,
+          176
+        ],
+        [
+          177,
+          190
+        ]
+      ],
+      "anchor_vector": [
+        13.807632572294818,
+        15.043264809280434,
+        15.953672347227034,
+        26.085838524070944,
+        21.474759615384617,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The subtitle or tagline, if present, often provides additional context.",
+        "negative_sentence": "The subtitle or tagline, if visible, might further confirm the fitness theme — although it’s not fully legible, the visible portion reads “the ultimate guide to...”, which is a common phrasing in fitness books designed to promise comprehensive results.",
+        "positive_full": " \n\n5. The subtitle or tagline, if present, often provides additional context. In this case, the title “HOW TO GET ABS II” implies a continuation or advanced guide, suggesting it’s part of a series dedicated to fitness and body transformation. 6. The layout and design of the book cover — clean, bold typography and a focused image — are commonly used in fitness books to attract readers seeking practical, actionable advice for physical improvement. 7. There are no elements on the cover that suggest topics such as cooking, finance, self-help, or art — all of which would indicate a different genre. 8. The",
+        "negative_full": " \n\n5. The subtitle or tagline, if visible, might further confirm the fitness theme — although it’s not fully legible, the visible portion reads “the ultimate guide to...”, which is a common phrasing in fitness books designed to promise comprehensive results. 6. The design elements (bold, clean font, action-oriented imagery) align with marketing strategies for fitness content, aimed at attracting readers seeking actionable advice for body transformation. 7. The context of the book being presented as “the second edition” implies a follow-up to a previous successful publication, which is common in the fitness genre, where readers expect updated or expanded",
+        "positive_probability": 0.005694924501279908,
+        "negative_probability": 0.004002381065984505,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n5. The subtitle or tagline, if present, often provides additional context. In this case, the title “HOW TO GET ABS II” implies a continuation or advanced guide, suggesting it’s part of a series dedicated to fitness and body transformation. 6. The layout and design of the book cover — clean, bold typography and a focused image — are commonly used in fitness books to attract readers seeking practical, actionable advice for physical improvement. 7. There are no elements on the cover that suggest topics such as cooking, finance, self-help, or art — all of which would indicate a different genre. 8. The",
+            "first_sentence": "The subtitle or tagline, if present, often provides additional context.",
+            "answer_probability": 0.005694924501279908,
+            "final_answer": "5. The subtitle or tagline, if present, often provides additional context. In this case, the title “HOW TO GET ABS II” implies a continuation or advanced guide, suggesting it’s part of a series dedicated to fitness and body transformation. 6. The layout and design of the book cover — clean, bold typography and a focused image — are commonly used in fitness books to attract readers seeking practical, actionable advice for physical improvement. 7. There are no elements on the cover that suggest topics such as cooking, finance, self-help, or art — all of which would indicate a different genre. 8. The"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " 5. The title itself, “HOW TO GET ABS II,” implies a step-by-step instructional guide, which is a common format in fitness books designed to teach readers how to achieve specific physical goals like visible abdominal muscles. 6. The “II” suggests it is a sequel or advanced version, which often indicates a deeper dive into fitness techniques, exercises, or nutrition plans — further supporting its classification as a fitness book. 7. Given the combination of the title, imagery, and typical publishing conventions, it is reasonable to infer that the book is intended to provide practical advice or routines for improving physical fitness, specifically targeting abdominal definition",
+            "first_sentence": "The title itself, “HOW TO GET ABS II,” implies a step-by-step instructional guide, which is a common format in fitness books designed to teach readers how to achieve specific physical goals like visible abdominal muscles.",
+            "answer_probability": 0.005344571474394857,
+            "final_answer": "5. The title itself, “HOW TO GET ABS II,” implies a step-by-step instructional guide, which is a common format in fitness books designed to teach readers how to achieve specific physical goals like visible abdominal muscles. 6. The “II” suggests it is a sequel or advanced version, which often indicates a deeper dive into fitness techniques, exercises, or nutrition plans — further supporting its classification as a fitness book. 7. Given the combination of the title, imagery, and typical publishing conventions, it is reasonable to infer that the book is intended to provide practical advice or routines for improving physical fitness, specifically targeting abdominal definition"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n5. The subtitle or tagline (if present) often provides additional context — though not explicitly visible, the phrasing “HOW TO GET ABS II” implies a continuation or expansion on previous material, likely building on foundational fitness principles or offering advanced techniques for core development. 6. The overall aesthetic — clean, bold typography, direct imagery, and emphasis on physical results — aligns with marketing strategies used in fitness books designed to motivate and guide readers through structured workout plans. 7. There are no indicators of unrelated content — such as nutrition, travel, or fiction — which would suggest this is not primarily a fitness book. ",
+            "first_sentence": "The subtitle or tagline (if present) often provides additional context — though not explicitly visible, the phrasing “HOW TO GET ABS II” implies a continuation or expansion on previous material, likely building on foundational fitness principles or offering advanced techniques for core development.",
+            "answer_probability": 0.004712742045297319,
+            "final_answer": "5. The subtitle or tagline (if present) often provides additional context — though not explicitly visible, the phrasing “HOW TO GET ABS II” implies a continuation or expansion on previous material, likely building on foundational fitness principles or offering advanced techniques for core development. 6. The overall aesthetic — clean, bold typography, direct imagery, and emphasis on physical results — aligns with marketing strategies used in fitness books designed to motivate and guide readers through structured workout plans. 7. There are no indicators of unrelated content — such as nutrition, travel, or fiction — which would suggest this is not primarily a fitness book"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 5. The subtitle “THE ULTIMATE ABS WORKOUT PLAN” explicitly states the book’s purpose, confirming its alignment with fitness and body transformation goals. 6. The design elements, including a clean, motivational layout with a prominent title and clear imagery, are consistent with the branding of fitness guides and workout manuals.\n\nBased on these points, the book is clearly designed to provide a structured approach to achieving abdominal definition through exercise.\n\nFinal Answer: Yes, this is a fitness book.",
+            "first_sentence": "The subtitle “THE ULTIMATE ABS WORKOUT PLAN” explicitly states the book’s purpose, confirming its alignment with fitness and body transformation goals.",
+            "answer_probability": 0.004641203716485138,
+            "final_answer": "Yes, this is a fitness book"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n5. The subtitle or tagline, if visible, might further confirm the fitness theme — although it’s not fully legible, the visible portion reads “the ultimate guide to...”, which is a common phrasing in fitness books designed to promise comprehensive results. 6. The design elements (bold, clean font, action-oriented imagery) align with marketing strategies for fitness content, aimed at attracting readers seeking actionable advice for body transformation. 7. The context of the book being presented as “the second edition” implies a follow-up to a previous successful publication, which is common in the fitness genre, where readers expect updated or expanded",
+            "first_sentence": "The subtitle or tagline, if visible, might further confirm the fitness theme — although it’s not fully legible, the visible portion reads “the ultimate guide to...”, which is a common phrasing in fitness books designed to promise comprehensive results.",
+            "answer_probability": 0.004002381065984505,
+            "final_answer": "5. The subtitle or tagline, if visible, might further confirm the fitness theme — although it’s not fully legible, the visible portion reads “the ultimate guide to...”, which is a common phrasing in fitness books designed to promise comprehensive results. 6. The design elements (bold, clean font, action-oriented imagery) align with marketing strategies for fitness content, aimed at attracting readers seeking actionable advice for body transformation. 7. The context of the book being presented as “the second edition” implies a follow-up to a previous successful publication, which is common in the fitness genre, where readers expect updated or expanded"
+          }
+        ],
+        "correct_answer": "Yes",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.09321970779163764,
+              "generated_answers": [
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "Yes"
+              ],
+              "answer_probabilities": [
+                0.0045454376935327315,
+                0.004335394925873445,
+                0.005166962278530333,
+                0.004108974530597939,
+                0.44794176952965375
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004807473667643675,
+              "generated_answers": [
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "\\boxed{Yes}"
+              ],
+              "answer_probabilities": [
+                0.004899183114467957,
+                0.005459505890521862,
+                0.004338868979025952,
+                0.004480371095938583,
+                0.004859439258264022
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004752978594958931,
+              "generated_answers": [
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "\\boxed{Yes}",
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book"
+              ],
+              "answer_probabilities": [
+                0.004624125998287206,
+                0.0050086046013651285,
+                0.0043222841651642955,
+                0.004595970559471716,
+                0.00521390765050631
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004866960129311275,
+              "generated_answers": [
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "Yes, this is a fitness book"
+              ],
+              "answer_probabilities": [
+                0.005023369427205045,
+                0.00469391487981247,
+                0.005366690165120368,
+                0.005046705968518096,
+                0.0042041202059003935
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004391603904009307,
+              "generated_answers": [
+                "Yes, this is a fitness book",
+                "✅ Yes, this is a fitness book",
+                "Yes, this is a fitness book",
+                "$\\boxed{Yes}$",
+                "Yes, this is a fitness book"
+              ],
+              "answer_probabilities": [
+                0.004164166262396321,
+                0.004411587426069808,
+                0.004562188228557246,
+                0.004349992770020001,
+                0.004470084833003154
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a digital technology book?",
+      "reasoning_text": "1. The image shows a book cover titled \"HOW TO GET ABS II,\" indicating fitness or self-improvement content, not digital technology.  \n2. The cover features a person with visible abs, suggesting a focus on physical fitness rather than tech or software topics.  \n3. The design includes a simple black border and bold yellow text, typical of fitness guides, not tech manuals or programming books.  \n4. No icons, circuit diagrams, or tech-related imagery appear, ruling out digital technology as the subject matter.  \n5. The presence of a human figure in workout attire reinforces its fitness context, making it unrelated to digital technology.  \n\n<final> No, this is not a digital technology book; it is a fitness guide focused on achieving abdominal definition.",
+      "raw_generation": [
+        "1. The cover prominently displays \"HOW TO GET ABS II,\" indicating it's a fitness or self-improvement guide rather than a technical or programming manual related to digital technology.\n\n2. The image features a person showcasing a toned abdomen, suggesting the book's focus is on physical fitness, diet, or exercise routines—not digital systems, software, or hardware.\n\n3. The visual design includes a simple text overlay and a human figure, which is typical for health and wellness publications, not for books covering digital technology concepts or tools.\n\n4. There are no icons, circuit diagrams, code snippets, or technical terminology visible, which are common in digital technology books to illustrate hardware, software, or networking topics.\n\n5. The book’s title and imagery align with popular fitness guides, implying it’s aimed at readers seeking physical transformation, not technical knowledge about computers, electronics, or digital systems.\n\n<final>No, this is not a digital technology book; it's a fitness guide focused on achieving abdominal definition.</final>",
+        "1. The image shows a book cover titled \"HOW TO GET ABS II,\" indicating fitness or self-improvement content, not digital technology.  \n2. The cover features a person with visible abs, suggesting a focus on physical fitness rather than tech or software topics.  \n3. The design includes a simple black border and bold yellow text, typical of fitness guides, not tech manuals or programming books.  \n4. No icons, circuit diagrams, or tech-related imagery appear, ruling out digital technology as the subject matter.  \n5. The presence of a human figure in workout attire reinforces its fitness context, making it unrelated to digital technology.  \n\n<final> No, this is not a digital technology book; it is a fitness guide focused on achieving abdominal definition."
+      ],
+      "chunks": [
+        "1. The image shows a book cover titled \"HOW TO GET ABS II,\" indicating fitness or self-improvement content, not digital technology.",
+        "2. The cover features a person with visible abs, suggesting a focus on physical fitness rather than tech or software topics.",
+        "3. The design includes a simple black border and bold yellow text, typical of fitness guides, not tech manuals or programming books.",
+        "4. No icons, circuit diagrams, or tech-related imagery appear, ruling out digital technology as the subject matter.",
+        "5. The presence of a human figure in workout attire reinforces its fitness context, making it unrelated to digital technology.",
+        "<final> No, this is not a digital technology book; it is a fitness guide focused on achieving abdominal definition."
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          51
+        ],
+        [
+          52,
+          76
+        ],
+        [
+          77,
+          103
+        ],
+        [
+          104,
+          127
+        ],
+        [
+          128,
+          151
+        ],
+        [
+          152,
+          176
+        ]
+      ],
+      "anchor_vector": [
+        18.458312974672516,
+        21.89997413299288,
+        21.969756865846936,
+        19.27096778759058,
+        24.59652396539847,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The book’s title format \"HOW TO GET ABS II\" implies it is part of a series and targets beginners or intermediates seeking physical transformation, which aligns with health and fitness literature.",
+        "negative_sentence": "I should also consider the target audience and purpose of the book.",
+        "positive_full": " \n\n6. The book’s title format \"HOW TO GET ABS II\" implies it is part of a series and targets beginners or intermediates seeking physical transformation, which aligns with health and fitness literature. 7. There are no references to software, hardware, algorithms, or digital tools in the visual elements or title, further confirming it is not about digital technology. 8. The overall aesthetic — casual, motivational, and body-focused — is inconsistent with the formal, technical tone of digital technology books. 9. Digital technology books typically include diagrams, code snippets, or technical terminology, none of which are present here. 1",
+        "negative_full": " 6. I should also consider the target audience and purpose of the book. The title and imagery suggest it’s aimed at individuals seeking to improve their physical fitness, not tech enthusiasts or professionals looking for software development or hardware knowledge. 7. If this were a digital technology book, it would likely include topics such as programming languages, hardware components, cybersecurity, or software engineering — none of which are referenced or implied by the cover design or title. 8. The overall visual style and messaging are geared toward motivational fitness content, which aligns with self-help and health genres, not technology or computer science. 9. No digital or",
+        "positive_probability": 0.005971314725174214,
+        "negative_probability": 0.004658945616802786,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n6. The book’s title format \"HOW TO GET ABS II\" implies it is part of a series and targets beginners or intermediates seeking physical transformation, which aligns with health and fitness literature. 7. There are no references to software, hardware, algorithms, or digital tools in the visual elements or title, further confirming it is not about digital technology. 8. The overall aesthetic — casual, motivational, and body-focused — is inconsistent with the formal, technical tone of digital technology books. 9. Digital technology books typically include diagrams, code snippets, or technical terminology, none of which are present here. 1",
+            "first_sentence": "The book’s title format \"HOW TO GET ABS II\" implies it is part of a series and targets beginners or intermediates seeking physical transformation, which aligns with health and fitness literature.",
+            "answer_probability": 0.005971314725174214,
+            "final_answer": "6. The book’s title format \"HOW TO GET ABS II\" implies it is part of a series and targets beginners or intermediates seeking physical transformation, which aligns with health and fitness literature. 7. There are no references to software, hardware, algorithms, or digital tools in the visual elements or title, further confirming it is not about digital technology. 8. The overall aesthetic — casual, motivational, and body-focused — is inconsistent with the formal, technical tone of digital technology books. 9. Digital technology books typically include diagrams, code snippets, or technical terminology, none of which are present here. 1"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": "  \n6. The title \"HOW TO GET ABS II\" implies a continuation of a fitness series, which is commonly associated with health, exercise, and body transformation, not digital concepts. 7. The absence of any mention of hardware, software, coding, or digital systems in the title or cover design further confirms it is not a digital technology book. 8. Digital technology books typically have titles like “Introduction to Computer Science,” “Learn Python,” or “Digital Electronics,” which are absent here.\n\nTherefore, based on the title, imagery, and design, this is **not** a digital technology book. It is a fitness or",
+            "first_sentence": "The title \"HOW TO GET ABS II\" implies a continuation of a fitness series, which is commonly associated with health, exercise, and body transformation, not digital concepts.",
+            "answer_probability": 0.005951303026891324,
+            "final_answer": "Therefore, based on the title, imagery, and design, this is **not** a digital technology book. It is a fitness or"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n6. The book’s title and visual elements consistently align with fitness goals, not technological skills or digital tools. 7. Digital technology books typically cover topics like coding, AI, hardware, or software development — none of which are referenced here. 8. The absence of any technical terminology or digital-specific design cues (e.g., binary code, circuitry, or app interfaces) further confirms this is not a digital technology book.\n\nFinal conclusion: No, this is not a digital technology book. It is a fitness or self-improvement book focused on achieving visible abdominal muscles.",
+            "first_sentence": "The book’s title and visual elements consistently align with fitness goals, not technological skills or digital tools.",
+            "answer_probability": 0.005862879745861331,
+            "final_answer": "Final conclusion: No, this is not a digital technology book. It is a fitness or self-improvement book focused on achieving visible abdominal muscles"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\nThe book's title and visual design clearly indicate a fitness or self-improvement focus, with no elements suggesting digital technology, such as coding, hardware, software, or digital tools. This confirms that the book is not about digital technology.\n\nFinal Answer: No, this is not a digital technology book.",
+            "first_sentence": "The book's title and visual design clearly indicate a fitness or self-improvement focus, with no elements suggesting digital technology, such as coding, hardware, software, or digital tools.",
+            "answer_probability": 0.0057388196454432475,
+            "final_answer": "No, this is not a digital technology book"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 6. I should also consider the target audience and purpose of the book. The title and imagery suggest it’s aimed at individuals seeking to improve their physical fitness, not tech enthusiasts or professionals looking for software development or hardware knowledge. 7. If this were a digital technology book, it would likely include topics such as programming languages, hardware components, cybersecurity, or software engineering — none of which are referenced or implied by the cover design or title. 8. The overall visual style and messaging are geared toward motivational fitness content, which aligns with self-help and health genres, not technology or computer science. 9. No digital or",
+            "first_sentence": "I should also consider the target audience and purpose of the book.",
+            "answer_probability": 0.004658945616802786,
+            "final_answer": "6. I should also consider the target audience and purpose of the book. The title and imagery suggest it’s aimed at individuals seeking to improve their physical fitness, not tech enthusiasts or professionals looking for software development or hardware knowledge. 7. If this were a digital technology book, it would likely include topics such as programming languages, hardware components, cybersecurity, or software engineering — none of which are referenced or implied by the cover design or title. 8. The overall visual style and messaging are geared toward motivational fitness content, which aligns with self-help and health genres, not technology or computer science. 9. No digital or"
+          }
+        ],
+        "correct_answer": "No",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005137243461992883,
+              "generated_answers": [
+                "No, this is not a digital technology book.",
+                "No, this is not a digital technology book",
+                "No, this is not a digital technology book. The content and design clearly point to a fitness or self-improvement guide, not a book about digital technology",
+                "No, this is not a digital technology book. It is a fitness and self-improvement book",
+                "No, this is not a digital technology book"
+              ],
+              "answer_probabilities": [
+                0.004908043798953476,
+                0.005342279575386984,
+                0.004633090992027565,
+                0.004939605732934153,
+                0.005863197210662236
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0056103515259530124,
+              "generated_answers": [
+                "No, this is not a digital technology book",
+                "No, this is not a digital technology book",
+                "No.",
+                "No, this is not a digital technology book",
+                "No, this is not a digital technology book"
+              ],
+              "answer_probabilities": [
+                0.005347491592080187,
+                0.0057278238369484705,
+                0.005209811140344208,
+                0.006029961632289631,
+                0.005736669428102565
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005679471205304626,
+              "generated_answers": [
+                "No, this is not a digital technology book",
+                ": No, this is not a digital technology book. It is a fitness and self-improvement book focused on achieving abs",
+                "No, this is not a digital technology book. It is a fitness guide focused on achieving visible abs through exercise and lifestyle changes. The visual design",
+                "No, this is not a digital technology book.",
+                "No, this is not a digital technology book"
+              ],
+              "answer_probabilities": [
+                0.005970101235916406,
+                0.005533429477702954,
+                0.004968494242012363,
+                0.006034588284220875,
+                0.005890742786670533
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005728363027728287,
+              "generated_answers": [
+                "No, this is not a digital technology book.",
+                "No, this is not a digital technology book",
+                "No, this is not a digital technology book. It is a fitness or self-improvement book focused on achieving physical fitness, specifically abdominal definition",
+                "No, this is not a digital technology book",
+                "No, this is not a digital technology book"
+              ],
+              "answer_probabilities": [
+                0.005670102165169328,
+                0.005933732069865313,
+                0.005772465937117273,
+                0.005491480500939753,
+                0.005774034465549761
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005514181648744427,
+              "generated_answers": [
+                "No, this is not a digital technology book.",
+                "No, this is not a digital technology book",
+                "No, this is not a digital technology book",
+                "No, this is not a digital technology book. It is a fitness or self-improvement book focused on achieving visible abs",
+                "No, this is not a digital technology book."
+              ],
+              "answer_probabilities": [
+                0.005891333040010105,
+                0.005123945841558674,
+                0.005914369448694818,
+                0.005532672438029255,
+                0.00510858747542928
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 240,
+  "worker_rank": 5
+}

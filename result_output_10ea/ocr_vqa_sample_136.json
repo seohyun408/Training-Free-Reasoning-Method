@@ -1,0 +1,633 @@
+{
+  "total_pairs": 3,
+  "successful_pairs": 3,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/ocr_vqa/images/757307825.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover prominently displays the authors' names beneath the title, indicating they are the credited writers.  \n2. The names “Tom Lagana and Laura Lagana” are clearly printed near the bottom, confirming their authorship.  \n3. The subtitle mentions contributions from inmates, prison staff, and volunteers, suggesting the authors compiled or edited these materials.  \n4. The design and layout of the cover prioritize the authors' names for visibility, reinforcing their role as creators.  \n5. No other names appear on the cover, ensuring the authors are solely credited for this publication.  \n\n<final>Tom Lagana and Laura Lagana</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the names of the authors beneath the title.  \n2. The authors are listed as Tom Lagana and Laura Lagana.  \n3. Their names appear in a smaller font size below the subtitle.  \n4. The text is centered on the cover for visibility and emphasis.  \n5. No other names are present, confirming these two as the sole authors.  \n\n<final>Tom Lagana and Laura Lagana</final>",
+        "1. The book cover prominently displays the authors' names beneath the title, indicating they are the credited writers.  \n2. The names “Tom Lagana and Laura Lagana” are clearly printed near the bottom, confirming their authorship.  \n3. The subtitle mentions contributions from inmates, prison staff, and volunteers, suggesting the authors compiled or edited these materials.  \n4. The design and layout of the cover prioritize the authors' names for visibility, reinforcing their role as creators.  \n5. No other names appear on the cover, ensuring the authors are solely credited for this publication.  \n\n<final>Tom Lagana and Laura Lagana</final>"
+      ],
+      "chunks": [
+        "1. The book cover prominently displays the authors' names beneath the title, indicating they are the credited writers.",
+        "2. The names “Tom Lagana and Laura Lagana” are clearly printed near the bottom, confirming their authorship.",
+        "3. The subtitle mentions contributions from inmates, prison staff, and volunteers, suggesting the authors compiled or edited these materials.",
+        "4. The design and layout of the cover prioritize the authors' names for visibility, reinforcing their role as creators.",
+        "5. No other names appear on the cover, ensuring the authors are solely credited for this publication.",
+        "<final>Tom Lagana and Laura Lagana</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          60
+        ],
+        [
+          61,
+          86
+        ],
+        [
+          87,
+          111
+        ],
+        [
+          112,
+          135
+        ],
+        [
+          136,
+          156
+        ],
+        [
+          157,
+          170
+        ]
+      ],
+      "anchor_vector": [
+        11.124645134354914,
+        12.392762380406477,
+        13.936391977163462,
+        13.32010498046875,
+        11.783710186298077,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The authors’ names are explicitly printed on the cover, so no additional research is needed to confirm authorship.",
+        "negative_sentence": "The book’s title is “Letters from a Prison Cell: A Collection of Letters from Inmates, Prison Staff, and Volunteers.” This structure implies the authors are editors or compilers, not the direct writers of all content.",
+        "positive_full": " 4. The authors’ names are explicitly printed on the cover, so no additional research is needed to confirm authorship.\n\nWhat is the final answer?\nTom Lagana and Laura Lagana",
+        "negative_full": " 4. The book’s title is “Letters from a Prison Cell: A Collection of Letters from Inmates, Prison Staff, and Volunteers.” This structure implies the authors are editors or compilers, not the direct writers of all content. 5. The book’s ISBN is 978-1-4343-3311-1, which matches the version published by the authors' publishing house, further confirming their role as the creators. 6. No other authors are listed on the cover, and the design emphasizes Tom and Laura Lagana as the sole credited creators.\n\nFinal answer: Tom Lagana and",
+        "positive_probability": 0.5050246106925977,
+        "negative_probability": 0.003692600025611987,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": " 4. The authors’ names are explicitly printed on the cover, so no additional research is needed to confirm authorship.\n\nWhat is the final answer?\nTom Lagana and Laura Lagana",
+            "first_sentence": "The authors’ names are explicitly printed on the cover, so no additional research is needed to confirm authorship.",
+            "answer_probability": 0.5050246106925977,
+            "final_answer": ""
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 4. Since the cover explicitly names the authors, I can directly answer the question based on this visual evidence.\nTom Lagana and Laura Lagana\n\nAnswer the question using a single word or phrase.\nTom Lagana and Laura Lagana",
+            "first_sentence": "Since the cover explicitly names the authors, I can directly answer the question based on this visual evidence.",
+            "answer_probability": 0.005481198325739018,
+            "final_answer": "the question based on this visual evidence"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \nThe book was authored by Tom Lagana and Laura Lagana, based on the direct information on the cover. Therefore, the answer is:\n\nTom Lagana and Laura Lagana.",
+            "first_sentence": "The book was authored by Tom Lagana and Laura Lagana, based on the direct information on the cover.",
+            "answer_probability": 0.005250046894110528,
+            "final_answer": "Tom Lagana and Laura Lagana"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n4. The authors are listed as Tom Lagana and Laura Lagana, and the book is attributed to them in all visible sections, including the cover, title page, and inside front cover. 5. There are no other names credited as primary authors or editors in the visible text, reinforcing that Tom and Laura Lagana are the primary writers. 6. The book is titled \"The Best of the Inmate Writing Project,\" further confirming the authors’ role as editors or compilers of inmate-written content, with their names as official authors. 7. No external sources are needed since the answer is explicitly stated on the book’s",
+            "first_sentence": "The authors are listed as Tom Lagana and Laura Lagana, and the book is attributed to them in all visible sections, including the cover, title page, and inside front cover.",
+            "answer_probability": 0.004009965971049801,
+            "final_answer": "explicitly stated on the book’s"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 4. The book’s title is “Letters from a Prison Cell: A Collection of Letters from Inmates, Prison Staff, and Volunteers.” This structure implies the authors are editors or compilers, not the direct writers of all content. 5. The book’s ISBN is 978-1-4343-3311-1, which matches the version published by the authors' publishing house, further confirming their role as the creators. 6. No other authors are listed on the cover, and the design emphasizes Tom and Laura Lagana as the sole credited creators.\n\nFinal answer: Tom Lagana and",
+            "first_sentence": "The book’s title is “Letters from a Prison Cell: A Collection of Letters from Inmates, Prison Staff, and Volunteers.” This structure implies the authors are editors or compilers, not the direct writers of all content.",
+            "answer_probability": 0.003692600025611987,
+            "final_answer": "Tom Lagana and"
+          }
+        ],
+        "correct_answer": "Tom Lagana",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005104861993041834,
+              "generated_answers": [
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana"
+              ],
+              "answer_probabilities": [
+                0.004940458884597311,
+                0.004370674380956573,
+                0.0056945221187757735,
+                0.0048230541202169885,
+                0.005695600460662524
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0851608652882693,
+              "generated_answers": [
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "",
+                "Tom Lagana and Laura Lagana"
+              ],
+              "answer_probabilities": [
+                0.005057149487317523,
+                0.0037805149996711,
+                0.007137440247519292,
+                0.4051488612495366,
+                0.00468036045730199
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005629937953491419,
+              "generated_answers": [
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "must be those two names",
+                "Tom Lagana and Laura Lagana"
+              ],
+              "answer_probabilities": [
+                0.005910952228491842,
+                0.006125311628285687,
+                0.006298121486410651,
+                0.005866696930322443,
+                0.003948607493946475
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004054187016914035,
+              "generated_answers": [
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana"
+              ],
+              "answer_probabilities": [
+                0.003879547359454564,
+                0.003596622323714255,
+                0.00403769283613244,
+                0.004474386892047375,
+                0.004282685673221545
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005462382200683011,
+              "generated_answers": [
+                "The authors are Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana",
+                "Tom Lagana and Laura Lagana"
+              ],
+              "answer_probabilities": [
+                0.005581270230571738,
+                0.005692876276431288,
+                0.0047150759411266644,
+                0.007230113342032008,
+                0.004092575213253359
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book’s title, prominently displayed in large purple letters, is “Serving Productive Time,” clearly visible against the gradient background of the cover.\n\n2. Beneath the main title, the subtitle reads “Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers,” indicating the book’s content and target audience.\n\n3. The authors’ names, “Tom Lagana and Laura Lagana,” are printed at the bottom of the cover, positioned above the copyright notice, confirming their authorship.\n\n4. The cover design features a white dove flying through a window, symbolizing hope and freedom, set against a warm-toned background that transitions from blue to orange.\n\n5. The overall layout places the title centrally, with the subtitle and authors’ names arranged to ensure readability and emphasize the book’s purpose for prison-related communities.\n\n<final>Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers</final>",
+      "raw_generation": [
+        "1. The largest text on the cover clearly reads “SERVING PRODUCTIVE TIME,” indicating the book’s main title.  \n2. Below the title, a subtitle states “Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers,” clarifying its purpose and audience.  \n3. The authors’ names, “Tom Lagana and Laura Lagana,” are printed near the bottom, identifying the creators of the content.  \n4. A white dove in flight near a window suggests themes of hope, freedom, and transformation, aligning with the book’s inspirational message.  \n5. The background gradient from purple to orange adds visual warmth and depth, enhancing the emotional tone of the cover design.\n\n<final>Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers</final>",
+        "1. The book’s title, prominently displayed in large purple letters, is “Serving Productive Time,” clearly visible against the gradient background of the cover.\n\n2. Beneath the main title, the subtitle reads “Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers,” indicating the book’s content and target audience.\n\n3. The authors’ names, “Tom Lagana and Laura Lagana,” are printed at the bottom of the cover, positioned above the copyright notice, confirming their authorship.\n\n4. The cover design features a white dove flying through a window, symbolizing hope and freedom, set against a warm-toned background that transitions from blue to orange.\n\n5. The overall layout places the title centrally, with the subtitle and authors’ names arranged to ensure readability and emphasize the book’s purpose for prison-related communities.\n\n<final>Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, prominently displayed in large purple letters, is “Serving Productive Time,” clearly visible against the gradient background of the cover.",
+        "2. Beneath the main title, the subtitle reads “Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers,” indicating the book’s content and target audience.",
+        "3. The authors’ names, “Tom Lagana and Laura Lagana,” are printed at the bottom of the cover, positioned above the copyright notice, confirming their authorship.",
+        "4. The cover design features a white dove flying through a window, symbolizing hope and freedom, set against a warm-toned background that transitions from blue to orange.",
+        "5. The overall layout places the title centrally, with the subtitle and authors’ names arranged to ensure readability and emphasize the book’s purpose for prison-related communities.",
+        "<final>Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          56
+        ],
+        [
+          56,
+          99
+        ],
+        [
+          99,
+          135
+        ],
+        [
+          135,
+          169
+        ],
+        [
+          169,
+          201
+        ],
+        [
+          201,
+          233
+        ]
+      ],
+      "anchor_vector": [
+        11.832654082273201,
+        14.544304118436926,
+        15.688615387561276,
+        15.753986358642578,
+        14.09439468383789,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Given the title, subtitle, authors, and symbolic imagery, the book’s full title is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers” by Tom Lagana and Laura Lagana.",
+        "negative_sentence": "The book’s ISBN, “978-1-64206-836-7,” is located in the bottom right corner of the cover, which is standard for identifying the specific edition and version of a published book.",
+        "positive_full": " 5. Given the title, subtitle, authors, and symbolic imagery, the book’s full title is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers” by Tom Lagana and Laura Lagana.\n\nWhat is the title of this book?\nServing Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers.",
+        "negative_full": " 5. The book’s ISBN, “978-1-64206-836-7,” is located in the bottom right corner of the cover, which is standard for identifying the specific edition and version of a published book. 6. The publisher, “The Book Publishing Company,” is printed just below the title, indicating the entity responsible for bringing the book to market. 7. The phrase “Inspire Positive Change” appears as a tagline beneath the subtitle, reinforcing the book’s core theme.\n\nTherefore, the title of this book is: “Serving Productive Time.”",
+        "positive_probability": 0.7969300287431251,
+        "negative_probability": 0.004370188007106658,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": " 5. Given the title, subtitle, authors, and symbolic imagery, the book’s full title is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers” by Tom Lagana and Laura Lagana.\n\nWhat is the title of this book?\nServing Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers.",
+            "first_sentence": "Given the title, subtitle, authors, and symbolic imagery, the book’s full title is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers” by Tom Lagana and Laura Lagana.",
+            "answer_probability": 0.7969300287431251,
+            "final_answer": "Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n5. The title of this book is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers” by Tom Lagana and Laura Lagana.\n\nFinal Answer: “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers”",
+            "first_sentence": "The title of this book is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers” by Tom Lagana and Laura Lagana.",
+            "answer_probability": 0.008631284521387738,
+            "final_answer": "“Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers”"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n5. Based on the visual elements and text on the cover, the title is not hidden or implied but explicitly stated as “Serving Productive Time.” The subtitle and author names serve to provide context and attribution, not to alter or obscure the title.\n\nFinal Answer:\nThe title of this book is Serving Productive Time.",
+            "first_sentence": "Based on the visual elements and text on the cover, the title is not hidden or implied but explicitly stated as “Serving Productive Time.” The subtitle and author names serve to provide context and attribution, not to alter or obscure the title.",
+            "answer_probability": 0.0048956776174972575,
+            "final_answer": "The title of this book is Serving Productive Time"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 5. The publisher, “Brimstone Press,” is identified at the top left of the cover, along with a small logo, adding credibility to the publication. 6. The ISBN “978-1-938841-36-2” is located at the bottom right, a standard identifier for the specific edition of the book. 7. The overall layout, with the title, subtitle, authors, publisher, and ISBN clearly visible and structured for easy identification, strongly supports the conclusion that the title is indeed “Serving Productive Time.”\n\nThe title of this book is: Serving Product",
+            "first_sentence": "The publisher, “Brimstone Press,” is identified at the top left of the cover, along with a small logo, adding credibility to the publication.",
+            "answer_probability": 0.004520105117090028,
+            "final_answer": "The title of this book is: Serving Product"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 5. The book’s ISBN, “978-1-64206-836-7,” is located in the bottom right corner of the cover, which is standard for identifying the specific edition and version of a published book. 6. The publisher, “The Book Publishing Company,” is printed just below the title, indicating the entity responsible for bringing the book to market. 7. The phrase “Inspire Positive Change” appears as a tagline beneath the subtitle, reinforcing the book’s core theme.\n\nTherefore, the title of this book is: “Serving Productive Time.”",
+            "first_sentence": "The book’s ISBN, “978-1-64206-836-7,” is located in the bottom right corner of the cover, which is standard for identifying the specific edition and version of a published book.",
+            "answer_probability": 0.004370188007106658,
+            "final_answer": "Therefore, the title of this book is: “Serving Productive Time.”"
+          }
+        ],
+        "correct_answer": "Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005236302452155166,
+              "generated_answers": [
+                "The title of the book is “Serving Productive Time.”",
+                "“Serving Productive Time”",
+                "The title of this book is “Serving Productive Time.”",
+                "This title is accurate and fully matches the visual and textual information presented on the book’s cover",
+                "The title of this book is: Serving Productive Time"
+              ],
+              "answer_probabilities": [
+                0.006460740278352932,
+                0.0041031104641615045,
+                0.006104233061783862,
+                0.004979979810613377,
+                0.004533448645864153
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.13740272122934818,
+              "generated_answers": [
+                "The title of this book is: **Serving Productive Time**",
+                "The title of this book is “Serving Productive Time.”",
+                "**Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers** by Tom Lagana and Laura Lagana",
+                "The title of this book is “Serving Productive Time.”",
+                "Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers"
+              ],
+              "answer_probabilities": [
+                0.004722988692650349,
+                0.004401954518229296,
+                0.006697759712593834,
+                0.006276032316351337,
+                0.664914870906916
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005900556146678361,
+              "generated_answers": [
+                "The title of this book is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers.”",
+                "The title of the book is Serving Productive Time",
+                "The title of this book is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers.”",
+                "Step 5: The overall tone of the cover — warm colors, hopeful",
+                "The title of this book is “Serving Productive Time.”"
+              ],
+              "answer_probabilities": [
+                0.007032675857313593,
+                0.004632728781362789,
+                0.0054284900123596535,
+                0.006546882234497785,
+                0.005862003847857984
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.14491428285645663,
+              "generated_answers": [
+                "",
+                "Title: “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers” by Tom Lagana and Laura Lagana",
+                "The title of this book is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers.”",
+                "The title of this book is: Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers",
+                "Based on this analysis, I conclude that the title of the book is “Serving Productive Time.”"
+              ],
+              "answer_probabilities": [
+                0.7033728872262276,
+                0.005695118637161114,
+                0.005142409829565885,
+                0.005832258220480845,
+                0.004528740368847728
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005934750620798737,
+              "generated_answers": [
+                "The title of this book is “Serving Productive Time.”",
+                "The title of this book is “Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers.”",
+                "Therefore, the title of this book is: Serving Productive Time",
+                "The title of this book is “Serving Productive Time.”",
+                "Based on these observations, the title of this book is **“Serving Productive Time: Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers.”**"
+              ],
+              "answer_probabilities": [
+                0.004626236992390605,
+                0.008828150734495104,
+                0.004714751298966343,
+                0.004851855337584053,
+                0.0066527587405575805
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The book's title, “Serving Productive Time,” suggests it focuses on meaningful activities and personal development within correctional settings, indicating its purpose is educational or rehabilitative.  \n2. The subtitle, “Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers,” confirms its content includes motivational material designed for multiple stakeholders in prison environments.  \n3. The imagery of a white dove emerging from a barred window on the cover symbolizes hope, freedom, and spiritual renewal, aligning with themes of redemption and transformation central to the book’s message.  \n4. The authors’ names, Tom Lagana and Laura Lagana, imply a collaborative effort likely rooted in experience with prison systems, suggesting the book draws from real-world insights and practical guidance.  \n5. The cover’s warm gradient and hopeful visual cues reinforce the book’s intent to inspire optimism and positive change, making it suitable for use in rehabilitation programs or community outreach.  \n\n<final>It is a motivational and rehabilitative book designed to inspire positive change through stories, poems, and practical tips for inmates, prison staff, and volunteers in correctional settings.</final>",
+      "raw_generation": [
+        "1. The title \"Serving Productive Time\" suggests a focus on meaningful activities within correctional settings, indicating a self-help or motivational theme aimed at rehabilitation.  \n2. The subtitle explicitly mentions \"Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers,\" confirming its content is motivational and community-oriented.  \n3. The authors' names, Tom Lagana and Laura Lagana, imply personal or professional experience with prison systems, lending credibility to the book’s practical advice.  \n4. The cover imagery of a dove emerging from a barred window symbolizes hope, freedom, and transformation, reinforcing the book’s inspirational tone and purpose.  \n5. The combination of literary formats (stories, poems) with actionable tips positions the book as a hybrid of inspirational literature and practical guide for personal growth in confined environments.  \n\n<final>Self-help and inspirational literature focused on rehabilitation and personal growth within prison settings, aimed at inmates, staff, and volunteers.</final>",
+        "1. The book's title, “Serving Productive Time,” suggests it focuses on meaningful activities and personal development within correctional settings, indicating its purpose is educational or rehabilitative.  \n2. The subtitle, “Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers,” confirms its content includes motivational material designed for multiple stakeholders in prison environments.  \n3. The imagery of a white dove emerging from a barred window on the cover symbolizes hope, freedom, and spiritual renewal, aligning with themes of redemption and transformation central to the book’s message.  \n4. The authors’ names, Tom Lagana and Laura Lagana, imply a collaborative effort likely rooted in experience with prison systems, suggesting the book draws from real-world insights and practical guidance.  \n5. The cover’s warm gradient and hopeful visual cues reinforce the book’s intent to inspire optimism and positive change, making it suitable for use in rehabilitation programs or community outreach.  \n\n<final>It is a motivational and rehabilitative book designed to inspire positive change through stories, poems, and practical tips for inmates, prison staff, and volunteers in correctional settings.</final>"
+      ],
+      "chunks": [
+        "1. The book's title, “Serving Productive Time,” suggests it focuses on meaningful activities and personal development within correctional settings, indicating its purpose is educational or rehabilitative.",
+        "2. The subtitle, “Stories, Poems, and Tips to Inspire Positive Change from Inmates, Prison Staff, and Volunteers,” confirms its content includes motivational material designed for multiple stakeholders in prison environments.",
+        "3. The imagery of a white dove emerging from a barred window on the cover symbolizes hope, freedom, and spiritual renewal, aligning with themes of redemption and transformation central to the book’s message.",
+        "4. The authors’ names, Tom Lagana and Laura Lagana, imply a collaborative effort likely rooted in experience with prison systems, suggesting the book draws from real-world insights and practical guidance.",
+        "5. The cover’s warm gradient and hopeful visual cues reinforce the book’s intent to inspire optimism and positive change, making it suitable for use in rehabilitation programs or community outreach.",
+        "<final>It is a motivational and rehabilitative book designed to inspire positive change through stories, poems, and practical tips for inmates, prison staff, and volunteers in correctional settings.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          59
+        ],
+        [
+          60,
+          102
+        ],
+        [
+          103,
+          144
+        ],
+        [
+          145,
+          184
+        ],
+        [
+          185,
+          220
+        ],
+        [
+          221,
+          260
+        ]
+      ],
+      "anchor_vector": [
+        15.151919508495823,
+        12.95687984049741,
+        15.424442918192918,
+        14.252260044642856,
+        14.869140625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Based on the title, subtitle, and cover imagery, this book is most accurately described as a **motivational and rehabilitative guide** that uses personal stories, poetry, and practical advice to inspire change among those incarcerated, prison staff, and volunteers.",
+        "negative_sentence": "The book is explicitly described as a “Motivational Book” in the metadata, reinforcing that its primary goal is to inspire and uplift readers through shared experiences and advice.",
+        "positive_full": " 4. Based on the title, subtitle, and cover imagery, this book is most accurately described as a **motivational and rehabilitative guide** that uses personal stories, poetry, and practical advice to inspire change among those incarcerated, prison staff, and volunteers. It combines **spiritual, emotional, and practical elements** to promote personal growth and redemption within correctional systems.\n\nThus, the book is best classified as:  \n**A spiritual and motivational guidebook focused on rehabilitation and personal transformation in prison settings.**",
+        "negative_full": " 4. The book is explicitly described as a “Motivational Book” in the metadata, reinforcing that its primary goal is to inspire and uplift readers through shared experiences and advice. 5. The inclusion of diverse voices—prisoners, staff, and volunteers—indicates a communal and collaborative approach to personal growth and rehabilitation, which is typical of inspirational and educational literature aimed at fostering resilience and purpose. 6. The overall tone and structure, emphasizing stories and tips rather than academic theory or technical instruction, confirm it falls under the category of self-help or inspirational literature rather than academic, fiction, or non-fiction narrative.\n\nTherefore",
+        "positive_probability": 0.005438872516992048,
+        "negative_probability": 0.0041200129653630665,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " 4. Based on the title, subtitle, and cover imagery, this book is most accurately described as a **motivational and rehabilitative guide** that uses personal stories, poetry, and practical advice to inspire change among those incarcerated, prison staff, and volunteers. It combines **spiritual, emotional, and practical elements** to promote personal growth and redemption within correctional systems.\n\nThus, the book is best classified as:  \n**A spiritual and motivational guidebook focused on rehabilitation and personal transformation in prison settings.**",
+            "first_sentence": "Based on the title, subtitle, and cover imagery, this book is most accurately described as a **motivational and rehabilitative guide** that uses personal stories, poetry, and practical advice to inspire change among those incarcerated, prison staff, and volunteers.",
+            "answer_probability": 0.005438872516992048,
+            "final_answer": "**A spiritual and motivational guidebook focused on rehabilitation and personal transformation in prison settings.**"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": "  \n4. The book is not a fiction novel, self-help manual, or historical text, as it is centered on first-hand narratives and practical guidance from those directly involved in prison life. 5. The emphasis on storytelling, poetry, and actionable advice indicates it is intended for inspiration and personal growth rather than academic or technical instruction. 6. Based on these characteristics, the book falls under the category of inspirational or motivational literature with a focus on rehabilitation and transformation through personal experience.\n\nFinal Answer: This is an inspirational and motivational book focused on rehabilitation and personal transformation through stories, poems, and practical advice from inmates, prison staff, and",
+            "first_sentence": "The book is not a fiction novel, self-help manual, or historical text, as it is centered on first-hand narratives and practical guidance from those directly involved in prison life.",
+            "answer_probability": 0.004949326264005561,
+            "final_answer": "This is an inspirational and motivational book focused on rehabilitation and personal transformation through stories, poems, and practical advice from inmates, prison staff, and"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "  \n4. The book is authored by a prison minister and former prisoner, which adds credibility and personal insight to its content, reinforcing its focus on faith-based and personal growth perspectives within correctional systems. 5. The inclusion of contributions from inmates, prison staff, and volunteers indicates that the book is not a monologue but a collective voice, emphasizing community, collaboration, and shared experiences in the process of rehabilitation. 6. The format—stories, poems, and tips—suggests a practical, accessible, and inspirational tone rather than a scholarly or technical one, making it suitable for readers seeking motivation and reflection rather than academic study.\n\n",
+            "first_sentence": "The book is authored by a prison minister and former prisoner, which adds credibility and personal insight to its content, reinforcing its focus on faith-based and personal growth perspectives within correctional systems.",
+            "answer_probability": 0.004669866330058325,
+            "final_answer": "4. The book is authored by a prison minister and former prisoner, which adds credibility and personal insight to its content, reinforcing its focus on faith-based and personal growth perspectives within correctional systems. 5. The inclusion of contributions from inmates, prison staff, and volunteers indicates that the book is not a monologue but a collective voice, emphasizing community, collaboration, and shared experiences in the process of rehabilitation. 6. The format—stories, poems, and tips—suggests a practical, accessible, and inspirational tone rather than a scholarly or technical one, making it suitable for readers seeking motivation and reflection rather than academic study"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " 4. The book’s format—featuring personal stories, poems, and practical tips—is consistent with inspirational, motivational, or self-help literature. 5. The target audience—prisoners, staff, and volunteers—suggests it’s intended to foster community, empathy, and personal growth. 6. The overall tone and content reflect a focus on emotional healing, moral reflection, and practical life skills, all hallmarks of inspirational or rehabilitative nonfiction.\n\nConclusion: This book is an inspirational nonfiction book designed for rehabilitation and personal development within prison communities. The answer is: **Inspirational Nonfiction**.",
+            "first_sentence": "The book’s format—featuring personal stories, poems, and practical tips—is consistent with inspirational, motivational, or self-help literature.",
+            "answer_probability": 0.004537312820504001,
+            "final_answer": "Inspirational Nonfiction"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 4. The book is explicitly described as a “Motivational Book” in the metadata, reinforcing that its primary goal is to inspire and uplift readers through shared experiences and advice. 5. The inclusion of diverse voices—prisoners, staff, and volunteers—indicates a communal and collaborative approach to personal growth and rehabilitation, which is typical of inspirational and educational literature aimed at fostering resilience and purpose. 6. The overall tone and structure, emphasizing stories and tips rather than academic theory or technical instruction, confirm it falls under the category of self-help or inspirational literature rather than academic, fiction, or non-fiction narrative.\n\nTherefore",
+            "first_sentence": "The book is explicitly described as a “Motivational Book” in the metadata, reinforcing that its primary goal is to inspire and uplift readers through shared experiences and advice.",
+            "answer_probability": 0.0041200129653630665,
+            "final_answer": "Therefore"
+          }
+        ],
+        "correct_answer": "Business & Money",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004940947754653799,
+              "generated_answers": [
+                "directly based on the reasoning I provided. The book is an inspirational self-help/rehabilitation book focused on personal transformation within prison settings",
+                "The book is a **non-fiction inspirational guidebook**",
+                "",
+                "This is a motivational rehabilitation book.",
+                ""
+              ],
+              "answer_probabilities": [
+                0.004777588627845297,
+                0.005065382233889678,
+                0.005300471198150481,
+                0.00487361089694437,
+                0.004687685816439172
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005176876024618816,
+              "generated_answers": [
+                "Inspirational anthology",
+                "It can also be described as a **humanitarian or social justice-oriented book** with a focus on **prison reform and personal redemption** through the power of storytelling and human connection",
+                "",
+                "This book is an inspirational self-help book focused on rehabilitation and personal transformation within prison settings",
+                "Motivational Anthology for Rehabilitation and Personal Transformation in Correctional Settings"
+              ],
+              "answer_probabilities": [
+                0.004785422379172618,
+                0.004974897146509892,
+                0.005634905827551212,
+                0.005093320419967791,
+                0.00539583434989257
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004737692212274064,
+              "generated_answers": [
+                "This is an inspirational anthology focused on rehabilitation and personal transformation within correctional institutions",
+                "Inspirational and rehabilitative self-help book",
+                "This is an inspirational memoir/anthology focused on rehabilitation, personal growth, and hope within correctional settings",
+                "This is a nonfiction inspirational anthology",
+                "Inspirational / Self-Help / Prison Rehabilitation Literature"
+              ],
+              "answer_probabilities": [
+                0.004750529914093956,
+                0.0047515331017301135,
+                0.004492026884618251,
+                0.004972280744105897,
+                0.004722090416822105
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004698797520804471,
+              "generated_answers": [
+                "The book is a **non-fiction inspirational self-help book focused on rehabilitation and personal transformation within prison settings**",
+                "Spiritual self-help book for rehabilitation",
+                "8. Given its focus on prison life and personal transformation, it may also be categorized as “prison literature” or “rehabilitation literature",
+                "This is an inspirational and rehabilitative book designed to motivate and support personal transformation in prison environments through creative and heartfelt contributions from inmates, staff, and volunteers",
+                "This is an inspirational/self-help book focused on rehabilitation and personal transformation within correctional facilities"
+              ],
+              "answer_probabilities": [
+                0.005005303210763239,
+                0.004445428527976843,
+                0.004183287655723275,
+                0.004608170042469551,
+                0.005251798167089444
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005008303850766292,
+              "generated_answers": [
+                "",
+                "Inspirational Self-Help Book",
+                "This is an inspirational anthology designed to promote rehabilitation and positive change through stories, poems, and practical tips from inmates, prison staff, and volunteers",
+                "",
+                ":"
+              ],
+              "answer_probabilities": [
+                0.0050609391860415975,
+                0.00533218562834525,
+                0.005207517720020172,
+                0.004551570275906597,
+                0.004889306443517848
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 136,
+  "worker_rank": 4
+}

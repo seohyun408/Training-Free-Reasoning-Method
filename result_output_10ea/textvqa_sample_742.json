@@ -1,0 +1,217 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/textvqa/train_images/f14a57bc74a2a5d5.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: 821., 135., A36, VASILE, ALECSANDAI, SANZIANA, $I, PEPELEA, ALDO, PRESS",
+      "reasoning_text": "<1> The red book cover displays the title “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, with a white sticker showing catalog number 821.135.1 A36 in the top-left corner.  \n<2> The author’s name, Vasile Alecsandri, is prominently featured in large yellow Gothic-style lettering within a decorative gold-bordered rectangle near the top of the cover.  \n<3> Below the author’s name, the title “Sânziana și Pepelea” is rendered in bold white Gothic-style font, centered and slightly smaller than the author’s name, creating a visual hierarchy.  \n<4> The publisher’s imprint, “ALDO PRESS,” appears at the bottom center in a minimalist black rectangular box with white uppercase text, offering clear branding.  \n<5> The cover’s deep red background contrasts sharply with the white and yellow typography, ensuring readability while conveying a classic, literary aesthetic appropriate for Romanian poetry.  \n<final>The red book cover features Vasile Alecsandri’s “Sânziana și Pepelea,” published by Aldo Press, with a white catalog sticker (821.135",
+      "raw_generation": [
+        "<reasoning>\n1. The book cover prominently displays the author's name, Vasile Alecsandri, in large, ornate gold lettering at the top, indicating his significance as a Romanian literary figure.\n2. Below the author's name, the title \"Sânziana și Pepelea\" is written in bold, white, stylized font, suggesting a work of folklore or historical narrative.\n3. The publisher, \"ALDO PRESS,\" is clearly printed in a small, rectangular black box at the bottom, identifying the printing house responsible for this edition.\n4. The cover has a deep red background with a subtle gradient, providing a classic and elegant aesthetic typical of Romanian literary publications.\n5. A white library sticker in the upper-left corner with the text \"821.1351 A36\" indicates this is a cataloged item in a library system, likely for classification and borrowing purposes.\n</reasoning>\n<final>Red book cover of Vasile Alecsandri's \"Sânziana și Pepelea,\" published by Aldo Press, featuring gold and white typography with a library classification sticker.</final>",
+        "<1> The red book cover displays the title “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, with a white sticker showing catalog number 821.135.1 A36 in the top-left corner.  \n<2> The author’s name, Vasile Alecsandri, is prominently featured in large yellow Gothic-style lettering within a decorative gold-bordered rectangle near the top of the cover.  \n<3> Below the author’s name, the title “Sânziana și Pepelea” is rendered in bold white Gothic-style font, centered and slightly smaller than the author’s name, creating a visual hierarchy.  \n<4> The publisher’s imprint, “ALDO PRESS,” appears at the bottom center in a minimalist black rectangular box with white uppercase text, offering clear branding.  \n<5> The cover’s deep red background contrasts sharply with the white and yellow typography, ensuring readability while conveying a classic, literary aesthetic appropriate for Romanian poetry.  \n<final>The red book cover features Vasile Alecsandri’s “Sânziana și Pepelea,” published by Aldo Press, with a white catalog sticker (821.135"
+      ],
+      "chunks": [
+        "<1> The red book cover displays the title “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, with a white sticker showing catalog number 821.135.1 A36 in the top-left corner.",
+        "<2> The author’s name, Vasile Alecsandri, is prominently featured in large yellow Gothic-style lettering within a decorative gold-bordered rectangle near the top of the cover.",
+        "<3> Below the author’s name, the title “Sânziana și Pepelea” is rendered in bold white Gothic-style font, centered and slightly smaller than the author’s name, creating a visual hierarchy.",
+        "<4> The publisher’s imprint, “ALDO PRESS,” appears at the bottom center in a minimalist black rectangular box with white uppercase text, offering clear branding.",
+        "<5> The cover’s deep red background contrasts sharply with the white and yellow typography, ensuring readability while conveying a classic, literary aesthetic appropriate for Romanian poetry.",
+        "<final>The red book cover features Vasile Alecsandri’s “Sânziana și Pepelea,” published by Aldo Press, with a white catalog sticker (821.135"
+      ],
+      "chunk_token_ranges": [
+        [
+          122,
+          182
+        ],
+        [
+          183,
+          221
+        ],
+        [
+          222,
+          267
+        ],
+        [
+          268,
+          301
+        ],
+        [
+          302,
+          334
+        ],
+        [
+          335,
+          378
+        ]
+      ],
+      "anchor_vector": [
+        12.941064512935423,
+        12.947123694963121,
+        15.326774190338616,
+        11.250682387241097,
+        11.345805323401162,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "<4> The publisher, Aldo Press, is indicated by a small logo in the bottom-right corner, accompanied by a barcode for retail scanning.",
+        "negative_sentence": "<4> The bottom of the cover indicates the publisher, “Aldo Press,” in a stylized white font with a black outline, positioned just above the red and black striped base.",
+        "positive_full": " <4> The publisher, Aldo Press, is indicated by a small logo in the bottom-right corner, accompanied by a barcode for retail scanning.\n\nNow, a one-sentence caption: The book “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a red cover with Gothic typography and a catalog number sticker indicating its classification within a library system.\n\nFinal Answer: The book “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a red cover with Gothic typography and a catalog number sticker indicating its classification",
+        "negative_full": " <4> The bottom of the cover indicates the publisher, “Aldo Press,” in a stylized white font with a black outline, positioned just above the red and black striped base. <5> The white rectangular sticker in the top-left corner contains printed text: “821., 135., A36, VASILE, ALECSANDAI, SANZIANA, $I, PEPELEA, ALDO, PRESS.” This text is not a single coherent sentence but a list of cataloging or reference information, likely including a call number, author’s name, title, and",
+        "positive_probability": 0.006730521122931165,
+        "negative_probability": 0.005307448565575309,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " <4> The publisher, Aldo Press, is indicated by a small logo in the bottom-right corner, accompanied by a barcode for retail scanning.\n\nNow, a one-sentence caption: The book “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a red cover with Gothic typography and a catalog number sticker indicating its classification within a library system.\n\nFinal Answer: The book “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a red cover with Gothic typography and a catalog number sticker indicating its classification",
+            "first_sentence": "<4> The publisher, Aldo Press, is indicated by a small logo in the bottom-right corner, accompanied by a barcode for retail scanning.",
+            "answer_probability": 0.006730521122931165,
+            "final_answer": "The book “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a red cover with Gothic typography and a catalog number sticker indicating its classification"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " <4> The publisher, Aldo Press, is printed in smaller white text at the bottom right corner of the cover, maintaining a consistent typographic style with the rest of the text. <5> The white catalog sticker with the alphanumeric code “821.135.1 A36” is positioned in the top-left corner, indicating a library classification or cataloging system.\n\nNow, a concise one-sentence caption for the image: \n\nA red book cover for \"Sânziana și Pepelea\" by Vasile Alecsandri, published by Aldo Press, features a white library catalog sticker",
+            "first_sentence": "<4> The publisher, Aldo Press, is printed in smaller white text at the bottom right corner of the cover, maintaining a consistent typographic style with the rest of the text.",
+            "answer_probability": 0.006470738561831385,
+            "final_answer": "A red book cover for \"Sânziana și Pepelea\" by Vasile Alecsandri, published by Aldo Press, features a white library catalog sticker"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " <4> The publisher’s name, Aldo Press, appears in a smaller, elegant white serif font at the bottom of the cover, maintaining a clean and balanced design.\n\n<5> A white rectangular sticker is positioned in the top-left corner of the book cover, containing the catalog number “821.135.1 A36” in black text.\n\n<6> The background of the book cover is a deep red, and the title and author’s name are set against this rich color, creating a striking contrast that draws the eye to the text.\n\n<7> The overall design is formal and classic, with",
+            "first_sentence": "<4> The publisher’s name, Aldo Press, appears in a smaller, elegant white serif font at the bottom of the cover, maintaining a clean and balanced design.",
+            "answer_probability": 0.006215103113127797,
+            "final_answer": "<7> The overall design is formal and classic, with"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " <4> The publisher, Aldo Press, is located at the bottom of the cover in a smaller white serif font, providing attribution while maintaining visual balance. <5> The white catalog sticker in the top-left corner contains the numbers 821., 135., A36, and the title/author identifiers “VASILE, ALECSANDAI, SANZIANA, $I, PEPELEA, ALDO, PRESS,” indicating this is a library catalog entry. <6> The cover’s background is a dark, textured material resembling leather, with a subtle golden pattern that adds depth and",
+            "first_sentence": "<4> The publisher, Aldo Press, is located at the bottom of the cover in a smaller white serif font, providing attribution while maintaining visual balance.",
+            "answer_probability": 0.005764805828396973,
+            "final_answer": "<4> The publisher, Aldo Press, is located at the bottom of the cover in a smaller white serif font, providing attribution while maintaining visual balance. <5> The white catalog sticker in the top-left corner contains the numbers 821., 135., A36, and the title/author identifiers “VASILE, ALECSANDAI, SANZIANA, $I, PEPELEA, ALDO, PRESS,” indicating this is a library catalog entry. <6> The cover’s background is a dark, textured material resembling leather, with a subtle golden pattern that adds depth and"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " <4> The bottom of the cover indicates the publisher, “Aldo Press,” in a stylized white font with a black outline, positioned just above the red and black striped base. <5> The white rectangular sticker in the top-left corner contains printed text: “821., 135., A36, VASILE, ALECSANDAI, SANZIANA, $I, PEPELEA, ALDO, PRESS.” This text is not a single coherent sentence but a list of cataloging or reference information, likely including a call number, author’s name, title, and",
+            "first_sentence": "<4> The bottom of the cover indicates the publisher, “Aldo Press,” in a stylized white font with a black outline, positioned just above the red and black striped base.",
+            "answer_probability": 0.005307448565575309,
+            "final_answer": "<4> The bottom of the cover indicates the publisher, “Aldo Press,” in a stylized white font with a black outline, positioned just above the red and black striped base. <5> The white rectangular sticker in the top-left corner contains printed text: “821., 135., A36, VASILE, ALECSANDAI, SANZIANA, $I, PEPELEA, ALDO, PRESS.” This text is not a single coherent sentence but a list of cataloging or reference information, likely including a call number, author’s name, title, and"
+          }
+        ],
+        "correct_answer": "A red book titled Vasile Alecsandri in yellow text.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006177136549660168,
+              "generated_answers": [
+                "<8> The book cover features the title \"Sânziana și Pepelea\" by Vasile Alecsandri, published by Aldo Press, with catalog information \"821.135.1 A36\" on a red sticker in the upper-left corner. <9> The design is dominated by a",
+                "should be: The cover of Vasile Alecsandri's “Sânziana și Pepelea,” published by Aldo Press, features a red background with gold and white lettering, and a white sticker in the top-left corner indicating the catalog number 821.135.1 A36",
+                "The cover of “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a classic design with bold typography and a catalog number (821.135.1 A36) indicating its library classification",
+                "",
+                "A red book cover for Vasile Alecsandri’s “Sânziana și Pepelea,” published by Aldo Press, features a prominent author’s name and title, with a white sticker in the top-left corner displaying the catalog number 821.135.1 A36"
+              ],
+              "answer_probabilities": [
+                0.0052158344634328216,
+                0.007397058024213029,
+                0.0059903574525734605,
+                0.006151290436968496,
+                0.006131142371113032
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005814313972175476,
+              "generated_answers": [
+                "The red book cover of Vasile Alecsandri’s “Sânziana și Pepelea,” published by Aldo Press, features a library catalog number 821.135.1 A36, set against a traditional design with gold accents and bold Gothic lettering",
+                "A red book cover featuring the classic Romanian literature “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, is marked with the library catalog number 821.135.1 A36 on a white sticker",
+                "Based on the visual elements and OCR tokens, the one-sentence caption is:",
+                "Combine your step-by-step observations into a one-sentence caption: The red book cover of “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a catalog number sticker (821.135.1 A36) and a decorative gold-bordered rectangle highlighting the author’s name",
+                "The cover of Vasile Alecsandri's “Sânziana și Pepelea,” published by Aldo Press, features a romantic illustration and a catalog sticker indicating classification numbers 821.135.1 A36"
+              ],
+              "answer_probabilities": [
+                0.005700167183966946,
+                0.005345506619557616,
+                0.006890878325352774,
+                0.006356543799073315,
+                0.004778473932926733
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006194375349104981,
+              "generated_answers": [
+                "The red book cover for Vasile Alecsandri's “Sânziana și Pepelea,” published by Aldo Press, features bold yellow and white Gothic typography and a top-left catalog sticker marked 821.135.1 A36",
+                "Final sentence: A copy of Vasile Alecsandri's \"Sânziana și Pepelea,\" published by Aldo Press, is identified by its library catalog number 821.135.1 A36 on a white sticker in the top-left corner",
+                "The red cover of the Romanian book “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a white sticker with the catalog number 821.135.1 A36",
+                "Final sentence: The cover of Vasile Alecsandri’s “Sânziana și Pepelea,” published by Aldo Press, features a striking red background, bold Gothic typography, and a white sticker displaying the catalog number 821.135.1 A36 in the top-left corner",
+                "<9> The most prominent text on the book is the title “Sânziana și Pepelea” and the author’s name “Vasile Alecsandri,” with the publisher “Aldo Press” and catalog number “821.135.1 A36” also visible. <10> The title “Sânziana și Pepelea” is the most prominent text after the author’s name, and it is the"
+              ],
+              "answer_probabilities": [
+                0.006464216345394314,
+                0.006810087124584593,
+                0.005904513844749105,
+                0.006136875383372931,
+                0.005656184047423963
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006666868313227598,
+              "generated_answers": [
+                "The book cover of “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a red background with the title and author's name prominently displayed in Gothic-style fonts, and a white sticker in the top-left corner bearing the catalog number 821.135.1",
+                "A classic literary work, “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, is displayed with its distinctive yellow and gold Gothic typography against a dark background, marked by a library catalog sticker",
+                "The caption should be: \"A library copy of Vasile Alecsandri’s 'Sânziana și Pepelea,' published by Aldo Press, identified by the catalog number 821.135.1 A36.\"",
+                "A red book cover for “Sânziana și Pepelea” by Vasile Alecsandri, published by Aldo Press, features a prominent author name, the title in white Gothic font, and a white sticker with the library classification number 821.135.1 A36 in the top-left corner",
+                "Here is the one-sentence caption:"
+              ],
+              "answer_probabilities": [
+                0.0074061604803064285,
+                0.005713721716689908,
+                0.0069696498817679075,
+                0.006599690577597492,
+                0.006645118909776253
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006865383106579946,
+              "generated_answers": [
+                "A Romanian-language book by Vasile Alecsandri, titled “Sânziana și Pepelea” and published by Aldo Press",
+                "",
+                "The Romanian literary classic \"Sânziana și Pepelea\" by Vasile Alecsandri, published by Aldo Press, is identified by catalog number 821.135.1 A36 on its cover",
+                "",
+                ""
+              ],
+              "answer_probabilities": [
+                0.006868583342261292,
+                0.006368807124503918,
+                0.006878692149931241,
+                0.006724554789490806,
+                0.007486278126712475
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 742,
+  "worker_rank": 6
+}

@@ -1,0 +1,211 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/geoqa+/images/3063.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn the figure, AB is the diameter of circle O, chord CD is perpendicular to AB, and P is any point on line segment CD (not coinciding with points C or D). If the measure of angle BCD is 50°, then the measure of angle CPA is ()\nA. 65°\nB. 50°\nC. 130°\nD. 100°",
+      "reasoning_text": "1. Since AB is the diameter of circle O and chord CD is perpendicular to AB, AB bisects CD at its midpoint, creating two congruent right triangles on either side of AB.  \n2. Angle BCD measures 50°, and because AB is a diameter, angle ACB is a right angle (90°) as it subtends a semicircle, making triangle ABC a right triangle with angle C as 90°.  \n3. In triangle ABC, angle CAB = 90° - 50° = 40°, since angle ACB is 90° and angle BCD is 50°, making angle CAB the complement to angle BCD.  \n4. Angle CPA is an inscribed angle that intercepts arc CA, and since angle CAB = 40°, angle CPA = 2 × 40° = 80°, but this is incorrect as P lies on CD and not on the circle’s circumference.  \n5. Instead, since CD ⊥ AB, and angle BCD = 50°, then angle BPC = 90° - 50° = 40°, and since angle CPA and angle BPC",
+      "raw_generation": [
+        "1. Since AB is the diameter of circle O, any angle subtended by AB on the circumference is a right angle (90°), so angle ACB = 90°.\n\n2. Given angle BCD = 50°, and since angle ACB = angle ACD + angle BCD, angle ACD = 90° - 50° = 40°.\n\n3. Chord CD is perpendicular to diameter AB, so AB bisects chord CD, and by symmetry, angles subtended by arcs AD and BC are equal.\n\n4. Angle CPA is an inscribed angle subtending arc CA, which is equal to twice angle ACD (since angle ACD subtends arc AD, and angle CPA subtends arc CA).\n\n5. Since angle ACD = 40°, angle CPA = 2 × 40° = 80°, but this does not match any options. Reconsidering the configuration, angle CPA subtends arc CA, and since angle ACD = 40°, angle CPA = 180° - 40° = 140°, which still doesn't match. However, angle CPA is an exterior angle to triangle ACP",
+        "1. Since AB is the diameter of circle O and chord CD is perpendicular to AB, AB bisects CD at its midpoint, creating two congruent right triangles on either side of AB.  \n2. Angle BCD measures 50°, and because AB is a diameter, angle ACB is a right angle (90°) as it subtends a semicircle, making triangle ABC a right triangle with angle C as 90°.  \n3. In triangle ABC, angle CAB = 90° - 50° = 40°, since angle ACB is 90° and angle BCD is 50°, making angle CAB the complement to angle BCD.  \n4. Angle CPA is an inscribed angle that intercepts arc CA, and since angle CAB = 40°, angle CPA = 2 × 40° = 80°, but this is incorrect as P lies on CD and not on the circle’s circumference.  \n5. Instead, since CD ⊥ AB, and angle BCD = 50°, then angle BPC = 90° - 50° = 40°, and since angle CPA and angle BPC"
+      ],
+      "chunks": [
+        "1. Since AB is the diameter of circle O and chord CD is perpendicular to AB, AB bisects CD at its midpoint, creating two congruent right triangles on either side of AB.",
+        "2. Angle BCD measures 50°, and because AB is a diameter, angle ACB is a right angle (90°) as it subtends a semicircle, making triangle ABC a right triangle with angle C as 90°.",
+        "3. In triangle ABC, angle CAB = 90° - 50° = 40°, since angle ACB is 90° and angle BCD is 50°, making angle CAB the complement to angle BCD.",
+        "4. Angle CPA is an inscribed angle that intercepts arc CA, and since angle CAB = 40°, angle CPA = 2 × 40° = 80°, but this is incorrect as P lies on CD and not on the circle’s circumference.",
+        "5. Instead, since CD ⊥ AB, and angle BCD = 50°, then angle BPC = 90° - 50° = 40°, and since angle CPA and angle BPC"
+      ],
+      "chunk_token_ranges": [
+        [
+          186,
+          225
+        ],
+        [
+          226,
+          280
+        ],
+        [
+          281,
+          334
+        ],
+        [
+          335,
+          393
+        ],
+        [
+          394,
+          442
+        ]
+      ],
+      "anchor_vector": [
+        7.498895155237729,
+        7.776423063901738,
+        7.698029695202248,
+        6.631659480241629,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        5,
+        5
+      ],
+      "contrastive": {
+        "positive_sentence": "In triangle ABC, since angle ACB = 90° and angle BCD = 50°, then angle ACD = 90° - 50° = 40°.",
+        "negative_sentence": "Now, in triangle ABC, angle ACB = 90° and angle BCD = 50°, which suggests that angle ACD = 90° - 50° = 40° (since C is on the circle and AB is the diameter, triangle ABC is right-angled at C, and angle ACD is part of this triangle).",
+        "positive_full": " 3. In triangle ABC, since angle ACB = 90° and angle BCD = 50°, then angle ACD = 90° - 50° = 40°. 4. Since AB is the diameter and CD is perpendicular to AB, point P lies on CD. I need to find angle CPA, which involves points C, P, and A. 5. Consider triangle CPA. I need to relate angle CPA to the known angles. 6. Since angle ACD is 40°, and P is on CD, angle ACP is also 4",
+        "negative_full": "  \n3. Now, in triangle ABC, angle ACB = 90° and angle BCD = 50°, which suggests that angle ACD = 90° - 50° = 40° (since C is on the circle and AB is the diameter, triangle ABC is right-angled at C, and angle ACD is part of this triangle). 4. Since chord CD is perpendicular to diameter AB, and P is any point on CD, angle CPA is the angle formed at point P by lines CP and AP. 5. I need to consider the cyclic quadrilateral or properties",
+        "positive_probability": 0.007247168173039382,
+        "negative_probability": 0.006008060774598217,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": " 3. In triangle ABC, since angle ACB = 90° and angle BCD = 50°, then angle ACD = 90° - 50° = 40°. 4. Since AB is the diameter and CD is perpendicular to AB, point P lies on CD. I need to find angle CPA, which involves points C, P, and A. 5. Consider triangle CPA. I need to relate angle CPA to the known angles. 6. Since angle ACD is 40°, and P is on CD, angle ACP is also 4",
+            "first_sentence": "In triangle ABC, since angle ACB = 90° and angle BCD = 50°, then angle ACD = 90° - 50° = 40°.",
+            "answer_probability": 0.007247168173039382,
+            "final_answer": "3. In triangle ABC, since angle ACB = 90° and angle BCD = 50°, then angle ACD = 90° - 50° = 40°. 4. Since AB is the diameter and CD is perpendicular to AB, point P lies on CD. I need to find angle CPA, which involves points C, P, and A. 5. Consider triangle CPA. I need to relate angle CPA to the known angles. 6. Since angle ACD is 40°, and P is on CD, angle ACP is also 4"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " 3. In triangle ABC, angle ABC is 90° - 50° = 40° (since angle C is 90° and angle BCD is 50°, angle ABC = 90° - 50°).\n\nWait, that doesn't seem quite right. Let me re-examine.\n\nActually, angle BCD is 50°, and since AB is the diameter, angle ACB should be 90° because it's subtended by the diameter. So, in triangle ABC, angle C = 90°, angle BCD = 50",
+            "first_sentence": "In triangle ABC, angle ABC is 90° - 50° = 40° (since angle C is 90° and angle BCD is 50°, angle ABC = 90° - 50°).",
+            "answer_probability": 0.006757253658798257,
+            "final_answer": "Actually, angle BCD is 50°, and since AB is the diameter, angle ACB should be 90° because it's subtended by the diameter. So, in triangle ABC, angle C = 90°, angle BCD = 50"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " 3. Since angle ACB is 90° and angle BCD is 50°, the angle ACD is 90° - 50° = 40°, because angles ACD and BCD are adjacent angles that together make up the 90° angle at C.\n\nContinue the next reasoning step: 4. Now, since P is any point on CD, and we need to find angle CPA, we can use the property that angle CPA is an angle in the circle. Since CD is perpendicular to AB and P lies on CD, we can consider triangle CPA.\n\nContinue the next",
+            "first_sentence": "Since angle ACB is 90° and angle BCD is 50°, the angle ACD is 90° - 50° = 40°, because angles ACD and BCD are adjacent angles that together make up the 90° angle at C.",
+            "answer_probability": 0.006496832231140409,
+            "final_answer": "Continue the next"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 3. In triangle ABC, angle C is 90°, and angle B is 40° (since angles in triangle sum to 180°, and angle C = 90°, so angle B = 180° - 90° - 50° = 40°). But wait, this doesn't match the given angle BCD = 50°, so perhaps I misinterpreted. 4. Actually, point D is on the circle, and AB is the diameter, so angle ADB should be 90° (angle subtended by diameter",
+            "first_sentence": "In triangle ABC, angle C is 90°, and angle B is 40° (since angles in triangle sum to 180°, and angle C = 90°, so angle B = 180° - 90° - 50° = 40°).",
+            "answer_probability": 0.006067820343181219,
+            "final_answer": "3. In triangle ABC, angle C is 90°, and angle B is 40° (since angles in triangle sum to 180°, and angle C = 90°, so angle B = 180° - 90° - 50° = 40°). But wait, this doesn't match the given angle BCD = 50°, so perhaps I misinterpreted. 4. Actually, point D is on the circle, and AB is the diameter, so angle ADB should be 90° (angle subtended by diameter"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": "  \n3. Now, in triangle ABC, angle ACB = 90° and angle BCD = 50°, which suggests that angle ACD = 90° - 50° = 40° (since C is on the circle and AB is the diameter, triangle ABC is right-angled at C, and angle ACD is part of this triangle). 4. Since chord CD is perpendicular to diameter AB, and P is any point on CD, angle CPA is the angle formed at point P by lines CP and AP. 5. I need to consider the cyclic quadrilateral or properties",
+            "first_sentence": "Now, in triangle ABC, angle ACB = 90° and angle BCD = 50°, which suggests that angle ACD = 90° - 50° = 40° (since C is on the circle and AB is the diameter, triangle ABC is right-angled at C, and angle ACD is part of this triangle).",
+            "answer_probability": 0.006008060774598217,
+            "final_answer": "3. Now, in triangle ABC, angle ACB = 90° and angle BCD = 50°, which suggests that angle ACD = 90° - 50° = 40° (since C is on the circle and AB is the diameter, triangle ABC is right-angled at C, and angle ACD is part of this triangle). 4. Since chord CD is perpendicular to diameter AB, and P is any point on CD, angle CPA is the angle formed at point P by lines CP and AP. 5. I need to consider the cyclic quadrilateral or properties"
+          }
+        ],
+        "correct_answer": "65°",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0062013663034926475,
+              "generated_answers": [
+                "3. Since angle ACB is 90°, and angle BCD is 50°, we can find angle ACD by subtracting 50° from 90°, so angle ACD = 90° - 50° = 40°. 4. Now, since CD is perpendicular to AB and AB bisects CD, let’s consider triangle APC. We want to find angle CPA, which is the angle at point P in triangle APC. 5. But I need to recall a key fact: in a circle, if a chord is perpendicular to a diameter, then the angle subtended by the chord at any point on the circumference is half the angle subtended at the center. 6. Let’s think about angle BCD. It's given as 50°, and since AB is the diameter, and CD is perpendicular to AB, I can find the central angle corresponding to arc BC. 7. Angle BCD is an inscribed angle subtending arc BD. So, the measure of arc BD is 2 * 50° = 100°. 8. Since AB is the diameter, arc AB is 180°. So",
+                "Since AB is diameter, angle ACB = 90°. Also, since CD is perpendicular to AB, and AB is diameter, then angle ACD and angle BCD are related",
+                "3. Since angle ACB is 90°, and angle BCD is 50°, angle ACD must be 90° - 50° = 40°. 4. Since AB bisects CD perpendicularly, and P is any point on CD, the angle CPA depends only on the arc that it subtends, not on the position of P on CD (as long as P is not C or D). 5. Angle CPA is an inscribed angle that subtends arc CA. 6. To find the measure of arc CA, I need to determine the central angle that subtends arc CA. 7. Since angle ACB is 90°, arc AB is 180° (because it's a semicircle). 8. Angle BCD is 50°, which is an inscribed angle subtending arc BD. Therefore, arc BD = 2 * 50° = 100°. 9. Since AB is the diameter and AB bisects CD, arc AD = arc BC. Let’s denote the measure of arc AD as x, so arc BC is also x. 10. Now, we can set",
+                "Wait, I should reconsider the approach. Since P is on CD, and we are to find angle CPA, which is an angle formed by chords CA and PA. But angle CPA is not necessarily an inscribed angle; it's formed by two chords intersecting at P on the chord CD. Maybe I should use the fact that angle CPA is equal to half the difference of the intercepted arcs. But since P is on CD, which",
+                "Final check: 6. Let me verify if this makes sense. Since angle BCD is 50°, and angle BAC is 40° (since 90° - 50° = 40°), the arc CA is subtended by angle CBA (50°) and angle CPA (also 50°), so both should be equal. 7. Also, since P is on CD, and AB is perpendicular to CD, triangle CPA is isosce"
+              ],
+              "answer_probabilities": [
+                0.006384166718397811,
+                0.006051012471133589,
+                0.006803752282401645,
+                0.00607635082938208,
+                0.0056915492161481104
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005935111510970493,
+              "generated_answers": [
+                "7. Now, angle CPA is the angle we need to find. Let’s consider triangle CPA. Since",
+                "Wait, maybe I need to consider triangle CPA. Let me recall that angle at the center is twice the angle at the circumference. But here, angle CPA is not necessarily at the center. 5. Since P is on CD, and CD is perpendicular to AB, then triangle CPA will have CP and AP",
+                "7. The measure of arc BD is",
+                "Step 4: In triangle BCD, angle BCD = 50°, and since AB is diameter, angle ABD = 90°",
+                "Actually, let's think about the inscribed angle theorem. Angle BCD = 50°, which is an inscribed angle subtending arc BD. So"
+              ],
+              "answer_probabilities": [
+                0.006134895865780134,
+                0.005805797833632655,
+                0.006016189312170326,
+                0.0056890735220993275,
+                0.006029601021170024
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005814807663276377,
+              "generated_answers": [
+                "7. Let’s think about angle CPA. Since P is on CD, and we're looking for angle CPA, which is an angle formed by points C, P, and A",
+                "Key geometric fact: angle subtended by an arc at the circumference is half the angle at the center, and since AB is the diameter, any angle",
+                "Since AB is diameter and",
+                "So, in triangle ABC, angle ACB = 90°, and angle",
+                "Let me denote the point where AB intersects CD as point"
+              ],
+              "answer_probabilities": [
+                0.005493420033250745,
+                0.005841609179313816,
+                0.005466051763922104,
+                0.006342734913634106,
+                0.005930222426261115
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006165752706146302,
+              "generated_answers": [
+                "Wait, is that correct? Actually, the angle at the",
+                "Step 3: Since AB is perpendicular to CD, and CD is a chord, then AB bisects CD at its midpoint, say M. So",
+                "So the measure of arc AD is arc AB minus arc BD = 180° - 100° =",
+                "In triangle BCD, since AB is diameter and CD is perpendicular to AB, and angle BCD = 50°, then angle CBD = 90° - 50° = 40°",
+                "should be fixed, so maybe angle CPA is constant regardless of P’s position? That seems"
+              ],
+              "answer_probabilities": [
+                0.006027199982382606,
+                0.006255032815125025,
+                0.0062579652410544315,
+                0.006538154892173193,
+                0.005750410599996251
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006148778044967568,
+              "generated_answers": [
+                "1. AB is the diameter, so angle ACB = 90° (angle in a semic",
+                "But wait — angle BCD is an angle formed by points B, C, D, so it's an inscribed angle",
+                "3. In triangle ABC, angle ABC = 90° - 50° = 40°, because the sum of angles in triangle ABC is 180°, and angle ACB = 90°. 4. Since AB is the diameter and CD is perpendicular to AB, point P lies on CD, and we need to find angle CPA. 5. Note that angle CPA is an angle formed by chords CP and AP intersecting at point P on the circle. 6. However, angle CPA is an inscribed angle that intercepts arc CA. 7. But I think I need to reconsider because angle CPA is not directly an inscribed angle subtending arc CA. 8. Let's use a different approach: since AB is the diameter and CD is perpendicular to AB, then the arc AD equals arc AC, and each is half of arc ACB, which is 90°, so each is 45°. 9. Wait, that doesn't seem right. Let's think about angles subtended by arcs. 10. Since angle BCD = 50°, and it is an inscribed angle, it subtends arc BD. 11. The measure",
+                "- Since AB",
+                "might be constant regardless of P’s position on CD"
+              ],
+              "answer_probabilities": [
+                0.006449565453546028,
+                0.005870295250315456,
+                0.0062426210177780285,
+                0.006078981700603765,
+                0.0061024268025945605
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 47,
+  "worker_rank": 2
+}

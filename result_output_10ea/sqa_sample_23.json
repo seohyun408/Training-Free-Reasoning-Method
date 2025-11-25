@@ -1,0 +1,217 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/sqa/train/12552/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich of these states is farthest north?\nContext: N/A\nOptions: (A) Rhode Island (B) Louisiana (C) Oklahoma (D) South Carolina",
+      "reasoning_text": "1. Rhode Island is located in the northeastern corner of the United States, near the Atlantic coast, and is clearly positioned higher on the map than the other three states.\n\n2. Oklahoma lies in the central part of the country, south of the Great Lakes region, and is visibly below Rhode Island in latitude.\n\n3. Louisiana is situated along the southern border of the U.S., directly south of Arkansas and east of Texas, placing it far south of Rhode Island.\n\n4. South Carolina is positioned along the southeastern coast, just north of Florida, and is significantly south of Rhode Island in terms of geographic latitude.\n\n5. Comparing all four, Rhode Island’s northernmost location on the map confirms it is the farthest north among the listed states.\n\n<final> (A) Rhode Island",
+      "raw_generation": [
+        "1. Rhode Island is located in the northeastern corner of the United States, near the Atlantic Ocean, and is positioned significantly higher on the map than the other listed states.  \n2. Louisiana lies in the southern part of the country, bordering the Gulf of Mexico, placing it much farther south than Rhode Island.  \n3. Oklahoma is situated in the central region of the U.S., north of Louisiana but south of Rhode Island, making it less northern than Rhode Island.  \n4. South Carolina is positioned along the southeastern coast, directly south of North Carolina, and is farther south than all other listed states except Louisiana.  \n5. Comparing all four states using the map’s north-south axis, Rhode Island clearly extends the farthest north due to its northeastern location relative to the others.  \n\n<final>(A) Rhode Island</final>",
+        "1. Rhode Island is located in the northeastern corner of the United States, near the Atlantic coast, and is clearly positioned higher on the map than the other three states.\n\n2. Oklahoma lies in the central part of the country, south of the Great Lakes region, and is visibly below Rhode Island in latitude.\n\n3. Louisiana is situated along the southern border of the U.S., directly south of Arkansas and east of Texas, placing it far south of Rhode Island.\n\n4. South Carolina is positioned along the southeastern coast, just north of Florida, and is significantly south of Rhode Island in terms of geographic latitude.\n\n5. Comparing all four, Rhode Island’s northernmost location on the map confirms it is the farthest north among the listed states.\n\n<final> (A) Rhode Island"
+      ],
+      "chunks": [
+        "1. Rhode Island is located in the northeastern corner of the United States, near the Atlantic coast, and is clearly positioned higher on the map than the other three states.",
+        "2. Oklahoma lies in the central part of the country, south of the Great Lakes region, and is visibly below Rhode Island in latitude.",
+        "3. Louisiana is situated along the southern border of the U.S., directly south of Arkansas and east of Texas, placing it far south of Rhode Island.",
+        "4. South Carolina is positioned along the southeastern coast, just north of Florida, and is significantly south of Rhode Island in terms of geographic latitude.",
+        "5. Comparing all four, Rhode Island’s northernmost location on the map confirms it is the farthest north among the listed states.",
+        "<final> (A) Rhode Island"
+      ],
+      "chunk_token_ranges": [
+        [
+          78,
+          112
+        ],
+        [
+          112,
+          140
+        ],
+        [
+          140,
+          171
+        ],
+        [
+          171,
+          200
+        ],
+        [
+          200,
+          228
+        ],
+        [
+          228,
+          236
+        ]
+      ],
+      "anchor_vector": [
+        15.850755272475372,
+        13.39459237244632,
+        16.53529295271449,
+        20.08607700892857,
+        17.515625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Among the four options, Rhode Island has the highest latitude, meaning it is farthest north.",
+        "negative_sentence": "Comparing the four states, Rhode Island has the highest average latitude, as it is the northernmost of these four states, bordering the Atlantic Ocean and situated at the very tip of New England.",
+        "positive_full": " \n\n5. Among the four options, Rhode Island has the highest latitude, meaning it is farthest north. 6. The other three states — Louisiana, Oklahoma, and South Carolina — are all located south of Rhode Island. 7. Therefore, the correct answer is (A) Rhode Island.\n\n(A) Rhode Island",
+        "negative_full": " 5. Comparing the four states, Rhode Island has the highest average latitude, as it is the northernmost of these four states, bordering the Atlantic Ocean and situated at the very tip of New England. 6. Therefore, based on geographic positioning and latitude, Rhode Island is the correct answer.\n\nFinal Answer: (A) Rhode Island",
+        "positive_probability": 0.006850750155625267,
+        "negative_probability": 0.005304550927401627,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n5. Among the four options, Rhode Island has the highest latitude, meaning it is farthest north. 6. The other three states — Louisiana, Oklahoma, and South Carolina — are all located south of Rhode Island. 7. Therefore, the correct answer is (A) Rhode Island.\n\n(A) Rhode Island",
+            "first_sentence": "Among the four options, Rhode Island has the highest latitude, meaning it is farthest north.",
+            "answer_probability": 0.006850750155625267,
+            "final_answer": "(A) Rhode Island"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n5. When comparing the northernmost points of all four states, Rhode Island has the highest latitude, meaning it is the farthest north. 6. The other three states—Louisiana, Oklahoma, and South Carolina—are all located farther south than Rhode Island. 7. Therefore, the state that is farthest north among the given options is Rhode Island.\n\nFinal Answer: (A) Rhode Island",
+            "first_sentence": "When comparing the northernmost points of all four states, Rhode Island has the highest latitude, meaning it is the farthest north.",
+            "answer_probability": 0.006754701457927539,
+            "final_answer": "(A) Rhode Island"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n5. To compare the northernmost position, we can consider their approximate latitudes: Rhode Island is around 41°N to 42°N, Louisiana is around 30°N, Oklahoma is around 35°N to 37°N, and South Carolina is around 32°N to 35°N. 6. Rhode Island’s latitude range is the highest among all four options, placing it clearly farther north than the others. 7. Therefore, based on geographic position and latitude, the correct answer is (A) Rhode Island.\n\nFinal Answer: (A)",
+            "first_sentence": "To compare the northernmost position, we can consider their approximate latitudes: Rhode Island is around 41°N to 42°N, Louisiana is around 30°N, Oklahoma is around 35°N to 37°N, and South Carolina is around 32°N to 35°N.",
+            "answer_probability": 0.006585762656859161,
+            "final_answer": "(A) Rhode Island"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": "5. To compare the four states more precisely, I'll consider their approximate latitudes. Rhode Island ranges from about 40°N to 42°N. Louisiana is roughly between 30°N and 33°N, Oklahoma from 35°N to 38°N, and South Carolina from 31°N to 35°N. 6. Since the northernmost latitude (closest to the 0° line) is 42°N, and Rhode Island reaches that, it is clearly the northernmost of the four options. 7. Therefore, based",
+            "first_sentence": "To compare the four states more precisely, I'll consider their approximate latitudes.",
+            "answer_probability": 0.005800482870980748,
+            "final_answer": "5. To compare the four states more precisely, I'll consider their approximate latitudes. Rhode Island ranges from about 40°N to 42°N. Louisiana is roughly between 30°N and 33°N, Oklahoma from 35°N to 38°N, and South Carolina from 31°N to 35°N. 6. Since the northernmost latitude (closest to the 0° line) is 42°N, and Rhode Island reaches that, it is clearly the northernmost of the four options. 7. Therefore, based"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 5. Comparing the four states, Rhode Island has the highest average latitude, as it is the northernmost of these four states, bordering the Atlantic Ocean and situated at the very tip of New England. 6. Therefore, based on geographic positioning and latitude, Rhode Island is the correct answer.\n\nFinal Answer: (A) Rhode Island",
+            "first_sentence": "Comparing the four states, Rhode Island has the highest average latitude, as it is the northernmost of these four states, bordering the Atlantic Ocean and situated at the very tip of New England.",
+            "answer_probability": 0.005304550927401627,
+            "final_answer": ""
+          }
+        ],
+        "correct_answer": "The answer is A.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005825745724341946,
+              "generated_answers": [
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island"
+              ],
+              "answer_probabilities": [
+                0.006561861825741807,
+                0.005216160413708989,
+                0.0058824500060542075,
+                0.006276992570384705,
+                0.005191263805820023
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005976235954055269,
+              "generated_answers": [
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island"
+              ],
+              "answer_probabilities": [
+                0.0057455216401137085,
+                0.006844858029045437,
+                0.006608107404568931,
+                0.004906229761842094,
+                0.005776462934706174
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0064832137461634225,
+              "generated_answers": [
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "",
+                "Based on the latitude data, Rhode Island is farthest north"
+              ],
+              "answer_probabilities": [
+                0.006968947237732027,
+                0.004720764388581646,
+                0.0071164272339511725,
+                0.0068703717519565735,
+                0.006739558118595696
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005430288277947967,
+              "generated_answers": [
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "",
+                "(A) Rhode Island",
+                "(A) Rhode Island"
+              ],
+              "answer_probabilities": [
+                0.006951427692217932,
+                0.0063050347205485715,
+                0.001,
+                0.005511222944213377,
+                0.007383756032759956
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006148590361309917,
+              "generated_answers": [
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "(A) Rhode Island",
+                "The correct option is (A) Rhode Island"
+              ],
+              "answer_probabilities": [
+                0.006052617852625007,
+                0.006610829694910979,
+                0.006403534902022722,
+                0.006010309309401638,
+                0.005665660047589235
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 23,
+  "worker_rank": 1
+}

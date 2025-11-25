@@ -1,0 +1,61 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/chartqa/train/png/two_col_5185.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat was the total health expenditure in the Netherlands in 2020? Answer the question using a single word or phrase.",
+      "reasoning_text": "14.5% of GDP\n\n<final>14.5%</final>",
+      "raw_generation": [
+        "14.5% of GDP\n\n1. The line graph displays the share of GDP for health expenditure in the Netherlands from 1998 to 2020.\n2. Each data point on the graph represents the percentage of GDP allocated to health expenditure for that year.\n3. The year 2020 is the final data point shown on the rightmost side of the graph.\n4. The value labeled above the 2020 data point is 14.5%.\n5. Since the y-axis is labeled \"Share of GDP,\" this percentage represents the proportion of the country's GDP spent on health in 2020.\n\n<final>14.5% of GDP</final>",
+        "14.5% of GDP\n\n<final>14.5%</final>"
+      ],
+      "chunks": [
+        "14.5% of GDP\n\n<final>14.5%</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          60,
+          78
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIn what year was it compulsory to pay a total mandatory excess before the basic health insurance reimburses medical costs? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>1998</final>",
+      "raw_generation": [
+        "<reasoning>\n1. The image is a line graph showing the “Share of GDP” over time from 1998 to 2020, with data points labeled for each year.\n2. The graph does not contain any information about health insurance policies, mandatory excesses, or reimbursement rules.\n3. The y-axis represents a percentage of GDP, while the x-axis represents years, indicating this is purely an economic data visualization.\n4. The graph lacks any textual or graphical elements related to healthcare legislation, insurance rules, or financial thresholds for medical costs.\n5. Since the chart is unrelated to the question about mandatory excesses in health insurance, the information required to answer the question is not present in the image.\n</reasoning>\n\n<final>Not answerable from the image</final>",
+        "<final>1998</final>"
+      ],
+      "chunks": [
+        "<final>1998</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          72,
+          82
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 21,
+  "worker_rank": 1
+}

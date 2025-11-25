@@ -1,0 +1,217 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/textvqa/train_images/60102ac9213d430a.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nProvide a one-sentence caption for the provided image.\nReference OCR token: LEFUTPRESSION, DRAUGHTKEG, RAUGHT, S0, Heineken, HOTCany, HOTCanISAUCE, 9O78, GUIAT, CERVEZA, BARRIL",
+      "reasoning_text": "<1> A Heineken 5L draught keg stands beside a bottle of Sriracha hot sauce inside an empty refrigerator, both chilled and ready for use.  \n<2> The keg’s green lid and silver body contrast with the red sauce bottle, which has a green cap and visible Asian characters.  \n<3> The Heineken label clearly shows “CERVEZA DE BARRIL” and a red star, indicating its brand and origin as a draft beer.  \n<4> The Sriracha bottle’s label reads “HOT CHILI SAUCE” and includes a rooster graphic, suggesting its spicy flavor profile.  \n<5> Both items are placed on the refrigerator’s white shelf, with the keg’s condensation hinting at its cool temperature.  \n<final> A chilled Heineken draught keg and Sriracha hot sauce bottle sit side by side on a refrigerator shelf, ready for a flavorful pairing.",
+      "raw_generation": [
+        "1. A Heineken 5-liter draught keg sits beside a bottle of Sriracha hot sauce inside an empty refrigerator.  \n2. The keg features a green and silver label with the brand's iconic red star and \"CERVEZA DE BARRIL\" text.  \n3. The Sriracha bottle, with its green cap and red sauce, shows visible condensation from refrigeration.  \n4. The refrigerator’s white interior includes wire shelves and molded plastic handles for storage.  \n5. Both items are positioned on the bottom shelf, suggesting preparation for a chilled beverage or meal.  \n\n<final>A Heineken draught keg and a bottle of Sriracha hot sauce rest side by side on a refrigerator shelf, ready for a refreshing drink or spicy meal.</final>",
+        "<1> A Heineken 5L draught keg stands beside a bottle of Sriracha hot sauce inside an empty refrigerator, both chilled and ready for use.  \n<2> The keg’s green lid and silver body contrast with the red sauce bottle, which has a green cap and visible Asian characters.  \n<3> The Heineken label clearly shows “CERVEZA DE BARRIL” and a red star, indicating its brand and origin as a draft beer.  \n<4> The Sriracha bottle’s label reads “HOT CHILI SAUCE” and includes a rooster graphic, suggesting its spicy flavor profile.  \n<5> Both items are placed on the refrigerator’s white shelf, with the keg’s condensation hinting at its cool temperature.  \n<final> A chilled Heineken draught keg and Sriracha hot sauce bottle sit side by side on a refrigerator shelf, ready for a flavorful pairing."
+      ],
+      "chunks": [
+        "<1> A Heineken 5L draught keg stands beside a bottle of Sriracha hot sauce inside an empty refrigerator, both chilled and ready for use.",
+        "<2> The keg’s green lid and silver body contrast with the red sauce bottle, which has a green cap and visible Asian characters.",
+        "<3> The Heineken label clearly shows “CERVEZA DE BARRIL” and a red star, indicating its brand and origin as a draft beer.",
+        "<4> The Sriracha bottle’s label reads “HOT CHILI SAUCE” and includes a rooster graphic, suggesting its spicy flavor profile.",
+        "<5> Both items are placed on the refrigerator’s white shelf, with the keg’s condensation hinting at its cool temperature.",
+        "<final> A chilled Heineken draught keg and Sriracha hot sauce bottle sit side by side on a refrigerator shelf, ready for a flavorful pairing."
+      ],
+      "chunk_token_ranges": [
+        [
+          132,
+          168
+        ],
+        [
+          169,
+          198
+        ],
+        [
+          199,
+          233
+        ],
+        [
+          234,
+          266
+        ],
+        [
+          267,
+          295
+        ],
+        [
+          296,
+          330
+        ]
+      ],
+      "anchor_vector": [
+        10.851622343104806,
+        12.874483445111444,
+        11.717057086506477,
+        16.369246282497375,
+        11.723920036764707,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Final Answer: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a spicy beer pairing.",
+        "negative_sentence": "<5> The image depicts a lighthearted, culinary preparation scene, where a person has stocked their fridge with refreshments for a gathering.",
+        "positive_full": " \n\nFinal Answer: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a spicy beer pairing.",
+        "negative_full": " <5> The image depicts a lighthearted, culinary preparation scene, where a person has stocked their fridge with refreshments for a gathering. <6> The juxtaposition of a beer keg and hot sauce suggests a preference for bold, contrasting flavors — perhaps for a party or a meal requiring a spicy kick. <7> The presence of the “LEFUTPRESSION” and other fragmented OCR tokens hints that the image might have been captured with an imperfect OCR system or edited post-capture to add humorous or surreal context.\n\nWait, but the OCR tokens like “LEFUTPRESSION”, “DRAUGHTKEG",
+        "positive_probability": 0.007194215627599309,
+        "negative_probability": 0.003906836164468396,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " \n\nFinal Answer: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a spicy beer pairing.",
+            "first_sentence": "Final Answer: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a spicy beer pairing.",
+            "answer_probability": 0.007194215627599309,
+            "final_answer": "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a spicy beer pairing"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " <5> The image juxtaposes a refreshing, chilled alcoholic beverage with a fiery, spicy condiment, creating a visually striking contrast that hints at a playful or adventurous pairing. <6> The refrigerator’s empty shelves emphasize the focus on these two items, implying they are the stars of this culinary scene.\n\nFinal sentence: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce are prominently displayed side by side in an empty fridge, inviting a bold culinary adventure.\n\nThe final answer is: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce",
+            "first_sentence": "<5> The image juxtaposes a refreshing, chilled alcoholic beverage with a fiery, spicy condiment, creating a visually striking contrast that hints at a playful or adventurous pairing.",
+            "answer_probability": 0.006201228464015316,
+            "final_answer": "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " <5> The phrase \"LEFUTPRESSION\" on the keg is a misread or misspelled OCR token and likely should be \"REFRIGERATION\" or \"REFRIGERATOR,\" suggesting the items are stored in a cold environment.\n\nFinal Answer: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side inside a refrigerator, ready for a spicy beer pairing.\n\nYou are a helpful assistant.",
+            "first_sentence": "<5> The phrase \"LEFUTPRESSION\" on the keg is a misread or misspelled OCR token and likely should be \"REFRIGERATION\" or \"REFRIGERATOR,\" suggesting the items are stored in a cold environment.",
+            "answer_probability": 0.0055751338789317715,
+            "final_answer": "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side inside a refrigerator, ready for a spicy beer pairing"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " <5> Both products are positioned inside the refrigerator, indicating they are intended for immediate use and enjoyment, possibly for a social gathering or party. <6> The scene conveys a sense of refreshment and fun, with the cold beer and spicy sauce suggesting a dynamic pairing for food and drink.\n\nFinal answer: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a refreshing and spicy pairing.",
+            "first_sentence": "<5> Both products are positioned inside the refrigerator, indicating they are intended for immediate use and enjoyment, possibly for a social gathering or party.",
+            "answer_probability": 0.0052358375017864936,
+            "final_answer": "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a refreshing and spicy pairing"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " <5> The image depicts a lighthearted, culinary preparation scene, where a person has stocked their fridge with refreshments for a gathering. <6> The juxtaposition of a beer keg and hot sauce suggests a preference for bold, contrasting flavors — perhaps for a party or a meal requiring a spicy kick. <7> The presence of the “LEFUTPRESSION” and other fragmented OCR tokens hints that the image might have been captured with an imperfect OCR system or edited post-capture to add humorous or surreal context.\n\nWait, but the OCR tokens like “LEFUTPRESSION”, “DRAUGHTKEG",
+            "first_sentence": "<5> The image depicts a lighthearted, culinary preparation scene, where a person has stocked their fridge with refreshments for a gathering.",
+            "answer_probability": 0.003906836164468396,
+            "final_answer": "Wait, but the OCR tokens like “LEFUTPRESSION”, “DRAUGHTKEG"
+          }
+        ],
+        "correct_answer": "A keg of Heineken in a fridge next to a sauce bottle.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005712791173708141,
+              "generated_answers": [
+                "Here is the one-sentence caption: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in a refrigerator, ready for a bold, flavorful pairing",
+                "The final, one-sentence caption should be: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side",
+                "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in a refrigerator, ready to fuel a spicy, social drinking experience",
+                "2.  **Describes the Setting/State",
+                "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a refreshing and spicy pairing"
+              ],
+              "answer_probabilities": [
+                0.005366601363919242,
+                0.005639690821244268,
+                0.005197409321346101,
+                0.006118284516939503,
+                0.006241969845091586
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0053119160581412235,
+              "generated_answers": [
+                "A chilled Heineken draught keg and a bottle of Sriracha hot sauce sit side-by-side in an empty refrigerator, ready for a spicy, refreshing party experience",
+                "Final one-sentence caption: A chilled Heineken draught keg and a bottle of Sriracha hot sauce sit side-by-side in a refrigerator, ready to be paired for a spicy and refreshing meal or gathering",
+                "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit ready for a party, embodying the popular pairing of beer and spicy condiments",
+                "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready for a casual gathering",
+                "A chilled Heineken draught keg and a bottle of Sriracha hot sauce sit side by side in an empty refrigerator, ready to fuel a casual gathering with beer and spicy flavor"
+              ],
+              "answer_probabilities": [
+                0.005111536683564778,
+                0.005850437677207686,
+                0.005050971995406661,
+                0.005831060824674929,
+                0.004715573109852065
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005862556253694973,
+              "generated_answers": [
+                "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side-by-side inside an empty refrigerator, ready for a spicy beer pairing, despite some OCR tokens like “LEFUTPRESSION” and “RAUGHT” appearing misread or distorted",
+                "A chilled Heineken draught keg and a bottle of Sriracha hot sauce sit side-by-side in a refrigerator, ready for pairing",
+                "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side-by-side in an empty refrigerator, ready for a spicy and refreshing pairing",
+                "A chilled Heineken draught keg and a bottle of Sriracha hot sauce sit side-by-side in a refrigerator, ready for an unusual pairing",
+                "A chilled Heineken draught keg and a bottle of Sriracha hot sauce sit ready for a bold, spicy pairing in a fridge, despite some OCR"
+              ],
+              "answer_probabilities": [
+                0.005815979902993459,
+                0.006470122629883777,
+                0.00592722175694126,
+                0.005613396575400241,
+                0.005486060403256126
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005995168444999806,
+              "generated_answers": [
+                "<5> The combination of a beer keg and a hot sauce bottle creates a classic pairing for a bold, spicy, and refreshing meal, often enjoyed together. <6> The “LEFUTPRESSION” and “DRAUGHTKEG” OCR tokens suggest the keg is meant for draft beer, while “RAUGHT” and “S0” are likely misspellings of “DRAUGHT” and “5L”. <7> The “HOTCany” and “HOTCanISAUCE” OCR tokens likely refer to the hot sauce product, with “CANY” possibly being a misread of “CHILI”. <8> The “GUIAT” token might be a misreading of “GUIDE” or “GUITAR”, which doesn’t fit, so perhaps it’s “CERVEZA” or “BARRIL” as seen on the beer label. <9> The “9O78” token is likely “9078”, possibly a date or serial number, which doesn't add context. <10> Since the image features a Heineken draught keg and a bottle of Sriracha hot sauce, and the OCR tokens confirm the products, the final caption should describe this",
+                "<5> The OCR token “LEFUTPRESSION” is likely a misread of “REFRIGERATION” and “DRAUGHTKEG” confirms the keg's purpose. <6> The token “RAUGHT” is probably “DRAUGHT” or “DRAUGHT BEER,” and “S0” likely refers to “5.0L” or “5L,” the keg’s volume. <7> The token “HOTCany” is a misreading of “HOT CAN” or “HOT CHILI SAUCE,” and “HOTCanISAUCE” is a misspelling of “HOT CAN IS A SAUCE,” confirming the sauce’s identity. <8> The token “9O78” might be “9.078L” or “9.078 LITERS,” though this is inconsistent with the “5L” label, possibly indicating a different keg or a misread. <9> The token “GUIAT” likely refers to “GUIDE” or “GUIDE TO,” which could be part of a larger label or instruction, but is unclear in context. <10> The token “CERVEZA” confirms the ke",
+                "<5> The refrigerator’s interior is empty except for these two items, emphasizing their readiness for a casual or social gathering, with the beer and hot sauce as the central focus. <6> The OCR tokens “LEFUTPRESSION,” “DRAUGHTKEG,” “RAUGHT,” “S0,” “Heineken,” “HOTCany,” “HOTCanISAUCE,” “9O78,” “GUIAT,” “CERVEZA,” and “BARRIL” all align with the visible content: “DRAUGHTKEG” and “Heineken” describe the keg; “HOTCany” and “HOTCanISAUCE” are likely OCR misreads of “HOT CHILI SAUCE”; “CERVEZA” and “BARRIL” confirm the keg’s identity as a beer barrel; “GUIAT” is likely a misread of “GUIDE” or “GUITAR”; “LEFUTPRESSION” is likely a misread of “LE FUTU PRESSION” or “LE FUTU PRESSION,” which doesn’t make sense; “S0” is a misread of “SO” or “0”; “9O7",
+                "A chilled Heineken",
+                "Final one-sentence caption: A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side-by-side in a refrigerator, ready to"
+              ],
+              "answer_probabilities": [
+                0.005628853806160763,
+                0.006465809933113215,
+                0.006719768657701056,
+                0.005731076286862659,
+                0.005430333541161332
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0059009397453402635,
+              "generated_answers": [
+                "<5> The OCR tokens “LEFUTPRESSION”, “DRAUGHTKEG”, “RAUGHT”, “S0”, “Heineken”, “HOTCany”, “HOTCanISAUCE”, “9O78”, “GUIAT”, “CERVEZA”, “BARRIL” suggest that the image contains a Heineken draft keg and a bottle of hot sauce. <6> The text “HOTCany” and “HOTCanISAUCE” likely refer to the hot sauce bottle, while “CERVEZA”, “BARRIL”, and “DRAUGHTKEG” relate to the beer keg. <7> The phrase “S0” might be a misread OCR of “50”, possibly indicating a 5-liter size for the keg, and “9O78” could be a misread of “9078”, which might represent a date or product code. <8> The word “GUIAT” is likely a misread of “GUIA” (guide) or “GUIA” (a Spanish word meaning guide), but it doesn’t seem directly relevant to the objects in the image. <9> Therefore, the image shows a Heine",
+                "The keg is clearly marked as Heineken, which is a well-known beer brand. The Sriracha bottle is identifiable by its iconic red color and the word \"Sriracha\" on the label. The refrigerator appears to be empty, with only these two items inside. The image is taken from an angle that shows both items clearly, with the keg on the left and the bottle on the right. The OCR tokens provided include \"LEFUTPRESSION, DRAUGHTKEG, RAUGHT, S0, Heineken, HOTCany, HOTCanISAUCE, 9O78, GUIAT, CERVEZA, BARRIL\" - which can be interpreted as \"DRAUGHT KEG\", \"Heineken\", \"HOT CAN IS A SAUCE\" (likely \"HOT CHILI SAUCE\"), and \"CERVEZA BARRIL\" (draft beer). The \"9O78\" could be a typo for \"9078\" or \"2078\", but it doesn't seem to relate directly to the image. \"GUIAT\" might be a misread or typo for \"GUIA\" (guide), which doesn't seem relevant. The \"S0\" might",
+                "A chilled Heineken 5L draught keg and a bottle of Sriracha hot sauce sit side by side inside an empty refrigerator, ready for a spicy and refreshing pairing",
+                "Final reasoning: <10> The image shows a Heineken 5L draught keg and a bottle of Sriracha hot sauce, positioned together in a refrigerator",
+                "A chilled Heineken draught keg and a bottle of Sriracha hot sauce sit side-by-side in a refrigerator, ready for a bold, spicy beer pairing"
+              ],
+              "answer_probabilities": [
+                0.006826744322695259,
+                0.006108814927124176,
+                0.00484134946016063,
+                0.005936496875961418,
+                0.005791293140759834
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 596,
+  "worker_rank": 6
+}

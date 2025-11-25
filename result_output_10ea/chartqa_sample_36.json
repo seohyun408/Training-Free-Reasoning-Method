@@ -1,0 +1,243 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/chartqa/train/png/two_col_2318.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat country had the second most scanners? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The bar chart lists countries ranked by CT scanners per million population.\n2. Japan is at the top with 111.49 scanners per million, indicating the highest count.\n3. The country directly below Japan, Australia, has 70.25 scanners per million, making it the second highest.\n4. No other country in the chart has a value closer to or exceeding Australia’s 70.25.\n5. Therefore, Australia is the country with the second most scanners per million population.\n\n<final>Australia</final>",
+      "raw_generation": [
+        "1. The bar chart displays countries ranked by the number of CT scanners per million population.\n2. Japan leads with 111.49 scanners per million, indicating the highest density.\n3. The second bar corresponds to Australia, which has 70.25 scanners per million.\n4. All other countries listed have lower values, confirming Australia's position as second.\n5. The chart’s descending order ensures Australia is correctly identified as the second-highest.\n\n<final>Australia</final>",
+        "1. The bar chart lists countries ranked by CT scanners per million population.\n2. Japan is at the top with 111.49 scanners per million, indicating the highest count.\n3. The country directly below Japan, Australia, has 70.25 scanners per million, making it the second highest.\n4. No other country in the chart has a value closer to or exceeding Australia’s 70.25.\n5. Therefore, Australia is the country with the second most scanners per million population.\n\n<final>Australia</final>"
+      ],
+      "chunks": [
+        "1. The bar chart lists countries ranked by CT scanners per million population.",
+        "2. Japan is at the top with 111.49 scanners per million, indicating the highest count.",
+        "3. The country directly below Japan, Australia, has 70.25 scanners per million, making it the second highest.",
+        "4. No other country in the chart has a value closer to or exceeding Australia’s 70.25.",
+        "5. Therefore, Australia is the country with the second most scanners per million population.",
+        "<final>Australia</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          59
+        ],
+        [
+          59,
+          83
+        ],
+        [
+          83,
+          110
+        ],
+        [
+          110,
+          134
+        ],
+        [
+          134,
+          151
+        ],
+        [
+          151,
+          158
+        ]
+      ],
+      "anchor_vector": [
+        14.21991260479886,
+        16.11688021562792,
+        13.367206648284315,
+        12.077575170693276,
+        15.419642857142858,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The country ranked second is South Korea with 73.54 scanners per million.",
+        "negative_sentence": "The country ranked second in this list is Switzerland, with 91.78 scanners per million.",
+        "positive_full": " \n3. The country ranked second is South Korea with 73.54 scanners per million. This is the second highest value on the chart. 4. Therefore, South Korea had the second most scanners per million population.\n\nSouth Korea",
+        "negative_full": " \n3. The country ranked second in this list is Switzerland, with 91.78 scanners per million.\n\nFinal Answer: Switzerland",
+        "positive_probability": 0.005684125357233683,
+        "negative_probability": 0.004743498332161511,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": " \n3. The country ranked second is South Korea with 73.54 scanners per million. This is the second highest value on the chart. 4. Therefore, South Korea had the second most scanners per million population.\n\nSouth Korea",
+            "first_sentence": "The country ranked second is South Korea with 73.54 scanners per million.",
+            "answer_probability": 0.005684125357233683,
+            "final_answer": "South Korea"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " 3. The next country on the list is South Korea, which has 77.22 scanners per million, making it the country with the second highest number.\n\nThe country with the second most scanners is South Korea.",
+            "first_sentence": "The next country on the list is South Korea, which has 77.22 scanners per million, making it the country with the second highest number.",
+            "answer_probability": 0.005556502586129866,
+            "final_answer": "The country with the second most scanners is South Korea"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 3. The next country on the list, ranked second, is Germany with 89.36 scanners per million.\n\nI need to answer the question: \"Which country had the second most scanners?\" 4. Since Japan is first with 111.49, and Germany is second with 89.36, Germany had the second most scanners per million.\n\nThe question asks for the country with the second most scanners. It does not specify per million or total. However, the data given is per million, and the chart is ranked by this metric. The question is likely referring to this metric, as",
+            "first_sentence": "The next country on the list, ranked second, is Germany with 89.36 scanners per million.",
+            "answer_probability": 0.0055279147816457395,
+            "final_answer": "the question: \"Which country had the second most scanners?\" 4. Since Japan is first with 111.49, and Germany is second with 89.36, Germany had the second most scanners per million"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " 3. The next country down the list, which would be the second most, is the United States with 74.94 scanners per million.\n\nWhat is the final answer?\n\nUnited States",
+            "first_sentence": "The next country down the list, which would be the second most, is the United States with 74.94 scanners per million.",
+            "answer_probability": 0.004991987555834995,
+            "final_answer": ""
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n3. The country ranked second in this list is Switzerland, with 91.78 scanners per million.\n\nFinal Answer: Switzerland",
+            "first_sentence": "The country ranked second in this list is Switzerland, with 91.78 scanners per million.",
+            "answer_probability": 0.004743498332161511,
+            "final_answer": "Switzerland"
+          }
+        ],
+        "correct_answer": "Australia",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004773737110468179,
+              "generated_answers": [
+                "South Korea",
+                "The United States",
+                "Germany",
+                "South Korea",
+                "South Korea"
+              ],
+              "answer_probabilities": [
+                0.004812288444311475,
+                0.0053470287826104124,
+                0.004336807516402219,
+                0.005007888686242134,
+                0.004364672122774653
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005051262515589495,
+              "generated_answers": [
+                "South Korea",
+                "Netherlands",
+                "- Israel: 4",
+                "Germany",
+                "South Korea"
+              ],
+              "answer_probabilities": [
+                0.00518956017328112,
+                0.0051435645504645635,
+                0.004776227092245114,
+                0.005281517042106133,
+                0.00486544371985054
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005359840186924795,
+              "generated_answers": [
+                "Switzerland",
+                "South Korea",
+                "United States",
+                "Korea",
+                "South Korea"
+              ],
+              "answer_probabilities": [
+                0.005030894540516659,
+                0.005840340912822093,
+                0.0050474955022950406,
+                0.005160448400892117,
+                0.005720021578098069
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004757803712363687,
+              "generated_answers": [
+                "United States",
+                "South Korea",
+                "South Korea",
+                "Switzerland",
+                "South Korea"
+              ],
+              "answer_probabilities": [
+                0.004720874584468372,
+                0.00452110125999365,
+                0.0048412497089471325,
+                0.004534917112268328,
+                0.005170875896140953
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004675061569685014,
+              "generated_answers": [
+                "United States",
+                "South Korea",
+                "South Korea",
+                "",
+                "South Korea"
+              ],
+              "answer_probabilities": [
+                0.005159091986542551,
+                0.004249441920901506,
+                0.0051644182328991275,
+                0.004151678944934102,
+                0.004650676763147782
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nHow many CT scanners did Japan have per million people in 2019? Answer the question using a single word or phrase.",
+      "reasoning_text": "111.49\n\n<final>111.49</final>",
+      "raw_generation": [
+        "111.49",
+        "111.49\n\n<final>111.49</final>"
+      ],
+      "chunks": [
+        "111.49\n\n<final>111.49</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          81
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    }
+  ],
+  "example_idx": 36,
+  "worker_rank": 2
+}

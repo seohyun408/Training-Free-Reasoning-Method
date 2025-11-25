@@ -1,0 +1,217 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/coco/train2017/000000501995.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhere is the food made? \nA. at home \nB. on beach \nC. in truck \nD. in restaurant",
+      "reasoning_text": "1. The image shows a food truck with a visible kitchen area inside the service window, where a person is preparing food using cooking equipment.  \n2. The truck’s exterior displays “MILK TRUCK” and “MAC & CHEESE • FRESH LEAF TEA,” indicating it is a mobile food vendor.  \n3. The menu board is mounted on the side of the truck, confirming that all food preparation and service occur within this vehicle.  \n4. The truck’s design includes a large serving window and interior cooking space, typical of mobile food trucks rather than home kitchens or restaurants.  \n5. The address listed on the truck (“92 READE STREET FLOOR 5, NY, NY 10003”) suggests it operates from a fixed location but still functions as a truck-based business.  \n\n<final>C. in truck</final>",
+      "raw_generation": [
+        "1. The image shows a food truck with a visible kitchen area inside the service window where food is being prepared.  \n2. A worker is actively cooking inside the truck, with pots, pans, and other cooking equipment clearly visible.  \n3. The truck’s exterior has “MILK TRUCK” written on it, indicating it’s a mobile food service vehicle.  \n4. The menu board and customer ordering area are located on the side of the truck, reinforcing its mobile nature.  \n5. The presence of a kitchen setup inside the truck confirms that food is prepared directly in the vehicle, not in a fixed location like a home or restaurant.  \n\n<final>C. in truck</final>",
+        "1. The image shows a food truck with a visible kitchen area inside the service window, where a person is preparing food using cooking equipment.  \n2. The truck’s exterior displays “MILK TRUCK” and “MAC & CHEESE • FRESH LEAF TEA,” indicating it is a mobile food vendor.  \n3. The menu board is mounted on the side of the truck, confirming that all food preparation and service occur within this vehicle.  \n4. The truck’s design includes a large serving window and interior cooking space, typical of mobile food trucks rather than home kitchens or restaurants.  \n5. The address listed on the truck (“92 READE STREET FLOOR 5, NY, NY 10003”) suggests it operates from a fixed location but still functions as a truck-based business.  \n\n<final>C. in truck</final>"
+      ],
+      "chunks": [
+        "1. The image shows a food truck with a visible kitchen area inside the service window, where a person is preparing food using cooking equipment.",
+        "2. The truck’s exterior displays “MILK TRUCK” and “MAC & CHEESE • FRESH LEAF TEA,” indicating it is a mobile food vendor.",
+        "3. The menu board is mounted on the side of the truck, confirming that all food preparation and service occur within this vehicle.",
+        "4. The truck’s design includes a large serving window and interior cooking space, typical of mobile food trucks rather than home kitchens or restaurants.",
+        "5. The address listed on the truck (“92 READE STREET FLOOR 5, NY, NY 10003”) suggests it operates from a fixed location but still functions as a truck-based business.",
+        "<final>C. in truck</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          90
+        ],
+        [
+          91,
+          128
+        ],
+        [
+          129,
+          155
+        ],
+        [
+          156,
+          184
+        ],
+        [
+          185,
+          230
+        ],
+        [
+          231,
+          240
+        ]
+      ],
+      "anchor_vector": [
+        19.18734106616919,
+        13.457823410313646,
+        16.0006427744709,
+        18.24607204861111,
+        18.447916666666668,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "A food truck is a mobile kitchen that travels to different locations to sell food.",
+        "negative_sentence": "Food trucks are mobile kitchens that prepare and serve food directly from the vehicle.",
+        "positive_full": " \n\n2. A food truck is a mobile kitchen that travels to different locations to sell food. The food is prepared inside the truck, which contains the necessary equipment for cooking and serving. \n\nNext step: \n\n3. Since the food is prepared inside the food truck, and the truck is currently parked on the beach, the food is being made at the location where the truck is parked, which is the beach. \n\nFinal step: \n\n4. However, the question asks \"Where is the food made?\" and the most accurate answer is the location where the cooking actually takes place — inside the truck. But since the truck is on the",
+        "negative_full": " \n\n2. Food trucks are mobile kitchens that prepare and serve food directly from the vehicle. They are designed to cook and serve meals on the go, often at events, street corners, or designated locations. The key point here is that the food is prepared *within the truck itself*.\n\n3. Although the truck might be parked near a restaurant or in a public area, the actual preparation of the food happens inside the truck. This is different from home cooking, beach eating, or dining at a restaurant, where the food is typically prepared elsewhere (e.g., in someone’s kitchen or in a commercial kitchen off-site).\n\n4. Looking",
+        "positive_probability": 0.0061917366973573045,
+        "negative_probability": 0.005464670902184828,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n2. A food truck is a mobile kitchen that travels to different locations to sell food. The food is prepared inside the truck, which contains the necessary equipment for cooking and serving. \n\nNext step: \n\n3. Since the food is prepared inside the food truck, and the truck is currently parked on the beach, the food is being made at the location where the truck is parked, which is the beach. \n\nFinal step: \n\n4. However, the question asks \"Where is the food made?\" and the most accurate answer is the location where the cooking actually takes place — inside the truck. But since the truck is on the",
+            "first_sentence": "A food truck is a mobile kitchen that travels to different locations to sell food.",
+            "answer_probability": 0.0061917366973573045,
+            "final_answer": "is the location where the cooking actually takes place — inside the truck. But since the truck is on the"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n2. A food truck is a mobile kitchen, which means it's designed to prepare and serve food while on the go. The food is cooked and assembled inside the truck’s interior kitchen, not at home, on a beach, or in a fixed restaurant location.\n\nTherefore, the correct answer is:\nC. in truck",
+            "first_sentence": "A food truck is a mobile kitchen, which means it's designed to prepare and serve food while on the go.",
+            "answer_probability": 0.005961477480375526,
+            "final_answer": "C. in truck"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n2. Since the food is being prepared inside the food truck with cooking equipment, this indicates that the preparation is happening within the vehicle itself. \n3. The truck is a mobile unit designed for preparing and serving food, which means it is not being prepared at home (A) or on a beach (B), as those locations are not equipped for food preparation. \n4. While the food truck is a type of truck, the question asks where the food is made, and “in truck” (C) is a more precise answer than “in restaurant” (D), since the food is not being made in a traditional fixed",
+            "first_sentence": "Since the food is being prepared inside the food truck with cooking equipment, this indicates that the preparation is happening within the vehicle itself.",
+            "answer_probability": 0.005744203497423095,
+            "final_answer": "than “in restaurant” (D), since the food is not being made in a traditional fixed"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n2. The food truck is a mobile kitchen that serves food to customers on the go. While the food is prepared in a designated cooking area, the truck itself is not a permanent or stationary location. Therefore, the food is not made “at home,” “on the beach,” or “in a restaurant” in the traditional sense.\n\n3. The food is made inside the truck, which is specifically designed and equipped to function as a kitchen on wheels. The cooking area is clearly visible, and the person preparing the food is using standard kitchen tools and appliances.\n\n4. Among the given options, “in truck” is the most accurate",
+            "first_sentence": "The food truck is a mobile kitchen that serves food to customers on the go.",
+            "answer_probability": 0.005596151846715568,
+            "final_answer": "4. Among the given options, “in truck” is the most accurate"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n2. Food trucks are mobile kitchens that prepare and serve food directly from the vehicle. They are designed to cook and serve meals on the go, often at events, street corners, or designated locations. The key point here is that the food is prepared *within the truck itself*.\n\n3. Although the truck might be parked near a restaurant or in a public area, the actual preparation of the food happens inside the truck. This is different from home cooking, beach eating, or dining at a restaurant, where the food is typically prepared elsewhere (e.g., in someone’s kitchen or in a commercial kitchen off-site).\n\n4. Looking",
+            "first_sentence": "Food trucks are mobile kitchens that prepare and serve food directly from the vehicle.",
+            "answer_probability": 0.005464670902184828,
+            "final_answer": "4. Looking"
+          }
+        ],
+        "correct_answer": "C.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006027095875324941,
+              "generated_answers": [
+                "C. in truck",
+                "C. in truck",
+                "C. in truck",
+                "C. in truck",
+                "C. in truck"
+              ],
+              "answer_probabilities": [
+                0.005927267301768033,
+                0.005808475594576467,
+                0.0057774851521193125,
+                0.006299618715880517,
+                0.006322632612280374
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005509393437535889,
+              "generated_answers": [
+                "is that the food is made in the truck",
+                "based on the visual evidence",
+                "C. in truck",
+                "C. in truck",
+                "C. in truck"
+              ],
+              "answer_probabilities": [
+                0.005434512026205448,
+                0.004474855929197529,
+                0.005589439528731099,
+                0.005492098593686227,
+                0.006556061109859144
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005777039231480904,
+              "generated_answers": [
+                "C. in truck",
+                "C. in truck",
+                "based on the visual context provided is C. in truck",
+                "C. in truck, as the food is prepared and cooked inside the food truck",
+                "is that the food is made in the truck"
+              ],
+              "answer_probabilities": [
+                0.005514723358788934,
+                0.0064328304651592285,
+                0.00553033177746733,
+                0.00533769135835548,
+                0.006069619197633549
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0047630767575515065,
+              "generated_answers": [
+                "",
+                "is C. in truck, because the food truck is a type of mobile kitchen that prepares food directly from the truck, even though it’s not a traditional restaurant",
+                "C. in truck, as this is where the food is actively made, based on the visual evidence",
+                "C. in truck",
+                "C. in truck"
+              ],
+              "answer_probabilities": [
+                0.001,
+                0.005741414711696451,
+                0.0059926545132105505,
+                0.004888713465946612,
+                0.006192601096903917
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.12714468309380905,
+              "generated_answers": [
+                "C. in truck",
+                "C. in truck",
+                "",
+                "C. in truck",
+                "Based on the evidence, the food is made in the truck"
+              ],
+              "answer_probabilities": [
+                0.0061011581819258335,
+                0.006382975958549894,
+                0.612584849814959,
+                0.0055201052017697,
+                0.0051343263118407145
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 38,
+  "worker_rank": 2
+}

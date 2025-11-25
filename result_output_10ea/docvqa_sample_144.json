@@ -1,0 +1,243 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/docvqa/train/documents/yqlg0023_2.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the billing amount of SALEM SLIDE BOX B1G1F? Answer the question using a single word or phrase.",
+      "reasoning_text": "4,712.40",
+      "raw_generation": [
+        "4,712.40",
+        "4,712.40"
+      ],
+      "chunks": [
+        "4,712.40"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          70
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the billing amount of SALEM SLIDE BOX B1G1F?",
+      "reasoning_text": "1. The invoice lists two items under the \"ITEM NAME\" column, with \"SALEM SLIDE BOX B1G1F\" being the first item listed with item number 17526.\n2. The \"BILLING AMOUNT\" column directly to the right of the item name shows the value 4,712.40 for the first item.\n3. The second item, \"SALEM LT SLIDE BOX B1G1F,\" has a different billing amount of 1,570.80, indicating it is a separate line item.\n4. The \"LESS CREDIT FOR FREE PRODUCT\" and other deductions are applied after the gross billing amounts, confirming 4,712.40 is the original billing amount for the first item.\n5. The invoice amount after all deductions totals 1,895.48, which is calculated from the gross amounts minus discounts and taxes, validating 4,712.40 as the correct billing amount for SALEM SLIDE BOX B1G1F.\n\n<final>4,712.40</final>",
+      "raw_generation": [
+        "1. The invoice lists two items under the \"ITEM NAME\" column, with \"SALEM SLIDE BOX B1G1F\" being the first item.\n2. The \"BILLING AMOUNT\" column corresponds to each item's total value after all adjustments.\n3. The first item, \"SALEM SLIDE BOX B1G1F,\" has a quantity of 72,000 units and a unit price of $392.7000.\n4. The \"BILLING AMOUNT\" for this item is listed as $4,712.40, which matches the calculated total from multiplying the quantity by the unit price.\n5. The second item, \"SALEM LT SLIDE BOX B1G1F,\" has a different billing amount, indicating they are separate line items with distinct pricing.\n\n<final>4,712.40</final>",
+        "1. The invoice lists two items under the \"ITEM NAME\" column, with \"SALEM SLIDE BOX B1G1F\" being the first item listed with item number 17526.\n2. The \"BILLING AMOUNT\" column directly to the right of the item name shows the value 4,712.40 for the first item.\n3. The second item, \"SALEM LT SLIDE BOX B1G1F,\" has a different billing amount of 1,570.80, indicating it is a separate line item.\n4. The \"LESS CREDIT FOR FREE PRODUCT\" and other deductions are applied after the gross billing amounts, confirming 4,712.40 is the original billing amount for the first item.\n5. The invoice amount after all deductions totals 1,895.48, which is calculated from the gross amounts minus discounts and taxes, validating 4,712.40 as the correct billing amount for SALEM SLIDE BOX B1G1F.\n\n<final>4,712.40</final>"
+      ],
+      "chunks": [
+        "1. The invoice lists two items under the \"ITEM NAME\" column, with \"SALEM SLIDE BOX B1G1F\" being the first item listed with item number 17526.",
+        "2. The \"BILLING AMOUNT\" column directly to the right of the item name shows the value 4,712.40 for the first item.",
+        "3. The second item, \"SALEM LT SLIDE BOX B1G1F,\" has a different billing amount of 1,570.80, indicating it is a separate line item.",
+        "4. The \"LESS CREDIT FOR FREE PRODUCT\" and other deductions are applied after the gross billing amounts, confirming 4,712.40 is the original billing amount for the first item.",
+        "5. The invoice amount after all deductions totals 1,895.48, which is calculated from the gross amounts minus discounts and taxes, validating 4,712.40 as the correct billing amount for SALEM SLIDE BOX B1G1F.",
+        "<final>4,712.40</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          85
+        ],
+        [
+          85,
+          120
+        ],
+        [
+          120,
+          163
+        ],
+        [
+          163,
+          205
+        ],
+        [
+          205,
+          263
+        ],
+        [
+          263,
+          277
+        ]
+      ],
+      "anchor_vector": [
+        10.65679348050649,
+        9.638229425472325,
+        9.86130460625342,
+        9.857040630772783,
+        11.419363839285714,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The billing amount for SALEM SLIDE BOX B1G1F is **4,712.40**.",
+        "negative_sentence": "There are no conflicting or duplicate entries for the item \"SALEM SLIDE BOX B1G1F\" in the invoice.",
+        "positive_full": " \n\nThe billing amount for SALEM SLIDE BOX B1G1F is **4,712.40**.",
+        "negative_full": " \n\n6. There are no conflicting or duplicate entries for the item \"SALEM SLIDE BOX B1G1F\" in the invoice. 7. The \"UNIT COST\" and \"QTY\" columns do not provide a separate calculation for this item, as they are not required to derive the billing amount for this specific item since it's directly listed in the \"BILLING AMOUNT\" column. 8. The invoice layout is consistent, with billing amounts aligned with their respective item names, and no ambiguity exists in the column structure for this item. 9. The item description \"SALEM SLIDE BOX B1G",
+        "positive_probability": 0.0076849196944659935,
+        "negative_probability": 0.005013942603123025,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": " \n\nThe billing amount for SALEM SLIDE BOX B1G1F is **4,712.40**.",
+            "first_sentence": "The billing amount for SALEM SLIDE BOX B1G1F is **4,712.40**.",
+            "answer_probability": 0.0076849196944659935,
+            "final_answer": "The billing amount for SALEM SLIDE BOX B1G1F is **4,712.40**"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " 6. Since the question asks specifically for the billing amount of \"SALEM SLIDE BOX B1G1F,\" and this item is listed as the first item with a clearly specified billing amount, there is no ambiguity in identifying the correct value. 7. The billing amount of 4,712.40 directly corresponds to the item \"SALEM SLIDE BOX B1G1F\" as presented in the invoice.\n\nFinal Answer: 4,712.40",
+            "first_sentence": "Since the question asks specifically for the billing amount of \"SALEM SLIDE BOX B1G1F,\" and this item is listed as the first item with a clearly specified billing amount, there is no ambiguity in identifying the correct value.",
+            "answer_probability": 0.0067191392572904796,
+            "final_answer": "4,712.40"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " 6. The invoice does not contain any other line items with the same name \"SALEM SLIDE BOX B1G1F,\" so there is no need to aggregate or compare with other entries. 7. The item name and its corresponding billing amount are directly aligned in the same row, ensuring no ambiguity or misinterpretation. 8. There are no conditional or additional calculations required for this specific item; it is a straightforward direct lookup.\n\nFinal Answer: The billing amount of SALEM SLIDE BOX B1G1F is 4,712.40.",
+            "first_sentence": "The invoice does not contain any other line items with the same name \"SALEM SLIDE BOX B1G1F,\" so there is no need to aggregate or compare with other entries.",
+            "answer_probability": 0.0060442173891734965,
+            "final_answer": "The billing amount of SALEM SLIDE BOX B1G1F is 4,712.40"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n6. Since the item \"SALEM SLIDE BOX B1G1F\" is the first item listed, and its billing amount is explicitly stated as 4,712.40, we can confirm that this is the correct value without needing to calculate or derive it further. 7. The invoice does not contain any other entries for this exact item name, so no additional or conflicting amounts are present. 8. The total invoice amount (1,895.48) is a net value after deductions, so it does not represent the original billing amount for this item. 9. Therefore,",
+            "first_sentence": "Since the item \"SALEM SLIDE BOX B1G1F\" is the first item listed, and its billing amount is explicitly stated as 4,712.40, we can confirm that this is the correct value without needing to calculate or derive it further.",
+            "answer_probability": 0.005943986995571745,
+            "final_answer": "6. Since the item \"SALEM SLIDE BOX B1G1F\" is the first item listed, and its billing amount is explicitly stated as 4,712.40, we can confirm that this is the correct value without needing to calculate or derive it further. 7. The invoice does not contain any other entries for this exact item name, so no additional or conflicting amounts are present. 8. The total invoice amount (1,895.48) is a net value after deductions, so it does not represent the original billing amount for this item. 9. Therefore"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n6. There are no conflicting or duplicate entries for the item \"SALEM SLIDE BOX B1G1F\" in the invoice. 7. The \"UNIT COST\" and \"QTY\" columns do not provide a separate calculation for this item, as they are not required to derive the billing amount for this specific item since it's directly listed in the \"BILLING AMOUNT\" column. 8. The invoice layout is consistent, with billing amounts aligned with their respective item names, and no ambiguity exists in the column structure for this item. 9. The item description \"SALEM SLIDE BOX B1G",
+            "first_sentence": "There are no conflicting or duplicate entries for the item \"SALEM SLIDE BOX B1G1F\" in the invoice.",
+            "answer_probability": 0.005013942603123025,
+            "final_answer": "6. There are no conflicting or duplicate entries for the item \"SALEM SLIDE BOX B1G1F\" in the invoice. 7. The \"UNIT COST\" and \"QTY\" columns do not provide a separate calculation for this item, as they are not required to derive the billing amount for this specific item since it's directly listed in the \"BILLING AMOUNT\" column. 8. The invoice layout is consistent, with billing amounts aligned with their respective item names, and no ambiguity exists in the column structure for this item. 9. The item description \"SALEM SLIDE BOX B1G"
+          }
+        ],
+        "correct_answer": "The billing amount of SALEM SLIDE BOX B1G1F is 4,712.40.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006799340347362357,
+              "generated_answers": [
+                "4,712.40",
+                "✅ **Final",
+                "The billing amount of SALEM SLIDE BOX B1G1F is $4,712.40",
+                "4,712.40",
+                "The billing amount of SALEM SLIDE BOX B1G1F is 4,712.40"
+              ],
+              "answer_probabilities": [
+                0.006687757951475655,
+                0.007930304960226588,
+                0.0071090816082889875,
+                0.005887250327397445,
+                0.006382306889423105
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.12535135503360556,
+              "generated_answers": [
+                "6. The invoice includes a \"TOTAL INVOICE AMOUNT\" of 4,712.40, which matches the billing amount for the first item. 7. The \"TOTAL INVOICE AMOUNT\" is explicitly labeled as \"4,712.40\" and is not modified by any further deductions or credits, confirming this is the final amount billed for SALEM SLIDE BOX B1G1F. 8. The invoice shows no other items with the same name or number, and the second item is clearly labeled with a different name (\"SALEM LT SLIDE BOX B1G1F\"), further confirming the uniqueness of the first item's billing amount. 9. The presence of tax and discount lines, along with the \"LESS CREDIT FOR FREE PRODUCT\" line, indicates that the gross billing amount of 4,712.40 is subject to adjustments, but the final amount billed for SALEM SLIDE BOX B1G1F remains 4,712.40 as it is the only item with that specific description. 10. The invoice structure, with itemized billing amounts and a final total, supports the conclusion that 4,712.40 is",
+                "1. The invoice lists the item \"SALEM SLIDE BOX B1G1F\" under item number 17526 in the \"ITEM NAME\" column. 2. In the same row, the \"QTY\" column shows the value \"30.00\". 3. The \"UNIT PRICE\" column shows \"157.08\" for this item. 4. The \"EXTENDED PRICE\" column, calculated as QTY × UNIT PRICE (30.00 × 157.08), equals 4,712.40, which matches the billing amount listed for this item. 5. The second item, \"SALEM LT SLIDE BOX B1G1F,\" has its own QTY of 25.00, confirming the quantity is item-specific and not combined. 6. There are no other rows or entries for \"SALEM SLIDE BOX B1G1F\" elsewhere in the invoice, indicating the 30.00 is the complete quantity for this item. 7",
+                "Therefore, the billing amount of SALEM SLIDE BOX B1G1F is **4,712.40**",
+                "",
+                "4,712.40"
+              ],
+              "answer_probabilities": [
+                0.005767358984742523,
+                0.006911724388774457,
+                0.0074363737009850925,
+                0.600612065028762,
+                0.006029253064763825
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006379844785194544,
+              "generated_answers": [
+                "\\boxed{4712.40}",
+                "The billing amount of SALEM SLIDE BOX B1G1F is $4,712.40",
+                "confirmed to be 4,712.40",
+                "The billing amount",
+                ""
+              ],
+              "answer_probabilities": [
+                0.006291791522923197,
+                0.00577320005311526,
+                0.006510355926217169,
+                0.006018158553381239,
+                0.007305717870335853
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006338459278099666,
+              "generated_answers": [
+                "$6,283.20",
+                "The billing amount of SALEM SLIDE BOX B1G1F is 4,712.40",
+                "Therefore, the billing amount of SALEM SLIDE BOX B1G1F is 4,712.40",
+                "4,712.40",
+                "4,712.40"
+              ],
+              "answer_probabilities": [
+                0.007635329848232772,
+                0.006669928599980435,
+                0.005903109425197648,
+                0.006128947172325945,
+                0.005354981344761528
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.12333006794176526,
+              "generated_answers": [
+                "The billing amount of SALEM SLIDE BOX B1G1F is 4,712.40",
+                "simply the billing amount associated with the item \"SALEM SLIDE BOX B1G1F\" as listed in the invoice. This amount is explicitly stated in the \"BILLING AMOUNT\" column for item 17526",
+                "The billing amount of SALEM SLIDE BOX B1G1F is 4,712.40.",
+                "The billing amount of SALEM SLIDE BOX B1G1F is **4,712.40**",
+                "The billing amount for SALEM SLIDE BOX B1G1F is **4,712.40**"
+              ],
+              "answer_probabilities": [
+                0.0066797571686554105,
+                0.0063244894492913385,
+                0.5908068449210757,
+                0.006886015416567704,
+                0.0059532327532361455
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 144,
+  "worker_rank": 4
+}

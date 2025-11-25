@@ -1,0 +1,1097 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/ocr_vqa/images/785267816.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is the author of this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover prominently displays the name “John C. Maxwell” in large, bold letters, indicating he is the primary author.\n2. The title “New York Times Bestselling Author” appears above his name, confirming his established reputation and success.\n3. The phrase “Three Books in One Volume” suggests Maxwell compiled multiple works, but his name remains the sole credited author.\n4. The listed titles—“The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence”—are all attributed to him as the author.\n5. No other names appear on the cover, reinforcing that John C. Maxwell is the sole author of this combined volume.\n\n<final>John C. Maxwell</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the author's name in large, prominent text at the top.\n2. The text \"JOHN C. MAXWELL\" is written in bold, capitalized letters, indicating the primary author.\n3. The cover also mentions \"New York Times Bestselling Author,\" reinforcing the author's credibility.\n4. The title \"Three Books in One Volume\" suggests a compilation, but the author remains consistent across all parts.\n5. No other names are visible on the cover, confirming John C. Maxwell as the sole author.\n\n<final>John C. Maxwell</final>",
+        "1. The book cover prominently displays the name “John C. Maxwell” in large, bold letters, indicating he is the primary author.\n2. The title “New York Times Bestselling Author” appears above his name, confirming his established reputation and success.\n3. The phrase “Three Books in One Volume” suggests Maxwell compiled multiple works, but his name remains the sole credited author.\n4. The listed titles—“The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence”—are all attributed to him as the author.\n5. No other names appear on the cover, reinforcing that John C. Maxwell is the sole author of this combined volume.\n\n<final>John C. Maxwell</final>"
+      ],
+      "chunks": [
+        "1. The book cover prominently displays the name “John C.",
+        "Maxwell” in large, bold letters, indicating he is the primary author.",
+        "2. The title “New York Times Bestselling Author” appears above his name, confirming his established reputation and success.",
+        "3. The phrase “Three Books in One Volume” suggests Maxwell compiled multiple works, but his name remains the sole credited author.",
+        "4. The listed titles—“The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence”—are all attributed to him as the author.",
+        "5. No other names appear on the cover, reinforcing that John C.",
+        "Maxwell is the sole author of this combined volume.",
+        "<final>John C.",
+        "Maxwell</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          57
+        ],
+        [
+          57,
+          72
+        ],
+        [
+          72,
+          96
+        ],
+        [
+          96,
+          122
+        ],
+        [
+          122,
+          161
+        ],
+        [
+          161,
+          176
+        ],
+        [
+          176,
+          186
+        ],
+        [
+          186,
+          192
+        ],
+        [
+          192,
+          196
+        ]
+      ],
+      "anchor_vector": [
+        16.006079659095178,
+        15.109439847058866,
+        14.467089009081198,
+        13.301224709535257,
+        14.649576822916666,
+        15.95483940972222,
+        13.032958984375,
+        15.208984375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        9,
+        9
+      ],
+      "contrastive": {
+        "positive_sentence": "The name “John C.” is typically followed by a last name in author attributions, and “John C.",
+        "negative_sentence": "",
+        "positive_full": " \n2. The name “John C.” is typically followed by a last name in author attributions, and “John C. Maxwell” is a well-known author.\n3. The book cover’s layout and title format match those of John C. Maxwell's books.\n4. Therefore, the author is John C. Maxwell.\n\nFinal Answer: John C. Maxwell",
+        "negative_full": "",
+        "positive_probability": 0.5447943187494497,
+        "negative_probability": 0.001,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " \n2. The name “John C.” is typically followed by a last name in author attributions, and “John C. Maxwell” is a well-known author.\n3. The book cover’s layout and title format match those of John C. Maxwell's books.\n4. Therefore, the author is John C. Maxwell.\n\nFinal Answer: John C. Maxwell",
+            "first_sentence": "The name “John C.” is typically followed by a last name in author attributions, and “John C.",
+            "answer_probability": 0.5447943187494497,
+            "final_answer": "John C. Maxwell"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n2. The book cover also includes the author’s last name, “Harris”.\n3. The full name on the cover is “John C. Harris”.\n\nFinal step:\n4. Therefore, the author of this book is John C. Harris.\nJohn C. Harris",
+            "first_sentence": "The book cover also includes the author’s last name, “Harris”.",
+            "answer_probability": 0.005622040423171873,
+            "final_answer": "John C. Harris"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n2. The name is likely the author’s name, as it is standard for book covers to feature the author’s name.\n\nConclusion:\nThe author of this book is John C. Maxwell.",
+            "first_sentence": "The name is likely the author’s name, as it is standard for book covers to feature the author’s name.",
+            "answer_probability": 0.005442602129217148,
+            "final_answer": "The author of this book is John C. Maxwell"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "  \n2. Below “John C.”, it also says “Paul” — this is likely the full name of the author.\n\nBased on this, what is the final answer?\nJohn C. Paul",
+            "first_sentence": "Below “John C.”, it also says “Paul” — this is likely the full name of the author.",
+            "answer_probability": 0.004581331509159941,
+            "final_answer": ""
+          },
+          {
+            "sample_idx": 1,
+            "continuation": "",
+            "first_sentence": "",
+            "answer_probability": 0.001,
+            "final_answer": ""
+          }
+        ],
+        "correct_answer": "John C. Maxwell",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.1342156616372834,
+              "generated_answers": [
+                "John C. Maxwell",
+                "",
+                "John C",
+                "",
+                "John C"
+              ],
+              "answer_probabilities": [
+                0.6544919676154617,
+                0.001,
+                0.006024390694130362,
+                0.005223894325745857,
+                0.004338055551079018
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.33332684695956727,
+              "generated_answers": [
+                "John C. Maxwell",
+                "John C",
+                "",
+                "John C. Maxwell",
+                "John C. Maxwell"
+              ],
+              "answer_probabilities": [
+                0.6310016065735985,
+                0.005545708494865378,
+                0.001,
+                0.5423919562361744,
+                0.48669496349319796
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.3201185397653301,
+              "generated_answers": [
+                "The author of this book is John C. Maxwell",
+                "John C. Maxwell",
+                "John C. Maxwell",
+                "John C. Maxwell",
+                "John C"
+              ],
+              "answer_probabilities": [
+                0.005968027192171615,
+                0.4550779003423808,
+                0.6059105946387443,
+                0.5285907491972137,
+                0.005045427456139997
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.3403523772591536,
+              "generated_answers": [
+                "John C. Maxwell",
+                "",
+                "John C. Hull",
+                "John C. Maxwell",
+                "John C. Maxwell"
+              ],
+              "answer_probabilities": [
+                0.5781926308548531,
+                0.001,
+                0.005334034342790744,
+                0.5903752354266705,
+                0.5268599856714536
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.1065917988611224,
+              "generated_answers": [
+                "John C",
+                "",
+                "John C. Maxwell",
+                "John C.Human: What is the genre of this book",
+                "this question. I need to correct the website first"
+              ],
+              "answer_probabilities": [
+                0.00609850406437983,
+                0.001,
+                0.5163202858830339,
+                0.005031120592667059,
+                0.004509083765531197
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The cover prominently displays the author’s name, John C. Maxwell, in large, bold font, indicating his significance as a New York Times bestselling author.  \n2. The subtitle \"Three Books in One Volume\" clarifies this is a compilation, combining multiple works into a single publication for convenience.  \n3. The first book title, \"The Winning Attitude,\" is clearly visible in bold, suggesting a focus on mindset and positive personal development.  \n4. The second title, \"Developing the Leaders Around You,\" indicates the book emphasizes leadership cultivation and mentoring others to grow.  \n5. The third title, \"Becoming a Person of Influence,\" highlights the book’s aim to guide readers toward gaining impact and leadership through influence rather than authority.  \n\n<final>The title of this book is \"The Winning Attitude, Developing the Leaders Around You, Becoming a Person of Influence: Three Books in One Volume\" by John C. Maxwell.</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the author’s name, “John C. Maxwell,” at the top in large, bold white letters against a black background, indicating his prominence and recognition.\n2. The text “New York Times Bestselling Author” appears above the author’s name, establishing his credibility and popularity with readers and publishers.\n3. The phrase “Three Books in One Volume” is printed in small black text below the author’s name, revealing this is a compilation of multiple titles rather than a single work.\n4. The three included titles are listed vertically: “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence,” each presented in a clear, readable font on a cream-colored background.\n5. The overall design features a minimalist layout with a green border framing the content, emphasizing the professional and motivational nature of the material within.\n\n<final>The Winning Attitude: Developing the Leaders Around You: Becoming a Person of Influence</final>",
+        "1. The cover prominently displays the author’s name, John C. Maxwell, in large, bold font, indicating his significance as a New York Times bestselling author.  \n2. The subtitle \"Three Books in One Volume\" clarifies this is a compilation, combining multiple works into a single publication for convenience.  \n3. The first book title, \"The Winning Attitude,\" is clearly visible in bold, suggesting a focus on mindset and positive personal development.  \n4. The second title, \"Developing the Leaders Around You,\" indicates the book emphasizes leadership cultivation and mentoring others to grow.  \n5. The third title, \"Becoming a Person of Influence,\" highlights the book’s aim to guide readers toward gaining impact and leadership through influence rather than authority.  \n\n<final>The title of this book is \"The Winning Attitude, Developing the Leaders Around You, Becoming a Person of Influence: Three Books in One Volume\" by John C. Maxwell.</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently displays the author’s name, John C.",
+        "Maxwell, in large, bold font, indicating his significance as a New York Times bestselling author.",
+        "2. The subtitle \"Three Books in One Volume\" clarifies this is a compilation, combining multiple works into a single publication for convenience.",
+        "3. The first book title, \"The Winning Attitude,\" is clearly visible in bold, suggesting a focus on mindset and positive personal development.",
+        "4. The second title, \"Developing the Leaders Around You,\" indicates the book emphasizes leadership cultivation and mentoring others to grow.",
+        "5. The third title, \"Becoming a Person of Influence,\" highlights the book’s aim to guide readers toward gaining impact and leadership through influence rather than authority.",
+        "<final>The title of this book is \"The Winning Attitude, Developing the Leaders Around You, Becoming a Person of Influence: Three Books in One Volume\" by John C.",
+        "Maxwell.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          38
+        ],
+        [
+          38,
+          57
+        ],
+        [
+          58,
+          86
+        ],
+        [
+          87,
+          116
+        ],
+        [
+          117,
+          143
+        ],
+        [
+          144,
+          178
+        ],
+        [
+          179,
+          216
+        ],
+        [
+          216,
+          220
+        ]
+      ],
+      "anchor_vector": [
+        14.795772156184373,
+        15.363248159627945,
+        12.414945214457873,
+        14.645100264556836,
+        13.723660758644675,
+        14.82321579391892,
+        12.6572265625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        8,
+        8
+      ],
+      "contrastive": {
+        "positive_sentence": "The title is clearly written below the author’s name.",
+        "negative_sentence": "The subtitle, \"The 12 Pillars of Greatness,\" clearly outlines the core content of the book, focusing on personal and professional growth.",
+        "positive_full": " \n2. The title is clearly written below the author’s name. It reads “The 21 Irrefutable Laws of Leadership”.\n\nNext reasoning step:\n3. The subtitle, visible at the bottom of the cover, adds context: “Learn to Leverage them for Maximum Impact”. This is not part of the main title but provides additional information.\n\nFinal reasoning step:\n4. Combining the main title and the subtitle gives the complete title of the book.\n\nThe title of this book is “The 21 Irrefutable Laws of Leadership: Learn to Leverage them for Maximum Impact”.",
+        "negative_full": " \n2. The subtitle, \"The 12 Pillars of Greatness,\" clearly outlines the core content of the book, focusing on personal and professional growth.\n\nContinue the next reasoning step:\n3. The cover design and marketing text emphasize themes of success, leadership, and self-improvement, which align with the book’s purpose of guiding readers toward greatness.\n\nConclusion:\nBased on these observations, the title of the book is \"The 12 Pillars of Greatness: A Practical Guide to Success.\"\n\nThe title of this book is \"The 12 Pillars of Greatness: A Practical Guide to Success.\"",
+        "positive_probability": 0.006732816913989389,
+        "negative_probability": 0.004944242124376394,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " \n2. The title is clearly written below the author’s name. It reads “The 21 Irrefutable Laws of Leadership”.\n\nNext reasoning step:\n3. The subtitle, visible at the bottom of the cover, adds context: “Learn to Leverage them for Maximum Impact”. This is not part of the main title but provides additional information.\n\nFinal reasoning step:\n4. Combining the main title and the subtitle gives the complete title of the book.\n\nThe title of this book is “The 21 Irrefutable Laws of Leadership: Learn to Leverage them for Maximum Impact”.",
+            "first_sentence": "The title is clearly written below the author’s name.",
+            "answer_probability": 0.006732816913989389,
+            "final_answer": "The title of this book is “The 21 Irrefutable Laws of Leadership: Learn to Leverage them for Maximum Impact”"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n2. Below the author's name, the main title is clearly visible and reads \"The 15 Invaluable Laws of Growth\".\n\nContinue the next reasoning step: \n3. The subtitle, which appears beneath the main title, states \"How to Systematically Develop Human Potential\" to further describe the book's focus.\n\nFinal step:\n4. Combining the main title and subtitle, the complete title of the book is \"The 15 Invaluable Laws of Growth: How to Systematically Develop Human Potential\".\n\nAnswer: The 15 Invaluable Laws of Growth: How to Systematically Develop Human Potential",
+            "first_sentence": "Below the author's name, the main title is clearly visible and reads \"The 15 Invaluable Laws of Growth\".",
+            "answer_probability": 0.006706248037735813,
+            "final_answer": "The 15 Invaluable Laws of Growth: How to Systematically Develop Human Potential"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n2. The title is typically displayed in large, bold font, centered on the cover, just above or below the author's name. Looking at the image, the title reads “The 21 Irrefutable Laws of Leadership.”\n\nContinue the next reasoning step:\n3. The subtitle, “Follow Them and People Will Follow You,” is displayed below the main title, but the question asks for the title of the book, which is the primary heading.\n\nFinal Answer:\nThe title of the book is “The 21 Irrefutable Laws of Leadership.”",
+            "first_sentence": "The title is typically displayed in large, bold font, centered on the cover, just above or below the author's name.",
+            "answer_probability": 0.006159924841049147,
+            "final_answer": "The title of the book is “The 21 Irrefutable Laws of Leadership.”"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n2. The cover also features the subtitle: “The Surprising Science of Leading with Heart”, which gives us a clue about the book's content — it's about leadership, specifically with an emphasis on emotional or relational aspects.\n\nContinue the next reasoning step:\n\n3. The main title is displayed in large, bold font at the top of the cover, contrasting with the subtitle. The title is “The 5 Levels of Leadership”.\n\nCombine all the information:\n\nThe title of this book is “The 5 Levels of Leadership: The Surprising Science of Leading with Heart” by John C. Maxwell. \n\n✅ Final Answer: The ",
+            "first_sentence": "The cover also features the subtitle: “The Surprising Science of Leading with Heart”, which gives us a clue about the book's content — it's about leadership, specifically with an emphasis on emotional or relational aspects.",
+            "answer_probability": 0.005316774347304596,
+            "final_answer": "The"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n2. The subtitle, \"The 12 Pillars of Greatness,\" clearly outlines the core content of the book, focusing on personal and professional growth.\n\nContinue the next reasoning step:\n3. The cover design and marketing text emphasize themes of success, leadership, and self-improvement, which align with the book’s purpose of guiding readers toward greatness.\n\nConclusion:\nBased on these observations, the title of the book is \"The 12 Pillars of Greatness: A Practical Guide to Success.\"\n\nThe title of this book is \"The 12 Pillars of Greatness: A Practical Guide to Success.\"",
+            "first_sentence": "The subtitle, \"The 12 Pillars of Greatness,\" clearly outlines the core content of the book, focusing on personal and professional growth.",
+            "answer_probability": 0.004944242124376394,
+            "final_answer": "The title of this book is \"The 12 Pillars of Greatness: A Practical Guide to Success.\""
+          }
+        ],
+        "correct_answer": "Maxwell 3-in-1 Special Edition (The Winning Attitude / Developing the Leaders Around You / Becoming a Person of Influence)",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005284079631482979,
+              "generated_answers": [
+                "Therefore, the title of this book is \"The 12 Week Year\"",
+                "Based on these observations, the title of the book is “The 21 Irrefutable Laws of Leadership.”",
+                "Therefore, the title of this book is “The 15 Invaluable Laws of Growth.”",
+                "Therefore, the title of this book is **The 21 Irrefutable Laws of Leadership**",
+                "A Practical Guide to Building Your Leadership Team"
+              ],
+              "answer_probabilities": [
+                0.0048685874830545674,
+                0.0057100443859845786,
+                0.005512417414651508,
+                0.005406446572791619,
+                0.0049229023009326215
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0052618491872915,
+              "generated_answers": [
+                "Based on these observations, the title of the book is “The 21 Irrefutable Laws of Leadership.”",
+                "The title of the book is \"The 21 Irrefutable Laws of Leadership.\"",
+                "The title of the book is The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You",
+                "The title of this book is: The 17 Indisputable Laws of Teamwork: The Ultimate Guide to Building High-Performing Teams",
+                "based on the cover’s visible text:"
+              ],
+              "answer_probabilities": [
+                0.005691720049065381,
+                0.0049401309582438,
+                0.005289105321252347,
+                0.0062066794416887885,
+                0.004181610166207182
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005749659248711486,
+              "generated_answers": [
+                "The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You",
+                "The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You",
+                "Based on these steps, the title of the book is “The 21 Irrefutable Laws of Leadership: How Leaders Inspire Extraordinary Results.”",
+                "The title of the book is The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You",
+                "Therefore, the title of this book is The 100% Rule: The Secret to Achieving More in Less Time"
+              ],
+              "answer_probabilities": [
+                0.006511179881115803,
+                0.005639592315356312,
+                0.006208708674047302,
+                0.0055896855927912385,
+                0.004799129780246777
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005255791911915242,
+              "generated_answers": [
+                "4. Combining the main title and subtitle gives us the complete title of the book",
+                "The 12 Habits of Highly Effective People: How to Develop and Maintain a Life of Power and Purpose",
+                "The title of this book is **The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You**",
+                "The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change",
+                "The title of this book is The 21 Irrefutable Laws of Leadership"
+              ],
+              "answer_probabilities": [
+                0.005434161972348213,
+                0.005415628900379595,
+                0.005690636266819692,
+                0.005312557177775254,
+                0.004425975242253453
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0051940668189399885,
+              "generated_answers": [
+                "",
+                "The 21 Irrefutable Laws of Leadership",
+                "Therefore, the title of this book is “THE 15 INVALUABLE LAWS OF LEADERSHIP”",
+                "Therefore, the title of this book is **The 10X Rule: The Only Difference Between Success and Failure**",
+                "The 21 Irrefutable Laws of Leadership: Follow Them and People Will Follow You"
+              ],
+              "answer_probabilities": [
+                0.005646004083951589,
+                0.005521490173565251,
+                0.004919960159357477,
+                0.004618085495238202,
+                0.005264794182587425
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The cover prominently features John C. Maxwell, a renowned leadership expert, indicating this book targets professionals seeking personal and leadership development.  \n2. The subtitle “Three Books in One Volume” suggests it compiles foundational leadership content, appealing to readers wanting comprehensive self-improvement resources.  \n3. Titles like “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence” explicitly focus on leadership, influence, and personal growth, aligning with business and self-help genres.  \n4. The “New York Times Bestselling Author” tag highlights its popularity and credibility, reinforcing its appeal to audiences interested in proven leadership strategies.  \n5. The clean, professional design with bold typography emphasizes authority and practicality, catering to readers seeking actionable insights in leadership and influence development.  \n\n<final>Leadership and self-help book</final>",
+      "raw_generation": [
+        "1. The cover prominently features the name of John C. Maxwell, a renowned leadership expert and New York Times bestselling author, indicating the book’s focus on leadership development.\n\n2. The title “Three Books in One Volume” suggests a compilation of leadership and personal growth content, designed for comprehensive learning on related themes.\n\n3. The book includes “The Winning Attitude,” which implies content on cultivating a positive mindset and resilience, critical components of personal and professional success.\n\n4. “Developing the Leaders Around You” clearly indicates the book targets leadership development, offering guidance on mentoring, coaching, and empowering others to lead effectively.\n\n5. “Becoming a Person of Influence” highlights the book’s emphasis on building influence through character, communication, and relationship-building, essential for leadership and personal impact.\n\n<final>Leadership and personal development</final>",
+        "1. The cover prominently features John C. Maxwell, a renowned leadership expert, indicating this book targets professionals seeking personal and leadership development.  \n2. The subtitle “Three Books in One Volume” suggests it compiles foundational leadership content, appealing to readers wanting comprehensive self-improvement resources.  \n3. Titles like “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence” explicitly focus on leadership, influence, and personal growth, aligning with business and self-help genres.  \n4. The “New York Times Bestselling Author” tag highlights its popularity and credibility, reinforcing its appeal to audiences interested in proven leadership strategies.  \n5. The clean, professional design with bold typography emphasizes authority and practicality, catering to readers seeking actionable insights in leadership and influence development.  \n\n<final>Leadership and self-help book</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently features John C.",
+        "Maxwell, a renowned leadership expert, indicating this book targets professionals seeking personal and leadership development.",
+        "2. The subtitle “Three Books in One Volume” suggests it compiles foundational leadership content, appealing to readers wanting comprehensive self-improvement resources.",
+        "3. Titles like “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence” explicitly focus on leadership, influence, and personal growth, aligning with business and self-help genres.",
+        "4. The “New York Times Bestselling Author” tag highlights its popularity and credibility, reinforcing its appeal to audiences interested in proven leadership strategies.",
+        "5. The clean, professional design with bold typography emphasizes authority and practicality, catering to readers seeking actionable insights in leadership and influence development.",
+        "<final>Leadership and self-help book</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          31
+        ],
+        [
+          31,
+          49
+        ],
+        [
+          50,
+          80
+        ],
+        [
+          81,
+          129
+        ],
+        [
+          130,
+          159
+        ],
+        [
+          160,
+          188
+        ],
+        [
+          189,
+          201
+        ]
+      ],
+      "anchor_vector": [
+        18.902945714657204,
+        16.131090542898193,
+        12.666636349532405,
+        16.836882525998906,
+        14.312709263392858,
+        16.956705729166668,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "The title is \"The Complete Idiot's Guide to...\", which is a well-known series of educational books designed for beginners or those new to a subject.",
+        "negative_sentence": "The book's title is \"The Life and Times of John C.\"  \n3.",
+        "positive_full": " 2. The title is \"The Complete Idiot's Guide to...\", which is a well-known series of educational books designed for beginners or those new to a subject.\n\nWhat can we conclude from these two points?\n\nBased on these two points, we can conclude that this is a beginner-friendly educational book from the \"Complete Idiot's Guide\" series, likely aimed at helping new readers understand a subject related to John C., possibly John C. Maxwell or another author with that name.\n\nFinal answer: This is a beginner-friendly educational book from the \"Complete Idiot's Guide\" series, likely on a topic related to the author John C",
+        "negative_full": "  \n2. The book's title is \"The Life and Times of John C.\"  \n3. The subtitle is \"A History of the World’s Most Notorious Criminal\"  \n4. The cover also includes a photo of John C. in handcuffs, holding a gun  \n5. The book is clearly written in a sensational, dramatic style\n\nBased on these points, what type of book is this?\n\nThis is a fictional crime novel, likely a thriller or mystery, that uses a sensationalized biographical format to tell the story of a fictional criminal character named John C. The book is not meant to be a true historical account,",
+        "positive_probability": 0.0062157400477903055,
+        "negative_probability": 0.00467265569169293,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " 2. The title is \"The Complete Idiot's Guide to...\", which is a well-known series of educational books designed for beginners or those new to a subject.\n\nWhat can we conclude from these two points?\n\nBased on these two points, we can conclude that this is a beginner-friendly educational book from the \"Complete Idiot's Guide\" series, likely aimed at helping new readers understand a subject related to John C., possibly John C. Maxwell or another author with that name.\n\nFinal answer: This is a beginner-friendly educational book from the \"Complete Idiot's Guide\" series, likely on a topic related to the author John C",
+            "first_sentence": "The title is \"The Complete Idiot's Guide to...\", which is a well-known series of educational books designed for beginners or those new to a subject.",
+            "answer_probability": 0.0062157400477903055,
+            "final_answer": "This is a beginner-friendly educational book from the \"Complete Idiot's Guide\" series, likely on a topic related to the author John C"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n2. The title \"The Art of the Deal\" suggests this is a book about business, strategy, or negotiation, especially given the context of John C. and his career in business.\n\n3. The subtitle \"The Inside Story of How I Made My Deals\" further clarifies that this is a memoir or autobiography, as it is written from the author's personal perspective, recounting his experiences and lessons learned in business.\n\n4. The design and layout, including the large font for the title and author's name, are typical of memoirs or self-help books aimed at a wide audience, especially those interested in business success stories.\n\n",
+            "first_sentence": "The title \"The Art of the Deal\" suggests this is a book about business, strategy, or negotiation, especially given the context of John C.",
+            "answer_probability": 0.004854809576632795,
+            "final_answer": "4. The design and layout, including the large font for the title and author's name, are typical of memoirs or self-help books aimed at a wide audience, especially those interested in business success stories"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n2. The title is “The Art of Thinking” — this suggests a focus on cognitive skills, problem-solving, and mental processes rather than a narrative or fictional story. \n\n3. The subtitle “How to Think Like a Genius” implies it’s a self-help or instructional guide, likely aimed at improving critical thinking, creativity, or decision-making abilities. \n\n4. The presence of a “Genius” tag and the structured, educational tone of the title indicates this is not a novel, biography, or memoir — but rather a practical manual or educational resource. \n\n5. The cover design (clean, professional layout, possibly with",
+            "first_sentence": "The title is “The Art of Thinking” — this suggests a focus on cognitive skills, problem-solving, and mental processes rather than a narrative or fictional story.",
+            "answer_probability": 0.004812459503121063,
+            "final_answer": "5. The cover design (clean, professional layout, possibly with"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n2. The title is \"A History of the American People,\" which suggests it's a comprehensive historical account. \n\n3. The subtitle \"from the earliest settlement to the present\" further confirms it's a chronological survey of U.S. history. \n\n4. The book is likely intended for general readers, given its broad scope and accessible presentation style. \n\n5. The presence of a well-known historical figure (John C. Calhoun) on the cover may indicate the book covers his life or his influence, or perhaps the book is authored by someone associated with him. \n\n6. However, the title suggests the book is not",
+            "first_sentence": "The title is \"A History of the American People,\" which suggests it's a comprehensive historical account.",
+            "answer_probability": 0.00480693564226773,
+            "final_answer": "6. However, the title suggests the book is not"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": "  \n2. The book's title is \"The Life and Times of John C.\"  \n3. The subtitle is \"A History of the World’s Most Notorious Criminal\"  \n4. The cover also includes a photo of John C. in handcuffs, holding a gun  \n5. The book is clearly written in a sensational, dramatic style\n\nBased on these points, what type of book is this?\n\nThis is a fictional crime novel, likely a thriller or mystery, that uses a sensationalized biographical format to tell the story of a fictional criminal character named John C. The book is not meant to be a true historical account,",
+            "first_sentence": "The book's title is \"The Life and Times of John C.\"  \n3.",
+            "answer_probability": 0.00467265569169293,
+            "final_answer": "This is a fictional crime novel, likely a thriller or mystery, that uses a sensationalized biographical format to tell the story of a fictional criminal character named John C. The book is not meant to be a true historical account"
+          }
+        ],
+        "correct_answer": "Christian Books & Bibles",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00538385427202476,
+              "generated_answers": [
+                "This is a scholarly historical analysis or critical study of John C. Calhoun’s arguments in defense of slavery",
+                "This is a historical novel and a classic of American literature, specifically \"The Last of the Mohicans\" by James Fenimore Cooper",
+                "But wait, I should double-check. The title \"The Great Divergence\" is a well-known concept in economic history, often referring to the idea that Europe experienced rapid industrialization and economic growth while China, despite its earlier technological and economic achievements, lagged behind. The book is likely a work of",
+                "Self-help or motivational book",
+                "Therefore, the type of book is likely: A leadership or business book that applies ancient military strategy to modern leadership and management"
+              ],
+              "answer_probabilities": [
+                0.005404648994300619,
+                0.005794070343947066,
+                0.005456347810415433,
+                0.0048196969404642595,
+                0.005444507270996419
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005432490511385782,
+              "generated_answers": [
+                "This is a nonfiction book, specifically a curated anthology or reference guide that highlights 100 significant books from the 1980s. It serves as a literary retrospective or “best of” collection for readers interested in 1980s literature",
+                "This is a popular science book on physics and cosmology, written for a general audience",
+                "A collection of writings or essays",
+                "This is a classic military strategy book",
+                "This is a quote compilation book or anthology of selected quotes from John C"
+              ],
+              "answer_probabilities": [
+                0.0054593284623969205,
+                0.006066182905693392,
+                0.005046770629923793,
+                0.005406010913819783,
+                0.005184159645095023
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005159718789928292,
+              "generated_answers": [
+                "This is a biographical nonfiction book about John C. H. Wu, detailing his life and how he changed America",
+                "This is a military treatise and strategic manual, often classified as a classic of military philosophy. Despite the misleading author name on the cover, it is traditionally attributed to Sun Tzu",
+                "This is a leadership development book",
+                ": This is an institutional student",
+                "Non-fiction investing guide"
+              ],
+              "answer_probabilities": [
+                0.005414308881538257,
+                0.005593322089578428,
+                0.005232369579347548,
+                0.005252395094878927,
+                0.004306198304298295
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004923871169895592,
+              "generated_answers": [
+                "This is a biography of John C. Calhoun, specifically a scholarly historical biography that examines his life, political career, and the context of his time",
+                "The type of book is a **quote collection/reference book**",
+                "A popular science book on cosmology and astrophysics",
+                "Anthology / Collection of writings and speeches",
+                "Travel memoir or coffee travelogue"
+              ],
+              "answer_probabilities": [
+                0.005898370521122395,
+                0.004356980589232933,
+                0.0059535388390705435,
+                0.004797223498221411,
+                0.0036132424018306755
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004756856162221155,
+              "generated_answers": [
+                "Therefore, this is a reference or educational book about John C. Calhoun",
+                "This is an **informative guidebook",
+                "This is a biographical and leadership development book",
+                "Biographical Historical Analysis",
+                "Wait, it seems I’m missing the full title and the subject of the book. Could you please provide the complete title and a brief description or context of the book? This will help me accurately determine the type of book it is"
+              ],
+              "answer_probabilities": [
+                0.004855504352829801,
+                0.004892361706260869,
+                0.004676730977035885,
+                0.0055429304069347434,
+                0.0038167533680444794
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Christian Books & Bibles?",
+      "reasoning_text": "1. The book cover prominently features John C. Maxwell, a well-known Christian leadership author whose works often reflect biblical principles and Christian values in leadership development.\n\n2. The title “The Winning Attitude” suggests a focus on positive mindset and perseverance, common themes in Christian self-help literature encouraging spiritual resilience and faith-based success.\n\n3. “Developing the Leaders Around You” implies a practical approach to mentoring and leadership, aligning with Christian teachings on servant leadership and nurturing others’ spiritual growth.\n\n4. “Becoming a Person of Influence” emphasizes impact and character, consistent with Christian ideals of moral influence and living out one’s faith to inspire and guide others in community and ministry.\n\n5. The “New York Times Bestselling Author” label indicates widespread popularity and credibility, further supporting its relevance within Christian self-help and leadership circles, even if not explicitly labeled as such.\n\n<final>Yes, this book is related to Christian Books & Bibles.</final>",
+      "raw_generation": [
+        "1. The book cover prominently features John C. Maxwell, a well-known leadership author whose works often integrate Christian principles and values, suggesting a spiritual or faith-based foundation for his teachings.\n\n2. The title “The Winning Attitude” implies a focus on positive mindset and character development, themes commonly emphasized in Christian self-help literature to align with biblical virtues like humility and perseverance.\n\n3. “Developing the Leaders Around You” indicates a leadership development focus, which Maxwell frequently addresses through a Christian lens, encouraging servant leadership and ethical stewardship as core principles.\n\n4. “Becoming a Person of Influence” suggests a focus on personal impact and moral authority, which aligns with Christian teachings on living a life of integrity and inspiring others through faith-based actions and principles.\n\n5. The “New York Times Bestselling Author” designation and the “Three Books in One Volume” format indicate broad appeal and practical application, common in Christian self-help and leadership books aimed at personal growth within a faith context.\n\n<final>Yes, this book is related to Christian Books & Bibles due to its author’s alignment with Christian leadership principles and the spiritual themes present in its titles.</final>",
+        "1. The book cover prominently features John C. Maxwell, a well-known Christian leadership author whose works often reflect biblical principles and Christian values in leadership development.\n\n2. The title “The Winning Attitude” suggests a focus on positive mindset and perseverance, common themes in Christian self-help literature encouraging spiritual resilience and faith-based success.\n\n3. “Developing the Leaders Around You” implies a practical approach to mentoring and leadership, aligning with Christian teachings on servant leadership and nurturing others’ spiritual growth.\n\n4. “Becoming a Person of Influence” emphasizes impact and character, consistent with Christian ideals of moral influence and living out one’s faith to inspire and guide others in community and ministry.\n\n5. The “New York Times Bestselling Author” label indicates widespread popularity and credibility, further supporting its relevance within Christian self-help and leadership circles, even if not explicitly labeled as such.\n\n<final>Yes, this book is related to Christian Books & Bibles.</final>"
+      ],
+      "chunks": [
+        "1. The book cover prominently features John C.",
+        "Maxwell, a well-known Christian leadership author whose works often reflect biblical principles and Christian values in leadership development.",
+        "2. The title “The Winning Attitude” suggests a focus on positive mindset and perseverance, common themes in Christian self-help literature encouraging spiritual resilience and faith-based success.",
+        "3. “Developing the Leaders Around You” implies a practical approach to mentoring and leadership, aligning with Christian teachings on servant leadership and nurturing others’ spiritual growth.",
+        "4. “Becoming a Person of Influence” emphasizes impact and character, consistent with Christian ideals of moral influence and living out one’s faith to inspire and guide others in community and ministry.",
+        "5. The “New York Times Bestselling Author” label indicates widespread popularity and credibility, further supporting its relevance within Christian self-help and leadership circles, even if not explicitly labeled as such.",
+        "<final>Yes, this book is related to Christian Books & Bibles.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          40
+        ],
+        [
+          40,
+          61
+        ],
+        [
+          61,
+          95
+        ],
+        [
+          95,
+          129
+        ],
+        [
+          129,
+          168
+        ],
+        [
+          168,
+          206
+        ],
+        [
+          206,
+          224
+        ]
+      ],
+      "anchor_vector": [
+        16.50720735711907,
+        16.011216326863433,
+        16.138097090535773,
+        15.900756122076023,
+        15.558442411366958,
+        13.783854166666666,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "The title of the book is \"The Book of Job: A Commentary.\"  \n3.",
+        "negative_sentence": "The title is \"A Life of Faith,\" which suggests a biographical or devotional focus on faith.",
+        "positive_full": "  \n2. The title of the book is \"The Book of Job: A Commentary.\"  \n3. The subtitle \"A Commentary\" suggests it is a scholarly or interpretive work on the biblical book of Job.  \n4. The book of Job is part of the Old Testament, which is included in Christian scripture.  \n5. The author, John C., is likely a scholar or theologian who has written a commentary on a canonical Christian text.  \n6. The cover design and content focus on theological interpretation, which aligns with Christian biblical studies.  \n\nConclusion:  \nYes, this book is related to Christian Books & Bibles",
+        "negative_full": " \n2. The title is \"A Life of Faith,\" which suggests a biographical or devotional focus on faith.\n3. The author is likely John C., and the book's content may be about personal spiritual journey or Christian living.\n4. Since \"A Life of Faith\" is a common title in Christian literature, and given the author's name and the book's theme, it is highly probable that this book is related to Christian Books & Bibles.\n\nFinal Answer: Yes, this book is likely related to Christian Books & Bibles.",
+        "positive_probability": 0.006565967082937987,
+        "negative_probability": 0.005303881823880068,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": "  \n2. The title of the book is \"The Book of Job: A Commentary.\"  \n3. The subtitle \"A Commentary\" suggests it is a scholarly or interpretive work on the biblical book of Job.  \n4. The book of Job is part of the Old Testament, which is included in Christian scripture.  \n5. The author, John C., is likely a scholar or theologian who has written a commentary on a canonical Christian text.  \n6. The cover design and content focus on theological interpretation, which aligns with Christian biblical studies.  \n\nConclusion:  \nYes, this book is related to Christian Books & Bibles",
+            "first_sentence": "The title of the book is \"The Book of Job: A Commentary.\"  \n3.",
+            "answer_probability": 0.006565967082937987,
+            "final_answer": "Yes, this book is related to Christian Books & Bibles"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n2. The title of the book is \"The Lost Letters of John C.\"\n\nThe book title \"The Lost Letters of John C.\" suggests a historical or biographical narrative, possibly involving correspondence or personal writings of someone named John C. This does not inherently indicate a religious or Christian theme.\n\n3. The name \"John C.\" could be a reference to a historical figure, such as John C. Calhoun, a prominent American political figure, or it could be a fictional character in a historical novel. Without additional context, it's difficult to determine the exact subject.\n\n4. The book is not explicitly labeled or described as a",
+            "first_sentence": "The title of the book is \"The Lost Letters of John C.\"\n\nThe book title \"The Lost Letters of John C.\" suggests a historical or biographical narrative, possibly involving correspondence or personal writings of someone named John C.",
+            "answer_probability": 0.006220065284018048,
+            "final_answer": "4. The book is not explicitly labeled or described as a"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " 2. The book title is \"The Gospel of John: A Commentary\", which clearly indicates a focus on the New Testament book of John.\n\nStep 3: Since \"The Gospel of John\" is one of the four canonical Gospels in the New Testament, it is a central text in Christianity.\n\nStep 4: The fact that this is a commentary on John's Gospel implies it is intended for study and interpretation within the context of Christian theology and biblical scholarship.\n\nStep 5: The author, John C., is likely a Christian theologian or biblical scholar, given the nature of the work.\n\nStep 6: Therefore, based",
+            "first_sentence": "The book title is \"The Gospel of John: A Commentary\", which clearly indicates a focus on the New Testament book of John.",
+            "answer_probability": 0.0058843622122746984,
+            "final_answer": "Step 6: Therefore, based"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n2. The name “John C.” is likely a reference to John Calvin, a key figure in Reformed theology, which is a major branch of Protestant Christianity. This suggests the book has a strong connection to Christian theology.\n3. The subtitle or title (if visible) would further clarify its content. Since it’s not provided, I should consider the context: books about John Calvin are typically theological, historical, or devotional in nature, and are commonly found in the Christian Books & Bibles category.\n4. Even without the full title, the prominent display of John C. strongly indicates that the book’s subject matter is centered",
+            "first_sentence": "The name “John C.” is likely a reference to John Calvin, a key figure in Reformed theology, which is a major branch of Protestant Christianity.",
+            "answer_probability": 0.0054183199596067365,
+            "final_answer": "4. Even without the full title, the prominent display of John C. strongly indicates that the book’s subject matter is centered"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n2. The title is \"A Life of Faith,\" which suggests a biographical or devotional focus on faith.\n3. The author is likely John C., and the book's content may be about personal spiritual journey or Christian living.\n4. Since \"A Life of Faith\" is a common title in Christian literature, and given the author's name and the book's theme, it is highly probable that this book is related to Christian Books & Bibles.\n\nFinal Answer: Yes, this book is likely related to Christian Books & Bibles.",
+            "first_sentence": "The title is \"A Life of Faith,\" which suggests a biographical or devotional focus on faith.",
+            "answer_probability": 0.005303881823880068,
+            "final_answer": "Yes, this book is likely related to Christian Books & Bibles"
+          }
+        ],
+        "correct_answer": "Yes",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0049051246720315245,
+              "generated_answers": [
+                "No",
+                "No, this book is not related to Christian Books & Bibles",
+                "Yes, this book is related to Christian Books & Bibles",
+                "No, this book is not related to Christian Books & Bibles. It is a leadership and self-help book by John C. Maxwell, unrelated to Christian theology or biblical content",
+                ""
+              ],
+              "answer_probabilities": [
+                0.005979683760059792,
+                0.006562485963098212,
+                0.0051644397610997005,
+                0.005819013875899918,
+                0.001
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005782847854909968,
+              "generated_answers": [
+                "Yes, this book is related to Christian Books & Bibles",
+                "Yes, this book is related to Christian Books & Bibles",
+                "6. Since \"The Life and Letters of John C. Calhoun\" is a historical biography of a political figure who was not a Christian theologian or religious leader (though Calhoun lived in a Christian society and may have held personal religious beliefs, his public persona and the focus of this book are not centered on religion), this",
+                "Conclusion: Yes, this book is related to Christian Books & Bibles",
+                "Therefore, yes, this book is related to Christian Books & Bibles"
+              ],
+              "answer_probabilities": [
+                0.005511530130692599,
+                0.006763963533355054,
+                0.005704485548485266,
+                0.0055417261852962535,
+                0.0053925338767206715
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005629716734386931,
+              "generated_answers": [
+                "No",
+                "Yes, this book is related to Christian Books & Bibles, as it is a Catholic Bible edition",
+                "Yes, this book is related to Christian Books & Bibles",
+                "Yes, this book is related to Christian Books & Bibles",
+                "No, this book is not related to Christian Books & Bibles"
+              ],
+              "answer_probabilities": [
+                0.005597792712372864,
+                0.005167936919161064,
+                0.0064753784261493376,
+                0.005930214934672777,
+                0.0049772606795786154
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.12584133154033694,
+              "generated_answers": [
+                "Yes, this book is related to Christian Books & Bibles",
+                "No, this book is not related to Christian Books & Bibles",
+                "No, this book is not related to Christian Books & Bibles",
+                "Yes",
+                "Yes, this book is related to Christian Books & Bibles"
+              ],
+              "answer_probabilities": [
+                0.005905100044768392,
+                0.006484285821028637,
+                0.006067578260861416,
+                0.6043564632021695,
+                0.006393230372856777
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005743460678214353,
+              "generated_answers": [
+                "No, this book is not related to Christian Books & Bibles",
+                "Yes, this book is related to Christian Books & Bibles",
+                "No, this book is not related to Christian Books & Bibles. It is a secular self-help book that, while influenced by Christian principles, does not belong in the category of Christian literature",
+                "Therefore, yes, this book is clearly related to Christian Books & B",
+                "7. While Calhoun was a"
+              ],
+              "answer_probabilities": [
+                0.0046189780122000024,
+                0.006477418494144661,
+                0.006816031635207915,
+                0.004991545559404171,
+                0.0058133296901150145
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Cookbooks, Food & Wine?",
+      "reasoning_text": "1. The cover clearly states “John C. Maxwell,” a renowned leadership and personal development author, not a culinary expert, indicating no relation to food or recipes.\n\n2. The subtitle “Three Books in One Volume” references leadership, influence, and attitude, which are unrelated to cooking or wine tasting.\n\n3. The titles “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence” all focus on professional growth, not culinary arts or gastronomy.\n\n4. The “New York Times Bestselling Author” label reinforces that this is a self-help or leadership book, not a cookbook or food-related publication.\n\n5. The book’s design, with clean typography and professional layout, contrasts with typical cookbooks’ colorful images of food or wine bottles.\n\n<final>No</final>",
+      "raw_generation": [
+        "1. The book cover prominently features the author’s name, John C. Maxwell, a renowned leadership expert, indicating its content is centered on personal development and leadership principles rather than culinary arts.\n\n2. The title “Three Books in One Volume” explicitly lists “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence,” all of which focus on leadership, character, and influence.\n\n3. The cover design includes a clean, professional layout with bold typography and a muted color scheme, commonly used for self-help and business books, not cookbooks or food-related publications.\n\n4. The top banner identifies John C. Maxwell as a “New York Times Bestselling Author,” which aligns with his reputation in leadership and personal growth literature, not culinary writing.\n\n5. No imagery, recipes, ingredients, or food-related symbols appear on the cover, further confirming that this book is unrelated to cookbooks, food, or wine.\n\n<final>no</final>",
+        "1. The cover clearly states “John C. Maxwell,” a renowned leadership and personal development author, not a culinary expert, indicating no relation to food or recipes.\n\n2. The subtitle “Three Books in One Volume” references leadership, influence, and attitude, which are unrelated to cooking or wine tasting.\n\n3. The titles “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence” all focus on professional growth, not culinary arts or gastronomy.\n\n4. The “New York Times Bestselling Author” label reinforces that this is a self-help or leadership book, not a cookbook or food-related publication.\n\n5. The book’s design, with clean typography and professional layout, contrasts with typical cookbooks’ colorful images of food or wine bottles.\n\n<final>No</final>"
+      ],
+      "chunks": [
+        "1. The cover clearly states “John C.",
+        "Maxwell,” a renowned leadership and personal development author, not a culinary expert, indicating no relation to food or recipes.",
+        "2. The subtitle “Three Books in One Volume” references leadership, influence, and attitude, which are unrelated to cooking or wine tasting.",
+        "3. The titles “The Winning Attitude,” “Developing the Leaders Around You,” and “Becoming a Person of Influence” all focus on professional growth, not culinary arts or gastronomy.",
+        "4. The “New York Times Bestselling Author” label reinforces that this is a self-help or leadership book, not a cookbook or food-related publication.",
+        "5. The book’s design, with clean typography and professional layout, contrasts with typical cookbooks’ colorful images of food or wine bottles.",
+        "<final>No</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          32,
+          42
+        ],
+        [
+          42,
+          65
+        ],
+        [
+          65,
+          93
+        ],
+        [
+          93,
+          134
+        ],
+        [
+          134,
+          165
+        ],
+        [
+          165,
+          193
+        ],
+        [
+          193,
+          199
+        ]
+      ],
+      "anchor_vector": [
+        15.397000576614579,
+        13.436955258429222,
+        14.44303401881135,
+        14.469389040898617,
+        15.177411760602679,
+        14.15625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "The title of the book is “John C.",
+        "negative_sentence": "",
+        "positive_full": " 2. The title of the book is “John C. Reynolds: The Great American Cookbook.” 3. The subtitle is “A Collection of Recipes from the Kitchen of a Legend.” 4. The cover image features a man in a kitchen, with a large pot on the stove. 5. The book is described as “a collection of recipes” and is presented as a “cookbook.” 6. The inclusion of “recipes” and “kitchen” strongly suggests this is a culinary or cooking book. 7. The phrase “Great American Cookbook” directly associates the book with American cuisine and cooking. 8",
+        "negative_full": "",
+        "positive_probability": 0.004949905712134275,
+        "negative_probability": 0.001,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " 2. The title of the book is “John C. Reynolds: The Great American Cookbook.” 3. The subtitle is “A Collection of Recipes from the Kitchen of a Legend.” 4. The cover image features a man in a kitchen, with a large pot on the stove. 5. The book is described as “a collection of recipes” and is presented as a “cookbook.” 6. The inclusion of “recipes” and “kitchen” strongly suggests this is a culinary or cooking book. 7. The phrase “Great American Cookbook” directly associates the book with American cuisine and cooking. 8",
+            "first_sentence": "The title of the book is “John C.",
+            "answer_probability": 0.004949905712134275,
+            "final_answer": "2. The title of the book is “John C. Reynolds: The Great American Cookbook.” 3. The subtitle is “A Collection of Recipes from the Kitchen of a Legend.” 4. The cover image features a man in a kitchen, with a large pot on the stove. 5. The book is described as “a collection of recipes” and is presented as a “cookbook.” 6. The inclusion of “recipes” and “kitchen” strongly suggests this is a culinary or cooking book. 7. The phrase “Great American Cookbook” directly associates the book with American cuisine and cooking. 8"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n2. The title is \"Cookbook\" which directly indicates the book is about cooking and recipes. \n3. The subtitle \"Simple, Delicious, and Budget-Friendly Meals\" further supports that it is focused on practical home cooking. \n4. The presence of a photo of a woman cooking reinforces the theme of home cooking. \n5. The book's description mentions “easy recipes” and “simple meals,” which are common features in cookbooks. \n6. The ISBN and publisher details (Penguin Random House) are typical for cookbooks. \n7. The book is targeted at “home cooks” and includes “step",
+            "first_sentence": "The title is \"Cookbook\" which directly indicates the book is about cooking and recipes.",
+            "answer_probability": 0.004669107340609063,
+            "final_answer": "7. The book is targeted at “home cooks” and includes “step"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "  \n2. The title includes “C” which is likely part of the author’s name, John C. \n\nThen:\n3. The subtitle “The Art of...” suggests this is not a cookbook but a book focused on the artistic or creative aspects of cooking or food.\n\nFinal step:\n4. Based on the title and context, it is not a cookbook but a book about the art of cooking or food, making it more related to “Food & Wine” in a broader sense, such as culinary arts or food culture, rather than practical recipes.\n\nTherefore, the book is not directly related to Cookbooks, but is related to",
+            "first_sentence": "The title includes “C” which is likely part of the author’s name, John C.",
+            "answer_probability": 0.004493606309667847,
+            "final_answer": "Therefore, the book is not directly related to Cookbooks, but is related to"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": "",
+            "first_sentence": "",
+            "answer_probability": 0.001,
+            "final_answer": ""
+          },
+          {
+            "sample_idx": 2,
+            "continuation": "",
+            "first_sentence": "",
+            "answer_probability": 0.001,
+            "final_answer": ""
+          }
+        ],
+        "correct_answer": "No",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004919711479367485,
+              "generated_answers": [
+                "Yes",
+                "Therefore, the book is related to Food & Wine, but not specifically to Cookbooks",
+                "Yes, it is",
+                "Yes, this book is related to Cookbooks, Food & Wine",
+                "Yes, this book is related to Cookbooks, Food & Wine"
+              ],
+              "answer_probabilities": [
+                0.005321982750401481,
+                0.005107690787214382,
+                0.004110869203978198,
+                0.0050604023667454,
+                0.004997612288497967
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005781622095303482,
+              "generated_answers": [
+                "Conclusion: Yes, this book is directly related",
+                "No, this book is not related to Cookbooks, Food & Wine in the traditional sense, but rather to the philosophy and sensory experience of food and drink appreciation",
+                "Yes, this book is related to Cookbooks, Food & Wine",
+                "No, this book is not related to Cookbooks, Food & Wine. It is a biographical history book",
+                "No, this book is not related to Cookbooks, Food & Wine"
+              ],
+              "answer_probabilities": [
+                0.005854455229668516,
+                0.004261732306144565,
+                0.005161643746228139,
+                0.007091974439689206,
+                0.0065383047547869855
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005037526938722077,
+              "generated_answers": [
+                "Yes, this book is related to Cookbooks, Food & Wine",
+                "Therefore, yes, this book is directly related to Cookbooks, Food & Wine",
+                "Therefore, I cannot definitively say whether this book is related to Cookbooks, Food & Wine. I would need more information, such as the full title, subtitle, description, or cover imagery, to make a proper assessment",
+                "Based on these points, yes, this book is related to Cookbooks, Food & Wine",
+                "No, this book is not related to Cookbooks, Food & Wine"
+              ],
+              "answer_probabilities": [
+                0.004719040041358888,
+                0.004702795487065266,
+                0.005658085009470285,
+                0.003811680905041064,
+                0.00629603325067488
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.1246852933281404,
+              "generated_answers": [
+                "No, this book is not related to Cookbooks, Food & Wine",
+                "Based on these points, is this book related to Cookbooks, Food & Wine? No, because it focuses on table settings and dining presentation, not on cooking or wine pairing",
+                "No",
+                "Yes, this book is related to Cookbooks, Food & Wine, but more specifically to the cultural, historical, and global aspects of food rather than practical cooking instructions. It falls under the broader category of food literature and culinary history",
+                "Yes, this book is related to Food & Wine, but not to Cookbooks"
+              ],
+              "answer_probabilities": [
+                0.006207395204324382,
+                0.004324790782394733,
+                0.6013292116805784,
+                0.005457592087463405,
+                0.006107476885941069
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005623002407201955,
+              "generated_answers": [
+                "Yes, it is related to Cookbooks, Food & Wine — specifically under the Food category.",
+                "Yes, this book is related to Cookbooks, Food & Wine",
+                "No, this book is not related to Cookbooks, Food & Wine",
+                "Yes, this book is related to Cookbooks, Food & Wine",
+                "No, this book is not related to Cookbooks, Food & Wine"
+              ],
+              "answer_probabilities": [
+                0.005605040453816025,
+                0.0051114583051657175,
+                0.005973120637499364,
+                0.004276548312292059,
+                0.007148844327236607
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 139,
+  "worker_rank": 4
+}

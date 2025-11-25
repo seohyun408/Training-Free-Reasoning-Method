@@ -1,0 +1,477 @@
+{
+  "total_pairs": 4,
+  "successful_pairs": 4,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/docvqa/train/documents/mmwg0065_1.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat kind of document is this? Answer the question using a single word or phrase.",
+      "reasoning_text": "<final>Activity Report</final>",
+      "raw_generation": [
+        "1. The document is titled \"ACTIVITY REPORT\" at the top center, clearly indicating its purpose.  \n2. It contains a structured table listing communication activities with remote stations, including timestamps, durations, page counts, and results.  \n3. The report is divided into two main sections: \"SEND\" and \"RECEIVE,\" detailing outgoing and incoming transmissions.  \n4. Each entry includes technical data such as remote station numbers, start times, modes (EC, PG), and error codes like \"COMMUNICATION ERROR E200\" or \"TERMINAL FAULT OP66.\"  \n5. The footer shows a source URL and a stamped \"BEST COPY\" in the upper right corner, confirming its official nature as a record.  \n\n<final>ACTIVITY REPORT</final>",
+        "<final>Activity Report</final>"
+      ],
+      "chunks": [
+        "<final>Activity Report</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          42,
+          50
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat kind of document is this?",
+      "reasoning_text": "1. The header prominently displays “ACTIVITY REPORT,” indicating this document summarizes operational activities, specifically communication or transmission events.  \n2. The table structure organizes data into columns such as “REMOTE STATION,” “START TIME,” “DURATION,” “#PAGES,” “MODE,” and “RESULTS,” typical of transaction logs.  \n3. The “RESULTS” column contains status indicators like “COMPLETED,” “COMMUNICATION ERROR,” and “TERMINAL FAULT,” confirming it tracks communication outcomes.  \n4. The presence of “SEND” and “RECEIVE” sections with numerical entries implies it logs both outgoing and incoming transmissions for audit or troubleshooting purposes.  \n5. The footer includes a “TOTAL” line and a source URL, suggesting this is an official operational record generated for internal use or archival.  \n\n<final>Activity Report</final>",
+      "raw_generation": [
+        "1. The document is titled \"ACTIVITY REPORT\" in large, bold letters at the top, indicating its primary purpose is to summarize operational activities.  \n2. It includes structured tables listing remote stations, start times, durations, page counts, modes, and results, suggesting it tracks communication or transaction logs.  \n3. The presence of timestamps, error codes (like E200, OP66), and status indicators (Completed, Terminal Fault) implies it records the outcomes of electronic communications or data transmissions.  \n4. The document is divided into two main sections: \"SEND\" and \"RECEIVE,\" each with its own table, showing bidirectional activity tracking for sent and received communications.  \n5. A stamp in the upper right corner labeled \"BEST COPY\" and metadata such as date/time and terminal ID confirm it is an official operational log from a specific system or company.\n\n<final>Activity Report</final>",
+        "1. The header prominently displays “ACTIVITY REPORT,” indicating this document summarizes operational activities, specifically communication or transmission events.  \n2. The table structure organizes data into columns such as “REMOTE STATION,” “START TIME,” “DURATION,” “#PAGES,” “MODE,” and “RESULTS,” typical of transaction logs.  \n3. The “RESULTS” column contains status indicators like “COMPLETED,” “COMMUNICATION ERROR,” and “TERMINAL FAULT,” confirming it tracks communication outcomes.  \n4. The presence of “SEND” and “RECEIVE” sections with numerical entries implies it logs both outgoing and incoming transmissions for audit or troubleshooting purposes.  \n5. The footer includes a “TOTAL” line and a source URL, suggesting this is an official operational record generated for internal use or archival.  \n\n<final>Activity Report</final>"
+      ],
+      "chunks": [
+        "1. The header prominently displays “ACTIVITY REPORT,” indicating this document summarizes operational activities, specifically communication or transmission events.",
+        "2. The table structure organizes data into columns such as “REMOTE STATION,” “START TIME,” “DURATION,” “#PAGES,” “MODE,” and “RESULTS,” typical of transaction logs.",
+        "3. The “RESULTS” column contains status indicators like “COMPLETED,” “COMMUNICATION ERROR,” and “TERMINAL FAULT,” confirming it tracks communication outcomes.",
+        "4. The presence of “SEND” and “RECEIVE” sections with numerical entries implies it logs both outgoing and incoming transmissions for audit or troubleshooting purposes.",
+        "5. The footer includes a “TOTAL” line and a source URL, suggesting this is an official operational record generated for internal use or archival.",
+        "<final>Activity Report</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          46
+        ],
+        [
+          47,
+          89
+        ],
+        [
+          90,
+          124
+        ],
+        [
+          125,
+          157
+        ],
+        [
+          158,
+          187
+        ],
+        [
+          188,
+          196
+        ]
+      ],
+      "anchor_vector": [
+        11.627596509711104,
+        10.384736654966405,
+        13.412372457570044,
+        9.726234172952587,
+        11.978515625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The document references “SATELLITE COMMUNICATION SYSTEM” and “SATELLITE TERMINAL,” pointing to its use in satellite-based data transmission.",
+        "negative_sentence": "The detailed entries show specific time-stamped communications (e.g., “06:00:00 1994-05-12”), suggesting operational logging.",
+        "positive_full": "  \n4. The document references “SATELLITE COMMUNICATION SYSTEM” and “SATELLITE TERMINAL,” pointing to its use in satellite-based data transmission. 5. The specific mention of “DURATION” and “#PAGES” suggests it records technical performance metrics for satellite data sessions. 6. The time-stamped entries and status codes imply it serves as a record for operational audits, troubleshooting, or performance analysis.\n\nBased on all the above, what kind of document is this?  \nThis is a **Satellite Communication Activity Report**, which logs and summarizes satellite data transmission sessions, including their start times, durations",
+        "negative_full": "  \n4. The detailed entries show specific time-stamped communications (e.g., “06:00:00 1994-05-12”), suggesting operational logging. 5. The presence of “SIGNAL REPEATERS” and “STATION” references implies a radio or telegraph network context. 6. The document concludes with a total of “30864 PAGES” transmitted and a summary of “18 COMMUNICATION ERRORS,” aligning with a summary report format.\n\nBased on these observations, the document is an **Activity Report** focused on communication operations, likely",
+        "positive_probability": 0.004637871890096118,
+        "negative_probability": 0.0031638311005734486,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": "  \n4. The document references “SATELLITE COMMUNICATION SYSTEM” and “SATELLITE TERMINAL,” pointing to its use in satellite-based data transmission. 5. The specific mention of “DURATION” and “#PAGES” suggests it records technical performance metrics for satellite data sessions. 6. The time-stamped entries and status codes imply it serves as a record for operational audits, troubleshooting, or performance analysis.\n\nBased on all the above, what kind of document is this?  \nThis is a **Satellite Communication Activity Report**, which logs and summarizes satellite data transmission sessions, including their start times, durations",
+            "first_sentence": "The document references “SATELLITE COMMUNICATION SYSTEM” and “SATELLITE TERMINAL,” pointing to its use in satellite-based data transmission.",
+            "answer_probability": 0.004637871890096118,
+            "final_answer": "This is a **Satellite Communication Activity Report**, which logs and summarizes satellite data transmission sessions, including their start times, durations"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " 4. The footer notes “Prepared by: [Name]” and “Date: [Date],” indicating authorship and date of preparation. 5. The inclusion of a “Signature” line further validates it as an official record. 6. The document’s purpose is to report on specific events (transmissions) with structured data and outcomes. 7. The use of a table format for recording multiple transmission attempts with timestamps and statuses is characteristic of operational reports.\n\nConclusion: This is a **transmission activity report** that logs communication events between stations, including their status and outcomes.\n\nWhat kind of document is this?",
+            "first_sentence": "The footer notes “Prepared by: [Name]” and “Date: [Date],” indicating authorship and date of preparation.",
+            "answer_probability": 0.004015209922359692,
+            "final_answer": "What kind of document is this"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": "  \n\n4. The inclusion of specific equipment details (e.g., “B-125,” “S-250,” “B-125B”) and the mention of “VHF RADIO” suggest technical operations, likely involving radio communication systems. 5. The “MODE” column lists terms like “CW” (Morse code), “SSB” (single sideband), and “FM” (frequency modulation), which are standard radio communication modes. 6. The document references “TOMMY” and “HANK” as operators, which implies human involvement in managing these transmissions. 7.",
+            "first_sentence": "The inclusion of specific equipment details (e.g., “B-125,” “S-250,” “B-125B”) and the mention of “VHF RADIO” suggest technical operations, likely involving radio communication systems.",
+            "answer_probability": 0.0037836873048669624,
+            "final_answer": "4. The inclusion of specific equipment details (e.g., “B-125,” “S-250,” “B-125B”) and the mention of “VHF RADIO” suggest technical operations, likely involving radio communication systems. 5. The “MODE” column lists terms like “CW” (Morse code), “SSB” (single sideband), and “FM” (frequency modulation), which are standard radio communication modes. 6. The document references “TOMMY” and “HANK” as operators, which implies human involvement in managing these transmissions. 7"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": "  \n4. The detailed entries (e.g., “K-9331-00002” at “01:00:00” with “COMPLETED” status) show specific transaction data, reinforcing this is a technical log. 5. The document includes timestamps and durations, suggesting it’s a chronological record of events, consistent with operational or system logs. 6. The use of technical terms like “MODE” and “PAGES” implies it’s intended for technical or administrative staff monitoring system performance. 7. The footer section (“Page 1 of 1”) and structured format indicate",
+            "first_sentence": "The detailed entries (e.g., “K-9331-00002” at “01:00:00” with “COMPLETED” status) show specific transaction data, reinforcing this is a technical log.",
+            "answer_probability": 0.003629235978405747,
+            "final_answer": "4. The detailed entries (e.g., “K-9331-00002” at “01:00:00” with “COMPLETED” status) show specific transaction data, reinforcing this is a technical log. 5. The document includes timestamps and durations, suggesting it’s a chronological record of events, consistent with operational or system logs. 6. The use of technical terms like “MODE” and “PAGES” implies it’s intended for technical or administrative staff monitoring system performance. 7. The footer section (“Page 1 of 1”) and structured format indicate"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": "  \n4. The detailed entries show specific time-stamped communications (e.g., “06:00:00 1994-05-12”), suggesting operational logging. 5. The presence of “SIGNAL REPEATERS” and “STATION” references implies a radio or telegraph network context. 6. The document concludes with a total of “30864 PAGES” transmitted and a summary of “18 COMMUNICATION ERRORS,” aligning with a summary report format.\n\nBased on these observations, the document is an **Activity Report** focused on communication operations, likely",
+            "first_sentence": "The detailed entries show specific time-stamped communications (e.g., “06:00:00 1994-05-12”), suggesting operational logging.",
+            "answer_probability": 0.0031638311005734486,
+            "final_answer": "Based on these observations, the document is an **Activity Report** focused on communication operations, likely"
+          }
+        ],
+        "correct_answer": "This document is an activity report.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004165161412467689,
+              "generated_answers": [
+                "This document is a **communication log or transmission report**. It summarizes completed communication activities, likely for operational review or record-keeping purposes",
+                "An Activity Report documenting technical communication events with verification and signature",
+                "Operational activity report for a radio/telegraph communication system",
+                ": A weekly activity report for communication transmissions",
+                "This is an **operational activity report** detailing communication transmission events for internal review or troubleshooting"
+              ],
+              "answer_probabilities": [
+                0.003593577020908065,
+                0.0032376668773865455,
+                0.005182904511184894,
+                0.004232347930091759,
+                0.0045793107227671825
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004057863564492387,
+              "generated_answers": [
+                "This is a system-generated activity report documenting communication transmission events.",
+                "This is an Activity Report documenting the outcomes of communication transmissions, including start times, durations, page counts, modes, and results (successes, errors, or faults). It serves as a formal record for operational auditing and performance analysis",
+                "This is an Activity Report for Communication or Transmission Events",
+                "Final conclusion: This is a **standardized activity report** for a communication network, likely from a space mission’s ground station or relay system, documenting completed transmissions and errors over a specific time period. The document serves both operational tracking and archival purposes",
+                "This document is an **Amateur Radio Activity Report** —"
+              ],
+              "answer_probabilities": [
+                0.0039222086123052915,
+                0.004757157029756747,
+                0.0038032845173513502,
+                0.0035351456416026447,
+                0.004271522021445899
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004451489460488485,
+              "generated_answers": [
+                "This is an Activity Report for Communication Systems",
+                "",
+                "",
+                "This is an Activity Report for a radio or paging communication system, summarizing transmission events, their outcomes, and technical parameters for operational review",
+                "An amateur radio HF communication activity report"
+              ],
+              "answer_probabilities": [
+                0.004309199305144114,
+                0.004591950255494491,
+                0.004420218062935798,
+                0.003664413614522757,
+                0.005271666064345264
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004303906569944999,
+              "generated_answers": [
+                "The document is an **Activity Report**",
+                "Therefore, the document is a **Radio Communication Activity Report** for amateur radio operators",
+                "This is an amateur radio communication activity log or report",
+                "This is an **Activity Report**",
+                "This document is an **Activity Report** for communication or data transmission operations"
+              ],
+              "answer_probabilities": [
+                0.004977704869527975,
+                0.0035830608328046754,
+                0.004635642766428895,
+                0.003857747385908883,
+                0.004465376995054568
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0041484342409633095,
+              "generated_answers": [
+                "This is an **Activity Report** summarizing communication or data transmission activities, likely for a telegraph or fax service provider, detailing the status and performance of transmissions to various remote stations",
+                "This document is not a financial report, a project plan, a legal contract, or a personal diary — it is a technical operational log used for monitoring and auditing radio communication activities, including failures and successes, across a distributed network of",
+                "This is a formal activity report documenting communication transmission events, likely from a radio or amateur radio station, detailing operational outcomes and performance metrics for accountability and analysis",
+                "This document is an **Activity Report** detailing the results of communication sessions, such as fax transmissions",
+                "Activity Report"
+              ],
+              "answer_probabilities": [
+                0.003799425648723664,
+                0.004974379664786331,
+                0.0038375892882990515,
+                0.004120014476942165,
+                0.004010762126065333
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Local Terminal ID mentioned in the report? Answer the question using a single word or phrase.",
+      "reasoning_text": "19107410815",
+      "raw_generation": [
+        "19107410815",
+        "19107410815"
+      ],
+      "chunks": [
+        "19107410815"
+      ],
+      "chunk_token_ranges": [
+        [
+          50,
+          61
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the Local Terminal ID mentioned in the report?",
+      "reasoning_text": "1. The report header includes a field labeled “LOCAL TERMINAL ID.”  \n2. Directly beneath this label, the value “19107410815” is clearly printed.  \n3. This ID is positioned to the right of the “DATE/TIME” field and left of “LOCAL NAME.”  \n4. The terminal ID remains consistent across the document’s top section, indicating it is a static identifier for this session.  \n5. No other terminal ID appears elsewhere in the report’s structured data, confirming its uniqueness to this instance.  \n\n<final>19107410815</final>",
+      "raw_generation": [
+        "1. The report header contains several key metadata fields, including the date/time, local terminal ID, local name, and company logo.\n2. The \"LOCAL TERMINAL ID\" field is located directly beneath the \"DATE/TIME\" field in the upper right section of the document.\n3. The value listed for \"LOCAL TERMINAL ID\" is clearly printed as \"19107410815\".\n4. This ID is formatted as a numeric string without any separators or additional characters.\n5. The ID is consistent with typical terminal identification formats used in legacy telecommunication systems.\n\n<final>19107410815</final>",
+        "1. The report header includes a field labeled “LOCAL TERMINAL ID.”  \n2. Directly beneath this label, the value “19107410815” is clearly printed.  \n3. This ID is positioned to the right of the “DATE/TIME” field and left of “LOCAL NAME.”  \n4. The terminal ID remains consistent across the document’s top section, indicating it is a static identifier for this session.  \n5. No other terminal ID appears elsewhere in the report’s structured data, confirming its uniqueness to this instance.  \n\n<final>19107410815</final>"
+      ],
+      "chunks": [
+        "1. The report header includes a field labeled “LOCAL TERMINAL ID.”  \n2.",
+        "Directly beneath this label, the value “19107410815” is clearly printed.",
+        "3. This ID is positioned to the right of the “DATE/TIME” field and left of “LOCAL NAME.”  \n4.",
+        "The terminal ID remains consistent across the document’s top section, indicating it is a static identifier for this session.",
+        "5. No other terminal ID appears elsewhere in the report’s structured data, confirming its uniqueness to this instance.",
+        "<final>19107410815</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          30,
+          48
+        ],
+        [
+          48,
+          73
+        ],
+        [
+          74,
+          101
+        ],
+        [
+          101,
+          123
+        ],
+        [
+          124,
+          146
+        ],
+        [
+          147,
+          164
+        ]
+      ],
+      "anchor_vector": [
+        10.74899353832442,
+        10.680164248760583,
+        11.315375724153299,
+        12.394405915775401,
+        9.790441176470589,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Therefore, the Local Terminal ID is “19107410815”.",
+        "negative_sentence": "There is no ambiguity in the value; it is unbroken and unaltered, with no additional characters or formatting.",
+        "positive_full": "  \n5. Therefore, the Local Terminal ID is “19107410815”.\n\nThe Local Terminal ID is 19107410815.",
+        "negative_full": "  \n5. There is no ambiguity in the value; it is unbroken and unaltered, with no additional characters or formatting.  \n6. The value aligns with the expected format for a terminal ID (numeric, 11 digits).  \n7. Since the report is structured with fixed positions for each field, this value cannot be misread or interpreted as part of another field.\n\nConclusion:  \nThe Local Terminal ID mentioned in the report is 19107410815.",
+        "positive_probability": 0.007221517045109193,
+        "negative_probability": 0.005404385026304829,
+        "all_samples": [
+          {
+            "sample_idx": 2,
+            "continuation": "  \n5. Therefore, the Local Terminal ID is “19107410815”.\n\nThe Local Terminal ID is 19107410815.",
+            "first_sentence": "Therefore, the Local Terminal ID is “19107410815”.",
+            "answer_probability": 0.007221517045109193,
+            "final_answer": "The Local Terminal ID is 19107410815"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": "  \n5. Since the value is explicitly printed in the report header and matches the label “LOCAL TERMINAL ID,” there is no ambiguity in identifying it.\n\nFinal answer: The Local Terminal ID is **19107410815**.",
+            "first_sentence": "Since the value is explicitly printed in the report header and matches the label “LOCAL TERMINAL ID,” there is no ambiguity in identifying it.",
+            "answer_probability": 0.006609983487274045,
+            "final_answer": "The Local Terminal ID is 19107410815"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": "  \n5. The “LOCAL TERMINAL ID” is explicitly stated as “19107410815” — no ambiguity or alternative value is provided in the report.  \n6. This value is likely a unique identifier assigned to the terminal or device generating or receiving this report.  \n7. Since the report is structured with clear, labeled fields, and no conflicting data is visible, “19107410815” is the definitive answer.\n\nThe Local Terminal ID mentioned in the report is **19107410815**.",
+            "first_sentence": "The “LOCAL TERMINAL ID” is explicitly stated as “19107410815” — no ambiguity or alternative value is provided in the report.",
+            "answer_probability": 0.006436535304136769,
+            "final_answer": ""
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n5. The value \"19107410815\" is formatted as a 11-digit number, which is typical for terminal or device identification in many systems (e.g., POS terminals, ATMs, or internal systems). 6. Since no other terminal IDs are listed in the report header, and the value is positioned in a standard header location, it is the only logical candidate for \"Local Terminal ID.\"\n\nFinal Answer: The Local Terminal ID mentioned in the report is **19107410815**.",
+            "first_sentence": "The value \"19107410815\" is formatted as a 11-digit number, which is typical for terminal or device identification in many systems (e.g., POS terminals, ATMs, or internal systems).",
+            "answer_probability": 0.005887039034969454,
+            "final_answer": "The Local Terminal ID mentioned in the report is 19107410815"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "  \n5. There is no ambiguity in the value; it is unbroken and unaltered, with no additional characters or formatting.  \n6. The value aligns with the expected format for a terminal ID (numeric, 11 digits).  \n7. Since the report is structured with fixed positions for each field, this value cannot be misread or interpreted as part of another field.\n\nConclusion:  \nThe Local Terminal ID mentioned in the report is 19107410815.",
+            "first_sentence": "There is no ambiguity in the value; it is unbroken and unaltered, with no additional characters or formatting.",
+            "answer_probability": 0.005404385026304829,
+            "final_answer": "The Local Terminal ID mentioned in the report is 19107410815"
+          }
+        ],
+        "correct_answer": "The Local Terminal ID mentioned in the report is 19107410815.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0056946466292195465,
+              "generated_answers": [
+                "",
+                "The Local Terminal ID mentioned in the report is **19107410815**",
+                "The Local Terminal ID is 19107410815",
+                "",
+                "The Local Terminal ID mentioned in the report is **19107410815**"
+              ],
+              "answer_probabilities": [
+                0.005980707197455245,
+                0.006559175952815644,
+                0.005137167559343655,
+                0.0056604974787495465,
+                0.005135684957733639
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0055407117045722125,
+              "generated_answers": [
+                "",
+                "",
+                "19107410815",
+                "The Local Terminal ID mentioned in the report is **19107410815**",
+                "The Local Terminal ID is 19107410815"
+              ],
+              "answer_probabilities": [
+                0.004881280906295718,
+                0.005415767238148191,
+                0.005832407469457908,
+                0.005529017491683257,
+                0.006045085417275986
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005346954389942078,
+              "generated_answers": [
+                "The Local Terminal ID mentioned in the report is **19107410815**",
+                "19107410815",
+                "The Local Terminal ID mentioned in the report is 19107410815",
+                "19107410815",
+                "The Local Terminal ID mentioned in the report is 19107410815"
+              ],
+              "answer_probabilities": [
+                0.0049461465918561615,
+                0.005877849730538454,
+                0.005708315411777261,
+                0.005778353262935081,
+                0.004424106952603436
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0058548283178048695,
+              "generated_answers": [
+                "",
+                "The Local Terminal ID is 19107410815",
+                "Conclusion: The Local Terminal ID mentioned in the report is **19107410815**",
+                "19107410815",
+                "The Local Terminal ID is 19107410815"
+              ],
+              "answer_probabilities": [
+                0.006496197801134275,
+                0.005265628026523654,
+                0.004947024965330431,
+                0.006739174099895938,
+                0.005826116696140046
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005469189549132503,
+              "generated_answers": [
+                "The Local Terminal ID mentioned in the report is 19107410815",
+                "19107410815",
+                "",
+                "The Local Terminal ID is **19107410815**",
+                "The Local Terminal ID is 19107410815"
+              ],
+              "answer_probabilities": [
+                0.006150833626088079,
+                0.005333522366299922,
+                0.006198246223255639,
+                0.005053280211175077,
+                0.004610065318843797
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 219,
+  "worker_rank": 5
+}

@@ -1,0 +1,425 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/chartqa/train/png/OECD_FDI_INCOME_RECEIPTS_BY_INDUSTRY_AUT_LVA_000018.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich country does the blue line represent? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The blue line remains consistently at the zero mark across all years from 2013 to 2016, indicating no change in FDI income receipts for the represented country.  \n2. The label \"Latvia\" is positioned directly beside the blue line's data points, explicitly identifying the country associated with this line.  \n3. The red line shows significant fluctuations, dipping to negative values in 2015 and rising sharply in 2016, contrasting with Latvia’s stable zero line.  \n4. Austria is labeled near the red line’s endpoint in 2016, confirming the red line represents Austria’s FDI income receipts, not Latvia’s.  \n5. Since the blue line remains flat at zero and is labeled “Latvia,” it clearly represents Latvia’s FDI income receipts for the given period.  \n\n<final>Latvia</final>",
+      "raw_generation": [
+        "1. The graph displays two distinct lines, one blue and one red, each representing a different country’s FDI income receipts by industry from 2013 to 2016.\n2. The blue line remains consistently at zero across all years shown, indicating no change in FDI income receipts for that country during this period.\n3. The red line shows a significant decline from 2013 to 2015, followed by a sharp increase in 2016, suggesting volatility in FDI income receipts for that country.\n4. The label \"Latvia\" is clearly positioned next to the blue line’s endpoint in 2016, directly identifying the country associated with that line.\n5. The label \"Austria\" is positioned next to the red line’s endpoint in 2016, confirming that the red line represents Austria.\n\n<final>Latvia</final>",
+        "1. The blue line remains consistently at the zero mark across all years from 2013 to 2016, indicating no change in FDI income receipts for the represented country.  \n2. The label \"Latvia\" is positioned directly beside the blue line's data points, explicitly identifying the country associated with this line.  \n3. The red line shows significant fluctuations, dipping to negative values in 2015 and rising sharply in 2016, contrasting with Latvia’s stable zero line.  \n4. Austria is labeled near the red line’s endpoint in 2016, confirming the red line represents Austria’s FDI income receipts, not Latvia’s.  \n5. Since the blue line remains flat at zero and is labeled “Latvia,” it clearly represents Latvia’s FDI income receipts for the given period.  \n\n<final>Latvia</final>"
+      ],
+      "chunks": [
+        "1. The blue line remains consistently at the zero mark across all years from 2013 to 2016, indicating no change in FDI income receipts for the represented country.",
+        "2. The label \"Latvia\" is positioned directly beside the blue line's data points, explicitly identifying the country associated with this line.",
+        "3. The red line shows significant fluctuations, dipping to negative values in 2015 and rising sharply in 2016, contrasting with Latvia’s stable zero line.",
+        "4. Austria is labeled near the red line’s endpoint in 2016, confirming the red line represents Austria’s FDI income receipts, not Latvia’s.",
+        "5. Since the blue line remains flat at zero and is labeled “Latvia,” it clearly represents Latvia’s FDI income receipts for the given period.",
+        "<final>Latvia</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          84
+        ],
+        [
+          85,
+          113
+        ],
+        [
+          114,
+          151
+        ],
+        [
+          152,
+          186
+        ],
+        [
+          187,
+          218
+        ],
+        [
+          219,
+          227
+        ]
+      ],
+      "anchor_vector": [
+        10.177561201242991,
+        11.076457604609232,
+        13.888525538170057,
+        11.725548282746345,
+        20.611328125,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Therefore, the blue line represents the FDI income receipts of Latvia, which have remained consistently zero from 2013 to 2016 as shown in the chart.",
+        "negative_sentence": "Latvia’s FDI income receipts were indeed zero in this period, as Latvia was not receiving any FDI income, and thus the blue line at zero aligns with the economic data.",
+        "positive_full": " \n\n6. Therefore, the blue line represents the FDI income receipts of Latvia, which have remained consistently zero from 2013 to 2016 as shown in the chart.\n\nLatvia",
+        "negative_full": " \n\n6. Latvia’s FDI income receipts were indeed zero in this period, as Latvia was not receiving any FDI income, and thus the blue line at zero aligns with the economic data. \n\n7. The question asks for the country the blue line represents, and based on the labeling and data trend, the answer is unequivocally Latvia.\n\nLatvia",
+        "positive_probability": 0.5525246198164998,
+        "negative_probability": 0.004534249328768969,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n6. Therefore, the blue line represents the FDI income receipts of Latvia, which have remained consistently zero from 2013 to 2016 as shown in the chart.\n\nLatvia",
+            "first_sentence": "Therefore, the blue line represents the FDI income receipts of Latvia, which have remained consistently zero from 2013 to 2016 as shown in the chart.",
+            "answer_probability": 0.5525246198164998,
+            "final_answer": "Latvia"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n6. Cross-checking with known economic data, Latvia has experienced a period of low or negative FDI income receipts in recent years, especially post-2013, which aligns with the blue line's flat zero status. 7. The consistent zero value on the blue line, combined with the explicit label “Latvia,” leaves no ambiguity about which country the blue line represents.\n\nLatvia",
+            "first_sentence": "Cross-checking with known economic data, Latvia has experienced a period of low or negative FDI income receipts in recent years, especially post-2013, which aligns with the blue line's flat zero status.",
+            "answer_probability": 0.5027241852669098,
+            "final_answer": "Latvia"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n6. Latvia’s economy is known for having a low FDI inflow compared to other EU countries, and in the period shown, its FDI income receipts remained stable at zero, which aligns with the data presented. 7. Therefore, based on the explicit labeling and the pattern of data, the blue line represents Latvia.\n\nLatvia",
+            "first_sentence": "Latvia’s economy is known for having a low FDI inflow compared to other EU countries, and in the period shown, its FDI income receipts remained stable at zero, which aligns with the data presented.",
+            "answer_probability": 0.4918974130314883,
+            "final_answer": "Latvia"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n6. The data trend for the blue line is consistent with Latvia’s known economic context: Latvia has experienced very low or negligible FDI income receipts over this period due to its economic structure, limited foreign direct investment inflows, or other macroeconomic factors. 7. The stability of the blue line at zero indicates that Latvia’s FDI income receipts did not experience any growth, decline, or volatility during the years 2013–2016, which aligns with the country’s historical FDI patterns. 8. The visual labeling and data trend together provide a clear and unambiguous association: the blue line",
+            "first_sentence": "The data trend for the blue line is consistent with Latvia’s known economic context: Latvia has experienced very low or negligible FDI income receipts over this period due to its economic structure, limited foreign direct investment inflows, or other macroeconomic factors.",
+            "answer_probability": 0.005422857885825824,
+            "final_answer": "6. The data trend for the blue line is consistent with Latvia’s known economic context: Latvia has experienced very low or negligible FDI income receipts over this period due to its economic structure, limited foreign direct investment inflows, or other macroeconomic factors. 7. The stability of the blue line at zero indicates that Latvia’s FDI income receipts did not experience any growth, decline, or volatility during the years 2013–2016, which aligns with the country’s historical FDI patterns. 8. The visual labeling and data trend together provide a clear and unambiguous association: the blue line"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n6. Latvia’s FDI income receipts were indeed zero in this period, as Latvia was not receiving any FDI income, and thus the blue line at zero aligns with the economic data. \n\n7. The question asks for the country the blue line represents, and based on the labeling and data trend, the answer is unequivocally Latvia.\n\nLatvia",
+            "first_sentence": "Latvia’s FDI income receipts were indeed zero in this period, as Latvia was not receiving any FDI income, and thus the blue line at zero aligns with the economic data.",
+            "answer_probability": 0.004534249328768969,
+            "final_answer": "unequivocally Latvia"
+          }
+        ],
+        "correct_answer": "Latvia",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 1.0,
+              "correct_count": 5,
+              "total_trials": 5,
+              "avg_probability": 0.4810858648658538,
+              "generated_answers": [
+                "Latvia",
+                "Latvia",
+                "Latvia",
+                "Latvia",
+                "Latvia"
+              ],
+              "answer_probabilities": [
+                0.484038079430289,
+                0.44454142164909477,
+                0.4987520752070225,
+                0.5093666077513865,
+                0.46873114029147644
+              ]
+            },
+            "0.5": {
+              "accuracy": 1.0,
+              "correct_count": 5,
+              "total_trials": 5,
+              "avg_probability": 0.5219051613893422,
+              "generated_answers": [
+                "Latvia",
+                "Latvia",
+                "Latvia",
+                "Latvia",
+                "Latvia"
+              ],
+              "answer_probabilities": [
+                0.5218672438516557,
+                0.4357019682479716,
+                0.608078240233186,
+                0.49895478720304876,
+                0.5449235674108487
+              ]
+            },
+            "1.0": {
+              "accuracy": 1.0,
+              "correct_count": 5,
+              "total_trials": 5,
+              "avg_probability": 0.45351322564818125,
+              "generated_answers": [
+                "Latvia",
+                "Latvia",
+                "Latvia",
+                "Latvia",
+                "Latvia"
+              ],
+              "answer_probabilities": [
+                0.5425678860624962,
+                0.2609809029327813,
+                0.4828550518882582,
+                0.49051306987270593,
+                0.4906492174846646
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.8,
+              "correct_count": 4,
+              "total_trials": 5,
+              "avg_probability": 0.4157273890016124,
+              "generated_answers": [
+                "Latvia",
+                "Latvia",
+                "based on the visual and textual information provided",
+                "Latvia",
+                "Latvia"
+              ],
+              "answer_probabilities": [
+                0.5301682026512108,
+                0.5168894925005734,
+                0.004078112472530381,
+                0.49451348642703535,
+                0.5329876509567119
+              ]
+            },
+            "5.0": {
+              "accuracy": 1.0,
+              "correct_count": 5,
+              "total_trials": 5,
+              "avg_probability": 0.46182225324756276,
+              "generated_answers": [
+                "Latvia",
+                "Latvia",
+                "Latvia",
+                "Latvia",
+                "Latvia"
+              ],
+              "answer_probabilities": [
+                0.43318066011607337,
+                0.49182005814118435,
+                0.539019058629095,
+                0.421962333479436,
+                0.42312915587202504
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhen does the gap between two countries become biggest? Answer the question using a single word or phrase.",
+      "reasoning_text": "1. The graph depicts FDI income receipts for Austria and Latvia from 2013 to 2016, with values measured in millions of US dollars.  \n2. In 2013, both countries started with zero FDI income receipts, indicating no gap at the beginning.  \n3. By 2014, Latvia’s FDI income receipts dropped to -1 million, while Austria’s remained at zero, creating a 1-million-dollar gap.  \n4. In 2015, Latvia’s receipts plummeted to -5 million, while Austria’s remained at zero, widening the gap to 5 million dollars.  \n5. By 2016, Austria’s receipts rose to +1 million, and Latvia’s returned to zero, closing the gap to 1 million dollars.  \n\n<final>2015</final>",
+      "raw_generation": [
+        "1. The graph displays FDI income receipts for Austria and Latvia from 2013 to 2016, with values measured in millions of US dollars.\n2. Austria's line remains consistently above Latvia's throughout the period, indicating higher FDI income receipts for Austria.\n3. In 2013, both countries start at the same level, with zero FDI income receipts, showing no gap at the beginning.\n4. The gap widens as Austria's FDI income receipts rise while Latvia's decline, with the largest divergence occurring in 2015.\n5. In 2015, Austria's FDI income receipts reach a high point, while Latvia's drop to its lowest point, creating the maximum visual distance between the two lines.\n\n<final>2015</final>",
+        "1. The graph depicts FDI income receipts for Austria and Latvia from 2013 to 2016, with values measured in millions of US dollars.  \n2. In 2013, both countries started with zero FDI income receipts, indicating no gap at the beginning.  \n3. By 2014, Latvia’s FDI income receipts dropped to -1 million, while Austria’s remained at zero, creating a 1-million-dollar gap.  \n4. In 2015, Latvia’s receipts plummeted to -5 million, while Austria’s remained at zero, widening the gap to 5 million dollars.  \n5. By 2016, Austria’s receipts rose to +1 million, and Latvia’s returned to zero, closing the gap to 1 million dollars.  \n\n<final>2015</final>"
+      ],
+      "chunks": [
+        "1. The graph depicts FDI income receipts for Austria and Latvia from 2013 to 2016, with values measured in millions of US dollars.",
+        "2. In 2013, both countries started with zero FDI income receipts, indicating no gap at the beginning.",
+        "3. By 2014, Latvia’s FDI income receipts dropped to -1 million, while Austria’s remained at zero, creating a 1-million-dollar gap.",
+        "4. In 2015, Latvia’s receipts plummeted to -5 million, while Austria’s remained at zero, widening the gap to 5 million dollars.",
+        "5. By 2016, Austria’s receipts rose to +1 million, and Latvia’s returned to zero, closing the gap to 1 million dollars.",
+        "<final>2015</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          83
+        ],
+        [
+          84,
+          110
+        ],
+        [
+          111,
+          147
+        ],
+        [
+          148,
+          183
+        ],
+        [
+          184,
+          218
+        ],
+        [
+          219,
+          229
+        ]
+      ],
+      "anchor_vector": [
+        9.71978291684763,
+        9.947553139908308,
+        10.221475681336988,
+        17.807583079618567,
+        13.2123046875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "In 2016, Latvia’s FDI income receipts dropped further to -8 million, while Austria’s remained at zero, resulting in a gap of 8 million dollars.",
+        "negative_sentence": "In 2016, Latvia’s FDI income receipts dropped further to -25 million, while Austria’s remained at zero, creating a 25-million-dollar gap.",
+        "positive_full": " 5. In 2016, Latvia’s FDI income receipts dropped further to -8 million, while Austria’s remained at zero, resulting in a gap of 8 million dollars. 6. Comparing all the gaps: 2014 had a 1-million-dollar gap, 2015 had a 5-million-dollar gap, and 2016 had an 8-million-dollar gap.\n\nThe final answer is: 2016",
+        "negative_full": " 5. In 2016, Latvia’s FDI income receipts dropped further to -25 million, while Austria’s remained at zero, creating a 25-million-dollar gap. 6. Since Austria’s FDI income receipts never changed from 2013 to 2016 (remaining at zero), and Latvia’s receipts became more negative each year, the gap widens every year. 7. Therefore, the gap becomes the biggest in the last year shown in the graph, which is 2016.\n\nThe gap between two countries becomes biggest in 2016.",
+        "positive_probability": 0.008141448088971725,
+        "negative_probability": 0.006931766694880273,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " 5. In 2016, Latvia’s FDI income receipts dropped further to -8 million, while Austria’s remained at zero, resulting in a gap of 8 million dollars. 6. Comparing all the gaps: 2014 had a 1-million-dollar gap, 2015 had a 5-million-dollar gap, and 2016 had an 8-million-dollar gap.\n\nThe final answer is: 2016",
+            "first_sentence": "In 2016, Latvia’s FDI income receipts dropped further to -8 million, while Austria’s remained at zero, resulting in a gap of 8 million dollars.",
+            "answer_probability": 0.008141448088971725,
+            "final_answer": "2016"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " 5. In 2016, Latvia’s FDI income receipts dropped further to -9 million, while Austria’s remained at zero, widening the gap to 9 million dollars.\n\nWhat is the final answer?\n\nThe final answer is: 2016",
+            "first_sentence": "In 2016, Latvia’s FDI income receipts dropped further to -9 million, while Austria’s remained at zero, widening the gap to 9 million dollars.",
+            "answer_probability": 0.007930143614012303,
+            "final_answer": ""
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 5. In 2016, Latvia’s FDI income receipts further dropped to -10 million, while Austria’s remained at zero. Therefore, the gap between the two countries’ FDI income receipts is now 10 million dollars, which is the largest gap observed during this period.\n\nWhat is the answer?\n\n10 million dollars",
+            "first_sentence": "In 2016, Latvia’s FDI income receipts further dropped to -10 million, while Austria’s remained at zero.",
+            "answer_probability": 0.007450624937769282,
+            "final_answer": ""
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " 5. In 2016, Latvia’s FDI income receipts dropped further to -8 million, while Austria’s stayed at zero, increasing the gap to 8 million dollars.\n\nThe gap between the two countries becomes biggest in 2016, when Latvia's FDI income is -8 million and Austria's is 0, resulting in an 8-million-dollar gap.\n\nIn 2016",
+            "first_sentence": "In 2016, Latvia’s FDI income receipts dropped further to -8 million, while Austria’s stayed at zero, increasing the gap to 8 million dollars.",
+            "answer_probability": 0.007448736613357435,
+            "final_answer": "In 2016"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 5. In 2016, Latvia’s FDI income receipts dropped further to -25 million, while Austria’s remained at zero, creating a 25-million-dollar gap. 6. Since Austria’s FDI income receipts never changed from 2013 to 2016 (remaining at zero), and Latvia’s receipts became more negative each year, the gap widens every year. 7. Therefore, the gap becomes the biggest in the last year shown in the graph, which is 2016.\n\nThe gap between two countries becomes biggest in 2016.",
+            "first_sentence": "In 2016, Latvia’s FDI income receipts dropped further to -25 million, while Austria’s remained at zero, creating a 25-million-dollar gap.",
+            "answer_probability": 0.006931766694880273,
+            "final_answer": "The gap between two countries becomes biggest in 2016"
+          }
+        ],
+        "correct_answer": "2015",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007083179657244381,
+              "generated_answers": [
+                "2016",
+                "2016",
+                "10 million dollars",
+                "",
+                "gap is biggest in 2016"
+              ],
+              "answer_probabilities": [
+                0.007377223755718262,
+                0.0071179653489665245,
+                0.006822568922493811,
+                0.006960205121658504,
+                0.007137935137384801
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007216413912247807,
+              "generated_answers": [
+                "The gap between the two countries becomes biggest in 2016",
+                "2016",
+                "The gap between the two countries becomes biggest in 2016",
+                "2016",
+                "\\boxed{2016}"
+              ],
+              "answer_probabilities": [
+                0.007458935828064526,
+                0.007630018740825048,
+                0.007047695154093594,
+                0.007314570504550452,
+                0.006630849333705415
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006887141781811298,
+              "generated_answers": [
+                "2016",
+                "2016",
+                "gap becomes biggest in 2016",
+                "biggest gap in 2016",
+                "2016"
+              ],
+              "answer_probabilities": [
+                0.006653783509238565,
+                0.006968984786445039,
+                0.006977750236369586,
+                0.007069836560217276,
+                0.006765353816786029
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007220997063344559,
+              "generated_answers": [
+                "2016",
+                "gap becomes biggest in 2016",
+                "The gap between the two countries becomes biggest in 2016",
+                "2016",
+                "gap between two countries become biggest: 2016"
+              ],
+              "answer_probabilities": [
+                0.006761500772647568,
+                0.007224378143065012,
+                0.007843465111802488,
+                0.006798262163941529,
+                0.007477379125266199
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007075083808334491,
+              "generated_answers": [
+                "2016",
+                "2016",
+                "2016",
+                "2016",
+                "2016"
+              ],
+              "answer_probabilities": [
+                0.007477707418841973,
+                0.006121190980815527,
+                0.007597872268052243,
+                0.007258843725491261,
+                0.006919804648471449
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 76,
+  "worker_rank": 3
+}

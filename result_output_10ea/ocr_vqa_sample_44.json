@@ -1,0 +1,873 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/ocr_vqa/images/1906525536.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "<final>Philip Permutt</final>",
+      "raw_generation": [
+        "1. The book cover clearly displays the title \"The Complete Guide to Crystal Chakra Healing\" in large, prominent text.\n2. Directly beneath the subtitle, the author's name is printed in a smaller but legible font.\n3. The name \"Philip Permutt\" is positioned centrally on the cover, indicating authorship.\n4. No other names appear in a position typically reserved for authors on a book cover.\n5. The text is unambiguous and directly answers the question without requiring external information.\n\n<final>Philip Permutt</final>",
+        "<final>Philip Permutt</final>"
+      ],
+      "chunks": [
+        "<final>Philip Permutt</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          48
+        ]
+      ],
+      "anchor_vector": [
+        0.0
+      ],
+      "kl_matrix_shape": [
+        1,
+        1
+      ],
+      "contrastive": null
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book’s title is clearly printed in large, bold purple letters at the center of the cover, stating “Crystal Chakra Healing.”  \n2. The subtitle “Energy medicine for mind, body, and spirit” is positioned directly beneath the main title in smaller red text.  \n3. The author’s name, Philip Permutt, is displayed prominently below the subtitle in black font.  \n4. The cover art features colorful illustrations of crystals, chakras, and abstract floral designs against a soft blue background, visually reinforcing the book’s theme.  \n5. The phrase “The Complete Guide to” appears above the main title, indicating the book’s comprehensive nature.  \n\n<final>The Complete Guide to Crystal Chakra Healing</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the title in large, bold text centered on the upper half of the image, making it the most visually dominant element.\n2. The title reads \"The Complete Guide to Crystal Chakra Healing,\" with \"Crystal Chakra Healing\" in the largest font size to emphasize the main subject.\n3. Below the main title, a subtitle \"Energy medicine for mind, body, and spirit\" provides context about the book's purpose and scope, further clarifying its content.\n4. The author's name, \"Philip Permutt,\" is clearly printed beneath the subtitle, indicating the authorship and lending credibility to the guide.\n5. The cover art features various crystals and colorful geometric shapes, visually reinforcing the themes of crystals and chakras mentioned in the title.\n\n<final>The Complete Guide to Crystal Chakra Healing</final>",
+        "1. The book’s title is clearly printed in large, bold purple letters at the center of the cover, stating “Crystal Chakra Healing.”  \n2. The subtitle “Energy medicine for mind, body, and spirit” is positioned directly beneath the main title in smaller red text.  \n3. The author’s name, Philip Permutt, is displayed prominently below the subtitle in black font.  \n4. The cover art features colorful illustrations of crystals, chakras, and abstract floral designs against a soft blue background, visually reinforcing the book’s theme.  \n5. The phrase “The Complete Guide to” appears above the main title, indicating the book’s comprehensive nature.  \n\n<final>The Complete Guide to Crystal Chakra Healing</final>"
+      ],
+      "chunks": [
+        "1. The book’s title is clearly printed in large, bold purple letters at the center of the cover, stating “Crystal Chakra Healing.”  \n2.",
+        "The subtitle “Energy medicine for mind, body, and spirit” is positioned directly beneath the main title in smaller red text.",
+        "3. The author’s name, Philip Permutt, is displayed prominently below the subtitle in black font.",
+        "4. The cover art features colorful illustrations of crystals, chakras, and abstract floral designs against a soft blue background, visually reinforcing the book’s theme.",
+        "5. The phrase “The Complete Guide to” appears above the main title, indicating the book’s comprehensive nature.",
+        "<final>The Complete Guide to Crystal Chakra Healing</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          56
+        ],
+        [
+          56,
+          81
+        ],
+        [
+          82,
+          104
+        ],
+        [
+          105,
+          137
+        ],
+        [
+          138,
+          161
+        ],
+        [
+          162,
+          175
+        ]
+      ],
+      "anchor_vector": [
+        12.81992744064911,
+        9.654544561965446,
+        10.842160432235055,
+        13.60335885242475,
+        11.825721153846153,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Combining the main title and subtitle gives the full title of the book.",
+        "negative_sentence": "The book is presented as a guide to using crystals and chakras for holistic healing.",
+        "positive_full": " \n5. Combining the main title and subtitle gives the full title of the book.\n\nTherefore, the title of this book is **Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit**.",
+        "negative_full": "  \n5. The book is presented as a guide to using crystals and chakras for holistic healing. The title is concise, descriptive, and aligned with the book’s purpose.\n\nWhat is the final answer?  \nThe title of this book is **Crystal Chakra Healing: Energy medicine for mind, body, and spirit**.",
+        "positive_probability": 0.007474151054168587,
+        "negative_probability": 0.0052932762990291074,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": " \n5. Combining the main title and subtitle gives the full title of the book.\n\nTherefore, the title of this book is **Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit**.",
+            "first_sentence": "Combining the main title and subtitle gives the full title of the book.",
+            "answer_probability": 0.007474151054168587,
+            "final_answer": "Therefore, the title of this book is **Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit**"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n5. The book’s title is the most prominent text on the cover, designed to immediately catch the reader’s attention and convey the book’s subject matter. 6. The subtitle and author’s name serve to support and clarify the main title, providing additional context. 7. The cover design elements (crystals, chakras, etc.) are thematic and meant to complement the title, not replace it.\n\nFinal Answer:\nThe title of the book is Crystal Chakra Healing.",
+            "first_sentence": "The book’s title is the most prominent text on the cover, designed to immediately catch the reader’s attention and convey the book’s subject matter.",
+            "answer_probability": 0.0055865416594972715,
+            "final_answer": "The title of the book is Crystal Chakra Healing"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n5. The cover also includes the logo of the publisher, “TarcherPerigee,” at the bottom, which is a known publisher of holistic and self-help books. 6. There are no other titles or subtitles competing for attention on the cover, and the central title is unambiguous. 7. Based on all these elements, the book’s title is definitively “Crystal Chakra Healing.”\n\nFinal Answer: Crystal Chakra Healing: Energy medicine for mind, body, and spirit.",
+            "first_sentence": "The cover also includes the logo of the publisher, “TarcherPerigee,” at the bottom, which is a known publisher of holistic and self-help books.",
+            "answer_probability": 0.005475560286866675,
+            "final_answer": "Crystal Chakra Healing: Energy medicine for mind, body, and spirit"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n5. The book's overall design, including the title, subtitle, and imagery, is cohesive and clearly intended to communicate its focus on crystal therapy and chakra balancing. 6. No other competing titles are visible on the cover, so “Crystal Chakra Healing” is unambiguously the main title of this book.\n\nTherefore, the title of this book is: Crystal Chakra Healing: Energy medicine for mind, body, and spirit.",
+            "first_sentence": "The book's overall design, including the title, subtitle, and imagery, is cohesive and clearly intended to communicate its focus on crystal therapy and chakra balancing.",
+            "answer_probability": 0.005405071465607496,
+            "final_answer": "Therefore, the title of this book is: Crystal Chakra Healing: Energy medicine for mind, body, and spirit"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": "  \n5. The book is presented as a guide to using crystals and chakras for holistic healing. The title is concise, descriptive, and aligned with the book’s purpose.\n\nWhat is the final answer?  \nThe title of this book is **Crystal Chakra Healing: Energy medicine for mind, body, and spirit**.",
+            "first_sentence": "The book is presented as a guide to using crystals and chakras for holistic healing.",
+            "answer_probability": 0.0052932762990291074,
+            "final_answer": ""
+          }
+        ],
+        "correct_answer": "The Complete Guide to Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005638605958158636,
+              "generated_answers": [
+                "The title of this book is Crystal Chakra Healing: Energy medicine for mind, body, and spirit",
+                "The title of the book is “Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit.”",
+                "The title of this book is **Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit**",
+                "Crystal Chakra Healing: Energy medicine for mind, body, and spirit",
+                "Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit"
+              ],
+              "answer_probabilities": [
+                0.007365474514328974,
+                0.005117012515714716,
+                0.005662719918402543,
+                0.00479762536208547,
+                0.005250197480261477
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005055203427696291,
+              "generated_answers": [
+                "The title of this book is Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit",
+                "The title of the book is Crystal Chakra Healing",
+                "The title of this book is Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit",
+                "",
+                "The title of this book is Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit"
+              ],
+              "answer_probabilities": [
+                0.004987124730549481,
+                0.004399841244719206,
+                0.004968719701187363,
+                0.005546281561452562,
+                0.005374049900572846
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005144705178567949,
+              "generated_answers": [
+                "The title of the book is “Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit.”",
+                "The title of this book is Crystal Chakra Healing",
+                "The title of the book is Crystal Chakra Healing: Energy medicine for mind, body, and spirit",
+                "Crystal Chakra Healing: Energy medicine for mind, body, and spirit",
+                "The title of the book is Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit"
+              ],
+              "answer_probabilities": [
+                0.0053397149457059655,
+                0.0051092205129942905,
+                0.005621723960426562,
+                0.004077035167426728,
+                0.0055758313062861985
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006033014843526655,
+              "generated_answers": [
+                "Crystal Chakra Healing: Energy medicine for mind, body, and spirit",
+                "The title of this book is “Crystal Chakra Healing: Energy medicine for mind, body, and spirit.”",
+                "The title of this book is “Crystal Chakra Healing: Energy medicine for mind, body, and spirit.”",
+                "Crystal Chakra Healing: Energy medicine for mind, body, and spirit",
+                "Crystal Chakra Healing"
+              ],
+              "answer_probabilities": [
+                0.006874663148841545,
+                0.007017326707895101,
+                0.006516036613472163,
+                0.004457041248400452,
+                0.005300006499024017
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0048242104197364554,
+              "generated_answers": [
+                "The title of the book is Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit",
+                "The title of the book is Crystal Chakra Healing",
+                "Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit",
+                "The title of this book is Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit",
+                "Crystal Chakra Healing: Energy Medicine for Mind, Body, and Spirit by Philip Permutt"
+              ],
+              "answer_probabilities": [
+                0.004798547464067728,
+                0.004070245227461215,
+                0.006051874716476768,
+                0.004751909164500301,
+                0.004448475526176267
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat type of book is this?",
+      "reasoning_text": "1. The cover clearly states \"The Complete Guide to Crystal Chakra Healing,\" indicating it is a comprehensive resource on using crystals and chakras for holistic wellness.  \n2. The subtitle \"Energy medicine for mind, body, and spirit\" specifies the book’s focus on alternative healing practices targeting mental, physical, and spiritual well-being.  \n3. The author, Philip Permutt, is known for writing on metaphysical and spiritual topics, which aligns with the book’s esoteric subject matter.  \n4. The cover art features colorful crystals, chakra symbols, and abstract energy patterns, visually reinforcing the book’s theme of energetic healing and spiritual balance.  \n5. The book’s design and content suggest it is intended for readers interested in crystal therapy, chakra alignment, and integrative energy healing practices.  \n\n<final>It is a spiritual and alternative healing guide focused on crystal chakra therapy for mind, body, and spirit balance.</final>",
+      "raw_generation": [
+        "1. The title “The Complete Guide to Crystal Chakra Healing” clearly indicates the book focuses on spiritual and metaphysical practices involving crystals and chakras, which are central to alternative healing traditions.  \n2. The subtitle “Energy medicine for mind, body, and spirit” explicitly states the book’s purpose is to address holistic well-being, suggesting it blends physical, emotional, and spiritual health approaches.  \n3. The cover art, featuring colorful crystals, chakra symbols, and abstract energy patterns, visually reinforces the book’s theme of energetic healing and spiritual alignment through crystal work.  \n4. The author’s name, Philip Permutt, is associated with books on metaphysical and energy-based healing, lending credibility to the book’s focus on esoteric and alternative healing systems.  \n5. The overall design and content presentation suggest this is a guidebook for spiritual seekers, healers, or individuals interested in using crystals and chakra balancing for personal growth and self-improvement.\n\n<final>Metaphysical healing guide</final>",
+        "1. The cover clearly states \"The Complete Guide to Crystal Chakra Healing,\" indicating it is a comprehensive resource on using crystals and chakras for holistic wellness.  \n2. The subtitle \"Energy medicine for mind, body, and spirit\" specifies the book’s focus on alternative healing practices targeting mental, physical, and spiritual well-being.  \n3. The author, Philip Permutt, is known for writing on metaphysical and spiritual topics, which aligns with the book’s esoteric subject matter.  \n4. The cover art features colorful crystals, chakra symbols, and abstract energy patterns, visually reinforcing the book’s theme of energetic healing and spiritual balance.  \n5. The book’s design and content suggest it is intended for readers interested in crystal therapy, chakra alignment, and integrative energy healing practices.  \n\n<final>It is a spiritual and alternative healing guide focused on crystal chakra therapy for mind, body, and spirit balance.</final>"
+      ],
+      "chunks": [
+        "1. The cover clearly states \"The Complete Guide to Crystal Chakra Healing,\" indicating it is a comprehensive resource on using crystals and chakras for holistic wellness.",
+        "2. The subtitle \"Energy medicine for mind, body, and spirit\" specifies the book’s focus on alternative healing practices targeting mental, physical, and spiritual well-being.",
+        "3. The author, Philip Permutt, is known for writing on metaphysical and spiritual topics, which aligns with the book’s esoteric subject matter.",
+        "4. The cover art features colorful crystals, chakra symbols, and abstract energy patterns, visually reinforcing the book’s theme of energetic healing and spiritual balance.",
+        "5. The book’s design and content suggest it is intended for readers interested in crystal therapy, chakra alignment, and integrative energy healing practices.",
+        "<final>It is a spiritual and alternative healing guide focused on crystal chakra therapy for mind, body, and spirit balance.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          22,
+          55
+        ],
+        [
+          56,
+          90
+        ],
+        [
+          91,
+          124
+        ],
+        [
+          125,
+          156
+        ],
+        [
+          157,
+          187
+        ],
+        [
+          188,
+          216
+        ]
+      ],
+      "anchor_vector": [
+        10.986202630387462,
+        11.01418748825493,
+        11.598907123805922,
+        14.0119810740153,
+        12.823756626674108,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The table of contents (visible on the back cover) lists chapters such as \"Understanding Chakras,\" \"Crystal Healing Basics,\" and \"Integrating Crystals and Chakras,\" suggesting the book offers structured, educational content designed for beginners and intermediate practitioners.",
+        "negative_sentence": "The book includes practical elements such as diagrams, suggested crystal placements, and meditation techniques, suggesting it is an instructional or how-to guide rather than purely theoretical.",
+        "positive_full": " \n\n5. The table of contents (visible on the back cover) lists chapters such as \"Understanding Chakras,\" \"Crystal Healing Basics,\" and \"Integrating Crystals and Chakras,\" suggesting the book offers structured, educational content designed for beginners and intermediate practitioners. 6. The inclusion of practical guides, such as \"Choosing the Right Crystal for Your Chakra\" and \"How to Use Crystals for Healing,\" indicates it is not purely theoretical but includes actionable advice. 7. The book’s emphasis on “energy medicine” and its alignment with alternative healing modalities like Reiki, aromatherapy, and meditation",
+        "negative_full": " \n\n5. The book includes practical elements such as diagrams, suggested crystal placements, and meditation techniques, suggesting it is an instructional or how-to guide rather than purely theoretical. 6. It is categorized under \"Spiritual Growth\" and \"New Age\" on book platforms like Amazon, which further confirms its alignment with alternative spiritual practices and personal development. 7. The title \"Complete Guide\" implies a reference or manual format, making it suitable for both beginners and practitioners seeking deeper knowledge.\n\nFinal conclusion: \n\nThis is a spiritual self-help / metaphysical guidebook focused on holistic healing using crystals and chakra systems, designed to help readers",
+        "positive_probability": 0.005497412919237677,
+        "negative_probability": 0.004348928079931846,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n5. The table of contents (visible on the back cover) lists chapters such as \"Understanding Chakras,\" \"Crystal Healing Basics,\" and \"Integrating Crystals and Chakras,\" suggesting the book offers structured, educational content designed for beginners and intermediate practitioners. 6. The inclusion of practical guides, such as \"Choosing the Right Crystal for Your Chakra\" and \"How to Use Crystals for Healing,\" indicates it is not purely theoretical but includes actionable advice. 7. The book’s emphasis on “energy medicine” and its alignment with alternative healing modalities like Reiki, aromatherapy, and meditation",
+            "first_sentence": "The table of contents (visible on the back cover) lists chapters such as \"Understanding Chakras,\" \"Crystal Healing Basics,\" and \"Integrating Crystals and Chakras,\" suggesting the book offers structured, educational content designed for beginners and intermediate practitioners.",
+            "answer_probability": 0.005497412919237677,
+            "final_answer": "5. The table of contents (visible on the back cover) lists chapters such as \"Understanding Chakras,\" \"Crystal Healing Basics,\" and \"Integrating Crystals and Chakras,\" suggesting the book offers structured, educational content designed for beginners and intermediate practitioners. 6. The inclusion of practical guides, such as \"Choosing the Right Crystal for Your Chakra\" and \"How to Use Crystals for Healing,\" indicates it is not purely theoretical but includes actionable advice. 7. The book’s emphasis on “energy medicine” and its alignment with alternative healing modalities like Reiki, aromatherapy, and meditation"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n5. The book’s description on the cover highlights practical applications like \"How to use crystals to align your chakras and restore balance\" and \"Step-by-step techniques for healing,\" which suggests it is not purely theoretical but offers actionable guidance. 6. The inclusion of illustrations of chakras, crystal correspondences, and energy pathways indicates it is a visual guide designed to complement written instructions. 7. The book’s title and content suggest it is aimed at beginners and intermediate practitioners seeking to learn or deepen their knowledge of crystal therapy and chakra work, making it accessible to a wide audience interested in holistic health and spiritual growth",
+            "first_sentence": "The book’s description on the cover highlights practical applications like \"How to use crystals to align your chakras and restore balance\" and \"Step-by-step techniques for healing,\" which suggests it is not purely theoretical but offers actionable guidance.",
+            "answer_probability": 0.004930601483165318,
+            "final_answer": "5. The book’s description on the cover highlights practical applications like \"How to use crystals to align your chakras and restore balance\" and \"Step-by-step techniques for healing,\" which suggests it is not purely theoretical but offers actionable guidance. 6. The inclusion of illustrations of chakras, crystal correspondences, and energy pathways indicates it is a visual guide designed to complement written instructions. 7. The book’s title and content suggest it is aimed at beginners and intermediate practitioners seeking to learn or deepen their knowledge of crystal therapy and chakra work, making it accessible to a wide audience interested in holistic health and spiritual growth"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": "  \n5. The book likely includes practical techniques, such as selecting and using specific crystals to balance each of the seven major chakras, explaining their energetic properties, and offering meditations or exercises to enhance healing. 6. The \"Complete Guide\" title suggests it contains detailed instructions, diagrams, and possibly case studies or testimonials to support its teachings. 7. This book would be most valuable to readers interested in alternative therapies, spiritual growth, or self-help practices focused on energy healing.\n\nFinal Answer:\nThis is a self-help and alternative medicine book focused on using crystals and chakra energy to promote holistic wellness. It is intended for",
+            "first_sentence": "The book likely includes practical techniques, such as selecting and using specific crystals to balance each of the seven major chakras, explaining their energetic properties, and offering meditations or exercises to enhance healing.",
+            "answer_probability": 0.004845711762736074,
+            "final_answer": "This is a self-help and alternative medicine book focused on using crystals and chakra energy to promote holistic wellness. It is intended for"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n5. The book’s structure—divided into chapters like \"Understanding the Chakras,\" \"Crystals and Their Healing Properties,\" and \"Healing Techniques\"—suggests it is instructional, offering practical guidance for readers. 6. The inclusion of diagrams, charts, and color-coded sections (as implied by the visual layout) indicates it is designed to be user-friendly and accessible, likely with a hands-on or visual learning approach. 7. The overall tone, as inferred from the cover design and title, is calm, spiritual, and empowering, aimed at readers seeking self-improvement through energy work.\n\nFinal conclusion:",
+            "first_sentence": "The book’s structure—divided into chapters like \"Understanding the Chakras,\" \"Crystals and Their Healing Properties,\" and \"Healing Techniques\"—suggests it is instructional, offering practical guidance for readers.",
+            "answer_probability": 0.00478735733422114,
+            "final_answer": "Final conclusion:"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n5. The book includes practical elements such as diagrams, suggested crystal placements, and meditation techniques, suggesting it is an instructional or how-to guide rather than purely theoretical. 6. It is categorized under \"Spiritual Growth\" and \"New Age\" on book platforms like Amazon, which further confirms its alignment with alternative spiritual practices and personal development. 7. The title \"Complete Guide\" implies a reference or manual format, making it suitable for both beginners and practitioners seeking deeper knowledge.\n\nFinal conclusion: \n\nThis is a spiritual self-help / metaphysical guidebook focused on holistic healing using crystals and chakra systems, designed to help readers",
+            "first_sentence": "The book includes practical elements such as diagrams, suggested crystal placements, and meditation techniques, suggesting it is an instructional or how-to guide rather than purely theoretical.",
+            "answer_probability": 0.004348928079931846,
+            "final_answer": "This is a spiritual self-help / metaphysical guidebook focused on holistic healing using crystals and chakra systems, designed to help readers"
+          }
+        ],
+        "correct_answer": "Religion & Spirituality",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0050096440064412336,
+              "generated_answers": [
+                "Therefore, this book is best classified as: **A self-help and spiritual wellness guide focused on holistic energy healing through crystals and chakras.** It falls within the category of metaphysical or alternative health literature aimed at promoting personal transformation and spiritual balance",
+                "This is a metaphysical and spiritual guidebook focused on crystal chakra healing as a form of alternative energy medicine",
+                "This is a metaphysical/spiritual self-help book focused on alternative healing practices, specifically crystal chakra healing. It serves as a comprehensive guide for readers seeking to balance energy centers using crystals",
+                "This is a spiritual self-help guide focused on holistic wellness through crystal chakra healing. It combines practical techniques with metaphysical principles to support physical, emotional, and spiritual well-being",
+                "This is a self-help and spiritual guidebook focused on crystal healing and chakra energy work for holistic wellness"
+              ],
+              "answer_probabilities": [
+                0.004328745797648695,
+                0.005308857132972994,
+                0.005295240124075017,
+                0.004946644884911826,
+                0.005168732092597637
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004947068452961849,
+              "generated_answers": [
+                "This is a self-help / metaphysical / alternative healing guidebook focused on using crystals and chakra energy for holistic personal wellness. It falls under the broader categories of New Age spirituality, holistic health, and energy medicine. The book is intended for individuals seeking to enhance their mind-body-spirit connection through intuitive, non-traditional healing methods",
+                "A self-help and spiritual guide focused on crystal chakra healing for holistic wellness.",
+                "Spiritual Self-Help / Alternative Healing / Metaphysical Spirituality",
+                "✅",
+                "This is a **self-help and spiritual development book**, specifically a **practical guide to using crystal and chakra-based"
+              ],
+              "answer_probabilities": [
+                0.005367702193498623,
+                0.004157857062588444,
+                0.004913802376725223,
+                0.0050042774572670945,
+                0.005291703174729865
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005127378123197172,
+              "generated_answers": [
+                "This is a spiritual/self-help/alternative healing book focused on crystal chakra healing for mind, body, and spirit",
+                "Based on this reasoning, the book is a **self-help and holistic wellness guide focused on crystal chakra healing**. It combines instructional content, practical techniques, and spiritual tools to support readers in balancing their energy fields for improved mental, emotional, physical, and spiritual health. This places it firmly within the categories of **metaphysical self-help**, **alternative healing**, and **energy medicine literature**",
+                "Therefore, the type of book is: A holistic health or spiritual self-help guide focused on crystal therapy and chakra alignment for energetic healing",
+                "It blends spiritual philosophy with hands-on techniques, making it ideal for",
+                "This is a spiritual self-help book focused on crystal chakra healing and energy medicine"
+              ],
+              "answer_probabilities": [
+                0.0053620154863179325,
+                0.00488947240729958,
+                0.0050305403614859445,
+                0.004895669814190419,
+                0.005459192546691986
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005038538622448579,
+              "generated_answers": [
+                "This is a holistic healing manual or an esoteric self-help book focused on crystal chakra therapy",
+                "Spiritual Self-Help Guide",
+                "This is a spiritual self-help book focused on crystal healing and chakra alignment as part of holistic energy medicine. It’s designed for readers seeking personal transformation, spiritual balance, and alternative wellness practices",
+                "is: self-help / spiritual development book",
+                "Spiritual/Alternative Healing Guidebook"
+              ],
+              "answer_probabilities": [
+                0.0053604441290850385,
+                0.0046319118613355964,
+                0.0044298585335045895,
+                0.0050659999762912005,
+                0.005704478612026471
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005288350849147069,
+              "generated_answers": [
+                "A holistic self-help guide on crystal chakra healing for mind, body, and spirit",
+                "This is a spiritual self-help guidebook focused on alternative healing practices, specifically crystal chakra healing as a form of energy medicine for mind, body, and spirit. It is designed to be a practical, instructional resource for those seeking to balance their energy fields through metaphysical methods",
+                "Spiritual/self-help guide on crystal chakra healing",
+                "Spiritual self-help book",
+                "Spiritual/Alternative Healing Guidebook"
+              ],
+              "answer_probabilities": [
+                0.005144372264729214,
+                0.005016545158513234,
+                0.0053078306915673515,
+                0.005459146380261412,
+                0.005513859750664137
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a religious book?",
+      "reasoning_text": "1. The book’s title, “The Complete Guide to Crystal Chakra Healing,” suggests spiritual and metaphysical themes, commonly associated with alternative belief systems rather than organized religion.  \n2. The subtitle, “Energy medicine for mind, body, and spirit,” emphasizes holistic healing practices, often found in New Age or spiritual self-help traditions, not formal religious doctrine.  \n3. The cover art features crystals, chakras, and abstract spiritual symbols, visually reinforcing a non-theistic, energy-based approach to well-being rather than a religious narrative.  \n4. Author Philip Permutt’s name and the book’s focus on chakras indicate a secular spiritual guide, aimed at personal growth through metaphysical practices rather than religious dogma or scripture.  \n5. The book’s classification as “energy medicine” further distances it from traditional religious texts, aligning it with contemporary spiritual self-help literature rather than religious doctrine.  \n\n<final>Yes, this is a spiritual self-help book, not a religious text.</final>",
+      "raw_generation": [
+        "1. The book's title, \"The Complete Guide to Crystal Chakra Healing,\" suggests a focus on energy medicine rather than traditional religious doctrine, emphasizing holistic practices over dogma.\n\n2. The subtitle, \"Energy medicine for mind, body, and spirit,\" indicates a spiritual but non-denominational approach, targeting personal well-being rather than adherence to specific religious beliefs.\n\n3. The cover art features colorful crystals and abstract symbols, aligning with metaphysical and alternative healing traditions often associated with New Age spirituality rather than organized religion.\n\n4. Author Philip Permutt’s name is prominently displayed, implying his expertise lies in crystal healing and chakra systems, which are commonly explored in spiritual and wellness contexts rather than religious institutions.\n\n5. The book’s design and content focus on universal energy principles, making it accessible to readers interested in holistic practices without requiring religious affiliation or belief systems.\n\n<final>Yes, this is a spiritual and holistic book, but it is not strictly a religious text as it focuses on energy medicine rather than organized religious doctrine.</final>",
+        "1. The book’s title, “The Complete Guide to Crystal Chakra Healing,” suggests spiritual and metaphysical themes, commonly associated with alternative belief systems rather than organized religion.  \n2. The subtitle, “Energy medicine for mind, body, and spirit,” emphasizes holistic healing practices, often found in New Age or spiritual self-help traditions, not formal religious doctrine.  \n3. The cover art features crystals, chakras, and abstract spiritual symbols, visually reinforcing a non-theistic, energy-based approach to well-being rather than a religious narrative.  \n4. Author Philip Permutt’s name and the book’s focus on chakras indicate a secular spiritual guide, aimed at personal growth through metaphysical practices rather than religious dogma or scripture.  \n5. The book’s classification as “energy medicine” further distances it from traditional religious texts, aligning it with contemporary spiritual self-help literature rather than religious doctrine.  \n\n<final>Yes, this is a spiritual self-help book, not a religious text.</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “The Complete Guide to Crystal Chakra Healing,” suggests spiritual and metaphysical themes, commonly associated with alternative belief systems rather than organized religion.",
+        "2. The subtitle, “Energy medicine for mind, body, and spirit,” emphasizes holistic healing practices, often found in New Age or spiritual self-help traditions, not formal religious doctrine.",
+        "3. The cover art features crystals, chakras, and abstract spiritual symbols, visually reinforcing a non-theistic, energy-based approach to well-being rather than a religious narrative.",
+        "4. Author Philip Permutt’s name and the book’s focus on chakras indicate a secular spiritual guide, aimed at personal growth through metaphysical practices rather than religious dogma or scripture.",
+        "5. The book’s classification as “energy medicine” further distances it from traditional religious texts, aligning it with contemporary spiritual self-help literature rather than religious doctrine.",
+        "<final>Yes, this is a spiritual self-help book, not a religious text.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          55
+        ],
+        [
+          56,
+          93
+        ],
+        [
+          94,
+          130
+        ],
+        [
+          131,
+          171
+        ],
+        [
+          172,
+          205
+        ],
+        [
+          206,
+          226
+        ]
+      ],
+      "anchor_vector": [
+        12.952566460170221,
+        13.533983966557667,
+        13.856929093177873,
+        14.09622987689394,
+        12.7837890625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The content likely covers chakra alignment, crystal energetics, and meditation practices — all of which are rooted in esoteric or mystical traditions, not tied to any specific religious text or institutional authority.",
+        "negative_sentence": "Crystal healing and chakra theory are rooted in metaphysical traditions, often practiced alongside yoga, meditation, and mindfulness — all of which are spiritual or philosophical practices but not inherently tied to any specific organized religion.",
+        "positive_full": " 5. The content likely covers chakra alignment, crystal energetics, and meditation practices — all of which are rooted in esoteric or mystical traditions, not tied to any specific religious text or institutional authority. 6. The absence of references to deities, sacred rituals, or religious scriptures further confirms that this book does not function as a religious text. 7. Additionally, the book’s purpose — to guide readers in self-healing and spiritual awakening — aligns with secular spirituality, which is distinct from organized religion. \n\nTherefore, based on the title, subtitle, cover design, author intent, and content focus, this",
+        "negative_full": " 5. Crystal healing and chakra theory are rooted in metaphysical traditions, often practiced alongside yoga, meditation, and mindfulness — all of which are spiritual or philosophical practices but not inherently tied to any specific organized religion. 6. The book does not reference any specific religious texts, deities, or rituals — for example, there is no mention of the Bible, Quran, Torah, or any specific religious figures — which would be expected if it were a religious text. 7. The content likely centers on self-directed spiritual practices, such as balancing energy centers or using crystals for emotional harmony — approaches that align more closely with spiritual self",
+        "positive_probability": 0.005587831626642655,
+        "negative_probability": 0.004425028433059832,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " 5. The content likely covers chakra alignment, crystal energetics, and meditation practices — all of which are rooted in esoteric or mystical traditions, not tied to any specific religious text or institutional authority. 6. The absence of references to deities, sacred rituals, or religious scriptures further confirms that this book does not function as a religious text. 7. Additionally, the book’s purpose — to guide readers in self-healing and spiritual awakening — aligns with secular spirituality, which is distinct from organized religion. \n\nTherefore, based on the title, subtitle, cover design, author intent, and content focus, this",
+            "first_sentence": "The content likely covers chakra alignment, crystal energetics, and meditation practices — all of which are rooted in esoteric or mystical traditions, not tied to any specific religious text or institutional authority.",
+            "answer_probability": 0.005587831626642655,
+            "final_answer": "Therefore, based on the title, subtitle, cover design, author intent, and content focus, this"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n5. The book’s content is likely to focus on practical techniques like crystal placement, chakra balancing, and energy alignment—these are rooted in esoteric traditions and modern spiritual practices, not religious rituals or theological teachings. 6. There is no mention of deities, sacred texts, or religious hierarchies—common elements of religious books. 7. The tone of the book is instructional and self-help oriented, emphasizing personal empowerment and holistic wellness, which aligns with secular spirituality rather than religious doctrine. 8. While the book may appeal to readers with spiritual or metaphysical interests, it does not prescribe adherence to a",
+            "first_sentence": "The book’s content is likely to focus on practical techniques like crystal placement, chakra balancing, and energy alignment—these are rooted in esoteric traditions and modern spiritual practices, not religious rituals or theological teachings.",
+            "answer_probability": 0.0055032681605631075,
+            "final_answer": "5. The book’s content is likely to focus on practical techniques like crystal placement, chakra balancing, and energy alignment—these are rooted in esoteric traditions and modern spiritual practices, not religious rituals or theological teachings. 6. There is no mention of deities, sacred texts, or religious hierarchies—common elements of religious books. 7. The tone of the book is instructional and self-help oriented, emphasizing personal empowerment and holistic wellness, which aligns with secular spirituality rather than religious doctrine. 8. While the book may appeal to readers with spiritual or metaphysical interests, it does not prescribe adherence to a"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": "  \n5. The content likely includes information on the seven chakras, crystal correspondences, and energy alignment—practices rooted in ancient Eastern traditions (like yoga and Ayurveda) but interpreted through a modern, secular lens. These concepts are often adopted within spiritual communities but not tied to any specific organized religion.\n\nBased on these observations, is this a religious book?  \n**No, it is not a religious book.**  \nIt is a spiritual or metaphysical self-help guide that draws from ancient wisdom traditions but does not promote organized religious doctrine, rituals, or beliefs in a divine being or sacred texts. Rather, it align",
+            "first_sentence": "The content likely includes information on the seven chakras, crystal correspondences, and energy alignment—practices rooted in ancient Eastern traditions (like yoga and Ayurveda) but interpreted through a modern, secular lens.",
+            "answer_probability": 0.005194605992446936,
+            "final_answer": "It is a spiritual or metaphysical self-help guide that draws from ancient wisdom traditions but does not promote organized religious doctrine, rituals, or beliefs in a divine being or sacred texts. Rather, it align"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " 5. The content is likely to include information on chakra alignment, crystal properties, and energy centers — all of which are rooted in ancient Eastern traditions like Hinduism and Buddhism, but adapted into a modern, secular spiritual framework. 6. There is no indication of specific religious affiliation, prayers, scripture, or divine commandments within the title or description — which are hallmarks of traditional religious texts. 7. The book’s purpose is to offer self-help and holistic healing, which is more aligned with New Age spirituality or esoteric practices than organized religion.\n\nTherefore, based on the title, subtitle, cover art, and inferred",
+            "first_sentence": "The content is likely to include information on chakra alignment, crystal properties, and energy centers — all of which are rooted in ancient Eastern traditions like Hinduism and Buddhism, but adapted into a modern, secular spiritual framework.",
+            "answer_probability": 0.004653125582043434,
+            "final_answer": "Therefore, based on the title, subtitle, cover art, and inferred"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 5. Crystal healing and chakra theory are rooted in metaphysical traditions, often practiced alongside yoga, meditation, and mindfulness — all of which are spiritual or philosophical practices but not inherently tied to any specific organized religion. 6. The book does not reference any specific religious texts, deities, or rituals — for example, there is no mention of the Bible, Quran, Torah, or any specific religious figures — which would be expected if it were a religious text. 7. The content likely centers on self-directed spiritual practices, such as balancing energy centers or using crystals for emotional harmony — approaches that align more closely with spiritual self",
+            "first_sentence": "Crystal healing and chakra theory are rooted in metaphysical traditions, often practiced alongside yoga, meditation, and mindfulness — all of which are spiritual or philosophical practices but not inherently tied to any specific organized religion.",
+            "answer_probability": 0.004425028433059832,
+            "final_answer": "5. Crystal healing and chakra theory are rooted in metaphysical traditions, often practiced alongside yoga, meditation, and mindfulness — all of which are spiritual or philosophical practices but not inherently tied to any specific organized religion. 6. The book does not reference any specific religious texts, deities, or rituals — for example, there is no mention of the Bible, Quran, Torah, or any specific religious figures — which would be expected if it were a religious text. 7. The content likely centers on self-directed spiritual practices, such as balancing energy centers or using crystals for emotional harmony — approaches that align more closely with spiritual self"
+          }
+        ],
+        "correct_answer": "Yes",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005375441812622173,
+              "generated_answers": [
+                "No, this is not a religious book. It is a spiritual or metaphysical guide focused on energy medicine and personal growth",
+                "Therefore, the book is not a religious book but rather a spiritual or metaphysical self-help guide focused on energy healing and personal well-being",
+                "7. While some spiritual traditions (like Hinduism or Buddhism) reference chakras, these are often embedded within broader religious or philosophical systems. In contrast, this book does not reference any specific deity, scripture, or dogma, nor does it present itself as a religious text. Instead, it promotes a universal",
+                "No, this is not a religious book. It is a spiritual or metaphysical guide focused on energy healing and personal development, rather than religious doctrine or worship",
+                "No, this is not a religious book. It is a spiritual self-help guide focused on metaphysical healing practices"
+              ],
+              "answer_probabilities": [
+                0.005370956034820231,
+                0.004880736398031632,
+                0.005111452245972476,
+                0.005561376235821271,
+                0.00595268814846525
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005188232768965749,
+              "generated_answers": [
+                "No.",
+                "- The title and subtitle (“Crystal Chakra Healing",
+                "No, this is not a religious book. It is a spiritual or metaphysical guide focused on crystal chakra healing and energy medicine",
+                "No, this is not a religious book",
+                "No, this is not a religious book. It is a metaphysical/spiritual self-help guide focused on energy healing and personal well-being, consistent with New Age and holistic wellness traditions, but not aligned with organized religion or religious doctrine"
+              ],
+              "answer_probabilities": [
+                0.005049337745274477,
+                0.004700490098567473,
+                0.004975191308045823,
+                0.005570469631900842,
+                0.005645675061040131
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005456477684880799,
+              "generated_answers": [
+                "No, this is not a religious book. It is a secular spiritual and metaphysical guide focused on energy healing and personal development",
+                "No, this is not a religious book. It is a metaphysical/spiritual self-help guide focused on energy healing and personal growth",
+                "Final conclusion: No, this is not a religious book. It is a spiritual or metaphysical self-help guide focused on holistic energy healing",
+                "Final conclusion: No, this is not a religious book. It is a spiritual or metaphysical guide focused on alternative healing practices",
+                "Not a religious book, but a spiritual or metaphysical self-help guide"
+              ],
+              "answer_probabilities": [
+                0.005528286134437253,
+                0.005499988133690938,
+                0.005429722276750474,
+                0.0058503933796777196,
+                0.00497399849984761
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00527752629979102,
+              "generated_answers": [
+                "No, this is not a religious book. It is a spiritual or metaphysical self-help guide focused on energy healing and personal development, suitable for readers seeking holistic wellness without adherence to traditional religious doctrine",
+                "No",
+                "No, this is not a religious book. It is a spiritual self-help guide focused on metaphysical energy healing",
+                ": No, it is not a religious book",
+                "Therefore, based on the title, content focus, visual design, and marketing approach, this is **not** a religious book. It is a secular spiritual guide focused on metaphysical healing practices"
+              ],
+              "answer_probabilities": [
+                0.005508463715305229,
+                0.005190095200267761,
+                0.005158242388965712,
+                0.005320269204371673,
+                0.005210560990044728
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0053845694250970995,
+              "generated_answers": [
+                "No, this is not a religious book. It is a spiritual or metaphysical guide focused on",
+                "is: No, this is not a religious book",
+                "No, this is not a religious book. It is a spiritual self-help guide focused on crystal chakra healing and energy medicine",
+                "No, this is not a religious book. It is a spiritual or metaphysical guide focused on alternative healing practices",
+                "Therefore, **no, this is not a religious book**—it is a spiritual self-help guide rooted in metaphysical and New Age concepts, designed for personal wellness rather than religious instruction or devotion"
+              ],
+              "answer_probabilities": [
+                0.005462618187501507,
+                0.004753163544897662,
+                0.005644033503609412,
+                0.005554069935009811,
+                0.005508961954467106
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this a pedagogy book?",
+      "reasoning_text": "1. The book’s title, “The Complete Guide to Crystal Chakra Healing,” indicates its focus is on spiritual and holistic practices, not academic teaching methods or educational theory typically found in pedagogy books.  \n2. The subtitle, “Energy medicine for mind, body, and spirit,” reinforces its emphasis on alternative healing modalities rather than instructional frameworks for learning or classroom management.  \n3. The cover art features crystals, chakras, and symbolic imagery associated with energy healing, which visually aligns with metaphysical or wellness themes rather than educational pedagogy.  \n4. The author, Philip Permutt, is known for writing on metaphysical and spiritual subjects, not educational theory, further supporting that this book is not pedagogical in nature.  \n5. The book’s content likely focuses on personal spiritual development and crystal therapy, making it unsuitable as a teaching guide for educators or instructional designers.  \n\n<final> No, this is not a pedagogy book. It is a spiritual healing guide focused on crystal chakras and energy medicine.",
+      "raw_generation": [
+        "1. The book’s title, “The Complete Guide to Crystal Chakra Healing,” indicates its focus on alternative healing practices, not educational methodologies or teaching techniques typically found in pedagogy books.  \n2. The subtitle, “Energy medicine for mind, body, and spirit,” further clarifies its subject matter as spiritual and holistic wellness, not instructional design or classroom management.  \n3. The cover art features crystals and chakra symbols, visually reinforcing its connection to metaphysical healing rather than pedagogical theory or curriculum development.  \n4. Author Philip Permutt is known for works in metaphysical and spiritual healing, not educational research or teaching strategies, which aligns with the book’s content.  \n5. Pedagogy books usually emphasize teaching methods, learning theory, or classroom practices, none of which are present in this book’s theme or visual presentation.  \n\n<final>No, this is not a pedagogy book.</final>",
+        "1. The book’s title, “The Complete Guide to Crystal Chakra Healing,” indicates its focus is on spiritual and holistic practices, not academic teaching methods or educational theory typically found in pedagogy books.  \n2. The subtitle, “Energy medicine for mind, body, and spirit,” reinforces its emphasis on alternative healing modalities rather than instructional frameworks for learning or classroom management.  \n3. The cover art features crystals, chakras, and symbolic imagery associated with energy healing, which visually aligns with metaphysical or wellness themes rather than educational pedagogy.  \n4. The author, Philip Permutt, is known for writing on metaphysical and spiritual subjects, not educational theory, further supporting that this book is not pedagogical in nature.  \n5. The book’s content likely focuses on personal spiritual development and crystal therapy, making it unsuitable as a teaching guide for educators or instructional designers.  \n\n<final> No, this is not a pedagogy book. It is a spiritual healing guide focused on crystal chakras and energy medicine."
+      ],
+      "chunks": [
+        "1. The book’s title, “The Complete Guide to Crystal Chakra Healing,” indicates its focus is on spiritual and holistic practices, not academic teaching methods or educational theory typically found in pedagogy books.",
+        "2. The subtitle, “Energy medicine for mind, body, and spirit,” reinforces its emphasis on alternative healing modalities rather than instructional frameworks for learning or classroom management.",
+        "3. The cover art features crystals, chakras, and symbolic imagery associated with energy healing, which visually aligns with metaphysical or wellness themes rather than educational pedagogy.",
+        "4. The author, Philip Permutt, is known for writing on metaphysical and spiritual subjects, not educational theory, further supporting that this book is not pedagogical in nature.",
+        "5. The book’s content likely focuses on personal spiritual development and crystal therapy, making it unsuitable as a teaching guide for educators or instructional designers.",
+        "<final> No, this is not a pedagogy book.",
+        "It is a spiritual healing guide focused on crystal chakras and energy medicine."
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          66
+        ],
+        [
+          67,
+          101
+        ],
+        [
+          102,
+          139
+        ],
+        [
+          140,
+          178
+        ],
+        [
+          179,
+          209
+        ],
+        [
+          210,
+          224
+        ],
+        [
+          224,
+          240
+        ]
+      ],
+      "anchor_vector": [
+        11.842016212286687,
+        13.888147490109352,
+        15.942483720146026,
+        16.324659753224207,
+        17.7481689453125,
+        15.385498046875,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "Pedagogy books typically include elements such as learning theories, instructional design models, classroom management strategies, assessment methods, or teacher training techniques — none of which would be central to this book’s purpose.",
+        "negative_sentence": "Hmm, I don’t see an option for step 6, but since you’ve asked me to continue reasoning, I’ll proceed to a logical conclusion based on the steps I’ve taken so far.",
+        "positive_full": " \n\n6. Pedagogy books typically include elements such as learning theories, instructional design models, classroom management strategies, assessment methods, or teacher training techniques — none of which would be central to this book’s purpose. 7. The target audience for “The Complete Guide to Crystal Chakra Healing” is likely individuals seeking spiritual growth, alternative healing practices, or self-improvement, not educators or trainers looking to develop teaching methodologies. 8. The book’s structure — if it follows typical spiritual guidebook formats — would likely include chapters on chakra anatomy, crystal properties, meditation techniques, and healing rituals, rather than pedagogical",
+        "negative_full": " 6. \n\nHmm, I don’t see an option for step 6, but since you’ve asked me to continue reasoning, I’ll proceed to a logical conclusion based on the steps I’ve taken so far.\n\n6. A pedagogy book would typically include topics such as learning theories, curriculum design, classroom strategies, assessment methods, and teacher development—none of which are implied or suggested by the book’s title, subtitle, imagery, or author’s focus. This book’s content is centered on metaphysical healing practices, making it incompatible with the definition and purpose of a pedagogy book.\n\nFinal conclusion: No, this",
+        "positive_probability": 0.006273636143451127,
+        "negative_probability": 0.005249361557474091,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n6. Pedagogy books typically include elements such as learning theories, instructional design models, classroom management strategies, assessment methods, or teacher training techniques — none of which would be central to this book’s purpose. 7. The target audience for “The Complete Guide to Crystal Chakra Healing” is likely individuals seeking spiritual growth, alternative healing practices, or self-improvement, not educators or trainers looking to develop teaching methodologies. 8. The book’s structure — if it follows typical spiritual guidebook formats — would likely include chapters on chakra anatomy, crystal properties, meditation techniques, and healing rituals, rather than pedagogical",
+            "first_sentence": "Pedagogy books typically include elements such as learning theories, instructional design models, classroom management strategies, assessment methods, or teacher training techniques — none of which would be central to this book’s purpose.",
+            "answer_probability": 0.006273636143451127,
+            "final_answer": "6. Pedagogy books typically include elements such as learning theories, instructional design models, classroom management strategies, assessment methods, or teacher training techniques — none of which would be central to this book’s purpose. 7. The target audience for “The Complete Guide to Crystal Chakra Healing” is likely individuals seeking spiritual growth, alternative healing practices, or self-improvement, not educators or trainers looking to develop teaching methodologies. 8. The book’s structure — if it follows typical spiritual guidebook formats — would likely include chapters on chakra anatomy, crystal properties, meditation techniques, and healing rituals, rather than pedagogical"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n6. The structure of the book, if examined, would likely include chapters on crystal properties, chakra alignment, meditation techniques, and spiritual practices — all of which are designed for personal use, not for teaching or learning design. 7. Pedagogy books typically include sections on learning theories, curriculum design, assessment strategies, and student engagement — none of which are expected to be found here. 8. The target audience for this book is likely individuals interested in spiritual growth, energy healing, or alternative medicine — not educators, trainers, or instructional designers. 9. If this book were used in an educational context, it",
+            "first_sentence": "The structure of the book, if examined, would likely include chapters on crystal properties, chakra alignment, meditation techniques, and spiritual practices — all of which are designed for personal use, not for teaching or learning design.",
+            "answer_probability": 0.006257511237686905,
+            "final_answer": "6. The structure of the book, if examined, would likely include chapters on crystal properties, chakra alignment, meditation techniques, and spiritual practices — all of which are designed for personal use, not for teaching or learning design. 7. Pedagogy books typically include sections on learning theories, curriculum design, assessment strategies, and student engagement — none of which are expected to be found here. 8. The target audience for this book is likely individuals interested in spiritual growth, energy healing, or alternative medicine — not educators, trainers, or instructional designers. 9. If this book were used in an educational context, it"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n6. Pedagogy books typically include sections on curriculum design, student engagement strategies, assessment methods, and educational psychology — none of which are implied or expected in this title or description. 7. The subject matter — crystal chakra healing — is not a subject traditionally taught in schools or formal education settings, which would further distinguish it from pedagogy texts. 8. Therefore, based on title, subtitle, cover design, author background, and content focus, this book is not a pedagogy book — it is a spiritual self-help guide.\n\nFinal Answer: No, this is not a pedagogy book.",
+            "first_sentence": "Pedagogy books typically include sections on curriculum design, student engagement strategies, assessment methods, and educational psychology — none of which are implied or expected in this title or description.",
+            "answer_probability": 0.005988537026369213,
+            "final_answer": "No, this is not a pedagogy book"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": "  \n6. **Compare with typical pedagogy books**: Standard pedagogy texts often include topics such as learning theories (e.g., constructivism, behaviorism), curriculum design, assessment methods, classroom management strategies, and teacher training. None of these subjects appear in the book’s description or implied content. 7. **Check for educational applications**: Even if the book included metaphysical concepts, a pedagogy book would likely discuss how to apply those concepts *in an educational setting*—for example, integrating spiritual practices into school curricula or using mindfulness techniques in classroom instruction. This book does not mention such applications. 8",
+            "first_sentence": "**Compare with typical pedagogy books**: Standard pedagogy texts often include topics such as learning theories (e.g., constructivism, behaviorism), curriculum design, assessment methods, classroom management strategies, and teacher training.",
+            "answer_probability": 0.005681854113713033,
+            "final_answer": "6. **Compare with typical pedagogy books**: Standard pedagogy texts often include topics such as learning theories (e.g., constructivism, behaviorism), curriculum design, assessment methods, classroom management strategies, and teacher training. None of these subjects appear in the book’s description or implied content. 7. **Check for educational applications**: Even if the book included metaphysical concepts, a pedagogy book would likely discuss how to apply those concepts *in an educational setting*—for example, integrating spiritual practices into school curricula or using mindfulness techniques in classroom instruction. This book does not mention such applications. 8"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " 6. \n\nHmm, I don’t see an option for step 6, but since you’ve asked me to continue reasoning, I’ll proceed to a logical conclusion based on the steps I’ve taken so far.\n\n6. A pedagogy book would typically include topics such as learning theories, curriculum design, classroom strategies, assessment methods, and teacher development—none of which are implied or suggested by the book’s title, subtitle, imagery, or author’s focus. This book’s content is centered on metaphysical healing practices, making it incompatible with the definition and purpose of a pedagogy book.\n\nFinal conclusion: No, this",
+            "first_sentence": "Hmm, I don’t see an option for step 6, but since you’ve asked me to continue reasoning, I’ll proceed to a logical conclusion based on the steps I’ve taken so far.",
+            "answer_probability": 0.005249361557474091,
+            "final_answer": "Final conclusion: No, this"
+          }
+        ],
+        "correct_answer": "No",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006024728844243184,
+              "generated_answers": [
+                "No, this is not a pedagogy book. It is a guide to crystal chakra healing, focused on spiritual and energy-based practices, not educational theory or teaching methodology",
+                "6. **Content Analysis**: A pedagogy book would typically include sections on learning theories (e.g., constructivism, behaviorism), curriculum design, assessment strategies, classroom management, or teacher development. None of these elements are likely to be present in “The Complete Guide to Crystal Chakra Healing.” Instead, the content will focus on chakra anatomy, crystal correspondences, meditation techniques, and healing practices—topics centered on personal well-being, not instructional methods. 7. **Audience Targeting**: Pedagogy books are designed for educators, trainers, or instructional designers who need tools to teach others. This book’s audience is likely individuals seeking spiritual growth, holistic health, or alternative healing practices—not professionals in education or training. 8. **Purpose and Intent**: The purpose of this book is to guide readers in self-healing and spiritual alignment through chakra and crystal work. A pedagogy book, by contrast, aims to equip educators with methods to effectively teach students. The intent here is personal, not professional or educational. 9. **Conclusion**: Based on title, subtitle, cover art, author background, content focus, audience, and intent, this book is not a pedagogy book—it is a spiritual and holistic self-help guide",
+                "**Conclusion**: No, this is not a pedagogy book. It is a spiritual and metaphysical guide focused on crystal healing and energy medicine, intended for personal development and holistic wellness—not for teaching or instructional design",
+                "No, this is not a pedagogy book",
+                "No, this is not a pedagogy book."
+              ],
+              "answer_probabilities": [
+                0.006035858857792852,
+                0.006264675808824398,
+                0.005945899623786561,
+                0.0058438517037779775,
+                0.006033358227034133
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0055088504813916896,
+              "generated_answers": [
+                "No, this is not a pedagogy book",
+                "No, this is not a pedagogy book. It is a spiritual and holistic healing guide focused on crystal chakra therapy",
+                "This further confirms that “The Complete Guide to Crystal Chakra Healing” is not a pedagogy book; it is a guide for spiritual and holistic self-care and energy healing. Therefore, it should not be categorized as a pedagogy resource",
+                "9. **The target audience is clearly individuals seeking spiritual growth or holistic healing — not educators, trainers, or instructional designers** — further confirming",
+                "No, this is not a pedagogy book"
+              ],
+              "answer_probabilities": [
+                0.005225078723020807,
+                0.005828254072359677,
+                0.005468674923424057,
+                0.005133685867157173,
+                0.0058885588209967345
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005945739291355185,
+              "generated_answers": [
+                "No, this is not a pedagogy book",
+                "No, this is not a pedagogy book",
+                "No, this is not a pedagogy book",
+                "No, this is not a pedagogy book. It is a guide to crystal chakra healing, focused on spiritual and holistic practices, not educational theory or teaching methods",
+                "No, this is not a pedagogy book"
+              ],
+              "answer_probabilities": [
+                0.005817649176549718,
+                0.006012313253293235,
+                0.0055708184370109395,
+                0.006702880824770139,
+                0.005625034765151893
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0059767682789973915,
+              "generated_answers": [
+                ": No, this is not a pedagogy book",
+                "No, this is not a pedagogy book.",
+                "\\boxed{No}",
+                "No, this is not a pedagogy book",
+                "No, this is not a pedagogy book."
+              ],
+              "answer_probabilities": [
+                0.006625652040279292,
+                0.005503019617758913,
+                0.005550849960878303,
+                0.006469864122917438,
+                0.00573445565315301
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006071715729172982,
+              "generated_answers": [
+                "No, this is not a pedagogy book",
+                "No, this is not a pedagogy book.",
+                "No, this is not a pedagogy book",
+                ": No, this is not a pedagogy book",
+                "No, this is not a pedagogy book. It is a guide to crystal chakra healing focused on spiritual and energetic well-being"
+              ],
+              "answer_probabilities": [
+                0.006562436335350838,
+                0.006359417822316961,
+                0.0054720826407090905,
+                0.005914194603491485,
+                0.006050447243996531
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 44,
+  "worker_rank": 2
+}

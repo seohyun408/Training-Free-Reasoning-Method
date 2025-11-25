@@ -1,0 +1,437 @@
+{
+  "total_pairs": 2,
+  "successful_pairs": 2,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/chartqa/train/png/multi_col_100056.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIdentify the category, that recorded 35% and 15% ? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The bar chart displays five categories along the x-axis: Convenience, Customer service, Product availability, Product quality, and Value for money.\n2. Each category has a stacked bar with two segments: blue for \"Rated 4/5\" and dark blue for \"Rated 5/5\".\n3. The \"Product availability\" category shows a blue segment labeled \"35%\" and a dark blue segment labeled \"15%\".\n4. The other categories do not have both 35% and 15% as their respective segments.\n5. Therefore, the category that recorded 35% and 15% is \"Product availability\".\n</reasoning>\n\n<final>Product availability</final>",
+      "raw_generation": [
+        "1. The chart displays five categories along the x-axis: Convenience, Customer service, Product availability, Product quality, and Value for money.  \n2. Each category has a stacked bar divided into two segments: blue for 4/5 ratings and dark blue for 5/5 ratings.  \n3. The blue segment labeled 35% corresponds to the \"Product availability\" category, indicating 35% of respondents rated it 4/5.  \n4. The dark blue segment labeled 15% also belongs to \"Product availability,\" showing 15% rated it 5/5.  \n5. Since both percentages refer to the same category, \"Product availability\" is the correct answer.  \n\n<final>Product availability</final>",
+        "<reasoning>\n1. The bar chart displays five categories along the x-axis: Convenience, Customer service, Product availability, Product quality, and Value for money.\n2. Each category has a stacked bar with two segments: blue for \"Rated 4/5\" and dark blue for \"Rated 5/5\".\n3. The \"Product availability\" category shows a blue segment labeled \"35%\" and a dark blue segment labeled \"15%\".\n4. The other categories do not have both 35% and 15% as their respective segments.\n5. Therefore, the category that recorded 35% and 15% is \"Product availability\".\n</reasoning>\n\n<final>Product availability</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The bar chart displays five categories along the x-axis: Convenience, Customer service, Product availability, Product quality, and Value for money.",
+        "2. Each category has a stacked bar with two segments: blue for \"Rated 4/5\" and dark blue for \"Rated 5/5\".",
+        "3. The \"Product availability\" category shows a blue segment labeled \"35%\" and a dark blue segment labeled \"15%\".",
+        "4. The other categories do not have both 35% and 15% as their respective segments.",
+        "5. Therefore, the category that recorded 35% and 15% is \"Product availability\".",
+        "</reasoning>\n\n<final>Product availability</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          62,
+          68
+        ],
+        [
+          68,
+          95
+        ],
+        [
+          95,
+          127
+        ],
+        [
+          127,
+          155
+        ],
+        [
+          155,
+          178
+        ],
+        [
+          178,
+          200
+        ],
+        [
+          200,
+          212
+        ]
+      ],
+      "anchor_vector": [
+        10.539286391730805,
+        10.78116581674666,
+        11.881819728088091,
+        11.584114406419838,
+        11.321075439453125,
+        10.230061848958334,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "The percentages shown in the chart are for the \"Rated 4/5\" (blue) and \"Rated 5/5\" (dark blue) segments for each category.",
+        "negative_sentence": "We need to find which category has 35% and 15%.",
+        "positive_full": " \n\n3. The percentages shown in the chart are for the \"Rated 4/5\" (blue) and \"Rated 5/5\" (dark blue) segments for each category.\n\n4. Looking at the \"Convenience\" category: the blue segment (Rated 4/5) is 35%, and the dark blue segment (Rated 5/5) is 15%. \n\n5. Looking at the \"Customer service\" category: the blue segment (Rated 4/5) is 35%, and the dark blue segment (Rated 5/5) is 15%.\n\nWait,",
+        "negative_full": " \n\n3. We need to find which category has 35% and 15%. Since it's a stacked bar, the percentages must refer to the parts of the bar for that category. 4. The total of the two segments for each category should be 100%. 5. The question asks for the category that recorded 35% and 15%, which sums to 50%. This is not possible, because it's a stacked bar, and each category should be 100% total. 6. Therefore, the percentages 35% and 15% must refer",
+        "positive_probability": 0.007753518246428648,
+        "negative_probability": 0.005660969249205773,
+        "all_samples": [
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n3. The percentages shown in the chart are for the \"Rated 4/5\" (blue) and \"Rated 5/5\" (dark blue) segments for each category.\n\n4. Looking at the \"Convenience\" category: the blue segment (Rated 4/5) is 35%, and the dark blue segment (Rated 5/5) is 15%. \n\n5. Looking at the \"Customer service\" category: the blue segment (Rated 4/5) is 35%, and the dark blue segment (Rated 5/5) is 15%.\n\nWait,",
+            "first_sentence": "The percentages shown in the chart are for the \"Rated 4/5\" (blue) and \"Rated 5/5\" (dark blue) segments for each category.",
+            "answer_probability": 0.007753518246428648,
+            "final_answer": "Wait"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n3. The question asks which category recorded 35% and 15%? 4. Looking at the chart, we need to find the category where the blue segment (rated 4/5) is 35% and the dark blue segment (rated 5/5) is 15%. 5. Reviewing the categories: - Convenience: blue=40%, dark blue=20% - Customer service: blue=35%, dark blue=15% - Product availability: blue=25%, dark blue=30% - Product quality: blue=40%, dark",
+            "first_sentence": "The question asks which category recorded 35% and 15%?",
+            "answer_probability": 0.007311522819350721,
+            "final_answer": "3. The question asks which category recorded 35% and 15%? 4. Looking at the chart, we need to find the category where the blue segment (rated 4/5) is 35% and the dark blue segment (rated 5/5) is 15%. 5. Reviewing the categories: - Convenience: blue=40%, dark blue=20% - Customer service: blue=35%, dark blue=15% - Product availability: blue=25%, dark blue=30% - Product quality: blue=40%, dark"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n3. To find which category has 35% and 15%, I need to look for the category where the blue segment (Rated 4/5) is 35% and the dark blue segment (Rated 5/5) is 15%. 4. Looking at the chart, the category labeled \"Product availability\" has a blue segment that represents 35% (from 30% to 35% on the y-axis) and a dark blue segment that represents 15% (from 10% to 15% on the y-axis).\n\nBased on this",
+            "first_sentence": "To find which category has 35% and 15%, I need to look for the category where the blue segment (Rated 4/5) is 35% and the dark blue segment (Rated 5/5) is 15%.",
+            "answer_probability": 0.007251858970718159,
+            "final_answer": "Based on this"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n3. The y-axis represents the percentage of respondents. 4. The question is asking for the category that recorded 35% and 15%.\n\nThe 35% and 15% are likely referring to the two segments of one of the bars. Since it's a stacked bar, one segment represents the \"Rated 4/5\" (blue) and the other represents the \"Rated 5/5\" (dark blue). So, one category must have 35% for one rating and 15% for the other.\n\n5. Looking at the bars, I need to find the one",
+            "first_sentence": "The y-axis represents the percentage of respondents.",
+            "answer_probability": 0.0065394793720582305,
+            "final_answer": "5. Looking at the bars, I need to find the one"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n3. We need to find which category has 35% and 15%. Since it's a stacked bar, the percentages must refer to the parts of the bar for that category. 4. The total of the two segments for each category should be 100%. 5. The question asks for the category that recorded 35% and 15%, which sums to 50%. This is not possible, because it's a stacked bar, and each category should be 100% total. 6. Therefore, the percentages 35% and 15% must refer",
+            "first_sentence": "We need to find which category has 35% and 15%.",
+            "answer_probability": 0.005660969249205773,
+            "final_answer": "3. We need to find which category has 35% and 15%. Since it's a stacked bar, the percentages must refer to the parts of the bar for that category. 4. The total of the two segments for each category should be 100%. 5. The question asks for the category that recorded 35% and 15%, which sums to 50%. This is not possible, because it's a stacked bar, and each category should be 100% total. 6. Therefore, the percentages 35% and 15% must refer"
+          }
+        ],
+        "correct_answer": "Product availability",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006816336890018924,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.007061296167106829,
+                0.007500219835937303,
+                0.00580850976892491,
+                0.0062300420074766355,
+                0.007481616670648944
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007185114047895802,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.007153508386164246,
+                0.006981589820379476,
+                0.0070957161160261,
+                0.007282738487425702,
+                0.007412017429483489
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006671505025993089,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.007058181972433955,
+                0.006899207779581619,
+                0.006922119511936596,
+                0.00571029195308106,
+                0.006767723912932216
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007077531859291381,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.007155343979548459,
+                0.006055154864209683,
+                0.0072699609387220365,
+                0.0069183638108081804,
+                0.007988835703168542
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006906738602038961,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.0071158481190268,
+                0.007215265748026552,
+                0.006117895529017008,
+                0.00711445474994922,
+                0.0069702288641752255
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the average of all the blue bars ? Answer the question using a single word or phrase.",
+      "reasoning_text": "<reasoning>\n1. The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values of 34%, 36%, 35%, 45%, and 27% respectively for Convenience, Customer service, Product availability, Product quality, and Value for money.\n2. Summing these percentages gives 34 + 36 + 35 + 45 + 27 = 177.\n3. There are five categories, so dividing the total by five yields 177 / 5 = 35.4.\n4. The average of all the blue bars is therefore 35.4%.\n5. This calculation directly answers the question by using the exact values shown in the chart.\n</reasoning>\n<final>35.4</final>",
+      "raw_generation": [
+        "1. The blue bars represent the percentage of respondents who rated each category 4 out of 5.  \n2. For \"Convenience,\" the blue bar shows 34%.  \n3. For \"Customer service,\" the blue bar shows 36%.  \n4. For \"Product availability,\" the blue bar shows 35%.  \n5. For \"Product quality,\" the blue bar shows 45%.  \n6. For \"Value for money,\" the blue bar shows 27%.  \n7. Summing these values: 34 + 36 + 35 + 45 + 27 = 177.  \n8. Dividing by the number of categories (5): 177 ÷ 5 = 35.4.  \n9. The average of all the blue bars is 35.4%.  \n\n<final>35.4%</final>",
+        "<reasoning>\n1. The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values of 34%, 36%, 35%, 45%, and 27% respectively for Convenience, Customer service, Product availability, Product quality, and Value for money.\n2. Summing these percentages gives 34 + 36 + 35 + 45 + 27 = 177.\n3. There are five categories, so dividing the total by five yields 177 / 5 = 35.4.\n4. The average of all the blue bars is therefore 35.4%.\n5. This calculation directly answers the question by using the exact values shown in the chart.\n</reasoning>\n<final>35.4</final>"
+      ],
+      "chunks": [
+        "<reasoning>\n1.",
+        "The blue bars represent the percentage of respondents who rated each category 4 out of 5, with values of 34%, 36%, 35%, 45%, and 27% respectively for Convenience, Customer service, Product availability, Product quality, and Value for money.",
+        "2. Summing these percentages gives 34 + 36 + 35 + 45 + 27 = 177.",
+        "3. There are five categories, so dividing the total by five yields 177 / 5 = 35.4.",
+        "4. The average of all the blue bars is therefore 35.4%.",
+        "5. This calculation directly answers the question by using the exact values shown in the chart.",
+        "</reasoning>\n<final>35.4</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          54
+        ],
+        [
+          54,
+          115
+        ],
+        [
+          115,
+          147
+        ],
+        [
+          147,
+          175
+        ],
+        [
+          175,
+          193
+        ],
+        [
+          193,
+          211
+        ],
+        [
+          211,
+          225
+        ]
+      ],
+      "anchor_vector": [
+        10.364800642034892,
+        11.39870392330109,
+        10.984137156653027,
+        9.9651041989604,
+        10.246349516369047,
+        10.899832589285714,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "To find the average, we need to sum all these percentages and then divide by the number of categories.",
+        "negative_sentence": "To calculate the average of these percentages, we need to add them up and divide by the number of categories.",
+        "positive_full": " \n\n2. To find the average, we need to sum all these percentages and then divide by the number of categories. \n\n3. Sum = 34 + 36 + 35 + 45 + 27 = 177\n\n4. Number of categories = 5\n\n5. Average = Sum / Number of categories = 177 / 5 = 35.4\n\nThe average of all the blue bars is 35.4.\n\n35.4",
+        "negative_full": " \n\n2. To calculate the average of these percentages, we need to add them up and divide by the number of categories. The sum of the percentages is 34 + 36 + 35 + 45 + 27 = 177.\n\n3. There are 5 categories, so we divide the total sum by 5: 177 ÷ 5 = 35.4.\n\n4. Therefore, the average of all the blue bars is 35.4%.\n\n5. The question asks for the answer using a single word or phrase, so we should present it as",
+        "positive_probability": 0.8086761559772717,
+        "negative_probability": 0.008060567213573238,
+        "all_samples": [
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n2. To find the average, we need to sum all these percentages and then divide by the number of categories. \n\n3. Sum = 34 + 36 + 35 + 45 + 27 = 177\n\n4. Number of categories = 5\n\n5. Average = Sum / Number of categories = 177 / 5 = 35.4\n\nThe average of all the blue bars is 35.4.\n\n35.4",
+            "first_sentence": "To find the average, we need to sum all these percentages and then divide by the number of categories.",
+            "answer_probability": 0.8086761559772717,
+            "final_answer": "35.4"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n2. To find the average, we need to sum up all the percentages and divide by the number of categories.\n3. Sum of percentages: 34 + 36 + 35 + 45 + 27 = 177.\n4. Number of categories: 5.\n5. Average = Sum / Number of categories = 177 / 5 = 35.4.\n\nThe final answer is 35.4.",
+            "first_sentence": "To find the average, we need to sum up all the percentages and divide by the number of categories.",
+            "answer_probability": 0.7831449795969361,
+            "final_answer": "35.4"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n2. To find the average of these values, we need to add them up and then divide by the number of values.\n\nSo, adding them up: 34 + 36 + 35 + 45 + 27 = 177\n\nNext step:\n\n3. There are 5 values, so we divide the sum by 5: 177 ÷ 5 = 35.4\n\nFinal answer:\n\n35.4\n\n35.4",
+            "first_sentence": "To find the average of these values, we need to add them up and then divide by the number of values.",
+            "answer_probability": 0.757218076464912,
+            "final_answer": "35.4"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n2. To find the average, I need to sum these percentages and divide by the number of categories.\n\n3. Sum of the percentages: 34% + 36% + 35% + 45% + 27% = 177%\n\n4. Number of categories: 5\n\n5. Average = 177% / 5 = 35.4%\n\n6. Since the question asks for the average of all the blue bars, the answer is 35.4%.\n\n35.4%",
+            "first_sentence": "To find the average, I need to sum these percentages and divide by the number of categories.",
+            "answer_probability": 0.00858018341728887,
+            "final_answer": "35.4%"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n2. To calculate the average of these percentages, we need to add them up and divide by the number of categories. The sum of the percentages is 34 + 36 + 35 + 45 + 27 = 177.\n\n3. There are 5 categories, so we divide the total sum by 5: 177 ÷ 5 = 35.4.\n\n4. Therefore, the average of all the blue bars is 35.4%.\n\n5. The question asks for the answer using a single word or phrase, so we should present it as",
+            "first_sentence": "To calculate the average of these percentages, we need to add them up and divide by the number of categories.",
+            "answer_probability": 0.008060567213573238,
+            "final_answer": "using a single word or phrase, so we should present it as"
+          }
+        ],
+        "correct_answer": "35.4",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007429295668984133,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.007718871271891184,
+                0.007974520323608765,
+                0.007442182282132863,
+                0.007283522454092805,
+                0.006727382013195047
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007559439361878563,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.007783292177732398,
+                0.007635252226679481,
+                0.007562419705820052,
+                0.007227171354457996,
+                0.007589061344702889
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007588874190416884,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.008016085606851837,
+                0.007193138405833736,
+                0.008015459646919717,
+                0.007180712320979027,
+                0.0075389749715001056
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00748143912659689,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.007538434261570865,
+                0.007415611452341552,
+                0.00759717607382159,
+                0.007615904560931918,
+                0.007240069284318531
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.007444527502587691,
+              "generated_answers": [
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.007316831930169591,
+                0.007698056083520159,
+                0.007409921910009709,
+                0.007446293638059289,
+                0.007351533951179712
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 1,
+  "worker_rank": 0
+}

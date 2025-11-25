@@ -1,0 +1,1257 @@
+{
+  "total_pairs": 6,
+  "successful_pairs": 6,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/gqa/images/2368520.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nAre there tennis balls or toolboxes?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The image shows a street scene with people walking, trees, and buildings.  \n2. No tennis balls are visible in the foreground, midground, or background.  \n3. There are no toolboxes, crates, or storage containers in the visible area.  \n4. The people are casually dressed, and no one is carrying equipment or sports gear.  \n5. The environment appears to be urban or suburban, with no signs of sporting or mechanical activity.  \n\n<final>No</final>",
+      "raw_generation": [
+        "1. I carefully scanned the entire image for any visible tennis balls, noting their distinctive fuzzy texture and bright colors, which are absent here.  \n2. I examined all objects and surfaces, including the street, people’s clothing, and surrounding environment, for any toolboxes or similar containers.  \n3. No tennis balls were found on the ground, held by individuals, or in any background elements, despite close inspection of the foreground and midground.  \n4. No toolboxes, whether open or closed, were visible among the crowd, parked vehicles, or structures along the street or sidewalk.  \n5. The image contains no tennis balls or toolboxes, confirming the absence of both items in the scene.  \n\n<final>no</final>",
+        "1. The image shows a street scene with people walking, trees, and buildings.  \n2. No tennis balls are visible in the foreground, midground, or background.  \n3. There are no toolboxes, crates, or storage containers in the visible area.  \n4. The people are casually dressed, and no one is carrying equipment or sports gear.  \n5. The environment appears to be urban or suburban, with no signs of sporting or mechanical activity.  \n\n<final>No</final>"
+      ],
+      "chunks": [
+        "1. The image shows a street scene with people walking, trees, and buildings.",
+        "2. No tennis balls are visible in the foreground, midground, or background.",
+        "3. There are no toolboxes, crates, or storage containers in the visible area.",
+        "4. The people are casually dressed, and no one is carrying equipment or sports gear.",
+        "5. The environment appears to be urban or suburban, with no signs of sporting or mechanical activity.",
+        "<final>No</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          44,
+          61
+        ],
+        [
+          62,
+          79
+        ],
+        [
+          80,
+          98
+        ],
+        [
+          99,
+          117
+        ],
+        [
+          118,
+          138
+        ],
+        [
+          139,
+          145
+        ]
+      ],
+      "anchor_vector": [
+        13.707133629493464,
+        11.346036783854165,
+        6.070737485532407,
+        4.7731689453125,
+        5.995442708333333,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "There are no visible tennis balls or toolboxes in the image.",
+        "negative_sentence": "I cannot see any tennis balls or toolboxes in the image.",
+        "positive_full": " \n2. There are no visible tennis balls or toolboxes in the image.\n\nFinal step: \n3. Therefore, the answer is no.\n\nno",
+        "negative_full": "  \n2. I cannot see any tennis balls or toolboxes in the image.\n\nFinal Answer: No",
+        "positive_probability": 0.008070475241548638,
+        "negative_probability": 0.004844595852547479,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " \n2. There are no visible tennis balls or toolboxes in the image.\n\nFinal step: \n3. Therefore, the answer is no.\n\nno",
+            "first_sentence": "There are no visible tennis balls or toolboxes in the image.",
+            "answer_probability": 0.008070475241548638,
+            "final_answer": "no"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n2. There are no visible tennis balls or toolboxes in the image.\n\nNext reasoning step:\n3. Based on the visual content, the answer to the question is no.\n\nFinal answer:\nno",
+            "first_sentence": "There are no visible tennis balls or toolboxes in the image.",
+            "answer_probability": 0.007847759027959521,
+            "final_answer": "to the question is no"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n2. There are no visible objects that resemble tennis balls or toolboxes in the image.\n\nNext reasoning step:\n3. Since there are no tennis balls or toolboxes visible, the answer to the question is \"no\".\n\nAnswer:\nno",
+            "first_sentence": "There are no visible objects that resemble tennis balls or toolboxes in the image.",
+            "answer_probability": 0.007229212458153812,
+            "final_answer": "to the question is \"no\""
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n2. There is no visible tennis ball or toolbox in the scene.\n\nFinal answer:\nno",
+            "first_sentence": "There is no visible tennis ball or toolbox in the scene.",
+            "answer_probability": 0.00545179889477771,
+            "final_answer": "no"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": "  \n2. I cannot see any tennis balls or toolboxes in the image.\n\nFinal Answer: No",
+            "first_sentence": "I cannot see any tennis balls or toolboxes in the image.",
+            "answer_probability": 0.004844595852547479,
+            "final_answer": "No"
+          }
+        ],
+        "correct_answer": "No.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005322947695933655,
+              "generated_answers": [
+                "No",
+                "No",
+                "no",
+                "No",
+                "Based on the visual information, there are no tennis balls or toolboxes"
+              ],
+              "answer_probabilities": [
+                0.003816807439714356,
+                0.005498944575194513,
+                0.0047130996770647525,
+                0.006005507829398288,
+                0.0065803789582963654
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005872705160655095,
+              "generated_answers": [
+                "no",
+                "no",
+                "to the question is no",
+                "No",
+                "to the question is: No"
+              ],
+              "answer_probabilities": [
+                0.005906979805660613,
+                0.006250363292736061,
+                0.005962170834490365,
+                0.005487085152034995,
+                0.0057569267183534435
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005711219419646955,
+              "generated_answers": [
+                "No",
+                "no",
+                "to the question is no",
+                "no",
+                "no"
+              ],
+              "answer_probabilities": [
+                0.005076596361223453,
+                0.0061949670121433514,
+                0.004654943690282927,
+                0.006350477023536289,
+                0.00627911301104876
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005622432284852807,
+              "generated_answers": [
+                "no",
+                "No",
+                "no",
+                "No",
+                "\"no\""
+              ],
+              "answer_probabilities": [
+                0.006668142544072836,
+                0.005021272347652796,
+                0.00539001690264569,
+                0.00599676972598108,
+                0.005035959903911631
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005686695124642477,
+              "generated_answers": [
+                "to the question is no",
+                "to the question is \"no.\"",
+                "no",
+                "no",
+                "no"
+              ],
+              "answer_probabilities": [
+                0.005800166271306333,
+                0.006847764393930894,
+                0.006635905084798423,
+                0.004058582848655299,
+                0.005091057024521441
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat color is the jacket?",
+      "reasoning_text": "1. The jacket in the foreground is predominantly white with blue and green accents along the zipper and sleeve seams, visible on the person standing near the center-left of the image.  \n2. The jacket’s collar and zipper area feature a distinct teal or blue-green trim that contrasts with the white fabric, making it stand out against the gray sky and surrounding crowd.  \n3. The jacket’s sleeves have a matching blue-green stripe near the cuffs, adding to its sporty and casual appearance, which complements the overall street scene.  \n4. The jacket appears to be made of a lightweight, possibly nylon or polyester material, suitable for casual wear during a street event or parade, as seen in the background.  \n5. The jacket’s design, with its clean lines and bold color accents, suggests it’s meant for visibility and style, fitting the urban, youthful vibe of the gathering in the photo.  \n\n<final>The jacket is white with blue and green accents.</final>",
+      "raw_generation": [
+        "1. The jacket in the image is primarily white, with distinct teal or green accents along the zipper line and sleeve edges.  \n2. The jacket has a visible blue inner lining, which is noticeable around the collar and zipper area.  \n3. The jacket appears to be a zip-up style, as the zipper is partially open and the front closure is visible.  \n4. The white exterior fabric contrasts sharply with the darker blue or teal trim, making the color combination stand out.  \n5. The jacket’s design suggests it is casual wear, suitable for everyday use, and the color scheme is vibrant yet balanced.  \n\n<final>White with teal/green accents and blue lining.</final>",
+        "1. The jacket in the foreground is predominantly white with blue and green accents along the zipper and sleeve seams, visible on the person standing near the center-left of the image.  \n2. The jacket’s collar and zipper area feature a distinct teal or blue-green trim that contrasts with the white fabric, making it stand out against the gray sky and surrounding crowd.  \n3. The jacket’s sleeves have a matching blue-green stripe near the cuffs, adding to its sporty and casual appearance, which complements the overall street scene.  \n4. The jacket appears to be made of a lightweight, possibly nylon or polyester material, suitable for casual wear during a street event or parade, as seen in the background.  \n5. The jacket’s design, with its clean lines and bold color accents, suggests it’s meant for visibility and style, fitting the urban, youthful vibe of the gathering in the photo.  \n\n<final>The jacket is white with blue and green accents.</final>"
+      ],
+      "chunks": [
+        "1. The jacket in the foreground is predominantly white with blue and green accents along the zipper and sleeve seams, visible on the person standing near the center-left of the image.",
+        "2. The jacket’s collar and zipper area feature a distinct teal or blue-green trim that contrasts with the white fabric, making it stand out against the gray sky and surrounding crowd.",
+        "3. The jacket’s sleeves have a matching blue-green stripe near the cuffs, adding to its sporty and casual appearance, which complements the overall street scene.",
+        "4. The jacket appears to be made of a lightweight, possibly nylon or polyester material, suitable for casual wear during a street event or parade, as seen in the background.",
+        "5. The jacket’s design, with its clean lines and bold color accents, suggests it’s meant for visibility and style, fitting the urban, youthful vibe of the gathering in the photo.",
+        "<final>The jacket is white with blue and green accents.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          55
+        ],
+        [
+          56,
+          92
+        ],
+        [
+          93,
+          126
+        ],
+        [
+          127,
+          162
+        ],
+        [
+          163,
+          201
+        ],
+        [
+          202,
+          216
+        ]
+      ],
+      "anchor_vector": [
+        13.708543949540044,
+        10.76803624432786,
+        10.404801065162907,
+        10.524087317904137,
+        16.621930803571427,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The jacket’s color scheme is designed to be eye-catching yet harmonious, combining white as the base with complementary cool tones (blue and green) to create a modern, trendy look.",
+        "negative_sentence": "What are the characteristics of the people around the jacket?",
+        "positive_full": "  \n6. The jacket’s color scheme is designed to be eye-catching yet harmonious, combining white as the base with complementary cool tones (blue and green) to create a modern, trendy look. 7. The white base allows the blue-green accents to pop, while the blue-green trim adds depth and visual interest without overwhelming the garment. 8. In the context of the scene, the jacket’s colors contrast sharply with the darker clothing worn by other attendees, making the wearer stand out as a focal point in the crowd. 9. The jacket’s color palette aligns with current fashion trends, particularly in streetwear, where",
+        "negative_full": " What are the characteristics of the people around the jacket?\n\nOkay, let's continue thinking step by step about the people around the white-and-blue-green jacket:\n\n1. The person wearing the jacket is standing near the center-left, and their posture — slightly angled, with one hand in their pocket — suggests they’re relaxed and casually observing the scene. This implies they’re not part of a formal group or activity, but rather part of the crowd enjoying the moment.\n\n2. Around them, other people are visible — some in the background, others slightly blurred. These individuals appear to be dressed in everyday, casual streetwear: hoodies, jeans",
+        "positive_probability": 0.0060630487850856715,
+        "negative_probability": 0.004585659519474465,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": "  \n6. The jacket’s color scheme is designed to be eye-catching yet harmonious, combining white as the base with complementary cool tones (blue and green) to create a modern, trendy look. 7. The white base allows the blue-green accents to pop, while the blue-green trim adds depth and visual interest without overwhelming the garment. 8. In the context of the scene, the jacket’s colors contrast sharply with the darker clothing worn by other attendees, making the wearer stand out as a focal point in the crowd. 9. The jacket’s color palette aligns with current fashion trends, particularly in streetwear, where",
+            "first_sentence": "The jacket’s color scheme is designed to be eye-catching yet harmonious, combining white as the base with complementary cool tones (blue and green) to create a modern, trendy look.",
+            "answer_probability": 0.0060630487850856715,
+            "final_answer": "6. The jacket’s color scheme is designed to be eye-catching yet harmonious, combining white as the base with complementary cool tones (blue and green) to create a modern, trendy look. 7. The white base allows the blue-green accents to pop, while the blue-green trim adds depth and visual interest without overwhelming the garment. 8. In the context of the scene, the jacket’s colors contrast sharply with the darker clothing worn by other attendees, making the wearer stand out as a focal point in the crowd. 9. The jacket’s color palette aligns with current fashion trends, particularly in streetwear, where"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 6.\n\n6. The white base color of the jacket provides a neutral canvas that enhances the visibility of the blue and green accents, making them pop against the gray background and the colorful attire of the surrounding crowd. This contrast not only draws attention to the jacket but also reinforces its modern, streetwear aesthetic, which is popular in urban fashion scenes. Additionally, the combination of white, blue, and green aligns with common color palettes in contemporary casual wear, often associated with freshness, energy, and a sporty look — fitting for a lively, outdoor gathering. \n\nThis reasoning step reinforces the jacket’s design purpose: to be both",
+            "first_sentence": "The white base color of the jacket provides a neutral canvas that enhances the visibility of the blue and green accents, making them pop against the gray background and the colorful attire of the surrounding crowd.",
+            "answer_probability": 0.005908693406794706,
+            "final_answer": "This reasoning step reinforces the jacket’s design purpose: to be both"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " 6. The white base of the jacket is likely chosen for its high visibility and contrast, which is common in sportswear or event apparel to help the wearer stand out in a crowd. 7. The blue-green accents are not random; they are strategically placed along the zipper and sleeve seams to draw attention to the jacket’s structure and design, enhancing its modern aesthetic. 8. The teal or blue-green trim around the collar and zipper area adds a pop of color that complements the surrounding environment, such as the gray sky and the muted tones of the crowd’s clothing. 9. The overall color scheme of white with",
+            "first_sentence": "The white base of the jacket is likely chosen for its high visibility and contrast, which is common in sportswear or event apparel to help the wearer stand out in a crowd.",
+            "answer_probability": 0.0058070903671175724,
+            "final_answer": "6. The white base of the jacket is likely chosen for its high visibility and contrast, which is common in sportswear or event apparel to help the wearer stand out in a crowd. 7. The blue-green accents are not random; they are strategically placed along the zipper and sleeve seams to draw attention to the jacket’s structure and design, enhancing its modern aesthetic. 8. The teal or blue-green trim around the collar and zipper area adds a pop of color that complements the surrounding environment, such as the gray sky and the muted tones of the crowd’s clothing. 9. The overall color scheme of white with"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n6. The jacket’s color palette — primarily white with blue-green accents — is consistent across the entire garment, from the front to the sleeves and collar, indicating it is not a patchwork or multi-section design. 7. The white base color provides a neutral canvas that makes the blue-green accents more prominent, enhancing the jacket’s visual impact without overpowering the wearer. 8. The blue-green trim is not just decorative; it appears to be part of the jacket’s functional design, possibly serving as a reflective element for safety or as a brand identifier in a crowd. 9. In the context of the image’s setting",
+            "first_sentence": "The jacket’s color palette — primarily white with blue-green accents — is consistent across the entire garment, from the front to the sleeves and collar, indicating it is not a patchwork or multi-section design.",
+            "answer_probability": 0.005560571882009296,
+            "final_answer": "6. The jacket’s color palette — primarily white with blue-green accents — is consistent across the entire garment, from the front to the sleeves and collar, indicating it is not a patchwork or multi-section design. 7. The white base color provides a neutral canvas that makes the blue-green accents more prominent, enhancing the jacket’s visual impact without overpowering the wearer. 8. The blue-green trim is not just decorative; it appears to be part of the jacket’s functional design, possibly serving as a reflective element for safety or as a brand identifier in a crowd. 9. In the context of the image’s setting"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " What are the characteristics of the people around the jacket?\n\nOkay, let's continue thinking step by step about the people around the white-and-blue-green jacket:\n\n1. The person wearing the jacket is standing near the center-left, and their posture — slightly angled, with one hand in their pocket — suggests they’re relaxed and casually observing the scene. This implies they’re not part of a formal group or activity, but rather part of the crowd enjoying the moment.\n\n2. Around them, other people are visible — some in the background, others slightly blurred. These individuals appear to be dressed in everyday, casual streetwear: hoodies, jeans",
+            "first_sentence": "What are the characteristics of the people around the jacket?",
+            "answer_probability": 0.004585659519474465,
+            "final_answer": "2. Around them, other people are visible — some in the background, others slightly blurred. These individuals appear to be dressed in everyday, casual streetwear: hoodies, jeans"
+          }
+        ],
+        "correct_answer": "White.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005956270233058154,
+              "generated_answers": [
+                "",
+                "The jacket is white with blue and green accents",
+                "9. Overall, while the jacket’s primary color is white, its true character is defined by the interplay of blue and green accents — a thoughtful design choice that balances",
+                "The jacket is primarily white with blue-green** accents",
+                "Therefore, the color of the main fabric of the jacket is **white**. This conclusion aligns with the visual evidence and contextual description provided in the reasoning steps"
+              ],
+              "answer_probabilities": [
+                0.006197367689490148,
+                0.005526142169382942,
+                0.005961752327668951,
+                0.006059944287605207,
+                0.006036144691143517
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00568160015740948,
+              "generated_answers": [
+                "Final conclusion: The most likely season for this photo is **spring or early fall** — when temperatures are cool enough to warrant a lightweight jacket but warm enough to allow for casual",
+                "While the jacket features prominent blue and green accents (especially along the zipper, collar, and sleeves), these are decorative elements that contrast with the dominant background color of the fabric. The white base covers the largest area of the jacket’s surface — including the torso, shoulders, and most of the sleeves — making it the foundational and primary color. The accents serve to enhance visual interest and branding, but they do not alter the jacket’s base hue. Therefore, **white** is the most accurate primary color description",
+                "The jacket is white with blue and green accents",
+                ":",
+                "9. In summary, while the jacket is primarily white, its key visual feature is the blue-green accent color, which gives it a distinctive and eye-catching appearance. This color combination"
+              ],
+              "answer_probabilities": [
+                0.0055545368505308616,
+                0.006261112243949,
+                0.005984937164743214,
+                0.005548779035846845,
+                0.005058635491977476
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005654966210788007,
+              "generated_answers": [
+                "- The **design intent",
+                "6. The white base color of the jacket provides a neutral canvas that allows the blue and green accents to pop, enhancing the jacket’s visual impact. This contrast is particularly effective in the photo’s context, where the white jacket stands out against the darker tones of the crowd and the gray sky, drawing attention to the wearer. 7. The choice of blue and green accents may reflect a coordinated or branded design, possibly indicating team colors, a fashion trend, or a specific event theme. Given the context of a street event or parade, these colors could be tied to a particular group, cause, or celebration. 8. Observing the jacket’s fit and style, it appears tailored for comfort and movement, suggesting it’s designed for active participation in the event, rather than just being a casual garment. The sleeves’ slight tapering and the jacket’s relaxed cut imply it’s meant to move with the wearer, enhancing the dynamic feel of the scene. 9. The jacket’s material—likely a lightweight synthetic blend—offers both durability and breathability, making it practical for outdoor activities, especially during a street gathering where people might be walking, standing, or interacting with others. 10. Finally, considering all these details—the color scheme, design, material",
+                "The jacket is **white with blue-green accents**",
+                "White with blue and green accents",
+                "White with blue and green accents."
+              ],
+              "answer_probabilities": [
+                0.006278473715291902,
+                0.005379138133158058,
+                0.005615039460657861,
+                0.005168761834734881,
+                0.00583341791009733
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00614430653986526,
+              "generated_answers": [
+                "$\\boxed{\\text{white with blue-green accents}}$",
+                "✅ Therefore, the jacket’s primary color is **white**",
+                "Thus, while the jacket has striking secondary colors, its dominant and primary color is **white**",
+                "White with blue-green accents",
+                "This color combination is intentional for visibility, style, and practicality in a street event setting, blending"
+              ],
+              "answer_probabilities": [
+                0.005387901361743853,
+                0.006404497318261122,
+                0.006547220052250998,
+                0.006328015090594444,
+                0.00605389887647588
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005745038366411198,
+              "generated_answers": [
+                "White with blue-green accents",
+                "The jacket is primarily white with blue and green (teal/blue-green) accents",
+                "White with blue and green accents",
+                "It’s a **white base with bold, sporty color accents** — ideal for visibility and streetwear style",
+                "The jacket is white with prominent teal or blue-green accents"
+              ],
+              "answer_probabilities": [
+                0.005379639226846009,
+                0.006315860444895111,
+                0.005707662865239514,
+                0.006116862314127336,
+                0.0052051669809480205
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is wearing a shirt?",
+      "reasoning_text": "1. A man in the foreground wears a gray hoodie, holding a white cup, with a watch on his left wrist, standing near a woman in a white jacket.  \n2. A man in a blue shirt walks behind the woman in the white jacket, wearing a baseball cap and dark pants.  \n3. Another man in the crowd wears a red shirt with “GRAND” printed in white letters across the back, paired with blue jeans and a black backpack.  \n4. A person in a gray hoodie stands near the front, while others behind them wear assorted shirts, including one with a visible graphic design.  \n5. Several individuals in the crowd wear shirts, including one with a black backpack and another in a red shirt with white lettering, visible as the group walks down the street.  \n\n<final>Multiple individuals in the image are wearing shirts, including a man in a blue shirt, another in a red shirt with “GRAND” printed on it, and a woman in a white jacket with teal trim.</final>",
+      "raw_generation": [
+        "1. The man in the foreground is wearing a light gray hooded shirt with a white cup in his hand, indicating casual attire suitable for an outdoor gathering.  \n2. A woman in the center wears a white zip-up jacket with teal accents and blue jeans, suggesting coordinated streetwear for the event.  \n3. A man further back sports a blue t-shirt and a baseball cap, a common casual outfit for public events or street festivals.  \n4. Another individual is wearing a red hoodie with “ORONO” printed on the back, likely representing a school, team, or local group identity.  \n5. Several other people in the crowd are dressed in varied shirts, including dark hoodies and casual t-shirts, reflecting diverse personal styles at the gathering.  \n\n<final>Multiple people in the image are wearing shirts, including hoodies, t-shirts, and jackets, indicating casual attire appropriate for a public outdoor event.</final>",
+        "1. A man in the foreground wears a gray hoodie, holding a white cup, with a watch on his left wrist, standing near a woman in a white jacket.  \n2. A man in a blue shirt walks behind the woman in the white jacket, wearing a baseball cap and dark pants.  \n3. Another man in the crowd wears a red shirt with “GRAND” printed in white letters across the back, paired with blue jeans and a black backpack.  \n4. A person in a gray hoodie stands near the front, while others behind them wear assorted shirts, including one with a visible graphic design.  \n5. Several individuals in the crowd wear shirts, including one with a black backpack and another in a red shirt with white lettering, visible as the group walks down the street.  \n\n<final>Multiple individuals in the image are wearing shirts, including a man in a blue shirt, another in a red shirt with “GRAND” printed on it, and a woman in a white jacket with teal trim.</final>"
+      ],
+      "chunks": [
+        "1. A man in the foreground wears a gray hoodie, holding a white cup, with a watch on his left wrist, standing near a woman in a white jacket.",
+        "2. A man in a blue shirt walks behind the woman in the white jacket, wearing a baseball cap and dark pants.",
+        "3. Another man in the crowd wears a red shirt with “GRAND” printed in white letters across the back, paired with blue jeans and a black backpack.",
+        "4. A person in a gray hoodie stands near the front, while others behind them wear assorted shirts, including one with a visible graphic design.",
+        "5. Several individuals in the crowd wear shirts, including one with a black backpack and another in a red shirt with white lettering, visible as the group walks down the street.",
+        "<final>Multiple individuals in the image are wearing shirts, including a man in a blue shirt, another in a red shirt with “GRAND” printed on it, and a woman in a white jacket with teal trim.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          20,
+          54
+        ],
+        [
+          55,
+          80
+        ],
+        [
+          81,
+          114
+        ],
+        [
+          115,
+          144
+        ],
+        [
+          145,
+          181
+        ],
+        [
+          182,
+          229
+        ]
+      ],
+      "anchor_vector": [
+        11.649819287991225,
+        13.29122111730845,
+        7.892386148113332,
+        9.500435759271571,
+        10.73704496343085,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Okay, let's continue the next reasoning step:\n\n3.",
+        "negative_sentence": "A man in a red shirt walks in front of the woman in the white jacket, wearing a baseball cap and dark pants.",
+        "positive_full": " 3.\n\nOkay, let's continue the next reasoning step:\n\n3. The man wearing the blue shirt is also wearing a baseball cap and dark pants, and he is walking behind the woman in the white jacket. Since the question is “Who is wearing a shirt?”, and a shirt is a type of clothing that covers the upper body, the blue shirt is clearly a shirt.\n\nSo, the man in the blue shirt is wearing a shirt.\n\nFinal answer: The man in the blue shirt is wearing a shirt.",
+        "negative_full": " 3. A man in a red shirt walks in front of the woman in the white jacket, wearing a baseball cap and dark pants. 4. A man in a green shirt walks behind the man in the red shirt, wearing a baseball caps and dark pants.\n\nWhich man is wearing a shirt?\n\nFrom the given descriptions, let's analyze step by step:\n\n1. The man in the foreground is wearing a **gray hoodie** — a hoodie is a type of shirt, but typically considered a jacket or outerwear. However, it is still technically a shirt (specifically, a pullover hoodie).\n\n2. The man in the",
+        "positive_probability": 0.007502425142129562,
+        "negative_probability": 0.006382832754768781,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " 3.\n\nOkay, let's continue the next reasoning step:\n\n3. The man wearing the blue shirt is also wearing a baseball cap and dark pants, and he is walking behind the woman in the white jacket. Since the question is “Who is wearing a shirt?”, and a shirt is a type of clothing that covers the upper body, the blue shirt is clearly a shirt.\n\nSo, the man in the blue shirt is wearing a shirt.\n\nFinal answer: The man in the blue shirt is wearing a shirt.",
+            "first_sentence": "Okay, let's continue the next reasoning step:\n\n3.",
+            "answer_probability": 0.007502425142129562,
+            "final_answer": "The man in the blue shirt is wearing a shirt"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n3. The question is asking who is wearing a shirt.\n4. From step 2, there is a man wearing a blue shirt.\n5. Additionally, the man in the foreground is wearing a gray hoodie, which is a type of shirt.\n\nTherefore, both the man in the foreground (wearing a gray hoodie) and the man behind the woman (wearing a blue shirt) are wearing shirts.\n\nFinal Answer: The man in the foreground and the man behind the woman are wearing shirts.",
+            "first_sentence": "The question is asking who is wearing a shirt.",
+            "answer_probability": 0.007361350431326904,
+            "final_answer": "The man in the foreground and the man behind the woman are wearing shirts"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": "  \nThe question is \"Who is wearing a shirt?\" So, I need to identify all individuals wearing a shirt.  \n- The man in the foreground wears a gray hoodie — a hoodie is a type of shirt, so he is wearing a shirt.  \n- The man behind the woman wears a blue shirt — clearly a shirt, so he is also wearing a shirt.\n\nFinal answer: The man in the gray hoodie and the man in the blue shirt are both wearing shirts.",
+            "first_sentence": "The question is \"Who is wearing a shirt?\" So, I need to identify all individuals wearing a shirt.",
+            "answer_probability": 0.006852753883424087,
+            "final_answer": "The man in the gray hoodie and the man in the blue shirt are both wearing shirts"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n- The man in the blue shirt is clearly described as wearing a blue shirt.\n\nTherefore, the man in the blue shirt is wearing a shirt.\n\nThe man in the blue shirt is wearing a shirt.",
+            "first_sentence": "- The man in the blue shirt is clearly described as wearing a blue shirt.",
+            "answer_probability": 0.006674017288255826,
+            "final_answer": "The man in the blue shirt is wearing a shirt"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " 3. A man in a red shirt walks in front of the woman in the white jacket, wearing a baseball cap and dark pants. 4. A man in a green shirt walks behind the man in the red shirt, wearing a baseball caps and dark pants.\n\nWhich man is wearing a shirt?\n\nFrom the given descriptions, let's analyze step by step:\n\n1. The man in the foreground is wearing a **gray hoodie** — a hoodie is a type of shirt, but typically considered a jacket or outerwear. However, it is still technically a shirt (specifically, a pullover hoodie).\n\n2. The man in the",
+            "first_sentence": "A man in a red shirt walks in front of the woman in the white jacket, wearing a baseball cap and dark pants.",
+            "answer_probability": 0.006382832754768781,
+            "final_answer": "2. The man in the"
+          }
+        ],
+        "correct_answer": "Man.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005100839281143276,
+              "generated_answers": [
+                "Both men and the woman are wearing shirts",
+                "",
+                "",
+                "The man in the blue shirt is wearing a shirt",
+                "The man in the blue shirt"
+              ],
+              "answer_probabilities": [
+                0.006682268554488688,
+                0.005779860345202682,
+                0.001,
+                0.005975226709121673,
+                0.00606684079690333
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006117146744389128,
+              "generated_answers": [
+                "The man in the blue shirt, the woman with red hair in a dark blue shirt, the man in the red shirt, and the person in the green shirt are all wearing shirts",
+                "- The man in the brown coat and black shirt:",
+                "",
+                "But let's look at the original text: \"a man in the foreground wears a gray hoodie\" - a hoodie is a type of sweatshirt, which is a type of shirt",
+                "The man in the blue shirt, the man in the gray shirt, and the man in the white shirt are wearing shirts"
+              ],
+              "answer_probabilities": [
+                0.005560108736288182,
+                0.0055575676024389445,
+                0.007191839921236315,
+                0.005468064700224402,
+                0.006808152761757799
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0062854009283978395,
+              "generated_answers": [
+                "The man in the blue shirt is wearing a shirt",
+                "The man in the blue shirt is wearing a shirt",
+                "The man in the blue shirt is wearing a shirt",
+                "The man in the blue shirt is wearing a shirt",
+                "the question \"Who is wearing a shirt?\" — I need to identify who among the individuals described is wearing a shirt (not just a hoodie, jacket, or dress)"
+              ],
+              "answer_probabilities": [
+                0.005559777047676584,
+                0.006241231693363515,
+                0.006478063640242954,
+                0.00675474496997224,
+                0.006393187290733902
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006082524115060958,
+              "generated_answers": [
+                "s the question",
+                "The man in the blue shirt is wearing a shirt",
+                "s the question",
+                "The man in the blue shirt is wearing a shirt",
+                "The man in the foreground, the man in the blue shirt, and the woman in the blue shirt are all wearing shirts"
+              ],
+              "answer_probabilities": [
+                0.004516349428446615,
+                0.006085467277098986,
+                0.006004582087708161,
+                0.006176379276413736,
+                0.007629842505637295
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006431404557558013,
+              "generated_answers": [
+                "ed by the man in the blue shirt mentioned in step 2, since a shirt is a type of garment worn on the upper body, and a hoodie is technically a type of shirt (a hooded sweatshirt). However, if we are looking for a person wearing a shirt that is not a hoodie, then the answer is the man in the blue shirt",
+                "- The man",
+                "The man in the blue shirt, the man in the gray hoodie, and the woman in the white jacket are all wearing shirts",
+                "The man in the blue shirt is wearing a shirt",
+                ""
+              ],
+              "answer_probabilities": [
+                0.005846823298250724,
+                0.005795868004305776,
+                0.007027238875791911,
+                0.0070918906458595984,
+                0.006395201963582052
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho is wearing jeans?",
+      "reasoning_text": "1. The woman in the foreground wearing a white jacket has blue jeans visible, with a teal top underneath, standing near a man in a gray hoodie holding a cup.  \n2. A man in a red hoodie with “BRAND” on the back is wearing blue jeans, walking among the crowd under an overcast sky.  \n3. Another man in a blue shirt and cap is also wearing jeans, walking behind the woman in the white jacket toward the street’s center.  \n4. A person with a black backpack is wearing dark-colored jeans, walking near the man in the red hoodie and partially obscured by others.  \n5. Multiple individuals in the crowd, including those near the stop sign and streetlamp, are wearing jeans, indicating it is common attire for the group.  \n\n<final>Several people in the image, including the woman in the white jacket, the man in the red hoodie, and others, are wearing jeans.</final>",
+      "raw_generation": [
+        "1. The man in the foreground wearing a gray hoodie and holding a cup is wearing blue jeans visible below his waist.\n2. The woman in the white jacket with teal accents is wearing blue jeans that match her casual outfit.\n3. The person in the red hoodie with “ORLANDO” on the back is wearing dark blue jeans that contrast with the bright red top.\n4. The man in the blue shirt and baseball cap is also wearing blue jeans that blend in with the crowd’s casual attire.\n5. The person in the black backpack and dark shorts is not wearing jeans, as their lower garment is visibly shorts.\n\n<final>Multiple individuals in the image are wearing jeans, including the man in the gray hoodie, the woman in the white jacket, the person in the red hoodie, and the man in the blue shirt.</final>",
+        "1. The woman in the foreground wearing a white jacket has blue jeans visible, with a teal top underneath, standing near a man in a gray hoodie holding a cup.  \n2. A man in a red hoodie with “BRAND” on the back is wearing blue jeans, walking among the crowd under an overcast sky.  \n3. Another man in a blue shirt and cap is also wearing jeans, walking behind the woman in the white jacket toward the street’s center.  \n4. A person with a black backpack is wearing dark-colored jeans, walking near the man in the red hoodie and partially obscured by others.  \n5. Multiple individuals in the crowd, including those near the stop sign and streetlamp, are wearing jeans, indicating it is common attire for the group.  \n\n<final>Several people in the image, including the woman in the white jacket, the man in the red hoodie, and others, are wearing jeans.</final>"
+      ],
+      "chunks": [
+        "1. The woman in the foreground wearing a white jacket has blue jeans visible, with a teal top underneath, standing near a man in a gray hoodie holding a cup.",
+        "2. A man in a red hoodie with “BRAND” on the back is wearing blue jeans, walking among the crowd under an overcast sky.",
+        "3. Another man in a blue shirt and cap is also wearing jeans, walking behind the woman in the white jacket toward the street’s center.",
+        "4. A person with a black backpack is wearing dark-colored jeans, walking near the man in the red hoodie and partially obscured by others.",
+        "5. Multiple individuals in the crowd, including those near the stop sign and streetlamp, are wearing jeans, indicating it is common attire for the group.",
+        "<final>Several people in the image, including the woman in the white jacket, the man in the red hoodie, and others, are wearing jeans.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          18,
+          52
+        ],
+        [
+          53,
+          84
+        ],
+        [
+          85,
+          114
+        ],
+        [
+          115,
+          143
+        ],
+        [
+          144,
+          175
+        ],
+        [
+          176,
+          209
+        ]
+      ],
+      "anchor_vector": [
+        13.92583538418559,
+        11.448672148403077,
+        10.935469347310956,
+        11.209316100775904,
+        12.972537878787879,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The man in the gray hoodie holding a cup is also wearing blue jeans, as his jeans are visible below his hoodie, paired with a white t-shirt underneath.",
+        "negative_sentence": "",
+        "positive_full": " 2.\nThe man in the gray hoodie holding a cup is also wearing blue jeans, as his jeans are visible below his hoodie, paired with a white t-shirt underneath.\n\nFinal step: 3.\nThe woman in the background wearing a red jacket is not wearing jeans, as she is wearing dark pants that appear to be black or dark gray, and there's no indication of denim fabric.\n\nConclusion: The two people wearing jeans are the woman in the foreground with the white jacket and the man in the gray hoodie.",
+        "negative_full": "",
+        "positive_probability": 0.005692367741284651,
+        "negative_probability": 0.001,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": " 2.\nThe man in the gray hoodie holding a cup is also wearing blue jeans, as his jeans are visible below his hoodie, paired with a white t-shirt underneath.\n\nFinal step: 3.\nThe woman in the background wearing a red jacket is not wearing jeans, as she is wearing dark pants that appear to be black or dark gray, and there's no indication of denim fabric.\n\nConclusion: The two people wearing jeans are the woman in the foreground with the white jacket and the man in the gray hoodie.",
+            "first_sentence": "The man in the gray hoodie holding a cup is also wearing blue jeans, as his jeans are visible below his hoodie, paired with a white t-shirt underneath.",
+            "answer_probability": 0.005692367741284651,
+            "final_answer": "Conclusion: The two people wearing jeans are the woman in the foreground with the white jacket and the man in the gray hoodie"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n2. The man in the middle wearing a gray hoodie and holding a cup is also wearing blue jeans. His jeans are visible under his hoodie, and he is sitting on a bench next to the woman in the white jacket.\n\nOkay, now what?\n\n3. The man in the background wearing a red jacket and blue jeans is also wearing jeans. His jeans are visible under his red jacket, and he is standing behind the man in the gray hoodie.\n\nI’ve considered all visible individuals. Are there any other people wearing jeans?\n\n4. The woman in the background wearing a purple jacket is not visible wearing jeans; her pants appear to be",
+            "first_sentence": "The man in the middle wearing a gray hoodie and holding a cup is also wearing blue jeans.",
+            "answer_probability": 0.005644095365872509,
+            "final_answer": "4. The woman in the background wearing a purple jacket is not visible wearing jeans; her pants appear to be"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " 2. The man in the gray hoodie, holding a cup, has blue jeans as well, partially visible under his hoodie, standing near the woman in the white jacket.\n\nNext: 3. The woman in the background wearing a black jacket and teal top, standing behind the woman in the white jacket, is also wearing blue jeans, visible under her black jacket.\n\nFinal step: 4. The man in the black hoodie and green shirt, standing in front of the woman in the background, is wearing blue jeans, visible under his black hoodie.\n\nConclusion:\nAll four people in the image are wearing blue jeans.\n\n✅ Final Answer:",
+            "first_sentence": "The man in the gray hoodie, holding a cup, has blue jeans as well, partially visible under his hoodie, standing near the woman in the white jacket.",
+            "answer_probability": 0.005363113318851048,
+            "final_answer": ":"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n2. The man sitting at the table has blue jeans on, paired with a dark blue hoodie and a white t-shirt.\n\nNext:\n\n3. The person in the background on the right side, wearing a red and black plaid shirt, is also wearing blue jeans.\n\nFinal step:\n\n4. The man in the background, wearing a gray hoodie and blue jeans, is also wearing jeans. \n\nWait, that’s a duplicate. Let me recheck the descriptions.\n\nActually, let me list the unique individuals wearing jeans:\n\n- The woman in the foreground (white jacket, teal top) — wearing jeans.\n- The man at the table",
+            "first_sentence": "The man sitting at the table has blue jeans on, paired with a dark blue hoodie and a white t-shirt.",
+            "answer_probability": 0.004890087974757724,
+            "final_answer": "- The man at the table"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "",
+            "first_sentence": "",
+            "answer_probability": 0.001,
+            "final_answer": ""
+          }
+        ],
+        "correct_answer": "Man.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005466448399711636,
+              "generated_answers": [
+                "The woman in the foreground and the two men are wearing jeans",
+                "$\\boxed{\\text{multiple people}}$",
+                "Everyone is wearing jeans",
+                "✅ Therefore, the woman in the foreground wearing the white jacket and teal top underneath is the one wearing jeans",
+                "Both the woman in the foreground and the man in the gray hoodie are wearing blue jeans"
+              ],
+              "answer_probabilities": [
+                0.005076974543323124,
+                0.005649356489040257,
+                0.005999759357944613,
+                0.005396853963996121,
+                0.005209297644254068
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0045612987325633954,
+              "generated_answers": [
+                "The man in the blue hoodie is wearing jeans.",
+                "",
+                "The woman in the foreground, the man in the middle, and the man in the background are all wearing blue jeans",
+                "The woman in the foreground and the woman in the background are wearing jeans",
+                "The woman in the white jacket, the man in the gray hoodie, the man on the far right, and the woman with the red scarf and brown coat are all wearing jeans"
+              ],
+              "answer_probabilities": [
+                0.004736065643023136,
+                0.001,
+                0.00639870414853853,
+                0.004681140648930519,
+                0.005990583222324791
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004682527368479812,
+              "generated_answers": [
+                "",
+                "The woman in the foreground wearing a white jacket and teal top is wearing jeans",
+                "Three women are wearing jeans",
+                "14. The woman wearing a",
+                "Thus, **both individuals are wearing jeans**"
+              ],
+              "answer_probabilities": [
+                0.001,
+                0.005608038611701198,
+                0.004250781363846608,
+                0.005572874634069232,
+                0.006980942232782025
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0060772989542746516,
+              "generated_answers": [
+                "The man in the gray hoodie is NOT wearing jeans—he’s wearing gray sweatpants",
+                "The woman in the white jacket with a teal top and the man in the gray hoodie holding a cup are wearing jeans",
+                "The woman in the white jacket and the man in the gray hoodie are wearing jeans",
+                "The woman in the foreground wearing a white jacket and the woman in the background wearing a yellow shirt and a blue jacket are both wearing jeans",
+                ""
+              ],
+              "answer_probabilities": [
+                0.005798400235621305,
+                0.006029771645628024,
+                0.00715190635668056,
+                0.00470163186724912,
+                0.006704784666194246
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0050421204374104436,
+              "generated_answers": [
+                "8. The woman in the white jacket, the man in the gray hoodie, the man in the dark green hoodie, and the person sitting on the bench—all of them",
+                "✅ The woman behind",
+                "The woman in the foreground and the man in the gray hoodie are wearing jeans",
+                "",
+                "10. The"
+              ],
+              "answer_probabilities": [
+                0.006773015051351199,
+                0.005129337121546586,
+                0.005841229250182489,
+                0.001,
+                0.006467020763971942
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the man that is to the right of the backpack wearing jeans?",
+      "reasoning_text": "1. The man positioned to the right of the backpack is wearing dark blue denim pants that appear to be jeans, identifiable by their texture and classic cut.  \n2. His jeans have a faded wash, typical of casual denim, and are paired with a red jacket that has \"GRAND\" printed on the back.  \n3. The man’s jeans are partially obscured by the person in front of him, but the denim material is still visible from the side and back.  \n4. The jeans are not rolled at the cuffs, and they match the style worn by other individuals in the crowd, confirming their casual, everyday use.  \n5. The man’s jeans are consistent with the relaxed, street-style clothing seen throughout the image, suggesting he is dressed for casual walking or gathering.  \n\n<final>Yes, the man to the right of the backpack is wearing jeans.</final>",
+      "raw_generation": [
+        "1. The man positioned to the right of the backpack is wearing a red jacket with “BRAND” printed on the back.\n2. He is also wearing dark-colored pants that appear to be denim, matching the texture and style of jeans.\n3. His pants have a classic straight-leg cut, consistent with standard jean designs worn in casual settings.\n4. The way the fabric drapes and folds around his legs further confirms the material is denim.\n5. No other type of pants, such as khakis or chinos, are visible on him.\n\n<final>Yes, the man to the right of the backpack is wearing jeans.</final>",
+        "1. The man positioned to the right of the backpack is wearing dark blue denim pants that appear to be jeans, identifiable by their texture and classic cut.  \n2. His jeans have a faded wash, typical of casual denim, and are paired with a red jacket that has \"GRAND\" printed on the back.  \n3. The man’s jeans are partially obscured by the person in front of him, but the denim material is still visible from the side and back.  \n4. The jeans are not rolled at the cuffs, and they match the style worn by other individuals in the crowd, confirming their casual, everyday use.  \n5. The man’s jeans are consistent with the relaxed, street-style clothing seen throughout the image, suggesting he is dressed for casual walking or gathering.  \n\n<final>Yes, the man to the right of the backpack is wearing jeans.</final>"
+      ],
+      "chunks": [
+        "1. The man positioned to the right of the backpack is wearing dark blue denim pants that appear to be jeans, identifiable by their texture and classic cut.",
+        "2. His jeans have a faded wash, typical of casual denim, and are paired with a red jacket that has \"GRAND\" printed on the back.",
+        "3. The man’s jeans are partially obscured by the person in front of him, but the denim material is still visible from the side and back.",
+        "4. The jeans are not rolled at the cuffs, and they match the style worn by other individuals in the crowd, confirming their casual, everyday use.",
+        "5. The man’s jeans are consistent with the relaxed, street-style clothing seen throughout the image, suggesting he is dressed for casual walking or gathering.",
+        "<final>Yes, the man to the right of the backpack is wearing jeans.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          36,
+          67
+        ],
+        [
+          68,
+          100
+        ],
+        [
+          101,
+          131
+        ],
+        [
+          132,
+          163
+        ],
+        [
+          164,
+          194
+        ],
+        [
+          195,
+          214
+        ]
+      ],
+      "anchor_vector": [
+        7.916927899898752,
+        6.787133477323799,
+        10.693254264654518,
+        8.767146381578948,
+        14.318873355263158,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "Since the man’s pants are clearly made of denim material, with the characteristic texture, stitching, and cut of jeans, and since this style is consistent with other casual attire in the image, it is reasonable to conclude that the man to the right of the backpack is wearing jeans.",
+        "negative_sentence": "No other clothing type (such as chinos, khakis, or trousers) is visible on this man’s lower body that would suggest he is not wearing jeans.",
+        "positive_full": "  \n6. Since the man’s pants are clearly made of denim material, with the characteristic texture, stitching, and cut of jeans, and since this style is consistent with other casual attire in the image, it is reasonable to conclude that the man to the right of the backpack is wearing jeans.\n\nYes, the man to the right of the backpack is wearing jeans.",
+        "negative_full": "  \n6. No other clothing type (such as chinos, khakis, or trousers) is visible on this man’s lower body that would suggest he is not wearing jeans. 7. The texture and stitching pattern of the denim are consistent with standard jeans, and there are no visible signs of alterations or different fabric types. 8. The way the jeans fit the man’s legs — slightly tapered and relaxed — is characteristic of casual denim jeans, not formal or athletic pants. 9. The backpack’s position to the left of the man indicates he is standing to its right, which confirms his spatial relationship to the backpack as described",
+        "positive_probability": 0.006296840475468004,
+        "negative_probability": 0.004927418844647451,
+        "all_samples": [
+          {
+            "sample_idx": 0,
+            "continuation": "  \n6. Since the man’s pants are clearly made of denim material, with the characteristic texture, stitching, and cut of jeans, and since this style is consistent with other casual attire in the image, it is reasonable to conclude that the man to the right of the backpack is wearing jeans.\n\nYes, the man to the right of the backpack is wearing jeans.",
+            "first_sentence": "Since the man’s pants are clearly made of denim material, with the characteristic texture, stitching, and cut of jeans, and since this style is consistent with other casual attire in the image, it is reasonable to conclude that the man to the right of the backpack is wearing jeans.",
+            "answer_probability": 0.006296840475468004,
+            "final_answer": "Yes, the man to the right of the backpack is wearing jeans"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n6. Additionally, the man’s jeans have a slightly worn-in look, which is common for jeans that have been worn frequently, further supporting the conclusion that they are jeans. 7. There is no visual evidence to suggest that the pants are made of any other fabric, such as khaki, chinos, or cargo pants; the texture, color, and fit are unmistakably denim. 8. The way the jeans are cut—relaxed fit, straight legs, and the presence of pockets and belt loops—is consistent with standard jean design. 9. The man’s posture and movement also suggest he is wearing comfortable,",
+            "first_sentence": "Additionally, the man’s jeans have a slightly worn-in look, which is common for jeans that have been worn frequently, further supporting the conclusion that they are jeans.",
+            "answer_probability": 0.005851224521623612,
+            "final_answer": "6. Additionally, the man’s jeans have a slightly worn-in look, which is common for jeans that have been worn frequently, further supporting the conclusion that they are jeans. 7. There is no visual evidence to suggest that the pants are made of any other fabric, such as khaki, chinos, or cargo pants; the texture, color, and fit are unmistakably denim. 8. The way the jeans are cut—relaxed fit, straight legs, and the presence of pockets and belt loops—is consistent with standard jean design. 9. The man’s posture and movement also suggest he is wearing comfortable"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n6. The material and fit of the pants confirm they are jeans, as they show the characteristic stretch and stitching of denim. 7. The way the jeans are worn—slightly loose, with a classic five-pocket design—further supports this identification. 8. There is no visual evidence of alternative materials such as chinos, khakis, or athletic pants, and the color and wear pattern align with typical denim. 9. Additionally, the man’s overall outfit, including his jacket and footwear, complements the casual, urban style often associated with jeans. 10. Therefore, based on all observable details,",
+            "first_sentence": "The material and fit of the pants confirm they are jeans, as they show the characteristic stretch and stitching of denim.",
+            "answer_probability": 0.005347723410585013,
+            "final_answer": "6. The material and fit of the pants confirm they are jeans, as they show the characteristic stretch and stitching of denim. 7. The way the jeans are worn—slightly loose, with a classic five-pocket design—further supports this identification. 8. There is no visual evidence of alternative materials such as chinos, khakis, or athletic pants, and the color and wear pattern align with typical denim. 9. Additionally, the man’s overall outfit, including his jacket and footwear, complements the casual, urban style often associated with jeans. 10. Therefore, based on all observable details"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": "  \n6. Additionally, the cut and fit of the pants align with standard jean designs — specifically, a relaxed or straight-leg fit — which is distinct from other types of casual pants like chinos or cargo pants. 7. The way the jeans are fitted around his hips and thighs, and how they hang, further supports their classification as jeans. 8. The presence of visible stitching and pockets — common features of denim jeans — is evident even when partially hidden by the person in front of him. 9. No other type of pants (e.g., khakis, slacks, or athletic pants) are visible on the man",
+            "first_sentence": "Additionally, the cut and fit of the pants align with standard jean designs — specifically, a relaxed or straight-leg fit — which is distinct from other types of casual pants like chinos or cargo pants.",
+            "answer_probability": 0.005245058189085581,
+            "final_answer": "6. Additionally, the cut and fit of the pants align with standard jean designs — specifically, a relaxed or straight-leg fit — which is distinct from other types of casual pants like chinos or cargo pants. 7. The way the jeans are fitted around his hips and thighs, and how they hang, further supports their classification as jeans. 8. The presence of visible stitching and pockets — common features of denim jeans — is evident even when partially hidden by the person in front of him. 9. No other type of pants (e.g., khakis, slacks, or athletic pants) are visible on the man"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "  \n6. No other clothing type (such as chinos, khakis, or trousers) is visible on this man’s lower body that would suggest he is not wearing jeans. 7. The texture and stitching pattern of the denim are consistent with standard jeans, and there are no visible signs of alterations or different fabric types. 8. The way the jeans fit the man’s legs — slightly tapered and relaxed — is characteristic of casual denim jeans, not formal or athletic pants. 9. The backpack’s position to the left of the man indicates he is standing to its right, which confirms his spatial relationship to the backpack as described",
+            "first_sentence": "No other clothing type (such as chinos, khakis, or trousers) is visible on this man’s lower body that would suggest he is not wearing jeans.",
+            "answer_probability": 0.004927418844647451,
+            "final_answer": "6. No other clothing type (such as chinos, khakis, or trousers) is visible on this man’s lower body that would suggest he is not wearing jeans. 7. The texture and stitching pattern of the denim are consistent with standard jeans, and there are no visible signs of alterations or different fabric types. 8. The way the jeans fit the man’s legs — slightly tapered and relaxed — is characteristic of casual denim jeans, not formal or athletic pants. 9. The backpack’s position to the left of the man indicates he is standing to its right, which confirms his spatial relationship to the backpack as described"
+          }
+        ],
+        "correct_answer": "Yes.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00574356902720847,
+              "generated_answers": [
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans.",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "✅ **Step 1–10**: Each point reinforces that the pants are made of denim"
+              ],
+              "answer_probabilities": [
+                0.005341488464889337,
+                0.00539083458526524,
+                0.006258614082103814,
+                0.00636577390784674,
+                0.005361134095937221
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005448740998617523,
+              "generated_answers": [
+                "Yes, the man to the right of the backpack is wearing jeans",
+                ": Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans"
+              ],
+              "answer_probabilities": [
+                0.00575696628713247,
+                0.005860669331412303,
+                0.004976008374136626,
+                0.005687883534292931,
+                0.004962177466113289
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0053500494573108775,
+              "generated_answers": [
+                ": Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "**Conclusion**: Yes, the man to the right of the backpack is wearing jeans",
+                "clear and well-supported",
+                "Okay, let me continue the reasoning step by step:"
+              ],
+              "answer_probabilities": [
+                0.005355765311915963,
+                0.006358595856658437,
+                0.005355779868198053,
+                0.0044367150777360285,
+                0.005243391172045904
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00553300553261887,
+              "generated_answers": [
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "Therefore, yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans"
+              ],
+              "answer_probabilities": [
+                0.005224912984760243,
+                0.005329307243726231,
+                0.006129374184693018,
+                0.005977958664583248,
+                0.005003474585331607
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006345688807389313,
+              "generated_answers": [
+                "70",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "10. Since all visual cues — material, cut, wear pattern, context — point conclusively to denim pants designed for casual wear, and there is no evidence to suggest",
+                "Yes, the man to the right of the backpack is wearing jeans",
+                "Yes, the man to the right of the backpack is wearing jeans"
+              ],
+              "answer_probabilities": [
+                0.009550839962536771,
+                0.005178026038982982,
+                0.005494044213701643,
+                0.005494696230951005,
+                0.006010837590774166
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 5,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs the black bag to the right or to the left of the man that is wearing a hat?",
+      "reasoning_text": "1. The man wearing a hat is positioned slightly left of center in the image, standing near the middle of the crowd.  \n2. The black bag is carried by a person walking directly behind him, making it appear to his right.  \n3. The person with the black bag is wearing a dark jacket and is walking in the same direction as the man in the hat.  \n4. The man in the hat is facing forward, and the black bag is visible on the right side of his body from the viewer’s perspective.  \n5. Since the bag is behind and to the right of the man in the hat, it is clearly to his right relative to his position in the image.  \n\n<final>Right</final>",
+      "raw_generation": [
+        "1. The man wearing a hat is located in the middle of the crowd, slightly to the left of the center of the image, wearing a blue shirt and a dark cap.  \n2. The black bag is being carried by a person standing directly behind and slightly to the right of the man in the hat.  \n3. The black bag is positioned near the center-right of the image, while the man in the hat is slightly left of center.  \n4. The person with the black bag is walking forward in the crowd, directly behind the man in the hat, making the bag appear to the right of him.  \n5. Based on their relative positions in the image, the black bag is clearly to the right of the man wearing the hat.  \n\n<final>right</final>",
+        "1. The man wearing a hat is positioned slightly left of center in the image, standing near the middle of the crowd.  \n2. The black bag is carried by a person walking directly behind him, making it appear to his right.  \n3. The person with the black bag is wearing a dark jacket and is walking in the same direction as the man in the hat.  \n4. The man in the hat is facing forward, and the black bag is visible on the right side of his body from the viewer’s perspective.  \n5. Since the bag is behind and to the right of the man in the hat, it is clearly to his right relative to his position in the image.  \n\n<final>Right</final>"
+      ],
+      "chunks": [
+        "1. The man wearing a hat is positioned slightly left of center in the image, standing near the middle of the crowd.",
+        "2. The black bag is carried by a person walking directly behind him, making it appear to his right.",
+        "3. The person with the black bag is wearing a dark jacket and is walking in the same direction as the man in the hat.",
+        "4. The man in the hat is facing forward, and the black bag is visible on the right side of his body from the viewer’s perspective.",
+        "5. Since the bag is behind and to the right of the man in the hat, it is clearly to his right relative to his position in the image.",
+        "<final>Right</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          48,
+          73
+        ],
+        [
+          74,
+          96
+        ],
+        [
+          97,
+          124
+        ],
+        [
+          125,
+          155
+        ],
+        [
+          156,
+          188
+        ],
+        [
+          189,
+          196
+        ]
+      ],
+      "anchor_vector": [
+        12.89349423421811,
+        11.29575581222615,
+        12.622383820064485,
+        11.21292986188616,
+        10.760881696428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The black bag is located on the right side of the image, near the edge of the crowd.",
+        "negative_sentence": "The black bag is located to the right of the man wearing a hat, near the edge of the frame.",
+        "positive_full": " \n2. The black bag is located on the right side of the image, near the edge of the crowd.\n\nNow, based on these positions, determine the spatial relationship:\n3. Since the man wearing the hat is positioned slightly left of center and the black bag is on the right side of the image, the black bag is to the **right** of the man wearing the hat.\n\nFinal Answer: The black bag is to the **right** of the man that is wearing a hat.",
+        "negative_full": "  \n2. The black bag is located to the right of the man wearing a hat, near the edge of the frame. \n\nFinal conclusion:  \nThe black bag is to the **right** of the man wearing a hat.\n\n---\n\n✅ **Answer: Right**",
+        "positive_probability": 0.007537157487736556,
+        "negative_probability": 0.006753464561965099,
+        "all_samples": [
+          {
+            "sample_idx": 2,
+            "continuation": " \n2. The black bag is located on the right side of the image, near the edge of the crowd.\n\nNow, based on these positions, determine the spatial relationship:\n3. Since the man wearing the hat is positioned slightly left of center and the black bag is on the right side of the image, the black bag is to the **right** of the man wearing the hat.\n\nFinal Answer: The black bag is to the **right** of the man that is wearing a hat.",
+            "first_sentence": "The black bag is located on the right side of the image, near the edge of the crowd.",
+            "answer_probability": 0.007537157487736556,
+            "final_answer": "The black bag is to the right of the man that is wearing a hat"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n2. The black bag is positioned to the right of the man wearing the hat, as it is located on the right side of the image, near the edge of the crowd.\n\nFinal step: \n\n3. Therefore, the black bag is to the right of the man wearing a hat.\n\n**Final Answer: The black bag is to the right of the man that is wearing a hat.**",
+            "first_sentence": "The black bag is positioned to the right of the man wearing the hat, as it is located on the right side of the image, near the edge of the crowd.",
+            "answer_probability": 0.0073099411700273485,
+            "final_answer": "The black bag is to the right of the man that is wearing a hat."
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n2. The black bag is located in the lower left corner of the image, close to the bottom edge.\n\nNext step: \n3. Comparing their horizontal positions, the man in the hat is closer to the center, while the black bag is on the far left side of the image.\n\nFinal step: \n4. Therefore, the black bag is to the **left** of the man wearing a hat.\n\nAnswer: **left**",
+            "first_sentence": "The black bag is located in the lower left corner of the image, close to the bottom edge.",
+            "answer_probability": 0.006951404957272367,
+            "final_answer": "left"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": "  \n2. The black bag is located near the bottom right of the image, close to the ground and next to a person wearing a white shirt.\n\nNow, based on these positions, I can compare their horizontal locations.  \n3. Since the man in the hat is slightly left of center and the black bag is near the bottom right, the black bag is to the right of the man wearing a hat.\n\nFinal Answer: The black bag is to the **right** of the man that is wearing a hat.",
+            "first_sentence": "The black bag is located near the bottom right of the image, close to the ground and next to a person wearing a white shirt.",
+            "answer_probability": 0.006941975970676075,
+            "final_answer": "The black bag is to the right of the man that is wearing a hat"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "  \n2. The black bag is located to the right of the man wearing a hat, near the edge of the frame. \n\nFinal conclusion:  \nThe black bag is to the **right** of the man wearing a hat.\n\n---\n\n✅ **Answer: Right**",
+            "first_sentence": "The black bag is located to the right of the man wearing a hat, near the edge of the frame.",
+            "answer_probability": 0.006753464561965099,
+            "final_answer": "Right"
+          }
+        ],
+        "correct_answer": "Right.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005000697555882082,
+              "generated_answers": [
+                "",
+                "The black bag is to the right of the man wearing a hat",
+                "Based on the above, the black bag is to the right of the man wearing a hat",
+                "on the most logical interpretation given the limited information",
+                "The black bag is to the right of the man that is wearing a hat"
+              ],
+              "answer_probabilities": [
+                0.001,
+                0.0065492209318881315,
+                0.005352154425441042,
+                0.005135956387753647,
+                0.006966156034327589
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00650236613077673,
+              "generated_answers": [
+                "Left",
+                "The black bag is to the right of the man that is wearing a hat",
+                "left",
+                "The black bag is to the right of the man wearing a hat",
+                "The black bag is to the right of the man that is wearing a hat."
+              ],
+              "answer_probabilities": [
+                0.005792312350567014,
+                0.0065757686825509845,
+                0.006046483333540754,
+                0.0064506138983424525,
+                0.007646652388882442
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004027353973112072,
+              "generated_answers": [
+                "right",
+                "Since I don't have the actual image, I can't definitively say. But maybe the question expects me to assume that the black bag is to the right of the man wearing the hat based on typical scenarios or image context. Or maybe there's a clue in the",
+                "",
+                "",
+                "The black bag is to the right of the man that is wearing a hat"
+              ],
+              "answer_probabilities": [
+                0.006251259218364647,
+                0.005113853449629978,
+                0.001,
+                0.001,
+                0.006771657197565731
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005130422305365409,
+              "generated_answers": [
+                "",
+                "right",
+                "The black bag is to the **right** of the man that is wearing a hat",
+                "The black bag is to the right of the man that is wearing a hat.",
+                "left"
+              ],
+              "answer_probabilities": [
+                0.001,
+                0.00531590782235911,
+                0.007070196133616864,
+                0.00683884872587226,
+                0.005427158844978812
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.006099140711246189,
+              "generated_answers": [
+                "The black bag is to the right of the man wearing a hat",
+                "Based on this, the black bag is to the **right** of the man wearing a hat",
+                "The black bag is to the right of the man that is wearing a hat",
+                "The black bag is to the left of the man that is wearing a hat",
+                "The black bag is to the **right** of the man wearing a hat"
+              ],
+              "answer_probabilities": [
+                0.0065816272703165405,
+                0.0057208277771584205,
+                0.0059399196035376965,
+                0.007246206490930657,
+                0.005007122414287631
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 244,
+  "worker_rank": 5
+}

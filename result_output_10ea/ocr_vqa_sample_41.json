@@ -1,0 +1,1079 @@
+{
+  "total_pairs": 5,
+  "successful_pairs": 5,
+  "image_path": "/home/win2dvp21/cmu/LSMA_proj/dataset/LLaVA-CoT-100k/ocr_vqa/images/1550379623.jpg",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWho wrote this book?\nAnswer the question using a single word or phrase.",
+      "reasoning_text": "1. The book cover clearly states “by Youth for Youth” beneath the red circular graphic, indicating the authors.  \n2. The title “The Little Black Book for Guys” suggests a targeted audience, likely young males.  \n3. The phrase “Guys Talk About Sex” implies the content is based on real conversations among young men.  \n4. The publisher, “St. Stephen’s Community House,” is noted at the bottom, suggesting community-based authorship.  \n5. The design with a play/pause symbol and a male figure reinforces the theme of youth-oriented, interactive discussion.  \n<final>Youth for Youth</final>",
+      "raw_generation": [
+        "1. The book cover prominently displays the title \"The Little Black Book for Guys\" indicating the subject matter is targeted toward male readers.  \n2. The subtitle \"Guys Talk About Sex\" suggests the content is based on candid discussions or real-life experiences shared by men.  \n3. The author credit is clearly stated as \"by Youth for Youth,\" implying the book is authored by a group or organization rather than an individual.  \n4. The publisher, \"St. Stephen's Community House,\" is mentioned at the bottom, which is likely the organization behind the publication and possibly the authors.  \n5. Since the author is listed as \"Youth for Youth,\" this collective group is the credited writer of the book.  \n\n<final>Youth for Youth</final>",
+        "1. The book cover clearly states “by Youth for Youth” beneath the red circular graphic, indicating the authors.  \n2. The title “The Little Black Book for Guys” suggests a targeted audience, likely young males.  \n3. The phrase “Guys Talk About Sex” implies the content is based on real conversations among young men.  \n4. The publisher, “St. Stephen’s Community House,” is noted at the bottom, suggesting community-based authorship.  \n5. The design with a play/pause symbol and a male figure reinforces the theme of youth-oriented, interactive discussion.  \n<final>Youth for Youth</final>"
+      ],
+      "chunks": [
+        "1. The book cover clearly states “by Youth for Youth” beneath the red circular graphic, indicating the authors.",
+        "2. The title “The Little Black Book for Guys” suggests a targeted audience, likely young males.",
+        "3. The phrase “Guys Talk About Sex” implies the content is based on real conversations among young men.",
+        "4. The publisher, “St.",
+        "Stephen’s Community House,” is noted at the bottom, suggesting community-based authorship.",
+        "5. The design with a play/pause symbol and a male figure reinforces the theme of youth-oriented, interactive discussion.",
+        "<final>Youth for Youth</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          61
+        ],
+        [
+          62,
+          83
+        ],
+        [
+          84,
+          107
+        ],
+        [
+          108,
+          116
+        ],
+        [
+          116,
+          133
+        ],
+        [
+          134,
+          158
+        ],
+        [
+          159,
+          168
+        ]
+      ],
+      "anchor_vector": [
+        9.666074460713482,
+        17.957506682473714,
+        15.461918699975108,
+        12.956920881416801,
+        15.228932698567707,
+        18.20138888888889,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "Combining these points, the authors are explicitly identified as “Youth for Youth” on the cover, which is the most direct and reliable source.",
+        "negative_sentence": "The text inside the book, visible in the first few pages, also states “by Youth for Youth,” confirming the authors as a collective group rather than a single individual.",
+        "positive_full": " 6. Combining these points, the authors are explicitly identified as “Youth for Youth” on the cover, which is the most direct and reliable source.\n\nYouth for Youth\n\nYouth for Youth",
+        "negative_full": " \n\n6. The text inside the book, visible in the first few pages, also states “by Youth for Youth,” confirming the authors as a collective group rather than a single individual.\n\nTherefore, the book was written by Youth for Youth. \n\nFinal Answer: Youth for Youth",
+        "positive_probability": 0.005423055214240118,
+        "negative_probability": 0.004522004425571195,
+        "all_samples": [
+          {
+            "sample_idx": 4,
+            "continuation": " 6. Combining these points, the authors are explicitly identified as “Youth for Youth” on the cover, which is the most direct and reliable source.\n\nYouth for Youth\n\nYouth for Youth",
+            "first_sentence": "Combining these points, the authors are explicitly identified as “Youth for Youth” on the cover, which is the most direct and reliable source.",
+            "answer_probability": 0.005423055214240118,
+            "final_answer": "Youth for Youth"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n6. The book’s title and content suggest it’s likely a compilation of advice or stories, possibly from a group rather than a single author. 7. “Youth for Youth” is presented as the author, which is a collective or organization name, not an individual. 8. Given the community-based publisher and the title’s emphasis on group discussion, it is most logical to conclude the authors are “Youth for Youth” as a collective.\n\nFinal Answer:\nYouth for Youth",
+            "first_sentence": "The book’s title and content suggest it’s likely a compilation of advice or stories, possibly from a group rather than a single author.",
+            "answer_probability": 0.005350906541839242,
+            "final_answer": "Youth for Youth"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " 6. Combining these clues, the most direct answer is that Youth for Youth wrote this book.\n\nYouth for Youth",
+            "first_sentence": "Combining these clues, the most direct answer is that Youth for Youth wrote this book.",
+            "answer_probability": 0.005129913286128686,
+            "final_answer": "is that Youth for Youth wrote this book"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " 6. The authors are explicitly identified on the cover as “Youth for Youth,” which is likely a collective or group of young people, rather than an individual writer. 7. “Youth for Youth” is not a single name but a group title, indicating collaboration among multiple young contributors. 8. The phrase “Guys Talk About Sex” and the collaborative title “Youth for Youth” suggest this is a compilation of stories or advice from young men, making it a community-authored project. 9. The publisher’s name, “St. Stephen’s Community House,” further supports the idea of a community-driven production",
+            "first_sentence": "The authors are explicitly identified on the cover as “Youth for Youth,” which is likely a collective or group of young people, rather than an individual writer.",
+            "answer_probability": 0.00509579556939782,
+            "final_answer": "6. The authors are explicitly identified on the cover as “Youth for Youth,” which is likely a collective or group of young people, rather than an individual writer. 7. “Youth for Youth” is not a single name but a group title, indicating collaboration among multiple young contributors. 8. The phrase “Guys Talk About Sex” and the collaborative title “Youth for Youth” suggest this is a compilation of stories or advice from young men, making it a community-authored project. 9. The publisher’s name, “St. Stephen’s Community House,” further supports the idea of a community-driven production"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n6. The text inside the book, visible in the first few pages, also states “by Youth for Youth,” confirming the authors as a collective group rather than a single individual.\n\nTherefore, the book was written by Youth for Youth. \n\nFinal Answer: Youth for Youth",
+            "first_sentence": "The text inside the book, visible in the first few pages, also states “by Youth for Youth,” confirming the authors as a collective group rather than a single individual.",
+            "answer_probability": 0.004522004425571195,
+            "final_answer": "Youth for Youth"
+          }
+        ],
+        "correct_answer": "St. Stephen's Community House",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.00463340547149657,
+              "generated_answers": [
+                "",
+                "Youth for Youth",
+                "Youth for Youth",
+                "Youth for Youth",
+                "Youth for Youth"
+              ],
+              "answer_probabilities": [
+                0.0042321903999959784,
+                0.0053949554596162685,
+                0.005308919159571209,
+                0.0044963696879566474,
+                0.0037345926503427507
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004644068635234209,
+              "generated_answers": [
+                "Youth for Youth",
+                "Youth for Youth",
+                "",
+                "Youth for Youth",
+                "the question using a single word or phrase"
+              ],
+              "answer_probabilities": [
+                0.004342169651001106,
+                0.005122095286390791,
+                0.005340678604279721,
+                0.004829180748155122,
+                0.0035862188863443056
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004696057984680693,
+              "generated_answers": [
+                "\"Youth for Youth\"",
+                "Youth for Youth",
+                "provided on the cover, indicating the collective authors. 8. The term “Youth for Youth” is likely a name of an organization or group dedicated to youth education, which aligns with the content and publisher. 9. There is no indication of an individual author, and “Youth for Youth” is presented as the credited source",
+                "Youth for Youth",
+                "Youth for Youth"
+              ],
+              "answer_probabilities": [
+                0.004161463040936951,
+                0.0040834130622054675,
+                0.005388671360321094,
+                0.005146202251864108,
+                0.004700540208075841
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004519004897037389,
+              "generated_answers": [
+                "Youth for Youth",
+                "",
+                "Youth for Youth",
+                "Youth for Youth",
+                "Youth for Youth"
+              ],
+              "answer_probabilities": [
+                0.003906433384206976,
+                0.004581677699051867,
+                0.005625067200566408,
+                0.004296322664084224,
+                0.00418552353727747
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004668018065397192,
+              "generated_answers": [
+                "Youth for Youth",
+                "",
+                "Youth for Youth",
+                "Youth for Youth",
+                "Youth for Youth"
+              ],
+              "answer_probabilities": [
+                0.0052399683012246566,
+                0.00441595453213919,
+                0.005377570439933052,
+                0.004063785325663858,
+                0.004242811728025201
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 1,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the title of this book?",
+      "reasoning_text": "1. The book cover prominently displays the title “The Little Black Book for Guys” in large, bold white text at the top, making it the most visible element.  \n2. Below the main title, the subtitle “Guys Talk About Sex” is written in red, indicating the book’s specific focus on male perspectives and sexual health discussions.  \n3. The authorship is credited to “Youth for Youth,” shown in white text inside the red circular design, suggesting it was created by young people for their peers.  \n4. The publisher, “St. Stephen’s Community House,” is printed at the bottom in small white font, identifying the organization behind the publication.  \n5. The cover design resembles a smartphone or digital device with a black background and a red circular graphic featuring a blue silhouette of a man, reinforcing its modern, youth-oriented appeal.  \n\n<final>The Little Black Book for Guys: Guys Talk About Sex</final>",
+      "raw_generation": [
+        "1. The title is clearly printed in large, white, serif font at the top of the cover, reading “The Little Black Book for Guys.”  \n2. Below the main title, a subtitle in smaller red font states “Guys Talk About Sex,” indicating the book’s thematic focus.  \n3. The cover design features a stylized iPod-like screen, suggesting a modern, accessible format for the content.  \n4. A red circular graphic with a blue human figure and media controls reinforces the theme of youth-oriented, interactive dialogue.  \n5. The publisher, “St. Stephen’s Community House,” is noted at the bottom, identifying the organization behind the publication.  \n\n<final>The Little Black Book for Guys: Guys Talk About Sex</final>",
+        "1. The book cover prominently displays the title “The Little Black Book for Guys” in large, bold white text at the top, making it the most visible element.  \n2. Below the main title, the subtitle “Guys Talk About Sex” is written in red, indicating the book’s specific focus on male perspectives and sexual health discussions.  \n3. The authorship is credited to “Youth for Youth,” shown in white text inside the red circular design, suggesting it was created by young people for their peers.  \n4. The publisher, “St. Stephen’s Community House,” is printed at the bottom in small white font, identifying the organization behind the publication.  \n5. The cover design resembles a smartphone or digital device with a black background and a red circular graphic featuring a blue silhouette of a man, reinforcing its modern, youth-oriented appeal.  \n\n<final>The Little Black Book for Guys: Guys Talk About Sex</final>"
+      ],
+      "chunks": [
+        "1. The book cover prominently displays the title “The Little Black Book for Guys” in large, bold white text at the top, making it the most visible element.",
+        "2. Below the main title, the subtitle “Guys Talk About Sex” is written in red, indicating the book’s specific focus on male perspectives and sexual health discussions.",
+        "3. The authorship is credited to “Youth for Youth,” shown in white text inside the red circular design, suggesting it was created by young people for their peers.",
+        "4. The publisher, “St.",
+        "Stephen’s Community House,” is printed at the bottom in small white font, identifying the organization behind the publication.",
+        "5. The cover design resembles a smartphone or digital device with a black background and a red circular graphic featuring a blue silhouette of a man, reinforcing its modern, youth-oriented appeal.",
+        "<final>The Little Black Book for Guys: Guys Talk About Sex</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          58
+        ],
+        [
+          59,
+          94
+        ],
+        [
+          95,
+          130
+        ],
+        [
+          131,
+          139
+        ],
+        [
+          139,
+          161
+        ],
+        [
+          162,
+          198
+        ],
+        [
+          199,
+          215
+        ]
+      ],
+      "anchor_vector": [
+        14.499774453982875,
+        14.768799379467103,
+        13.472387679899581,
+        13.726363909766329,
+        12.873775906032986,
+        16.366943359375,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "Combining the main title, subtitle, and author/publisher information, the full and accurate title of the book is “The Little Black Book for Guys: Guys Talk About Sex” by Youth for Youth, published by St.",
+        "negative_sentence": "Based on the visual elements and layout on the cover, the title of the book is most likely “The Little Black Book for Guys”.",
+        "positive_full": " \n\n6. Combining the main title, subtitle, and author/publisher information, the full and accurate title of the book is “The Little Black Book for Guys: Guys Talk About Sex” by Youth for Youth, published by St. Stephen’s Community House.\n\nFinal Answer: The title of the book is The Little Black Book for Guys: Guys Talk About Sex.",
+        "negative_full": "  \n6. Based on the visual elements and layout on the cover, the title of the book is most likely “The Little Black Book for Guys”.\n\nFinal answer:\nThe title of this book is **The Little Black Book for Guys**.",
+        "positive_probability": 0.007782084297425446,
+        "negative_probability": 0.004953319688088949,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n6. Combining the main title, subtitle, and author/publisher information, the full and accurate title of the book is “The Little Black Book for Guys: Guys Talk About Sex” by Youth for Youth, published by St. Stephen’s Community House.\n\nFinal Answer: The title of the book is The Little Black Book for Guys: Guys Talk About Sex.",
+            "first_sentence": "Combining the main title, subtitle, and author/publisher information, the full and accurate title of the book is “The Little Black Book for Guys: Guys Talk About Sex” by Youth for Youth, published by St.",
+            "answer_probability": 0.007782084297425446,
+            "final_answer": "The title of the book is The Little Black Book for Guys: Guys Talk About Sex"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n6. Since the title is clearly written at the top of the book cover, and the subtitle and author/publisher information are secondary elements, the main title is “The Little Black Book for Guys.” This is the primary title that the book is marketed under. 7. Therefore, the title of the book is “The Little Black Book for Guys.”\n\nFinal Answer: The title of this book is “The Little Black Book for Guys.”",
+            "first_sentence": "Since the title is clearly written at the top of the book cover, and the subtitle and author/publisher information are secondary elements, the main title is “The Little Black Book for Guys.” This is the primary title that the book is marketed under.",
+            "answer_probability": 0.006184592231573388,
+            "final_answer": "The title of this book is “The Little Black Book for Guys.”"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n\n6. Since the main title is the largest and most prominent text on the cover, and the subtitle and other information are secondary, it is logical to conclude that the primary title of the book is what is most immediately identifiable to a reader.\n\nTherefore, the title of this book is “The Little Black Book for Guys.”",
+            "first_sentence": "Since the main title is the largest and most prominent text on the cover, and the subtitle and other information are secondary, it is logical to conclude that the primary title of the book is what is most immediately identifiable to a reader.",
+            "answer_probability": 0.005570368254982222,
+            "final_answer": "Therefore, the title of this book is “The Little Black Book for Guys.”"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n6. The title and subtitle together clearly indicate that this is a guidebook or resource specifically tailored for young men, addressing topics of sex, relationships, and personal health through a peer-to-peer perspective. 7. The visual elements, including the bold typography and the use of vibrant colors like red and blue against a black background, are designed to grab attention and resonate with its target demographic. 8. The combination of the title, subtitle, authorship, and publisher information confirms that the book is an educational or informational resource created for young men by young men. \n\nConclusion: The title of the book is “The Little Black Book",
+            "first_sentence": "The title and subtitle together clearly indicate that this is a guidebook or resource specifically tailored for young men, addressing topics of sex, relationships, and personal health through a peer-to-peer perspective.",
+            "answer_probability": 0.005054143862193321,
+            "final_answer": "Conclusion: The title of the book is “The Little Black Book"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": "  \n6. Based on the visual elements and layout on the cover, the title of the book is most likely “The Little Black Book for Guys”.\n\nFinal answer:\nThe title of this book is **The Little Black Book for Guys**.",
+            "first_sentence": "Based on the visual elements and layout on the cover, the title of the book is most likely “The Little Black Book for Guys”.",
+            "answer_probability": 0.004953319688088949,
+            "final_answer": "The title of this book is The Little Black Book for Guys"
+          }
+        ],
+        "correct_answer": "The Little Black Book for Guys: Guys Talk about Sex",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0056948678860221005,
+              "generated_answers": [
+                "The Little Black Book for Guys: Guys Talk About Sex (The Little Black Book for Kids Series)",
+                "The title of this book is The Little Black Book for Guys: Guys Talk About Sex",
+                "The title of this book is The Little Black Book for Guys: Guys Talk About Sex",
+                "Therefore, the title of this book is \"The Little Black Book for Guys: Guys Talk About Sex\" by Youth for Youth, published by St. Stephen’s Community House",
+                "The title of the book is The Little Black Book for Guys"
+              ],
+              "answer_probabilities": [
+                0.004676208829694145,
+                0.006727883859516409,
+                0.0050071052704739,
+                0.006638358925393074,
+                0.005424782545032973
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.21150605682664417,
+              "generated_answers": [
+                "The title of this book is: The Little Black Book for Guys: Guys Talk About Sex",
+                "The title of this book is The Little Black Book for Guys: Guys Talk About Sex",
+                "The title of this book is: The Little Black Book for Guys: Guys Talk About Sex",
+                "The Little Black Book for Guys: Guys Talk About Sex",
+                "The Little Black Book for Guys: Guys Talk About Sex"
+              ],
+              "answer_probabilities": [
+                0.005688640148620403,
+                0.005352351032849182,
+                0.0060227869072738615,
+                0.5385768595518172,
+                0.5018896464926602
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.1318408974239302,
+              "generated_answers": [
+                "Conclusion: The title of this book is “The Little Black Book for Guys.”",
+                "The title of this book is: The Little Black Book for Guys",
+                "“The Little Black Book for Guys: Guys Talk About Sex”",
+                "The Little Black Book for Guys: Guys Talk About Sex",
+                "The title of this book is “The Little Black Book for Guys: Guys Talk About Sex.”"
+              ],
+              "answer_probabilities": [
+                0.0041493512751681946,
+                0.005340441820944865,
+                0.005983840096581012,
+                0.6387333783015829,
+                0.00499747562537403
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.005016700964781526,
+              "generated_answers": [
+                "The title of this book is The Little Black Book for Guys: Guys Talk About Sex",
+                "The title of the book is The Little Black Book for Guys",
+                "This title combines the main title and subtitle from the cover, providing a complete and accurate description of the book’s content and target audience",
+                "The title of this book is The Little Black Book for Guys: Guys Talk About Sex",
+                "The title of the book is The Little Black Book for Guys"
+              ],
+              "answer_probabilities": [
+                0.00592794828047314,
+                0.004713664093026463,
+                0.00548494930679407,
+                0.004672765311785187,
+                0.004284177831828772
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.0051345439869090025,
+              "generated_answers": [
+                "to the question “What is the title of this book?” is the primary title shown on the cover",
+                "should directly state the title as presented on the cover. 7. The subtitle and author/publisher information provide context but are not the title itself. 8. Therefore, the title of the book is “The Little Black Book for Guys.”",
+                "Therefore, the title of this book is “The Little Black Book for Guys: Guys Talk About Sex.”",
+                "The title of this book is “The Little Black Book for Guys.”",
+                "to the book’s title"
+              ],
+              "answer_probabilities": [
+                0.005116913818652266,
+                0.0055488183112638945,
+                0.0045047913236463686,
+                0.005670666823212948,
+                0.0048315296577695335
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 2,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhat is the genre of this book?",
+      "reasoning_text": "1. The title “The Little Black Book for Guys” suggests a targeted, informal guide aimed at a specific demographic, indicating a non-academic or self-help genre tailored to young males.\n\n2. The subtitle “Guys Talk About Sex” explicitly reveals the book’s subject matter, placing it firmly in the realm of sexual education, health, or relationship advice for men.\n\n3. The cover’s minimalist design with a stylized male figure in a red circle, flanked by media control icons, implies an interactive or modern approach to discussing sensitive topics, often found in youth-oriented self-help materials.\n\n4. The publisher, “St. Stephen’s Community House,” indicates a community-based or nonprofit organization, suggesting the book may be part of a public health or educational initiative rather than commercial publishing.\n\n5. The phrase “by Youth for Youth” confirms the content is created by young people, aligning with peer-to-peer education, which is common in adolescent sexual health literature and youth development programs.\n\n<final>Self-help/sexual education for young men</final>",
+      "raw_generation": [
+        "1. The title \"The Little Black Book for Guys\" suggests a concise, accessible guide tailored specifically for male readers, indicating a non-academic, practical format.  \n2. The subtitle \"Guys Talk About Sex\" directly points to the book’s focus on sexual health, relationships, or masculinity-related topics from a male perspective.  \n3. The branding \"by Youth for Youth\" implies the content is created by young people for young people, emphasizing relatability and peer-driven advice.  \n4. The publisher, \"St. Stephen’s Community House,\" indicates a community or nonprofit origin, suggesting the book may serve educational or outreach purposes in a supportive environment.  \n5. The visual design—simple, modern, and featuring a stylized male figure—reinforces the book’s target demographic and its casual, approachable tone for young adult males.\n\n<final>Self-help / Relationships / Sex Education</final>",
+        "1. The title “The Little Black Book for Guys” suggests a targeted, informal guide aimed at a specific demographic, indicating a non-academic or self-help genre tailored to young males.\n\n2. The subtitle “Guys Talk About Sex” explicitly reveals the book’s subject matter, placing it firmly in the realm of sexual education, health, or relationship advice for men.\n\n3. The cover’s minimalist design with a stylized male figure in a red circle, flanked by media control icons, implies an interactive or modern approach to discussing sensitive topics, often found in youth-oriented self-help materials.\n\n4. The publisher, “St. Stephen’s Community House,” indicates a community-based or nonprofit organization, suggesting the book may be part of a public health or educational initiative rather than commercial publishing.\n\n5. The phrase “by Youth for Youth” confirms the content is created by young people, aligning with peer-to-peer education, which is common in adolescent sexual health literature and youth development programs.\n\n<final>Self-help/sexual education for young men</final>"
+      ],
+      "chunks": [
+        "1. The title “The Little Black Book for Guys” suggests a targeted, informal guide aimed at a specific demographic, indicating a non-academic or self-help genre tailored to young males.",
+        "2. The subtitle “Guys Talk About Sex” explicitly reveals the book’s subject matter, placing it firmly in the realm of sexual education, health, or relationship advice for men.",
+        "3. The cover’s minimalist design with a stylized male figure in a red circle, flanked by media control icons, implies an interactive or modern approach to discussing sensitive topics, often found in youth-oriented self-help materials.",
+        "4. The publisher, “St.",
+        "Stephen’s Community House,” indicates a community-based or nonprofit organization, suggesting the book may be part of a public health or educational initiative rather than commercial publishing.",
+        "5. The phrase “by Youth for Youth” confirms the content is created by young people, aligning with peer-to-peer education, which is common in adolescent sexual health literature and youth development programs.",
+        "<final>Self-help/sexual education for young men</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          24,
+          62
+        ],
+        [
+          62,
+          99
+        ],
+        [
+          99,
+          144
+        ],
+        [
+          144,
+          152
+        ],
+        [
+          152,
+          183
+        ],
+        [
+          183,
+          223
+        ],
+        [
+          223,
+          237
+        ]
+      ],
+      "anchor_vector": [
+        18.07649095766912,
+        13.095756583421338,
+        17.338613821284564,
+        14.223785222254223,
+        17.62621372767857,
+        15.108537946428571,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "The subtitle “300+ tips, tricks, and secrets that will make you a better guy” reinforces this, pointing to practical advice and life hacks, commonly found in self-help or “how-to” genres.",
+        "negative_sentence": "The description mentions “real-life situations” and “no fluff,” which implies practical advice and straightforward guidance, common in self-help or relationship advice books.",
+        "positive_full": " \n2. The subtitle “300+ tips, tricks, and secrets that will make you a better guy” reinforces this, pointing to practical advice and life hacks, commonly found in self-help or “how-to” genres.\n\nContinue the next reasoning step: \n3. The description highlights topics such as “how to talk to girls,” “how to be more attractive,” “how to build confidence,” and “how to get what you want,” all of which are typical subjects in self-help and relationship guides aimed at young men.\n\nContinue the next reasoning step: \n4. The book’s focus on “everyday life” and",
+        "negative_full": " \n\n2. The description mentions “real-life situations” and “no fluff,” which implies practical advice and straightforward guidance, common in self-help or relationship advice books.\n\n3. The author, “A. M. T.” is likely a pseudonym or a brand, not a well-known academic or historical figure, further supporting a self-help or contemporary advice genre.\n\n4. The content focuses on topics like “dating, relationships, and social interactions,” which are standard subjects in relationship or social skills guides.\n\n5. The mention of “the ultimate guide” and “every girl’s secret” suggests a promotional, accessible, and perhaps slightly",
+        "positive_probability": 0.004688162579439283,
+        "negative_probability": 0.003304505238853985,
+        "all_samples": [
+          {
+            "sample_idx": 3,
+            "continuation": " \n2. The subtitle “300+ tips, tricks, and secrets that will make you a better guy” reinforces this, pointing to practical advice and life hacks, commonly found in self-help or “how-to” genres.\n\nContinue the next reasoning step: \n3. The description highlights topics such as “how to talk to girls,” “how to be more attractive,” “how to build confidence,” and “how to get what you want,” all of which are typical subjects in self-help and relationship guides aimed at young men.\n\nContinue the next reasoning step: \n4. The book’s focus on “everyday life” and",
+            "first_sentence": "The subtitle “300+ tips, tricks, and secrets that will make you a better guy” reinforces this, pointing to practical advice and life hacks, commonly found in self-help or “how-to” genres.",
+            "answer_probability": 0.004688162579439283,
+            "final_answer": "4. The book’s focus on “everyday life” and"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": "  \n2. The subtitle “A Step-by-Step Guide to a Better Body and a Better Life” clearly states its purpose: providing practical, actionable advice on improving physical health and life satisfaction. This is characteristic of self-help or lifestyle improvement books.\n\nContinue:  \n3. The description mentions topics like “how to eat right,” “how to train,” “how to sleep,” “how to live,” and “how to love,” which are all everyday, personal development areas. These topics are commonly found in motivational or self-help books designed for readers seeking to improve their daily lives.\n\nContinue:  \n4. The phrase “Step-by-",
+            "first_sentence": "The subtitle “A Step-by-Step Guide to a Better Body and a Better Life” clearly states its purpose: providing practical, actionable advice on improving physical health and life satisfaction.",
+            "answer_probability": 0.004355337673317664,
+            "final_answer": "4. The phrase “Step-by-"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": "  \n2. The description “A guide to what women really want from men” implies that the book is focused on relationship advice, specifically helping men understand and meet the expectations of women, which is a common theme in dating and social dynamics literature.\n\nContinue the next reasoning step:  \n3. The mention of “the most important dates” and “the most important things women want” indicates that the book provides practical, actionable advice rather than theoretical or academic content. This is typical of self-help books aimed at improving personal relationships and social skills.\n\nContinue the next reasoning step:  \n4. The phrase “The secret to making women fall for you",
+            "first_sentence": "The description “A guide to what women really want from men” implies that the book is focused on relationship advice, specifically helping men understand and meet the expectations of women, which is a common theme in dating and social dynamics literature.",
+            "answer_probability": 0.00431714260585161,
+            "final_answer": "4. The phrase “The secret to making women fall for you"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": "  \n2. The subtitle “Everything You Need to Know About Sex, Relationships, and Being a Guy” explicitly states the topics covered: personal development, social skills, dating, and relationships—common themes in self-help and life skills books.\n\nContinue the next reasoning step:  \n3. The phrase “little black book” evokes imagery of a practical, compact, and portable guide, often associated with advice books or personal journals. This supports the idea of a self-help or lifestyle guide.\n\nContinue the next reasoning step:  \n4. The author, “Dr. J. C. Johnson,” is listed with an academic-sounding title (",
+            "first_sentence": "The subtitle “Everything You Need to Know About Sex, Relationships, and Being a Guy” explicitly states the topics covered: personal development, social skills, dating, and relationships—common themes in self-help and life skills books.",
+            "answer_probability": 0.004037836318107354,
+            "final_answer": "4. The author, “Dr. J. C. Johnson,” is listed with an academic-sounding title ("
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n2. The description mentions “real-life situations” and “no fluff,” which implies practical advice and straightforward guidance, common in self-help or relationship advice books.\n\n3. The author, “A. M. T.” is likely a pseudonym or a brand, not a well-known academic or historical figure, further supporting a self-help or contemporary advice genre.\n\n4. The content focuses on topics like “dating, relationships, and social interactions,” which are standard subjects in relationship or social skills guides.\n\n5. The mention of “the ultimate guide” and “every girl’s secret” suggests a promotional, accessible, and perhaps slightly",
+            "first_sentence": "The description mentions “real-life situations” and “no fluff,” which implies practical advice and straightforward guidance, common in self-help or relationship advice books.",
+            "answer_probability": 0.003304505238853985,
+            "final_answer": "5. The mention of “the ultimate guide” and “every girl’s secret” suggests a promotional, accessible, and perhaps slightly"
+          }
+        ],
+        "correct_answer": "Teen & Young Adult",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004517012886824556,
+              "generated_answers": [
+                "The genre of this book is self-help",
+                "The genre of this book is self-help / personal development",
+                "self-help",
+                "Conclusion: The genre of this book is **self-help** or **personal development**",
+                "The genre of this book is self-help"
+              ],
+              "answer_probabilities": [
+                0.004984992215914595,
+                0.004387133745090069,
+                0.004269620716959331,
+                0.004465179187995838,
+                0.004478138568162947
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004492359935321111,
+              "generated_answers": [
+                "is:",
+                "Humorous Self-Help / Relationship Advice",
+                "6. The book’s title and tone suggest it is not a novel, academic text, or textbook, but rather a contemporary, accessible guide designed for personal growth and life",
+                "6. Putting it all together — the title",
+                "Self-help / Motivational / Lifestyle for Men"
+              ],
+              "answer_probabilities": [
+                0.004407187661697684,
+                0.004709764835563825,
+                0.004249895033102203,
+                0.004460855485660662,
+                0.004634096660581176
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004127680712567064,
+              "generated_answers": [
+                "Self-help (specifically targeting young men’s relationships and life advice)",
+                "Self-help / Lifestyle / Personal Development",
+                "The genre of this book is **self-help**",
+                "The genre of this book is self-help (with a humorous and casual tone)",
+                "The genre of this book is self-help / relationship advice"
+              ],
+              "answer_probabilities": [
+                0.0037913279362175646,
+                0.004377452116735253,
+                0.0039630601734372065,
+                0.004100617618164166,
+                0.004405945718281134
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004242765761802108,
+              "generated_answers": [
+                "",
+                "Self-help / Lifestyle Guide for Teens",
+                "Self-help / Study Skills",
+                "The genre of this book is self-help (specifically, men’s lifestyle or self-improvement/self-help)",
+                ""
+              ],
+              "answer_probabilities": [
+                0.004239935546413084,
+                0.003984651399733848,
+                0.004100648399911113,
+                0.004497484548316611,
+                0.004391108914635887
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004079143951642746,
+              "generated_answers": [
+                "The genre of this book is self-help, specifically a practical guide for young men navigating early life challenges",
+                "Based on the title, subtitle, and implied content, the genre of this book is **self-help / lifestyle** — specifically aimed at young men seeking practical advice on self-improvement, confidence, and personal",
+                "**Self-help / Dating Advice**",
+                "The genre of this book is: self-help / relationship advice (specifically targeting young men)",
+                "Self-Help"
+              ],
+              "answer_probabilities": [
+                0.0037222552245210812,
+                0.0046202990408118864,
+                0.0033190722460202274,
+                0.004167526885427147,
+                0.004566566361433385
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 3,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Teen & Young Adult?",
+      "reasoning_text": "1. The cover prominently displays “Guys Talk About Sex,” indicating a focus on sexual education tailored specifically for male adolescents or young adults, rather than general audiences.\n\n2. The phrase “by Youth for Youth” suggests the content is created by young people for their peers, aligning with the developmental and experiential needs of teens and young adults.\n\n3. The minimalist design featuring a stylized male figure in a red circle evokes a youth-oriented, accessible, and non-intimidating tone often used in teen educational materials.\n\n4. The publisher, “St. Stephen’s Community House,” is a community-based organization typically involved in youth services, reinforcing the book’s target demographic as teens and young adults.\n\n5. The title “The Little Black Book for Guys” implies a compact, practical guide meant for quick reference, a format commonly used for teen and young adult self-help or educational resources.\n\n<final>Yes, this book is related to Teen & Young Adult.</final>",
+      "raw_generation": [
+        "1. The title “The Little Black Book for Guys” and subtitle “Guys Talk About Sex” suggest a focus on male-specific topics, likely aimed at younger males given the informal tone and subject matter.  \n2. The authorship credit “by Youth for Youth” explicitly indicates the content was created by and for young people, reinforcing its relevance to the teen and young adult demographic.  \n3. The publisher, “St. Stephen’s Community House,” is often associated with community-based programs and services targeting youth, further supporting the target audience.  \n4. The cover design, featuring a simple blue silhouette of a person within a red circular graphic resembling a media player, conveys a modern, accessible, and youth-oriented aesthetic.  \n5. The book’s subject matter, which centers on sex education from a peer-to-peer perspective, is typically tailored for teens and young adults navigating personal development and relationships.  \n\n<final>Yes</final>",
+        "1. The cover prominently displays “Guys Talk About Sex,” indicating a focus on sexual education tailored specifically for male adolescents or young adults, rather than general audiences.\n\n2. The phrase “by Youth for Youth” suggests the content is created by young people for their peers, aligning with the developmental and experiential needs of teens and young adults.\n\n3. The minimalist design featuring a stylized male figure in a red circle evokes a youth-oriented, accessible, and non-intimidating tone often used in teen educational materials.\n\n4. The publisher, “St. Stephen’s Community House,” is a community-based organization typically involved in youth services, reinforcing the book’s target demographic as teens and young adults.\n\n5. The title “The Little Black Book for Guys” implies a compact, practical guide meant for quick reference, a format commonly used for teen and young adult self-help or educational resources.\n\n<final>Yes, this book is related to Teen & Young Adult.</final>"
+      ],
+      "chunks": [
+        "1. The cover prominently displays “Guys Talk About Sex,” indicating a focus on sexual education tailored specifically for male adolescents or young adults, rather than general audiences.",
+        "2. The phrase “by Youth for Youth” suggests the content is created by young people for their peers, aligning with the developmental and experiential needs of teens and young adults.",
+        "3. The minimalist design featuring a stylized male figure in a red circle evokes a youth-oriented, accessible, and non-intimidating tone often used in teen educational materials.",
+        "4. The publisher, “St.",
+        "Stephen’s Community House,” is a community-based organization typically involved in youth services, reinforcing the book’s target demographic as teens and young adults.",
+        "5. The title “The Little Black Book for Guys” implies a compact, practical guide meant for quick reference, a format commonly used for teen and young adult self-help or educational resources.",
+        "<final>Yes, this book is related to Teen & Young Adult.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          28,
+          61
+        ],
+        [
+          61,
+          99
+        ],
+        [
+          99,
+          135
+        ],
+        [
+          135,
+          143
+        ],
+        [
+          143,
+          171
+        ],
+        [
+          171,
+          209
+        ],
+        [
+          209,
+          226
+        ]
+      ],
+      "anchor_vector": [
+        16.559904266196952,
+        15.855371983902268,
+        15.628038800326875,
+        13.889277997383163,
+        13.708233056791796,
+        15.115808823529411,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "The subtitle “What’s Going On Inside Your Head, Body, and Life” further emphasizes that the content is targeted at teens and young adults, as it addresses topics relevant to their physical, emotional, and social development.",
+        "negative_sentence": "The subtitle “A Guide to What Really Happens When You’re Getting to Know Someone” further suggests this book is aimed at a younger demographic navigating relationships and sexual development.",
+        "positive_full": " \n2. The subtitle “What’s Going On Inside Your Head, Body, and Life” further emphasizes that the content is targeted at teens and young adults, as it addresses topics relevant to their physical, emotional, and social development.\n\nContinue the next reasoning step:\n3. The book's design and tone—use of casual language, relatable examples, and a conversational style—are tailored for a younger audience, likely teens and young adults, rather than adults or older readers.\n\nContinue the next reasoning step:\n4. The mention of “Guys” as the primary audience clearly narrows the focus to a demographic that is typically within the",
+        "negative_full": " \n\n2. The subtitle “A Guide to What Really Happens When You’re Getting to Know Someone” further suggests this book is aimed at a younger demographic navigating relationships and sexual development. The use of “you’re” implies direct, conversational guidance often found in teen/young adult resources.\n\nContinue the next reasoning step: \n\n3. The target audience is explicitly confirmed by the book’s content and tone — it's written in an informal, humorous, and accessible style, with “guys” and “you” as key grammatical markers. This style is commonly used in teen and young adult literature to foster engagement and reduce barriers to",
+        "positive_probability": 0.004747972994767869,
+        "negative_probability": 0.0034454111491736086,
+        "all_samples": [
+          {
+            "sample_idx": 2,
+            "continuation": " \n2. The subtitle “What’s Going On Inside Your Head, Body, and Life” further emphasizes that the content is targeted at teens and young adults, as it addresses topics relevant to their physical, emotional, and social development.\n\nContinue the next reasoning step:\n3. The book's design and tone—use of casual language, relatable examples, and a conversational style—are tailored for a younger audience, likely teens and young adults, rather than adults or older readers.\n\nContinue the next reasoning step:\n4. The mention of “Guys” as the primary audience clearly narrows the focus to a demographic that is typically within the",
+            "first_sentence": "The subtitle “What’s Going On Inside Your Head, Body, and Life” further emphasizes that the content is targeted at teens and young adults, as it addresses topics relevant to their physical, emotional, and social development.",
+            "answer_probability": 0.004747972994767869,
+            "final_answer": "4. The mention of “Guys” as the primary audience clearly narrows the focus to a demographic that is typically within the"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n\n2. The title and cover image suggest it is aimed at a younger demographic, likely teenagers or young adults, who are beginning to navigate sexual health topics.\n\n3. The subtitle “A Guide for Teen Males” explicitly confirms the target audience is teenage males, which falls within the Teen & Young Adult category.\n\n4. The content is likely to address issues relevant to that age group, such as puberty, relationships, consent, and safe sex practices.\n\n5. The design (simple, bold, and straightforward) is also typical of books marketed to this demographic, often with a focus on being approachable and relatable.\n\nFinal answer:",
+            "first_sentence": "The title and cover image suggest it is aimed at a younger demographic, likely teenagers or young adults, who are beginning to navigate sexual health topics.",
+            "answer_probability": 0.004426534762693659,
+            "final_answer": ":"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n2. The book’s subtitle, “It’s not just sex... it’s how we talk about sex,” suggests a broader educational goal aimed at fostering healthy communication and understanding around sexuality, which is a common theme in Teen & Young Adult (YA) literature.\n\nContinue the step: \n3. The age range specified as “13+” on the book cover explicitly targets teenagers and young adults, making it directly aligned with the YA audience.\n\nContinue the step: \n4. The book’s title, “Guys Talk About Sex,” and its focus on male perspectives align with the trend in YA literature to address specific social, emotional",
+            "first_sentence": "The book’s subtitle, “It’s not just sex...",
+            "answer_probability": 0.004217366804885027,
+            "final_answer": "4. The book’s title, “Guys Talk About Sex,” and its focus on male perspectives align with the trend in YA literature to address specific social, emotional"
+          },
+          {
+            "sample_idx": 1,
+            "continuation": " \n\n2. The age recommendation of 13+, as mentioned on the cover, further reinforces that this book is targeted at teenagers and young adults. \n\n3. The title “Guys Talk About Sex” is not only suggestive of a male-centric perspective but also implies a conversational, accessible tone typically adopted in Teen & Young Adult educational materials. \n\n4. The author, Dr. David R. Smith, is a professional (medical doctor) who has written extensively on adolescent health and sexuality, which aligns with the themes commonly addressed in Teen & Young Adult nonfiction.\n\n5. The book’s format and content — covering topics like",
+            "first_sentence": "The age recommendation of 13+, as mentioned on the cover, further reinforces that this book is targeted at teenagers and young adults.",
+            "answer_probability": 0.003916808775159588,
+            "final_answer": "5. The book’s format and content — covering topics like"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n2. The subtitle “A Guide to What Really Happens When You’re Getting to Know Someone” further suggests this book is aimed at a younger demographic navigating relationships and sexual development. The use of “you’re” implies direct, conversational guidance often found in teen/young adult resources.\n\nContinue the next reasoning step: \n\n3. The target audience is explicitly confirmed by the book’s content and tone — it's written in an informal, humorous, and accessible style, with “guys” and “you” as key grammatical markers. This style is commonly used in teen and young adult literature to foster engagement and reduce barriers to",
+            "first_sentence": "The subtitle “A Guide to What Really Happens When You’re Getting to Know Someone” further suggests this book is aimed at a younger demographic navigating relationships and sexual development.",
+            "answer_probability": 0.0034454111491736086,
+            "final_answer": "3. The target audience is explicitly confirmed by the book’s content and tone — it's written in an informal, humorous, and accessible style, with “guys” and “you” as key grammatical markers. This style is commonly used in teen and young adult literature to foster engagement and reduce barriers to"
+          }
+        ],
+        "correct_answer": "Yes",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.2769206990106755,
+              "generated_answers": [
+                "Yes",
+                "Yes",
+                "✅ Therefore, yes, this book is clearly related to Teen & Young Adult",
+                "Yes",
+                "Yes, this book is related to Teen & Young Adult"
+              ],
+              "answer_probabilities": [
+                0.45991433860797654,
+                0.4544055052714913,
+                0.0048147483008781885,
+                0.4616507438079066,
+                0.003818159065125008
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.0,
+              "correct_count": 0,
+              "total_trials": 5,
+              "avg_probability": 0.004735722190897464,
+              "generated_answers": [
+                "Yes, this book is related to Teen & Young Adult",
+                "Yes, this book is related to Teen & Young Adult",
+                "Final",
+                "8",
+                "Yes, this book is related to Teen & Young Adult. The title, cover design, and subject matter strongly suggest it is intended for a male audience in the teen and"
+              ],
+              "answer_probabilities": [
+                0.005669232422226503,
+                0.004525335161231419,
+                0.004105565857783321,
+                0.00436502151088705,
+                0.005013456002359024
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.2673813602556712,
+              "generated_answers": [
+                "Yes",
+                "Yes, this book is related to Teen & Young Adult",
+                "Yes",
+                "Yes, this book is definitively related to Teen & Young Adult. The cover, title",
+                "Yes"
+              ],
+              "answer_probabilities": [
+                0.4554918465052385,
+                0.00514279653522201,
+                0.44952632580478163,
+                0.004062117121066619,
+                0.42268371531204735
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.10856430793779097,
+              "generated_answers": [
+                "Yes, this book is related to Teen & Young Adult",
+                "Yes, this book is related to Teen & Young Adult",
+                "Yes, this book is related to Teen & Young Adult",
+                "Yes, this book is related to Teen & Young Adult",
+                "Yes"
+              ],
+              "answer_probabilities": [
+                0.004893064016132498,
+                0.004817021119925226,
+                0.004914489621683012,
+                0.004506394223810767,
+                0.5236905707074033
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.19411133722412938,
+              "generated_answers": [
+                "Yes, this book is related to Teen & Young Adult",
+                "Yes, this book is related to Teen & Young Adult",
+                "Yes",
+                "Yes",
+                "Yes, this book is directly related to Teen & Young Adult, as it is explicitly designed for and marketed to this audience"
+              ],
+              "answer_probabilities": [
+                0.004161510032474195,
+                0.0040703620173051,
+                0.5020924491552623,
+                0.4561216491912797,
+                0.004110715724325656
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_idx": 4,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nIs this book related to Business & Money?",
+      "reasoning_text": "1. The book’s title, “The Little Black Book for Guys,” and subtitle, “Guys Talk About Sex,” indicate its focus is on personal development and relationships, not business or financial topics.\n\n2. The cover design includes a stylized male figure within a red circular interface, symbolizing youth engagement and peer-to-peer communication, not corporate or economic themes.\n\n3. The publisher, “St. Stephen’s Community House,” suggests a community-based or educational initiative, typically serving social or personal growth, not business or financial instruction.\n\n4. The visual layout, with a modern digital aesthetic resembling a media player, implies a contemporary, accessible format for youth discussion, not business strategy or economic theory.\n\n5. The explicit mention of “Youth for Youth” reinforces its target audience as young males seeking peer-based guidance, which contradicts any business or money-related content.\n\n<final> No, this book is not related to Business & Money; it focuses on youth discussions about sex and relationships.</final>",
+      "raw_generation": [
+        "1. The title \"The Little Black Book for Guys\" and subtitle \"Guys Talk About Sex\" clearly indicate the book's subject matter is focused on male experiences and sexual health, not business or finance.  \n2. The authorship by \"Youth for Youth\" suggests a peer-to-peer educational approach, likely aimed at adolescents or young adults, rather than professional or corporate audiences.  \n3. The cover design features a stylized play button and a male figure, visually reinforcing the theme of discussion or media content related to personal development, not business strategy or economic principles.  \n4. The publisher, \"St. Stephen's Community House,\" is a community organization typically involved in social services or youth outreach, not commercial publishing or business education.  \n5. The book's content is explicitly centered on personal relationships and sexual education, making it entirely unrelated to business, money, or financial topics.  \n\n<final>no</final>",
+        "1. The book’s title, “The Little Black Book for Guys,” and subtitle, “Guys Talk About Sex,” indicate its focus is on personal development and relationships, not business or financial topics.\n\n2. The cover design includes a stylized male figure within a red circular interface, symbolizing youth engagement and peer-to-peer communication, not corporate or economic themes.\n\n3. The publisher, “St. Stephen’s Community House,” suggests a community-based or educational initiative, typically serving social or personal growth, not business or financial instruction.\n\n4. The visual layout, with a modern digital aesthetic resembling a media player, implies a contemporary, accessible format for youth discussion, not business strategy or economic theory.\n\n5. The explicit mention of “Youth for Youth” reinforces its target audience as young males seeking peer-based guidance, which contradicts any business or money-related content.\n\n<final> No, this book is not related to Business & Money; it focuses on youth discussions about sex and relationships.</final>"
+      ],
+      "chunks": [
+        "1. The book’s title, “The Little Black Book for Guys,” and subtitle, “Guys Talk About Sex,” indicate its focus is on personal development and relationships, not business or financial topics.",
+        "2. The cover design includes a stylized male figure within a red circular interface, symbolizing youth engagement and peer-to-peer communication, not corporate or economic themes.",
+        "3. The publisher, “St.",
+        "Stephen’s Community House,” suggests a community-based or educational initiative, typically serving social or personal growth, not business or financial instruction.",
+        "4. The visual layout, with a modern digital aesthetic resembling a media player, implies a contemporary, accessible format for youth discussion, not business strategy or economic theory.",
+        "5. The explicit mention of “Youth for Youth” reinforces its target audience as young males seeking peer-based guidance, which contradicts any business or money-related content.",
+        "<final> No, this book is not related to Business & Money; it focuses on youth discussions about sex and relationships.</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          26,
+          67
+        ],
+        [
+          67,
+          100
+        ],
+        [
+          100,
+          108
+        ],
+        [
+          108,
+          134
+        ],
+        [
+          134,
+          167
+        ],
+        [
+          167,
+          201
+        ],
+        [
+          201,
+          228
+        ]
+      ],
+      "anchor_vector": [
+        12.802097488111102,
+        16.178571889613956,
+        15.152152613715051,
+        14.611121523393658,
+        15.146777982026144,
+        14.480107060185185,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        7,
+        7
+      ],
+      "contrastive": {
+        "positive_sentence": "The content description mentions “real stories” from real men, with discussions about dating, relationships, and personal growth, which are social and emotional topics.",
+        "negative_sentence": "The “About this Book” section mentions topics like “How to Be the Guy Who Gets It All,” which implies personal confidence and social success, not business skills or money management.",
+        "positive_full": "  \n3. The content description mentions “real stories” from real men, with discussions about dating, relationships, and personal growth, which are social and emotional topics.  \n4. The inclusion of quotes from “real men” like “Don’t be a girl” and “Don’t be a loser” reinforces this focus on self-image and social confidence, not business strategy or financial literacy.\n\nConclusion:  \nThis book is not related to Business & Money. The themes and content focus on personal relationships and social development, not business or financial topics.\n\n**Final Answer: No**",
+        "negative_full": " \n\n3. The “About this Book” section mentions topics like “How to Be the Guy Who Gets It All,” which implies personal confidence and social success, not business skills or money management. 4. The “What's Inside” section lists content such as “How to Make the Most of Your Youth,” “How to Get the Girl,” and “How to Be the Guy Everyone Likes,” all of which are interpersonal and social development themes. 5. The “Sample Chapters” preview further confirms this, mentioning “The Guy Who Gets It All,” “The Guy Who Gets It All Part 2,” and “The Guy Who",
+        "positive_probability": 0.37231106125473507,
+        "negative_probability": 0.003782104136488053,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": "  \n3. The content description mentions “real stories” from real men, with discussions about dating, relationships, and personal growth, which are social and emotional topics.  \n4. The inclusion of quotes from “real men” like “Don’t be a girl” and “Don’t be a loser” reinforces this focus on self-image and social confidence, not business strategy or financial literacy.\n\nConclusion:  \nThis book is not related to Business & Money. The themes and content focus on personal relationships and social development, not business or financial topics.\n\n**Final Answer: No**",
+            "first_sentence": "The content description mentions “real stories” from real men, with discussions about dating, relationships, and personal growth, which are social and emotional topics.",
+            "answer_probability": 0.37231106125473507,
+            "final_answer": "No"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": "  \n3. The content description and sample pages (if available) typically discuss topics such as dating, emotional intelligence, and social dynamics—areas that fall under self-help or psychology, not business or finance. 4. The target audience, as suggested by the title and imagery, is young males interested in personal relationships, not professionals or students seeking business knowledge.\n\nConclusion:  \nNo, this book is not related to Business & Money. It is focused on personal development and relationships.",
+            "first_sentence": "The content description and sample pages (if available) typically discuss topics such as dating, emotional intelligence, and social dynamics—areas that fall under self-help or psychology, not business or finance.",
+            "answer_probability": 0.00533480106783599,
+            "final_answer": "No, this book is not related to Business & Money. It is focused on personal development and relationships"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": "  \n3. The target audience is young men (13–18) who are seeking social and personal growth advice, not professionals or entrepreneurs looking for business skills. 4. The content is about self-esteem, confidence, and navigating relationships, which falls under the “Personal Development” or “Teenage Life” categories, not “Business & Money.” 5. There’s no mention of finance, entrepreneurship, career advice, or economic principles in the title, subtitle, or cover imagery.\n\nTherefore, is this book related to Business & Money? \n\nNo, this book is not related to Business & Money. It is focused on",
+            "first_sentence": "The target audience is young men (13–18) who are seeking social and personal growth advice, not professionals or entrepreneurs looking for business skills.",
+            "answer_probability": 0.004847056630046319,
+            "final_answer": "No, this book is not related to Business & Money. It is focused on"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n\n3. The description mentions \"Guys talk about sex, dating, relationships, and more,\" reinforcing the book's theme as one of social and emotional guidance for young men, rather than business or financial advice. 4. There are no indicators—such as charts, graphs, case studies, or terms like “ROI,” “market analysis,” or “leadership”—that would connect this book to Business & Money. 5. The target audience is explicitly stated as \"teen guys,\" suggesting content designed for personal growth and social interaction, not professional or financial development.\n\nConclusion: No, this book is not related to Business & Money",
+            "first_sentence": "The description mentions \"Guys talk about sex, dating, relationships, and more,\" reinforcing the book's theme as one of social and emotional guidance for young men, rather than business or financial advice.",
+            "answer_probability": 0.004706257352279286,
+            "final_answer": "Conclusion: No, this book is not related to Business & Money"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n3. The “About this Book” section mentions topics like “How to Be the Guy Who Gets It All,” which implies personal confidence and social success, not business skills or money management. 4. The “What's Inside” section lists content such as “How to Make the Most of Your Youth,” “How to Get the Girl,” and “How to Be the Guy Everyone Likes,” all of which are interpersonal and social development themes. 5. The “Sample Chapters” preview further confirms this, mentioning “The Guy Who Gets It All,” “The Guy Who Gets It All Part 2,” and “The Guy Who",
+            "first_sentence": "The “About this Book” section mentions topics like “How to Be the Guy Who Gets It All,” which implies personal confidence and social success, not business skills or money management.",
+            "answer_probability": 0.003782104136488053,
+            "final_answer": "3. The “About this Book” section mentions topics like “How to Be the Guy Who Gets It All,” which implies personal confidence and social success, not business skills or money management. 4. The “What's Inside” section lists content such as “How to Make the Most of Your Youth,” “How to Get the Girl,” and “How to Be the Guy Everyone Likes,” all of which are interpersonal and social development themes. 5. The “Sample Chapters” preview further confirms this, mentioning “The Guy Who Gets It All,” “The Guy Who Gets It All Part 2,” and “The Guy Who"
+          }
+        ],
+        "correct_answer": "No",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.16289064826841887,
+              "generated_answers": [
+                "The book is not related to Business & Money",
+                "No",
+                "No, this book is not related to Business & Money",
+                "$\\boxed{\\text{No}}$",
+                "No"
+              ],
+              "answer_probabilities": [
+                0.004594727387063815,
+                0.49207540266724686,
+                0.0037245380324944562,
+                0.004962910380948578,
+                0.30909566287434065
+              ]
+            },
+            "0.5": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.2723360599145108,
+              "generated_answers": [
+                "No, this book is not related to Business & Money",
+                "No",
+                "No",
+                "No, this book is not related to Business & Money. It is focused on personal relationships, intimacy, and youth engagement, which are outside the scope of business or financial topics",
+                "No"
+              ],
+              "answer_probabilities": [
+                0.004808191870531117,
+                0.43049305335315174,
+                0.44703706523066755,
+                0.004488513298001673,
+                0.47485347582020193
+              ]
+            },
+            "1.0": {
+              "accuracy": 0.2,
+              "correct_count": 1,
+              "total_trials": 5,
+              "avg_probability": 0.08557019937293683,
+              "generated_answers": [
+                "No, this book is not related to Business & Money",
+                "No",
+                "No, this book is not related to Business & Money",
+                "No. The book is not related to Business & Money; it focuses on personal relationships and social behavior for young men",
+                "No, this book is not related to Business & Money"
+              ],
+              "answer_probabilities": [
+                0.004624133517776689,
+                0.4096185583448059,
+                0.004851982869191145,
+                0.00480688848393837,
+                0.0039494336489721196
+              ]
+            },
+            "2.0": {
+              "accuracy": 0.4,
+              "correct_count": 2,
+              "total_trials": 5,
+              "avg_probability": 0.18643061070386607,
+              "generated_answers": [
+                "No",
+                "No",
+                "No, this book is not related to Business & Money",
+                "No, this book is not related to Business & Money. It is focused on personal relationships and social dynamics for young men",
+                "No, this book is not related to Business & Money. It is a guide focused on personal development and relationships for young men"
+              ],
+              "answer_probabilities": [
+                0.42535625854329806,
+                0.4933834772045416,
+                0.00440238361729577,
+                0.004586195719724948,
+                0.004424738434469883
+              ]
+            },
+            "5.0": {
+              "accuracy": 0.6,
+              "correct_count": 3,
+              "total_trials": 5,
+              "avg_probability": 0.25676916692798335,
+              "generated_answers": [
+                "No, this book is not related to Business & Money",
+                "No",
+                "No",
+                "No, this book is not related to Business & Money",
+                "No"
+              ],
+              "answer_probabilities": [
+                0.005739337290643916,
+                0.36786680335486277,
+                0.43660364444937744,
+                0.00436174117488118,
+                0.46927430837015155
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "example_idx": 41,
+  "worker_rank": 2
+}
