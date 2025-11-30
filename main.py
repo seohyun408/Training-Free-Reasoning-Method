@@ -22,7 +22,6 @@ from pathlib import Path
 from process import DatasetProcessor
 
 
-## Environment Settingpip install --upgrade git+https://github.com/huggingface/transformers.git
 HUGGINGFACE_TOKEN = os.getenv('HUGGINGFACE_TOKEN')
 HF_HOME = os.getenv('HF_HOME')
 DATASETS_CACHE = os.getenv('HF_DATASETS_CACHE')
@@ -67,11 +66,7 @@ def main():
     parser = build_parser()
     args = parser.parse_args()
 
-    # inject_env_from_args
     os.environ["DO_SAMPLE"] = "1" if args.do_sample else "0"
-
-    ## for debugging
-    # pdb.set_trace()
 
     if USE_WANDB:
         wandb.login(key=WANDB_TOKEN)
