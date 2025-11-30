@@ -90,34 +90,28 @@ def split_solution_into_chunks(solution_text: str, tokenizer=None, min_tokens: i
     if tokenizer is not None and min_tokens > 0:
         i = 0
         while i < len(chunks):
-            try:
-                tokens = tokenizer.encode(chunks[i], add_special_tokens=False)
-                token_count = len(tokens)
+            tokens = tokenizer.encode(chunks[i], add_special_tokens=False)
+            token_count = len(tokens)
 
-                # If chunk is too small, merge with next or previous
-                if token_count < min_tokens:
-                    if i < len(chunks) - 1:
-                        # Merge with next
-                        chunks[i] = chunks[i] + " " + chunks[i + 1]
-                        chunks.pop(i + 1)
-                        # Don't increment i, check merged chunk again
-                    elif i > 0:
-                        # Merge with previous (last chunk is small)
-                        chunks[i - 1] = chunks[i - 1] + " " + chunks[i]
-                        chunks.pop(i)
-                        break
-                    else:
-                        # Only one chunk and it's small, keep it
-                        i += 1
+            # If chunk is too small, merge with next or previous
+            if token_count < min_tokens:
+                if i < len(chunks) - 1:
+                    # Merge with next
+                    chunks[i] = chunks[i] + " " + chunks[i + 1]
+                    chunks.pop(i + 1)
+                    # Don't increment i, check merged chunk again
+                elif i > 0:
+                    # Merge with previous (last chunk is small)
+                    chunks[i - 1] = chunks[i - 1] + " " + chunks[i]
+                    chunks.pop(i)
+                    break
                 else:
+                    # Only one chunk and it's small, keep it
                     i += 1
-            except Exception as e:
-                # If tokenization fails, just keep the chunk
-                print(f"[warn] Tokenization failed for chunk: {e}")
+            else:
                 i += 1
     
     return chunks
-
 
 
 def get_chunk_token_ranges(

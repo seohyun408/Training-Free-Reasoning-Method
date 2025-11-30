@@ -1,0 +1,119 @@
+{
+  "total_pairs": 1,
+  "successful_pairs": 1,
+  "image_path": "/scratch/tjgus0408/huggingface/datasets/LLaVA-CoT-100k/sqa/train/20839/image.png",
+  "qa_pairs": [
+    {
+      "pair_idx": 0,
+      "question": "<|vision_start|><|image_pad|><|vision_end|>\nWhich country is highlighted?\nContext: N/A\nOptions: (A) Solomon Islands (B) Nauru (C) Vanuatu (D) Fiji",
+      "reasoning_text": "1. The highlighted region on the map is situated east of Australia and north of New Zealand, placing it within the South Pacific Ocean.  \n2. The area enclosed by the solid green line contains multiple islands, which matches the archipelagic structure of Vanuatu.  \n3. The dotted green line indicates a smaller, adjacent area, possibly representing a disputed island or territory, consistent with Vanuatu’s territorial claims.  \n4. The legend identifies “Disputed island,” which aligns with Vanuatu’s known territorial disputes with neighboring nations, such as with Fiji over certain island groups.  \n5. The geographical coordinates and island distribution within the highlighted region are unmistakably characteristic of Vanuatu’s island chain.  \n\n<final>Vanuatu</final>",
+      "raw_generation": [
+        "1. The highlighted area on the map is located east of Australia and north of New Zealand, placing it within the South Pacific region.  \n2. The green outline encompasses a group of islands that match the geographical location of Vanuatu, which lies between Fiji and New Caledonia.  \n3. The dashed box within the outline specifically highlights the islands of Vanuatu, including the main islands of Espiritu Santo and Malakula, which are central to the nation.  \n4. The surrounding islands and archipelagos shown in the map do not correspond to the geographical layout of the Solomon Islands, Nauru, or Fiji.  \n5. The map’s legend indicates \"Disputed island,\" which aligns with Vanuatu’s status as a territory with historical disputes, particularly with its neighboring islands.  \n\n<final>Vanuatu</final>",
+        "1. The highlighted region on the map is situated east of Australia and north of New Zealand, placing it within the South Pacific Ocean.  \n2. The area enclosed by the solid green line contains multiple islands, which matches the archipelagic structure of Vanuatu.  \n3. The dotted green line indicates a smaller, adjacent area, possibly representing a disputed island or territory, consistent with Vanuatu’s territorial claims.  \n4. The legend identifies “Disputed island,” which aligns with Vanuatu’s known territorial disputes with neighboring nations, such as with Fiji over certain island groups.  \n5. The geographical coordinates and island distribution within the highlighted region are unmistakably characteristic of Vanuatu’s island chain.  \n\n<final>Vanuatu</final>"
+      ],
+      "chunks": [
+        "1. The highlighted region on the map is situated east of Australia and north of New Zealand, placing it within the South Pacific Ocean.",
+        "2. The area enclosed by the solid green line contains multiple islands, which matches the archipelagic structure of Vanuatu.",
+        "3. The dotted green line indicates a smaller, adjacent area, possibly representing a disputed island or territory, consistent with Vanuatu’s territorial claims.",
+        "4. The legend identifies “Disputed island,” which aligns with Vanuatu’s known territorial disputes with neighboring nations, such as with Fiji over certain island groups.",
+        "5. The geographical coordinates and island distribution within the highlighted region are unmistakably characteristic of Vanuatu’s island chain.",
+        "<final>Vanuatu</final>"
+      ],
+      "chunk_token_ranges": [
+        [
+          38,
+          65
+        ],
+        [
+          66,
+          92
+        ],
+        [
+          93,
+          123
+        ],
+        [
+          124,
+          158
+        ],
+        [
+          159,
+          183
+        ],
+        [
+          184,
+          193
+        ]
+      ],
+      "anchor_vector": [
+        15.407231315202363,
+        13.746344752093547,
+        11.50549785140293,
+        14.746392144097221,
+        9.9072265625,
+        0.0
+      ],
+      "kl_matrix_shape": [
+        6,
+        6
+      ],
+      "contrastive": {
+        "positive_sentence": "The country located east of Australia and north of New Zealand is likely to be one of the smaller island nations in the South Pacific, such as Vanuatu, Solomon Islands, Fiji, or Nauru.",
+        "negative_sentence": "The region is an island nation, and it is part of the Melanesian subregion, which includes countries such as Papua New Guinea, Fiji, Solomon Islands, and Vanuatu.",
+        "positive_full": " \n2. The country located east of Australia and north of New Zealand is likely to be one of the smaller island nations in the South Pacific, such as Vanuatu, Solomon Islands, Fiji, or Nauru.\n\nNext step: \n3. Among these options, Nauru is a very small island nation located much closer to the equator and to the east of the Solomon Islands. Vanuatu is located between Fiji and the Solomon Islands, slightly south of Fiji. Fiji is located to the east of Australia, closer to the equator than Vanuatu but further north than the Solomon Islands. Solomon Islands is located directly",
+        "negative_full": " \n2. The region is an island nation, and it is part of the Melanesian subregion, which includes countries such as Papua New Guinea, Fiji, Solomon Islands, and Vanuatu.\n\nNext step: \n3. The highlighted country is known for its volcanic islands and has a capital city named Port Vila. It is also recognized for its diverse indigenous cultures and the fact that it is the only country in the world where the official language is Bislama, English, and French.\n\nFinal step: \n4. The country that matches this description is Vanuatu.\n\nTherefore, the correct answer is (C) Van",
+        "positive_probability": 0.7666015625,
+        "negative_probability": 0.62396240234375,
+        "all_samples": [
+          {
+            "sample_idx": 1,
+            "continuation": " \n2. The country located east of Australia and north of New Zealand is likely to be one of the smaller island nations in the South Pacific, such as Vanuatu, Solomon Islands, Fiji, or Nauru.\n\nNext step: \n3. Among these options, Nauru is a very small island nation located much closer to the equator and to the east of the Solomon Islands. Vanuatu is located between Fiji and the Solomon Islands, slightly south of Fiji. Fiji is located to the east of Australia, closer to the equator than Vanuatu but further north than the Solomon Islands. Solomon Islands is located directly",
+            "first_sentence": "The country located east of Australia and north of New Zealand is likely to be one of the smaller island nations in the South Pacific, such as Vanuatu, Solomon Islands, Fiji, or Nauru.",
+            "answer_probability": 0.7666015625,
+            "final_answer": "3. Among these options, Nauru is a very small island nation located much closer to the equator and to the east of the Solomon Islands. Vanuatu is located between Fiji and the Solomon Islands, slightly south of Fiji. Fiji is located to the east of Australia, closer to the equator than Vanuatu but further north than the Solomon Islands. Solomon Islands is located directly"
+          },
+          {
+            "sample_idx": 3,
+            "continuation": " \n2. Of the given options, the Solomon Islands lie directly northeast of Papua New Guinea, which is east of Australia. Nauru is a small island nation located in the central Pacific, roughly halfway between Australia and the equator. Vanuatu lies east of Australia and north of New Zealand, with a chain of islands stretching from the Solomon Islands to the New Caledonia. Fiji lies east of Australia and north of New Zealand.\n\nContinue the next reasoning step:\n3. The Solomon Islands are located in the Solomon Sea, between Papua New Guinea and Vanuatu. Nauru is located in the central Pacific, far from",
+            "first_sentence": "Of the given options, the Solomon Islands lie directly northeast of Papua New Guinea, which is east of Australia.",
+            "answer_probability": 0.7626953125,
+            "final_answer": "3. The Solomon Islands are located in the Solomon Sea, between Papua New Guinea and Vanuatu. Nauru is located in the central Pacific, far from"
+          },
+          {
+            "sample_idx": 0,
+            "continuation": " \n\n2. Among the given options, Fiji is located in the South Pacific Ocean, north of New Zealand, and east of Australia — matching the geographic position described. Vanuatu is also in the South Pacific but is further east and south of Fiji. The Solomon Islands are located even further east, east of Vanuatu, and Nauru is a small island nation near the equator, located closer to the east of Australia but significantly to the north, not matching the exact region described.\n\n3. The position \"east of Australia and north of New Zealand\" most precisely corresponds to Fiji, as Fiji is the island nation that fits",
+            "first_sentence": "Among the given options, Fiji is located in the South Pacific Ocean, north of New Zealand, and east of Australia — matching the geographic position described.",
+            "answer_probability": 0.751708984375,
+            "final_answer": "3. The position \"east of Australia and north of New Zealand\" most precisely corresponds to Fiji, as Fiji is the island nation that fits"
+          },
+          {
+            "sample_idx": 4,
+            "continuation": " \n2. The highlighted country is part of the Melanesian region, and is known for its volcanic terrain, diverse cultures, and strong rugby tradition.\n\nContinue the next reasoning step: \n3. The highlighted country has a population of around 1.2 million, with a capital city located on a large island, and is one of the few nations with a British colonial history that remains a constitutional monarchy.\n\nContinue the next reasoning step: \n4. The country is a member of the Commonwealth and is governed by a parliamentary system with a Prime Minister as head of government.\n\nContinue the step: \n5. The highlighted country's national anthem",
+            "first_sentence": "The highlighted country is part of the Melanesian region, and is known for its volcanic terrain, diverse cultures, and strong rugby tradition.",
+            "answer_probability": 0.69970703125,
+            "final_answer": "5. The highlighted country's national anthem"
+          },
+          {
+            "sample_idx": 2,
+            "continuation": " \n2. The region is an island nation, and it is part of the Melanesian subregion, which includes countries such as Papua New Guinea, Fiji, Solomon Islands, and Vanuatu.\n\nNext step: \n3. The highlighted country is known for its volcanic islands and has a capital city named Port Vila. It is also recognized for its diverse indigenous cultures and the fact that it is the only country in the world where the official language is Bislama, English, and French.\n\nFinal step: \n4. The country that matches this description is Vanuatu.\n\nTherefore, the correct answer is (C) Van",
+            "first_sentence": "The region is an island nation, and it is part of the Melanesian subregion, which includes countries such as Papua New Guinea, Fiji, Solomon Islands, and Vanuatu.",
+            "answer_probability": 0.62396240234375,
+            "final_answer": "(C) Van"
+          }
+        ],
+        "correct_answer": "The answer is C.",
+        "pca_context": {
+          "context_vector_shape": [
+            4096
+          ],
+          "results": {
+            "0.0": "(A) Solomon Islands",
+            "1.0": "(C) Vanuatu"
+          }
+        }
+      },
+      "is_correct": 0
+    }
+  ],
+  "example_idx": 0
+}

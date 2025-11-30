@@ -11,6 +11,22 @@
 | **Soojeong Lee**   | [@LeeSooJeong1124](#)    |
 
 
+### ✅ Folder
+```
+.
+├── README.md
+├── main.py                         
+├── process.py                      
+├── whitebox-analyses/              
+    ├── calculate_anchor.py         # Anchor Detection (Stage1)
+    └── attention_analysis/
+        └── attn_supp_funcs.py      # KL divergence 
+├── contrastive_generation.py       # Contrastive Generation (Stage2)
+├── utils.py                        
+
+```
+
+
 ### ✅ Process (Step-by-Step)
 
 1. **Thought Anchor Detection**: Identify critical reasoning sentences using KL divergence with attention masking
@@ -22,7 +38,16 @@
 
 ## 🚀 How to Run
 
-### Step 1: Run Main Analysis (PCA + Sampling enabled by default)
+### Step 0. Environment Setting
+
+```bash
+export HUGGINGFACE_TOKEN=       
+export HF_HOME=       
+export HF_MODEL_CACHE=      
+export HF_DATASETS_CACHE=         
+```
+
+### Step 1: Run Main.py 
 
 ```bash
 python main.py \

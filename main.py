@@ -46,25 +46,19 @@ def build_parser():
     p.add_argument("--load_4bit", action="store_true", help="Enable 4-bit quantization")
     p.add_argument("--load_8bit", action="store_true", help="Enable 8-bit quantization")
 
-    ## DIRECTORY // ENVIRONMENT
+    ## Setting
+    p.add_argument("--max_new_tokens", type=int, default=256, help="Generation max_new_tokens")
+    p.add_argument("--do-sample", action="store_true", default=True, help="Enable sampling (temperature/top-p) (default: enabled)")
+    p.add_argument("--no-sampling", dest="do_sample", action="store_false", help="Disable sampling (use greedy decoding)")
+    p.add_argument("--max_attempts", type=int, default=2, help="Attempt loop with fallback prompts")
+    p.add_argument("--contrastive_samples", type=int, default=5, help="Number of samples for contrastive generation")
+    p.add_argument("--output_dir", default="outputs", help="Directory to save results")
+
+    ## ENVIRONMENT (etc)
     p.add_argument("--images_root", default="/scratch/tjgus0408/huggingface/datasets/LLaVA-CoT-100k", help="Directory containing images")
     p.add_argument("--gpu", type=int, default=0, help="GPU index (0-based)")
     p.add_argument('--debug', action='store_true')
 
-    ## 아직 수정중
-    p.add_argument("--max-samples", type=int, default=10, help="Stop after N successful samples (0=all)")
-    p.add_argument("--max-new-tokens", type=int, default=256, help="Generation max_new_tokens")
-    p.add_argument("--do-sample", action="store_true", default=True, help="Enable sampling (temperature/top-p) (default: enabled)")
-    p.add_argument("--no-sampling", dest="do_sample", action="store_false", help="Disable sampling (use greedy decoding)")
-    p.add_argument("--skip-suppression", action="store_true", help="Skip suppression KL computation")
-    p.add_argument("--suppression-strategy", choices=["attn", "embed"], default="attn", help="Counterfactual suppression strategy")
-    p.add_argument("--anchor-method", choices=["outgoing", "incoming", "combined"], default="outgoing", help="Aggregate KL for anchor vector")
-    p.add_argument("--sparse-top-p", type=float, default=0.0, help="If >0 apply nucleus sparsification before KL (paper-style)")
-    p.add_argument("--enable-contrastive", action="store_true", help="Enable contrastive positive/negative sentence generation")
-    p.add_argument("--contrastive-samples", type=int, default=5, help="Number of samples for contrastive generation")
-    p.add_argument("--test-pca-context", action="store_true", default=True, help="Test PCA context vector effect on answer accuracy (default: enabled)")
-    p.add_argument("--no-pca", dest="test_pca_context", action="store_false", help="Disable PCA context vector testing")
-    p.add_argument("--pca-num-trials", type=int, default=5, help="Number of trials per context scale for PCA testing (default: 5)")
     return p
 
 
@@ -72,6 +66,9 @@ def main():
 
     parser = build_parser()
     args = parser.parse_args()
+
+    # inject_env_from_args
+    os.environ["DO_SAMPLE"] = "1" if args.do_sample else "0"
 
     ## for debugging
     # pdb.set_trace()
@@ -130,7 +127,7 @@ def main():
 
     print(f"\n>>>>>> Start Processing")
     results = []
-    output_dir = Path("anchor_vectors_output")
+    output_dir = Path(args.output_dir)
     output_dir.mkdir(exist_ok=True)
 
     proc = DatasetProcessor(
@@ -143,22 +140,39 @@ def main():
         generate_reasoning=True,
         model_name=args.model_name
     )
-    
+
+    cnt = 0
+    acc = 0
     for idx, example in enumerate(tqdm(dataset, desc="Processing examples")):
         print(f"\nProcessing example {idx+1}/{len(dataset)}")
-        
         result = proc.process_sample(example)
         
         result["example_idx"] = idx
 
-        # Save individual result
+        results = result["qa_pairs"]
+        print("+"*10)
+        print(cnt)
+        print("+"*10)
+        for x in results:
+            print("check"*10)
+            score = int(x["is_correct"])
+            acc += score
+            cnt += 1
+
+            if cnt == 2:
+                print(acc, cnt)
+                return
+
         with open(output_dir / f"example_{idx}.json", "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
 
-        # 우선 하나만 TEST !
-        break
-    
 
+
+    print("\n" + "="*80)
+    print(f"🏁 Processing Complete - ACC: {acc/cnt:.4f}")
+    print("="*80)
+    
+    
     if USE_WANDB:
         wandb.finish()
 

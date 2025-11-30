@@ -152,17 +152,23 @@ class LlamaAttentionHookManager(HookManager):
             bsz, q_len, _ = hidden_states.size()
             device = hidden_states.device
             
-            # Get config attributes
+            # Get config attributes - try multiple sources
+            config = None
             if hasattr(self, 'config'):
                 config = self.config
+            elif hasattr(self, 'num_heads') and hasattr(self, 'head_dim'):
+                # Fallback: create a pseudo-config from direct attributes
+                pass
+            
+            if config is not None:
                 num_heads = config.num_attention_heads
                 head_dim = config.hidden_size // num_heads
                 num_key_value_heads = getattr(config, 'num_key_value_heads', num_heads)
                 hidden_size = config.hidden_size
             else:
-                # Fallback if no config
-                num_heads = self.num_heads if hasattr(self, 'num_heads') else 32
-                head_dim = self.head_dim if hasattr(self, 'head_dim') else 128
+                # Fallback if no config - use direct attributes
+                num_heads = getattr(self, 'num_heads', 32)
+                head_dim = getattr(self, 'head_dim', 128)
                 num_key_value_heads = getattr(self, 'num_key_value_heads', num_heads)
                 hidden_size = num_heads * head_dim
             
@@ -294,46 +300,84 @@ class QwenAttentionHookManager(HookManager):
             self.token_range = [self.token_range]
         
         target_modules = []
-        module_prefix = "model.layers"
+        
+        # Try different module prefixes for different model architectures
+        # For Qwen3-VL language_model: "layers.N.self_attn"
+        # For full Qwen models: "model.layers.N.self_attn"
+        module_prefixes = ["layers", "model.layers"]
         attn_suffix = "self_attn"
         rotary_emb_module = None
         
-        if hasattr(self.model, "model") and hasattr(self.model.model, "rotary_emb"):
-            rotary_emb_module = self.model.model.rotary_emb
-            print(f"Found rotary_emb at model.model.rotary_emb")
-            if not callable(rotary_emb_module):
-                print(f"Warning: Found rotary_emb module, but it is not callable. RoPE might fail.")
+        # Try multiple paths for rotary_emb (different model architectures)
+        rotary_paths = [
+            ("model.model.rotary_emb", lambda m: m.model.model.rotary_emb if hasattr(m, "model") and hasattr(m.model, "model") and hasattr(m.model.model, "rotary_emb") else None),
+            ("model.rotary_emb", lambda m: m.model.rotary_emb if hasattr(m, "model") and hasattr(m.model, "rotary_emb") else None),
+            ("rotary_emb", lambda m: m.rotary_emb if hasattr(m, "rotary_emb") else None),
+        ]
+        
+        for path_name, getter in rotary_paths:
+            rotary_emb_module = getter(self.model)
+            if rotary_emb_module is not None:
+                if callable(rotary_emb_module):
+                    print(f"Found rotary_emb at {path_name}")
+                    break
+                else:
+                    print(f"Warning: Found rotary_emb at {path_name}, but it is not callable.")
+                    rotary_emb_module = None
+        
+        if rotary_emb_module is None:
+            print("Warning: Could not find rotary_emb module. RoPE will be skipped (may affect accuracy).")
+        
+        # Try to find attention modules with different prefixes
+        # First, print all module names for debugging
+        #print(f"[DEBUG QwenHookMgr] Inspecting model structure for attention modules...")
+        all_attn_modules = []
+        for name, module in self.model.named_modules():
+            if attn_suffix in name:
+                all_attn_modules.append(name)
+        
+        if all_attn_modules:
+            #print(f"[DEBUG QwenHookMgr] Found {len(all_attn_modules)} modules with '{attn_suffix}': {all_attn_modules[:5]}...")
+            pass
         else:
-            print("Warning: Could not automatically find the main rotary_emb module.")
+            #print(f"[DEBUG QwenHookMgr] No modules with '{attn_suffix}' found. Checking all layer modules...")
+            layer_modules = [name for name, _ in self.model.named_modules() if 'layer' in name.lower()]
+            #print(f"[DEBUG QwenHookMgr] Sample layer modules: {layer_modules[:10]}")
         
         for name, module in self.model.named_modules():
-            if name.startswith(module_prefix) and name.endswith(attn_suffix):
-                try:
-                    layer_idx_str = name.split(".")[2]
-                    layer_idx = int(layer_idx_str)
-                    if self.layer_2_heads_suppress is None or layer_idx in self.layer_2_heads_suppress:
-                        if (
-                            hasattr(module, "config")
-                            and hasattr(module, "q_proj")
-                            and hasattr(module, "k_proj")
-                            and hasattr(module, "v_proj")
-                            and hasattr(module, "o_proj")
-                        ):
-                            target_modules.append((name, module, layer_idx))
+            for module_prefix in module_prefixes:
+                if name.startswith(module_prefix) and name.endswith(attn_suffix):
+                    try:
+                        # Parse layer index - handle both "layers.N" and "model.layers.N"
+                        parts = name.split(".")
+                        if "layers" in parts:
+                            layer_idx_pos = parts.index("layers") + 1
+                            if layer_idx_pos < len(parts):
+                                layer_idx = int(parts[layer_idx_pos])
+                            else:
+                                continue
                         else:
-                            missing = [
-                                p
-                                for p in ["config", "q_proj", "k_proj", "v_proj", "o_proj"]
-                                if not hasattr(module, p)
-                            ]
-                            print(f"Warning: Module {name} missing attributes: {missing}. Skipping.")
-                except (IndexError, ValueError):
-                    print(f"Warning: Could not parse layer index from module name: {name}. Skipping.")
+                            continue
+                        
+                        if self.layer_2_heads_suppress is None or layer_idx in self.layer_2_heads_suppress:
+                            # Check for required projection layers (config is optional for Qwen3-VL)
+                            required_projs = ["q_proj", "k_proj", "v_proj", "o_proj"]
+                            if all(hasattr(module, attr) for attr in required_projs):
+                                target_modules.append((name, module, layer_idx))
+                                #print(f"[DEBUG QwenHookMgr] ✓ Added module: {name}")
+                            else:
+                                missing = [attr for attr in required_projs if not hasattr(module, attr)]
+                                #print(f"[DEBUG QwenHookMgr] ✗ Module {name} missing projections: {missing}.")
+                        break  # Found with this prefix, no need to try others
+                    except (IndexError, ValueError) as e:
+                        print(f"Warning: Could not parse layer index from module name: {name}. Error: {e}")
         
         if not target_modules:
             print("Error: No suitable Qwen2-style attention modules found.")
+            print(f"[DEBUG QwenHookMgr] Searched prefixes: {module_prefixes}, suffix: {attn_suffix}")
             return
         
+        print(f"[DEBUG QwenHookMgr] Total {len(target_modules)} attention modules ready to patch.")
         
         for name, attn_module, layer_idx in target_modules:
             heads_mask = self.layer_2_heads_suppress[layer_idx] if self.layer_2_heads_suppress is not None else None
@@ -361,14 +405,26 @@ class QwenAttentionHookManager(HookManager):
         ) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
 
             bsz, q_len, _ = hidden_states.size()
-            config = self.config
             device = hidden_states.device
-
-            num_heads = config.num_attention_heads
-            head_dim = config.hidden_size // num_heads
-            num_key_value_heads = config.num_key_value_heads
-            num_key_value_groups = num_heads // num_key_value_heads
-            hidden_size = config.hidden_size
+            
+            # Get config attributes - handle both config-based and attribute-based modules
+            config = None
+            if hasattr(self, 'config'):
+                config = self.config
+            
+            if config is not None:
+                num_heads = config.num_attention_heads
+                head_dim = config.hidden_size // num_heads
+                num_key_value_heads = config.num_key_value_heads
+                num_key_value_groups = num_heads // num_key_value_heads
+                hidden_size = config.hidden_size
+            else:
+                # Fallback if no config - use direct attributes
+                num_heads = getattr(self, 'num_heads', 32)
+                head_dim = getattr(self, 'head_dim', 128)
+                num_key_value_heads = getattr(self, 'num_key_value_heads', num_heads)
+                num_key_value_groups = num_heads // num_key_value_heads
+                hidden_size = num_heads * head_dim
 
             query_states = self.q_proj(hidden_states)
             key_states = self.k_proj(hidden_states)
@@ -458,8 +514,14 @@ class QwenAttentionHookManager(HookManager):
             attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
             
             # Apply dropout only during training
-            dropout_p = self.attention_dropout if hasattr(self, "attention_dropout") else config.attention_dropout
-            if self.training:
+            if hasattr(self, "attention_dropout"):
+                dropout_p = self.attention_dropout
+            elif config is not None and hasattr(config, "attention_dropout"):
+                dropout_p = config.attention_dropout
+            else:
+                dropout_p = 0.0
+            
+            if self.training and dropout_p > 0:
                 attn_weights = nn.functional.dropout(attn_weights, p=dropout_p, training=True)
 
             attn_output = torch.matmul(attn_weights, value_states)
@@ -498,44 +560,80 @@ def apply_qwen_attn_mask_hooks(model, token_range, layer_2_heads_suppress=None):
         token_range = [token_range]
 
     target_modules = []
-    module_prefix = "model.layers"
+    
+    # Try different module prefixes for different model architectures
+    # For Qwen3-VL language_model: "layers.N.self_attn"
+    # For full Qwen models: "model.layers.N.self_attn"
+    module_prefixes = ["layers", "model.layers"]
     attn_suffix = "self_attn"
     rotary_emb_module = None
     
-    if hasattr(model, "model") and hasattr(model.model, "rotary_emb"):
-        rotary_emb_module = model.model.rotary_emb
-        print(f"Found rotary_emb at model.model.rotary_emb")
-        if not callable(rotary_emb_module):
-            print(f"Warning: Found rotary_emb module, but it is not callable. RoPE might fail.")
-    else:
-        print("Warning: Could not automatically find the main rotary_emb module.")
+    # Try multiple paths for rotary_emb (different model architectures)
+    rotary_paths = [
+        ("model.model.rotary_emb", lambda m: m.model.model.rotary_emb if hasattr(m, "model") and hasattr(m.model, "model") and hasattr(m.model.model, "rotary_emb") else None),
+        ("model.rotary_emb", lambda m: m.model.rotary_emb if hasattr(m, "model") and hasattr(m.model, "rotary_emb") else None),
+        ("rotary_emb", lambda m: m.rotary_emb if hasattr(m, "rotary_emb") else None),
+    ]
+    
+    for path_name, getter in rotary_paths:
+        rotary_emb_module = getter(model)
+        if rotary_emb_module is not None:
+            if callable(rotary_emb_module):
+                print(f"Found rotary_emb at {path_name}")
+                break
+            else:
+                print(f"Warning: Found rotary_emb at {path_name}, but it is not callable.")
+                rotary_emb_module = None
+    
+    if rotary_emb_module is None:
+        print("Warning: Could not find rotary_emb module. RoPE will be skipped (may affect accuracy).")
 
+    # Try to find attention modules with different prefixes
+    # First, print all module names for debugging
+    print(f"[DEBUG] Inspecting model structure for attention modules...")
+    all_attn_modules = []
     for name, module in model.named_modules():
-        if name.startswith(module_prefix) and name.endswith(attn_suffix):
-            try:
-                layer_idx_str = name.split(".")[2]
-                layer_idx = int(layer_idx_str)
-                if layer_2_heads_suppress is None or layer_idx in layer_2_heads_suppress:
-                    if (
-                        hasattr(module, "config")
-                        and hasattr(module, "q_proj")
-                        and hasattr(module, "k_proj")
-                        and hasattr(module, "v_proj")
-                        and hasattr(module, "o_proj")
-                    ):
-                        target_modules.append((name, module, layer_idx))
+        if attn_suffix in name:
+            all_attn_modules.append(name)
+    
+    if all_attn_modules:
+        print(f"[DEBUG] Found {len(all_attn_modules)} modules with '{attn_suffix}': {all_attn_modules[:5]}...")  # Show first 5
+    else:
+        print(f"[DEBUG] No modules with '{attn_suffix}' found. Checking all layer modules...")
+        layer_modules = [name for name, _ in model.named_modules() if 'layer' in name.lower()]
+        print(f"[DEBUG] Sample layer modules: {layer_modules[:10]}")
+    
+    for name, module in model.named_modules():
+        for module_prefix in module_prefixes:
+            if name.startswith(module_prefix) and name.endswith(attn_suffix):
+                try:
+                    # Parse layer index - handle both "layers.N" and "model.layers.N"
+                    parts = name.split(".")
+                    if "layers" in parts:
+                        layer_idx_pos = parts.index("layers") + 1
+                        if layer_idx_pos < len(parts):
+                            layer_idx = int(parts[layer_idx_pos])
+                        else:
+                            continue
                     else:
-                        missing = [
-                            p
-                            for p in ["config", "q_proj", "k_proj", "v_proj", "o_proj"]
-                            if not hasattr(module, p)
-                        ]
-                        print(f"Warning: Module {name} missing attributes: {missing}. Skipping.")
-            except (IndexError, ValueError):
-                print(f"Warning: Could not parse layer index from module name: {name}. Skipping.")
+                        continue
+                    
+                    if layer_2_heads_suppress is None or layer_idx in layer_2_heads_suppress:
+                        # Check for required projection layers (config is optional for Qwen3-VL)
+                        required_projs = ["q_proj", "k_proj", "v_proj", "o_proj"]
+                        if all(hasattr(module, attr) for attr in required_projs):
+                            target_modules.append((name, module, layer_idx))
+                            print(f"[DEBUG] ✓ Added module: {name}")
+                        else:
+                            missing = [attr for attr in required_projs if not hasattr(module, attr)]
+                            print(f"[DEBUG] ✗ Module {name} missing projections: {missing}. Skipping.")
+                    break  # Found with this prefix, no need to try others
+                except (IndexError, ValueError) as e:
+                    print(f"Warning: Could not parse layer index from module name: {name}. Error: {e}")
 
     if not target_modules:
         print("Error: No suitable Qwen2-style attention modules found.")
+        print(f"[DEBUG] Searched prefixes: {module_prefixes}, suffix: {attn_suffix}")
         return
 
     print(f"Found {len(target_modules)} Qwen2 attention modules to patch.")
@@ -556,14 +654,26 @@ def apply_qwen_attn_mask_hooks(model, token_range, layer_2_heads_suppress=None):
         ) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
 
             bsz, q_len, _ = hidden_states.size()
-            config = self.config
             device = hidden_states.device
-
-            num_heads = config.num_attention_heads
-            head_dim = config.hidden_size // num_heads
-            num_key_value_heads = config.num_key_value_heads
-            num_key_value_groups = num_heads // num_key_value_heads
-            hidden_size = config.hidden_size
+            
+            # Get config attributes - handle both config-based and attribute-based modules
+            config = None
+            if hasattr(self, 'config'):
+                config = self.config
+            
+            if config is not None:
+                num_heads = config.num_attention_heads
+                head_dim = config.hidden_size // num_heads
+                num_key_value_heads = config.num_key_value_heads
+                num_key_value_groups = num_heads // num_key_value_heads
+                hidden_size = config.hidden_size
+            else:
+                # Fallback if no config - use direct attributes
+                num_heads = getattr(self, 'num_heads', 32)
+                head_dim = getattr(self, 'head_dim', 128)
+                num_key_value_heads = getattr(self, 'num_key_value_heads', num_heads)
+                num_key_value_groups = num_heads // num_key_value_heads
+                hidden_size = num_heads * head_dim
 
             query_states = self.q_proj(hidden_states)
             key_states = self.k_proj(hidden_states)
@@ -653,8 +763,14 @@ def apply_qwen_attn_mask_hooks(model, token_range, layer_2_heads_suppress=None):
             attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
             
             # Apply dropout only during training
-            dropout_p = self.attention_dropout if hasattr(self, "attention_dropout") else config.attention_dropout
-            if self.training:
+            if hasattr(self, "attention_dropout"):
+                dropout_p = self.attention_dropout
+            elif config is not None and hasattr(config, "attention_dropout"):
+                dropout_p = config.attention_dropout
+            else:
+                dropout_p = 0.0
+            
+            if self.training and dropout_p > 0:
                 attn_weights = nn.functional.dropout(attn_weights, p=dropout_p, training=True)
 
             attn_output = torch.matmul(attn_weights, value_states)

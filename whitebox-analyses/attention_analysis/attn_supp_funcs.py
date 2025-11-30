@@ -300,21 +300,23 @@ def get_model_logits(
         model_type = type(model_to_hook).__name__
         
         print(f"[DEBUG] Token ranges to mask: {token_ranges_list}")
+        print(f"[DEBUG] Model type to hook: {model_type}")
+        print(f"[DEBUG] Using {'language_model' if hasattr(model, 'language_model') else 'full model'}")
         
         # Use appropriate hook manager based on model type
-        if 'Llama' in model_type:
-            hook_manager = LlamaAttentionHookManager(
-                model=model_to_hook,
-                token_range=token_ranges_list,
-                layer_2_heads_suppress=None  # Suppress all heads in all layers
-            )
-        else:
-            # Default to Qwen for other models
-            hook_manager = QwenAttentionHookManager(
-                model=model_to_hook,
-                token_range=token_ranges_list,
-                layer_2_heads_suppress=None  # Suppress all heads in all layers
-            )
+        # if 'Llama' in model_type:
+        #     hook_manager = LlamaAttentionHookManager(
+        #         model=model_to_hook,
+        #         token_range=token_ranges_list,
+        #         layer_2_heads_suppress=None  # Suppress all heads in all layers
+        #     )
+        # else:
+        # Default to Qwen for other models
+        hook_manager = QwenAttentionHookManager(
+            model=model_to_hook,
+            token_range=token_ranges_list,
+            layer_2_heads_suppress=None  # Suppress all heads in all layers
+        )
         
         hook_manager.apply()
         
