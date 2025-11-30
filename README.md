@@ -15,14 +15,18 @@
 ```
 .
 ├── README.md
-├── main.py                         
-├── process.py                      
-├── whitebox-analyses/              
-    ├── calculate_anchor.py         # Anchor Detection (Stage1)
-    └── attention_analysis/
-        └── attn_supp_funcs.py      # KL divergence 
-├── contrastive_generation.py       # Contrastive Generation (Stage2)
-├── utils.py                        
+├── main.py
+├── process.py
+├── whitebox-analyses/
+│   ├── calculate_anchor.py
+│   └── attention_analysis/
+│       └── attn_supp_funcs.py
+├── method/
+│   ├── context_vector.py
+│   ├── contrastive_generation.py
+│   └── reasoning_generation.py
+├── utils.py
+└── view_outputs_results.ipynb
 
 ```
 
@@ -59,36 +63,12 @@ python main.py \
 
 **Default settings**:
 - ✅ Stochastic generation (temperature=0.8, different results each run)
-- ✅ PCA context vector testing (5 trials per scale)
+- ✅ PCA context vector testing (scale=[0.0, 1.0])
 
-**Outputs**: `anchor_vectors_output/example_*.json`
+**Outputs**: `outputs/example_*.json`
 
-#### Optional: Disable sampling (deterministic, reproducible results)
 
-```bash
-python main.py \
-  --data llava-cot-100k \
-  --num-examples 50 \
-  --no-sampling
-```
-
-#### Optional: Disable PCA (faster, but no steering results)
-
-```bash
-python main.py \
-  --data llava-cot-100k \
-  --num-examples 50 \
-  --no-pca
-```
-
-#### Optional: Add PCA to existing results
-
-If you already have results without PCA:
-```bash
-python run_pca_on_existing.py
-```
-
-### Step 2: Generate HTML Reports
+### Step 2: Generate HTML Reports (여긴 수정안함)
 
 ```bash
 python generate_report.py
@@ -105,9 +85,3 @@ python generate_methodology.py
 **Outputs**: `methodology_report.html` (complete method explanation)
 
 ---
-
-## 📊 Results Summary
-
-- **60% accuracy improvement** on diagram reasoning (40% → 100%)
-- **Training-free**: No fine-tuning required
-- **Non-linear steering**: Optimal at scale 0.5-1.0, over-steering at 2.0, force mode at 5.0
