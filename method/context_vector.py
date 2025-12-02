@@ -3,6 +3,7 @@ import numpy as np
 import torch
 from sklearn.decomposition import PCA
 from typing import List, Dict, Tuple, Optional
+from bert_score import score
 
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), "method"))
@@ -181,6 +182,7 @@ def generate_with_context_vector(
 
 def test_context_vector_effect(
     model,
+    question,
     processor,
     tokenizer,
     prefix_text: str,
@@ -246,11 +248,29 @@ def test_context_vector_effect(
         is_correct = normalize_answer(generated_answers) == normalize_answer(correct_answer)
 
         status = "✅" if is_correct else "❌"
-        print(f"{status} Answer={generated_answers}")
+        # [NEW]
+        print(f"{status} Answer={generated_answers} // Ground Truth={question+correct_answer}")
 
         results[scale] = generated_answers
+
+        # [NEW]
+        precision, recall, f1 = compute_bertscore(generated_answers, question+correct_answer)
+
+        print("🌟 Precision:", precision)
+        print("🌟 Recall:", recall)
+        print("🌟 F1:", f1)
 
     if is_correct:
         correct_count += 1
 
     return results, correct_count
+
+# [NEW]
+def compute_bertscore(sentence1: str, sentence2: str):
+
+    cands = [sentence1]
+    refs = [sentence2]
+
+    P, R, F1 = score(cands, refs, lang="en", model_type="microsoft/deberta-large")
+
+    return float(P[0]), float(R[0]), float(F1[0])

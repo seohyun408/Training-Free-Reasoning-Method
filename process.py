@@ -286,6 +286,7 @@ class DatasetProcessor:
             # Test context vector effect
             pca_results, correct_count = test_context_vector_effect(
                 model=self.model,
+                question = question,
                 processor=self.processor,
                 tokenizer=self.tokenizer,
                 prefix_text=prefix_text,
