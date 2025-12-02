@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 import os
+import numpy as np
 import torch
 from PIL import Image
 
@@ -238,7 +239,7 @@ class DatasetProcessor:
             print(f"[contrastive] Generated {len(contrastive_result['all_samples'])} samples")
 
             # ========================================
-            #   STAGE 3. PCA Context Vector Testing
+            #   STAGE 3. PCA Context Vector Extraction
             # ========================================
 
             print("="*80)
@@ -259,7 +260,7 @@ class DatasetProcessor:
             negative_text = clean_prefix + "\n\nContinue the next reasoning step:" + negative_full
 
             # Extract hidden states
-            print("[PCA] Extracting hidden states from positive continuation...")
+            print("Extracting hidden states from positive continuation...")
             positive_hidden = extract_hidden_states(
                 model=self.model,
                 tokenizer=self.tokenizer,
@@ -267,7 +268,7 @@ class DatasetProcessor:
                 device=self.device
             )
 
-            print("[PCA] Extracting hidden states from negative continuation...")
+            print("Extracting hidden states from negative continuation...")
             negative_hidden = extract_hidden_states(
                 model=self.model,
                 tokenizer=self.tokenizer,
@@ -275,40 +276,34 @@ class DatasetProcessor:
                 device=self.device
             )
 
-            # Compute PCA context vector
-            print("[PCA] Computing PCA context vector...")
-            context_vector = compute_pca_context_vector(
-                positive_hidden=positive_hidden,
-                negative_hidden=negative_hidden,
-                n_components=1
-            )
+            hidden_diff = positive_hidden[-1, :] - negative_hidden[-1, :] 
+            
+            save_dir = os.path.join(os.path.dirname(__file__), "pca_data")
+            os.makedirs(save_dir, exist_ok=True)
+            save_path = os.path.join(save_dir, "vector_generation.npy")
+            
+            if os.path.exists(save_path):
+                existing_data = np.load(save_path, allow_pickle=True)
+                if existing_data.ndim == 2:
+                    all_diffs = [existing_data, hidden_diff]
+                else:
+                    all_diffs = list(existing_data) + [hidden_diff]
+                print(f"[PCA] Loaded existing data. Total samples: {len(all_diffs)}")
+            else:
+                all_diffs = [hidden_diff]
+            
+            np.save(save_path, np.array(all_diffs, dtype=object))
 
-            # Test context vector effect
-            pca_results, correct_count = test_context_vector_effect(
-                model=self.model,
-                question = question,
-                processor=self.processor,
-                tokenizer=self.tokenizer,
-                prefix_text=prefix_text,
-                positive_full=positive_full,
-                negative_full=negative_full,
-                context_vector=context_vector,
-                correct_answer=correct_answer,
-                device=self.device,
-                num_trials=int(os.getenv("PCA_NUM_TRIALS", "3")),
-                context_scales = [0.0, 1.0]
-                #context_scales=[0.0, 0.5, 1.0, 2.0, 5.0]  
-            )
 
-            # Add PCA results to contrastive_result
-            contrastive_result['pca_context'] = {
-                "context_vector_shape": context_vector.shape,
-                "results": {str(k): v for k, v in pca_results.items()}
-            }
+        #     # Add PCA results to contrastive_result
+        #     contrastive_result['pca_context'] = {
+        #         "context_vector_shape": context_vector.shape,
+        #         "results": {str(k): v for k, v in pca_results.items()}
+        #     }
 
-            print("/n")
-            print(f">>>>>> Ground Truth: {correct_answer}")
-            print(f">>>>>> Generate: {pca_results}")
+        #     print("/n")
+        #     print(f">>>>>> Ground Truth: {correct_answer}")
+        #     print(f">>>>>> Generate: {pca_results}")
 
 
         return {
@@ -325,3 +320,65 @@ class DatasetProcessor:
         }
 
 
+    def process_pca(self, pca_data):
+
+        context_vector = compute_pca_context_vector(
+            pca_data=pca_data,
+            n_components=1
+        )
+        
+        return context_vector
+
+
+    def evaluate_with_context_vector(self, context_vector, example):
+
+        # Extract QA pairs and image
+        conversation = example.get("conversations", [])
+        qa_pairs = extract_qa_pairs(conversation)
+        
+        image_file = example.get("image")
+        image_path = os.path.join(self.images_root, image_file)
+        image = Image.open(image_path).convert("RGB")
+        
+        eval_results = []
+        for pair_idx, (question, gpt_response) in enumerate(qa_pairs):
+            print(f"\n[Evaluate] Processing QA pair {pair_idx}...")
+            
+            correct_answer = None
+            for tag_pair in [("<final>", "</final>"), ("<CONCLUSION>", "</CONCLUSION>")]:
+                start_tag, end_tag = tag_pair
+                if start_tag in gpt_response and end_tag in gpt_response:
+                    start = gpt_response.find(start_tag) + len(start_tag)
+                    end = gpt_response.find(end_tag)
+                    correct_answer = gpt_response[start:end].strip()
+                    break
+            
+            eval_result, precision, recall, f1 = test_context_vector_effect(
+                model=self.model,
+                processor=self.processor,
+                tokenizer=self.tokenizer,
+                question=question,
+                image=image,
+                context_vector=context_vector,
+                correct_answer=correct_answer,
+                device=self.device,
+                num_trials=1,
+                context_scales=[0.0, 1.0, 2.0]
+            )
+            
+            eval_results.append({
+                "pair_idx": pair_idx,
+                "question": question,
+                "correct_answer": correct_answer,
+                "eval_result": eval_result,
+                "precision": precision,
+                "recall": recall,
+                "f1": f1
+            })
+        
+        return {
+            "image_path": image_path,
+            "total_pairs": len(qa_pairs),
+            "evaluated_pairs": len(eval_results),
+            "results": eval_results
+        }

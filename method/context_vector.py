@@ -45,30 +45,12 @@ def extract_hidden_states(
 
 
 def compute_pca_context_vector(
-    positive_hidden: np.ndarray,
-    negative_hidden: np.ndarray,
+    pca_data: np.ndarray,
     n_components: int = 1
 ) -> np.ndarray:
-    """
-    Compute PCA on (positive - negative) hidden states to extract context vector.
 
-    Args:
-        positive_hidden: Hidden states from positive continuation, shape (seq_len_pos, hidden_dim)
-        negative_hidden: Hidden states from negative continuation, shape (seq_len_neg, hidden_dim)
-        n_components: Number of PCA components (default: 1 for first principal component)
-
-    Returns:
-        Context vector: first principal component, shape (hidden_dim,)
-    """
-
-    min_len = min(positive_hidden.shape[0], negative_hidden.shape[0])
-
-    # Compute difference: positive - negative # token-level feature difference
-    diff = positive_hidden[:min_len, :] - negative_hidden[:min_len, :]  # (min_len, hidden_dim)
-
-    # Apply PCA
     pca = PCA(n_components=n_components)
-    pca.fit(diff)
+    pca.fit(pca_data)
 
     # First principal component is the context vector
     context_vector = pca.components_[0]  # (hidden_dim,)
@@ -79,55 +61,66 @@ def compute_pca_context_vector(
     return context_vector
 
 
-def generate_with_context_vector(
+def generate_reasoning_with_context_vector(
     model,
     processor,
     tokenizer,
-    prefix_text: str,
+    question: str,
+    image,
     context_vector: np.ndarray,
     context_scale: float,
     device: str,
-    max_new_tokens: int = 256,
+    max_new_tokens: int = 512,
     temperature: float = 0.7
 ) -> str:
-    """
-    Generate continuation with context vector added to hidden states.
 
-    This is implemented using a forward hook that adds the context vector
-    to the decoder's hidden states during generation.
+    system_prompt = (
+        "You are a helpful vision assistant analyzing images. "
+        "Please provide your reasoning in <think>...</think> tags with AT LEAST 5 numbered steps (1., 2., 3., 4., 5., ...). "
+        "You can include more steps if needed for thorough analysis. "
+        "Each step should be a complete sentence (15-40 words) that describes specific details from the image. "
+        "DO NOT use ellipsis (...) or placeholder text. Make each step concrete and informative. "
+        "After reasoning, provide the final answer in <final>...</final> tags."
+    )
+    
+    user_text = question.strip()
+    
+    messages = [
+        {"role": "system", "content": [
+            {"type": "text", "text": system_prompt}
+        ]},
+        {"role": "user", "content": [
+            {"type": "image", "image": image},
+            {"type": "text", "text": user_text}
+        ]}
+    ]
+    
+    apply_tmpl = getattr(processor, "apply_chat_template", None)
+    if apply_tmpl is None:
+        template_text = "<image>\n" + user_text
+    else:
+        template_text = processor.apply_chat_template(
+            messages,
+            add_generation_prompt=True,
+            tokenize=False
+        )
+    
+    inputs = processor(text=[template_text], images=[image], return_tensors="pt")
+    if isinstance(inputs, torch.Tensor):
+        inputs = {"input_ids": inputs}
+    else:
+        inputs = dict(inputs)
+    inputs = {k: (v.to(device) if hasattr(v, "to") else v) for k, v in inputs.items()}
 
-    Args:
-        model: The VLM model
-        processor: Model processor
-        tokenizer: Tokenizer
-        prefix_text: Text prefix (up to anchor)
-        context_vector: PCA context vector to add, shape (hidden_dim,)
-        context_scale: Scaling factor for context vector (e.g., 1.0, 0.5)
-        device: Device
-        max_new_tokens: Maximum tokens to generate
-        temperature: Sampling temperature
-
-    Returns:
-        Generated continuation text
-    """
-    # Clean prefix
-    clean_prefix = prefix_text
-    for vision_token in ["<|vision_start|>", "<|vision_end|>", "<|image_pad|>"]:
-        clean_prefix = clean_prefix.replace(vision_token, "")
-    clean_prefix = clean_prefix.strip()
-
-    full_text = clean_prefix + "\n\nContinue the next reasoning step:"
-
-    # Tokenize
-    inputs = tokenizer(full_text, return_tensors="pt").to(device)
-
-    # Convert context vector to tensor
     context_tensor = torch.from_numpy(context_vector).float().to(device)
 
     # Hook to add context vector to hidden states
+    # This will be applied to ALL layers for ALL tokens
     def add_context_hook(module, input, output):
-        """Add context vector to hidden states."""
-        # output is typically a tuple (hidden_states, ...)
+        """
+        Add context vector to hidden states for all tokens in all layers.
+        """
+        # Handle different output types
         if isinstance(output, tuple):
             hidden_states = output[0]
         else:
@@ -136,6 +129,7 @@ def generate_with_context_vector(
         # Add context vector to all positions
         # hidden_states shape: (batch_size, seq_len, hidden_dim)
         if hidden_states.shape[-1] == context_tensor.shape[0]:
+            # Add scaled context vector to all tokens
             hidden_states = hidden_states + context_scale * context_tensor.unsqueeze(0).unsqueeze(0)
 
             if isinstance(output, tuple):
@@ -144,14 +138,23 @@ def generate_with_context_vector(
                 return hidden_states
         return output
 
-    # Register hook on the last decoder layer
-    # For Qwen models, this is typically model.model.layers[-1]
-    hook_handle = None
+    # Get EOS token
+    eos_id = None
+    if hasattr(processor, 'tokenizer') and hasattr(processor.tokenizer, 'eos_token_id'):
+        eos_id = processor.tokenizer.eos_token_id
+
+    # Register hooks on ALL decoder layers
+    # For QWEN-VL: model.model.layers contains all transformer layers
+    hook_handles = []
     try:
         if hasattr(model, 'model') and hasattr(model.model, 'layers'):
-            hook_handle = model.model.layers[-1].register_forward_hook(add_context_hook)
+            num_layers = len(model.model.layers)
+            print(f"[Context Vector] Registering hooks on {num_layers} layers (scale={context_scale})")
+            for layer_idx, layer in enumerate(model.model.layers):
+                handle = layer.register_forward_hook(add_context_hook)
+                hook_handles.append(handle)
 
-        # Generate with context
+        # Generate reasoning with context vector applied to all layers
         with torch.no_grad():
             outputs = model.generate(
                 **inputs,
@@ -159,113 +162,122 @@ def generate_with_context_vector(
                 do_sample=True,
                 temperature=temperature,
                 top_p=0.95,
-                pad_token_id=tokenizer.pad_token_id,
-                eos_token_id=tokenizer.eos_token_id
+                eos_token_id=eos_id,
+                pad_token_id=eos_id,
+                use_cache=True
             )
 
-        # Decode
-        full_output = tokenizer.decode(outputs[0], skip_special_tokens=True, clean_up_tokenization_spaces=True)
-
-        # Extract only the generated part (after the prompt)
-        if full_text in full_output:
-            continuation = full_output.split(full_text, 1)[1].strip()
-        else:
-            continuation = full_output.strip()
+        # Decode (same as reasoning_generation.py)
+        input_len = inputs.get("input_ids").shape[-1] if inputs.get("input_ids") is not None else 0
+        decoder = tokenizer if hasattr(tokenizer, "batch_decode") else processor
+        generated_text = decoder.batch_decode(outputs[:, input_len:], skip_special_tokens=True)[0]
 
     finally:
-        # Remove hook
-        if hook_handle is not None:
-            hook_handle.remove()
+        # Remove all hooks
+        for handle in hook_handles:
+            handle.remove()
 
-    return continuation
+    return generated_text
 
 
 def test_context_vector_effect(
     model,
-    question,
     processor,
     tokenizer,
-    prefix_text: str,
-    positive_full: str,
-    negative_full: str,
+    question: str,
+    image,
     context_vector: np.ndarray,
     correct_answer: str,
     device: str,
     num_trials: int,
-    context_scales: float
-) -> Tuple[str, int]:
-    """
-    Test the effect of context vector on answer accuracy.
+    context_scales: List[float]
+) -> Tuple[Dict, float, float, float]:
+ 
+    def normalize_answer(ans):
+        """Normalize answer for comparison."""
+        if ans is None:
+            return ""
+        return ans.lower().strip()
 
-    Generate multiple times with different context scales and measure
-    how often the correct answer is produced.
-
-    Args:
-        model: The VLM model
-        processor: Model processor
-        tokenizer: Tokenizer
-        prefix_text: Text prefix (up to anchor)
-        positive_full: Full positive continuation (for reference)
-        negative_full: Full negative continuation (for reference)
-        context_vector: PCA context vector
-        correct_answer: Expected correct answer
-        device: Device
-        num_trials: Number of generations per scale
-        context_scales: List of scaling factors to test
-
-    Returns:
-        Dictionary with results for each scale
-    """
-    results = {}
+    all_results = {}
+    all_precisions = []
+    all_recalls = []
+    all_f1s = []
+    
+    print(f"\n{'='*80}")
+    print(f"🎯 Testing Context Vector Effect")
+    print(f"   Question: {question[:100]}...")
+    print(f"   Ground Truth: {correct_answer}")
+    print(f"{'='*80}\n")
+    
     for scale in context_scales:
-        print("\n" + "="*80)
-        print(f"Testing Context Vector Effect == scale = {scale}")
-        print("="*80)
+        print(f"\n{'='*80}")
+        print(f"📊 Testing Scale = {scale}")
+        print(f"{'='*80}")
+        
+        scale_results = []
+        scale_correct = 0
+        
+        for trial_idx in range(num_trials):
+            print(f"\n  Trial {trial_idx + 1}/{num_trials}:")
+            
+            # Generate reasoning with context vector applied to all layers
+            reasoning = generate_reasoning_with_context_vector(
+                model=model,
+                processor=processor,
+                tokenizer=tokenizer,
+                question=question,
+                image=image,
+                context_vector=context_vector,
+                context_scale=scale,
+                device=device,
+                max_new_tokens=512,
+                temperature=0.7
+            )
+            
+            generated_answer = extract_final_answer(reasoning)
+            
+            is_correct = normalize_answer(generated_answer) == normalize_answer(correct_answer)
+            
+            if is_correct:
+                scale_correct += 1
+            
+            status = "✅" if is_correct else "❌"
+            print(f"  {status} Generated: {generated_answer}")
+            print(f"     Ground Truth: {correct_answer}")
+            
+            # Compute BERTScore
+            precision, recall, f1 = compute_bertscore(generated_answer, correct_answer)
+            
+            print(f"  🌟 BERTScore - P: {precision:.4f}, R: {recall:.4f}, F1: {f1:.4f}")
+            
+            all_precisions.append(precision)
+            all_recalls.append(recall)
+            all_f1s.append(f1)
+            
+        accuracy = scale_correct / num_trials if num_trials > 0 else 0.0
+        print(f"\n  📈 Scale {scale} Results:")
+        print(f"     Accuracy: {scale_correct}/{num_trials} = {accuracy:.2%}")
+        
+        all_results[float(scale)] = {
+            "accuracy": accuracy,
+            "correct_count": scale_correct,
+            "total_trials": num_trials,
+            "trials": scale_results
+        }
 
-        correct_count = 0
-        generated_answers = ""
+    avg_precision = np.mean(all_precisions) 
+    avg_recall = np.mean(all_recalls) 
+    avg_f1 = np.mean(all_f1s) 
+    
+    print(f"\n{'='*80}")
+    print(f"📊 Overall Results:")
+    print(f"   Avg BERTScore - P: {avg_precision:.4f}, R: {avg_recall:.4f}, F1: {avg_f1:.4f}")
+    print(f"{'='*80}\n")
+    
+    return all_results, avg_precision, avg_recall, avg_f1
 
-        continuation = generate_with_context_vector(
-            model=model,
-            processor=processor,
-            tokenizer=tokenizer,
-            prefix_text=prefix_text,
-            context_vector=context_vector,
-            context_scale=scale,
-            device=device,
-            max_new_tokens=256,
-            temperature=0.9
-        )
 
-        generated_answers = extract_final_answer(continuation)
-
-        # Check if correct
-        def normalize_answer(ans):
-            if ans is None:
-                return ""
-            return ans.lower().strip()
-
-        is_correct = normalize_answer(generated_answers) == normalize_answer(correct_answer)
-
-        status = "✅" if is_correct else "❌"
-        # [NEW]
-        print(f"{status} Answer={generated_answers} // Ground Truth={question+correct_answer}")
-
-        results[scale] = generated_answers
-
-        # [NEW]
-        precision, recall, f1 = compute_bertscore(generated_answers, question+correct_answer)
-
-        print("🌟 Precision:", precision)
-        print("🌟 Recall:", recall)
-        print("🌟 F1:", f1)
-
-    if is_correct:
-        correct_count += 1
-
-    return results, correct_count
-
-# [NEW]
 def compute_bertscore(sentence1: str, sentence2: str):
 
     cands = [sentence1]

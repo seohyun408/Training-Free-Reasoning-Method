@@ -309,7 +309,8 @@ def generate_from_anchor(
         "positive_probability": positive_sample["answer_probability"],
         "negative_probability": negative_sample["answer_probability"],
         "all_samples": samples,
-        "correct_answer": correct_answer
+        "correct_answer": correct_answer,
+        "prefix_text": prefix_text  # Add prefix_text for later use
     }
 
 

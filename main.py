@@ -51,7 +51,8 @@ def build_parser():
     p.add_argument("--no-sampling", dest="do_sample", action="store_false", help="Disable sampling (use greedy decoding)")
     p.add_argument("--max_attempts", type=int, default=2, help="Attempt loop with fallback prompts")
     p.add_argument("--contrastive_samples", type=int, default=5, help="Number of samples for contrastive generation")
-    p.add_argument("--output_dir", default="outputs", help="Directory to save results")
+    p.add_argument("--output_dir", default="outputs", help="Directory to save contrastive results")
+    p.add_argument("--output_dir2", default="outputs2", help="Directory to save PCA results")
 
     ## ENVIRONMENT (etc)
     p.add_argument("--images_root", default="/scratch/tjgus0408/huggingface/datasets/LLaVA-CoT-100k", help="Directory containing images")
@@ -119,11 +120,12 @@ def main():
     model = model.to(device)
     tokenizer = getattr(processor, "tokenizer", None)
 
-
     print(f"\n>>>>>> Start Processing")
-    results = []
+
     output_dir = Path(args.output_dir)
     output_dir.mkdir(exist_ok=True)
+    output_dir2 = Path(args.output_dir2)
+    output_dir2.mkdir(exist_ok=True)
 
     proc = DatasetProcessor(
         args=args,
@@ -136,8 +138,6 @@ def main():
         model_name=args.model_name
     )
 
-    cnt = 0
-    acc = 0
     for idx, example in enumerate(tqdm(dataset, desc="Processing examples")):
         print(f"\nProcessing example {idx+1}/{len(dataset)}")
         result = proc.process_sample(example)
@@ -148,25 +148,27 @@ def main():
         print("+"*10)
         print(cnt)
         print("+"*10)
-        for x in results:
-            print("check"*10)
-            score = int(x["is_correct"])
-            acc += score
-            cnt += 1
-
-            if cnt == 2:
-                print(acc, cnt)
-                return
 
         with open(output_dir / f"example_{idx}.json", "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
-
-
-
-    print("\n" + "="*80)
-    print(f"🏁 Processing Complete - ACC: {acc/cnt:.4f}")
-    print("="*80)
     
+        # 여기서 Context Vector 만들 데이터셋 갯수 조절하세요 ! ><
+        if cnt > 3:
+            print(acc, cnt)
+            break
+
+
+    print(f"\n>>>>>> Start Vector Generation")
+    pca_data = np.load('pca_data/vector_generation.npy', allow_pickle=True)
+    context_vector = proc.process_pca(pca_data)
+
+
+    print(f"\n>>>>>> Evaluation with Context Vector")
+    for idx, example in enumerate(tqdm(dataset, desc="Evaluation")):
+        pca_results = proc.evaluate_with_context_vector(context_vector, example)
+
+        with open(output_dir2 / f"example_{idx}.json", "w", encoding="utf-8") as f:
+            json.dump(pca_results, f, indent=2, ensure_ascii=False)
     
     if USE_WANDB:
         wandb.finish()
