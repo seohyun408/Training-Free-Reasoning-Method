@@ -321,8 +321,16 @@ class DatasetProcessor:
 
     def process_pca(self, pca_data):
 
+        if pca_data.dtype == object:
+            print(f"[PCA] Sample 0 shape: {pca_data[0].shape}")
+            stacked_data = np.vstack([sample.reshape(1, -1) for sample in pca_data])
+        else:
+            stacked_data = pca_data
+        
+        print(f"[PCA] Stacked data shape: {stacked_data.shape}")
+        
         context_vector = compute_pca_context_vector(
-            pca_data=pca_data,
+            pca_data=stacked_data,
             n_components=1
         )
         
@@ -352,7 +360,7 @@ class DatasetProcessor:
                     correct_answer = gpt_response[start:end].strip()
                     break
             
-            eval_result, precision, recall, f1 = test_context_vector_effect(
+            eval_result = test_context_vector_effect(
                 model=self.model,
                 processor=self.processor,
                 tokenizer=self.tokenizer,

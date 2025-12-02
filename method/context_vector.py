@@ -200,9 +200,6 @@ def test_context_vector_effect(
         return ans.lower().strip()
 
     all_results = {}
-    all_precisions = []
-    all_recalls = []
-    all_f1s = []
     
     print(f"\n{'='*80}")
     print(f"🎯 Testing Context Vector Effect")
@@ -217,6 +214,9 @@ def test_context_vector_effect(
         
         scale_results = []
         scale_correct = 0
+        scale_precisions = []
+        scale_recalls = []
+        scale_f1s = []
         
         for trial_idx in range(num_trials):
             print(f"\n  Trial {trial_idx + 1}/{num_trials}:")
@@ -251,31 +251,36 @@ def test_context_vector_effect(
             
             print(f"  🌟 BERTScore - P: {precision:.4f}, R: {recall:.4f}, F1: {f1:.4f}")
             
-            all_precisions.append(precision)
-            all_recalls.append(recall)
-            all_f1s.append(f1)
+            scale_precisions.append(precision)
+            scale_recalls.append(recall)
+            scale_f1s.append(f1)
             
         accuracy = scale_correct / num_trials if num_trials > 0 else 0.0
+        avg_precision = np.mean(scale_precisions) 
+        avg_recall = np.mean(scale_recalls) 
+        avg_f1 = np.mean(scale_f1s) 
+        
         print(f"\n  📈 Scale {scale} Results:")
         print(f"     Accuracy: {scale_correct}/{num_trials} = {accuracy:.2%}")
+        print(f"     BERTScore - P: {avg_precision:.4f}, R: {avg_recall:.4f}, F1: {avg_f1:.4f}")
         
         all_results[float(scale)] = {
             "accuracy": accuracy,
             "correct_count": scale_correct,
             "total_trials": num_trials,
+            "bertscore": {
+                "precision": avg_precision,
+                "recall": avg_recall,
+                "f1": avg_f1
+            },
             "trials": scale_results
         }
-
-    avg_precision = np.mean(all_precisions) 
-    avg_recall = np.mean(all_recalls) 
-    avg_f1 = np.mean(all_f1s) 
     
     print(f"\n{'='*80}")
-    print(f"📊 Overall Results:")
-    print(f"   Avg BERTScore - P: {avg_precision:.4f}, R: {avg_recall:.4f}, F1: {avg_f1:.4f}")
+    print(f"📊 All Scales Completed")
     print(f"{'='*80}\n")
     
-    return all_results, avg_precision, avg_recall, avg_f1
+    return all_results
 
 
 def compute_bertscore(sentence1: str, sentence2: str):

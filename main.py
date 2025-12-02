@@ -3,6 +3,7 @@ import json
 import wandb
 import argparse
 import numpy as np
+import shutil
 import torch
 import torch.nn.functional as F
 
@@ -139,6 +140,10 @@ def main():
         model_name=args.model_name
     )
 
+    pca_npy_dir = os.path.join(os.path.dirname(__file__), "pca_data")
+    if os.path.exists(pca_npy_dir) and os.path.isdir(pca_npy_dir):
+        shutil.rmtree(pca_npy_dir)
+
     cnt = 0
     for idx, example in enumerate(tqdm(dataset, desc="Processing examples")):
         print(f"\nProcessing example {idx+1}/{len(dataset)}")
@@ -156,7 +161,7 @@ def main():
             json.dump(result, f, indent=2, ensure_ascii=False)
     
         # 여기서 Context Vector 만들 데이터셋 갯수 조절하세요 ! ><
-        if cnt > 3:
+        if cnt > 2:
             print(cnt)
             break
 
