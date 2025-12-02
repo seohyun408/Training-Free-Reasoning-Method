@@ -278,21 +278,32 @@ class DatasetProcessor:
 
             hidden_diff = positive_hidden[-1, :] - negative_hidden[-1, :] 
             
-            save_dir = os.path.join(os.path.dirname(__file__), "pca_data")
+            # save_dir = os.path.join(os.path.dirname(__file__), "pca_data")
+            # os.makedirs(save_dir, exist_ok=True)
+            # save_path = os.path.join(save_dir, "vector_generation.npy")
+            
+            # if os.path.exists(save_path):
+            #     existing_data = np.load(save_path, allow_pickle=True)
+            #     if existing_data.ndim == 2:
+            #         all_diffs = [existing_data, hidden_diff]
+            #     else:
+            #         all_diffs = list(existing_data) + [hidden_diff]
+            #     print(f"[PCA] Loaded existing data. Total samples: {len(all_diffs)}")
+            # else:
+            #     all_diffs = [hidden_diff]
+            
+            # np.save(save_path, np.array(all_diffs, dtype=object))
+
+            import uuid
+
+            save_dir = os.path.join(os.path.dirname(__file__), "pca_data_temp")
             os.makedirs(save_dir, exist_ok=True)
-            save_path = os.path.join(save_dir, "vector_generation.npy")
             
-            if os.path.exists(save_path):
-                existing_data = np.load(save_path, allow_pickle=True)
-                if existing_data.ndim == 2:
-                    all_diffs = [existing_data, hidden_diff]
-                else:
-                    all_diffs = list(existing_data) + [hidden_diff]
-                print(f"[PCA] Loaded existing data. Total samples: {len(all_diffs)}")
-            else:
-                all_diffs = [hidden_diff]
+            unique_filename = f"vector_{uuid.uuid4()}.npy"
+            save_path = os.path.join(save_dir, unique_filename)
             
-            np.save(save_path, np.array(all_diffs, dtype=object))
+            np.save(save_path, hidden_diff)
+            contrastive_result['pca_vector_path'] = save_path
 
 
         #     # Add PCA results to contrastive_result
@@ -378,9 +389,9 @@ class DatasetProcessor:
                 "question": question,
                 "correct_answer": correct_answer,
                 "eval_result": eval_result,
-                "precision": precision,
-                "recall": recall,
-                "f1": f1
+                # "precision": precision,
+                # "recall": recall,
+                # "f1": f1
             })
         
         return {
