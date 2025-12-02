@@ -316,7 +316,6 @@ class DatasetProcessor:
             "anchor_vector": anchor_vector.tolist() if hasattr(anchor_vector, "tolist") else anchor_vector,
             "kl_matrix_shape": getattr(kl_matrix, "shape", None),
             "contrastive": contrastive_result,
-            "is_correct": correct_count
         }
 
 

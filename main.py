@@ -83,6 +83,7 @@ def main():
 
     print(f"\n>>>>>> Loading Dataset: {args.dataset_name}")
     dataset = load_dataset("Xkev/LLaVA-CoT-100k", split="train", cache_dir=DATASETS_CACHE)
+    dataset = dataset.filter(lambda x: 'coco' in x.get('image', '').lower())
     print(f"Loaded {len(dataset)} examples")
 
 
@@ -138,6 +139,7 @@ def main():
         model_name=args.model_name
     )
 
+    cnt = 0
     for idx, example in enumerate(tqdm(dataset, desc="Processing examples")):
         print(f"\nProcessing example {idx+1}/{len(dataset)}")
         result = proc.process_sample(example)
@@ -146,6 +148,7 @@ def main():
 
         results = result["qa_pairs"]
         print("+"*10)
+        cnt += 1
         print(cnt)
         print("+"*10)
 
@@ -154,7 +157,7 @@ def main():
     
         # 여기서 Context Vector 만들 데이터셋 갯수 조절하세요 ! ><
         if cnt > 3:
-            print(acc, cnt)
+            print(cnt)
             break
 
 
