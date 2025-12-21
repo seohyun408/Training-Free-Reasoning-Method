@@ -259,7 +259,7 @@ class DatasetProcessor:
             positive_text = clean_prefix + "\n\nContinue the next reasoning step:" + positive_full
             negative_text = clean_prefix + "\n\nContinue the next reasoning step:" + negative_full
 
-            # Extract hidden states
+            # Extract hidden states from ALL layers
             print("Extracting hidden states from positive continuation...")
             positive_hidden = extract_hidden_states(
                 model=self.model,
@@ -267,6 +267,7 @@ class DatasetProcessor:
                 text=positive_text,
                 device=self.device
             )
+            # positive_hidden shape: (num_layers, seq_len, hidden_dim)
 
             print("Extracting hidden states from negative continuation...")
             negative_hidden = extract_hidden_states(
@@ -275,8 +276,14 @@ class DatasetProcessor:
                 text=negative_text,
                 device=self.device
             )
+            # negative_hidden shape: (num_layers, seq_len, hidden_dim)
 
-            hidden_diff = positive_hidden[-1, :] - negative_hidden[-1, :] 
+            # Compute difference for ALL layers at the last token position
+            # hidden_diff shape: (num_layers, hidden_dim)
+            hidden_diff = positive_hidden[:, -1, :] - negative_hidden[:, -1, :]
+            
+            print(f"[Hidden Diff] Computed difference across {hidden_diff.shape[0]} layers, "
+                  f"hidden_dim={hidden_diff.shape[1]}")
             
             save_dir = os.path.join(os.path.dirname(__file__), "pca_data")
             os.makedirs(save_dir, exist_ok=True)
@@ -284,8 +291,10 @@ class DatasetProcessor:
             
             if os.path.exists(save_path):
                 existing_data = np.load(save_path, allow_pickle=True)
-                if existing_data.ndim == 2:
-                    all_diffs = [existing_data, hidden_diff]
+                # Each sample has shape (num_layers, hidden_dim)
+                if existing_data.ndim == 3:
+                    # existing_data shape: (num_samples, num_layers, hidden_dim)
+                    all_diffs = list(existing_data) + [hidden_diff]
                 else:
                     all_diffs = list(existing_data) + [hidden_diff]
                 print(f"[PCA] Loaded existing data. Total samples: {len(all_diffs)}")
@@ -320,19 +329,40 @@ class DatasetProcessor:
 
 
     def process_pca(self, pca_data):
-
+        """
+        Process PCA data to compute context vectors for all layers.
+        
+        Args:
+            pca_data: numpy array with shape (num_samples, num_layers, hidden_dim)
+                      or object array where each element is (num_layers, hidden_dim)
+        
+        Returns:
+            context_vector: numpy array with shape (num_layers, hidden_dim)
+        """
         if pca_data.dtype == object:
+            # Object array - each element is (num_layers, hidden_dim)
             print(f"[PCA] Sample 0 shape: {pca_data[0].shape}")
-            stacked_data = np.vstack([sample.reshape(1, -1) for sample in pca_data])
+            num_samples = len(pca_data)
+            
+            # Check if samples are layer-wise (2D: num_layers x hidden_dim)
+            if pca_data[0].ndim == 2:
+                # Stack into (num_samples, num_layers, hidden_dim)
+                stacked_data = np.stack([sample for sample in pca_data], axis=0)
+                print(f"[PCA] Stacked layer-wise data shape: {stacked_data.shape}")
+            else:
+                # Backward compatibility: 1D samples (hidden_dim,)
+                stacked_data = np.vstack([sample.reshape(1, -1) for sample in pca_data])
+                print(f"[PCA] Stacked single-layer data shape: {stacked_data.shape}")
         else:
             stacked_data = pca_data
-        
-        print(f"[PCA] Stacked data shape: {stacked_data.shape}")
+            print(f"[PCA] Input data shape: {stacked_data.shape}")
         
         context_vector = compute_pca_context_vector(
             pca_data=stacked_data,
             n_components=1
         )
+        
+        print(f"[PCA] Final context vector shape: {context_vector.shape}")
         
         return context_vector
 
@@ -377,10 +407,7 @@ class DatasetProcessor:
                 "pair_idx": pair_idx,
                 "question": question,
                 "correct_answer": correct_answer,
-                "eval_result": eval_result,
-                "precision": precision,
-                "recall": recall,
-                "f1": f1
+                "eval_result": eval_result
             })
         
         return {

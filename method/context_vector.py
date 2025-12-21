@@ -17,7 +17,7 @@ def extract_hidden_states(
     device: str
 ) -> np.ndarray:
     """
-    Extract hidden states from the model for given text.
+    Extract hidden states from ALL layers of the model for given text.
 
     Args:
         model: The VLM model
@@ -26,20 +26,28 @@ def extract_hidden_states(
         device: Device
 
     Returns:
-        Hidden states as numpy array, shape (seq_len, hidden_dim)
+        Hidden states as numpy array, shape (num_layers, seq_len, hidden_dim)
+        - num_layers: Number of transformer layers 
+        - seq_len: Sequence length
+        - hidden_dim: Hidden dimension size
     """
     # Tokenize
     inputs = tokenizer(text, return_tensors="pt").to(device)
 
-    # Get hidden states
+    # Get hidden states from ALL layers
     with torch.no_grad():
         outputs = model(**inputs, output_hidden_states=True, return_dict=True)
-        # outputs.hidden_states is a tuple of (num_layers, batch_size, seq_len, hidden_dim)
-        # We use the last layer
-        last_hidden_state = outputs.hidden_states[-1]  # (batch_size, seq_len, hidden_dim)
+        # Each tensor has shape (batch_size, seq_len, hidden_dim)
+        # Index 0 is embedding layer output, indices 1~num_layers are transformer layer outputs
+        all_hidden_states = outputs.hidden_states[1:]  # tuple of num_layers tensors
+        stacked_hidden = torch.stack(all_hidden_states, dim=0)
+        hidden_states = stacked_hidden[:, 0, :, :]
 
-    # Convert to numpy and remove batch dimension
-    hidden_states = last_hidden_state[0].cpu().numpy()  # (seq_len, hidden_dim)
+    # Convert to numpy
+    hidden_states = hidden_states.cpu().numpy()  # (num_layers, seq_len, hidden_dim)
+    
+    print(f"[Hidden States] Extracted from {hidden_states.shape[0]} layers, "
+          f"seq_len={hidden_states.shape[1]}, hidden_dim={hidden_states.shape[2]}")
 
     return hidden_states
 
@@ -48,17 +56,54 @@ def compute_pca_context_vector(
     pca_data: np.ndarray,
     n_components: int = 1
 ) -> np.ndarray:
+    """
+    Compute PCA context vector for each layer.
+    
+    Args:
+        pca_data: numpy array with shape (num_samples, num_layers, hidden_dim)
+                  or (num_samples, hidden_dim) for backward compatibility
+        n_components: Number of PCA components
+        
+    Returns:
+        Context vectors with shape (num_layers, hidden_dim) or (hidden_dim,)
+    """
 
-    pca = PCA(n_components=n_components)
-    pca.fit(pca_data)
+    if pca_data.ndim == 3:
+        # Shape: (num_samples, num_layers, hidden_dim)
+        num_samples, num_layers, hidden_dim = pca_data.shape
+        print(f"[PCA] Computing context vectors for {num_layers} layers "
+              f"with {num_samples} samples, hidden_dim={hidden_dim}")
+        
+        context_vectors = []
+        explained_variances = []
+        
+        for layer_idx in range(num_layers):
+            # Extract data for this layer: (num_samples, hidden_dim)
+            layer_data = pca_data[:, layer_idx, :]
+            
+            pca = PCA(n_components=n_components)
+            pca.fit(layer_data)
+            
+            # First principal component is the context vector for this layer
+            layer_context_vector = pca.components_[0]  # (hidden_dim,)
+            context_vectors.append(layer_context_vector)
+            explained_variances.append(pca.explained_variance_ratio_[0])
+        
+        context_vectors = np.array(context_vectors)  # (num_layers, hidden_dim)
+        
+        return context_vectors
+    
+    else:
+        pca = PCA(n_components=n_components)
+        pca.fit(pca_data)
 
-    # First principal component is the context vector
-    context_vector = pca.components_[0]  # (hidden_dim,)
+        # First principal component is the context vector
+        context_vector = pca.components_[0]  # (hidden_dim,)
 
-    print(f"[PCA] Explained variance ratio: {pca.explained_variance_ratio_[0]:.4f}")
-    print(f"[PCA] Context vector shape: {context_vector.shape}")
+        print(f"[PCA] Explained variance ratio: {pca.explained_variance_ratio_[0]:.4f}")
+        print(f"[PCA] Context vector shape: {context_vector.shape}")
 
-    return context_vector
+        return context_vector
 
 
 def generate_reasoning_with_context_vector(
@@ -112,46 +157,70 @@ def generate_reasoning_with_context_vector(
         inputs = dict(inputs)
     inputs = {k: (v.to(device) if hasattr(v, "to") else v) for k, v in inputs.items()}
 
+    # Handle both layer-wise (num_layers, hidden_dim) and single (hidden_dim,) context vectors
     context_tensor = torch.from_numpy(context_vector).float().to(device)
+    is_layer_wise = context_tensor.ndim == 2  # (num_layers, hidden_dim)
+    
+    if is_layer_wise:
+        print(f"[Context Vector] Layer-wise context vectors: {context_tensor.shape}")
+    else:
+        print(f"[Context Vector] Single context vector for all layers: {context_tensor.shape}")
 
-    # Hook to add context vector to hidden states
-    # This will be applied to ALL layers for ALL tokens
-    def add_context_hook(module, input, output):
+    def make_layer_hook(layer_idx):
         """
-        Add context vector to hidden states for all tokens in all layers.
+        Create a hook for a specific layer that adds the appropriate context vector.
         """
-        # Handle different output types
-        if isinstance(output, tuple):
-            hidden_states = output[0]
-        else:
-            hidden_states = output
-
-        # Add context vector to all positions
-        # hidden_states shape: (batch_size, seq_len, hidden_dim)
-        if hidden_states.shape[-1] == context_tensor.shape[0]:
-            # Add scaled context vector to all tokens
-            hidden_states = hidden_states + context_scale * context_tensor.unsqueeze(0).unsqueeze(0)
-
+        def add_context_hook(module, input, output):
+            """
+            Add layer-specific context vector to hidden states for all tokens.
+            """
+            # Handle different output types
             if isinstance(output, tuple):
-                return (hidden_states,) + output[1:]
+                hidden_states = output[0]
             else:
-                return hidden_states
-        return output
+                hidden_states = output
+
+            # Get the context vector for this layer
+            if is_layer_wise:
+                layer_context = context_tensor[layer_idx]  # (hidden_dim,)
+            else:
+                layer_context = context_tensor  # (hidden_dim,)
+
+            # Add context vector to all positions
+            # hidden_states shape: (batch_size, seq_len, hidden_dim)
+            if hidden_states.shape[-1] == layer_context.shape[0]:
+                # Add scaled context vector to all tokens
+                hidden_states = hidden_states + context_scale * layer_context.unsqueeze(0).unsqueeze(0)
+
+                if isinstance(output, tuple):
+                    return (hidden_states,) + output[1:]
+                else:
+                    return hidden_states
+            return output
+        return add_context_hook
 
     # Get EOS token
     eos_id = None
     if hasattr(processor, 'tokenizer') and hasattr(processor.tokenizer, 'eos_token_id'):
         eos_id = processor.tokenizer.eos_token_id
 
-    # Register hooks on ALL decoder layers
+    # Register hooks on ALL decoder layers with layer-specific context vectors
     # For QWEN-VL: model.model.layers contains all transformer layers
     hook_handles = []
     try:
         if hasattr(model, 'model') and hasattr(model.model, 'layers'):
             num_layers = len(model.model.layers)
             print(f"[Context Vector] Registering hooks on {num_layers} layers (scale={context_scale})")
+            
+            # Validate layer count if using layer-wise vectors
+            if is_layer_wise and context_tensor.shape[0] != num_layers:
+                print(f"[Warning] Context vector has {context_tensor.shape[0]} layers, "
+                      f"but model has {num_layers} layers. Using min of both.")
+            
             for layer_idx, layer in enumerate(model.model.layers):
-                handle = layer.register_forward_hook(add_context_hook)
+                # Create layer-specific hook
+                hook = make_layer_hook(layer_idx)
+                handle = layer.register_forward_hook(hook)
                 hook_handles.append(handle)
 
         # Generate reasoning with context vector applied to all layers
