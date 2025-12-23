@@ -161,7 +161,7 @@ def main():
             json.dump(result, f, indent=2, ensure_ascii=False)
     
         # 여기서 Context Vector 만들 데이터셋 갯수 조절하세요 ! ><
-        if cnt >= 5:
+        if cnt >= 3:
             print(cnt)
             break
 
