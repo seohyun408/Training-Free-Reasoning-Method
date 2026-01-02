@@ -14,15 +14,13 @@ from reasoning_generation import *
 from attention_analysis.attn_supp_funcs import compute_suppression_kl_matrix2
 from calculate_anchor import compute_anchor_vector, print_anchor_summary
 
-
-
 from contrastive_generation import generate_from_anchor, extract_anchor_prefix
-from context_vector import extract_hidden_states, compute_pca_context_vector, test_context_vector_effect
+from context_vector import extract_hidden_states, compute_pca_context_vector
+from evaluate import test_context_vector_effect
 
-
-
-from utils import extract_qa_pairs, extract_reasoning_from_response, split_solution_into_chunks, \
-                get_chunk_token_ranges
+from utils import * 
+#extract_qa_pairs, extract_reasoning_from_response, split_solution_into_chunks, \
+                # get_chunk_token_ranges
 
 
 class DatasetProcessor:
@@ -35,7 +33,8 @@ class DatasetProcessor:
         device: str,
         images_root: str,
         generate_reasoning: bool,
-        model_name: str
+        model_name: str,
+        dataset_name: str 
     ):
         self.args = args
         self.model = model
@@ -45,23 +44,26 @@ class DatasetProcessor:
         self.images_root = images_root
         self.generate_reasoning = generate_reasoning
         self.model_name = model_name
+        self.dataset_name = dataset_name
 
 
     def process_sample(self, example):
-        """
-        Input: {
-            'id': ..., 
-            'image': ...,
-            'conversations': [{'from': 'human', 'value': ...}, {'from': 'gpt', 'value': ...}]
-            }
-        """
-        conversation = example.get("conversations", [])
-        qa_pairs = extract_qa_pairs(conversation)
-        
-        image_file = example.get("image")
-        image_path = os.path.join(self.images_root, image_file)
-        image = Image.open(image_path).convert("RGB")
-        print("image_path >>> ", image_path)
+
+        if self.dataset_name == "ai2d":
+            qa_pairs = extract_qa_pairs_ai2d(example)
+            image = example.get("image")
+            if not isinstance(image, Image.Image):
+                image = Image.open(image).convert("RGB")
+            else:
+                image = image.convert("RGB")
+        else:
+            # LLaVA-CoT 데이터셋 처리
+            conversation = example.get("conversations", [])
+            qa_pairs = extract_qa_pairs(conversation)
+            image_file = example.get("image")
+            image_path = os.path.join(self.images_root, image_file)
+            image = Image.open(image_path).convert("RGB")
+            print("image_path >>> ", image_path)
         
         # Process each QA pair
         results = []
@@ -78,7 +80,7 @@ class DatasetProcessor:
         return {
             "total_pairs": len(qa_pairs),
             "successful_pairs": len(results),
-            "image_path": image_path,
+            # "image_path": image_path,
             "qa_pairs": results
         }
 
@@ -304,17 +306,6 @@ class DatasetProcessor:
             np.save(save_path, np.array(all_diffs, dtype=object))
 
 
-        #     # Add PCA results to contrastive_result
-        #     contrastive_result['pca_context'] = {
-        #         "context_vector_shape": context_vector.shape,
-        #         "results": {str(k): v for k, v in pca_results.items()}
-        #     }
-
-        #     print("/n")
-        #     print(f">>>>>> Ground Truth: {correct_answer}")
-        #     print(f">>>>>> Generate: {pca_results}")
-
-
         return {
             "pair_idx": pair_idx,
             "question": question,
@@ -340,42 +331,34 @@ class DatasetProcessor:
             context_vector: numpy array with shape (num_layers, hidden_dim)
         """
         if pca_data.dtype == object:
-            # Object array - each element is (num_layers, hidden_dim)
-            print(f"[PCA] Sample 0 shape: {pca_data[0].shape}")
             num_samples = len(pca_data)
-            
-            # Check if samples are layer-wise (2D: num_layers x hidden_dim)
             if pca_data[0].ndim == 2:
-                # Stack into (num_samples, num_layers, hidden_dim)
                 stacked_data = np.stack([sample for sample in pca_data], axis=0)
-                print(f"[PCA] Stacked layer-wise data shape: {stacked_data.shape}")
             else:
-                # Backward compatibility: 1D samples (hidden_dim,)
                 stacked_data = np.vstack([sample.reshape(1, -1) for sample in pca_data])
-                print(f"[PCA] Stacked single-layer data shape: {stacked_data.shape}")
         else:
             stacked_data = pca_data
-            print(f"[PCA] Input data shape: {stacked_data.shape}")
         
         context_vector = compute_pca_context_vector(
             pca_data=stacked_data,
             n_components=1
         )
-        
         print(f"[PCA] Final context vector shape: {context_vector.shape}")
-        
         return context_vector
 
 
     def evaluate_with_context_vector(self, context_vector, example):
 
-        # Extract QA pairs and image
-        conversation = example.get("conversations", [])
-        qa_pairs = extract_qa_pairs(conversation)
-        
-        image_file = example.get("image")
-        image_path = os.path.join(self.images_root, image_file)
-        image = Image.open(image_path).convert("RGB")
+        if self.dataset_name == "ai2d":
+            qa_pairs = extract_qa_pairs_ai2d(example)
+            image = example["image"]
+            image = image.convert("RGB")
+        else:
+            conversation = example.get("conversations", [])
+            qa_pairs = extract_qa_pairs(conversation)
+            image_file = example.get("image")
+            image_path = os.path.join(self.images_root, image_file)
+            image = Image.open(image_path).convert("RGB")
         
         eval_results = []
         for pair_idx, (question, gpt_response) in enumerate(qa_pairs):
@@ -389,6 +372,9 @@ class DatasetProcessor:
                     end = gpt_response.find(end_tag)
                     correct_answer = gpt_response[start:end].strip()
                     break
+
+            if correct_answer is None:
+                correct_answer = gpt_response
             
             eval_result = test_context_vector_effect(
                 model=self.model,
@@ -411,7 +397,7 @@ class DatasetProcessor:
             })
         
         return {
-            "image_path": image_path,
+            # "image_path": image_path,
             "total_pairs": len(qa_pairs),
             "evaluated_pairs": len(eval_results),
             "results": eval_results

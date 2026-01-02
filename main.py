@@ -38,7 +38,7 @@ def build_parser():
     p = argparse.ArgumentParser(description="🔥Team Galaxy🔥")
     
     ## DATASET
-    p.add_argument("--dataset_name", default="Xkev/LLaVA-CoT-100k", help="HuggingFace dataset name")
+    p.add_argument("--dataset_name", default="ai2d", help="Dataset name: 'ai2d' or 'llava-cot'")
     p.add_argument("--dataset_split", default="train[:100]", help="Dataset split slice, e.g. train[:50]")
     
     ## MODEL
@@ -83,9 +83,14 @@ def main():
 
 
     print(f"\n>>>>>> Loading Dataset: {args.dataset_name}")
-    dataset = load_dataset("Xkev/LLaVA-CoT-100k", split="train", cache_dir=DATASETS_CACHE)
-    dataset = dataset.filter(lambda x: 'coco' in x.get('image', '').lower())
-    print(f"Loaded {len(dataset)} examples")
+    if args.dataset_name == "ai2d":
+        dataset_path = "/scratch/tjgus0408/huggingface/datasets/ai2d/data/*.parquet"
+        dataset = load_dataset("parquet", data_files=dataset_path, split="train", cache_dir=DATASETS_CACHE)
+        print(f"Loaded {len(dataset)} examples from AI2D")
+    else:
+        dataset = load_dataset("Xkev/LLaVA-CoT-100k", split="train", cache_dir=DATASETS_CACHE)
+        dataset = dataset.filter(lambda x: 'coco' in x.get('image', '').lower())
+        print(f"Loaded {len(dataset)} examples from LLaVA-CoT")
 
 
     print(f"\n>>>>>> Loading model: {args.model_name}")
@@ -125,8 +130,13 @@ def main():
     print(f"\n>>>>>> Start Processing")
 
     output_dir = Path(args.output_dir)
+    if output_dir.exists():
+        shutil.rmtree(output_dir)
     output_dir.mkdir(exist_ok=True)
+
     output_dir2 = Path(args.output_dir2)
+    if output_dir2.exists():
+        shutil.rmtree(output_dir2)
     output_dir2.mkdir(exist_ok=True)
 
     proc = DatasetProcessor(
@@ -137,7 +147,8 @@ def main():
         device=device,
         images_root=args.images_root,
         generate_reasoning=True,
-        model_name=args.model_name
+        model_name=args.model_name,
+        dataset_name=args.dataset_name  
     )
 
     pca_npy_dir = os.path.join(os.path.dirname(__file__), "pca_data")
@@ -161,7 +172,7 @@ def main():
             json.dump(result, f, indent=2, ensure_ascii=False)
     
         # 여기서 Context Vector 만들 데이터셋 갯수 조절하세요 ! ><
-        if cnt >= 3:
+        if cnt >= 100:
             print(cnt)
             break
 

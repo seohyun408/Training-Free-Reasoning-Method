@@ -46,6 +46,19 @@ def extract_qa_pairs(conversation: List[Dict]) -> List[Tuple[str, str]]:
     return qa_pairs
 
 
+def extract_qa_pairs_ai2d(example):
+
+    question = example.get("question", "")
+    options = example.get("options", [])
+    answer_idx = example.get("answer", 0)
+    
+    options_str = "\n".join([f"{chr(65+i)}. {opt}" for i, opt in enumerate(options)])
+    full_question = f"{question}\n\nOptions:\n{options_str}"
+    
+    correct_option = options[int(answer_idx)]
+    return [(full_question, correct_option)]
+
+
 def split_solution_into_chunks(solution_text: str, tokenizer=None, min_tokens: int = 5) -> List[str]:
 
     sentence_ending_tokens = [".", "?", "!"]
